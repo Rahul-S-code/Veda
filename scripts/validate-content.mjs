@@ -5,7 +5,7 @@ import { join } from "node:path";
 
 const dir = new URL("../content/", import.meta.url).pathname;
 const files = readdirSync(dir).filter((f) => f.startsWith("cards.") && f.endsWith(".json"));
-const required = ["id", "scripture", "reference", "sanskrit", "transliteration", "translation", "meaning", "story", "teaching", "test", "tags"];
+const required = ["id", "scripture", "reference", "sanskrit", "transliteration", "translation", "meaning", "explanation", "keywords", "story", "teaching", "test", "tags"];
 const errors = [];
 const ids = new Set();
 let count = 0;

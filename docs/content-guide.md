@@ -13,6 +13,8 @@ Cards live in `content/cards.*.json` (one file per scripture group). Run `node s
 | `transliteration` | IAST romanisation, same line breaks. |
 | `translation` | Plain-English translation. |
 | `meaning` | One or two sentences on what it means for daily life. |
+| `explanation` | A fuller paragraph (about 80 to 100 words): context in the scripture, what the key words mean, and how to read it today. |
+| `keywords` | Three key Sanskrit words or phrases, each with `word` (IAST) and `meaning`. |
 | `story` | Button A: `title`, `text`, and `illustration` (`status` + an `idea` for the artwork). |
 | `teaching` | Button B: `title` and a `practice` the reader can do today. |
 | `test` | At least 2 gentle multiple-choice questions. `answer` is the index of the correct option. The app should shuffle options when showing them. |

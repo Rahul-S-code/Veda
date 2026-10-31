@@ -1,0 +1,232 @@
+[
+  {
+    "id": "rv-3-62-10",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 3, Hymn 62, Verse 10 (Gayatri Mantra)",
+    "sanskrit": "तत्सवितुर्वरेण्यं भर्गो देवस्य धीमहि।\nधियो यो नः प्रचोदयात्॥",
+    "transliteration": "tat savitur vareṇyaṁ bhargo devasya dhīmahi\ndhiyo yo naḥ pracodayāt",
+    "translation": "We meditate on the glorious radiance of the divine Savitr, the source of all light. May it inspire and awaken our minds.",
+    "meaning": "This is a prayer not for wealth but for a clear, awakened mind. It asks the light that lights the sun to light our thinking too.",
+    "story": {
+      "title": "The seer Vishvamitra",
+      "text": "This hymn is credited to the seer Vishvamitra, a king who gave up his throne to seek wisdom. Through long discipline he became a great rishi, and the Gayatri he received became one of the most chanted verses in India.",
+      "illustration": { "status": "needed", "idea": "A sage standing waist-deep in a river at sunrise, palms joined, facing a golden sun." }
+    },
+    "teaching": {
+      "title": "Ask for clarity",
+      "practice": "At sunrise or when you start your day, take a moment to ask for a clear mind rather than a particular result."
+    },
+    "test": [
+      { "question": "What does the Gayatri Mantra ask for?", "options": ["Wealth", "An awakened, inspired mind", "Victory", "Rain"], "answer": 1 },
+      { "question": "Which Veda contains this verse?", "options": ["Sama Veda", "Rig Veda", "Atharva Veda", "None"], "answer": 1 }
+    ],
+    "tags": ["prayer", "light", "mind"]
+  },
+  {
+    "id": "rv-1-164-46",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 1, Hymn 164, Verse 46",
+    "sanskrit": "इन्द्रं मित्रं वरुणमग्निमाहुरथो दिव्यः स सुपर्णो गरुत्मान्।\nएकं सद्विप्रा बहुधा वदन्त्यग्निं यमं मातरिश्वानमाहुः॥",
+    "transliteration": "indraṁ mitraṁ varuṇam agnim āhur atho divyaḥ sa suparṇo garutmān\nekaṁ sad viprā bahudhā vadanty agniṁ yamaṁ mātariśvānam āhuḥ",
+    "translation": "They call it Indra, Mitra, Varuna, Agni, and the heavenly bird Garutman. Truth is one; the wise call it by many names: Agni, Yama, Matarishvan.",
+    "meaning": "Different people use different names and paths for the same ultimate truth. This verse is a root of respect for many views.",
+    "story": {
+      "title": "The riddle hymn of Dirghatamas",
+      "text": "This verse comes from a long hymn of riddles credited to the seer Dirghatamas, who tradition says was born blind. Though he could not see the world, he saw a deep truth: behind the many gods, there is one reality.",
+      "illustration": { "status": "needed", "idea": "An elderly seer with closed eyes, surrounded by faint symbols of fire, wind, sky and water merging into one light." }
+    },
+    "teaching": {
+      "title": "Listen for the one",
+      "practice": "When you hear someone describe a belief different from yours today, look for the shared truth beneath the different words."
+    },
+    "test": [
+      { "question": "'Ekam sat' means...", "options": ["Many truths", "Truth is one", "No truth", "Truth is hidden"], "answer": 1 },
+      { "question": "How do the wise speak of the one truth?", "options": ["By one name only", "By many names", "They never speak of it", "Only in secret"], "answer": 1 }
+    ],
+    "tags": ["unity", "tolerance", "truth"]
+  },
+  {
+    "id": "rv-10-129-1",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 10, Hymn 129, Verse 1 (Nasadiya Sukta)",
+    "sanskrit": "नासदासीन्नो सदासीत्तदानीं नासीद्रजो नो व्योमा परो यत्।\nकिमावरीवः कुह कस्य शर्मन्नम्भः किमासीद्गहनं गभीरम्॥",
+    "transliteration": "nāsad āsīn no sad āsīt tadānīṁ nāsīd rajo no vyomā paro yat\nkim āvarīvaḥ kuha kasya śarmann ambhaḥ kim āsīd gahanaṁ gabhīram",
+    "translation": "Then there was neither non-existence nor existence. There was no air, nor sky beyond it. What covered it, and where? Who protected it? Was there water, deep and unfathomable?",
+    "meaning": "One of the oldest scriptures in the world begins its story of creation with honest questions. Wonder, not certainty, is the starting point.",
+    "story": {
+      "title": "The hymn of creation",
+      "text": "The Nasadiya Sukta asks how everything began. It ends by saying that perhaps even the one who watches over creation from the highest heaven knows, or perhaps does not know. It is an ancient invitation to keep asking.",
+      "illustration": { "status": "needed", "idea": "A vast dark cosmos with the first faint swirl of light, a tiny seated figure gazing up in wonder." }
+    },
+    "teaching": {
+      "title": "Stay curious",
+      "practice": "Ask one big question today that you do not know the answer to, and enjoy not knowing for a while."
+    },
+    "test": [
+      { "question": "What is the Nasadiya Sukta about?", "options": ["A war", "The origin of the universe", "A king's wedding", "Farming"], "answer": 1 },
+      { "question": "How does this hymn approach creation?", "options": ["With firm answers", "With deep questions", "With fear", "With jokes"], "answer": 1 }
+    ],
+    "tags": ["creation", "wonder", "cosmos"]
+  },
+  {
+    "id": "rv-10-191-2",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 10, Hymn 191, Verse 2",
+    "sanskrit": "सं गच्छध्वं सं वदध्वं सं वो मनांसि जानताम्।\nदेवा भागं यथा पूर्वे सञ्जानाना उपासते॥",
+    "transliteration": "saṁ gacchadhvaṁ saṁ vadadhvaṁ saṁ vo manāṁsi jānatām\ndevā bhāgaṁ yathā pūrve sañjānānā upāsate",
+    "translation": "Walk together, speak together, let your minds be in harmony, just as the gods of old sat together in agreement to share their portion.",
+    "meaning": "Communities thrive when people move, talk and think together. Harmony is something we practise, not just hope for.",
+    "story": {
+      "title": "The last hymn of the Rig Veda",
+      "text": "This is part of the very last hymn of the Rig Veda. After more than a thousand hymns, the collection closes with a call for people to gather, speak and decide together in unity.",
+      "illustration": { "status": "needed", "idea": "A circle of villagers of all ages seated around a fire under the stars, talking and listening." }
+    },
+    "teaching": {
+      "title": "Listen to agree",
+      "practice": "In one conversation today, listen fully before replying, and look for the point where you agree."
+    },
+    "test": [
+      { "question": "What does this verse ask people to do?", "options": ["Compete", "Walk and speak together in harmony", "Stay silent", "Live alone"], "answer": 1 },
+      { "question": "Where in the Rig Veda is this hymn found?", "options": ["At the very beginning", "At the very end", "In the middle", "It is not in the Rig Veda"], "answer": 1 }
+    ],
+    "tags": ["unity", "community", "harmony"]
+  },
+  {
+    "id": "rv-1-89-1",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 1, Hymn 89, Verse 1",
+    "sanskrit": "आ नो भद्राः क्रतवो यन्तु विश्वतोऽदब्धासो अपरीतास उद्भिदः।\nदेवा नो यथा सदमिद्वृधे असन्नप्रायुवो रक्षितारो दिवेदिवे॥",
+    "transliteration": "ā no bhadrāḥ kratavo yantu viśvato 'dabdhāso aparītāsa udbhidaḥ\ndevā no yathā sadam id vṛdhe asann aprāyuvo rakṣitāro dive-dive",
+    "translation": "Let noble thoughts come to us from every side, undeceived, unhindered and fresh. May the gods always be with us for our growth, ever watchful, protecting us day after day.",
+    "meaning": "Keep your mind open. Good ideas can come from anywhere and anyone, and welcoming them is how we grow.",
+    "story": {
+      "title": "An open door for wisdom",
+      "text": "This verse is credited to the seer Gotama Rahugana. Its opening line is often quoted as a motto for learning: let good thoughts come to us from all directions, not just from people we already agree with.",
+      "illustration": { "status": "needed", "idea": "A house with all its doors and windows open, beams of light entering from every direction." }
+    },
+    "teaching": {
+      "title": "Learn from someone unexpected",
+      "practice": "Learn one good idea today from a person or place you would not usually turn to."
+    },
+    "test": [
+      { "question": "From where should noble thoughts come, according to this verse?", "options": ["Only from teachers", "From every side", "Only from books", "Only from family"], "answer": 1 },
+      { "question": "What is the main lesson of this verse?", "options": ["Keep an open mind", "Avoid new ideas", "Trust no one", "Stay at home"], "answer": 0 }
+    ],
+    "tags": ["learning", "openness", "growth"]
+  },
+  {
+    "id": "rv-7-59-12",
+    "scripture": "Rig Veda",
+    "reference": "Mandala 7, Hymn 59, Verse 12 (Mahamrityunjaya Mantra)",
+    "sanskrit": "त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्।\nउर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्॥",
+    "transliteration": "tryambakaṁ yajāmahe sugandhiṁ puṣṭi-vardhanam\nurvārukam iva bandhanān mṛtyor mukṣīya māmṛtāt",
+    "translation": "We worship the three-eyed one, fragrant, who nourishes all life. As a ripe cucumber is freed from its vine, may we be freed from death, and not from immortality.",
+    "meaning": "When the time comes, may we let go as naturally as ripe fruit falls from the vine, free and complete, not torn away.",
+    "story": {
+      "title": "Markandeya and Yama",
+      "text": "In the Puranas, the boy Markandeya was destined to die at sixteen. When Yama came for him, he clung to a Shiva linga and chanted this mantra. Shiva appeared, stopped Yama, and blessed the boy with endless life.",
+      "illustration": { "status": "needed", "idea": "A boy embracing a stone linga in a temple while a radiant figure of Shiva rises from it to face a startled Yama." }
+    },
+    "teaching": {
+      "title": "Ripen, then release",
+      "practice": "Think of something you are ready to let go of. Instead of tearing it away, let it fall away gently today."
+    },
+    "test": [
+      { "question": "What image does this mantra use for liberation?", "options": ["A bird leaving its nest", "A ripe cucumber freed from its vine", "A river reaching the sea", "A lamp going out"], "answer": 1 },
+      { "question": "In the story, who saved Markandeya?", "options": ["Vishnu", "Shiva", "Indra", "Brahma"], "answer": 1 }
+    ],
+    "tags": ["healing", "fearlessness", "shiva"]
+  },
+  {
+    "id": "av-12-1-12",
+    "scripture": "Atharva Veda",
+    "reference": "Book 12, Hymn 1, Verse 12 (Bhumi Sukta, excerpt)",
+    "sanskrit": "माता भूमिः पुत्रो अहं पृथिव्याः।",
+    "transliteration": "mātā bhūmiḥ putro ahaṁ pṛthivyāḥ",
+    "translation": "The Earth is my mother, and I am her child.",
+    "meaning": "We belong to the Earth; it does not belong to us. Caring for nature is caring for family.",
+    "story": {
+      "title": "The hymn to Mother Earth",
+      "text": "The Bhumi Sukta is a long hymn of over sixty verses praising the Earth for her mountains, rivers, forests and the many peoples who live on her. It asks her forgiveness for the harm we do when we dig into her.",
+      "illustration": { "status": "needed", "idea": "A child resting in the lap of a vast green landscape shaped like a mother, rivers flowing through her hair." }
+    },
+    "teaching": {
+      "title": "Care for your mother",
+      "practice": "Do one thing for the Earth today: plant something, pick up litter, or use less plastic."
+    },
+    "test": [
+      { "question": "How does this verse describe the Earth?", "options": ["As a servant", "As a mother", "As an enemy", "As a possession"], "answer": 1 },
+      { "question": "Which Veda contains the Bhumi Sukta?", "options": ["Rig Veda", "Atharva Veda", "Yajur Veda", "Sama Veda"], "answer": 1 }
+    ],
+    "tags": ["nature", "earth", "gratitude"]
+  },
+  {
+    "id": "isha-1",
+    "scripture": "Isha Upanishad (Shukla Yajur Veda)",
+    "reference": "Verse 1",
+    "sanskrit": "ईशा वास्यमिदं सर्वं यत्किञ्च जगत्यां जगत्।\nतेन त्यक्तेन भुञ्जीथा मा गृधः कस्यस्विद्धनम्॥",
+    "transliteration": "īśā vāsyam idaṁ sarvaṁ yat kiñca jagatyāṁ jagat\ntena tyaktena bhuñjīthā mā gṛdhaḥ kasya svid dhanam",
+    "translation": "All this, whatever moves in this moving world, is pervaded by the Lord. Enjoy it through renunciation. Do not covet anyone's wealth.",
+    "meaning": "Everything is sacred and nothing is truly ours. Enjoy life by holding it lightly, without greed.",
+    "story": {
+      "title": "The Upanishad inside a Veda",
+      "text": "The Isha Upanishad is unusual: it is the final chapter of the Shukla Yajur Veda itself. In just eighteen verses, it brings the Vedic rituals to their inner meaning, beginning with this verse.",
+      "illustration": { "status": "needed", "idea": "A person holding a flower in an open palm, light passing through everything around them." }
+    },
+    "teaching": {
+      "title": "Hold it lightly",
+      "practice": "Enjoy one thing you own today with gratitude, while remembering it is on loan to you."
+    },
+    "test": [
+      { "question": "According to this verse, the world is...", "options": ["Meaningless", "Pervaded by the divine", "Owned by kings", "An illusion to escape"], "answer": 1 },
+      { "question": "How should we enjoy the world?", "options": ["Through greed", "Through renunciation, holding it lightly", "By taking what others have", "We should not enjoy it"], "answer": 1 }
+    ],
+    "tags": ["contentment", "greed", "upanishad"]
+  },
+  {
+    "id": "brihadaranyaka-1-3-28",
+    "scripture": "Brihadaranyaka Upanishad (Shukla Yajur Veda)",
+    "reference": "Chapter 1, Section 3, Verse 28",
+    "sanskrit": "असतो मा सद्गमय।\nतमसो मा ज्योतिर्गमय।\nमृत्योर्मामृतं गमय॥",
+    "transliteration": "asato mā sad gamaya\ntamaso mā jyotir gamaya\nmṛtyor māmṛtaṁ gamaya",
+    "translation": "Lead me from the unreal to the real. Lead me from darkness to light. Lead me from death to immortality.",
+    "meaning": "Three short lines that sum up the whole spiritual journey: toward truth, toward understanding, toward what never dies.",
+    "story": {
+      "title": "A prayer for every journey",
+      "text": "These lines come from one of the oldest Upanishads, where they are chanted as part of a Vedic ritual. Today they are sung in schools, homes and temples across India as a prayer for growth.",
+      "illustration": { "status": "needed", "idea": "A path leading from a dark forest toward a glowing dawn horizon, a single lamp-bearer walking along it." }
+    },
+    "teaching": {
+      "title": "One step toward light",
+      "practice": "Replace one thing today that keeps you in 'darkness', a rumour, a doom-scroll, a grudge, with something that brings light."
+    },
+    "test": [
+      { "question": "'Tamaso ma jyotir gamaya' means...", "options": ["Lead me from darkness to light", "Lead me to wealth", "Lead me home", "Lead me to victory"], "answer": 0 },
+      { "question": "How many requests are in this prayer?", "options": ["One", "Two", "Three", "Ten"], "answer": 2 }
+    ],
+    "tags": ["prayer", "light", "upanishad"]
+  },
+  {
+    "id": "taittiriya-shanti",
+    "scripture": "Taittiriya Upanishad (Krishna Yajur Veda)",
+    "reference": "Invocation (Shanti Mantra)",
+    "sanskrit": "ॐ सह नाववतु। सह नौ भुनक्तु।\nसह वीर्यं करवावहै।\nतेजस्वि नावधीतमस्तु मा विद्विषावहै॥",
+    "transliteration": "oṁ saha nāv avatu, saha nau bhunaktu\nsaha vīryaṁ karavāvahai\ntejasvi nāv adhītam astu mā vidviṣāvahai",
+    "translation": "May we both be protected together. May we both be nourished together. May we work together with energy. May our study be full of light, and may we never resent each other.",
+    "meaning": "Learning is a partnership. Teacher and student grow together when they share effort and respect.",
+    "story": {
+      "title": "The gurukul prayer",
+      "text": "In the ancient gurukuls, forest schools, teacher and students chanted this prayer together before lessons. It asks for success not for the student alone but for both of them, and for harmony between them.",
+      "illustration": { "status": "needed", "idea": "A teacher and a few students seated under a tree in a forest school, hands joined, morning light filtering through leaves." }
+    },
+    "teaching": {
+      "title": "Learn together",
+      "practice": "Teach someone one thing you know today, and ask them to teach you one thing back."
+    },
+    "test": [
+      { "question": "Who chants this prayer together?", "options": ["King and soldier", "Teacher and student", "Husband and wife", "Priest and god"], "answer": 1 },
+      { "question": "What does the last line ask for?", "options": ["Wealth", "That we never resent each other", "Victory over enemies", "Long life"], "answer": 1 }
+    ],
+    "tags": ["learning", "teacher", "harmony"]
+  }
+]

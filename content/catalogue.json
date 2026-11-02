@@ -1,0 +1,710 @@
+{
+  "sources": [
+    {
+      "id": "public-domain-sanskrit",
+      "title": "Traditional Sanskrit text",
+      "author": null,
+      "year": null,
+      "url": null,
+      "licence": "public-domain",
+      "notes": "Ancient text. Proofread against a printed critical edition before publishing."
+    },
+    {
+      "id": "veda-app-original",
+      "title": "Veda app original writing",
+      "author": "Veda app",
+      "year": 2026,
+      "url": null,
+      "licence": "original-work",
+      "notes": "Translations, meanings, explanations, stories, teachings and questions written for this app."
+    },
+    {
+      "id": "telang-1882",
+      "title": "The Bhagavadgita (Sacred Books of the East, vol. 8)",
+      "author": "K. T. Telang",
+      "year": 1882,
+      "url": null,
+      "licence": "public-domain",
+      "notes": null
+    },
+    {
+      "id": "griffith-rv-1896",
+      "title": "The Hymns of the Rigveda",
+      "author": "Ralph T. H. Griffith",
+      "year": 1896,
+      "url": null,
+      "licence": "public-domain",
+      "notes": null
+    },
+    {
+      "id": "griffith-av-1895",
+      "title": "The Hymns of the Atharvaveda",
+      "author": "Ralph T. H. Griffith",
+      "year": 1895,
+      "url": null,
+      "licence": "public-domain",
+      "notes": null
+    },
+    {
+      "id": "muller-upanishads-1879",
+      "title": "The Upanishads (Sacred Books of the East, vols. 1 and 15)",
+      "author": "F. Max Müller",
+      "year": 1879,
+      "url": null,
+      "licence": "public-domain",
+      "notes": null
+    }
+  ],
+  "scriptures": [
+    {
+      "id": "rig-veda",
+      "name": "Rig Veda",
+      "name_sanskrit": "ऋग्वेद",
+      "category": "veda",
+      "parent_id": null,
+      "level_names": [
+        "Mandala",
+        "Hymn",
+        "Verse"
+      ],
+      "expected_verses": 10552,
+      "description": "The oldest Veda: 1,028 hymns in ten books (mandalas)."
+    },
+    {
+      "id": "sama-veda",
+      "name": "Sama Veda",
+      "name_sanskrit": "सामवेद",
+      "category": "veda",
+      "parent_id": null,
+      "level_names": [
+        "Part",
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 1875,
+      "description": "The Veda of melodies, mostly verses of the Rig Veda set for chanting."
+    },
+    {
+      "id": "shukla-yajur-veda",
+      "name": "Shukla Yajur Veda",
+      "name_sanskrit": "शुक्ल यजुर्वेद",
+      "category": "veda",
+      "parent_id": null,
+      "level_names": [
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 1975,
+      "description": "The white Yajur Veda (Vajasaneyi Samhita): mantras for ritual, in 40 chapters."
+    },
+    {
+      "id": "krishna-yajur-veda",
+      "name": "Krishna Yajur Veda",
+      "name_sanskrit": "कृष्ण यजुर्वेद",
+      "category": "veda",
+      "parent_id": null,
+      "level_names": [
+        "Book",
+        "Chapter",
+        "Section"
+      ],
+      "expected_verses": null,
+      "description": "The black Yajur Veda (Taittiriya Samhita), mantras mixed with prose explanation."
+    },
+    {
+      "id": "atharva-veda",
+      "name": "Atharva Veda",
+      "name_sanskrit": "अथर्ववेद",
+      "category": "veda",
+      "parent_id": null,
+      "level_names": [
+        "Book",
+        "Hymn",
+        "Verse"
+      ],
+      "expected_verses": 5977,
+      "description": "About 730 hymns in 20 books on daily life, healing, the Earth and the cosmos."
+    },
+    {
+      "id": "isha-upanishad",
+      "name": "Isha Upanishad",
+      "name_sanskrit": "ईशोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "shukla-yajur-veda",
+      "level_names": [
+        "Verse"
+      ],
+      "expected_verses": 18,
+      "description": "The final chapter of the Shukla Yajur Veda."
+    },
+    {
+      "id": "kena-upanishad",
+      "name": "Kena Upanishad",
+      "name_sanskrit": "केनोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "sama-veda",
+      "level_names": [
+        "Part",
+        "Verse"
+      ],
+      "expected_verses": 35,
+      "description": null
+    },
+    {
+      "id": "katha-upanishad",
+      "name": "Katha Upanishad",
+      "name_sanskrit": "कठोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "krishna-yajur-veda",
+      "level_names": [
+        "Chapter",
+        "Section",
+        "Verse"
+      ],
+      "expected_verses": 119,
+      "description": "Nachiketa's conversation with Yama, the lord of death."
+    },
+    {
+      "id": "prashna-upanishad",
+      "name": "Prashna Upanishad",
+      "name_sanskrit": "प्रश्नोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "atharva-veda",
+      "level_names": [
+        "Question",
+        "Verse"
+      ],
+      "expected_verses": 67,
+      "description": null
+    },
+    {
+      "id": "mundaka-upanishad",
+      "name": "Mundaka Upanishad",
+      "name_sanskrit": "मुण्डकोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "atharva-veda",
+      "level_names": [
+        "Mundaka",
+        "Section",
+        "Verse"
+      ],
+      "expected_verses": 64,
+      "description": null
+    },
+    {
+      "id": "mandukya-upanishad",
+      "name": "Mandukya Upanishad",
+      "name_sanskrit": "माण्डूक्योपनिषद्",
+      "category": "upanishad",
+      "parent_id": "atharva-veda",
+      "level_names": [
+        "Verse"
+      ],
+      "expected_verses": 12,
+      "description": "Twelve verses on Om and the states of consciousness."
+    },
+    {
+      "id": "taittiriya-upanishad",
+      "name": "Taittiriya Upanishad",
+      "name_sanskrit": "तैत्तिरीयोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "krishna-yajur-veda",
+      "level_names": [
+        "Chapter",
+        "Section"
+      ],
+      "expected_verses": null,
+      "description": null
+    },
+    {
+      "id": "aitareya-upanishad",
+      "name": "Aitareya Upanishad",
+      "name_sanskrit": "ऐतरेयोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "rig-veda",
+      "level_names": [
+        "Chapter",
+        "Section",
+        "Verse"
+      ],
+      "expected_verses": null,
+      "description": null
+    },
+    {
+      "id": "chandogya-upanishad",
+      "name": "Chandogya Upanishad",
+      "name_sanskrit": "छान्दोग्योपनिषद्",
+      "category": "upanishad",
+      "parent_id": "sama-veda",
+      "level_names": [
+        "Chapter",
+        "Section",
+        "Verse"
+      ],
+      "expected_verses": null,
+      "description": null
+    },
+    {
+      "id": "brihadaranyaka-upanishad",
+      "name": "Brihadaranyaka Upanishad",
+      "name_sanskrit": "बृहदारण्यकोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "shukla-yajur-veda",
+      "level_names": [
+        "Chapter",
+        "Section",
+        "Verse"
+      ],
+      "expected_verses": null,
+      "description": "The largest of the principal Upanishads."
+    },
+    {
+      "id": "shvetashvatara-upanishad",
+      "name": "Shvetashvatara Upanishad",
+      "name_sanskrit": "श्वेताश्वतरोपनिषद्",
+      "category": "upanishad",
+      "parent_id": "krishna-yajur-veda",
+      "level_names": [
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 113,
+      "description": null
+    },
+    {
+      "id": "mahabharata",
+      "name": "Mahabharata",
+      "name_sanskrit": "महाभारत",
+      "category": "itihasa",
+      "parent_id": null,
+      "level_names": [
+        "Parva",
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 75000,
+      "description": "The great epic in 18 parvas. About 100,000 shlokas by tradition; about 75,000 in the critical edition."
+    },
+    {
+      "id": "bhagavad-gita",
+      "name": "Bhagavad Gita",
+      "name_sanskrit": "भगवद्गीता",
+      "category": "gita",
+      "parent_id": "mahabharata",
+      "level_names": [
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 700,
+      "description": "Krishna's teaching to Arjuna on the battlefield of Kurukshetra, in 18 chapters."
+    },
+    {
+      "id": "valmiki-ramayana",
+      "name": "Valmiki Ramayana",
+      "name_sanskrit": "वाल्मीकि रामायण",
+      "category": "itihasa",
+      "parent_id": null,
+      "level_names": [
+        "Kanda",
+        "Sarga",
+        "Verse"
+      ],
+      "expected_verses": 24000,
+      "description": "The story of Rama in seven kandas."
+    },
+    {
+      "id": "bhagavata-purana",
+      "name": "Bhagavata Purana",
+      "name_sanskrit": "भागवत पुराण",
+      "category": "purana",
+      "parent_id": null,
+      "level_names": [
+        "Skandha",
+        "Chapter",
+        "Verse"
+      ],
+      "expected_verses": 18000,
+      "description": "Stories of Vishnu's avatars, centred on Krishna, in 12 books."
+    }
+  ],
+  "sections": [
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 1,
+      "title": "Arjuna Vishada Yoga",
+      "title_sanskrit": "अर्जुनविषादयोग",
+      "expected_verses": 47
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 2,
+      "title": "Sankhya Yoga",
+      "title_sanskrit": "साङ्ख्ययोग",
+      "expected_verses": 72
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 3,
+      "title": "Karma Yoga",
+      "title_sanskrit": "कर्मयोग",
+      "expected_verses": 43
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 4,
+      "title": "Jnana Karma Sannyasa Yoga",
+      "title_sanskrit": "ज्ञानकर्मसंन्यासयोग",
+      "expected_verses": 42
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 5,
+      "title": "Karma Sannyasa Yoga",
+      "title_sanskrit": "कर्मसंन्यासयोग",
+      "expected_verses": 29
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 6,
+      "title": "Dhyana Yoga",
+      "title_sanskrit": "ध्यानयोग",
+      "expected_verses": 47
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 7,
+      "title": "Jnana Vijnana Yoga",
+      "title_sanskrit": "ज्ञानविज्ञानयोग",
+      "expected_verses": 30
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 8,
+      "title": "Akshara Brahma Yoga",
+      "title_sanskrit": "अक्षरब्रह्मयोग",
+      "expected_verses": 28
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 9,
+      "title": "Raja Vidya Raja Guhya Yoga",
+      "title_sanskrit": "राजविद्याराजगुह्ययोग",
+      "expected_verses": 34
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 10,
+      "title": "Vibhuti Yoga",
+      "title_sanskrit": "विभूतियोग",
+      "expected_verses": 42
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 11,
+      "title": "Vishvarupa Darshana Yoga",
+      "title_sanskrit": "विश्वरूपदर्शनयोग",
+      "expected_verses": 55
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 12,
+      "title": "Bhakti Yoga",
+      "title_sanskrit": "भक्तियोग",
+      "expected_verses": 20
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 13,
+      "title": "Kshetra Kshetrajna Vibhaga Yoga",
+      "title_sanskrit": "क्षेत्रक्षेत्रज्ञविभागयोग",
+      "expected_verses": 34
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 14,
+      "title": "Gunatraya Vibhaga Yoga",
+      "title_sanskrit": "गुणत्रयविभागयोग",
+      "expected_verses": 27
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 15,
+      "title": "Purushottama Yoga",
+      "title_sanskrit": "पुरुषोत्तमयोग",
+      "expected_verses": 20
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 16,
+      "title": "Daivasura Sampad Vibhaga Yoga",
+      "title_sanskrit": "दैवासुरसम्पद्विभागयोग",
+      "expected_verses": 24
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 17,
+      "title": "Shraddhatraya Vibhaga Yoga",
+      "title_sanskrit": "श्रद्धात्रयविभागयोग",
+      "expected_verses": 28
+    },
+    {
+      "scripture_id": "bhagavad-gita",
+      "number": 18,
+      "title": "Moksha Sannyasa Yoga",
+      "title_sanskrit": "मोक्षसंन्यासयोग",
+      "expected_verses": 78
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 1,
+      "title": "Mandala 1",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 2,
+      "title": "Mandala 2",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 3,
+      "title": "Mandala 3",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 4,
+      "title": "Mandala 4",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 5,
+      "title": "Mandala 5",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 6,
+      "title": "Mandala 6",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 7,
+      "title": "Mandala 7",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 8,
+      "title": "Mandala 8",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 9,
+      "title": "Mandala 9",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "rig-veda",
+      "number": 10,
+      "title": "Mandala 10",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 1,
+      "title": "Book 1",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 2,
+      "title": "Book 2",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 3,
+      "title": "Book 3",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 4,
+      "title": "Book 4",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 5,
+      "title": "Book 5",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 6,
+      "title": "Book 6",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 7,
+      "title": "Book 7",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 8,
+      "title": "Book 8",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 9,
+      "title": "Book 9",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 10,
+      "title": "Book 10",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 11,
+      "title": "Book 11",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 12,
+      "title": "Book 12",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 13,
+      "title": "Book 13",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 14,
+      "title": "Book 14",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 15,
+      "title": "Book 15",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 16,
+      "title": "Book 16",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 17,
+      "title": "Book 17",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 18,
+      "title": "Book 18",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 19,
+      "title": "Book 19",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "atharva-veda",
+      "number": 20,
+      "title": "Book 20",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 1,
+      "title": "Chapter 1",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 2,
+      "title": "Chapter 2",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 3,
+      "title": "Chapter 3",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 4,
+      "title": "Chapter 4",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 5,
+      "title": "Chapter 5",
+      "title_sanskrit": null,
+      "expected_verses": null
+    },
+    {
+      "scripture_id": "brihadaranyaka-upanishad",
+      "number": 6,
+      "title": "Chapter 6",
+      "title_sanskrit": null,
+      "expected_verses": null
+    }
+  ]
+}

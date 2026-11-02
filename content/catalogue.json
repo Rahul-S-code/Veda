@@ -89,6 +89,15 @@
       "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Upan",
       "licence": "cc-by-nc-sa-4.0",
       "notes": "Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka (Kanva). Several files carry Shankara's commentary; only the Upanishad's own text is imported. CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Known gaps in the source markup: Chandogya 3.15.5, 4.7.1-2; Brihadaranyaka 4.4.19, 6.5.2."
+    },
+    {
+      "id": "veda-app-ai-draft",
+      "title": "Veda app drafts written with Claude",
+      "author": "Veda app",
+      "year": 2026,
+      "url": null,
+      "licence": "original-work",
+      "notes": "Plain-English translations, simple meanings, explanations and key words drafted by Claude (scripts/enrich/generate.py) from the Sanskrit and any public-domain translation. Drafts until a reviewer checks them."
     }
   ],
   "scriptures": [

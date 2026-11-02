@@ -80,6 +80,14 @@ To re-run: `pip install indic_transliteration && python3 scripts/import/gita.py 
 - **Licence:** GRETIL distributes its e-texts, including the Gita above, under CC BY-NC-SA 4.0. The app must credit GRETIL and the inputters, stay non-commercial, and share the texts under the same licence. Replacing the Sanskrit with another edition later only changes the `sanskrit` field; verse ids and reader progress stay the same.
 - Sections nest (Kanda > Sarga, Chapter > Section). Sort keys are `kanda * 1,000,000 + sarga * 1,000 + verse`.
 
+### Reader content: plain English and meanings
+
+`scripts/enrich/generate.py` drafts, for every imported verse, a faithful plain-English translation, a one-or-two-sentence simple meaning, a short explanation of context, and 3-5 key Sanskrit words. It sends eight consecutive verses per request (so the model follows the passage) through the Message Batches API at half price, with structured JSON output, and writes `content/enrich/<import file>.json`. `build-seed.mjs` loads these as drafts: our translation becomes the primary one (Besant stays as a second translation for the Gita), and the meaning goes into `explanations`. Featured cards are never overwritten.
+
+- A sample is in the repo: Gita chapter 12 (19 verses).
+- Running it for all ~20,900 verses needs an `ANTHROPIC_API_KEY`. Rough cost: about $100 with Claude Opus 5.5 or about $50 with Claude Sonnet 5.5 (`VEDA_ENRICH_MODEL=claude-sonnet-5-5`), at batch prices. Start with a pilot: `python3 scripts/enrich/generate.py submit --only gita --limit 200`.
+- Stories and daily teachings are written per episode, not per verse (step 5 below), so they come after this.
+
 ### How each phase is built
 
 1. **Import the Sanskrit** from a digitised public-domain edition into `verses` as `draft`, with the edition recorded in `sources`. Typing 10,000 verses from memory is not reliable, so this step must use a real source text.

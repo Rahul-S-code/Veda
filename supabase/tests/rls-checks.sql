@@ -30,6 +30,14 @@ do $$ begin
   assert (select count(*) from verses where id <> 'draft-test') = 20887, 'all imported and featured verses should be present';
 end $$;
 
+-- Drafted meanings: a verse with one gets our plain-English translation as primary, Besant's kept as secondary.
+do $$ begin
+  assert (select t.source_id from translations t where t.verse_id = 'gita-12-2' and t.is_primary) = 'veda-app-ai-draft', 'drafted translation should be primary';
+  assert exists (select 1 from translations where verse_id = 'gita-12-2' and source_id = 'besant-1922' and not is_primary), 'Besant kept as secondary';
+  assert (select status from explanations where verse_id = 'gita-12-2') = 'draft', 'drafted meaning stays a draft';
+  assert (select source_id from explanations where verse_id = 'gita-12-13') = 'veda-app-original', 'featured card keeps its own meaning';
+end $$;
+
 -- Anonymous visitors see published verses only.
 set role anon;
 do $$ begin

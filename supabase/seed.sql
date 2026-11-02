@@ -77113,10 +77113,8 @@ insert into sections (scripture_id, parent_id, level, number, title, title_sansk
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 1 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-1-1', 1, 'Chapter 1, Verse 1', 'प्रथमोऽध्यायः।
-किंकारणं ब्रह्म कुतः स्म जाता जीवामः केन क्व च संप्रतिष्ठाः।
-अधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम्॥', 'prathamo ''dhyāyaḥ
-kiṃkāraṇaṃ brahma kutaḥ sma jātā jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ
+('shvetashvatara-1-1', 1, 'Chapter 1, Verse 1', 'किंकारणं ब्रह्म कुतः स्म जाता जीवामः केन क्व च संप्रतिष्ठाः।
+अधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम्॥', 'kiṃkāraṇaṃ brahma kutaḥ sma jātā jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ
 adhiṣṭhitāḥ kena sukhetareṣu vartāmahe brahmavido vyavasthām', null, 1001),
 ('shvetashvatara-1-2', 2, 'Chapter 1, Verse 2', 'कालः स्वभावो नियतिर्यदृच्छा भूतानि योनिः पुरुषेति चिन्त्यम्।
 संयोग एषां न त्वात्मभावादात्मा ह्यनीशः सुखदुःखहेतोः॥', 'kālaḥ svabhāvo niyatir yadṛcchā bhūtāni yoniḥ puruṣeti cintyam
@@ -77167,14 +77165,12 @@ evam ātmā ātmani gṛhyate ''sau satyenainaṃ tapasā yo ''nupaśyati', null
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 2 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-2-1', 1, 'Chapter 2, Verse 1', 'द्वितीयोऽध्यायः।
-युञ्जानः प्रथमं मनस्तत्वाय सविता धियः।
-अग्नेर्ज्योतिर्निचाय्य पृथिव्या अध्याभरत्॥', 'dvitīyo ''dhyāyaḥ
-yuñjānaḥ prathamaṃ manas tatvāya savitā dhiyaḥ
+('shvetashvatara-2-1', 1, 'Chapter 2, Verse 1', 'युञ्जानः प्रथमं मनस्तत्वाय सविता धियः।
+अग्नेर्ज्योतिर्निचाय्य पृथिव्या अध्याभरत्॥', 'yuñjānaḥ prathamaṃ manas tatvāya savitā dhiyaḥ
 agner jyotir nicāyya pṛthivyā adhy ābharat', null, 2001),
 ('shvetashvatara-2-2', 2, 'Chapter 2, Verse 2', 'युक्तेन मनसा वयं देवस्य सवितुः सवे।
-सुवर्गेयाय शक्त्या %॥', 'yuktena manasā vayaṃ devasya savituḥ save
-suvargeyāya śaktyā %', null, 2002),
+सुवर्गेयाय शक्त्या॥', 'yuktena manasā vayaṃ devasya savituḥ save
+suvargeyāya śaktyā', null, 2002),
 ('shvetashvatara-2-3', 3, 'Chapter 2, Verse 3', 'युक्त्वाय मनसा देवान्सुवर्यतो धिया दिवं।
 बृहज्ज्योतिः करिष्यतः सविता प्रसुवाति तान्॥', 'yuktvāya manasā devān suvar yato dhiyā divaṃ
 bṛhaj jyotiḥ kariṣyataḥ savitā prasuvāti tān', null, 2003),
@@ -77224,10 +77220,8 @@ ya oṣadhīṣu yo vanaspatīṣu tasmai devāya namo namaḥ', null, 2017)
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 3 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-3-1', 1, 'Chapter 3, Verse 1', 'तृतीयोऽध्यायः।
-य एको जालवानीशत ईशनीभिः सर्वांल्लोकानीशत ईशनीभिः।
-य एवैक उद्भवे संभवे च य एतद्विदुरमृतास्ते भवन्ति॥', 'tṛtīyo ''dhyāyaḥ
-ya eko jālavān īśata īśanībhiḥ sarvāṃl lokān īśata īśanībhiḥ
+('shvetashvatara-3-1', 1, 'Chapter 3, Verse 1', 'य एको जालवानीशत ईशनीभिः सर्वांल्लोकानीशत ईशनीभिः।
+य एवैक उद्भवे संभवे च य एतद्विदुरमृतास्ते भवन्ति॥', 'ya eko jālavān īśata īśanībhiḥ sarvāṃl lokān īśata īśanībhiḥ
 ya evaika udbhave saṃbhave ca ya etad vidur amṛtās te bhavanti', null, 3001),
 ('shvetashvatara-3-2', 2, 'Chapter 3, Verse 2', 'एको हि रुद्रो न द्वितीयाय तस्थे य इमांल्लोकानीशत ईशनीभिः।
 प्रत्यङ्जनास्तिष्ठति संचुकोचान्तकाले संसृज्य विश्वा भुवनानि गोपाः॥', 'eko hi rudro na dvitīyāya tasthe ya imāṃl lokān īśata īśanībhiḥ
@@ -77293,10 +77287,8 @@ janmanirodhaṃ pravadanti yasya brahmavādino hi pravadanti nityam', null, 3021
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 4 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-4-1', 1, 'Chapter 4, Verse 1', 'चतुर्थोऽध्यायः।
-य एकोऽवर्णो बहुधा शक्तियोगाद्वर्णाननेकान्निहितार्थो दधाति।
-वि चैति चान्ते विश्वमादौ स देवः स नो बुद्ध्या शुभया संयुनक्तु॥', 'caturtho ''dhyāyaḥ
-ya eko ''varṇo bahudhā śaktiyogād varṇān anekān nihitārtho dadhāti
+('shvetashvatara-4-1', 1, 'Chapter 4, Verse 1', 'य एकोऽवर्णो बहुधा शक्तियोगाद्वर्णाननेकान्निहितार्थो दधाति।
+वि चैति चान्ते विश्वमादौ स देवः स नो बुद्ध्या शुभया संयुनक्तु॥', 'ya eko ''varṇo bahudhā śaktiyogād varṇān anekān nihitārtho dadhāti
 vi caiti cānte viśvam ādau sa devaḥ sa no buddhyā śubhayā saṃyunaktu', null, 4001),
 ('shvetashvatara-4-2', 2, 'Chapter 4, Verse 2', 'तदेवाग्निस्तदादित्यस्तद्वायुस्तदु चन्द्रमाः।
 तदेव शुक्रं तद्ब्रह्म तदापस्तत्प्रजापतिः॥', 'tad evāgnis tad ādityas tad vāyus tad u candramāḥ
@@ -77365,10 +77357,8 @@ vīrān mā no rudra bhāmito vadhīr haviṣmantaḥ sadam it tvā havāmahe', 
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 5 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-5-1', 1, 'Chapter 5, Verse 1', 'पञ्चमोऽध्यायः।
-द्वे अक्षरे ब्रह्मपरे त्वनन्ते विद्याविद्ये निहिते यत्र गूढे।
-क्षरं त्वविद्या ह्यमृतं तु विद्या विद्याविद्ये ईशते यस्तु सोऽन्यः॥', 'pañcamo ''dhyāyaḥ
-dve akṣare brahmapare tv anante vidyāvidye nihite yatra gūḍhe
+('shvetashvatara-5-1', 1, 'Chapter 5, Verse 1', 'द्वे अक्षरे ब्रह्मपरे त्वनन्ते विद्याविद्ये निहिते यत्र गूढे।
+क्षरं त्वविद्या ह्यमृतं तु विद्या विद्याविद्ये ईशते यस्तु सोऽन्यः॥', 'dve akṣare brahmapare tv anante vidyāvidye nihite yatra gūḍhe
 kṣaraṃ tv avidyā hy amṛtaṃ tu vidyā vidyāvidye īśate yas tu so ''nyaḥ', null, 5001),
 ('shvetashvatara-5-2', 2, 'Chapter 5, Verse 2', 'यो योनिं योनिमधितिष्ठत्येको विश्वानि रूपाणि योनीश्च सर्वाः।
 ऋषिं प्रसूतं कपिलं यस्तमग्रे ज्ञानैर्बिभर्ति जायमानं च पश्येत्॥', 'yo yoniṃ yonim adhitiṣṭhaty eko viśvāni rūpāṇi yonīś ca sarvāḥ
@@ -77413,10 +77403,8 @@ kalāsargakaraṃ devaṃ ye vidus te jahus tanum', null, 5014)
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 6 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
 from (values
-('shvetashvatara-6-1', 1, 'Chapter 6, Verse 1', 'षष्ठोऽध्यायः।
-स्वभावमेके कवयो वदन्ति कालं तथान्ये परिमुह्यमानाः।
-देवस्यैष महिमा तु लोके येनेदं भ्राम्यते ब्रह्मचक्रम्॥', 'ṣaṣṭho ''dhyāyaḥ
-svabhāvam eke kavayo vadanti kālaṃ tathānye parimuhyamānāḥ
+('shvetashvatara-6-1', 1, 'Chapter 6, Verse 1', 'स्वभावमेके कवयो वदन्ति कालं तथान्ये परिमुह्यमानाः।
+देवस्यैष महिमा तु लोके येनेदं भ्राम्यते ब्रह्मचक्रम्॥', 'svabhāvam eke kavayo vadanti kālaṃ tathānye parimuhyamānāḥ
 devasyaiṣa mahimā tu loke yenedaṃ bhrāmyate brahmacakram', null, 6001),
 ('shvetashvatara-6-2', 2, 'Chapter 6, Verse 2', 'येनावृतं नित्यमिदं हि सर्वं ज्ञः कालकालो गुणी सर्वविद्यः।
 तेनेशितं कर्म विवर्तते ह पृथिव्याप्तेजोऽनिलखानि चिन्त्यम्॥', 'yenāvṛtaṃ nityam idaṃ hi sarvaṃ jñaḥ kālakālo guṇī sarvavidyaḥ

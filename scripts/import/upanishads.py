@@ -132,9 +132,10 @@ def parse_lines(text):
         line = line.strip()
         m = re.search(r"//\s*SvetUp_(\d+)\.(\d+)\s*$", line)
         if m:
-            out[((int(m.group(1)),), int(m.group(2)))] = pending + [line[: m.start()].strip()]
+            # GRETIL marks an abridged line with "%"; the mark is not part of the text.
+            out[((int(m.group(1)),), int(m.group(2)))] = pending + [line[: m.start()].replace("%", "").strip()]
             pending = []
-        elif line and not re.search(r"adhyāyaḥ|upaniṣad|^oṃ brahmavādino vadanti$", line):
+        elif line and not re.search(r"dhyāyaḥ|upaniṣad|^oṃ brahmavādino vadanti$", line):
             pending.append(line)
     return out
 

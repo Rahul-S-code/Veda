@@ -57,8 +57,8 @@
    "reference": "Chapter 1, Verse 1",
    "sort_key": 1001,
    "speaker": null,
-   "sanskrit": "प्रथमोऽध्यायः।\nकिंकारणं ब्रह्म कुतः स्म जाता जीवामः केन क्व च संप्रतिष्ठाः।\nअधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम्॥",
-   "transliteration": "prathamo 'dhyāyaḥ\nkiṃkāraṇaṃ brahma kutaḥ sma jātā jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ\nadhiṣṭhitāḥ kena sukhetareṣu vartāmahe brahmavido vyavasthām",
+   "sanskrit": "किंकारणं ब्रह्म कुतः स्म जाता जीवामः केन क्व च संप्रतिष्ठाः।\nअधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम्॥",
+   "transliteration": "kiṃkāraṇaṃ brahma kutaḥ sma jātā jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ\nadhiṣṭhitāḥ kena sukhetareṣu vartāmahe brahmavido vyavasthām",
    "translation": {}
   },
   {
@@ -265,8 +265,8 @@
    "reference": "Chapter 2, Verse 1",
    "sort_key": 2001,
    "speaker": null,
-   "sanskrit": "द्वितीयोऽध्यायः।\nयुञ्जानः प्रथमं मनस्तत्वाय सविता धियः।\nअग्नेर्ज्योतिर्निचाय्य पृथिव्या अध्याभरत्॥",
-   "transliteration": "dvitīyo 'dhyāyaḥ\nyuñjānaḥ prathamaṃ manas tatvāya savitā dhiyaḥ\nagner jyotir nicāyya pṛthivyā adhy ābharat",
+   "sanskrit": "युञ्जानः प्रथमं मनस्तत्वाय सविता धियः।\nअग्नेर्ज्योतिर्निचाय्य पृथिव्या अध्याभरत्॥",
+   "transliteration": "yuñjānaḥ prathamaṃ manas tatvāya savitā dhiyaḥ\nagner jyotir nicāyya pṛthivyā adhy ābharat",
    "translation": {}
   },
   {
@@ -278,8 +278,8 @@
    "reference": "Chapter 2, Verse 2",
    "sort_key": 2002,
    "speaker": null,
-   "sanskrit": "युक्तेन मनसा वयं देवस्य सवितुः सवे।\nसुवर्गेयाय शक्त्या %॥",
-   "transliteration": "yuktena manasā vayaṃ devasya savituḥ save\nsuvargeyāya śaktyā %",
+   "sanskrit": "युक्तेन मनसा वयं देवस्य सवितुः सवे।\nसुवर्गेयाय शक्त्या॥",
+   "transliteration": "yuktena manasā vayaṃ devasya savituḥ save\nsuvargeyāya śaktyā",
    "translation": {}
   },
   {
@@ -486,8 +486,8 @@
    "reference": "Chapter 3, Verse 1",
    "sort_key": 3001,
    "speaker": null,
-   "sanskrit": "तृतीयोऽध्यायः।\nय एको जालवानीशत ईशनीभिः सर्वांल्लोकानीशत ईशनीभिः।\nय एवैक उद्भवे संभवे च य एतद्विदुरमृतास्ते भवन्ति॥",
-   "transliteration": "tṛtīyo 'dhyāyaḥ\nya eko jālavān īśata īśanībhiḥ sarvāṃl lokān īśata īśanībhiḥ\nya evaika udbhave saṃbhave ca ya etad vidur amṛtās te bhavanti",
+   "sanskrit": "य एको जालवानीशत ईशनीभिः सर्वांल्लोकानीशत ईशनीभिः।\nय एवैक उद्भवे संभवे च य एतद्विदुरमृतास्ते भवन्ति॥",
+   "transliteration": "ya eko jālavān īśata īśanībhiḥ sarvāṃl lokān īśata īśanībhiḥ\nya evaika udbhave saṃbhave ca ya etad vidur amṛtās te bhavanti",
    "translation": {}
   },
   {
@@ -759,8 +759,8 @@
    "reference": "Chapter 4, Verse 1",
    "sort_key": 4001,
    "speaker": null,
-   "sanskrit": "चतुर्थोऽध्यायः।\nय एकोऽवर्णो बहुधा शक्तियोगाद्वर्णाननेकान्निहितार्थो दधाति।\nवि चैति चान्ते विश्वमादौ स देवः स नो बुद्ध्या शुभया संयुनक्तु॥",
-   "transliteration": "caturtho 'dhyāyaḥ\nya eko 'varṇo bahudhā śaktiyogād varṇān anekān nihitārtho dadhāti\nvi caiti cānte viśvam ādau sa devaḥ sa no buddhyā śubhayā saṃyunaktu",
+   "sanskrit": "य एकोऽवर्णो बहुधा शक्तियोगाद्वर्णाननेकान्निहितार्थो दधाति।\nवि चैति चान्ते विश्वमादौ स देवः स नो बुद्ध्या शुभया संयुनक्तु॥",
+   "transliteration": "ya eko 'varṇo bahudhā śaktiyogād varṇān anekān nihitārtho dadhāti\nvi caiti cānte viśvam ādau sa devaḥ sa no buddhyā śubhayā saṃyunaktu",
    "translation": {}
   },
   {
@@ -1045,8 +1045,8 @@
    "reference": "Chapter 5, Verse 1",
    "sort_key": 5001,
    "speaker": null,
-   "sanskrit": "पञ्चमोऽध्यायः।\nद्वे अक्षरे ब्रह्मपरे त्वनन्ते विद्याविद्ये निहिते यत्र गूढे।\nक्षरं त्वविद्या ह्यमृतं तु विद्या विद्याविद्ये ईशते यस्तु सोऽन्यः॥",
-   "transliteration": "pañcamo 'dhyāyaḥ\ndve akṣare brahmapare tv anante vidyāvidye nihite yatra gūḍhe\nkṣaraṃ tv avidyā hy amṛtaṃ tu vidyā vidyāvidye īśate yas tu so 'nyaḥ",
+   "sanskrit": "द्वे अक्षरे ब्रह्मपरे त्वनन्ते विद्याविद्ये निहिते यत्र गूढे।\nक्षरं त्वविद्या ह्यमृतं तु विद्या विद्याविद्ये ईशते यस्तु सोऽन्यः॥",
+   "transliteration": "dve akṣare brahmapare tv anante vidyāvidye nihite yatra gūḍhe\nkṣaraṃ tv avidyā hy amṛtaṃ tu vidyā vidyāvidye īśate yas tu so 'nyaḥ",
    "translation": {}
   },
   {
@@ -1227,8 +1227,8 @@
    "reference": "Chapter 6, Verse 1",
    "sort_key": 6001,
    "speaker": null,
-   "sanskrit": "षष्ठोऽध्यायः।\nस्वभावमेके कवयो वदन्ति कालं तथान्ये परिमुह्यमानाः।\nदेवस्यैष महिमा तु लोके येनेदं भ्राम्यते ब्रह्मचक्रम्॥",
-   "transliteration": "ṣaṣṭho 'dhyāyaḥ\nsvabhāvam eke kavayo vadanti kālaṃ tathānye parimuhyamānāḥ\ndevasyaiṣa mahimā tu loke yenedaṃ bhrāmyate brahmacakram",
+   "sanskrit": "स्वभावमेके कवयो वदन्ति कालं तथान्ये परिमुह्यमानाः।\nदेवस्यैष महिमा तु लोके येनेदं भ्राम्यते ब्रह्मचक्रम्॥",
+   "transliteration": "svabhāvam eke kavayo vadanti kālaṃ tathānye parimuhyamānāḥ\ndevasyaiṣa mahimā tu loke yenedaṃ bhrāmyate brahmacakram",
    "translation": {}
   },
   {

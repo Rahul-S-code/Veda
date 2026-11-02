@@ -1,4 +1,2136 @@
 {
+ "gita-1-1": {
+  "translation": "Dhritarashtra said: On the sacred field of Kurukshetra, my sons and the sons of Pandu have gathered, eager to fight. What did they do, Sanjaya?",
+  "meaning": "The blind king Dhritarashtra asks what is happening on the battlefield where his sons face their cousins.",
+  "explanation": "The Gita opens with a question from the blind king Dhritarashtra to his minister Sanjaya, who has been granted divine sight to report the war. The king calls the battlefield a 'field of dharma', yet his words 'my sons' and 'the sons of Pandu' already show the divided loyalty that led to this war.",
+  "keywords": [
+   {
+    "word": "dharmakṣetra",
+    "meaning": "field of dharma, sacred ground"
+   },
+   {
+    "word": "kurukṣetra",
+    "meaning": "the field of the Kurus"
+   },
+   {
+    "word": "yuyutsu",
+    "meaning": "eager to fight"
+   },
+   {
+    "word": "māmaka",
+    "meaning": "my own people"
+   }
+  ]
+ },
+ "gita-1-2": {
+  "translation": "Sanjaya said: Seeing the Pandava army drawn up for battle, King Duryodhana went to his teacher and spoke these words.",
+  "meaning": "Duryodhana sees the opposing army ready for battle and goes to speak to his teacher Drona.",
+  "explanation": "Sanjaya begins his account. Duryodhana, Dhritarashtra's eldest son and the cause of the war, looks at the Pandava army in formation and goes straight to Drona, the teacher of both families. His rush to his teacher hints at his anxiety.",
+  "keywords": [
+   {
+    "word": "vyūḍha",
+    "meaning": "arrayed in formation"
+   },
+   {
+    "word": "ācārya",
+    "meaning": "teacher"
+   },
+   {
+    "word": "upasaṃgamya",
+    "meaning": "approaching"
+   }
+  ]
+ },
+ "gita-1-3": {
+  "translation": "Teacher, look at this great army of the sons of Pandu, arranged by the son of Drupada, your own clever student.",
+  "meaning": "Duryodhana points out that the enemy army was organised by one of Drona's own students.",
+  "explanation": "Duryodhana's words carry a sting. The Pandava army is led by Dhrishtadyumna, son of Drupada, who was born to kill Drona, yet Drona taught him the art of war. By reminding Drona of this, Duryodhana both flatters and needles his teacher.",
+  "keywords": [
+   {
+    "word": "camū",
+    "meaning": "army"
+   },
+   {
+    "word": "drupadaputra",
+    "meaning": "son of Drupada, Dhrishtadyumna"
+   },
+   {
+    "word": "śiṣya",
+    "meaning": "student"
+   }
+  ]
+ },
+ "gita-1-4": {
+  "translation": "Here are heroes and mighty archers, equal in battle to Bhima and Arjuna: Yuyudhana, Virata, and the great chariot-warrior Drupada,",
+  "meaning": "Duryodhana begins listing the great warriors on the Pandava side.",
+  "explanation": "Duryodhana starts naming the leading fighters of the Pandava army, measuring them against Bhima and Arjuna, the two warriors he fears most. The list continues for the next two verses and shows how strong the opposition looks to him.",
+  "keywords": [
+   {
+    "word": "śūra",
+    "meaning": "hero"
+   },
+   {
+    "word": "maheṣvāsa",
+    "meaning": "great archer"
+   },
+   {
+    "word": "mahāratha",
+    "meaning": "great chariot-warrior"
+   }
+  ]
+ },
+ "gita-1-5": {
+  "translation": "Dhrishtaketu, Chekitana and the brave king of Kashi, Purujit, Kuntibhoja and Shaibya, the finest of men,",
+  "meaning": "The list of famous warriors on the Pandava side continues.",
+  "explanation": "Duryodhana keeps naming the kings and heroes who have joined the Pandavas. Each name was well known to listeners of the Mahabharata, so the list conveys the size and nobility of the alliance against him.",
+  "keywords": [
+   {
+    "word": "vīryavat",
+    "meaning": "valiant"
+   },
+   {
+    "word": "narapuṃgava",
+    "meaning": "bull among men, best of men"
+   },
+   {
+    "word": "kāśirāja",
+    "meaning": "king of Kashi"
+   }
+  ]
+ },
+ "gita-1-6": {
+  "translation": "the strong Yudhamanyu and the brave Uttamaujas, the son of Subhadra and the sons of Draupadi, all of them great chariot-warriors.",
+  "meaning": "Duryodhana finishes listing the Pandava heroes, including Abhimanyu and Draupadi's sons.",
+  "explanation": "The list ends with younger warriors: Abhimanyu, son of Arjuna and Subhadra, and the five sons of Draupadi. Calling them all 'great chariot-warriors' shows that Duryodhana sees no weak point in the enemy line.",
+  "keywords": [
+   {
+    "word": "vikrānta",
+    "meaning": "strong, bold"
+   },
+   {
+    "word": "saubhadra",
+    "meaning": "son of Subhadra, Abhimanyu"
+   },
+   {
+    "word": "draupadeya",
+    "meaning": "sons of Draupadi"
+   }
+  ]
+ },
+ "gita-1-7": {
+  "translation": "Now hear, best of brahmins, about the outstanding leaders of my own army. I name them for your information.",
+  "meaning": "Duryodhana turns to describe the commanders on his own side.",
+  "explanation": "Having listed the enemy, Duryodhana now reassures himself by naming his own commanders. Addressing Drona as 'best of the twice-born' is respectful, but telling his teacher who his own generals are is unnecessary, another sign of nervous talk.",
+  "keywords": [
+   {
+    "word": "viśiṣṭa",
+    "meaning": "distinguished"
+   },
+   {
+    "word": "dvijottama",
+    "meaning": "best of the twice-born, a brahmin"
+   },
+   {
+    "word": "nāyaka",
+    "meaning": "leader, commander"
+   }
+  ]
+ },
+ "gita-1-8": {
+  "translation": "You yourself, Bhishma, Karna and Kripa, victorious in battle; Ashvatthama, Vikarna and the son of Somadatta too.",
+  "meaning": "Duryodhana names the great warriors on his side, starting with Drona himself.",
+  "explanation": "These are the pillars of the Kaurava army: Drona, the grandsire Bhishma, Karna, Kripa, Drona's son Ashvatthama, Duryodhana's brother Vikarna, and Bhurishravas, son of Somadatta. Duryodhana puts Drona first, perhaps to win his loyalty.",
+  "keywords": [
+   {
+    "word": "bhavān",
+    "meaning": "you (respectful)"
+   },
+   {
+    "word": "samitiṃjaya",
+    "meaning": "victorious in battle"
+   },
+   {
+    "word": "saumadatti",
+    "meaning": "son of Somadatta"
+   }
+  ]
+ },
+ "gita-1-9": {
+  "translation": "And many other heroes are ready to give their lives for my sake, armed with many kinds of weapons and all skilled in war.",
+  "meaning": "Duryodhana boasts that many brave warriors are willing to die for him.",
+  "explanation": "Duryodhana claims that countless heroes are ready to lay down their lives for him. The phrase 'for my sake' reveals how he sees the war: as his own cause, served by others' sacrifice.",
+  "keywords": [
+   {
+    "word": "madartha",
+    "meaning": "for my sake"
+   },
+   {
+    "word": "tyaktajīvita",
+    "meaning": "ready to give up life"
+   },
+   {
+    "word": "yuddhaviśārada",
+    "meaning": "expert in war"
+   }
+  ]
+ },
+ "gita-1-10": {
+  "translation": "Our army, protected by Bhishma, is not enough, while their army, protected by Bhima, is enough.",
+  "meaning": "Duryodhana worries aloud that his army, though led by Bhishma, may not match the Pandavas'.",
+  "explanation": "This verse is famously read two ways: 'our army is unlimited, theirs is limited', or 'ours is insufficient, theirs sufficient'. Either way it shows Duryodhana comparing Bhishma, his commander, with Bhima, and feeling uneasy, since Bhishma loves both sides.",
+  "keywords": [
+   {
+    "word": "aparyāpta",
+    "meaning": "insufficient (or unlimited)"
+   },
+   {
+    "word": "paryāpta",
+    "meaning": "sufficient (or limited)"
+   },
+   {
+    "word": "abhirakṣita",
+    "meaning": "protected, led"
+   }
+  ]
+ },
+ "gita-1-11": {
+  "translation": "So all of you, standing firm in your assigned positions at every point of entry, must protect Bhishma above all.",
+  "meaning": "Duryodhana orders his generals to guard Bhishma, their commander.",
+  "explanation": "Duryodhana's strategy depends on Bhishma, so he orders every division to hold its post and shield the old commander. It is a sensible order, but it also shows that his confidence rests on one man.",
+  "keywords": [
+   {
+    "word": "ayana",
+    "meaning": "position, point of entry"
+   },
+   {
+    "word": "yathābhāgam",
+    "meaning": "each in his assigned place"
+   },
+   {
+    "word": "abhirakṣantu",
+    "meaning": "let them protect"
+   }
+  ]
+ },
+ "gita-1-12": {
+  "translation": "Then, to cheer Duryodhana, the mighty Bhishma, eldest of the Kurus and grandsire, roared like a lion and blew his conch loudly.",
+  "meaning": "Bhishma blows his conch with a lion's roar to lift Duryodhana's spirits.",
+  "explanation": "Bhishma, the respected grandsire of both families, hears Duryodhana's anxiety and answers not with words but with a war-cry. His conch signals that the battle is about to begin and that he will fight with full strength for the side he has sworn to serve.",
+  "keywords": [
+   {
+    "word": "pitāmaha",
+    "meaning": "grandsire"
+   },
+   {
+    "word": "siṃhanāda",
+    "meaning": "lion's roar"
+   },
+   {
+    "word": "śaṅkha",
+    "meaning": "conch shell"
+   }
+  ]
+ },
+ "gita-1-13": {
+  "translation": "Then conches, kettledrums, tabors, drums and horns sounded all at once, and the noise was tremendous.",
+  "meaning": "The whole Kaurava army joins in with conches, drums and horns, making a huge noise.",
+  "explanation": "Following Bhishma's signal, the entire army erupts with sound. The list of instruments brings the scene to life: this is the roar of a vast army working itself up for battle.",
+  "keywords": [
+   {
+    "word": "bherī",
+    "meaning": "kettledrum"
+   },
+   {
+    "word": "gomukha",
+    "meaning": "cow-horn trumpet"
+   },
+   {
+    "word": "tumula",
+    "meaning": "tumultuous"
+   }
+  ]
+ },
+ "gita-1-14": {
+  "translation": "Then Krishna and Arjuna, standing in their great chariot yoked to white horses, blew their divine conches.",
+  "meaning": "Krishna and Arjuna answer from their chariot by blowing their heavenly conches.",
+  "explanation": "The Pandava side replies. Krishna, called Madhava here, and Arjuna stand together in one chariot drawn by white horses, a sign of purity. Their conches are called 'divine', setting the tone for the spiritual teaching to come from this very chariot.",
+  "keywords": [
+   {
+    "word": "syandana",
+    "meaning": "chariot"
+   },
+   {
+    "word": "mādhava",
+    "meaning": "Krishna"
+   },
+   {
+    "word": "divya",
+    "meaning": "divine"
+   }
+  ]
+ },
+ "gita-1-15": {
+  "translation": "Krishna blew Panchajanya, Arjuna blew Devadatta, and Bhima of terrible deeds blew his great conch Paundra.",
+  "meaning": "Each Pandava hero blows his own famous conch, each with its own name.",
+  "explanation": "Like famous swords in other epics, the great conches have names. Krishna (Hrishikesha, 'lord of the senses') blows Panchajanya, Arjuna (Dhananjaya, 'winner of wealth') blows Devadatta, and Bhima (Vrikodara, 'wolf-bellied') blows Paundra.",
+  "keywords": [
+   {
+    "word": "hṛṣīkeśa",
+    "meaning": "lord of the senses, Krishna"
+   },
+   {
+    "word": "dhanaṃjaya",
+    "meaning": "winner of wealth, Arjuna"
+   },
+   {
+    "word": "vṛkodara",
+    "meaning": "wolf-bellied, Bhima"
+   }
+  ]
+ },
+ "gita-1-16": {
+  "translation": "King Yudhishthira, son of Kunti, blew Anantavijaya; Nakula and Sahadeva blew Sughosha and Manipushpaka.",
+  "meaning": "The other three Pandava brothers blow their conches too.",
+  "explanation": "The eldest brother, King Yudhishthira, blows 'Endless Victory', and the twins Nakula and Sahadeva blow 'Sweet-sounding' and 'Jewel-flowered'. All five Pandavas have now answered the Kauravas' challenge.",
+  "keywords": [
+   {
+    "word": "anantavijaya",
+    "meaning": "endless victory"
+   },
+   {
+    "word": "kuntīputra",
+    "meaning": "son of Kunti"
+   },
+   {
+    "word": "rājan",
+    "meaning": "king"
+   }
+  ]
+ },
+ "gita-1-17": {
+  "translation": "And the king of Kashi, a great archer, the mighty chariot-warrior Shikhandi, Dhrishtadyumna, Virata and the unconquered Satyaki,",
+  "meaning": "The allies of the Pandavas also sound their conches.",
+  "explanation": "The roll-call of the Pandava allies continues: the king of Kashi, Shikhandi (who would later play a key part in Bhishma's fall), the commander Dhrishtadyumna, King Virata, and Satyaki, Krishna's loyal kinsman.",
+  "keywords": [
+   {
+    "word": "parameṣvāsa",
+    "meaning": "supreme archer"
+   },
+   {
+    "word": "aparājita",
+    "meaning": "unconquered"
+   },
+   {
+    "word": "mahāratha",
+    "meaning": "great chariot-warrior"
+   }
+  ]
+ },
+ "gita-1-18": {
+  "translation": "Drupada, the sons of Draupadi and the mighty-armed son of Subhadra, O lord of the earth, each blew his own conch on every side.",
+  "meaning": "All the Pandava warriors blow their conches, each in turn, from every side.",
+  "explanation": "Sanjaya addresses Dhritarashtra as 'lord of the earth' while describing the full answer of the Pandava army. Every leader, young and old, sounds his conch, filling the field with their defiance.",
+  "keywords": [
+   {
+    "word": "pṛthivīpati",
+    "meaning": "lord of the earth"
+   },
+   {
+    "word": "mahābāhu",
+    "meaning": "mighty-armed"
+   },
+   {
+    "word": "pṛthak pṛthak",
+    "meaning": "each separately"
+   }
+  ]
+ },
+ "gita-1-19": {
+  "translation": "That tremendous sound, echoing through earth and sky, tore through the hearts of Dhritarashtra's sons.",
+  "meaning": "The Pandavas' roar shakes the hearts of the Kaurava princes.",
+  "explanation": "Sanjaya notes a striking detail: the Kauravas' noise is only described as loud, but the Pandavas' sound pierces the hearts of Dhritarashtra's sons. It hints at a guilty conscience and foreshadows the outcome of the war.",
+  "keywords": [
+   {
+    "word": "ghoṣa",
+    "meaning": "sound, uproar"
+   },
+   {
+    "word": "hṛdaya",
+    "meaning": "heart"
+   },
+   {
+    "word": "vyadārayat",
+    "meaning": "tore apart"
+   }
+  ]
+ },
+ "gita-1-20": {
+  "translation": "Then, seeing Dhritarashtra's sons lined up and the clash of weapons about to begin, Arjuna, whose banner bears the monkey, raised his bow,",
+  "meaning": "As the fighting is about to start, Arjuna lifts his bow.",
+  "explanation": "The moment of battle arrives. Arjuna's banner carries Hanuman, the monkey hero of the Ramayana, a symbol of strength and devotion. Bow raised, Arjuna is ready to fight, and then he pauses to speak to Krishna.",
+  "keywords": [
+   {
+    "word": "kapidhvaja",
+    "meaning": "one whose banner bears a monkey, Arjuna"
+   },
+   {
+    "word": "śastrasaṃpāta",
+    "meaning": "clash of weapons"
+   },
+   {
+    "word": "dhanus",
+    "meaning": "bow"
+   }
+  ]
+ },
+ "gita-1-21": {
+  "translation": "and said to Krishna, O king: Achyuta, place my chariot between the two armies,",
+  "meaning": "Arjuna asks Krishna to drive the chariot into the space between the two armies.",
+  "explanation": "Arjuna gives his charioteer an order, and Krishna, the Lord of the universe, humbly obeys. Arjuna calls him Achyuta, 'the unfailing one'. Driving into the no-man's land between the armies sets up the scene where Arjuna's crisis begins.",
+  "keywords": [
+   {
+    "word": "ratha",
+    "meaning": "chariot"
+   },
+   {
+    "word": "acyuta",
+    "meaning": "the unfailing one, Krishna"
+   },
+   {
+    "word": "madhya",
+    "meaning": "middle"
+   }
+  ]
+ },
+ "gita-1-22": {
+  "translation": "so that I may look at these men standing here eager for battle, and see whom I must fight in this war.",
+  "meaning": "Arjuna wants to see clearly who he will be fighting.",
+  "explanation": "Arjuna's reason sounds practical: a warrior surveys his opponents. But by asking to see their faces, he unknowingly sets himself up to recognise them as family, which will shatter his resolve.",
+  "keywords": [
+   {
+    "word": "nirīkṣe",
+    "meaning": "I may observe"
+   },
+   {
+    "word": "yoddhukāma",
+    "meaning": "eager to fight"
+   },
+   {
+    "word": "raṇasamudyama",
+    "meaning": "the outbreak of war"
+   }
+  ]
+ },
+ "gita-1-23": {
+  "translation": "I want to see those who have gathered here to fight, wishing to please the evil-minded son of Dhritarashtra in battle.",
+  "meaning": "Arjuna wants to look at those who have come to fight for the wicked Duryodhana.",
+  "explanation": "Arjuna still speaks as a determined warrior, calling Duryodhana 'evil-minded'. He sees the opposing fighters as people choosing to serve wrongdoing. This certainty is about to collapse when he sees who they actually are.",
+  "keywords": [
+   {
+    "word": "durbuddhi",
+    "meaning": "evil-minded"
+   },
+   {
+    "word": "priyacikīrṣu",
+    "meaning": "wishing to please"
+   },
+   {
+    "word": "samāgata",
+    "meaning": "assembled"
+   }
+  ]
+ },
+ "gita-1-24": {
+  "translation": "Sanjaya said: O descendant of Bharata, when Arjuna spoke this way, Krishna drove that finest chariot into the middle, between the two armies,",
+  "meaning": "Krishna drives the chariot to the middle of the battlefield as Arjuna asked.",
+  "explanation": "Sanjaya resumes the story. Krishna (Hrishikesha) does exactly what Arjuna (Gudakesha, 'conqueror of sleep') asks. The chariot now stands between two armies, the setting for the whole conversation that follows.",
+  "keywords": [
+   {
+    "word": "guḍākeśa",
+    "meaning": "conqueror of sleep, Arjuna"
+   },
+   {
+    "word": "rathottama",
+    "meaning": "finest chariot"
+   },
+   {
+    "word": "sthāpayitvā",
+    "meaning": "having placed"
+   }
+  ]
+ },
+ "gita-1-25": {
+  "translation": "facing Bhishma, Drona and all the rulers of the earth, and said: Partha, look at all these Kurus gathered here.",
+  "meaning": "Krishna stops the chariot right in front of Bhishma and Drona and tells Arjuna to look.",
+  "explanation": "Krishna places the chariot exactly before Bhishma and Drona, the two people Arjuna loves and respects most on the other side. His simple words 'look at these Kurus' remind Arjuna that they are all one family, which triggers Arjuna's grief.",
+  "keywords": [
+   {
+    "word": "pramukhataḥ",
+    "meaning": "in front of"
+   },
+   {
+    "word": "mahīkṣit",
+    "meaning": "ruler of the earth"
+   },
+   {
+    "word": "kuru",
+    "meaning": "the Kuru family"
+   }
+  ]
+ },
+ "gita-1-26": {
+  "translation": "There Arjuna saw standing fathers and grandfathers, teachers, uncles, brothers, sons, grandsons and friends,",
+  "meaning": "Arjuna looks and sees his own relatives, teachers and friends ready to fight.",
+  "explanation": "Arjuna's eyes move across the enemy army and he sees not enemies but family: elders, teachers, cousins, the children of his relatives, and friends. The list makes the reader feel the weight of what he is seeing.",
+  "keywords": [
+   {
+    "word": "pitṛ",
+    "meaning": "fathers, elders"
+   },
+   {
+    "word": "ācārya",
+    "meaning": "teachers"
+   },
+   {
+    "word": "sakhi",
+    "meaning": "friends"
+   }
+  ]
+ },
+ "gita-1-27": {
+  "translation": "fathers-in-law and dear friends in both armies. Seeing all these relatives standing there, Arjuna, son of Kunti,",
+  "meaning": "Seeing loved ones on both sides of the battlefield, Arjuna is deeply moved.",
+  "explanation": "Arjuna realises that people he loves stand in both armies. Whoever wins, he will lose family. The sentence continues into the next verse, where his feelings overwhelm him.",
+  "keywords": [
+   {
+    "word": "śvaśura",
+    "meaning": "father-in-law"
+   },
+   {
+    "word": "suhṛd",
+    "meaning": "well-wisher, friend"
+   },
+   {
+    "word": "bandhu",
+    "meaning": "relative"
+   }
+  ]
+ },
+ "gita-1-28": {
+  "translation": "was overcome with deep pity and, sinking into sorrow, said: Krishna, seeing my own people standing here eager to fight,",
+  "meaning": "Arjuna is overwhelmed with compassion and sorrow at the thought of fighting his family.",
+  "explanation": "Arjuna is described as 'filled with supreme pity'. His compassion is genuine, but the Gita will show that it is mixed with confusion and attachment. Here begins Arjuna's despair, which gives chapter 1 its name, 'The Yoga of Arjuna's Grief'.",
+  "keywords": [
+   {
+    "word": "kṛpā",
+    "meaning": "pity, compassion"
+   },
+   {
+    "word": "viṣīdan",
+    "meaning": "despairing"
+   },
+   {
+    "word": "svajana",
+    "meaning": "one's own people"
+   }
+  ]
+ },
+ "gita-1-29": {
+  "translation": "my limbs give way, my mouth is dry, my body trembles and my hair stands on end.",
+  "meaning": "Arjuna describes how his body is reacting to his grief and fear.",
+  "explanation": "Arjuna's distress becomes physical: weak limbs, dry mouth, trembling, goosebumps. The Gita takes emotional crisis seriously and shows how grief affects the whole person, body and mind.",
+  "keywords": [
+   {
+    "word": "gātra",
+    "meaning": "limbs"
+   },
+   {
+    "word": "vepathu",
+    "meaning": "trembling"
+   },
+   {
+    "word": "romaharṣa",
+    "meaning": "hair standing on end"
+   }
+  ]
+ },
+ "gita-1-30": {
+  "translation": "My bow Gandiva slips from my hand, my skin is burning, I cannot stand steady, and my mind is spinning.",
+  "meaning": "Arjuna can no longer hold his bow or think clearly.",
+  "explanation": "Gandiva is Arjuna's legendary bow, a gift from the gods. That it slips from his hand shows how completely his warrior spirit has collapsed. His spinning mind shows he can no longer think clearly about what to do.",
+  "keywords": [
+   {
+    "word": "gāṇḍīva",
+    "meaning": "Arjuna's bow"
+   },
+   {
+    "word": "sraṃsate",
+    "meaning": "slips"
+   },
+   {
+    "word": "bhramati",
+    "meaning": "spins, whirls"
+   }
+  ]
+ },
+ "gita-1-31": {
+  "translation": "I see bad omens, Krishna, and I see no good in killing my own people in battle.",
+  "meaning": "Arjuna sees only bad signs and no benefit in killing his relatives.",
+  "explanation": "Arjuna begins to give reasons for not fighting. First he mentions inauspicious signs, then he says plainly that he sees no good coming from killing his kinsmen. He calls Krishna Keshava, 'the one with beautiful hair'.",
+  "keywords": [
+   {
+    "word": "nimitta",
+    "meaning": "omen, sign"
+   },
+   {
+    "word": "viparīta",
+    "meaning": "adverse"
+   },
+   {
+    "word": "śreyas",
+    "meaning": "good, benefit"
+   }
+  ]
+ },
+ "gita-1-32": {
+  "translation": "I do not want victory, Krishna, nor kingdom, nor pleasures. What use is a kingdom to us, Govinda, or enjoyment, or even life?",
+  "meaning": "Arjuna says he wants nothing that would come from such a victory, not even life itself.",
+  "explanation": "Arjuna rejects the very goals of the war. Kingdom and comfort mean nothing if they cost the lives of those he loves. His words sound noble, but Krishna will later show that Arjuna's despair is clouding his sense of duty.",
+  "keywords": [
+   {
+    "word": "vijaya",
+    "meaning": "victory"
+   },
+   {
+    "word": "rājya",
+    "meaning": "kingdom"
+   },
+   {
+    "word": "bhoga",
+    "meaning": "enjoyment"
+   }
+  ]
+ },
+ "gita-1-33": {
+  "translation": "Those for whose sake we want kingdom, enjoyment and pleasure stand here in battle, ready to give up their lives and wealth:",
+  "meaning": "Arjuna points out that the people he would enjoy a kingdom with are the very ones he would have to kill.",
+  "explanation": "Arjuna sees the bitter irony of the war. We want success so we can share it with family and friends, yet here those same people stand, ready to die. Victory would leave him with no one to share it with.",
+  "keywords": [
+   {
+    "word": "artha",
+    "meaning": "sake, purpose"
+   },
+   {
+    "word": "prāṇa",
+    "meaning": "life-breath, life"
+   },
+   {
+    "word": "dhana",
+    "meaning": "wealth"
+   }
+  ]
+ },
+ "gita-1-34": {
+  "translation": "teachers, fathers, sons and grandfathers, uncles, fathers-in-law, grandsons, brothers-in-law and other relatives.",
+  "meaning": "Arjuna lists again all the family members standing against him.",
+  "explanation": "Arjuna repeats the list of relatives, as people in grief often do. Every role he names, from teacher to grandson, is a relationship he would have to destroy.",
+  "keywords": [
+   {
+    "word": "mātula",
+    "meaning": "maternal uncle"
+   },
+   {
+    "word": "syāla",
+    "meaning": "brother-in-law"
+   },
+   {
+    "word": "saṃbandhin",
+    "meaning": "relative"
+   }
+  ]
+ },
+ "gita-1-35": {
+  "translation": "I do not wish to kill them, Madhusudana, even if they kill me, not even for the rule of the three worlds, let alone for this earth.",
+  "meaning": "Arjuna would rather be killed than kill his family, even for the whole universe.",
+  "explanation": "Arjuna declares that no reward, not even rule over heaven, earth and the underworld, could justify killing his kin. Calling Krishna Madhusudana, 'slayer of the demon Madhu', there is a quiet irony: Krishna kills demons, but Arjuna's opponents are family.",
+  "keywords": [
+   {
+    "word": "hantum",
+    "meaning": "to kill"
+   },
+   {
+    "word": "trailokya",
+    "meaning": "the three worlds"
+   },
+   {
+    "word": "madhusūdana",
+    "meaning": "slayer of Madhu, Krishna"
+   }
+  ]
+ },
+ "gita-1-36": {
+  "translation": "What joy could we have, Janardana, from killing the sons of Dhritarashtra? Only sin would come to us from killing these aggressors.",
+  "meaning": "Arjuna argues that killing his cousins, even though they are wrongdoers, would bring only sin.",
+  "explanation": "Arjuna admits the Kauravas are ātatāyins, aggressors who by law may be killed in self-defence. Yet he argues that killing family would still bring sin. His reasoning mixes moral concern with personal attachment.",
+  "keywords": [
+   {
+    "word": "prīti",
+    "meaning": "joy"
+   },
+   {
+    "word": "pāpa",
+    "meaning": "sin"
+   },
+   {
+    "word": "ātatāyin",
+    "meaning": "aggressor, wrongdoer"
+   }
+  ]
+ },
+ "gita-1-37": {
+  "translation": "So we should not kill the sons of Dhritarashtra, our own relatives. How could we be happy after killing our own people, Madhava?",
+  "meaning": "Arjuna concludes that they should not fight, because no happiness could come from killing family.",
+  "explanation": "Arjuna reaches his conclusion: he should not fight. His question 'how could we be happy?' shows that he is still measuring right and wrong by personal happiness, which Krishna will challenge in the chapters ahead.",
+  "keywords": [
+   {
+    "word": "arha",
+    "meaning": "right, proper"
+   },
+   {
+    "word": "sukhin",
+    "meaning": "happy"
+   },
+   {
+    "word": "svajana",
+    "meaning": "one's own people"
+   }
+  ]
+ },
+ "gita-1-38": {
+  "translation": "Even if these men, their minds clouded by greed, see no wrong in destroying a family and no sin in betraying friends,",
+  "meaning": "Arjuna says that greed has blinded the Kauravas to the evil of what they are doing.",
+  "explanation": "Arjuna contrasts himself with his opponents. Greed has clouded their judgement, so they see nothing wrong with destroying a family or betraying friends. The thought continues in the next verse.",
+  "keywords": [
+   {
+    "word": "lobha",
+    "meaning": "greed"
+   },
+   {
+    "word": "kulakṣaya",
+    "meaning": "destruction of a family"
+   },
+   {
+    "word": "mitradroha",
+    "meaning": "betrayal of friends"
+   }
+  ]
+ },
+ "gita-1-39": {
+  "translation": "why should we, who clearly see the evil of destroying a family, not know to turn away from this sin, Janardana?",
+  "meaning": "Arjuna asks why they, who understand the harm, should not step back from this sin.",
+  "explanation": "Arjuna argues that knowledge brings responsibility: the Kauravas may be blind, but he is not. Since he sees the harm clearly, he believes he must refuse to fight. It is a sincere argument, but built on a partial view of the situation.",
+  "keywords": [
+   {
+    "word": "jñeya",
+    "meaning": "to be known"
+   },
+   {
+    "word": "nivartitum",
+    "meaning": "to turn away"
+   },
+   {
+    "word": "prapaśyat",
+    "meaning": "seeing clearly"
+   }
+  ]
+ },
+ "gita-1-40": {
+  "translation": "When a family is destroyed, its ancient traditions perish, and when tradition is lost, lawlessness overtakes the whole family.",
+  "meaning": "Arjuna fears that war will destroy families and their traditions, leading to disorder.",
+  "explanation": "Arjuna widens his argument from personal grief to social consequences. Families carry dharma, the customs and values handed down over generations. If the men who uphold them die, he fears those values will be lost and chaos will follow.",
+  "keywords": [
+   {
+    "word": "kuladharma",
+    "meaning": "family traditions"
+   },
+   {
+    "word": "sanātana",
+    "meaning": "ancient, eternal"
+   },
+   {
+    "word": "adharma",
+    "meaning": "lawlessness, wrongdoing"
+   }
+  ]
+ },
+ "gita-1-41": {
+  "translation": "When lawlessness takes over, Krishna, the women of the family are led astray, and when women are led astray, the social order becomes mixed and confused.",
+  "meaning": "Arjuna fears that the breakdown of family order will lead to confusion in society.",
+  "explanation": "In the ancient world, the loss of a generation of men left families without protection and threatened inherited social roles. Arjuna voices the worry of his time that this would bring 'varṇa-saṃkara', a mixing and confusion of the social order.",
+  "keywords": [
+   {
+    "word": "kulastrī",
+    "meaning": "women of the family"
+   },
+   {
+    "word": "praduṣyanti",
+    "meaning": "go astray"
+   },
+   {
+    "word": "varṇasaṃkara",
+    "meaning": "confusion of social order"
+   }
+  ]
+ },
+ "gita-1-42": {
+  "translation": "This confusion drags both the family and those who destroy it to hell, for their ancestors fall, deprived of the offerings of rice and water.",
+  "meaning": "Arjuna fears that destroying families will also harm the ancestors who depend on family rites.",
+  "explanation": "Ancient Indian tradition held that descendants sustain their ancestors with offerings of rice-balls (piṇḍa) and water. If the family line is broken, those rites stop. Arjuna sees the war harming not only the living but the dead.",
+  "keywords": [
+   {
+    "word": "naraka",
+    "meaning": "hell"
+   },
+   {
+    "word": "pitṛ",
+    "meaning": "ancestors"
+   },
+   {
+    "word": "piṇḍodaka",
+    "meaning": "offerings of rice and water"
+   }
+  ]
+ },
+ "gita-1-43": {
+  "translation": "Through these wrongs of the family-destroyers, which cause confusion in society, the age-old duties of community and family are wiped out.",
+  "meaning": "Arjuna says the war will erase long-standing family and community duties.",
+  "explanation": "Arjuna sums up his social argument: the destroyers of families bring about the loss of both community customs (jātidharma) and family customs (kuladharma), which he calls eternal. He is deeply concerned about continuity and order.",
+  "keywords": [
+   {
+    "word": "jātidharma",
+    "meaning": "duties of one's community"
+   },
+   {
+    "word": "utsādyante",
+    "meaning": "are destroyed"
+   },
+   {
+    "word": "śāśvata",
+    "meaning": "everlasting"
+   }
+  ]
+ },
+ "gita-1-44": {
+  "translation": "Janardana, we have heard that people whose family traditions are destroyed live forever in hell.",
+  "meaning": "Arjuna repeats what he has been taught: those who lose their family traditions suffer in hell.",
+  "explanation": "Arjuna appeals to what he has heard from tradition. His fear is real, but notice that his argument rests on hearsay and fear of consequences rather than understanding, which is what Krishna will offer him.",
+  "keywords": [
+   {
+    "word": "utsanna",
+    "meaning": "destroyed"
+   },
+   {
+    "word": "niyata",
+    "meaning": "certain, forever"
+   },
+   {
+    "word": "anuśuśruma",
+    "meaning": "we have heard"
+   }
+  ]
+ },
+ "gita-1-45": {
+  "translation": "Alas! We are set on committing a great sin, ready to kill our own people out of greed for the pleasures of a kingdom.",
+  "meaning": "Arjuna cries out in regret that they are about to commit a terrible sin out of greed.",
+  "explanation": "Arjuna now accuses himself and his brothers of the same greed he saw in the Kauravas. His cry of 'alas!' marks the depth of his anguish and shows how completely his confidence has collapsed.",
+  "keywords": [
+   {
+    "word": "aho bata",
+    "meaning": "alas"
+   },
+   {
+    "word": "mahat pāpa",
+    "meaning": "great sin"
+   },
+   {
+    "word": "rājyasukhalobha",
+    "meaning": "greed for royal pleasures"
+   }
+  ]
+ },
+ "gita-1-46": {
+  "translation": "It would be better for me if the sons of Dhritarashtra, weapons in hand, killed me in battle while I stood unarmed and did not resist.",
+  "meaning": "Arjuna says he would rather die unresisting than fight his family.",
+  "explanation": "Arjuna reaches the end of his despair: he would prefer to be killed without defending himself. For a warrior, this is a complete reversal of his nature and duty, and it is the crisis that the rest of the Gita answers.",
+  "keywords": [
+   {
+    "word": "apratīkāra",
+    "meaning": "unresisting"
+   },
+   {
+    "word": "aśastra",
+    "meaning": "unarmed"
+   },
+   {
+    "word": "kṣematara",
+    "meaning": "better, more beneficial"
+   }
+  ]
+ },
+ "gita-1-47": {
+  "translation": "Sanjaya said: Having spoken this way on the battlefield, Arjuna sank down onto the seat of his chariot, dropping his bow and arrows, his mind overwhelmed by sorrow.",
+  "meaning": "Arjuna puts down his weapons and sits down in his chariot, overcome by grief.",
+  "explanation": "Chapter 1 ends with a powerful image: the greatest archer of his age sits down in his chariot, his bow cast aside. Krishna has not yet said a word in reply. Arjuna's grief, which gives the chapter its name, sets the stage for Krishna's teaching in chapter 2.",
+  "keywords": [
+   {
+    "word": "saṃkhya",
+    "meaning": "battlefield"
+   },
+   {
+    "word": "rathopastha",
+    "meaning": "seat of the chariot"
+   },
+   {
+    "word": "śokasaṃvigna",
+    "meaning": "overwhelmed by grief"
+   }
+  ]
+ },
+ "gita-2-1": {
+  "translation": "Sanjaya said: To Arjuna, overcome with pity, his eyes full of tears and his heart sinking, Krishna spoke these words.",
+  "meaning": "Krishna turns to speak to the weeping, despairing Arjuna.",
+  "explanation": "Chapter 2 opens where chapter 1 ended: Arjuna sits in tears. Krishna, called Madhusudana here, now speaks for the first time. What follows is the beginning of the teaching of the Gita.",
+  "keywords": [
+   {
+    "word": "kṛpā",
+    "meaning": "pity"
+   },
+   {
+    "word": "aśrupūrṇa",
+    "meaning": "filled with tears"
+   },
+   {
+    "word": "viṣīdat",
+    "meaning": "despairing"
+   }
+  ]
+ },
+ "gita-2-2": {
+  "translation": "The Lord said: Where has this weakness come from at such a critical moment, Arjuna? It is not worthy of a noble person, it does not lead to heaven, and it brings dishonour.",
+  "meaning": "Krishna asks Arjuna why he has given in to weakness at the very moment he is needed.",
+  "explanation": "Krishna's first words are a challenge, not comfort. He calls Arjuna's despair unworthy of an ārya, a noble person, because it springs from confusion, not wisdom. Before teaching, Krishna shakes Arjuna awake.",
+  "keywords": [
+   {
+    "word": "kaśmala",
+    "meaning": "weakness, dejection"
+   },
+   {
+    "word": "anārya",
+    "meaning": "ignoble"
+   },
+   {
+    "word": "akīrtikara",
+    "meaning": "bringing dishonour"
+   }
+  ]
+ },
+ "gita-2-3": {
+  "translation": "Do not give in to unmanliness, Partha; it does not suit you. Shake off this petty weakness of heart and stand up, scorcher of foes!",
+  "meaning": "Krishna urges Arjuna to drop his weakness and stand up.",
+  "explanation": "Krishna calls Arjuna's state 'petty weakness of heart'. He addresses him as Parantapa, 'scorcher of foes', reminding him of who he really is. 'Stand up!' is one of the Gita's most famous calls to courage.",
+  "keywords": [
+   {
+    "word": "klaibya",
+    "meaning": "unmanliness, faint-heartedness"
+   },
+   {
+    "word": "hṛdayadaurbalya",
+    "meaning": "weakness of heart"
+   },
+   {
+    "word": "uttiṣṭha",
+    "meaning": "stand up"
+   }
+  ]
+ },
+ "gita-2-4": {
+  "translation": "Arjuna said: Krishna, how can I fight Bhishma and Drona with arrows in battle? They deserve my worship, destroyer of enemies.",
+  "meaning": "Arjuna asks how he can possibly shoot arrows at his revered elders Bhishma and Drona.",
+  "explanation": "Arjuna answers Krishna's challenge with his deepest problem. Bhishma raised him and Drona taught him archery. Fighting them feels like attacking people he should honour, and he cannot see past this.",
+  "keywords": [
+   {
+    "word": "saṃkhya",
+    "meaning": "battle"
+   },
+   {
+    "word": "iṣu",
+    "meaning": "arrow"
+   },
+   {
+    "word": "pūjārha",
+    "meaning": "worthy of worship"
+   }
+  ]
+ },
+ "gita-2-5": {
+  "translation": "It would be better to live in this world on begged food than to kill these great teachers. Even if they want wealth, killing them would mean enjoying pleasures stained with their blood.",
+  "meaning": "Arjuna says he would rather beg for food than kill his respected teachers.",
+  "explanation": "For a prince, begging was the deepest humiliation, yet Arjuna prefers it to killing his gurus. Any victory, he says, would be soaked in their blood. His grief is sincere and shows how much he values his elders.",
+  "keywords": [
+   {
+    "word": "bhaikṣya",
+    "meaning": "food got by begging"
+   },
+   {
+    "word": "guru",
+    "meaning": "teacher, elder"
+   },
+   {
+    "word": "rudhirapradigdha",
+    "meaning": "stained with blood"
+   }
+  ]
+ },
+ "gita-2-6": {
+  "translation": "We do not know which is better for us, that we win or that they win. The sons of Dhritarashtra stand before us, and if we killed them we would not even wish to live.",
+  "meaning": "Arjuna admits he no longer knows whether winning or losing would be better.",
+  "explanation": "Arjuna's confusion is now complete. Victory would cost the lives of those he cannot live without, defeat would mean injustice. When every choice seems wrong, he cannot decide, and this honest confusion opens him to Krishna's teaching.",
+  "keywords": [
+   {
+    "word": "garīyas",
+    "meaning": "better"
+   },
+   {
+    "word": "jayema",
+    "meaning": "we may conquer"
+   },
+   {
+    "word": "jijīviṣāmaḥ",
+    "meaning": "we wish to live"
+   }
+  ]
+ },
+ "gita-2-7": {
+  "translation": "My nature is overcome by weakness and pity, and my mind is confused about what is right. I ask you: tell me for certain what is best. I am your disciple. Teach me, for I have taken refuge in you.",
+  "meaning": "Arjuna admits he is lost and asks Krishna to teach him as his disciple.",
+  "explanation": "This is the turning point of the Gita. Arjuna stops arguing and becomes a student. He admits his confusion about dharma and surrenders to Krishna as his teacher. True learning begins when we admit we do not know.",
+  "keywords": [
+   {
+    "word": "dharmasaṃmūḍha",
+    "meaning": "confused about duty"
+   },
+   {
+    "word": "śiṣya",
+    "meaning": "disciple"
+   },
+   {
+    "word": "prapanna",
+    "meaning": "one who has taken refuge"
+   }
+  ]
+ },
+ "gita-2-8": {
+  "translation": "I cannot see what would remove this grief that is drying up my senses, even if I gained an unrivalled, prosperous kingdom on earth or even rule over the gods.",
+  "meaning": "Arjuna says that nothing, not even a heavenly kingdom, could take away his sorrow.",
+  "explanation": "Arjuna sees that his grief cannot be solved by worldly success. Even ruling over the gods would not help. This is why he needs a deeper kind of answer, which Krishna begins to give from verse 11.",
+  "keywords": [
+   {
+    "word": "śoka",
+    "meaning": "grief"
+   },
+   {
+    "word": "ucchoṣaṇa",
+    "meaning": "drying up"
+   },
+   {
+    "word": "surādhipatya",
+    "meaning": "rule over the gods"
+   }
+  ]
+ },
+ "gita-2-9": {
+  "translation": "Sanjaya said: Having spoken this way to Krishna, Arjuna, the conqueror of sleep and scorcher of foes, said to Govinda, 'I will not fight', and fell silent.",
+  "meaning": "Arjuna tells Krishna plainly that he will not fight, and then goes silent.",
+  "explanation": "Arjuna's 'I will not fight' is final, and his silence shows that he has nothing more to say. The scene is set for Krishna, who has listened patiently, to begin teaching.",
+  "keywords": [
+   {
+    "word": "na yotsye",
+    "meaning": "I will not fight"
+   },
+   {
+    "word": "tūṣṇīm",
+    "meaning": "silent"
+   },
+   {
+    "word": "govinda",
+    "meaning": "Krishna"
+   }
+  ]
+ },
+ "gita-2-10": {
+  "translation": "Then, O king, between the two armies, Krishna, as if smiling, spoke these words to the despairing Arjuna.",
+  "meaning": "Krishna smiles gently and begins to speak to the downcast Arjuna.",
+  "explanation": "The detail 'as if smiling' is beloved by readers. Krishna is not mocking Arjuna; he sees that the crisis, though painful, has a solution. His calm smile in the middle of two armies sets the tone of the whole teaching.",
+  "keywords": [
+   {
+    "word": "prahasan",
+    "meaning": "smiling"
+   },
+   {
+    "word": "viṣīdat",
+    "meaning": "despairing"
+   },
+   {
+    "word": "madhya",
+    "meaning": "middle"
+   }
+  ]
+ },
+ "gita-2-11": {
+  "translation": "The Lord said: You grieve for those who should not be grieved for, and yet you speak words of wisdom. The wise grieve neither for the dead nor for the living.",
+  "meaning": "Krishna tells Arjuna that he is grieving needlessly; the wise do not mourn for the living or the dead.",
+  "explanation": "Krishna's teaching begins here. He points out that Arjuna sounds wise but grieves without understanding. The wise know the deeper truth about life and death, which the following verses explain: the true Self never dies.",
+  "keywords": [
+   {
+    "word": "aśocya",
+    "meaning": "not to be grieved for"
+   },
+   {
+    "word": "paṇḍita",
+    "meaning": "the wise"
+   },
+   {
+    "word": "gatāsu",
+    "meaning": "the dead"
+   }
+  ]
+ },
+ "gita-2-12": {
+  "translation": "There was never a time when I did not exist, nor you, nor these kings, and none of us will ever cease to exist in the future.",
+  "meaning": "Krishna teaches that our true self has always existed and will never stop existing.",
+  "explanation": "This is the first great teaching of the Gita: the Self is eternal. The bodies of Arjuna, Krishna and the kings will die, but who they truly are has no beginning and no end. Arjuna's fear of killing rests on mistaking the body for the person.",
+  "keywords": [
+   {
+    "word": "āsam",
+    "meaning": "I was"
+   },
+   {
+    "word": "nṛpa",
+    "meaning": "kings"
+   },
+   {
+    "word": "na bhaviṣyāmaḥ",
+    "meaning": "we shall not be"
+   }
+  ]
+ },
+ "gita-2-13": {
+  "translation": "Just as the embodied soul passes through childhood, youth and old age in this body, so it passes into another body. The wise are not troubled by this.",
+  "meaning": "Death is like growing older: the soul simply moves on to a new body, so the wise do not fear it.",
+  "explanation": "Krishna gives a simple comparison. We do not think we die when childhood ends and youth begins; the same person continues. Death is just another change of the same kind, when the soul moves to a new body.",
+  "keywords": [
+   {
+    "word": "dehin",
+    "meaning": "the embodied one, the soul"
+   },
+   {
+    "word": "kaumāra",
+    "meaning": "childhood"
+   },
+   {
+    "word": "dhīra",
+    "meaning": "the wise, steady person"
+   }
+  ]
+ },
+ "gita-2-15": {
+  "translation": "Arjuna, best of men, the wise person who is not troubled by these, who stays the same in pleasure and pain, is fit for immortality.",
+  "meaning": "Someone who stays steady through both pleasure and pain is ready for eternal life.",
+  "explanation": "Following on from verse 14, Krishna says that the person who is not shaken by life's ups and downs is ready for amṛtatva, immortality or liberation. Steadiness in pleasure and pain is a central theme of the Gita.",
+  "keywords": [
+   {
+    "word": "vyathayanti",
+    "meaning": "trouble, disturb"
+   },
+   {
+    "word": "samaduḥkhasukha",
+    "meaning": "the same in pain and pleasure"
+   },
+   {
+    "word": "amṛtatva",
+    "meaning": "immortality"
+   }
+  ]
+ },
+ "gita-2-16": {
+  "translation": "The unreal never comes into being, and the real never ceases to be. Those who see the truth have understood both.",
+  "meaning": "What is truly real can never stop existing, and what is unreal never truly exists.",
+  "explanation": "This is one of the Gita's most important philosophical verses. Changing things like the body come and go, so they are not ultimately real. The Self is real, so it can never be destroyed. Wise people learn to tell the difference.",
+  "keywords": [
+   {
+    "word": "asat",
+    "meaning": "the unreal"
+   },
+   {
+    "word": "sat",
+    "meaning": "the real"
+   },
+   {
+    "word": "tattvadarśin",
+    "meaning": "seer of truth"
+   }
+  ]
+ },
+ "gita-2-17": {
+  "translation": "Know that what pervades all this is indestructible. No one can destroy that which is imperishable.",
+  "meaning": "The spirit that fills everything can never be destroyed by anyone.",
+  "explanation": "Krishna points Arjuna to the reality that pervades the whole universe. Since it is imperishable, nothing in battle or anywhere else can harm it. Arjuna's fear of destroying life is aimed at the wrong thing.",
+  "keywords": [
+   {
+    "word": "avināśin",
+    "meaning": "indestructible"
+   },
+   {
+    "word": "tata",
+    "meaning": "pervaded"
+   },
+   {
+    "word": "avyaya",
+    "meaning": "imperishable"
+   }
+  ]
+ },
+ "gita-2-18": {
+  "translation": "These bodies of the eternal, indestructible and immeasurable embodied soul are said to have an end. So fight, Arjuna.",
+  "meaning": "The body will end, but the soul inside it is eternal, so Arjuna should do his duty and fight.",
+  "explanation": "Krishna draws the first conclusion: bodies are temporary, the soul is eternal. Therefore Arjuna's grief about killing bodies does not justify abandoning his duty. 'So fight' is Krishna's call to act, given here and again later.",
+  "keywords": [
+   {
+    "word": "antavat",
+    "meaning": "having an end"
+   },
+   {
+    "word": "nitya",
+    "meaning": "eternal"
+   },
+   {
+    "word": "aprameya",
+    "meaning": "immeasurable"
+   }
+  ]
+ },
+ "gita-2-19": {
+  "translation": "Anyone who thinks the soul kills, or thinks it is killed, does not understand. It neither kills nor is killed.",
+  "meaning": "The true self can neither kill nor be killed.",
+  "explanation": "Krishna corrects how Arjuna sees himself and his opponents. Both the person who thinks 'I will kill' and the one who thinks 'I will be killed' are mistaken, because the Self is beyond all action and harm.",
+  "keywords": [
+   {
+    "word": "hantṛ",
+    "meaning": "killer"
+   },
+   {
+    "word": "hata",
+    "meaning": "killed"
+   },
+   {
+    "word": "vijānītaḥ",
+    "meaning": "they understand"
+   }
+  ]
+ },
+ "gita-2-21": {
+  "translation": "Partha, how can a person who knows the soul to be indestructible, eternal, unborn and unchanging kill anyone, or cause anyone to be killed?",
+  "meaning": "Someone who knows the soul is eternal knows they cannot truly kill anyone.",
+  "explanation": "Krishna asks Arjuna to think through what he has heard. If the Self is unborn and indestructible, the idea of 'killing' a person in the deepest sense makes no sense. This frees Arjuna from the fear behind his refusal.",
+  "keywords": [
+   {
+    "word": "aja",
+    "meaning": "unborn"
+   },
+   {
+    "word": "avyaya",
+    "meaning": "unchanging"
+   },
+   {
+    "word": "ghātayati",
+    "meaning": "causes to be killed"
+   }
+  ]
+ },
+ "gita-2-23": {
+  "translation": "Weapons cannot cut it, fire cannot burn it, water cannot wet it, and wind cannot dry it.",
+  "meaning": "Nothing in the world, not weapons, fire, water or wind, can harm the soul.",
+  "explanation": "Using vivid images from nature and war, Krishna shows that the soul is beyond every kind of physical harm. This verse is widely quoted at funerals and in times of grief across India.",
+  "keywords": [
+   {
+    "word": "śastra",
+    "meaning": "weapon"
+   },
+   {
+    "word": "pāvaka",
+    "meaning": "fire"
+   },
+   {
+    "word": "māruta",
+    "meaning": "wind"
+   }
+  ]
+ },
+ "gita-2-24": {
+  "translation": "It cannot be cut, burned, wetted or dried. It is eternal, present everywhere, stable, unmoving and ancient.",
+  "meaning": "The soul cannot be harmed in any way; it is eternal, everywhere, and unchanging.",
+  "explanation": "Krishna repeats and deepens the previous verse. The soul is not just protected from harm; by its very nature it cannot be harmed. It is everywhere, steady, and has always existed.",
+  "keywords": [
+   {
+    "word": "acchedya",
+    "meaning": "uncuttable"
+   },
+   {
+    "word": "sarvagata",
+    "meaning": "all-pervading"
+   },
+   {
+    "word": "sanātana",
+    "meaning": "ancient, eternal"
+   }
+  ]
+ },
+ "gita-2-25": {
+  "translation": "It is said to be invisible, beyond thought and unchanging. Knowing it to be so, you should not grieve.",
+  "meaning": "Since the soul is beyond the senses and never changes, there is no reason to grieve.",
+  "explanation": "The soul cannot be seen, cannot be grasped by the mind, and does not change. Krishna draws the practical lesson again: once Arjuna understands this, his grief has no basis.",
+  "keywords": [
+   {
+    "word": "avyakta",
+    "meaning": "unmanifest, invisible"
+   },
+   {
+    "word": "acintya",
+    "meaning": "beyond thought"
+   },
+   {
+    "word": "avikārya",
+    "meaning": "unchangeable"
+   }
+  ]
+ },
+ "gita-2-26": {
+  "translation": "But even if you think the soul is always being born and always dying, you still should not grieve, mighty-armed one.",
+  "meaning": "Even if Arjuna doubts the soul is eternal, grief still does not make sense.",
+  "explanation": "Krishna now argues from Arjuna's own possible view. Even if Arjuna believes the self is born and dies again and again, grieving is still pointless, as the next verse explains.",
+  "keywords": [
+   {
+    "word": "nityajāta",
+    "meaning": "constantly born"
+   },
+   {
+    "word": "nityamṛta",
+    "meaning": "constantly dying"
+   },
+   {
+    "word": "mahābāho",
+    "meaning": "mighty-armed one"
+   }
+  ]
+ },
+ "gita-2-27": {
+  "translation": "For death is certain for anyone born, and birth is certain for anyone who dies. So you should not grieve over what cannot be avoided.",
+  "meaning": "Death is certain for everyone born, so we should not grieve over what is unavoidable.",
+  "explanation": "One of the Gita's most practical verses. Whatever our beliefs, birth and death come together. Grieving over what is inevitable only adds suffering. This verse has comforted countless people facing loss.",
+  "keywords": [
+   {
+    "word": "dhruva",
+    "meaning": "certain"
+   },
+   {
+    "word": "mṛtyu",
+    "meaning": "death"
+   },
+   {
+    "word": "aparihārya",
+    "meaning": "unavoidable"
+   }
+  ]
+ },
+ "gita-2-28": {
+  "translation": "Beings are unseen in their beginning, seen in their middle, and unseen again at their end, Arjuna. What is there to lament?",
+  "meaning": "We come from the unseen and return to it; our visible life is only the middle part.",
+  "explanation": "Krishna gives a gentle perspective. Before birth we were not visible, after death we will not be; only the middle stretch of life is seen. Why grieve so much over the passing of what was always temporary?",
+  "keywords": [
+   {
+    "word": "avyaktādi",
+    "meaning": "unmanifest at the start"
+   },
+   {
+    "word": "vyaktamadhya",
+    "meaning": "manifest in the middle"
+   },
+   {
+    "word": "paridevanā",
+    "meaning": "lamentation"
+   }
+  ]
+ },
+ "gita-2-29": {
+  "translation": "Some see the soul as a wonder, others speak of it as a wonder, others hear of it as a wonder, and even after hearing, no one truly knows it.",
+  "meaning": "The soul is so wondrous that even after hearing about it, few really understand it.",
+  "explanation": "Krishna admits that the Self is hard to grasp. People marvel at it, talk about it and hear about it, yet true understanding is rare. This keeps the teaching humble: it is a mystery to be realised, not just learned.",
+  "keywords": [
+   {
+    "word": "āścarya",
+    "meaning": "wonder"
+   },
+   {
+    "word": "śrutvā",
+    "meaning": "having heard"
+   },
+   {
+    "word": "veda",
+    "meaning": "knows"
+   }
+  ]
+ },
+ "gita-2-30": {
+  "translation": "The soul in every body can never be killed, Arjuna. So you should not grieve for any living being.",
+  "meaning": "Since the soul in every being is indestructible, there is no need to grieve for anyone.",
+  "explanation": "Krishna closes his first argument. The Self in every body is beyond harm, so grief for any creature, friend or foe, is not needed. Next he turns from philosophy to Arjuna's duty as a warrior.",
+  "keywords": [
+   {
+    "word": "avadhya",
+    "meaning": "unkillable"
+   },
+   {
+    "word": "sarvabhūta",
+    "meaning": "all beings"
+   },
+   {
+    "word": "śocitum",
+    "meaning": "to grieve"
+   }
+  ]
+ },
+ "gita-2-31": {
+  "translation": "Also, considering your own duty, you should not waver. For a warrior there is nothing better than a war fought for what is right.",
+  "meaning": "As a warrior, Arjuna's duty is to fight for justice, and he should not hesitate.",
+  "explanation": "Krishna now argues from svadharma, one's own duty. Arjuna is a kṣatriya, a member of the warrior class whose role is to protect justice. A righteous war is the very situation he was trained for.",
+  "keywords": [
+   {
+    "word": "svadharma",
+    "meaning": "one's own duty"
+   },
+   {
+    "word": "vikampitum",
+    "meaning": "to waver"
+   },
+   {
+    "word": "dharmya yuddha",
+    "meaning": "righteous war"
+   }
+  ]
+ },
+ "gita-2-32": {
+  "translation": "Happy are the warriors, Partha, who get such a battle, coming by chance like an open door to heaven.",
+  "meaning": "For a warrior, a just war is a rare opportunity, like an open door to heaven.",
+  "explanation": "Krishna tells Arjuna that this battle is an opportunity, not a curse. Arjuna did not seek the war; it came to him through events. For a warrior fighting for justice, it is like an open gate to a higher reward.",
+  "keywords": [
+   {
+    "word": "yadṛcchā",
+    "meaning": "by chance"
+   },
+   {
+    "word": "svargadvāra",
+    "meaning": "door to heaven"
+   },
+   {
+    "word": "apāvṛta",
+    "meaning": "open"
+   }
+  ]
+ },
+ "gita-2-33": {
+  "translation": "But if you will not fight this righteous war, you will abandon your duty and your honour and you will incur sin.",
+  "meaning": "Refusing to fight would mean giving up both his duty and his honour.",
+  "explanation": "Krishna turns Arjuna's argument around. Arjuna feared that fighting would bring sin; Krishna says that abandoning a just cause he is bound to defend is the real wrong.",
+  "keywords": [
+   {
+    "word": "svadharma",
+    "meaning": "one's own duty"
+   },
+   {
+    "word": "kīrti",
+    "meaning": "honour, fame"
+   },
+   {
+    "word": "pāpa",
+    "meaning": "sin"
+   }
+  ]
+ },
+ "gita-2-34": {
+  "translation": "People will speak of your disgrace forever, and for someone who has been honoured, disgrace is worse than death.",
+  "meaning": "If Arjuna walks away, he will be remembered with dishonour, which is worse than death for a respected person.",
+  "explanation": "Krishna appeals to Arjuna's sense of honour. A man known as the greatest archer would be remembered as a coward. In the warrior code of the time, such lasting shame was considered worse than dying.",
+  "keywords": [
+   {
+    "word": "akīrti",
+    "meaning": "dishonour"
+   },
+   {
+    "word": "avyaya",
+    "meaning": "unending"
+   },
+   {
+    "word": "maraṇa",
+    "meaning": "death"
+   }
+  ]
+ },
+ "gita-2-35": {
+  "translation": "The great warriors will think you fled the battle out of fear, and those who held you in high regard will think little of you.",
+  "meaning": "Other warriors would think Arjuna ran away out of fear.",
+  "explanation": "Krishna points out that no one will understand Arjuna's withdrawal as compassion. His fellow warriors will simply think he was afraid, and the respect he earned will be lost.",
+  "keywords": [
+   {
+    "word": "mahāratha",
+    "meaning": "great warrior"
+   },
+   {
+    "word": "bhaya",
+    "meaning": "fear"
+   },
+   {
+    "word": "lāghava",
+    "meaning": "being thought little of"
+   }
+  ]
+ },
+ "gita-2-36": {
+  "translation": "Your enemies will say many cruel things, mocking your strength. What could be more painful than that?",
+  "meaning": "Arjuna's enemies would insult and mock him, which would be very painful.",
+  "explanation": "Krishna completes his argument from honour. Arjuna's foes will mock him freely. These worldly arguments are secondary to the spiritual teaching, but Krishna uses them because they speak to Arjuna as he is now.",
+  "keywords": [
+   {
+    "word": "avācya",
+    "meaning": "unspeakable, cruel words"
+   },
+   {
+    "word": "sāmarthya",
+    "meaning": "strength, ability"
+   },
+   {
+    "word": "duḥkhatara",
+    "meaning": "more painful"
+   }
+  ]
+ },
+ "gita-2-37": {
+  "translation": "If you are killed, you will reach heaven; if you win, you will enjoy the earth. So stand up, son of Kunti, determined to fight.",
+  "meaning": "Whether he wins or dies, Arjuna gains, so he should rise and fight with resolve.",
+  "explanation": "Krishna ends his argument from duty with a simple point: in a just war, a warrior loses nothing. Death brings heaven, victory brings a kingdom. Either way, standing up to do his duty is the right course.",
+  "keywords": [
+   {
+    "word": "svarga",
+    "meaning": "heaven"
+   },
+   {
+    "word": "jitvā",
+    "meaning": "having won"
+   },
+   {
+    "word": "kṛtaniścaya",
+    "meaning": "determined"
+   }
+  ]
+ },
+ "gita-2-38": {
+  "translation": "Treat pleasure and pain, gain and loss, victory and defeat as the same, and then prepare for battle. In this way you will not incur sin.",
+  "meaning": "Do your duty with an even mind, untouched by success or failure, and no wrong will cling to you.",
+  "explanation": "Here Krishna moves from worldly reasons to the heart of his teaching. What matters is not just the action but the attitude: acting with equanimity, without being driven by hope of gain or fear of loss. This frees the action from sin.",
+  "keywords": [
+   {
+    "word": "sama",
+    "meaning": "equal, even"
+   },
+   {
+    "word": "lābhālābha",
+    "meaning": "gain and loss"
+   },
+   {
+    "word": "jayājaya",
+    "meaning": "victory and defeat"
+   }
+  ]
+ },
+ "gita-2-39": {
+  "translation": "I have explained this to you according to Sankhya, the path of knowledge. Now hear it according to Yoga, the path of action. With this understanding, Partha, you will break free from the bonds of action.",
+  "meaning": "Krishna has explained the soul; now he will teach how to act without getting bound by actions.",
+  "explanation": "Krishna marks a transition. So far he has taught Sankhya, the understanding of the eternal Self. Now he will teach Yoga, the practical art of acting in the world without being bound by karma. This 'karma yoga' is a central teaching of the Gita.",
+  "keywords": [
+   {
+    "word": "sāṃkhya",
+    "meaning": "path of knowledge"
+   },
+   {
+    "word": "yoga",
+    "meaning": "path of disciplined action"
+   },
+   {
+    "word": "karmabandha",
+    "meaning": "bondage of action"
+   }
+  ]
+ },
+ "gita-2-40": {
+  "translation": "On this path no effort is ever wasted and no harm is done. Even a little of this practice protects you from great fear.",
+  "meaning": "Every bit of effort on this spiritual path counts, and even a little brings protection.",
+  "explanation": "A deeply encouraging verse. Unlike rituals that fail if done imperfectly, effort in karma yoga is never lost. Even small steps protect a person from the great fear of birth, death and suffering.",
+  "keywords": [
+   {
+    "word": "abhikramanāśa",
+    "meaning": "loss of effort"
+   },
+   {
+    "word": "svalpa",
+    "meaning": "a little"
+   },
+   {
+    "word": "mahat bhaya",
+    "meaning": "great fear"
+   }
+  ]
+ },
+ "gita-2-41": {
+  "translation": "Here, Arjuna, the resolute mind is single and focused, but the thoughts of the undecided are many-branched and endless.",
+  "meaning": "A determined mind has one clear aim, while an undecided mind is scattered in endless directions.",
+  "explanation": "Krishna contrasts two kinds of mind. A resolute mind (vyavasāyātmikā buddhi) is focused on one goal. An irresolute mind chases endless desires and plans. Spiritual progress needs a single, steady aim.",
+  "keywords": [
+   {
+    "word": "vyavasāyātmikā",
+    "meaning": "resolute, decisive"
+   },
+   {
+    "word": "buddhi",
+    "meaning": "intellect, understanding"
+   },
+   {
+    "word": "bahuśākhā",
+    "meaning": "many-branched"
+   }
+  ]
+ },
+ "gita-2-42": {
+  "translation": "Unwise people speak flowery words, Partha, delighting in the letter of the Vedas and saying, 'There is nothing else.'",
+  "meaning": "Some people get attached to the ritual promises of the Vedas and think there is nothing higher.",
+  "explanation": "Krishna criticises those who treat the Vedas only as a manual for rituals that bring rewards. They speak beautifully but miss the deeper purpose of scripture. The next verses continue this description.",
+  "keywords": [
+   {
+    "word": "puṣpita vāc",
+    "meaning": "flowery speech"
+   },
+   {
+    "word": "vedavāda",
+    "meaning": "the letter of the Vedas"
+   },
+   {
+    "word": "avipaścit",
+    "meaning": "unwise"
+   }
+  ]
+ },
+ "gita-2-43": {
+  "translation": "Full of desires, with heaven as their goal, they describe many rituals that promise rebirth as reward and aim at pleasure and power.",
+  "meaning": "These people use religion as a means to get pleasure and power.",
+  "explanation": "Krishna describes religion used for selfish ends. These people see rituals as transactions: perform them correctly and you will receive enjoyment, power or a good rebirth. The goal is still desire, not freedom.",
+  "keywords": [
+   {
+    "word": "kāmātman",
+    "meaning": "full of desire"
+   },
+   {
+    "word": "svargapara",
+    "meaning": "aiming at heaven"
+   },
+   {
+    "word": "bhogaiśvarya",
+    "meaning": "pleasure and power"
+   }
+  ]
+ },
+ "gita-2-44": {
+  "translation": "Those attached to pleasure and power, whose minds are carried away by such words, do not develop the steady, resolute understanding needed for meditation.",
+  "meaning": "When the mind is caught up in desire for pleasure and power, it cannot become steady enough for meditation.",
+  "explanation": "Krishna explains why ritual-centred desire is a problem: it keeps the mind restless. A mind always chasing rewards cannot settle into the focused understanding that leads to spiritual realisation.",
+  "keywords": [
+   {
+    "word": "apahṛtacetas",
+    "meaning": "whose mind is carried away"
+   },
+   {
+    "word": "samādhi",
+    "meaning": "deep meditation"
+   },
+   {
+    "word": "vyavasāyātmikā",
+    "meaning": "resolute"
+   }
+  ]
+ },
+ "gita-2-45": {
+  "translation": "The Vedas deal with the three qualities of nature. Rise above these three qualities, Arjuna. Be free from pairs of opposites, always rooted in purity, unconcerned with getting and keeping, and centred in the Self.",
+  "meaning": "Krishna urges Arjuna to rise above the material world and its opposites, and be centred in the true Self.",
+  "explanation": "The three guṇas (qualities of nature: goodness, passion, inertia) shape the material world, and the ritual parts of the Vedas work within them. Krishna asks Arjuna to go beyond them: stay steady through opposites, let go of acquiring and hoarding, and rest in the Self.",
+  "keywords": [
+   {
+    "word": "traiguṇya",
+    "meaning": "the three qualities of nature"
+   },
+   {
+    "word": "nirdvandva",
+    "meaning": "free from opposites"
+   },
+   {
+    "word": "ātmavat",
+    "meaning": "centred in the Self"
+   }
+  ]
+ },
+ "gita-2-46": {
+  "translation": "For an enlightened knower of Brahman, all the Vedas are as useful as a small pond is when there is flooding everywhere.",
+  "meaning": "Once you have found the ultimate truth, rituals aimed at small rewards are no longer needed.",
+  "explanation": "A vivid image: when water floods everywhere, a small pond has no special value. Similarly, for someone who knows Brahman, the source of all fulfilment, rituals for limited rewards add nothing. This does not dismiss the Vedas but puts them in perspective.",
+  "keywords": [
+   {
+    "word": "udapāna",
+    "meaning": "small pond, well"
+   },
+   {
+    "word": "saṃplutodaka",
+    "meaning": "flooded with water"
+   },
+   {
+    "word": "brāhmaṇa vijānat",
+    "meaning": "enlightened knower of Brahman"
+   }
+  ]
+ },
+ "gita-2-49": {
+  "translation": "Action done with desire is far inferior to action done with a steady, wise mind, Dhananjaya. Take refuge in that wisdom. Those who work only for results are to be pitied.",
+  "meaning": "Acting with wisdom is far better than acting just for rewards; people driven only by results are unhappy.",
+  "explanation": "Following the famous verses 47 and 48, Krishna compares two ways of acting. Working only for rewards keeps a person anxious and dependent. Working from buddhi-yoga, a calm and clear understanding, is far higher. Krishna calls the result-driven 'pitiable'.",
+  "keywords": [
+   {
+    "word": "buddhiyoga",
+    "meaning": "yoga of understanding"
+   },
+   {
+    "word": "kṛpaṇa",
+    "meaning": "pitiable, miserly"
+   },
+   {
+    "word": "phalahetu",
+    "meaning": "motivated by results"
+   }
+  ]
+ },
+ "gita-2-50": {
+  "translation": "A person united with this wisdom leaves behind both good and bad deeds even in this life. So devote yourself to yoga. Yoga is skill in action.",
+  "meaning": "Acting with wisdom frees you from the effects of good and bad deeds; yoga is the art of acting well.",
+  "explanation": "'Yoga is skill in action' (yogaḥ karmasu kauśalam) is one of the Gita's most famous phrases. The skill is not just technical ability but doing one's work with wisdom and without attachment, so that actions do not bind the doer.",
+  "keywords": [
+   {
+    "word": "sukṛtaduṣkṛta",
+    "meaning": "good and bad deeds"
+   },
+   {
+    "word": "kauśala",
+    "meaning": "skill"
+   },
+   {
+    "word": "yujyasva",
+    "meaning": "devote yourself"
+   }
+  ]
+ },
+ "gita-2-51": {
+  "translation": "Wise people with this understanding give up the fruits of their actions, are freed from the bonds of birth, and reach the state beyond all suffering.",
+  "meaning": "The wise let go of the rewards of action, and so become free from rebirth and suffering.",
+  "explanation": "Krishna shows where karma yoga leads. By acting without clinging to results, the wise gradually become free from the cycle of birth and death and reach a state free from sorrow.",
+  "keywords": [
+   {
+    "word": "manīṣin",
+    "meaning": "the wise"
+   },
+   {
+    "word": "janmabandha",
+    "meaning": "bondage of birth"
+   },
+   {
+    "word": "anāmaya",
+    "meaning": "free from suffering"
+   }
+  ]
+ },
+ "gita-2-52": {
+  "translation": "When your understanding crosses beyond the swamp of delusion, you will become indifferent to all you have heard and all you have yet to hear.",
+  "meaning": "Once your mind clears, you will no longer be swayed by what others say about rewards and rituals.",
+  "explanation": "Krishna compares confusion to a thick swamp. When the mind gets through it, a person stops chasing every new promise or teaching about rewards. Clarity brings a natural contentment with the truth.",
+  "keywords": [
+   {
+    "word": "mohakalila",
+    "meaning": "thicket of delusion"
+   },
+   {
+    "word": "nirveda",
+    "meaning": "indifference"
+   },
+   {
+    "word": "śruta",
+    "meaning": "heard"
+   }
+  ]
+ },
+ "gita-2-53": {
+  "translation": "When your mind, no longer confused by conflicting teachings, stands steady and unmoving in meditation, then you will reach yoga.",
+  "meaning": "When your mind becomes firm and calm in meditation, you will reach true yoga.",
+  "explanation": "Arjuna has been confused by conflicting ideas of duty. Krishna promises that when his mind becomes steady in samādhi, deep meditation, he will reach yoga, union with the highest. This leads Arjuna to ask about the steady-minded person.",
+  "keywords": [
+   {
+    "word": "vipratipanna",
+    "meaning": "confused"
+   },
+   {
+    "word": "niścala",
+    "meaning": "unmoving"
+   },
+   {
+    "word": "samādhi",
+    "meaning": "deep meditation"
+   }
+  ]
+ },
+ "gita-2-54": {
+  "translation": "Arjuna said: Krishna, what are the signs of a person whose wisdom is steady and who is absorbed in meditation? How does such a person speak, sit and walk?",
+  "meaning": "Arjuna asks Krishna to describe what a truly wise and steady person is like in everyday life.",
+  "explanation": "Arjuna's practical question opens one of the most loved passages of the Gita (verses 55 to 72), describing the sthitaprajña, the person of steady wisdom. Arjuna wants to know how such a person actually lives.",
+  "keywords": [
+   {
+    "word": "sthitaprajña",
+    "meaning": "one of steady wisdom"
+   },
+   {
+    "word": "samādhistha",
+    "meaning": "absorbed in meditation"
+   },
+   {
+    "word": "bhāṣā",
+    "meaning": "speech, description"
+   }
+  ]
+ },
+ "gita-2-55": {
+  "translation": "The Lord said: Partha, when a person gives up all the desires of the mind and is content in the Self by the Self, that person is said to be of steady wisdom.",
+  "meaning": "A person of steady wisdom has let go of desires and finds contentment within.",
+  "explanation": "Krishna's first sign of the wise person is inner contentment. They do not depend on outside things to feel complete, because they find fulfilment in the Self. Desires lose their grip on them.",
+  "keywords": [
+   {
+    "word": "kāma",
+    "meaning": "desire"
+   },
+   {
+    "word": "tuṣṭa",
+    "meaning": "content"
+   },
+   {
+    "word": "sthitaprajña",
+    "meaning": "one of steady wisdom"
+   }
+  ]
+ },
+ "gita-2-57": {
+  "translation": "One who is unattached everywhere, who neither rejoices at good fortune nor resents bad fortune, has a steady understanding.",
+  "meaning": "A wise person is not attached to anything and stays calm whether things go well or badly.",
+  "explanation": "Continuing from verse 56, Krishna says the wise person is free from attachment. When something pleasant comes, they do not get carried away; when something unpleasant comes, they do not hate it. This balance is the mark of steady wisdom.",
+  "keywords": [
+   {
+    "word": "anabhisneha",
+    "meaning": "without attachment"
+   },
+   {
+    "word": "śubhāśubha",
+    "meaning": "good and bad"
+   },
+   {
+    "word": "pratiṣṭhitā",
+    "meaning": "firmly established"
+   }
+  ]
+ },
+ "gita-2-58": {
+  "translation": "When, like a tortoise drawing in its limbs on all sides, a person can withdraw the senses from their objects, that person's wisdom is steady.",
+  "meaning": "A wise person can pull back their senses from distractions the way a tortoise pulls in its limbs.",
+  "explanation": "The tortoise is a famous image of self-control. Just as it draws in its limbs for safety, the wise person can withdraw their attention from sense objects when needed, so they are not dragged around by every sight and sound.",
+  "keywords": [
+   {
+    "word": "kūrma",
+    "meaning": "tortoise"
+   },
+   {
+    "word": "saṃharate",
+    "meaning": "withdraws"
+   },
+   {
+    "word": "indriyārtha",
+    "meaning": "objects of the senses"
+   }
+  ]
+ },
+ "gita-2-59": {
+  "translation": "Sense objects fall away from a person who abstains from them, but the taste for them remains. Even that taste disappears when one has seen the Supreme.",
+  "meaning": "Avoiding pleasures doesn't end the craving for them; only experiencing the highest truth removes it.",
+  "explanation": "Krishna gives an honest insight. Fasting or abstaining can keep pleasures away, but the inner craving often stays. Only when a person tastes something higher, the Supreme, does the old taste naturally fall away.",
+  "keywords": [
+   {
+    "word": "nirāhāra",
+    "meaning": "one who abstains"
+   },
+   {
+    "word": "rasa",
+    "meaning": "taste, craving"
+   },
+   {
+    "word": "paraṃ dṛṣṭvā",
+    "meaning": "having seen the Supreme"
+   }
+  ]
+ },
+ "gita-2-60": {
+  "translation": "Even the mind of a wise person who is striving, son of Kunti, can be forcibly carried away by the turbulent senses.",
+  "meaning": "Even wise people can have their minds dragged off by powerful senses.",
+  "explanation": "Krishna warns that the senses are strong. Even a wise person who is making a sincere effort can be swept away by them. Spiritual life calls for constant vigilance, not overconfidence.",
+  "keywords": [
+   {
+    "word": "pramāthin",
+    "meaning": "turbulent, forceful"
+   },
+   {
+    "word": "indriya",
+    "meaning": "senses"
+   },
+   {
+    "word": "haranti",
+    "meaning": "carry away"
+   }
+  ]
+ },
+ "gita-2-61": {
+  "translation": "Controlling all the senses, a person should sit focused, with Me as the highest goal. One whose senses are under control has steady wisdom.",
+  "meaning": "By controlling the senses and keeping God as your highest goal, you gain steady wisdom.",
+  "explanation": "Krishna gives the remedy: restrain the senses and fix the mind on him as the supreme goal. Self-control is supported not just by willpower but by devotion to something higher.",
+  "keywords": [
+   {
+    "word": "saṃyamya",
+    "meaning": "having controlled"
+   },
+   {
+    "word": "yukta",
+    "meaning": "focused, disciplined"
+   },
+   {
+    "word": "matpara",
+    "meaning": "with Me as the highest"
+   }
+  ]
+ },
+ "gita-2-63": {
+  "translation": "From anger comes confusion; from confusion, loss of memory; from loss of memory, the destruction of understanding; and when understanding is destroyed, a person is ruined.",
+  "meaning": "Anger leads to confusion, forgetfulness and poor judgement, and finally to a person's downfall.",
+  "explanation": "Continuing from verse 62, which traced how dwelling on sense objects leads to desire and anger, Krishna shows the rest of the chain. Anger clouds the mind, we forget what we know is right, our judgement fails, and we fall. It is a precise map of how we lose ourselves.",
+  "keywords": [
+   {
+    "word": "krodha",
+    "meaning": "anger"
+   },
+   {
+    "word": "saṃmoha",
+    "meaning": "confusion"
+   },
+   {
+    "word": "buddhināśa",
+    "meaning": "loss of understanding"
+   }
+  ]
+ },
+ "gita-2-64": {
+  "translation": "But a self-controlled person, moving among sense objects with senses free from attraction and aversion and under the control of the Self, attains peace.",
+  "meaning": "A disciplined person can live among worldly things without being pulled by likes and dislikes, and finds peace.",
+  "explanation": "Krishna shows the positive path. The wise person does not need to run away from the world. They engage with it, but without being driven by craving or hatred. This inner freedom brings prasāda, a calm and clear peace.",
+  "keywords": [
+   {
+    "word": "rāgadveṣa",
+    "meaning": "attraction and aversion"
+   },
+   {
+    "word": "vidheyātman",
+    "meaning": "self-controlled"
+   },
+   {
+    "word": "prasāda",
+    "meaning": "peace, serenity"
+   }
+  ]
+ },
+ "gita-2-65": {
+  "translation": "In that peace, all their sorrows come to an end, for the understanding of a peaceful mind soon becomes steady.",
+  "meaning": "Inner peace ends sorrow and quickly brings a steady, clear mind.",
+  "explanation": "Peace is not only the result of spiritual practice but also a support for it. When the heart is calm, sorrow fades and the mind easily becomes steady and clear.",
+  "keywords": [
+   {
+    "word": "duḥkha",
+    "meaning": "sorrow"
+   },
+   {
+    "word": "hāni",
+    "meaning": "end, destruction"
+   },
+   {
+    "word": "prasannacetas",
+    "meaning": "one with a peaceful mind"
+   }
+  ]
+ },
+ "gita-2-66": {
+  "translation": "A person who is not disciplined has no wisdom and no meditation. Without meditation there is no peace, and without peace, how can there be happiness?",
+  "meaning": "Without self-discipline there is no clarity or peace, and without peace there can be no happiness.",
+  "explanation": "Krishna lays out a chain in reverse. Without discipline, no wisdom; without wisdom, no meditation; without meditation, no peace; without peace, no happiness. Real happiness depends on inner work.",
+  "keywords": [
+   {
+    "word": "ayukta",
+    "meaning": "undisciplined"
+   },
+   {
+    "word": "bhāvanā",
+    "meaning": "meditation, contemplation"
+   },
+   {
+    "word": "śānti",
+    "meaning": "peace"
+   }
+  ]
+ },
+ "gita-2-67": {
+  "translation": "When the mind runs after the wandering senses, it carries away a person's understanding, like the wind carries away a ship on the water.",
+  "meaning": "A mind that follows the restless senses loses its wisdom, like a ship swept off course by the wind.",
+  "explanation": "Krishna uses another striking image. Our understanding is like a boat on water. If the mind follows every passing sense impulse, it is like a strong wind that drives the boat off course.",
+  "keywords": [
+   {
+    "word": "carat",
+    "meaning": "wandering"
+   },
+   {
+    "word": "vāyu",
+    "meaning": "wind"
+   },
+   {
+    "word": "nau",
+    "meaning": "boat, ship"
+   }
+  ]
+ },
+ "gita-2-68": {
+  "translation": "Therefore, mighty-armed Arjuna, one whose senses are fully withdrawn from their objects has steady wisdom.",
+  "meaning": "So the person who can fully control their senses has steady wisdom.",
+  "explanation": "Krishna repeats his conclusion from verse 58. Mastery of the senses is the foundation of steady wisdom. The repetition shows how important this teaching is.",
+  "keywords": [
+   {
+    "word": "nigṛhīta",
+    "meaning": "restrained"
+   },
+   {
+    "word": "sarvaśaḥ",
+    "meaning": "completely"
+   },
+   {
+    "word": "prajñā",
+    "meaning": "wisdom"
+   }
+  ]
+ },
+ "gita-2-69": {
+  "translation": "What is night for all beings is the time of waking for the disciplined sage, and what is waking for all beings is night for the sage who sees.",
+  "meaning": "The wise are awake to what others ignore, and uninterested in what others chase.",
+  "explanation": "A famous paradox. Ordinary people are 'awake' to the world of desire and 'asleep' to the spiritual truth. The sage is the reverse: alert to the truth and uninterested in the race for pleasures that keeps others busy.",
+  "keywords": [
+   {
+    "word": "niśā",
+    "meaning": "night"
+   },
+   {
+    "word": "saṃyamin",
+    "meaning": "the self-controlled"
+   },
+   {
+    "word": "muni",
+    "meaning": "sage"
+   }
+  ]
+ },
+ "gita-2-70": {
+  "translation": "Just as the ocean stays calm and full though rivers keep flowing into it, so the person into whom all desires flow without disturbing them attains peace, not the one who chases desires.",
+  "meaning": "A wise person stays as calm as the ocean, even as desires flow in like rivers.",
+  "explanation": "One of the Gita's most beautiful images. Rivers pour into the ocean constantly, yet it neither overflows nor changes. The wise person is like that: desires and experiences come, but they do not disturb the inner calm.",
+  "keywords": [
+   {
+    "word": "samudra",
+    "meaning": "ocean"
+   },
+   {
+    "word": "acalapratiṣṭha",
+    "meaning": "steady, unmoving"
+   },
+   {
+    "word": "kāmakāmin",
+    "meaning": "one who chases desires"
+   }
+  ]
+ },
+ "gita-2-71": {
+  "translation": "A person who gives up all desires and lives free from craving, without the sense of 'mine' and without ego, attains peace.",
+  "meaning": "Letting go of desire, possessiveness and ego brings true peace.",
+  "explanation": "Krishna names the three main obstacles to peace: craving, the feeling of 'mine' (mamatā), and ego, the feeling of 'I am the doer' (ahaṃkāra). When these fall away, peace comes naturally.",
+  "keywords": [
+   {
+    "word": "niḥspṛha",
+    "meaning": "free from craving"
+   },
+   {
+    "word": "nirmama",
+    "meaning": "without possessiveness"
+   },
+   {
+    "word": "nirahaṃkāra",
+    "meaning": "without ego"
+   }
+  ]
+ },
+ "gita-2-72": {
+  "translation": "This is the divine state, Partha. Having reached it, one is never confused again. Even at the moment of death, one who is established in it reaches the peace of Brahman.",
+  "meaning": "This state of steady wisdom ends all confusion and leads to union with the divine.",
+  "explanation": "Chapter 2 closes with a promise. The state of steady wisdom, called brāhmī sthiti, the state of Brahman, is permanent once attained. Even reaching it at the very end of life is enough to bring the final peace, brahma-nirvāṇa.",
+  "keywords": [
+   {
+    "word": "brāhmī sthiti",
+    "meaning": "divine state, the state of Brahman"
+   },
+   {
+    "word": "antakāla",
+    "meaning": "time of death"
+   },
+   {
+    "word": "brahmanirvāṇa",
+    "meaning": "the peace of Brahman"
+   }
+  ]
+ },
  "gita-12-1": {
   "translation": "Arjuna said: Some devotees stay always devoted and worship You. Others worship the imperishable, unseen Absolute. Which of these knows yoga best?",
   "meaning": "Arjuna asks a simple question: is it better to love God in a personal form, or to seek the formless, unseen Truth?",
@@ -19,6 +2151,194 @@
    {
     "word": "yoga",
     "meaning": "union, spiritual discipline"
+   }
+  ]
+ },
+ "gita-12-2": {
+  "translation": "The Lord said: Those who fix their minds on Me, worship Me with constant devotion and are filled with the highest faith, I consider the most perfect in yoga.",
+  "meaning": "Krishna answers: those who lovingly keep their mind on him, with deep faith, are the most perfect in yoga.",
+  "explanation": "Krishna's first answer favours the path of personal devotion. The key words are 'mind fixed on Me', 'always' and 'supreme faith'. Devotion here is not a ritual done now and then but a steady turning of the whole mind toward God. This verse sets the tone for the chapter: love and faith, kept up every day, are the surest way to union.",
+  "keywords": [
+   {
+    "word": "manas",
+    "meaning": "mind"
+   },
+   {
+    "word": "nityayukta",
+    "meaning": "always united, constantly devoted"
+   },
+   {
+    "word": "śraddhā",
+    "meaning": "faith"
+   },
+   {
+    "word": "yuktatama",
+    "meaning": "most perfectly joined in yoga"
+   }
+  ]
+ },
+ "gita-12-3": {
+  "translation": "But those who worship the imperishable, which cannot be described, is unseen, everywhere present, beyond thought, unchanging, unmoving and eternal,",
+  "meaning": "Krishna turns to those who meditate on the formless Absolute, which no words or thoughts can capture.",
+  "explanation": "Here Krishna describes the second kind of seeker from Arjuna's question. Their object of worship is the imperishable Brahman, and Krishna lists its qualities: it cannot be defined, cannot be seen, is present everywhere, cannot be grasped by thought, and never changes. The sentence continues into the next verse, which says what becomes of these seekers.",
+  "keywords": [
+   {
+    "word": "akṣara",
+    "meaning": "imperishable"
+   },
+   {
+    "word": "anirdeśya",
+    "meaning": "indescribable"
+   },
+   {
+    "word": "acintya",
+    "meaning": "beyond thought"
+   },
+   {
+    "word": "kūṭastha",
+    "meaning": "unchanging, steady as an anvil"
+   },
+   {
+    "word": "dhruva",
+    "meaning": "eternal, fixed"
+   }
+  ]
+ },
+ "gita-12-4": {
+  "translation": "restraining all their senses, even-minded everywhere, and delighting in the good of all beings, they too reach Me.",
+  "meaning": "People who seek the formless Truth also reach God, if they control their senses, stay balanced, and care for the welfare of everyone.",
+  "explanation": "Completing the previous verse, Krishna does not reject the path of the formless. Those who follow it also reach him. But he names what it demands: mastery of the senses, an even mind in every situation, and active joy in the welfare of all beings. The phrase 'delighting in the good of all' shows that even the most inward path must include care for others.",
+  "keywords": [
+   {
+    "word": "indriya",
+    "meaning": "senses"
+   },
+   {
+    "word": "samabuddhi",
+    "meaning": "even-minded"
+   },
+   {
+    "word": "sarvabhūtahita",
+    "meaning": "the welfare of all beings"
+   },
+   {
+    "word": "rata",
+    "meaning": "delighting in"
+   }
+  ]
+ },
+ "gita-12-5": {
+  "translation": "The struggle is greater for those whose minds cling to the unseen, for the goal of the unseen is hard for embodied beings to reach.",
+  "meaning": "The formless path is harder, because people living in bodies find it difficult to love what they cannot see or picture.",
+  "explanation": "Krishna explains why he called the devotees of a personal God 'most perfect'. Both paths lead to him, but for people with bodies and senses, an abstract, formless goal is hard to hold on to. The heart finds it easier to love a form it can picture and speak to. This is a gentle, practical teaching: choose the path you can actually walk.",
+  "keywords": [
+   {
+    "word": "kleśa",
+    "meaning": "difficulty, struggle"
+   },
+   {
+    "word": "avyakta",
+    "meaning": "the unmanifest"
+   },
+   {
+    "word": "dehavat",
+    "meaning": "embodied beings"
+   },
+   {
+    "word": "duḥkha",
+    "meaning": "with difficulty, painful"
+   }
+  ]
+ },
+ "gita-12-6": {
+  "translation": "But those who offer all their actions to Me, hold Me as their highest goal, and worship Me, meditating on Me with single-minded yoga,",
+  "meaning": "Krishna describes true devotees: they offer everything they do to God and think of him with undivided attention.",
+  "explanation": "This verse begins a two-verse promise. The devotee Krishna has in mind does not withdraw from life; they keep acting, but they hand over every action to God. Their attention is 'without another', meaning nothing competes with God for first place in their heart. The next verse says what Krishna does for such people.",
+  "keywords": [
+   {
+    "word": "karma",
+    "meaning": "action"
+   },
+   {
+    "word": "saṃnyasya",
+    "meaning": "having offered up, laid down"
+   },
+   {
+    "word": "matpara",
+    "meaning": "holding Me as the highest"
+   },
+   {
+    "word": "ananya",
+    "meaning": "undivided, without another"
+   }
+  ]
+ },
+ "gita-12-7": {
+  "translation": "for those whose minds are absorbed in Me, O Partha, I soon become the one who lifts them out of the ocean of death and rebirth.",
+  "meaning": "God himself quickly rescues those whose hearts are fixed on him from the endless cycle of birth and death.",
+  "explanation": "This is one of the warmest promises in the Gita. Life in the cycle of birth and death is pictured as a vast ocean. Krishna does not only show the way across; he says he personally becomes the rescuer who pulls the devotee out, and does so 'before long'. The condition is simple: a mind that has entered into God.",
+  "keywords": [
+   {
+    "word": "samuddhartā",
+    "meaning": "the one who lifts out, the rescuer"
+   },
+   {
+    "word": "mṛtyusaṃsārasāgara",
+    "meaning": "the ocean of death and repeated birth"
+   },
+   {
+    "word": "nacirāt",
+    "meaning": "soon, before long"
+   },
+   {
+    "word": "āveśitacetas",
+    "meaning": "whose mind has entered into (God)"
+   }
+  ]
+ },
+ "gita-12-8": {
+  "translation": "Fix your mind on Me alone, let your understanding enter into Me. Then you will live in Me from now on; there is no doubt about this.",
+  "meaning": "Krishna's direct advice: put your mind and your understanding in God, and you will truly live in him.",
+  "explanation": "Having described the ideal, Krishna now speaks directly to Arjuna. He names two things to give: the mind, which feels and wants, and the buddhi, the intellect that decides. When both rest in God, the result is certain: 'you will dwell in Me'. This verse starts a ladder of practices; the following verses offer easier steps for anyone who finds this one too hard.",
+  "keywords": [
+   {
+    "word": "manas",
+    "meaning": "mind"
+   },
+   {
+    "word": "buddhi",
+    "meaning": "understanding, intellect"
+   },
+   {
+    "word": "nivasiṣyasi",
+    "meaning": "you will dwell"
+   },
+   {
+    "word": "saṃśaya",
+    "meaning": "doubt"
+   }
+  ]
+ },
+ "gita-12-9": {
+  "translation": "If you cannot hold your mind steadily on Me, then seek to reach Me through the yoga of practice, O Dhananjaya.",
+  "meaning": "If you can't keep your mind on God yet, don't give up: practise, again and again.",
+  "explanation": "Krishna is realistic. Holding the mind steady on God is hard, and he does not shame Arjuna for possibly failing. Instead he offers the next step: abhyāsa, repeated practice. Each time the mind wanders, bring it back. Steady effort, not instant perfection, is what he asks.",
+  "keywords": [
+   {
+    "word": "citta",
+    "meaning": "mind, attention"
+   },
+   {
+    "word": "sthira",
+    "meaning": "steady"
+   },
+   {
+    "word": "abhyāsa",
+    "meaning": "practice, repeated effort"
+   },
+   {
+    "word": "Dhanaṃjaya",
+    "meaning": "winner of wealth, a name of Arjuna"
    }
   ]
  },
@@ -257,29 +2577,6 @@
    }
   ]
  },
- "gita-12-2": {
-  "translation": "The Lord said: Those who fix their minds on Me, worship Me with constant devotion and are filled with the highest faith, I consider the most perfect in yoga.",
-  "meaning": "Krishna answers: those who lovingly keep their mind on him, with deep faith, are the most perfect in yoga.",
-  "explanation": "Krishna's first answer favours the path of personal devotion. The key words are 'mind fixed on Me', 'always' and 'supreme faith'. Devotion here is not a ritual done now and then but a steady turning of the whole mind toward God. This verse sets the tone for the chapter: love and faith, kept up every day, are the surest way to union.",
-  "keywords": [
-   {
-    "word": "manas",
-    "meaning": "mind"
-   },
-   {
-    "word": "nityayukta",
-    "meaning": "always united, constantly devoted"
-   },
-   {
-    "word": "śraddhā",
-    "meaning": "faith"
-   },
-   {
-    "word": "yuktatama",
-    "meaning": "most perfectly joined in yoga"
-   }
-  ]
- },
  "gita-12-20": {
   "translation": "But those who follow this immortal teaching of dharma as I have described it, full of faith and holding Me as the highest, these devotees are exceedingly dear to Me.",
   "meaning": "Krishna closes the chapter: those who live this teaching with faith are more dear to him than anyone.",
@@ -300,171 +2597,6 @@
    {
     "word": "atīva",
     "meaning": "exceedingly"
-   }
-  ]
- },
- "gita-12-3": {
-  "translation": "But those who worship the imperishable, which cannot be described, is unseen, everywhere present, beyond thought, unchanging, unmoving and eternal,",
-  "meaning": "Krishna turns to those who meditate on the formless Absolute, which no words or thoughts can capture.",
-  "explanation": "Here Krishna describes the second kind of seeker from Arjuna's question. Their object of worship is the imperishable Brahman, and Krishna lists its qualities: it cannot be defined, cannot be seen, is present everywhere, cannot be grasped by thought, and never changes. The sentence continues into the next verse, which says what becomes of these seekers.",
-  "keywords": [
-   {
-    "word": "akṣara",
-    "meaning": "imperishable"
-   },
-   {
-    "word": "anirdeśya",
-    "meaning": "indescribable"
-   },
-   {
-    "word": "acintya",
-    "meaning": "beyond thought"
-   },
-   {
-    "word": "kūṭastha",
-    "meaning": "unchanging, steady as an anvil"
-   },
-   {
-    "word": "dhruva",
-    "meaning": "eternal, fixed"
-   }
-  ]
- },
- "gita-12-4": {
-  "translation": "restraining all their senses, even-minded everywhere, and delighting in the good of all beings, they too reach Me.",
-  "meaning": "People who seek the formless Truth also reach God, if they control their senses, stay balanced, and care for the welfare of everyone.",
-  "explanation": "Completing the previous verse, Krishna does not reject the path of the formless. Those who follow it also reach him. But he names what it demands: mastery of the senses, an even mind in every situation, and active joy in the welfare of all beings. The phrase 'delighting in the good of all' shows that even the most inward path must include care for others.",
-  "keywords": [
-   {
-    "word": "indriya",
-    "meaning": "senses"
-   },
-   {
-    "word": "samabuddhi",
-    "meaning": "even-minded"
-   },
-   {
-    "word": "sarvabhūtahita",
-    "meaning": "the welfare of all beings"
-   },
-   {
-    "word": "rata",
-    "meaning": "delighting in"
-   }
-  ]
- },
- "gita-12-5": {
-  "translation": "The struggle is greater for those whose minds cling to the unseen, for the goal of the unseen is hard for embodied beings to reach.",
-  "meaning": "The formless path is harder, because people living in bodies find it difficult to love what they cannot see or picture.",
-  "explanation": "Krishna explains why he called the devotees of a personal God 'most perfect'. Both paths lead to him, but for people with bodies and senses, an abstract, formless goal is hard to hold on to. The heart finds it easier to love a form it can picture and speak to. This is a gentle, practical teaching: choose the path you can actually walk.",
-  "keywords": [
-   {
-    "word": "kleśa",
-    "meaning": "difficulty, struggle"
-   },
-   {
-    "word": "avyakta",
-    "meaning": "the unmanifest"
-   },
-   {
-    "word": "dehavat",
-    "meaning": "embodied beings"
-   },
-   {
-    "word": "duḥkha",
-    "meaning": "with difficulty, painful"
-   }
-  ]
- },
- "gita-12-6": {
-  "translation": "But those who offer all their actions to Me, hold Me as their highest goal, and worship Me, meditating on Me with single-minded yoga,",
-  "meaning": "Krishna describes true devotees: they offer everything they do to God and think of him with undivided attention.",
-  "explanation": "This verse begins a two-verse promise. The devotee Krishna has in mind does not withdraw from life; they keep acting, but they hand over every action to God. Their attention is 'without another', meaning nothing competes with God for first place in their heart. The next verse says what Krishna does for such people.",
-  "keywords": [
-   {
-    "word": "karma",
-    "meaning": "action"
-   },
-   {
-    "word": "saṃnyasya",
-    "meaning": "having offered up, laid down"
-   },
-   {
-    "word": "matpara",
-    "meaning": "holding Me as the highest"
-   },
-   {
-    "word": "ananya",
-    "meaning": "undivided, without another"
-   }
-  ]
- },
- "gita-12-7": {
-  "translation": "for those whose minds are absorbed in Me, O Partha, I soon become the one who lifts them out of the ocean of death and rebirth.",
-  "meaning": "God himself quickly rescues those whose hearts are fixed on him from the endless cycle of birth and death.",
-  "explanation": "This is one of the warmest promises in the Gita. Life in the cycle of birth and death is pictured as a vast ocean. Krishna does not only show the way across; he says he personally becomes the rescuer who pulls the devotee out, and does so 'before long'. The condition is simple: a mind that has entered into God.",
-  "keywords": [
-   {
-    "word": "samuddhartā",
-    "meaning": "the one who lifts out, the rescuer"
-   },
-   {
-    "word": "mṛtyusaṃsārasāgara",
-    "meaning": "the ocean of death and repeated birth"
-   },
-   {
-    "word": "nacirāt",
-    "meaning": "soon, before long"
-   },
-   {
-    "word": "āveśitacetas",
-    "meaning": "whose mind has entered into (God)"
-   }
-  ]
- },
- "gita-12-8": {
-  "translation": "Fix your mind on Me alone, let your understanding enter into Me. Then you will live in Me from now on; there is no doubt about this.",
-  "meaning": "Krishna's direct advice: put your mind and your understanding in God, and you will truly live in him.",
-  "explanation": "Having described the ideal, Krishna now speaks directly to Arjuna. He names two things to give: the mind, which feels and wants, and the buddhi, the intellect that decides. When both rest in God, the result is certain: 'you will dwell in Me'. This verse starts a ladder of practices; the following verses offer easier steps for anyone who finds this one too hard.",
-  "keywords": [
-   {
-    "word": "manas",
-    "meaning": "mind"
-   },
-   {
-    "word": "buddhi",
-    "meaning": "understanding, intellect"
-   },
-   {
-    "word": "nivasiṣyasi",
-    "meaning": "you will dwell"
-   },
-   {
-    "word": "saṃśaya",
-    "meaning": "doubt"
-   }
-  ]
- },
- "gita-12-9": {
-  "translation": "If you cannot hold your mind steadily on Me, then seek to reach Me through the yoga of practice, O Dhananjaya.",
-  "meaning": "If you can't keep your mind on God yet, don't give up: practise, again and again.",
-  "explanation": "Krishna is realistic. Holding the mind steady on God is hard, and he does not shame Arjuna for possibly failing. Instead he offers the next step: abhyāsa, repeated practice. Each time the mind wanders, bring it back. Steady effort, not instant perfection, is what he asks.",
-  "keywords": [
-   {
-    "word": "citta",
-    "meaning": "mind, attention"
-   },
-   {
-    "word": "sthira",
-    "meaning": "steady"
-   },
-   {
-    "word": "abhyāsa",
-    "meaning": "practice, repeated effort"
-   },
-   {
-    "word": "Dhanaṃjaya",
-    "meaning": "winner of wealth, a name of Arjuna"
    }
   ]
  }

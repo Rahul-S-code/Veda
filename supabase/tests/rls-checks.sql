@@ -13,6 +13,15 @@ do $$ begin
   assert not exists (select 1 from sections s where s.scripture_id = 'bhagavad-gita' and s.expected_verses <> (select count(*) from verses v where v.section_id = s.id)), 'chapter counts should match';
 end $$;
 
+-- The Ramayana critical edition is imported in full: 7 kandas, 606 sargas, 18,761 draft verses, each in its sarga.
+do $$ begin
+  assert (select count(*) from verses where scripture_id = 'valmiki-ramayana' and status = 'draft') = 18761, 'Ramayana should have 18,761 drafts';
+  assert (select count(*) from sections where scripture_id = 'valmiki-ramayana' and level = 1) = 7, 'Ramayana should have 7 kandas';
+  assert (select count(*) from sections where scripture_id = 'valmiki-ramayana' and level = 2) = 606, 'Ramayana should have 606 sargas';
+  assert (select count(*) from verses v join sections s on s.id = v.section_id where v.scripture_id = 'valmiki-ramayana' and s.level = 2) = 18761, 'every Ramayana verse sits in its sarga';
+  assert not exists (select 1 from sections s where s.scripture_id = 'valmiki-ramayana' and s.level = 2 and s.expected_verses <> (select count(*) from verses v where v.section_id = s.id)), 'sarga counts should match';
+end $$;
+
 -- Anonymous visitors see published verses only.
 set role anon;
 do $$ begin

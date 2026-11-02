@@ -27,7 +27,7 @@ import time
 import urllib.parse
 import urllib.request
 
-from indic_transliteration import sanscript
+from common import to_devanagari
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CACHE = os.path.join(ROOT, ".cache", "import", "gita")
@@ -85,26 +85,6 @@ def fetch(offline):
 
 
 # ---------------------------------------------------------------- Sanskrit
-
-CONSONANT_END = re.compile(r"[kgcjṭḍtdpbṅñṇnmyrlvśṣsh]$")
-
-
-def to_devanagari(iast_line):
-    """IAST (words split as in GRETIL) -> Devanagari with words joined the usual printed way.
-
-    A word ending in a consonant is joined to the next word (pāṇḍavāś caiva -> पाण्डवाश्चैव),
-    and an avagraha joins to the word before it (saṅgo 'stv -> सङ्गोऽस्त्व).
-    """
-    words = iast_line.split()
-    joined = []
-    for w in words:
-        if joined and (w.startswith("'") or CONSONANT_END.search(joined[-1])):
-            joined[-1] += w
-        else:
-            joined.append(w)
-    text = " ".join(joined).replace("'", "ऽ")
-    return sanscript.transliterate(text, sanscript.IAST, sanscript.DEVANAGARI)
-
 
 def parse_gretil(path):
     text = re.sub(r"<[^>]+>", "", open(path, encoding="utf-8").read())

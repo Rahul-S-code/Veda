@@ -51,26 +51,48 @@ for (const c of cards) {
   for (const t of c.tags) tags.set(t, t[0].toUpperCase() + t.slice(1));
   out.push("");
 }
-// Full texts imported from public-domain editions (content/import/*.json, made by scripts/import/*.py).
+// Full texts imported from digitised editions (content/import/*.json, made by scripts/import/*.py).
 // Verses that already have a featured card keep their card; they only gain the imported translation and speaker.
 // Every other verse is loaded as a draft, hidden from readers until reviewed and published.
+// Sections can nest (Kanda > Sarga); a verse names its section by path, e.g. [2, 14].
 const featured = new Set(cards.map((c) => c.id));
 const importDir = root + "content/import/";
 let imported = 0;
+const sectionRef = (scripture, path) => {
+  let ref = "null";
+  path.forEach((n, i) => {
+    ref = `(select id from sections where scripture_id = ${q(scripture)} and level = ${i + 1} and number = ${n} and parent_id ${i === 0 ? "is null" : "= " + ref})`;
+  });
+  return ref;
+};
 for (const f of readdirSync(importDir).filter((f) => f.endsWith(".json")).sort()) {
   const data = JSON.parse(readFileSync(importDir + f, "utf8"));
-  out.push(`-- Imported: ${data.scripture} (${f})`);
+  const sc = data.scripture;
+  out.push(`-- Imported: ${sc} (${f})`);
+  for (const sec of data.sections ?? []) {
+    const parent = sec.path.length > 1 ? sectionRef(sc, sec.path.slice(0, -1)) : "null";
+    out.push(`insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values (${q(sc)}, ${parent}, ${sec.path.length}, ${sec.path.at(-1)}, ${[sec.title, sec.title_sanskrit, sec.expected_verses].map(q).join(", ")}) on conflict do nothing;`);
+  }
+  // One multi-row insert per section keeps the seed small and fast.
+  const groups = new Map();
   for (const v of data.verses) {
-    const section = `(select id from sections where scripture_id = ${q(data.scripture)} and level = 1 and number = ${v.chapter})`;
+    const path = v.section_path ?? [v.chapter];
     if (featured.has(v.id)) {
       out.push(`update verses set speaker = ${q(v.speaker)} where id = ${q(v.id)};`);
-    } else {
-      out.push(`insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status) values (${[v.id, data.scripture].map(q).join(", ")}, ${section}, ${v.verse}, ${[v.reference, v.sanskrit, v.transliteration, v.speaker].map(q).join(", ")}, ${v.chapter * 1000 + v.verse}, false, ${q(data.sanskrit_source)}, 'draft');`);
-      imported++;
+      continue;
     }
-    for (const [lang, text] of Object.entries(v.translation))
-      out.push(`insert into translations (verse_id, language, text, source_id, is_primary) values (${[v.id, lang, text, data.translation_source[lang]].map(q).join(", ")}, ${!featured.has(v.id)});`);
+    const key = path.join(".");
+    if (!groups.has(key)) groups.set(key, { path, rows: [] });
+    groups.get(key).rows.push(`(${[v.id, v.verse, v.reference, v.sanskrit, v.transliteration, v.speaker].map(q).join(", ")}, ${v.sort_key ?? v.chapter * 1000 + v.verse})`);
+    imported++;
   }
+  for (const { path, rows } of groups.values())
+    out.push(`insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)\nselect x.id, ${q(sc)}, ${sectionRef(sc, path)}, x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, ${q(data.sanskrit_source)}, 'draft'\nfrom (values\n${rows.join(",\n")}\n) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);`);
+  const translations = data.verses.flatMap((v) =>
+    Object.entries(v.translation).map(([lang, text]) => `(${[v.id, lang, text, data.translation_source[lang]].map(q).join(", ")}, ${!featured.has(v.id)})`)
+  );
+  if (translations.length)
+    out.push(`insert into translations (verse_id, language, text, source_id, is_primary) values\n${translations.join(",\n")};`);
   out.push("");
 }
 

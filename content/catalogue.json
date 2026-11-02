@@ -60,8 +60,8 @@
       "author": "Input by M. Tokunaga et al., revised by John Smith",
       "year": null,
       "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/ext/bhgce__u.htm",
-      "licence": "public-domain",
-      "notes": "The Sanskrit text itself is ancient and public domain. This digital input is distributed by GRETIL for reference and research; credit GRETIL and the inputters. Devanagari is generated from the IAST by scripts/import/gita.py. Chapter 13 has 34 verses (the critical edition omits the extra opening verse found in some printed editions)."
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "The Sanskrit text itself is ancient. This digital input (Tokunaga et al., revised by John Smith) is distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Devanagari is generated from the IAST by scripts/import/gita.py. Chapter 13 has 34 verses (the critical edition omits the extra opening verse found in some printed editions)."
     },
     {
       "id": "besant-1922",
@@ -71,6 +71,15 @@
       "url": "https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)",
       "licence": "public-domain",
       "notes": "Translator died 1933; public domain worldwide. Text as proofread on English Wikisource. Besant's footnotes are left out. Her chapter 13 is numbered one higher than ours because her edition includes the extra opening verse."
+    },
+    {
+      "id": "gretil-ramayana-ce",
+      "title": "Valmiki Ramayana, text of the Baroda critical edition (GRETIL)",
+      "author": "Input by Muneo Tokunaga, revised by John Smith",
+      "year": 2020,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml",
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "Distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. 18,761 verses in the critical edition (printed vulgate editions have about 24,000). Devanagari is generated from the IAST by scripts/import/ramayana.py."
     }
   ],
   "scriptures": [
@@ -327,7 +336,7 @@
         "Sarga",
         "Verse"
       ],
-      "expected_verses": 24000,
+      "expected_verses": 18761,
       "description": "The story of Rama in seven kandas."
     },
     {

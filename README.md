@@ -11,4 +11,4 @@ Each card shows the scripture name and verse reference, the Sanskrit, a translit
 3. **Build:** one Expo (React Native) codebase for iOS, Android and web; Supabase for accounts, progress and test scores; preload upcoming cards so flipping is instant.
 4. **Illustrations and launch.**
 
-See [docs/content-guide.md](docs/content-guide.md) for the card format and sources.
+See [docs/content-guide.md](docs/content-guide.md) for the card format and sources, and [docs/data-model.md](docs/data-model.md) for the database and the road to 10,000+ shlokas.

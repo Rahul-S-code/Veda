@@ -36,6 +36,7 @@ do $$ begin
   assert exists (select 1 from translations where verse_id = 'gita-12-2' and source_id = 'besant-1922' and not is_primary), 'Besant kept as secondary';
   assert (select status from explanations where verse_id = 'gita-12-2') = 'draft', 'drafted meaning stays a draft';
   assert (select source_id from explanations where verse_id = 'gita-12-13') = 'veda-app-original', 'featured card keeps its own meaning';
+  assert (select count(distinct e.verse_id) from explanations e join verses v on v.id = e.verse_id where v.scripture_id = 'bhagavad-gita') = 700, 'every Gita verse has a meaning';
 end $$;
 
 -- Anonymous visitors see published verses only.

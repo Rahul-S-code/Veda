@@ -3,6 +3,16 @@
 insert into auth.users (id, email) values ('11111111-1111-1111-1111-111111111111', 'a@example.com'), ('22222222-2222-2222-2222-222222222222', 'b@example.com');
 insert into verses (id, scripture_id, reference, sanskrit, sort_key, status) values ('draft-test', 'bhagavad-gita', 'Draft', 'x', 999999, 'draft');
 
+-- The full Gita is imported: 700 verses, 20 published cards plus 680 drafts, each with a primary English translation.
+do $$ begin
+  assert (select count(*) from verses where scripture_id = 'bhagavad-gita' and id <> 'draft-test') = 700, 'Gita should have 700 verses';
+  assert (select count(*) from verses where scripture_id = 'bhagavad-gita' and status = 'draft' and id <> 'draft-test') = 680, 'Gita should have 680 drafts';
+  assert (select count(*) from translations t join verses v on v.id = t.verse_id where v.scripture_id = 'bhagavad-gita' and t.is_primary) = 700, 'every Gita verse needs one primary translation';
+  assert (select count(*) from verses where scripture_id = 'bhagavad-gita' and speaker is null and id <> 'draft-test') = 0, 'every Gita verse needs a speaker';
+  assert (select count(*) from verses v join sections s on s.id = v.section_id where v.scripture_id = 'bhagavad-gita') = 700, 'every Gita verse sits in its chapter';
+  assert not exists (select 1 from sections s where s.scripture_id = 'bhagavad-gita' and s.expected_verses <> (select count(*) from verses v where v.section_id = s.id)), 'chapter counts should match';
+end $$;
+
 -- Anonymous visitors see published verses only.
 set role anon;
 do $$ begin

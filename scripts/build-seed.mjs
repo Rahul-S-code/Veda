@@ -51,8 +51,31 @@ for (const c of cards) {
   for (const t of c.tags) tags.set(t, t[0].toUpperCase() + t.slice(1));
   out.push("");
 }
+// Full texts imported from public-domain editions (content/import/*.json, made by scripts/import/*.py).
+// Verses that already have a featured card keep their card; they only gain the imported translation and speaker.
+// Every other verse is loaded as a draft, hidden from readers until reviewed and published.
+const featured = new Set(cards.map((c) => c.id));
+const importDir = root + "content/import/";
+let imported = 0;
+for (const f of readdirSync(importDir).filter((f) => f.endsWith(".json")).sort()) {
+  const data = JSON.parse(readFileSync(importDir + f, "utf8"));
+  out.push(`-- Imported: ${data.scripture} (${f})`);
+  for (const v of data.verses) {
+    const section = `(select id from sections where scripture_id = ${q(data.scripture)} and level = 1 and number = ${v.chapter})`;
+    if (featured.has(v.id)) {
+      out.push(`update verses set speaker = ${q(v.speaker)} where id = ${q(v.id)};`);
+    } else {
+      out.push(`insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status) values (${[v.id, data.scripture].map(q).join(", ")}, ${section}, ${v.verse}, ${[v.reference, v.sanskrit, v.transliteration, v.speaker].map(q).join(", ")}, ${v.chapter * 1000 + v.verse}, false, ${q(data.sanskrit_source)}, 'draft');`);
+      imported++;
+    }
+    for (const [lang, text] of Object.entries(v.translation))
+      out.push(`insert into translations (verse_id, language, text, source_id, is_primary) values (${[v.id, lang, text, data.translation_source[lang]].map(q).join(", ")}, ${!featured.has(v.id)});`);
+  }
+  out.push("");
+}
+
 out.splice(out.indexOf("") + 1, 0, ...[...tags].map(([id, label]) => `insert into tags (id, label) values (${q(id)}, ${q(label)});`));
 for (const c of cards) for (const t of c.tags) out.push(`insert into verse_tags (verse_id, tag_id) values (${q(c.id)}, ${q(t)});`);
 out.push("", "commit;", "");
 writeFileSync(root + "supabase/seed.sql", out.join("\n"));
-console.log(`Wrote supabase/seed.sql: ${catalogue.scriptures.length} scriptures, ${catalogue.sections.length} sections, ${cards.length} verses`);
+console.log(`Wrote supabase/seed.sql: ${catalogue.scriptures.length} scriptures, ${catalogue.sections.length} sections, ${cards.length} featured cards, ${imported} imported draft verses`);

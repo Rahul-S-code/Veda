@@ -53,6 +53,24 @@
       "url": null,
       "licence": "public-domain",
       "notes": null
+    },
+    {
+      "id": "gretil-bhg-ce",
+      "title": "Bhagavadgita, text of the Poona critical edition of the Mahabharata (GRETIL)",
+      "author": "Input by M. Tokunaga et al., revised by John Smith",
+      "year": null,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/ext/bhgce__u.htm",
+      "licence": "public-domain",
+      "notes": "The Sanskrit text itself is ancient and public domain. This digital input is distributed by GRETIL for reference and research; credit GRETIL and the inputters. Devanagari is generated from the IAST by scripts/import/gita.py. Chapter 13 has 34 verses (the critical edition omits the extra opening verse found in some printed editions)."
+    },
+    {
+      "id": "besant-1922",
+      "title": "The Bhagavad-Gita, or The Lord's Song (4th edition)",
+      "author": "Annie Besant",
+      "year": 1922,
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)",
+      "licence": "public-domain",
+      "notes": "Translator died 1933; public domain worldwide. Text as proofread on English Wikisource. Besant's footnotes are left out. Her chapter 13 is numbered one higher than ours because her edition includes the extra opening verse."
     }
   ],
   "scriptures": [

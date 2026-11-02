@@ -55,10 +55,22 @@ Counts vary slightly between editions (for example, Gita chapter 13 has 34 or 35
 | Phase | Scope | Running total (approx.) |
 |---|---|---|
 | 0 (done) | 30 featured cards | 30 |
-| 1 | Complete Bhagavad Gita | 700 |
+| 1 (imported, in review) | Complete Bhagavad Gita | 700 |
 | 2 | Principal Upanishads (verse texts first: Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Shvetashvatara) | about 1,100 |
 | 3 | Valmiki Ramayana, kanda by kanda | 10,000+ partway through |
 | 4 | Rig Veda, Atharva Veda, then the rest | 20,000+ |
+
+### Phase 1: the Bhagavad Gita import
+
+`scripts/import/gita.py` builds `content/import/gita.json`, which `build-seed.mjs` loads:
+
+- **Sanskrit:** all 700 verses from GRETIL's text of the Poona critical edition (IAST). Devanagari is generated from the IAST by rule, joining words the way printed editions do; nothing is typed by hand. 14 of our 20 hand-checked cards match it letter for letter, and the other 6 differ only in spelling conventions (for example संभवामि for सम्भवामि) or one critical-edition reading (18.66 त्वा for त्वां).
+- **English:** Annie Besant's translation (4th edition, 1922, public domain), from the proofread scan on English Wikisource. We use it instead of Telang (1882) because Telang's translation is running prose without verse numbers, so it cannot be matched to verses reliably; Besant numbers every verse.
+- **Speaker** (Dhritarashtra, Sanjaya, Arjuna, Krishna) comes from the "uvāca" lines in the Sanskrit.
+- The 20 featured cards keep their reviewed content and gain Besant as a second translation. The other 680 verses are `draft`, with Besant as their primary translation, until someone reviews them.
+- **Numbering:** we follow the critical edition, where chapter 13 has 34 verses. Some printed editions add an extra opening verse to chapter 13 (701 in all); Besant's edition does, so her 13.2 is our 13.1.
+
+To re-run: `pip install indic_transliteration && python3 scripts/import/gita.py && node scripts/build-seed.mjs`. The script fails if any verse is missing, duplicated or left with markup.
 
 ### How each phase is built
 

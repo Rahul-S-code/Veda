@@ -56,8 +56,8 @@ Counts vary slightly between editions (for example, Gita chapter 13 has 34 or 35
 |---|---|---|
 | 0 (done) | 30 featured cards | 30 |
 | 1 (imported, in review) | Complete Bhagavad Gita | 700 |
-| 2 | Principal Upanishads (verse texts first: Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Shvetashvatara) | about 1,100 |
-| 3 | Valmiki Ramayana, kanda by kanda | 10,000+ partway through |
+| 2 (imported, in review) | Principal Upanishads (verse texts first: Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Shvetashvatara) | about 1,100 |
+| 3 (imported, in review) | Valmiki Ramayana, all seven kandas (critical edition, 18,761 verses) | about 20,900 |
 | 4 | Rig Veda, Atharva Veda, then the rest | 20,000+ |
 
 ### Phase 1: the Bhagavad Gita import
@@ -71,6 +71,14 @@ Counts vary slightly between editions (for example, Gita chapter 13 has 34 or 35
 - **Numbering:** we follow the critical edition, where chapter 13 has 34 verses. Some printed editions add an extra opening verse to chapter 13 (701 in all); Besant's edition does, so her 13.2 is our 13.1.
 
 To re-run: `pip install indic_transliteration && python3 scripts/import/gita.py && node scripts/build-seed.mjs`. The script fails if any verse is missing, duplicated or left with markup.
+
+### Phases 2 and 3: Upanishads and Ramayana
+
+- `scripts/import/ramayana.py` loads all 18,761 verses of the Ramayana critical edition from GRETIL, in seven kandas and 606 sargas (`content/import/ramayana-<kanda>.json`). Printed popular editions have about 24,000 verses; the critical edition leaves out passages found in only some manuscripts.
+- `scripts/import/upanishads.py` loads 1,418 verses of eight principal Upanishads from GRETIL: Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka. Where a file carries Shankara's commentary, only the Upanishad's own text is taken. Kena and Mundaka are not openly downloadable from GRETIL, and Taittiriya's file does not mark its own text, so those three are still to do. Five verses are missing because of gaps in GRETIL's markup (Chandogya 3.15.5 and 4.7.1-2, Brihadaranyaka 4.4.19 and 6.5.2).
+- These are **Sanskrit only** for now: no public-domain English translation numbers individual verses in a way that matches these editions. Our own plain-English translation is the next step (step 2 below).
+- **Licence:** GRETIL distributes its e-texts, including the Gita above, under CC BY-NC-SA 4.0. The app must credit GRETIL and the inputters, stay non-commercial, and share the texts under the same licence. Replacing the Sanskrit with another edition later only changes the `sanskrit` field; verse ids and reader progress stay the same.
+- Sections nest (Kanda > Sarga, Chapter > Section). Sort keys are `kanda * 1,000,000 + sarga * 1,000 + verse`.
 
 ### How each phase is built
 

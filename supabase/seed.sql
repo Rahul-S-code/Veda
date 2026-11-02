@@ -74,6 +74,7 @@ insert into sources (id, title, author, year, url, licence, notes) values ('mull
 insert into sources (id, title, author, year, url, licence, notes) values ('gretil-bhg-ce', 'Bhagavadgita, text of the Poona critical edition of the Mahabharata (GRETIL)', 'Input by M. Tokunaga et al., revised by John Smith', null, 'https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/ext/bhgce__u.htm', 'cc-by-nc-sa-4.0', 'The Sanskrit text itself is ancient. This digital input (Tokunaga et al., revised by John Smith) is distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Devanagari is generated from the IAST by scripts/import/gita.py. Chapter 13 has 34 verses (the critical edition omits the extra opening verse found in some printed editions).');
 insert into sources (id, title, author, year, url, licence, notes) values ('besant-1922', 'The Bhagavad-Gita, or The Lord''s Song (4th edition)', 'Annie Besant', 1922, 'https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)', 'public-domain', 'Translator died 1933; public domain worldwide. Text as proofread on English Wikisource. Besant''s footnotes are left out. Her chapter 13 is numbered one higher than ours because her edition includes the extra opening verse.');
 insert into sources (id, title, author, year, url, licence, notes) values ('gretil-ramayana-ce', 'Valmiki Ramayana, text of the Baroda critical edition (GRETIL)', 'Input by Muneo Tokunaga, revised by John Smith', 2020, 'https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml', 'cc-by-nc-sa-4.0', 'Distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. 18,761 verses in the critical edition (printed vulgate editions have about 24,000). Devanagari is generated from the IAST by scripts/import/ramayana.py.');
+insert into sources (id, title, author, year, url, licence, notes) values ('gretil-upanishads', 'Principal Upanishads (GRETIL e-texts)', 'Various inputters, as named in each GRETIL file', null, 'https://gretil.sub.uni-goettingen.de/gretil.html#Upan', 'cc-by-nc-sa-4.0', 'Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka (Kanva). Several files carry Shankara''s commentary; only the Upanishad''s own text is imported. CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Known gaps in the source markup: Chandogya 3.15.5, 4.7.1-2; Brihadaranyaka 4.4.19, 6.5.2.');
 
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('rig-veda', 'Rig Veda', 'ऋग्वेद', 'veda', null, 'The oldest Veda: 1,028 hymns in ten books (mandalas).', array['Mandala', 'Hymn', 'Verse']::text[], 10552, 0);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('sama-veda', 'Sama Veda', 'सामवेद', 'veda', null, 'The Veda of melodies, mostly verses of the Rig Veda set for chanting.', array['Part', 'Chapter', 'Verse']::text[], 1875, 1);
@@ -87,7 +88,7 @@ insert into scriptures (id, name, name_sanskrit, category, parent_id, descriptio
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('mundaka-upanishad', 'Mundaka Upanishad', 'मुण्डकोपनिषद्', 'upanishad', 'atharva-veda', null, array['Mundaka', 'Section', 'Verse']::text[], 64, 9);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('mandukya-upanishad', 'Mandukya Upanishad', 'माण्डूक्योपनिषद्', 'upanishad', 'atharva-veda', 'Twelve verses on Om and the states of consciousness.', array['Verse']::text[], 12, 10);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('taittiriya-upanishad', 'Taittiriya Upanishad', 'तैत्तिरीयोपनिषद्', 'upanishad', 'krishna-yajur-veda', null, array['Chapter', 'Section']::text[], null, 11);
-insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('aitareya-upanishad', 'Aitareya Upanishad', 'ऐतरेयोपनिषद्', 'upanishad', 'rig-veda', null, array['Chapter', 'Section', 'Verse']::text[], null, 12);
+insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('aitareya-upanishad', 'Aitareya Upanishad', 'ऐतरेयोपनिषद्', 'upanishad', 'rig-veda', null, array['Chapter', 'Section', 'Verse']::text[], 33, 12);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('chandogya-upanishad', 'Chandogya Upanishad', 'छान्दोग्योपनिषद्', 'upanishad', 'sama-veda', null, array['Chapter', 'Section', 'Verse']::text[], null, 13);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('brihadaranyaka-upanishad', 'Brihadaranyaka Upanishad', 'बृहदारण्यकोपनिषद्', 'upanishad', 'shukla-yajur-veda', 'The largest of the principal Upanishads.', array['Chapter', 'Section', 'Verse']::text[], null, 14);
 insert into scriptures (id, name, name_sanskrit, category, parent_id, description, level_names, expected_verses, sort_order) values ('shvetashvatara-upanishad', 'Shvetashvatara Upanishad', 'श्वेताश्वतरोपनिषद्', 'upanishad', 'krishna-yajur-veda', null, array['Chapter', 'Verse']::text[], 113, 15);
@@ -514,26 +515,26 @@ insert into quiz_questions (verse_id, question, options, answer_index) values ('
 insert into quiz_questions (verse_id, question, options, answer_index) values ('taittiriya-shanti', 'What does the last line ask for?', array['Wealth', 'That we never resent each other', 'Victory over enemies', 'Long life']::text[], 1);
 
 -- Imported: bhagavad-gita (gita.json)
-update verses set speaker = 'Krishna' where id = 'gita-2-14';
-update verses set speaker = 'Krishna' where id = 'gita-2-20';
-update verses set speaker = 'Krishna' where id = 'gita-2-22';
-update verses set speaker = 'Krishna' where id = 'gita-2-47';
-update verses set speaker = 'Krishna' where id = 'gita-2-48';
-update verses set speaker = 'Krishna' where id = 'gita-2-56';
-update verses set speaker = 'Krishna' where id = 'gita-2-62';
-update verses set speaker = 'Krishna' where id = 'gita-3-19';
-update verses set speaker = 'Krishna' where id = 'gita-3-21';
-update verses set speaker = 'Krishna' where id = 'gita-3-35';
-update verses set speaker = 'Krishna' where id = 'gita-4-7';
-update verses set speaker = 'Krishna' where id = 'gita-4-8';
-update verses set speaker = 'Krishna' where id = 'gita-5-18';
-update verses set speaker = 'Krishna' where id = 'gita-6-5';
-update verses set speaker = 'Krishna' where id = 'gita-6-17';
-update verses set speaker = 'Krishna' where id = 'gita-6-26';
-update verses set speaker = 'Krishna' where id = 'gita-9-22';
-update verses set speaker = 'Krishna' where id = 'gita-9-26';
-update verses set speaker = 'Krishna' where id = 'gita-12-13';
-update verses set speaker = 'Krishna' where id = 'gita-18-66';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-14';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-20';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-22';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-47';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-48';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-56';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 2 and parent_id is null) where id = 'gita-2-62';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 3 and parent_id is null) where id = 'gita-3-19';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 3 and parent_id is null) where id = 'gita-3-21';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 3 and parent_id is null) where id = 'gita-3-35';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 4 and parent_id is null) where id = 'gita-4-7';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 4 and parent_id is null) where id = 'gita-4-8';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 5 and parent_id is null) where id = 'gita-5-18';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 6 and parent_id is null) where id = 'gita-6-5';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 6 and parent_id is null) where id = 'gita-6-17';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 6 and parent_id is null) where id = 'gita-6-26';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 9 and parent_id is null) where id = 'gita-9-22';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 9 and parent_id is null) where id = 'gita-9-26';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 12 and parent_id is null) where id = 'gita-12-13';
+update verses set speaker = 'Krishna', section_id = (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 18 and parent_id is null) where id = 'gita-18-66';
 insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
 select x.id, 'bhagavad-gita', (select id from sections where scripture_id = 'bhagavad-gita' and level = 1 and number = 1 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-bhg-ce', 'draft'
 from (values
@@ -63722,6 +63723,11967 @@ jagāma tridaśaiḥ sārdhaṃ hṛṣṭair hṛṣṭo mahāmatiḥ', null, 7
 ('ramayana-7-100-26', 26, 'Uttara Kanda, Sarga 100, Verse 26', 'एतावदेव आख्यानं सोत्तरं ब्रह्मपूजितम्।
 रामायणमिति ख्यातं मुख्यं वाल्मीकिना कृतम्॥', 'etāvad eva ākhyānaṃ sottaraṃ brahmapūjitam
 rāmāyaṇam iti khyātaṃ mukhyaṃ vālmīkinā kṛtam', null, 7100026)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: aitareya-upanishad (upanishad-aitareya.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', null, 1, 1, 'Chapter 1', null, 23) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 1, 'Section 1', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 2, 'Section 2', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 3, 'Section 3', null, 14) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', null, 1, 2, 'Chapter 2', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 1, 'Section 1', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', null, 1, 3, 'Chapter 3', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 1, 'Section 1', null, 4) on conflict do nothing;
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('aitareya-1-1-1', 1, 'Chapter 1, Section 1, Verse 1', 'आत्मा वा इदमेक एवाग्र आसीत्।
+नान्यत्किञ्चन मिषत्।
+स ईक्षत लोकान्नु सृजा इति॥', 'ātmā vā idam eka evāgra āsīt
+nānyat kiñcana miṣat
+sa īkṣata lokān nu sṛjā iti', null, 1001001),
+('aitareya-1-1-2', 2, 'Chapter 1, Section 1, Verse 2', 'स इमांल्लोकानसृजताम्भो मरीचीर्मरमापः।
+अदोऽम्भः परेण दिवम्।
+द्यौः प्रतिष्ठा।
+अन्तरिक्षं मरीचयः।
+पृथिवी मरः।
+या अधस्तात्ता आपः॥', 'sa imāṃl lokān asṛjatāmbho marīcīr maram āpaḥ
+ado ''mbhaḥ pareṇa divam
+dyauḥ pratiṣṭhā
+antarikṣaṃ marīcayaḥ
+pṛthivī maraḥ
+yā adhastāt tā āpaḥ', null, 1001002),
+('aitareya-1-1-3', 3, 'Chapter 1, Section 1, Verse 3', 'स ईक्षतेमे नु लोकाः।
+लोकपालान्नु सृजा इति।
+सोऽद्भ्य एव पुरुषं समुद्धृत्यामूर्च्छयत्॥', 'sa īkṣateme nu lokāḥ
+lokapālān nu sṛjā iti
+so ''dbhya eva puruṣaṃ samuddhṛtyāmūrcchayat', null, 1001003),
+('aitareya-1-1-4', 4, 'Chapter 1, Section 1, Verse 4', 'तमभ्यतपत्।
+तस्याभितप्तस्य मुखं निरभिद्यत यथाण्डम्।
+मुखाद्वाक्।
+वाचोऽग्निः।
+नासिके निरभिद्येताम्।
+नासिकाभ्यां प्राणः।
+प्राणाद्वायुः।
+अक्षिणी निरभिद्येताम्।
+अक्षीभ्यां चक्षुः।
+चक्षुष आदित्यः।
+कर्णौ निरभिद्येताम्।
+कर्णाभ्यां श्रोत्रम्।
+श्रोत्राद्दिशः।
+त्वङ्निरभिद्यत।
+त्वचो लोमानि।
+लोमभ्य ओषधिवनस्पतयः।
+हृदयं निरभिद्यत।
+हृदयान्मनः।
+मनसश्चन्द्रमाः।
+नाभिर्निरभिद्यत।
+नाभ्या अपानः।
+अपानान्मृत्युः।
+शिश्नं निरभिद्यत।
+शिश्नाद्रेतः।
+रेतस आपः॥', 'tam abhyatapat
+tasyābhitaptasya mukhaṃ nirabhidyata yathāṇḍam
+mukhād vāk
+vāco ''gniḥ
+nāsike nirabhidyetām
+nāsikābhyāṃ prāṇaḥ
+prāṇād vāyuḥ
+akṣiṇī nirabhidyetām
+akṣībhyāṃ cakṣuḥ
+cakṣuṣa ādityaḥ
+karṇau nirabhidyetām
+karṇābhyāṃ śrotram
+śrotrād diśaḥ
+tvaṅ nirabhidyata
+tvaco lomāni
+lomabhya oṣadhivanaspatayaḥ
+hṛdayaṃ nirabhidyata
+hṛdayān manaḥ
+manasaś candramāḥ
+nābhir nirabhidyata
+nābhyā apānaḥ
+apānān mṛtyuḥ
+śiśnaṃ nirabhidyata
+śiśnād retaḥ
+retasa āpaḥ', null, 1001004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('aitareya-1-2-1', 1, 'Chapter 1, Section 2, Verse 1', 'ता एता देवताः सृष्टा अस्मिन्महत्यर्णवे प्रापतन्।
+तमशनापिपासाभ्यामन्ववार्जत्।
+ता एनमब्रुवन्नायतनं नः प्रजानीहि।
+यस्मिन्प्रतिष्ठिता अन्नमदामेति॥', 'tā etā devatāḥ sṛṣṭā asmin mahaty arṇave prāpatan
+tam aśanāpipāsābhyām anvavārjat
+tā enam abruvann āyatanaṃ naḥ prajānīhi
+yasmin pratiṣṭhitā annam adāmeti', null, 1002001),
+('aitareya-1-2-2', 2, 'Chapter 1, Section 2, Verse 2', 'ताभ्यो गामानयत्।
+ता अब्रुवन्न वै नोऽयमलमिति।
+ताभ्योऽश्वमानयत्।
+ता अब्रुवन्न वै नोऽयमलमिति॥', 'tābhyo gām ānayat
+tā abruvan na vai no ''yam alam iti
+tābhyo ''śvam ānayat
+tā abruvan na vai no ''yam alam iti', null, 1002002),
+('aitareya-1-2-3', 3, 'Chapter 1, Section 2, Verse 3', 'ताभ्यः पुरुषमानयत्।
+ता अब्रुवन्सुकृतं बतेति।
+पुरुषो वाव सुकृतम्।
+ता अब्रवीद्यथायतनं प्रविशतेति॥', 'tābhyaḥ puruṣam ānayat
+tā abruvan sukṛtaṃ bateti
+puruṣo vāva sukṛtam
+tā abravīd yathāyatanaṃ praviśateti', null, 1002003),
+('aitareya-1-2-4', 4, 'Chapter 1, Section 2, Verse 4', 'अग्निर्वाग्भूत्वा मुखं प्राविशत्।
+वायुः प्राणो भूत्वा नासिके प्राविशत्।
+आदित्यश्चक्षुर्भूत्वाक्षिणी प्राविशत्।
+दिशः श्रोत्रं भूत्वा कर्णौ प्राविशन्।
+ओषधिवनस्पतयो लोमानि भूत्वा त्वचं प्राविशन्।
+चन्द्रमा मनो भूत्वा हृदयं प्राविशत्।
+मृत्युरपानो भूत्वा नाभिं प्राविशत्।
+आपो रेतो भूत्वा शिश्नं प्राविशन्॥', 'agnir vāg bhūtvā mukhaṃ prāviśat
+vāyuḥ prāṇo bhūtvā nāsike prāviśat
+ādityaś cakṣur bhūtvākṣiṇī prāviśat
+diśaḥ śrotraṃ bhūtvā karṇau prāviśan
+oṣadhivanaspatayo lomāni bhūtvā tvacaṃ prāviśan
+candramā mano bhūtvā hṛdayaṃ prāviśat
+mṛtyur apāno bhūtvā nābhiṃ prāviśat
+āpo reto bhūtvā śiśnaṃ prāviśan', null, 1002004),
+('aitareya-1-2-5', 5, 'Chapter 1, Section 2, Verse 5', 'तमशनापिपासे अब्रूतामवाभ्यामभिप्रजानीहीति।
+ते अब्रवीदेतास्वेव वां देवतास्वाभजाम्येतासु भागिन्यौ करोमीति।
+तस्माद्यस्यै कस्यै च देवतायै हविर्गृह्यते भागिन्यावेवास्यामशनापिपासे भवतः॥', 'tam aśanāpipāse abrūtām avābhyām abhiprajānīhīti
+te abravīd etāsv eva vāṃ devatāsv ābhajāmy etāsu bhāginyau karomīti
+tasmād yasyai kasyai ca devatāyai havir gṛhyate bhāginyāv evāsyām aśanāpipāse bhavataḥ', null, 1002005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('aitareya-1-3-1', 1, 'Chapter 1, Section 3, Verse 1', 'स ईक्षतेमे नु लोकाश्च लोकपालाश्च।
+अन्नमेभ्यः सृजा इति॥', 'sa īkṣateme nu lokāś ca lokapālāś ca
+annam ebhyaḥ sṛjā iti', null, 1003001),
+('aitareya-1-3-2', 2, 'Chapter 1, Section 3, Verse 2', 'सोऽपोऽभ्यतपत्।
+ताभ्योऽभितप्ताभ्यो मूर्तिरजायत।
+या वै सा मूर्तिरजायतान्नं वै तत्॥', 'so ''po ''bhyatapat
+tābhyo ''bhitaptābhyo mūrtir ajāyata
+yā vai sā mūrtir ajāyatānnaṃ vai tat', null, 1003002),
+('aitareya-1-3-3', 3, 'Chapter 1, Section 3, Verse 3', 'तदेनत्सृष्टं पराङत्यजिघांसत्।
+तद्वाचाजिघृक्षत्।
+तन्नाशक्नोद्वाचा ग्रहीतुम्।
+स यद्धैनद्वाचाग्रहैष्यदभिव्याहृत्य हैवान्नमत्रप्स्यत्॥', 'tad enat sṛṣṭaṃ parāṅ atyajighāṃsat
+tad vācājighṛkṣat
+tan nāśaknod vācā grahītum
+sa yad dhainad vācāgrahaiṣyad abhivyāhṛtya haivānnam atrapsyat', null, 1003003),
+('aitareya-1-3-4', 4, 'Chapter 1, Section 3, Verse 4', 'तत्प्राणेनाजिघृक्षत्।
+तन्नाशक्नोत्प्राणेन ग्रहीतुम्।
+स यद्धैनत्प्राणेनाग्रहैष्यदभिप्राण्य हैवान्नमत्रप्स्यत्॥', 'tat prāṇenājighṛkṣat
+tan nāśaknot prāṇena grahītum
+sa yad dhainat prāṇenāgrahaiṣyad abhiprāṇya haivānnam atrapsyat', null, 1003004),
+('aitareya-1-3-5', 5, 'Chapter 1, Section 3, Verse 5', 'तच्चक्षुषाजिघृक्षत्।
+तन्नाशक्नोच्चक्षुषा ग्रहीतुम्।
+स यद्धैनच्चक्षुषाग्रहैष्यद्दृष्ट्वा हैवान्नमत्रप्स्यत्॥', 'tac cakṣuṣājighṛkṣat
+tan nāśaknoc cakṣuṣā grahītum
+sa yad dhainac cakṣuṣāgrahaiṣyad dṛṣṭvā haivānnam atrapsyat', null, 1003005),
+('aitareya-1-3-6', 6, 'Chapter 1, Section 3, Verse 6', 'तच्छ्रोत्रेणाजिघृक्षत्।
+तन्नाशक्नोच्छ्रोत्रेण ग्रहीतुम्।
+स यद्धैनच्छ्रोत्रेणाग्रहैष्यच्छ्रुत्वा हैवान्नमत्रप्स्यत्॥', 'tac chrotreṇājighṛkṣat
+tan nāśaknoc chrotreṇa grahītum
+sa yad dhainac chrotreṇāgrahaiṣyac chrutvā haivānnam atrapsyat', null, 1003006),
+('aitareya-1-3-7', 7, 'Chapter 1, Section 3, Verse 7', 'तत्त्वचाजिघृक्षत्।
+तन्नाशक्नोत्त्वचा ग्रहीतुम्।
+स यद्धैनत्त्वचाग्रहैष्यत्स्पृष्ट्वा हैवान्नमत्रप्स्यत्॥', 'tat tvacājighṛkṣat
+tan nāśaknot tvacā grahītum
+sa yad dhainat tvacāgrahaiṣyat spṛṣṭvā haivānnam atrapsyat', null, 1003007),
+('aitareya-1-3-8', 8, 'Chapter 1, Section 3, Verse 8', 'तन्मनसाजिघृक्षत्।
+तन्नाशक्नोन्मनसा ग्रहीतुम्।
+स यद्धैनन्मनसाग्रहैष्यद्ध्यात्वा हैवान्नमत्रप्स्यत्॥', 'tan manasājighṛkṣat
+tan nāśaknon manasā grahītum
+sa yad dhainan manasāgrahaiṣyad dhyātvā haivānnam atrapsyat', null, 1003008),
+('aitareya-1-3-9', 9, 'Chapter 1, Section 3, Verse 9', 'तच्छिश्नेनाजिघृक्षत्।
+तन्नाशक्नोच्छिश्नेन ग्रहीतुम्।
+स यद्धैनच्छिश्नेनाग्रहैष्यद्विसृज्य हैवान्नमत्रप्स्यत्॥', 'tac chiśnenājighṛkṣat
+tan nāśaknoc chiśnena grahītum
+sa yad dhainac chiśnenāgrahaiṣyad visṛjya haivānnam atrapsyat', null, 1003009),
+('aitareya-1-3-10', 10, 'Chapter 1, Section 3, Verse 10', 'तदपानेनाजिघृक्षत्।
+तदावयत्।
+सैषोऽन्नस्य ग्रहो यद्वायुः।
+अन्नायुर्वा एष यद्वायुः॥', 'tad apānenājighṛkṣat
+tad āvayat
+saiṣo ''nnasya graho yad vāyuḥ
+annāyur vā eṣa yad vāyuḥ', null, 1003010),
+('aitareya-1-3-11', 11, 'Chapter 1, Section 3, Verse 11', 'स ईक्षत कथं न्विदं मदृते स्यादिति।
+स ईक्षत कतरेण प्रपद्या इति।
+स ईक्षत यदि वाचाभिव्याहृतं यदि प्राणेनाभिप्राणितं यदि चक्षुषा दृष्टं यदि श्रोत्रेण श्रुतं यदि त्वचा स्पृष्टं यदि मनसा ध्यातं यद्यपानेनाभ्यपानितं यदि शिश्नेन विसृष्टमथ कोऽहमिति॥', 'sa īkṣata kathaṃ nv idaṃ mad ṛte syād iti
+sa īkṣata katareṇa prapadyā iti
+sa īkṣata yadi vācābhivyāhṛtaṃ yadi prāṇenābhiprāṇitaṃ yadi cakṣuṣā dṛṣṭaṃ yadi śrotreṇa śrutaṃ yadi tvacā spṛṣṭaṃ yadi manasā dhyātaṃ yady apānenābhyapānitaṃ yadi śiśnena visṛṣṭam atha ko ''ham iti', null, 1003011),
+('aitareya-1-3-12', 12, 'Chapter 1, Section 3, Verse 12', 'स एतमेव सीमानं विदार्यैतया द्वारा प्रापद्यत।
+सैषा विदृतिर्नाम द्वाः।
+तदेतन्नान्दनम्।
+तस्य त्रय आवसथास्त्रयः स्वप्ना अयमावसथोऽयमावसथोऽयमावसथ इति॥', 'sa etam eva sīmānaṃ vidāryaitayā dvārā prāpadyata
+saiṣā vidṛtir nāma dvāḥ
+tad etan nāndanam
+tasya traya āvasathās trayaḥ svapnā ayam āvasatho ''yam āvasatho ''yam āvasatha iti', null, 1003012),
+('aitareya-1-3-13', 13, 'Chapter 1, Section 3, Verse 13', 'स जातो भूतान्यभिव्यैख्यत्किमिहान्यं वावदिषदिति।
+स एतमेव पुरुषं ब्रह्म ततममपश्यदिदमदर्शमिती ३॥', 'sa jāto bhūtāny abhivyaikhyat kim ihānyaṃ vāvadiṣad iti
+sa etam eva puruṣaṃ brahma tatamam apaśyad idam adarśam itī 3', null, 1003013),
+('aitareya-1-3-14', 14, 'Chapter 1, Section 3, Verse 14', 'तस्मादिदन्द्रो नाम।
+इदन्द्रो ह वै नाम।
+तमिदन्द्रं सन्तमिन्द्र इत्याचक्षते परोक्षेण।
+परोक्षप्रिया इव हि देवाः परोक्षप्रिया इव हि देवाः॥', 'tasmād idandro nāma
+idandro ha vai nāma
+tam idandraṃ santam indra ity ācakṣate parokṣeṇa
+parokṣapriyā iva hi devāḥ parokṣapriyā iva hi devāḥ', null, 1003014)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('aitareya-2-1-1', 1, 'Chapter 2, Section 1, Verse 1', 'पुरुषे ह वा अयमादितो गर्भो भवति यदेतद्रेतः।
+तदेतत्सर्वेभ्योऽङ्गेभ्यस्तेजः सम्भूतमात्मन्येवात्मानं बिभर्ति।
+तद्यदा स्त्रियां सिञ्चत्यथैनज्जनयति।
+तदस्य प्रथमं जन्म॥', 'puruṣe ha vā ayam ādito garbho bhavati yad etad retaḥ
+tad etat sarvebhyo ''ṅgebhyas tejaḥ sambhūtam ātmany evātmānaṃ bibharti
+tad yadā striyāṃ siñcaty athainaj janayati
+tad asya prathamaṃ janma', null, 2001001),
+('aitareya-2-1-2', 2, 'Chapter 2, Section 1, Verse 2', 'तत्स्त्रिया आत्मभूयं गच्छति यथा स्वमङ्गं तथा।
+तस्मादेनां न हिनस्ति।
+सास्यैतमात्मानमत्र गतं भावयति॥', 'tat striyā ātmabhūyaṃ gacchati yathā svam aṅgaṃ tathā
+tasmād enāṃ na hinasti
+sāsyaitam ātmānam atra gataṃ bhāvayati', null, 2001002),
+('aitareya-2-1-3', 3, 'Chapter 2, Section 1, Verse 3', 'सा भावयित्री भावयितव्या भवति।
+तं स्त्री गर्भं बिभर्ति।
+सोऽग्र एव कुमारं जन्मनोऽग्रेऽधि भावयति।
+स यत्कुमारं जन्मनोऽग्रेऽधि भावयत्यात्मानमेव तद्भावयत्येषां लोकानां सन्तत्यै।
+एवं सन्तता हीमे लोकाः।
+तदस्य द्वितीयं जन्म॥', 'sā bhāvayitrī bhāvayitavyā bhavati
+taṃ strī garbhaṃ bibharti
+so ''gra eva kumāraṃ janmano ''gre ''dhi bhāvayati
+sa yat kumāraṃ janmano ''gre ''dhi bhāvayaty ātmānam eva tad bhāvayaty eṣāṃ lokānāṃ santatyai
+evaṃ santatā hīme lokāḥ
+tad asya dvitīyaṃ janma', null, 2001003),
+('aitareya-2-1-4', 4, 'Chapter 2, Section 1, Verse 4', 'सोऽस्यायमात्मा पुण्येभ्यः कर्मेभ्यः प्रतिधीयते।
+अथास्यायमितर आत्मा कृतकृत्यो वयोगतः प्रैति।
+स इतः प्रयन्नेव पुनर्जायते।
+तदस्य तृतीयं जन्म॥', 'so ''syāyam ātmā puṇyebhyaḥ karmebhyaḥ pratidhīyate
+athāsyāyam itara ātmā kṛtakṛtyo vayogataḥ praiti
+sa itaḥ prayann eva punar jāyate
+tad asya tṛtīyaṃ janma', null, 2001004),
+('aitareya-2-1-5', 5, 'Chapter 2, Section 1, Verse 5', 'तदुक्तमृषिणा -- गर्भे नु सन्नन्वेषामवेदमहं देवानां जनिमानि विश्वा।
+शतं मा पुर आयसीररक्षन्नध श्येनो जवसा निरदीयम्।
+इति।
+गर्भ एवैतच्छयानो वामदेव एवमुवाच॥', 'tad uktam ṛṣiṇā -- garbhe nu sann anv eṣām avedamahaṃ devānāṃ janimāni viśvā
+śataṃ mā pura āyasīr arakṣannadha śyeno javasā nir adīyam
+iti
+garbha evaitac chayāno vāmadeva evam uvāca', null, 2001005),
+('aitareya-2-1-6', 6, 'Chapter 2, Section 1, Verse 6', 'स एवं विद्वानस्माच्छरीरभेदादूर्ध्वमुत्क्रम्यामुष्मिन्स्वर्गे लोके सर्वान्कामानाप्त्वामृतः समभवत्समभवत्॥', 'sa evaṃ vidvān asmāc charīrabhedād ūrdhvam utkramyāmuṣmin svarge loke sarvān kāmān āptvāmṛtaḥ samabhavat samabhavat', null, 2001006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'aitareya-upanishad', (select id from sections where scripture_id = 'aitareya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'aitareya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('aitareya-3-1-1', 1, 'Chapter 3, Section 1, Verse 1', 'कोऽयम्।
+आत्मेति वयमुपास्महे।
+कतरः स आत्मा।
+येन वा पश्यति येन वा शृणोति येन वा गन्धाञ्जिघ्रति येन वा वाचं व्याकरोति येन वा स्वादु चास्वादु च विजानाति॥', 'ko ''yam
+ātmeti vayam upāsmahe
+kataraḥ sa ātmā
+yena vā paśyati yena vā śṛṇoti yena vā gandhāñ jighrati yena vā vācaṃ vyākaroti yena vā svādu cāsvādu ca vijānāti', null, 3001001),
+('aitareya-3-1-2', 2, 'Chapter 3, Section 1, Verse 2', 'यदेतद्धृदयं मनश्चैतत्।
+सञ्ज्ञानमाज्ञानं विज्ञानं प्रज्ञानं मेधा दृष्टिर्धृतिर्मतिर्मनीषा जूतिः स्मृतिः सङ्कल्पः क्रतुरसुः कामो वश इति सर्वाण्येवैतानि प्रज्ञानस्य नामधेयानि भवन्ति॥', 'yad etad dhṛdayaṃ manaś caitat
+sañjñānam ājñānaṃ vijñānaṃ prajñānaṃ medhā dṛṣṭir dhṛtir matir manīṣā jūtiḥ smṛtiḥ saṅkalpaḥ kratur asuḥ kāmo vaśa iti sarvāṇy evaitāni prajñānasya nāmadheyāni bhavanti', null, 3001002),
+('aitareya-3-1-3', 3, 'Chapter 3, Section 1, Verse 3', 'एष ब्रह्मा।
+एष इन्द्रः।
+एष प्रजापतिः।
+एते सर्वे देवाः।
+इमानि च पञ्च महाभूतानि पृथिवी वायुराकाश आपो ज्योतींषीत्येतानीमानि क्षुद्रमिश्राणीव बीजानीतराणि चेतराणि चाण्डजानि च जारुजानि च स्वेदजानि चोद्भिज्जानि चाश्वा गावः पुरुषा हस्तिनो यत्किञ्चेदम्प्राणि जङ्गमं च पतत्रि च यच्च स्थावरम्।
+सर्वं तत्प्रज्ञानेत्रम्।
+प्रज्ञाने प्रतिष्ठितम्।
+प्रज्ञानेत्रो लोकः।
+प्रज्ञा प्रतिष्ठा।
+प्रज्ञानं ब्रह्म॥', 'eṣa brahmā
+eṣa indraḥ
+eṣa prajāpatiḥ
+ete sarve devāḥ
+imāni ca pañca mahābhūtāni pṛthivī vāyur ākāśa āpo jyotīṃṣīty etānīmāni kṣudramiśrāṇīva bījānītarāṇi cetarāṇi cāṇḍajāni ca jārujāni ca svedajāni codbhijjāni cāśvā gāvaḥ puruṣā hastino yat kiñcedam prāṇi jaṅgamaṃ ca patatri ca yac ca sthāvaram
+sarvaṃ tat prajñānetram
+prajñāne pratiṣṭhitam
+prajñānetro lokaḥ
+prajñā pratiṣṭhā
+prajñānaṃ brahma', null, 3001003),
+('aitareya-3-1-4', 4, 'Chapter 3, Section 1, Verse 4', 'स एतेन प्रज्ञेनात्मनास्माल्लोकादुत्क्रम्यामुष्मिन्स्वर्गे लोके सर्वान्कामानाप्त्वामृतः समभवत्समभवत्॥', 'sa etena prajñenātmanāsmāl lokād utkramyāmuṣmin svarge loke sarvān kāmān āptvāmṛtaḥ samabhavat samabhavat', null, 3001004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: brihadaranyaka-upanishad (upanishad-brihadaranyaka.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 1, 'Chapter 1', null, 80) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 1, 'Section 1', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 2, 'Section 2', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 3, 'Section 3', null, 28) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 4, 'Section 4', null, 17) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 5, 'Section 5', null, 23) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 6, 'Section 6', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 2, 'Chapter 2', null, 66) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 1, 'Section 1', null, 20) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 2, 'Section 2', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 3, 'Section 3', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 4, 'Section 4', null, 14) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 5, 'Section 5', null, 19) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 6, 'Section 6', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 3, 'Chapter 3', null, 92) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 1, 'Section 1', null, 10) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 2, 'Section 2', null, 13) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 3, 'Section 3', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 4, 'Section 4', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 5, 'Section 5', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 6, 'Section 6', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 7, 'Section 7', null, 23) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 8, 'Section 8', null, 12) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 9, 'Section 9', null, 28) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 4, 'Chapter 4', null, 91) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 1, 'Section 1', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 2, 'Section 2', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 3, 'Section 3', null, 38) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 4, 'Section 4', null, 24) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 5, 'Section 5', null, 15) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 6, 'Section 6', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 5, 'Chapter 5', null, 30) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 1, 'Section 1', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 2, 'Section 2', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 3, 'Section 3', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 4, 'Section 4', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 5, 'Section 5', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 6, 'Section 6', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 7, 'Section 7', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 8, 'Section 8', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 9, 'Section 9', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 10, 'Section 10', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 11, 'Section 11', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 12, 'Section 12', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 13, 'Section 13', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 14, 'Section 14', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 15, 'Section 15', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', null, 1, 6, 'Chapter 6', null, 74) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 1, 'Section 1', null, 14) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 2, 'Section 2', null, 16) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 3, 'Section 3', null, 13) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 4, 'Section 4', null, 28) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 5, 'Section 5', null, 3) on conflict do nothing;
+update verses set speaker = null, section_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)) where id = 'brihadaranyaka-1-3-28';
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-1-1', 1, 'Chapter 1, Section 1, Verse 1', 'उषा वा अश्वस्य मेध्यस्य शिरः।
+सूर्यश्चक्षुर्वातः प्राणो व्यात्तमग्निर्वैश्वानरः संवत्सर आत्माश्वस्य मेध्यस्य।
+द्यौः पृष्ठमन्तरिक्षमुदरं पृथिवी पाजस्यं दिशः पार्श्वे अवान्तरदिशः पर्शव ऋतवोऽङ्गानि मासाश्चार्धमासाश्च पर्वाण्यहोरात्राणि प्रतिष्ठा नक्षत्राण्यस्थीनि नभो मांसानि।
+ऊवध्यं सिकताः सिन्धवो गुदा यकृच्च क्लोमानश्च पर्वता ओषधयश्च वनस्पतयश्च लोमानि।
+उद्यन्पूर्वार्धो निम्लोचञ्जघनार्धः।
+यद्विजृम्भते तद्विद्योतते।
+यद्विधूनुते तत्स्तनयति।
+यन्मेहति तद्वर्षति।
+वागेवास्य वाक्॥', 'uṣā vā aśvasya medhyasya śiraḥ
+sūryaś cakṣur vātaḥ prāṇo vyāttam agnir vaiśvānaraḥ saṃvatsara ātmāśvasya medhyasya
+dyauḥ pṛṣṭham antarikṣam udaraṃ pṛthivī pājasyaṃ diśaḥ pārśve avāntaradiśaḥ parśava ṛtavo ''ṅgāni māsāś cārdhamāsāś ca parvāṇy ahorātrāṇi pratiṣṭhā nakṣatrāṇy asthīni nabho māṃsāni
+ūvadhyaṃ sikatāḥ sindhavo gudā yakṛc ca klomānaś ca parvatā oṣadhayaś ca vanaspatayaś ca lomāni
+udyan pūrvārdho nimlocañ jaghanārdhaḥ
+yad vijṛmbhate tad vidyotate
+yad vidhūnute tat stanayati
+yan mehati tad varṣati
+vāg evāsya vāk', null, 1001001),
+('brihadaranyaka-1-1-2', 2, 'Chapter 1, Section 1, Verse 2', 'अहर्वा अश्वं पुरस्तान्महिमान्वजायत।
+तस्य पूर्वे समुद्रे योनिः।
+रात्रिरेनं पश्चान्महिमान्वजायत।
+तस्यापरे समुद्रे योनिर्।
+एतौ वा अश्वं महिमानावभितः सम्बभूवतुः।
+हयो भूत्वा देवानवहद्वाजी गन्धर्वानर्वासुरानश्वो मनुष्यान्।
+समुद्र एवास्य बन्धुः समुद्रो योनिः॥', 'ahar vā aśvaṃ purastān mahimānvajāyata
+tasya pūrve samudre yoniḥ
+rātrir enaṃ paścān mahimānvajāyata
+tasyāpare samudre yonir
+etau vā aśvaṃ mahimānāv abhitaḥ sambabhūvatuḥ
+hayo bhūtvā devān avahad vājī gandharvān arvāsurān aśvo manuṣyān
+samudra evāsya bandhuḥ samudro yoniḥ', null, 1001002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-2-1', 1, 'Chapter 1, Section 2, Verse 1', 'नैवेह किं चनाग्र आसीत्।
+मृत्युनैवेदमावृतमासीदशनायया।
+अशनाया हि मृत्युः।
+तन्मनोऽकुरुतात्मन्वी स्यामिति।
+सोऽर्चन्नचरत्।
+तस्यार्चत आपोऽजायन्त।
+अर्चते वै मे कमभूदिति।
+तदेवार्क्यस्यार्कत्वम्।
+कं ह वा अस्मै भवति य एवमेतदर्क्यस्यार्कत्वं वेद॥', 'naiveha kiṃ canāgra āsīt
+mṛtyunaivedam āvṛtam āsīd aśanāyayā
+aśanāyā hi mṛtyuḥ
+tan mano ''kurutātmanvī syām iti
+so ''rcann acarat
+tasyārcata āpo ''jāyanta
+arcate vai me kam abhūd iti
+tad evārkyasyārkatvam
+kaṃ ha vā asmai bhavati ya evam etad arkyasyārkatvaṃ veda', null, 1002001),
+('brihadaranyaka-1-2-2', 2, 'Chapter 1, Section 2, Verse 2', 'आपो वा अर्कः।
+तद्यदपां शर आसीत्तत्समहन्यत।
+सा पृथिव्यभवत्।
+तस्यामश्राम्यत्।
+तस्य श्रान्तस्य तप्तस्य तेजोरसो निरवर्तताग्निः॥', 'āpo vā arkaḥ
+tad yad apāṃ śara āsīt tat samahanyata
+sā pṛthivy abhavat
+tasyām aśrāmyat
+tasya śrāntasya taptasya tejoraso niravartatāgniḥ', null, 1002002),
+('brihadaranyaka-1-2-3', 3, 'Chapter 1, Section 2, Verse 3', 'स त्रेधात्मानं व्यकुरुतादित्यं तृतीयं वायुं तृतीयम्।
+स एष प्राणस्त्रेधाविहितः।
+तस्य प्राची दिक्शिरोऽसौ चासौ चेर्मौ।
+अथास्य प्रतीची दिक्पुच्छमसौ चासौ च सक्थ्यौ।
+दक्षिणा चोदीची च पार्श्वे।
+द्यौः पृष्ठमन्तरिक्षमुदरमियमुरः।
+स एषोऽप्सु प्रतिष्ठितः।
+यत्र क्व चैति तदेव प्रतितिष्ठत्येवं विद्वान्॥', 'sa tredhātmānaṃ vyakurutādityaṃ tṛtīyaṃ vāyuṃ tṛtīyam
+sa eṣa prāṇas tredhāvihitaḥ
+tasya prācī dik śiro ''sau cāsau cermau
+athāsya pratīcī dik puccham asau cāsau ca sakthyau
+dakṣiṇā codīcī ca pārśve
+dyauḥ pṛṣṭham antarikṣam udaram iyam uraḥ
+sa eṣo ''psu pratiṣṭhitaḥ
+yatra kva caiti tad eva pratitiṣṭhaty evaṃ vidvān', null, 1002003),
+('brihadaranyaka-1-2-4', 4, 'Chapter 1, Section 2, Verse 4', 'सोऽकामयत -- द्वितीयो म आत्मा जायेतेति।
+स मनसा वाचं मिथुनं समभवदशनाया मृत्युः।
+तद्यद्रेत आसीत्स संवत्सरोऽभवत्।
+न ह पुरा ततः संवत्सर आस।
+तमेतावन्तं कालमबिभर्यावान्त्संवत्सरः।
+तमेतावतः कालस्य परस्तादसृजत।
+तं जातमभिव्याददात्।
+स भाणकरोत्।
+सैव वागभवत्॥', 'so ''kāmayata -- dvitīyo ma ātmā jāyeteti
+sa manasā vācaṃ mithunaṃ samabhavad aśanāyā mṛtyuḥ
+tad yad reta āsīt sa saṃvatsaro ''bhavat
+na ha purā tataḥ saṃvatsara āsa
+tam etāvantaṃ kālam abibhar yāvānt saṃvatsaraḥ
+tam etāvataḥ kālasya parastād asṛjata
+taṃ jātam abhivyādadāt
+sa bhāṇ akarot
+saiva vāg abhavat', null, 1002004),
+('brihadaranyaka-1-2-5', 5, 'Chapter 1, Section 2, Verse 5', 'स ऐक्षत यदि वा इममभिमंस्ये कनीयोऽन्नं करिष्य इति।
+स तया वाचा तेनात्मनेदं सर्वमसृजत यदिदं किञ्च -- ऋचो यजूंषि सामानि छन्दांसि यज्ञान्प्रजां पशून्।
+स यद्-यदेवासृजत तत्तदत्तुमध्रियत।
+सर्वं वा अत्तीति तददितेरदितित्वम्।
+सर्वस्यात्ता भवति सर्वमस्यान्नं भवति य एवमेतददितेरदितित्वं वेद॥', 'sa aikṣata yadi vā imam abhimaṃsye kanīyo ''nnaṃ kariṣya iti
+sa tayā vācā tenātmanedaṃ sarvam asṛjata yad idaṃ kiñca -- ṛco yajūṃṣi sāmāni chandāṃsi yajñān prajāṃ paśūn
+sa yad-yad evāsṛjata tattad attum adhriyata
+sarvaṃ vā attīti tad aditer adititvam
+sarvasyāttā bhavati sarvam asyānnaṃ bhavati ya evam etad aditer adititvaṃ veda', null, 1002005),
+('brihadaranyaka-1-2-6', 6, 'Chapter 1, Section 2, Verse 6', 'सोऽकामयत -- भूयसा यज्ञेन भूयो यजेयेति।
+सोऽश्राम्यत्।
+स तपोऽतप्यत।
+तस्य श्रान्तस्य तप्तस्य यशो वीर्यमुदक्रामत्।
+प्राणा वै यशो वीर्यम्।
+तत्प्राणेषूत्क्रान्तेषु शरीरं श्वयितुमध्रियत।
+तस्य शरीर एव मन आसीत्॥', 'so ''kāmayata -- bhūyasā yajñena bhūyo yajeyeti
+so ''śrāmyat
+sa tapo ''tapyata
+tasya śrāntasya taptasya yaśo vīryam udakrāmat
+prāṇā vai yaśo vīryam
+tat prāṇeṣūtkrānteṣu śarīraṃ śvayitum adhriyata
+tasya śarīra eva mana āsīt', null, 1002006),
+('brihadaranyaka-1-2-7', 7, 'Chapter 1, Section 2, Verse 7', 'सोऽकामयत -- मेध्यं म इदं स्यादात्मन्व्यनेन स्यामिति।
+ततोऽश्वः समभवत्।
+यदश्वत्तन्मेध्यमभूदिति तदेवाश्वमेधस्याश्वमेधत्वम्।
+एष ह वा अश्वमेधं वेद य एनमेवं वेद।
+तमनवरुध्यैवामन्यत।
+तं संवत्सरस्य परस्तादात्मन आलभत।
+पशून्देवताभ्यः प्रत्यौहत्।
+तस्मात्सर्वदेवत्यं प्रोक्षितं प्राजापत्यमालभन्ते।
+एष वा अश्वमेधो य एष तपति।
+तस्य संवत्सर आत्मा।
+अयमग्निरर्कः।
+तस्येमे लोका आत्मानः।
+तावेतावर्काश्वमेधौ।
+सो पुनरेकैव देवता भवति मृत्युरेव।
+अप पुनर्मृत्युं जयति।
+नैनं मृत्युराप्नोति।
+मृत्युरस्यात्मा भवति।
+सर्वमायुरेति।
+एतासां देवतानामेको भवति॥', 'so ''kāmayata -- medhyaṃ ma idaṃ syād ātmanvy anena syām iti
+tato ''śvaḥ samabhavat
+yad aśvat tan medhyam abhūd iti tad evāśvamedhasyāśvamedhatvam
+eṣa ha vā aśvamedhaṃ veda ya enam evaṃ veda
+tam anavarudhyaivāmanyata
+taṃ saṃvatsarasya parastād ātmana ālabhata
+paśūn devatābhyaḥ pratyauhat
+tasmāt sarvadevatyaṃ prokṣitaṃ prājāpatyam ālabhante
+eṣa vā aśvamedho ya eṣa tapati
+tasya saṃvatsara ātmā
+ayam agnir arkaḥ
+tasyeme lokā ātmānaḥ
+tāv etāv arkāśvamedhau
+so punar ekaiva devatā bhavati mṛtyur eva
+apa punarmṛtyuṃ jayati
+nainaṃ mṛtyur āpnoti
+mṛtyur asyātmā bhavati
+sarvam āyur eti
+etāsāṃ devatānām eko bhavati', null, 1002007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-3-1', 1, 'Chapter 1, Section 3, Verse 1', 'द्वया ह प्राजापत्या देवाश्चासुराश्च ततः कानीयसा एव देवा ज्यायसा असुराः।
+त एषु लोकेष्वस्पर्धन्त।
+ते ह देवा ऊचुर्हन्तासुरान्यज्ञ उद्गीथेनात्ययामेति॥', 'dvayā ha prājāpatyā devāś cāsurāś ca tataḥ kānīyasā eva devā jyāyasā asurāḥ
+ta eṣu lokeṣv aspardhanta
+te ha devā ūcur hantāsurān yajña udgīthenātyayāmeti', null, 1003001),
+('brihadaranyaka-1-3-2', 2, 'Chapter 1, Section 3, Verse 2', 'ते ह वाचमूचुस्त्वं न उद्गायेति।
+तथेति तेभ्यो वागुदगायत्।
+यो वाचि भोगस्तं देवेभ्य आगायत्।
+यत्कल्याणं वदति तदात्मने।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविध्यन्।
+स यः स पाप्मा यदेवेदमप्रतिरूपं वदति।
+स एव स पाप्मा॥', 'te ha vācam ūcus tvaṃ na udgāyeti
+tatheti tebhyo vāg udagāyat
+yo vāci bhogas taṃ devebhya āgāyat
+yat kalyāṇaṃ vadati tad ātmane
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvidhyan
+sa yaḥ sa pāpmā yad evedam apratirūpaṃ vadati
+sa eva sa pāpmā', null, 1003002),
+('brihadaranyaka-1-3-3', 3, 'Chapter 1, Section 3, Verse 3', 'अथ ह प्राणमूचुस्त्वं न उद्गायेति।
+तथेति तेभ्यः प्राण उदगायत्।
+यः प्राणे भोगस्तं देवेभ्य आगायत्।
+यत्कल्याणं जिघ्रति तदात्मने।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविध्यन्।
+स यः स पाप्मा यदेवेदमप्रतिरूपं जिघ्रति।
+स एव स पाप्मा॥', 'atha ha prāṇam ūcus tvaṃ na udgāyeti
+tatheti tebhyaḥ prāṇa udagāyat
+yaḥ prāṇe bhogas taṃ devebhya āgāyat
+yat kalyāṇaṃ jighrati tad ātmane
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvidhyan
+sa yaḥ sa pāpmā yad evedam apratirūpaṃ jighrati
+sa eva sa pāpmā', null, 1003003),
+('brihadaranyaka-1-3-4', 4, 'Chapter 1, Section 3, Verse 4', 'अथ ह चक्षुरूचुस्त्वं न उद्गायेति।
+तथेति तेभ्यश्चक्षुरुदगायत्।
+यश्चक्षुषि भोगस्तं देवेभ्य आगायत्।
+यत्कल्याणं पश्यति तदात्मने।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविध्यन्।
+स यः स पाप्मा यदेवेदमप्रतिरूपं पश्यति।
+स एव स पाप्मा॥', 'atha ha cakṣur ūcus tvaṃ na udgāyeti
+tatheti tebhyaś cakṣur udagāyat
+yaś cakṣuṣi bhogas taṃ devebhya āgāyat
+yat kalyāṇaṃ paśyati tad ātmane
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvidhyan
+sa yaḥ sa pāpmā yad evedam apratirūpaṃ paśyati
+sa eva sa pāpmā', null, 1003004),
+('brihadaranyaka-1-3-5', 5, 'Chapter 1, Section 3, Verse 5', 'अथ ह श्रोत्रमूचुस्त्वं न उद्गायेति।
+तथेति तेभ्यः श्रोत्रमुदगायत्।
+यः श्रोत्रे भोगस्तं देवेभ्य आगायत्।
+यत्कल्याणं शृणोति तदात्मने।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविध्यन्।
+स यः स पाप्मा।
+यदेवेदमप्रतिरूपं शृणोति।
+स एव स पाप्मा॥', 'atha ha śrotram ūcus tvaṃ na udgāyeti
+tatheti tebhyaḥ śrotram udagāyat
+yaḥ śrotre bhogas taṃ devebhya āgāyat
+yat kalyāṇaṃ śṛṇoti tad ātmane
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvidhyan
+sa yaḥ sa pāpmā
+yad evedam apratirūpaṃ śṛṇoti
+sa eva sa pāpmā', null, 1003005),
+('brihadaranyaka-1-3-6', 6, 'Chapter 1, Section 3, Verse 6', 'अथ ह मन ऊचुस्त्वं न उद्गायेति।
+तथेति तेभ्यो मन उदगायत्।
+यो मनसि भोगस्तं देवेभ्य आगायत्।
+यत्कल्याणं संकल्पयति तदात्मने।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविध्यन्।
+स यः स पाप्मा।
+यदेवेदमप्रतिरूपं संकल्पयति।
+स एव स पाप्मा।
+एवमु खल्वेता देवताः पाप्मभिरुपासृजन्।
+एवमेनाः पाप्मनाविध्यन्॥', 'atha ha mana ūcus tvaṃ na udgāyeti
+tatheti tebhyo mana udagāyat
+yo manasi bhogas taṃ devebhya āgāyat
+yat kalyāṇaṃ saṃkalpayati tad ātmane
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvidhyan
+sa yaḥ sa pāpmā
+yad evedam apratirūpaṃ saṃkalpayati
+sa eva sa pāpmā
+evam u khalv etā devatāḥ pāpmabhir upāsṛjan
+evam enāḥ pāpmanāvidhyan', null, 1003006),
+('brihadaranyaka-1-3-7', 7, 'Chapter 1, Section 3, Verse 7', 'अथ हेममासन्यं प्राणमूचुस्त्वं न उद्गायेति।
+तथेति तेभ्य एष प्राण उदगायत्।
+तेऽविदुरनेन वै न उद्गात्रात्येष्यन्तीति।
+तमभिद्रुत्य पाप्मनाविव्यत्सन्।
+स यथाश्मानमृत्वा लोष्टो विध्वंसेतैवं हैव विध्वंसमाना विष्वञ्चो विनेशुः।
+ततो देवा अभवन्, परासुरा।
+भवत्यात्मना, परास्य द्विषन्भ्रातृव्यो भवति य एवं वेद॥', 'atha hemam āsanyaṃ prāṇam ūcus tvaṃ na udgāyeti
+tatheti tebhya eṣa prāṇa udagāyat
+te ''vidur anena vai na udgātrātyeṣyantīti
+tam abhidrutya pāpmanāvivyatsan
+sa yathāśmānam ṛtvā loṣṭo vidhvaṃsetaivaṃ haiva vidhvaṃsamānā viṣvañco vineśuḥ
+tato devā abhavan, parāsurā
+bhavaty ātmanā, parāsya dviṣan bhrātṛvyo bhavati ya evaṃ veda', null, 1003007),
+('brihadaranyaka-1-3-8', 8, 'Chapter 1, Section 3, Verse 8', 'ते होचुः -- क्व नु सोऽभूद्यो न इत्थमसक्तेति।
+अयमास्येऽन्तरिति।
+सोऽयास्य आङ्गिरसोऽङ्गानां हि रसः॥', 'te hocuḥ -- kva nu so ''bhūd yo na ittham asakteti
+ayam āsye ''ntar iti
+so ''yāsya āṅgiraso ''ṅgānāṃ hi rasaḥ', null, 1003008),
+('brihadaranyaka-1-3-9', 9, 'Chapter 1, Section 3, Verse 9', 'सा वा एषा देवता दूर्नाम।
+दूरं ह्यस्या मृत्युर्।
+दूरं ह वा अस्मान्मृत्युर्भवति य एवं वेद॥', 'sā vā eṣā devatā dūr nāma
+dūraṃ hy asyā mṛtyur
+dūraṃ ha vā asmān mṛtyur bhavati ya evaṃ veda', null, 1003009),
+('brihadaranyaka-1-3-10', 10, 'Chapter 1, Section 3, Verse 10', 'सा वा एषा देवतैतासां देवतानां पाप्मानं मृत्युमपहत्य यत्रासां दिशामन्तस्तद्गमयां चकार।
+तदासां पाप्मनो विन्यदधात्।
+तस्मान्न जनमियान्नान्तमियान्नेत्पाप्मानं मृत्युमन्ववायानीति॥', 'sā vā eṣā devataitāsāṃ devatānāṃ pāpmānaṃ mṛtyum apahatya yatrāsāṃ diśām antas tad gamayāṃ cakāra
+tad āsāṃ pāpmano vinyadadhāt
+tasmān na janam iyān nāntam iyān net pāpmānaṃ mṛtyum anvavāyānīti', null, 1003010),
+('brihadaranyaka-1-3-11', 11, 'Chapter 1, Section 3, Verse 11', 'सा वा एषा देवतैतासां देवतानां पाप्मानं मृत्युमपहत्याथैना मृत्युमत्यवहत्॥', 'sā vā eṣā devataitāsāṃ devatānāṃ pāpmānaṃ mṛtyum apahatyāthainā mṛtyum atyavahat', null, 1003011),
+('brihadaranyaka-1-3-12', 12, 'Chapter 1, Section 3, Verse 12', 'सा वै वाचमेव प्रथमामत्यवहत्।
+सा यदा मृत्युमत्यमुच्यत सोऽग्निरभवत्।
+सोऽयमग्निः परेण मृत्युमतिक्रान्तो दीप्यते॥', 'sā vai vācam eva prathamām atyavahat
+sā yadā mṛtyum atyamucyata so ''gnir abhavat
+so ''yam agniḥ pareṇa mṛtyum atikrānto dīpyate', null, 1003012),
+('brihadaranyaka-1-3-13', 13, 'Chapter 1, Section 3, Verse 13', 'अथ प्राणमत्यवहत्।
+स यदा मृत्युमत्यमुच्यत स वायुरभवत्।
+सोऽयं वायुः परेण मृत्युमतिक्रान्तः पवते॥', 'atha prāṇam atyavahat
+sa yadā mṛtyum atyamucyata sa vāyur abhavat
+so ''yaṃ vāyuḥ pareṇa mṛtyum atikrāntaḥ pavate', null, 1003013),
+('brihadaranyaka-1-3-14', 14, 'Chapter 1, Section 3, Verse 14', 'अथ चक्षुरत्यवहत्।
+तद्यदा मृत्युमत्यमुच्यत स आदित्योऽभवत्।
+सोऽसावादित्यः परेण मृत्युमतिक्रान्तस्तपति॥', 'atha cakṣur atyavahat
+tad yadā mṛtyum atyamucyata sa ādityo ''bhavat
+so ''sāv ādityaḥ pareṇa mṛtyum atikrāntas tapati', null, 1003014),
+('brihadaranyaka-1-3-15', 15, 'Chapter 1, Section 3, Verse 15', 'अथ श्रोत्रमत्यवहत्।
+तद्यदा मृत्युमत्यमुच्यत ता दिशोऽभवन्।
+ता इमा दिशः परेण मृत्युमतिक्रान्ताः॥', 'atha śrotram atyavahat
+tad yadā mṛtyum atyamucyata tā diśo ''bhavan
+tā imā diśaḥ pareṇa mṛtyum atikrāntāḥ', null, 1003015),
+('brihadaranyaka-1-3-16', 16, 'Chapter 1, Section 3, Verse 16', 'अथ मनोऽत्यवहत्।
+तद्यदा मृत्युमत्यमुच्यत स चन्द्रमा अभवत्।
+सोऽसौ चन्द्रः परेण मृत्युमतिक्रान्तो भाति।
+एवं ह वा एनमेषा देवता मृत्युमतिवहति य एवं वेद॥', 'atha mano ''tyavahat
+tad yadā mṛtyum atyamucyata sa candramā abhavat
+so ''sau candraḥ pareṇa mṛtyum atikrānto bhāti
+evaṃ ha vā enam eṣā devatā mṛtyum ativahati ya evaṃ veda', null, 1003016),
+('brihadaranyaka-1-3-17', 17, 'Chapter 1, Section 3, Verse 17', 'अथात्मनेऽन्नाद्यमागायत्।
+यद्धि किञ्चान्नमद्यतेऽनेनैव तदद्यते।
+इह प्रतितिष्ठति॥', 'athātmane ''nnādyam āgāyat
+yad dhi kiñcānnam adyate ''nenaiva tad adyate
+iha pratitiṣṭhati', null, 1003017),
+('brihadaranyaka-1-3-18', 18, 'Chapter 1, Section 3, Verse 18', 'ते देवा अब्रुवन्।
+एतावद्वा इदं सर्वं यदन्नम्।
+तदात्मन आगासीः।
+अनु नोऽस्मिन्नन्न आभजस्वेति।
+ते वै माभिसंविशतेति।
+तथेति तं समन्तं परिण्यविशन्त।
+तस्माद्यदनेनान्नमत्ति तेनैतास्तृप्यन्ति।
+एवं ह वा एनं स्वा अभिसंविशन्ति भर्ता स्वानां श्रेष्ठः पुरएता भवत्यन्नादोऽधिपतिर्य एवं वेद।
+य उ हैवंविदं स्वेषु प्रतिर्बुभूषति न हैवालं भार्येभ्यो भवति।
+अथ य एवैतमनुभवति यो वैतमनु भार्यान्बुभूर्षति स हैवालं भार्येभ्यो भवति॥', 'te devā abruvan
+etāvad vā idaṃ sarvaṃ yad annam
+tad ātmana āgāsīḥ
+anu no ''sminn anna ābhajasveti
+te vai mābhisaṃviśateti
+tatheti taṃ samantaṃ pariṇyaviśanta
+tasmād yad anenānnam atti tenaitās tṛpyanti
+evaṃ ha vā enaṃ svā abhisaṃviśanti bhartā svānāṃ śreṣṭhaḥ puraetā bhavaty annādo ''dhipatir ya evaṃ veda
+ya u haivaṃvidaṃ sveṣu pratir bubhūṣati na haivālaṃ bhāryebhyo bhavati
+atha ya evaitam anubhavati yo vaitam anu bhāryān bubhūrṣati sa haivālaṃ bhāryebhyo bhavati', null, 1003018),
+('brihadaranyaka-1-3-19', 19, 'Chapter 1, Section 3, Verse 19', 'सोऽयास्य आङ्गिरसोऽङ्गानां हि रसः।
+प्राणो वा अङ्गानां रसः।
+प्राणो हि वा अङ्गानां रसः।
+तस्माद्यस्मात्कस्माच्चाङ्गात्प्राण उत्क्रामति तदेव तच्छुष्यति।
+एष हि वा अङ्गानां रसः॥', 'so ''yāsya āṅgiraso ''ṅgānāṃ hi rasaḥ
+prāṇo vā aṅgānāṃ rasaḥ
+prāṇo hi vā aṅgānāṃ rasaḥ
+tasmād yasmāt kasmāccāṅgāt prāṇa utkrāmati tad eva tac chuṣyati
+eṣa hi vā aṅgānāṃ rasaḥ', null, 1003019),
+('brihadaranyaka-1-3-20', 20, 'Chapter 1, Section 3, Verse 20', 'एष उ एव बृहस्पतिः।
+वाग्वै बृहती।
+तस्या एष पतिस्तस्मादु बृहस्पतिः॥', 'eṣa u eva bṛhaspatiḥ
+vāg vai bṛhatī
+tasyā eṣa patis tasmād u bṛhaspatiḥ', null, 1003020),
+('brihadaranyaka-1-3-21', 21, 'Chapter 1, Section 3, Verse 21', 'एष उ एव ब्रह्मणस्पतिः।
+वाग्वै ब्रह्म।
+तस्या एष पतिस्तस्मादु ब्रह्मणस्पतिः॥', 'eṣa u eva brahmaṇaspatiḥ
+vāg vai brahma
+tasyā eṣa patis tasmād u brahmaṇaspatiḥ', null, 1003021),
+('brihadaranyaka-1-3-22', 22, 'Chapter 1, Section 3, Verse 22', 'एष उ एव साम।
+वाग्वै सामैष सा चामश्चेति तत्साम्नः सामत्वम्।
+यद्वेव समः प्लुषिणा समो मशकेन समो नागेन सम एभिस्त्रिभिर्लोकैः समोऽनेन सर्वेण तस्माद्वेव साम।
+अश्नुते साम्नः सायुज्यं सलोकताम्।
+य एवमेतत्साम वेद॥', 'eṣa u eva sāma
+vāg vai sāmaiṣa sā cāmaś ceti tat sāmnaḥ sāmatvam
+yad v eva samaḥ pluṣiṇā samo maśakena samo nāgena sama ebhis tribhir lokaiḥ samo ''nena sarveṇa tasmād v eva sāma
+aśnute sāmnaḥ sāyujyaṃ salokatām
+ya evam etat sāma veda', null, 1003022),
+('brihadaranyaka-1-3-23', 23, 'Chapter 1, Section 3, Verse 23', 'एष उ वा उद्गीथः।
+प्राणो वा उत्प्राणेन हीदं सर्वमुत्तब्धम्।
+वागेव गीथा।
+उच्च गीथा चेति।
+स उद्गीथः॥', 'eṣa u vā udgīthaḥ
+prāṇo vā ut prāṇena hīdaṃ sarvam uttabdham
+vāg eva gīthā
+uc ca gīthā ceti
+sa udgīthaḥ', null, 1003023),
+('brihadaranyaka-1-3-24', 24, 'Chapter 1, Section 3, Verse 24', 'तद्धापि ब्रह्मदत्तश्चैकितानेयो राजानं भक्षयन्नुवाच।
+अयं त्यस्य राजा मूर्धानं विपातयताद्यदितोऽयास्य आङ्गिरसोऽन्येनोदगायदिति।
+वाचा च ह्येव स प्राणेन चोदगायदिति॥', 'tad dhāpi brahmadattaś caikitāneyo rājānaṃ bhakṣayann uvāca
+ayaṃ tyasya rājā mūrdhānaṃ vipātayatād yad ito ''yāsya āṅgiraso ''nyenodagāyad iti
+vācā ca hy eva sa prāṇena codagāyad iti', null, 1003024),
+('brihadaranyaka-1-3-25', 25, 'Chapter 1, Section 3, Verse 25', 'तस्य हैतस्य साम्नो यः स्वं वेद भवति हास्य स्वम्।
+तस्य वै स्वर एव स्वम्।
+तस्मादार्त्विज्यं करिष्यन्वाचि स्वरमिच्छेत।
+तया वाचा स्वरसम्पन्नयार्त्विज्यं कुर्यात्।
+तस्माद्यज्ञे स्वरवन्तं दिदृक्षन्त एव।
+अथो यस्य स्वं भवति।
+भवति हास्य स्वं य एवमेतत्साम्नः स्वं वेद॥', 'tasya haitasya sāmno yaḥ svaṃ veda bhavati hāsya svam
+tasya vai svara eva svam
+tasmād ārtvijyaṃ kariṣyan vāci svaram iccheta
+tayā vācā svarasampannayārtvijyaṃ kuryāt
+tasmād yajñe svaravantaṃ didṛkṣanta eva
+atho yasya svaṃ bhavati
+bhavati hāsya svaṃ ya evam etat sāmnaḥ svaṃ veda', null, 1003025),
+('brihadaranyaka-1-3-26', 26, 'Chapter 1, Section 3, Verse 26', 'तस्य हैतस्य साम्नो यः सुवर्णं वेद भवति हास्य सुवर्णम्।
+तस्य वै स्वर एव सुवर्णम्।
+भवति हास्य सुवर्णं य एवमेतत्साम्नः सुवर्णं वेद॥', 'tasya haitasya sāmno yaḥ suvarṇaṃ veda bhavati hāsya suvarṇam
+tasya vai svara eva suvarṇam
+bhavati hāsya suvarṇaṃ ya evam etat sāmnaḥ suvarṇaṃ veda', null, 1003026),
+('brihadaranyaka-1-3-27', 27, 'Chapter 1, Section 3, Verse 27', 'तस्य हैतस्य साम्नो यः प्रतिष्ठां वेद प्रति ह तिष्ठति।
+तस्य वै वागेव प्रतिष्ठा।
+वाचि हि खल्वेष एतत्प्राणः प्रतिष्ठितो गीयते।
+अन्न इत्यु हैक आहुः॥', 'tasya haitasya sāmno yaḥ pratiṣṭhāṃ veda prati ha tiṣṭhati
+tasya vai vāg eva pratiṣṭhā
+vāci hi khalv eṣa etat prāṇaḥ pratiṣṭhito gīyate
+anna ity u haika āhuḥ', null, 1003027)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-4-1', 1, 'Chapter 1, Section 4, Verse 1', 'आत्मैवेदमग्र आसीत्पुरुषविधः।
+सोऽनुवीक्ष्य नान्यदात्मनोऽपश्यत्।
+सोऽहमस्मीत्यग्रे व्याहरत्।
+ततोऽहंनामाभवत्।
+तस्मादप्येतर्ह्यामन्त्रितोऽहमयमित्येवाग्र उक्त्वाथान्यन्नाम प्रब्रूते यदस्य भवति।
+स यत्पूर्वोऽस्मात्सर्वस्मात्सर्वान्पाप्मन औषत्तस्मात्पुरुषः।
+ओषति ह वै स तं योऽस्मात्पूर्वो बुभूषति य एवं वेद॥', 'ātmaivedam agra āsīt puruṣavidhaḥ
+so ''nuvīkṣya nānyad ātmano ''paśyat
+so ''ham asmīty agre vyāharat
+tato ''haṃnāmābhavat
+tasmād apy etarhy āmantrito ''ham ayam ity evāgra uktvāthānyan nāma prabrūte yad asya bhavati
+sa yat pūrvo ''smāt sarvasmāt sarvān pāpmana auṣat tasmāt puruṣaḥ
+oṣati ha vai sa taṃ yo ''smāt pūrvo bubhūṣati ya evaṃ veda', null, 1004001),
+('brihadaranyaka-1-4-2', 2, 'Chapter 1, Section 4, Verse 2', 'सोऽबिभेत्तस्मादेकाकी बिभेति।
+स हायमीक्षां चक्रे, यन्मदन्यन्नास्ति कस्मान्नु बिभेमीति।
+तत एवास्य भयं वीयाय।
+कस्माद्ध्यभेष्यत्।
+द्वितीयाद्वै भयं भवति॥', 'so ''bibhet tasmād ekākī bibheti
+sa hāyam īkṣāṃ cakre, yan mad anyan nāsti kasmān nu bibhemīti
+tata evāsya bhayaṃ vīyāya
+kasmād dhy abheṣyat
+dvitīyād vai bhayaṃ bhavati', null, 1004002),
+('brihadaranyaka-1-4-3', 3, 'Chapter 1, Section 4, Verse 3', 'स वै नैव रेमे।
+तस्मादेकाकी न रमते।
+स द्वितीयमैच्छत्।
+स हैतावानास यथा स्त्रीपुमांसौ सम्परिष्वक्तौ।
+स इममेवात्मानं द्वेधापातयत्।
+ततः पतिश्च पत्नी चाभवताम्।
+तस्मादिदमर्धबृगलमिव स्व इति ह स्माह याज्ञवल्क्यः।
+तस्मादयमाकाशः स्त्रिया पूर्यत एव।
+तां समभवत्।
+ततो मनुष्या अजायन्त॥', 'sa vai naiva reme
+tasmād ekākī na ramate
+sa dvitīyam aicchat
+sa haitāvān āsa yathā strīpumāṃsau sampariṣvaktau
+sa imam evātmānaṃ dvedhāpātayat
+tataḥ patiś ca patnī cābhavatām
+tasmād idam ardhabṛgalam iva sva iti ha smāha yājñavalkyaḥ
+tasmād ayam ākāśaḥ striyā pūryata eva
+tāṃ samabhavat
+tato manuṣyā ajāyanta', null, 1004003),
+('brihadaranyaka-1-4-4', 4, 'Chapter 1, Section 4, Verse 4', 'सो हेयमीक्षां चक्रे -- कथं नु मात्मन एव जनयित्वा सम्भवति।
+हन्त तिरोऽसानीति।
+सा गौरभवद्वृषभ इतरः।
+तां समेवाभवत्।
+ततो गावोऽजायन्त।
+वडवेतराभवदश्ववृष इतरः।
+गर्दभीतरा गर्दभ इतरः।
+तां समेवाभवत्।
+तत एकशफमजायत।
+अजेतराभवद्बस्त इतरः।
+अविरितरा मेष इतरः।
+तां समेवाभवत्।
+ततोऽजावयोऽजायन्त।
+एवमेव यदिदं किञ्च मिथुनमा पिपीलिकाभ्यस्तत्सर्वमसृजत॥', 'so heyam īkṣāṃ cakre -- kathaṃ nu mātmana eva janayitvā sambhavati
+hanta tiro ''sānīti
+sā gaur abhavad vṛṣabha itaraḥ
+tāṃ sam evābhavat
+tato gāvo ''jāyanta
+vaḍavetarābhavad aśvavṛṣa itaraḥ
+gardabhītarā gardabha itaraḥ
+tāṃ sam evābhavat
+tata ekaśapham ajāyata
+ajetarābhavad basta itaraḥ
+avir itarā meṣa itaraḥ
+tāṃ sam evābhavat
+tato ''jāvayo ''jāyanta
+evam eva yad idaṃ kiñca mithunam ā pipīlikābhyas tat sarvam asṛjata', null, 1004004),
+('brihadaranyaka-1-4-5', 5, 'Chapter 1, Section 4, Verse 5', 'सोऽवेदहं वाव सृष्टिरस्म्यहं हीदं सर्वमसृक्षीति।
+ततः सृष्टिरभवत्।
+सृष्ट्यां हास्यैतस्यां भवति य एवं वेद॥', 'so ''ved ahaṃ vāva sṛṣṭir asmy ahaṃ hīdaṃ sarvam asṛkṣīti
+tataḥ sṛṣṭir abhavat
+sṛṣṭyāṃ hāsyaitasyāṃ bhavati ya evaṃ veda', null, 1004005),
+('brihadaranyaka-1-4-6', 6, 'Chapter 1, Section 4, Verse 6', 'अथेत्यभ्यमन्थत्।
+स मुखाच्च योनेर्हस्ताभ्यां चाग्निमसृजत।
+तस्मादेतदुभयमलोमकमन्तरतः।
+अलोमका हि योनिरन्तरतः।
+तद्यदिदमाहुरमुं यजामुं यजेत्येकैकं देवमेतस्यैव सा विसृष्टिः।
+एष उ ह्येव सर्वे देवाः।
+अथ यत्किञ्चेदमार्द्रं तद्रेतसोऽसृजत।
+तदु सोम।
+एतावद्वा इदं सर्वमन्नं चैवान्नादश्च।
+सोम एवान्नमग्निरन्नादः।
+सैषा ब्रह्मणोऽतिसृष्टिः।
+यच्छ्रेयसो देवानसृजताथ यन्मर्त्यः सन्नमृतानसृजत तस्मादतिसृष्टिर्।
+अतिसृष्ट्यां हास्यैतस्यां भवति य एवं वेद॥', 'athety abhyamanthat
+sa mukhāc ca yoner hastābhyāṃ cāgnim asṛjata
+tasmād etad ubhayam alomakam antarataḥ
+alomakā hi yonir antarataḥ
+tad yad idam āhur amuṃ yajāmuṃ yajety ekaikaṃ devam etasyaiva sā visṛṣṭiḥ
+eṣa u hy eva sarve devāḥ
+atha yat kiñcedam ārdraṃ tad retaso ''sṛjata
+tad u soma
+etāvad vā idaṃ sarvam annaṃ caivānnādaś ca
+soma evānnam agnir annādaḥ
+saiṣā brahmaṇo ''tisṛṣṭiḥ
+yac chreyaso devān asṛjatātha yan martyaḥ sann amṛtān asṛjata tasmād atisṛṣṭir
+atisṛṣṭyāṃ hāsyaitasyāṃ bhavati ya evaṃ veda', null, 1004006),
+('brihadaranyaka-1-4-7', 7, 'Chapter 1, Section 4, Verse 7', 'तद्धेदं तर्ह्यव्याकृतमासीत्।
+तन्नामरूपाभ्यामेव व्याक्रियतासौ नामायमिदंरूप इति।
+तदिदमप्येतर्हि नामरूपाभ्यामेव व्याक्रियत असौ नामायमिदंरूप इति।
+स एष इह प्रविष्ट आ नखाग्रेभ्यो यथा क्षुरः क्षुरधानेऽवहितः स्याद्विश्वम्भरो वा विश्वम्भरकुलाये।
+तं न पश्यन्ति।
+अकृत्स्नो हि सः प्राणन्नेव प्राणो नाम भवति।
+वदन्वाक्पश्यंश्चक्षुः शृण्वञ्छ्रोत्रं मन्वानो मनः।
+तान्यस्यैतानि कर्मनामान्येव।
+स योऽत एकैकमुपास्ते न स वेद।
+अकृत्स्नो ह्येषोऽत एकैकेन भवति।
+आत्मेत्येवोपासीत।
+अत्र ह्येते सर्व एकं भवन्ति।
+तदेतत्पदनीयमस्य सर्वस्य यदयमात्मा।
+अनेन ह्येतत्सर्वं वेद।
+यथा ह वै पदेनानुविन्देदेवं कीर्तिं श्लोकं विन्दते य एवं वेद॥', 'tad dhedaṃ tarhy avyākṛtam āsīt
+tan nāmarūpābhyām eva vyākriyatāsau nāmāyam idaṃrūpa iti
+tad idam apy etarhi nāmarūpābhyām eva vyākriyata asau nāmāyam idaṃrūpa iti
+sa eṣa iha praviṣṭa ā nakhāgrebhyo yathā kṣuraḥ kṣuradhāne ''vahitaḥ syād viśvambharo vā viśvambharakulāye
+taṃ na paśyanti
+akṛtsno hi saḥ prāṇann eva prāṇo nāma bhavati
+vadan vāk paśyaṃś cakṣuḥ śṛṇvañ chrotraṃ manvāno manaḥ
+tāny asyaitāni karmanāmāny eva
+sa yo ''ta ekaikam upāste na sa veda
+akṛtsno hy eṣo ''ta ekaikena bhavati
+ātmety evopāsīta
+atra hy ete sarva ekaṃ bhavanti
+tad etat padanīyam asya sarvasya yad ayam ātmā
+anena hy etat sarvaṃ veda
+yathā ha vai padenānuvinded evaṃ kīrtiṃ ślokaṃ vindate ya evaṃ veda', null, 1004007),
+('brihadaranyaka-1-4-8', 8, 'Chapter 1, Section 4, Verse 8', 'तदेतत्प्रेयः पुत्रात्प्रेयो वित्तात्प्रेयोऽन्यस्मात्सर्वस्मादन्तरतरं यदयमात्मा।
+स योऽन्यमात्मनः प्रियं ब्रुवाणं ब्रूयात्प्रियं रोत्स्यतीतीश्वरो ह तथैव स्यात्।
+आत्मानमेव प्रियमुपासीत।
+स य आत्मानमेव प्रियमुपास्ते न हास्य प्रियं प्रमायुकं भवति॥', 'tad etat preyaḥ putrāt preyo vittāt preyo ''nyasmāt sarvasmād antarataraṃ yad ayam ātmā
+sa yo ''nyam ātmanaḥ priyaṃ bruvāṇaṃ brūyāt priyaṃ rotsyatītīśvaro ha tathaiva syāt
+ātmānam eva priyam upāsīta
+sa ya ātmānam eva priyam upāste na hāsya priyaṃ pramāyukaṃ bhavati', null, 1004008),
+('brihadaranyaka-1-4-9', 9, 'Chapter 1, Section 4, Verse 9', 'तदाहुर्यद्ब्रह्मविद्यया सर्वं भविष्यन्तो मनुष्या मन्यन्ते।
+किमु तद्ब्रह्मावेद्यस्मात्तत्सर्वमभवदिति॥', 'tad āhur yad brahmavidyayā sarvaṃ bhaviṣyanto manuṣyā manyante
+kim u tad brahmāved yasmāt tat sarvam abhavad iti', null, 1004009),
+('brihadaranyaka-1-4-10', 10, 'Chapter 1, Section 4, Verse 10', 'ब्रह्म वा इदमग्र आसीत्।
+तदात्मानमेवावेत्।
+अहं ब्रह्मास्मीति।
+तस्मात्तत्सर्वमभवत्।
+तद्यो यो देवानां प्रत्यबुध्यत स एव तदभवत्।
+तथर्षीनाम्।
+तथा मनुष्याणाम्।
+तद्धैतत्पश्यन्नृषिर्वामदेवः प्रतिपेदेऽहं मनुरभवं सूर्यश्चेति।
+तदिदमप्येतर्हि य एवं वेदाहं ब्रह्मास्मीति स इदं सर्वं भवति।
+तस्य ह न देवाश्चनाभूत्या ईशते।
+आत्मा ह्येषां स भवति।
+अथ योऽन्यां देवतामुपास्तेऽन्योऽसावन्योऽहमस्मीति न स वेद।
+यथा पशुरेवं स देवानाम्।
+यथा ह वै बहवः पशवो मनुष्यं भुञ्ज्युरेवमेकैकः पुरुषो देवान्भुनक्ति।
+एकस्मिन्नेव पशावादीयमानेऽप्रियं भवति किमु बहुषु।
+तस्मादेषां तन्न प्रियं यदेतन्मनुष्या विद्युः॥', 'brahma vā idam agra āsīt
+tad ātmānam evāvet
+ahaṃ brahmāsmīti
+tasmāt tat sarvam abhavat
+tad yo yo devānāṃ pratyabudhyata sa eva tad abhavat
+tatharṣīnām
+tathā manuṣyāṇām
+tad dhaitat paśyann ṛṣir vāmadevaḥ pratipede ''haṃ manur abhavaṃ sūryaś ceti
+tad idam apy etarhi ya evaṃ vedāhaṃ brahmāsmīti sa idaṃ sarvaṃ bhavati
+tasya ha na devāś canābhūtyā īśate
+ātmā hy eṣāṃ sa bhavati
+atha yo ''nyāṃ devatām upāste ''nyo ''sāv anyo ''ham asmīti na sa veda
+yathā paśur evaṃ sa devānām
+yathā ha vai bahavaḥ paśavo manuṣyaṃ bhuñjyur evam ekaikaḥ puruṣo devān bhunakti
+ekasminn eva paśāv ādīyamāne ''priyaṃ bhavati kim u bahuṣu
+tasmād eṣāṃ tan na priyaṃ yad etan manuṣyā vidyuḥ', null, 1004010),
+('brihadaranyaka-1-4-11', 11, 'Chapter 1, Section 4, Verse 11', 'ब्रह्म वा इदमग्र आसीदेकमेव।
+तदेकं सन्न व्यभवत्।
+तच्छ्रेयो रूपमत्यसृजत क्षत्रं, यान्येतानि देवत्रा क्षत्राणीन्द्रो वरुणः सोमो रुद्रः पर्जन्यो यमो मृत्युरीशान इति।
+तस्मात्क्षत्रात्परं नास्ति।
+तस्माद्ब्राह्मणः क्षत्रियं अधस्तादुपास्ते राजसूये।
+क्षत्र एव तद्यशो दधाति।
+सैषा क्षत्रस्य योनिर्यद्ब्रह्म।
+तस्माद्यद्यपि राजा परमतां गच्छति ब्रह्मैवान्तत उपनिश्रयति स्वां योनिम्।
+य उ एनं हिनस्ति स्वां स योनिमृच्छति।
+स पापीयान्भवति यथा श्रेयांसं हिंसित्वा॥', 'brahma vā idam agra āsīd ekam eva
+tad ekaṃ san na vyabhavat
+tac chreyo rūpam atyasṛjata kṣatraṃ, yāny etāni devatrā kṣatrāṇīndro varuṇaḥ somo rudraḥ parjanyo yamo mṛtyur īśāna iti
+tasmāt kṣatrāt paraṃ nāsti
+tasmād brāhmaṇaḥ kṣatriyaṃ adhastād upāste rājasūye
+kṣatra eva tad yaśo dadhāti
+saiṣā kṣatrasya yonir yad brahma
+tasmād yady api rājā paramatāṃ gacchati brahmaivāntata upaniśrayati svāṃ yonim
+ya u enaṃ hinasti svāṃ sa yonim ṛcchati
+sa pāpīyān bhavati yathā śreyāṃsaṃ hiṃsitvā', null, 1004011),
+('brihadaranyaka-1-4-12', 12, 'Chapter 1, Section 4, Verse 12', 'स नैव व्यभवत्।
+स विशमसृजत।
+यान्येतानि देवजातानि गणश आख्यायन्ते वसवो रुद्रा आदित्या विश्वे देवा मरुत इति॥', 'sa naiva vyabhavat
+sa viśam asṛjata
+yāny etāni devajātāni gaṇaśa ākhyāyante vasavo rudrā ādityā viśve devā maruta iti', null, 1004012),
+('brihadaranyaka-1-4-13', 13, 'Chapter 1, Section 4, Verse 13', 'स नैव व्यभवत्।
+स शौद्रं वर्णमसृजत पूषणम्।
+इयं वै पूषा।
+इयं हीदं सर्वं पुष्यति यदिदं किञ्च॥', 'sa naiva vyabhavat
+sa śaudraṃ varṇam asṛjata pūṣaṇam
+iyaṃ vai pūṣā
+iyaṃ hīdaṃ sarvaṃ puṣyati yad idaṃ kiñca', null, 1004013),
+('brihadaranyaka-1-4-14', 14, 'Chapter 1, Section 4, Verse 14', 'स नैव व्यभवत्।
+तच्छ्रेयो रूपमत्यसृजत धर्मम्।
+तदेतत्क्षत्रस्य क्षत्रं यद्धर्मः।
+तस्माद्धर्मात्परं नास्ति।
+अथो अबलीयान्बलीयांसमाशंसते धर्मेण।
+यथा राज्ञैवम्।
+यो वै स धर्मः सत्यं वै तत्।
+तस्मात्सत्यं वदन्तमाहुर्धर्मं वदतीति।
+धर्मं वा वदन्तं सत्यं वदतीति।
+एतद्ध्येवैतदुभयं भवति॥', 'sa naiva vyabhavat
+tac chreyo rūpam atyasṛjata dharmam
+tad etat kṣatrasya kṣatraṃ yad dharmaḥ
+tasmād dharmāt paraṃ nāsti
+atho abalīyān balīyāṃsam āśaṃsate dharmeṇa
+yathā rājñaivam
+yo vai sa dharmaḥ satyaṃ vai tat
+tasmāt satyaṃ vadantam āhur dharmaṃ vadatīti
+dharmaṃ vā vadantaṃ satyaṃ vadatīti
+etad dhy evaitad ubhayaṃ bhavati', null, 1004014),
+('brihadaranyaka-1-4-15', 15, 'Chapter 1, Section 4, Verse 15', 'तदेतद्ब्रह्म क्षत्रं विट्शूद्रः।
+तदग्निनैव देवेषु ब्रह्माभवद्ब्राह्मणो मनुष्येषु, क्षत्रियेण क्षत्रियः, वैश्येन वैश्यः, शूद्रेण शूद्रः।
+तस्मादग्नावेव देवेषु लोकमिच्छन्ते ब्राह्मणे मनुष्येषु।
+एताभ्यां हि रूपाभ्यां ब्रह्माभवत्।
+अथ यो ह वा अस्माल्लोकात्स्वं लोकमदृष्ट्वा प्रैति स एनमविदितो न भुनक्ति यथा वेदो वाननूक्तोऽन्यद्वा कर्माकृतम्।
+यदि ह वा अप्यनेवंविन्महत्पुण्यं कर्म करोति तद्धास्यान्ततः क्षीयत एव।
+आत्मानमेव लोकमुपासीत।
+स य आत्मानमेव लोकमुपास्ते न हास्य कर्म क्षीयते।
+अस्माद्ध्येवात्मनो यद्यत्कामयते तत्तत्सृजते॥', 'tad etad brahma kṣatraṃ viṭ śūdraḥ
+tad agninaiva deveṣu brahmābhavad brāhmaṇo manuṣyeṣu, kṣatriyeṇa kṣatriyaḥ, vaiśyena vaiśyaḥ, śūdreṇa śūdraḥ
+tasmād agnāv eva deveṣu lokam icchante brāhmaṇe manuṣyeṣu
+etābhyāṃ hi rūpābhyāṃ brahmābhavat
+atha yo ha vā asmāl lokāt svaṃ lokam adṛṣṭvā praiti sa enam avidito na bhunakti yathā vedo vānanūkto ''nyad vā karmākṛtam
+yadi ha vā apy anevaṃvin mahatpuṇyaṃ karma karoti tad dhāsyāntataḥ kṣīyata eva
+ātmānam eva lokam upāsīta
+sa ya ātmānam eva lokam upāste na hāsya karma kṣīyate
+asmād dhy evātmano yadyat kāmayate tattat sṛjate', null, 1004015),
+('brihadaranyaka-1-4-16', 16, 'Chapter 1, Section 4, Verse 16', 'अथो अयं वा आत्मा सर्वेषां भूतानां लोकः।
+स यज्जुहोति यद्यजते तेन देवानां लोकः।
+अथ यदनुब्रूते तेन ऋषीणाम्।
+अथ यत्पितृभ्यो निपृणाति यत्प्रजामिच्छते तेन पितॄणाम्।
+अथ यन्मनुष्यान्वासयते यदेभ्योऽशनं ददाति तेन मनुष्याणाम्।
+अथ यत्पशुभ्यस्तृणोदकं विन्दति तेन पशूनाम्।
+यदस्य गृहेषु श्वापदा वयांस्या पिपीलिकाभ्य उपजीवन्ति तेन तेषां लोकः।
+यथा ह वै स्वाय लोकायारिष्टिमिच्छेत्।
+एवं हैवंविदे सर्वदा सर्वाणि भूतान्यरिष्टिमिच्छन्ति।
+तद्वा एतद्विदितं मीमांसितम्॥', 'atho ayaṃ vā ātmā sarveṣāṃ bhūtānāṃ lokaḥ
+sa yaj juhoti yad yajate tena devānāṃ lokaḥ
+atha yad anubrūte tena ṛṣīṇām
+atha yat pitṛbhyo nipṛṇāti yat prajām icchate tena pitṝṇām
+atha yan manuṣyān vāsayate yad ebhyo ''śanaṃ dadāti tena manuṣyāṇām
+atha yat paśubhyas tṛṇodakaṃ vindati tena paśūnām
+yad asya gṛheṣu śvāpadā vayāṃsy ā pipīlikābhya upajīvanti tena teṣāṃ lokaḥ
+yathā ha vai svāya lokāyāriṣṭim icchet
+evaṃ haivaṃvide sarvadā sarvāṇi bhūtāny ariṣṭim icchanti
+tad vā etad viditaṃ mīmāṃsitam', null, 1004016),
+('brihadaranyaka-1-4-17', 17, 'Chapter 1, Section 4, Verse 17', 'आत्मैवेदमग्र आसीदेक एव।
+सोऽकामयत जाया मे स्यादथ प्रजायेय।
+अथ वित्तं मे स्यादथ कर्म कुर्वीयेति।
+एतावान्वै कामः।
+नेच्छंश्चनातो भूयो विन्देत्।
+तस्मादप्येतर्ह्येकाकी कामयते -- जाया मे स्यादथ प्रजायेयाथ वित्तं मे स्यादथ कर्म कुर्वीयेति।
+स यावदप्येतेषामेकैकं न प्राप्नोत्यकृत्स्न एव तावन्मन्यते।
+तस्यो कृत्स्नता।
+मन एवास्यात्मा।
+वाग्जाया।
+प्राणः प्रजा।
+चक्षुर्मानुषं वित्तम्।
+चक्षुषा हि तद्विन्दते।
+श्रोत्रं दैवम्।
+श्रोत्रेण हि तच्छृणोति।
+आत्मैवास्य कर्म।
+आत्मना हि कर्म करोति।
+स एष पाङ्क्तो यज्ञः।
+पाङ्क्तः पशुः।
+पाङ्क्तः पुरुषः।
+पाङ्क्तमिदं सर्वं यदिदं किञ्च।
+तदिदं सर्वमाप्नोति य एवं वेद॥', 'ātmaivedam agra āsīd eka eva
+so ''kāmayata jāyā me syād atha prajāyeya
+atha vittaṃ me syād atha karma kurvīyeti
+etāvān vai kāmaḥ
+necchaṃś canāto bhūyo vindet
+tasmād apy etarhy ekākī kāmayate -- jāyā me syād atha prajāyeyātha vittaṃ me syād atha karma kurvīyeti
+sa yāvad apy eteṣām ekaikaṃ na prāpnoty akṛtsna eva tāvan manyate
+tasyo kṛtsnatā
+mana evāsyātmā
+vāg jāyā
+prāṇaḥ prajā
+cakṣur mānuṣaṃ vittam
+cakṣuṣā hi tad vindate
+śrotraṃ daivam
+śrotreṇa hi tac chṛṇoti
+ātmaivāsya karma
+ātmanā hi karma karoti
+sa eṣa pāṅkto yajñaḥ
+pāṅktaḥ paśuḥ
+pāṅktaḥ puruṣaḥ
+pāṅktam idaṃ sarvaṃ yad idaṃ kiñca
+tad idaṃ sarvam āpnoti ya evaṃ veda', null, 1004017)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-5-1', 1, 'Chapter 1, Section 5, Verse 1', 'यत्सप्तान्नानि मेधया तपसाजनयत्पिता।
+एकमस्य साधारणं द्वे देवानभाजयत्।
+त्रीण्यात्मनेऽकुरुत पशुभ्य एकं प्रायच्छत्।
+तस्मिन्सर्वं प्रतिष्ठितं यच्च प्राणिति यच्च न।
+कस्मात्तानि न क्षीयन्ते अद्यमानानि सर्वदा।
+यो वै तामक्षितिं वेद सोऽन्नमत्ति प्रतीकेन।
+स देवानपिगच्छति स ऊऋजमुपजीवति।
+इति श्लोकाः॥', 'yat saptānnāni medhayā tapasājanayat pitā
+ekam asya sādhāraṇaṃ dve devān abhājayat
+trīṇy ātmane ''kuruta paśubhya ekaṃ prāyacchat
+tasmin sarvaṃ pratiṣṭhitaṃ yacca prāṇiti yacca na
+kasmāt tāni na kṣīyante adyamānāni sarvadā
+yo vai tām akṣitiṃ veda so ''nnam atti pratīkena
+sa devān apigacchati sa ūṛjam upajīvati
+iti ślokāḥ', null, 1005001),
+('brihadaranyaka-1-5-2', 2, 'Chapter 1, Section 5, Verse 2', 'यत्सप्तान्नानि मेधया तपसाजनयत्पितेति।
+मेधया हि तपसाजनयत्पितैकमस्य साधारणमिति।
+इदमेवास्य तत्साधारणमन्नं यदिदमद्यते।
+स य एतदुपास्ते न स पाप्मनो व्यावर्तते।
+मिश्रं ह्येतत्।
+द्वे देवानभाजयदिति।
+हुतं च प्रहुतं च।
+तस्माद्देवेभ्यो जुह्वति च प्र च जुह्वति।
+अथो आहुर्दर्शपूर्णमासाविति।
+तस्मान्नेष्टियाजुकः स्यात्।
+पशुभ्य एकं प्रायच्छदिति।
+तत्पयः।
+पयो ह्येवाग्रे मनुष्याश्च पशवश्चोपजीवन्ति।
+तस्मात्कुमारं जातं घृतं वैवाग्रे प्रतिलेहयन्ति स्तनं वानुधापयन्ति।
+अथ वत्सं जातमाहुस्तृणादिति।
+तस्मिन्सर्वं प्रतिष्ठितं यच्च प्राणिति यच्च नेति।
+पयसि हीदं सर्वं प्रतिष्ठितं यच्च प्राणिति यच्च न।
+तद्यदिदमाहुः संवत्सरं पयसा जुह्वदप पुनर्मृत्युं जयतीति।
+न तथा विद्यात्।
+यदहरेव जुहोति तदहः पुनर्मृत्युमपजयत्येवं विद्वान्।
+सर्वं हि देवेभ्योऽन्नाद्यं प्रयच्छति।
+कस्मात्तानि न क्षीयन्ते अद्यमानानि सर्वदेति।
+पुरुषो वा अक्षितिः।
+स हीदमन्नं पुनः पुनर्जनयते।
+यो वैतामक्षितिं वेदेति।
+पुरुषो वा अक्षितिः।
+स हीदमन्नं धियाधिया जनयते कर्मभिः।
+यद्धैतन्न कुर्यात्क्षीयेत ह।
+सोऽन्नमत्ति प्रतीकेनेति।
+मुखं प्रतीकं मुखेनेत्येतत्।
+स देवानपिगच्छति स ऊर्जमुपजीवतीति प्रशंसा॥', 'yat saptānnāni medhayā tapasājanayat piteti
+medhayā hi tapasājanayat pitaikam asya sādhāraṇam iti
+idam evāsya tat sādhāraṇam annaṃ yad idam adyate
+sa ya etad upāste na sa pāpmano vyāvartate
+miśraṃ hy etat
+dve devān abhājayad iti
+hutaṃ ca prahutaṃ ca
+tasmād devebhyo juhvati ca pra ca juhvati
+atho āhur darśapūrṇamāsāv iti
+tasmān neṣṭiyājukaḥ syāt
+paśubhya ekaṃ prāyacchad iti
+tat payaḥ
+payo hy evāgre manuṣyāś ca paśavaś copajīvanti
+tasmāt kumāraṃ jātaṃ ghṛtaṃ vaivāgre pratilehayanti stanaṃ vānudhāpayanti
+atha vatsaṃ jātam āhus tṛṇād iti
+tasmin sarvaṃ pratiṣṭhitaṃ yacca prāṇiti yacca neti
+payasi hīdaṃ sarvaṃ pratiṣṭhitaṃ yacca prāṇiti yacca na
+tad yad idam āhuḥ saṃvatsaraṃ payasā juhvad apa punarmṛtyuṃ jayatīti
+na tathā vidyāt
+yad ahar eva juhoti tad ahaḥ punarmṛtyum apajayaty evaṃ vidvān
+sarvaṃ hi devebhyo ''nnādyaṃ prayacchati
+kasmāt tāni na kṣīyante adyamānāni sarvadeti
+puruṣo vā akṣitiḥ
+sa hīdam annaṃ punaḥ punar janayate
+yo vaitām akṣitiṃ vedeti
+puruṣo vā akṣitiḥ
+sa hīdam annaṃ dhiyādhiyā janayate karmabhiḥ
+yad dhaitan na kuryāt kṣīyeta ha
+so ''nnam atti pratīkeneti
+mukhaṃ pratīkaṃ mukhenety etat
+sa devān apigacchati sa ūrjam upajīvatīti praśaṃsā', null, 1005002),
+('brihadaranyaka-1-5-3', 3, 'Chapter 1, Section 5, Verse 3', 'त्रीण्यात्मनेऽकुरुतेति: मनो वाचं प्राणं तान्यात्मनेऽकुरुत।
+अन्यत्रमना अभूवं नादर्शमन्यत्रमना अभूवं नाश्रौषमिति मनसा ह्येव पश्यति मनसा शृणोति।
+कामः संकल्पो विचिकित्सा श्रद्धाश्रद्धा धृतिरधृतिर्ह्रीर्धीर्भीरित्येतत्सर्वं मन एव।
+तस्मादपि पृष्ठत उपस्पृष्टो मनसा विजानाति।
+यः कश्च शब्दो वागेव सा।
+एषा ह्यन्तं आयत्तैषा हि न।
+प्राणोऽपानो व्यान उदानः समानोऽन इत्येतत्सर्वं प्राण एव।
+एतन्मयो वा अयमात्मा।
+वाङ्मयो मनोमयः प्राणमयः॥', 'trīṇy ātmane ''kuruteti: mano vācaṃ prāṇaṃ tāny ātmane ''kuruta
+anyatramanā abhūvaṃ nādarśam anyatramanā abhūvaṃ nāśrauṣam iti manasā hy eva paśyati manasā śṛṇoti
+kāmaḥ saṃkalpo vicikitsā śraddhāśraddhā dhṛtir adhṛtir hrīr dhīr bhīr ity etat sarvaṃ mana eva
+tasmād api pṛṣṭhata upaspṛṣṭo manasā vijānāti
+yaḥ kaśca śabdo vāg eva sā
+eṣā hy antaṃ āyattaiṣā hi na
+prāṇo ''pāno vyāna udānaḥ samāno ''na ity etat sarvaṃ prāṇa eva
+etanmayo vā ayam ātmā
+vāṅmayo manomayaḥ prāṇamayaḥ', null, 1005003),
+('brihadaranyaka-1-5-4', 4, 'Chapter 1, Section 5, Verse 4', 'त्रयो लोका एत एव।
+वागेवायं लोको मनोऽन्तरिक्षलोकः प्राणोऽसौ लोकः॥', 'trayo lokā eta eva
+vāg evāyaṃ loko mano ''ntarikṣalokaḥ prāṇo ''sau lokaḥ', null, 1005004),
+('brihadaranyaka-1-5-5', 5, 'Chapter 1, Section 5, Verse 5', 'त्रयो वेदा एत एव।
+वागेवर्ग्वेदो मनो यजुर्वेदः प्राणः सामवेदः॥', 'trayo vedā eta eva
+vāg evargvedo mano yajurvedaḥ prāṇaḥ sāmavedaḥ', null, 1005005),
+('brihadaranyaka-1-5-6', 6, 'Chapter 1, Section 5, Verse 6', 'देवा पितरो मनुष्या एत एव।
+वागेव देवा मनः पितरः, प्राणो मानुष्याः॥', 'devā pitaro manuṣyā eta eva
+vāg eva devā manaḥ pitaraḥ, prāṇo mānuṣyāḥ', null, 1005006),
+('brihadaranyaka-1-5-7', 7, 'Chapter 1, Section 5, Verse 7', 'पिता माता प्रजैत एव।
+मन एव पिता वाङ्माता प्राणः प्रजा॥', 'pitā mātā prajaita eva
+mana eva pitā vāṅ mātā prāṇaḥ prajā', null, 1005007),
+('brihadaranyaka-1-5-8', 8, 'Chapter 1, Section 5, Verse 8', 'विज्ञातं विजिज्ञास्यमविज्ञातमेत एव।
+यत्किञ्च विज्ञातं वाचस्तद्रूपम्।
+वाग्घि विज्ञाता।
+वागेनं तद्भूत्वावति॥', 'vijñātaṃ vijijñāsyam avijñātam eta eva
+yat kiñca vijñātaṃ vācas tad rūpam
+vāg ghi vijñātā
+vāg enaṃ tad bhūtvāvati', null, 1005008),
+('brihadaranyaka-1-5-9', 9, 'Chapter 1, Section 5, Verse 9', 'यत्किञ्च विजिज्ञास्यं मनसस्तद्रूपम्।
+मनो हि विजिज्ञास्यम्।
+मन एनं तद्भूत्वावति॥', 'yat kiñca vijijñāsyaṃ manasas tad rūpam
+mano hi vijijñāsyam
+mana enaṃ tad bhūtvāvati', null, 1005009),
+('brihadaranyaka-1-5-10', 10, 'Chapter 1, Section 5, Verse 10', 'यत्किञ्चाविज्ञातं प्राणस्य तद्रूपम्।
+प्राणो ह्यविज्ञातः।
+प्राण एनं तद्भूत्वावति॥', 'yat kiñcāvijñātaṃ prāṇasya tad rūpam
+prāṇo hy avijñātaḥ
+prāṇa enaṃ tad bhūtvāvati', null, 1005010),
+('brihadaranyaka-1-5-11', 11, 'Chapter 1, Section 5, Verse 11', 'तस्यै वाचः पृथिवी शरीरम्।
+ज्योतीरूपमयमग्निः।
+तद्यावत्येव वाक्तावती पृथिवी तावानयमग्निः॥', 'tasyai vācaḥ pṛthivī śarīram
+jyotīrūpam ayam agniḥ
+tad yāvaty eva vāk tāvatī pṛthivī tāvān ayam agniḥ', null, 1005011),
+('brihadaranyaka-1-5-12', 12, 'Chapter 1, Section 5, Verse 12', 'अथैतस्य मनसो द्यौः शरीरम्।
+ज्योतीरूपमसावादित्यः।
+तद्यावदेव मनस्तावती द्यौस्तावानसावादित्यः।
+तौ मिथुनं समैताम्।
+ततः प्राणोऽजायत।
+स इन्द्रः।
+स एषोऽसपत्नः।
+द्वितीयो वै सपत्नः।
+नास्य सपत्नो भवति य एवं वेद॥', 'athaitasya manaso dyauḥ śarīram
+jyotīrūpam asāv ādityaḥ
+tad yāvad eva manas tāvatī dyaus tāvān asāv ādityaḥ
+tau mithunaṃ samaitām
+tataḥ prāṇo ''jāyata
+sa indraḥ
+sa eṣo ''sapatnaḥ
+dvitīyo vai sapatnaḥ
+nāsya sapatno bhavati ya evaṃ veda', null, 1005012),
+('brihadaranyaka-1-5-13', 13, 'Chapter 1, Section 5, Verse 13', 'अथैतस्य प्राणस्यापः शरीरम्।
+ज्योतीरूपमसौ चन्द्रः।
+तद्यावानेव प्राणस्तावत्य आपस्तावानसौ चन्द्रः।
+त एते सर्व एव समाः सर्वेऽनन्ताः।
+स यो हैतानन्तवत उपास्तेऽन्तवन्तं स लोकं जयति।
+अथ यो हैताननन्तानुपास्तेऽनन्तं स लोकं जयति॥', 'athaitasya prāṇasyāpaḥ śarīram
+jyotīrūpam asau candraḥ
+tad yāvān eva prāṇas tāvatya āpas tāvān asau candraḥ
+ta ete sarva eva samāḥ sarve ''nantāḥ
+sa yo haitān antavata upāste ''ntavantaṃ sa lokaṃ jayati
+atha yo haitān anantān upāste ''nantaṃ sa lokaṃ jayati', null, 1005013),
+('brihadaranyaka-1-5-14', 14, 'Chapter 1, Section 5, Verse 14', 'स एष संवत्सरः प्रजापतिष्षोडशकलः।
+तस्य रात्रय एव पञ्चदश कला।
+ध्रुवैवास्य षोडशी कला।
+स रात्रिभिरेवा च पूर्यतेऽप च क्षीयते।
+सोऽमावास्यां रात्रिमेतया षोडश्या कलया सर्वमिदं प्राणभृदनुप्रविश्य ततः प्रातर्जायते।
+तस्मादेतां रात्रिं प्राणभृतः प्राणं न विच्छिन्द्यादपि कृकलासस्यैतस्या एव देवताया अपचित्यै॥', 'sa eṣa saṃvatsaraḥ prajāpatiṣ ṣoḍaśakalaḥ
+tasya rātraya eva pañcadaśa kalā
+dhruvaivāsya ṣoḍaśī kalā
+sa rātribhir evā ca pūryate ''pa ca kṣīyate
+so ''māvāsyāṃ rātrim etayā ṣoḍaśyā kalayā sarvam idaṃ prāṇabhṛd anupraviśya tataḥ prātar jāyate
+tasmād etāṃ rātriṃ prāṇabhṛtaḥ prāṇaṃ na vicchindyād api kṛkalāsasyaitasyā eva devatāyā apacityai', null, 1005014),
+('brihadaranyaka-1-5-15', 15, 'Chapter 1, Section 5, Verse 15', 'यो वै स संवत्सरः प्रजापतिः षोडशकालोऽयमेव स योऽयमेवंवित्पुरुषः।
+तस्य वित्तमेव पञ्चदश कलाः।
+आत्मैवास्य षोडशी कला।
+स वित्तेनैवा च पूर्यतेऽप च क्षीयते।
+तदेतन्नभ्यं यदयमात्मा।
+प्रधिर्वित्तम्।
+तस्माद्यद्यपि सर्वज्यानिं जीयत आत्मना चेज्जीवति प्रधिनागादित्येवाहुः॥', 'yo vai sa saṃvatsaraḥ prajāpatiḥ ṣoḍaśakālo ''yam eva sa yo ''yam evaṃvit puruṣaḥ
+tasya vittam eva pañcadaśa kalāḥ
+ātmaivāsya ṣoḍaśī kalā
+sa vittenaivā ca pūryate ''pa ca kṣīyate
+tad etan nabhyaṃ yad ayam ātmā
+pradhir vittam
+tasmād yady api sarvajyāniṃ jīyata ātmanā cej jīvati pradhināgād ity evāhuḥ', null, 1005015),
+('brihadaranyaka-1-5-16', 16, 'Chapter 1, Section 5, Verse 16', 'अथ त्रयो वाव लोका मनुष्यलोकः पितृलोको देवलोक इति।
+सोऽयं मनुष्यलोकः पुत्रेणैव जय्यो नान्येन कर्मणा।
+कर्मणा पितृलोकः।
+विद्यया देवलोकः।
+देवलोको वै लोकानां श्रेष्ठः।
+तस्माद्विद्यां प्रशंसन्ति॥', 'atha trayo vāva lokā manuṣyalokaḥ pitṛloko devaloka iti
+so ''yaṃ manuṣyalokaḥ putreṇaiva jayyo nānyena karmaṇā
+karmaṇā pitṛlokaḥ
+vidyayā devalokaḥ
+devaloko vai lokānāṃ śreṣṭhaḥ
+tasmād vidyāṃ praśaṃsanti', null, 1005016),
+('brihadaranyaka-1-5-17', 17, 'Chapter 1, Section 5, Verse 17', 'अथातः सम्प्रत्तिः।
+यदा प्रैष्यन्मन्यतेऽथ पुत्रमाह -- त्वं ब्रह्म त्वं यज्ञस्त्वं लोक इति।
+स पुत्रः प्रत्याहाहं ब्रह्माहं यज्ञोऽहम्लोक इति।
+यद्वै किञ्चानूक्तं तस्य सर्वस्य ब्रह्मेत्येकता।
+ये वै के च यज्ञास्तेषां सर्वेषां यज्ञ इत्येकता।
+ये वै के च लोकास्तेषां सर्वेषां लोक इत्येकता।
+एतावद्वा इदं सर्वम्।
+एतन्मा सर्वं सन्नयमितो भुनजदिति।
+तस्मात्पुत्रमनुशिष्टं लोक्यमाहुः।
+तस्मादेनमनुशासति।
+स यदैवंविदस्माल्लोकात्प्रैत्यथैभिरेव प्राणैः सह पुत्रमाविशति।
+स यद्यनेन किञ्चिदक्ष्णया कृतं भवति तस्मादेनं सर्वस्मात्पुत्रो मुञ्चति तस्मात्पुत्रो नाम।
+स पुत्रेणैवास्मिल्लोके प्रतितिष्ठति।
+अथैनमेते देवाः प्राणा अमृता आविशन्ति॥', 'athātaḥ samprattiḥ
+yadā praiṣyan manyate ''tha putram āha -- tvaṃ brahma tvaṃ yajñas tvaṃ loka iti
+sa putraḥ pratyāhāhaṃ brahmāhaṃ yajño ''ham loka iti
+yad vai kiñcānūktaṃ tasya sarvasya brahmety ekatā
+ye vai ke ca yajñās teṣāṃ sarveṣāṃ yajña ity ekatā
+ye vai ke ca lokās teṣāṃ sarveṣāṃ loka ity ekatā
+etāvad vā idaṃ sarvam
+etan mā sarvaṃ sann ayam ito bhunajad iti
+tasmāt putram anuśiṣṭaṃ lokyam āhuḥ
+tasmād enam anuśāsati
+sa yadaivaṃvid asmāl lokāt praity athaibhir eva prāṇaiḥ saha putram āviśati
+sa yady anena kiñcid akṣṇayā kṛtaṃ bhavati tasmād enaṃ sarvasmāt putro muñcati tasmāt putro nāma
+sa putreṇaivāsmil loke pratitiṣṭhati
+athainam ete devāḥ prāṇā amṛtā āviśanti', null, 1005017),
+('brihadaranyaka-1-5-18', 18, 'Chapter 1, Section 5, Verse 18', 'पृथिव्यै चैनमग्नेश्च दैवी वागाविशति।
+सा वै दैवी वाग्यया यद्यदेव वदति तत्तद्भवति॥', 'pṛthivyai cainam agneś ca daivī vāg āviśati
+sā vai daivī vāg yayā yad yad eva vadati tat tad bhavati', null, 1005018),
+('brihadaranyaka-1-5-19', 19, 'Chapter 1, Section 5, Verse 19', 'दिवश्चैनमादित्याच्च दैवं मन आविशति।
+तद्वै दैवं मनो येनानन्द्येव भवत्यथो न शोचति॥', 'divaś cainam ādityāc ca daivaṃ mana āviśati
+tad vai daivaṃ mano yenānandy eva bhavaty atho na śocati', null, 1005019),
+('brihadaranyaka-1-5-20', 20, 'Chapter 1, Section 5, Verse 20', 'अद्भ्यश्चैनं चन्द्रमसश्च दैवः प्राण आविशति।
+स वै दैवः प्राणो यः संचरंश्चासंचरंश्च न व्यथतेऽथो न रिष्यति।
+स एष एवंवित्सर्वेषां भूतानामात्मा भवति।
+यथैषा देवतैवं सः।
+यथैतां देवतां सर्वाणि भूतान्यवन्त्येवं हैवंविदं सर्वाणि भूतान्यवन्ति।
+यदु किञ्चेमाः प्रजाः शोचन्त्यमैवासां तद्भवति।
+पुण्यमेवामुं गच्छति।
+न ह वै देवान्पापं गच्छति॥', 'adbhyaś cainaṃ candramasaś ca daivaḥ prāṇa āviśati
+sa vai daivaḥ prāṇo yaḥ saṃcaraṃś cāsaṃcaraṃś ca na vyathate ''tho na riṣyati
+sa eṣa evaṃvit sarveṣāṃ bhūtānām ātmā bhavati
+yathaiṣā devataivaṃ saḥ
+yathaitāṃ devatāṃ sarvāṇi bhūtāny avanty evaṃ haivaṃvidaṃ sarvāṇi bhūtāny avanti
+yad u kiñcemāḥ prajāḥ śocanty amaivāsāṃ tad bhavati
+puṇyam evāmuṃ gacchati
+na ha vai devān pāpaṃ gacchati', null, 1005020),
+('brihadaranyaka-1-5-21', 21, 'Chapter 1, Section 5, Verse 21', 'अथातो व्रतमीमांसा।
+प्रजापतिर्ह कर्माणि ससृजे।
+तानि सृष्टान्यन्योऽन्येनास्पर्धन्त।
+वदिष्याम्येवाहमिति वाग्दध्रे।
+द्रक्ष्याम्यहमिति चक्षुः।
+श्रोष्याम्यहमिति श्रोत्रम्।
+एवमन्यानि कर्माणि यथाकर्मम्।
+तानि मृत्युः श्रमो भूत्वोपयेमे।
+तान्याप्नोत्।
+तान्याप्त्वा मृत्युरवारुन्ध।
+तस्माच्छ्राम्यत्येव वाक्।
+श्राम्यति चक्षुः।
+श्राम्यति श्रोत्रम्।
+अथेममेव नाप्नोत्योऽयं मध्यमः प्राणः।
+तानि ज्ञातुं दध्रिरे।
+अयं वै नः श्रेष्ठो यः संचरंश्चासंचरंश्च न व्यथतेऽथो न रिष्यति।
+हन्तास्यैव सर्वे रूपं भवामेति।
+त एतस्यैव सर्वे रूपमभवन्।
+तस्मादेत एतेनाख्यायन्ते प्राणा इति।
+तेन ह वाव तत्कुलमाचक्षते यस्मिन्कुले भवति य एवं वेद।
+य उ हैवंविदा स्पर्धतेऽनुशुष्यति।
+अनुशुष्य हैवान्ततो म्रियत इत्यध्यात्मम्॥', 'athāto vratamīmāṃsā
+prajāpatir ha karmāṇi sasṛje
+tāni sṛṣṭāny anyo ''nyenāspardhanta
+vadiṣyāmy evāham iti vāg dadhre
+drakṣyāmy aham iti cakṣuḥ
+śroṣyāmy aham iti śrotram
+evam anyāni karmāṇi yathākarmam
+tāni mṛtyuḥ śramo bhūtvopayeme
+tāny āpnot
+tāny āptvā mṛtyur avārundha
+tasmāc chrāmyaty eva vāk
+śrāmyati cakṣuḥ
+śrāmyati śrotram
+athemam eva nāpnot yo ''yaṃ madhyamaḥ prāṇaḥ
+tāni jñātuṃ dadhrire
+ayaṃ vai naḥ śreṣṭho yaḥ saṃcaraṃś cāsaṃcaraṃś ca na vyathate ''tho na riṣyati
+hantāsyaiva sarve rūpaṃ bhavāmeti
+ta etasyaiva sarve rūpam abhavan
+tasmād eta etenākhyāyante prāṇā iti
+tena ha vāva tat kulam ācakṣate yasmin kule bhavati ya evaṃ veda
+ya u haivaṃvidā spardhate ''nuśuṣyati
+anuśuṣya haivāntato mriyata ity adhyātmam', null, 1005021),
+('brihadaranyaka-1-5-22', 22, 'Chapter 1, Section 5, Verse 22', 'अथाधिदेवतं: ज्वलिष्याम्येवाहमित्यग्निर्दध्रे।
+तप्स्याम्यहमित्यादित्यः।
+भास्याम्यहमिति चन्द्रमाः।
+एवमन्या देवता यथादेवतम्।
+स यथैषां प्राणानां मध्यमः प्राण एवमेतासां देवतानां वायुः।
+म्लोचन्ति ह्यन्या देवता न वायुः।
+सैषानस्तमिता देवता यद्वायुः॥', 'athādhidevataṃ: jvaliṣyāmy evāham ity agnir dadhre
+tapsyāmy aham ity ādityaḥ
+bhāsyāmy aham iti candramāḥ
+evam anyā devatā yathādevatam
+sa yathaiṣāṃ prāṇānāṃ madhyamaḥ prāṇa evam etāsāṃ devatānāṃ vāyuḥ
+mlocanti hy anyā devatā na vāyuḥ
+saiṣānastamitā devatā yad vāyuḥ', null, 1005022),
+('brihadaranyaka-1-5-23', 23, 'Chapter 1, Section 5, Verse 23', 'अथैष श्लोको भवति -- यतश्चोदेति सूर्योऽस्तं यत्र च गच्छतीति।
+प्राणाद्वा एष उदेति प्राणेऽस्तमेति।
+तं देवाश्चक्रिरे धर्मं स एवाद्य स उ श्व इति।
+यद्वा एतेऽमुर्ह्यध्रियन्त तदेवाप्यद्य कुर्वन्ति।
+तस्मादेकमेव व्रतं चरेत्प्राण्याच्चैवापान्याच्च।
+नेन्मा पाप्मा मृत्युराप्नवदिति।
+यद्यु चरेत्समापिपयिषेत्तेनो एतस्यै देवतायै सायुज्यं सलोकतां जयति॥', 'athaiṣa śloko bhavati -- yataś codeti sūryo ''staṃ yatra ca gacchatīti
+prāṇād vā eṣa udeti prāṇe ''stam eti
+taṃ devāś cakrire dharmaṃ sa evādya sa u śva iti
+yad vā ete ''murhy adhriyanta tad evāpy adya kurvanti
+tasmād ekam eva vrataṃ caret prāṇyāc caivāpānyāc ca
+nen mā pāpmā mṛtyur āpnavad iti
+yady u caret samāpipayiṣet teno etasyai devatāyai sāyujyaṃ salokatāṃ jayati', null, 1005023)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-1-6-1', 1, 'Chapter 1, Section 6, Verse 1', 'त्रयं वा इदं नाम रूपं कर्म।
+तेषां नाम्नां वागित्येतदेषामुक्थम्।
+अतो हि सर्वाणि नामान्युत्तिष्ठन्ति।
+एतदेषां साम।
+एतद्धि सर्वैर्नामभिः समम्।
+एतदेषां ब्रह्म।
+एतद्धि सर्वाणि नामानि बिभर्ति॥', 'trayaṃ vā idaṃ nāma rūpaṃ karma
+teṣāṃ nāmnāṃ vāg ity etad eṣām uktham
+ato hi sarvāṇi nāmāny uttiṣṭhanti
+etad eṣāṃ sāma
+etad dhi sarvair nāmabhiḥ samam
+etad eṣāṃ brahma
+etad dhi sarvāṇi nāmāni bibharti', null, 1006001),
+('brihadaranyaka-1-6-2', 2, 'Chapter 1, Section 6, Verse 2', 'अथ रूपाणां चक्षुरित्येतदेषामुक्थम्।
+अतो हि सर्वाणि रूपाण्युत्तिष्ठन्ति।
+एतदेषां साम।
+एतद्धि सर्वै रूपैः समम्।
+एतदेषां ब्रह्म।
+एतद्धि सर्वाणि रूपाणि बिभर्ति॥', 'atha rūpāṇāṃ cakṣur ity etad eṣām uktham
+ato hi sarvāṇi rūpāṇy uttiṣṭhanti
+etad eṣāṃ sāma
+etad dhi sarvai rūpaiḥ samam
+etad eṣāṃ brahma
+etad dhi sarvāṇi rūpāṇi bibharti', null, 1006002),
+('brihadaranyaka-1-6-3', 3, 'Chapter 1, Section 6, Verse 3', 'अथ कर्मणामात्मेत्येतदेषामुक्थम्।
+अतो हि सर्वाणि कर्माण्युत्तिष्ठन्ति।
+एतदेषां साम।
+एतद्धि सर्वैः कर्मभिः समम्।
+एतदेषां ब्रह्म।
+एतद्धि सर्वाणि कर्माणि बिभर्ति।
+तदेतत्त्रयं सदेकमयमात्मा।
+आत्मो एकः सन्नेतत्त्रयम्।
+तदेतदमृतं सत्येन छन्नम्।
+प्राणो वा अमृतम्।
+नामरूपे सत्यम्।
+ताभ्यामयं प्राणश्छन्नः॥', 'atha karmaṇām ātmety etad eṣām uktham
+ato hi sarvāṇi karmāṇy uttiṣṭhanti
+etad eṣāṃ sāma
+etad dhi sarvaiḥ karmabhiḥ samam
+etad eṣāṃ brahma
+etad dhi sarvāṇi karmāṇi bibharti
+tad etat trayaṃ sad ekam ayam ātmā
+ātmo ekaḥ sann etat trayam
+tad etad amṛtaṃ satyena channam
+prāṇo vā amṛtam
+nāmarūpe satyam
+tābhyām ayaṃ prāṇaś channaḥ', null, 1006003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-1-1', 1, 'Chapter 2, Section 1, Verse 1', 'दृप्तबालाकिर्हानूचानो गार्ग्य आस।
+स होवाचाजातशत्रुं काश्यं -- ब्रह्म ते ब्रवाणीति।
+स होवाचाजातशत्रुः -- सहस्रमेतस्यां वाचि दद्मः, जनको जनक इति वै जना धावन्तीति॥', 'dṛptabālākir hānūcāno gārgya āsa
+sa hovācājātaśatruṃ kāśyaṃ -- brahma te bravāṇīti
+sa hovācājātaśatruḥ -- sahasram etasyāṃ vāci dadmaḥ, janako janaka iti vai janā dhāvantīti', null, 2001001),
+('brihadaranyaka-2-1-2', 2, 'Chapter 2, Section 1, Verse 2', 'स होवाच गार्ग्यः -- य एवासावादित्ये पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुर्-- मा मैतस्मिन्संवदिष्ठाः।
+अतिष्ठाः सर्वेषां भूतानां मूर्धा राजेति वा अहमेतमुपास इति।
+स य एतमेवमुपास्तेऽतिष्ठाः सर्वेषां भूतानां मूर्धा राजा भवति॥', 'sa hovāca gārgyaḥ -- ya evāsāv āditye puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatrur -- mā maitasminsaṃvadiṣṭhāḥ
+atiṣṭhāḥ sarveṣāṃ bhūtānāṃ mūrdhā rājeti vā aham etam upāsa iti
+sa ya etam evam upāste ''tiṣṭhāḥ sarveṣāṃ bhūtānāṃ mūrdhā rājā bhavati', null, 2001002),
+('brihadaranyaka-2-1-3', 3, 'Chapter 2, Section 1, Verse 3', 'स होवाच गार्ग्यः -- य एवासौ चन्द्रे पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+बृहन्पाण्दरवासाः सोमो राजेति वा अहमेतमुपास इति।
+स य एतमेवमुपास्तेऽहर्-अहर्सुतः प्रसुतो भवति।
+नास्यान्नं क्षीयते॥', 'sa hovāca gārgyaḥ -- ya evāsau candre puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasminsaṃvadiṣṭhāḥ
+bṛhan pāṇdaravāsāḥ somo rājeti vā aham etam upāsa iti
+sa ya etam evam upāste ''har-ahar sutaḥ prasuto bhavati
+nāsyānnaṃ kṣīyate', null, 2001003),
+('brihadaranyaka-2-1-4', 4, 'Chapter 2, Section 1, Verse 4', 'स होवाच गार्ग्यः -- य एवासौ विद्युति पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+तेजस्वीति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते तेजस्वी ह भवति।
+तेजस्विनी हास्य प्रजा भवति॥', 'sa hovāca gārgyaḥ -- ya evāsau vidyuti puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+tejasvīti vā aham etam upāsa iti
+sa ya etam evam upāste tejasvī ha bhavati
+tejasvinī hāsya prajā bhavati', null, 2001004),
+('brihadaranyaka-2-1-5', 5, 'Chapter 2, Section 1, Verse 5', 'स होवाच गार्ग्यः -- य एवायमाकाशे पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+पूर्णमप्रवर्तीति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते पूर्यते प्रजया पशुभिर्नास्यास्माल्लोकात्प्रजोद्वर्तते॥', 'sa hovāca gārgyaḥ -- ya evāyam ākāśe puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+pūrṇam apravartīti vā aham etam upāsa iti
+sa ya etam evam upāste pūryate prajayā paśubhir nāsyāsmāl lokāt prajodvartate', null, 2001005),
+('brihadaranyaka-2-1-6', 6, 'Chapter 2, Section 1, Verse 6', 'स होवाच गार्ग्यः -- य एवायं वायौ पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+इन्द्रो वैकुण्ठोऽपराजिता सेनेति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते जिष्णुर्हापराजिष्णुर्भवत्यन्यतस्त्यजायी॥', 'sa hovāca gārgyaḥ -- ya evāyaṃ vāyau puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasminsaṃvadiṣṭhāḥ
+indro vaikuṇṭho ''parājitā seneti vā aham etam upāsa iti
+sa ya etam evam upāste jiṣṇur hāparājiṣṇur bhavaty anyatastyajāyī', null, 2001006),
+('brihadaranyaka-2-1-7', 7, 'Chapter 2, Section 1, Verse 7', 'स होवाच गार्ग्यः -- य एवायमग्नौ पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+विषासहिरिति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते विषासहिर्ह भवति।
+विषासहिर्हास्य प्रजा भवति॥', 'sa hovāca gārgyaḥ -- ya evāyam agnau puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasminsaṃvadiṣṭhāḥ
+viṣāsahir iti vā aham etam upāsa iti
+sa ya etam evam upāste viṣāsahir ha bhavati
+viṣāsahir hāsya prajā bhavati', null, 2001007),
+('brihadaranyaka-2-1-8', 8, 'Chapter 2, Section 1, Verse 8', 'स होवाच गार्ग्यः -- य एवायमप्सु पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+प्रतिरूप इति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते प्रतिरूपं हैवैनमुपगच्छति नाप्रतिरूपम्।
+अथो प्रतिरुपोऽस्माज्जायते॥', 'sa hovāca gārgyaḥ -- ya evāyam apsu puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasminsaṃvadiṣṭhāḥ
+pratirūpa iti vā aham etam upāsa iti
+sa ya etam evam upāste pratirūpaṃ haivainam upagacchati nāpratirūpam
+atho pratirupo ''smāj jāyate', null, 2001008),
+('brihadaranyaka-2-1-9', 9, 'Chapter 2, Section 1, Verse 9', 'स होवाच गार्ग्यः -- य एवायमादर्शे पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+रोचिष्णुरिति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते रोचिष्णुर्ह भवति।
+रोचिष्णुर्हास्य प्रजा भवति।
+अथो यैः संनिगच्छति।
+सर्वांस्तानतिरोचते॥', 'sa hovāca gārgyaḥ -- ya evāyam ādarśe puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+rociṣṇur iti vā aham etam upāsa iti
+sa ya etam evam upāste rociṣṇur ha bhavati
+rociṣṇur hāsya prajā bhavati
+atho yaiḥ saṃnigacchati
+sarvāṃs tān atirocate', null, 2001009),
+('brihadaranyaka-2-1-10', 10, 'Chapter 2, Section 1, Verse 10', 'स होवाच गार्ग्यः -- य एवायं यन्तं पश्चाच्छब्बोऽनूदेत्येतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+असुरिति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते सर्वं हैवास्मिंल्लोक आयुरेति।
+नैनं पुरा कालात्प्राणो जहाति॥', 'sa hovāca gārgyaḥ -- ya evāyaṃ yantaṃ paścāc chabbo ''nūdety etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+asur iti vā aham etam upāsa iti
+sa ya etam evam upāste sarvaṃ haivāsmiṃl loka āyur eti
+nainaṃ purā kālāt prāṇo jahāti', null, 2001010),
+('brihadaranyaka-2-1-11', 11, 'Chapter 2, Section 1, Verse 11', 'स होवाच गार्ग्यः -- य एवायं दिक्षु पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+द्वितीयोऽनपग इति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते द्वितीयवान्ह भवति।
+नास्माद्गणश्छिद्यते॥', 'sa hovāca gārgyaḥ -- ya evāyaṃ dikṣu puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+dvitīyo ''napaga iti vā aham etam upāsa iti
+sa ya etam evam upāste dvitīyavān ha bhavati
+nāsmād gaṇaś chidyate', null, 2001011),
+('brihadaranyaka-2-1-12', 12, 'Chapter 2, Section 1, Verse 12', 'स होवाच गार्ग्यः -- य एवायं छायामयः पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+मृत्युरिति वा अहमेतमुपास इति।
+स य एतमेवमुपास्ते सर्वं हैवास्मिंल्लोक आयुरेति।
+नैनं पुरा कालान्मृत्युरागच्छति॥', 'sa hovāca gārgyaḥ -- ya evāyaṃ chāyāmayaḥ puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasminsaṃvadiṣṭhāḥ
+mṛtyur iti vā aham etam upāsa iti
+sa ya etam evam upāste sarvaṃ haivāsmiṃl loka āyur eti
+nainaṃ purā kālān mṛtyur āgacchati', null, 2001012),
+('brihadaranyaka-2-1-13', 13, 'Chapter 2, Section 1, Verse 13', 'स होवाच गार्ग्यः -- य एवायमात्मनि पुरुष एतमेवाहं ब्रह्मोपास इति।
+स होवाचाजातशत्रुः -- मा मैतस्मिन्संवदिष्ठाः।
+आत्मन्वीति वा अहमेतमुपास इति।
+स य एतमेवमुपास्त आत्मन्वी ह भवति।
+आत्मन्विनी हास्य प्रजा भवति।
+स ह तूष्णीमास गार्ग्यः॥', 'sa hovāca gārgyaḥ -- ya evāyam ātmani puruṣa etam evāhaṃ brahmopāsa iti
+sa hovācājātaśatruḥ -- mā maitasmin saṃvadiṣṭhāḥ
+ātmanvīti vā aham etam upāsa iti
+sa ya etam evam upāsta ātmanvī ha bhavati
+ātmanvinī hāsya prajā bhavati
+sa ha tūṣṇīm āsa gārgyaḥ', null, 2001013),
+('brihadaranyaka-2-1-14', 14, 'Chapter 2, Section 1, Verse 14', 'स होवाचाजातशत्रुः -- एतावन्नू३ इति।
+एतावद्धीति।
+नैतावता विदितं भवतीति।
+स होवाच गार्ग्यः -- उप त्वायानीति॥', 'sa hovācājātaśatruḥ -- etāvan nū3 iti
+etāvad dhīti
+naitāvatā viditaṃ bhavatīti
+sa hovāca gārgyaḥ -- upa tvāyānīti', null, 2001014),
+('brihadaranyaka-2-1-15', 15, 'Chapter 2, Section 1, Verse 15', 'स होवाचाजातशत्रुः -- प्रतिलोमं चैतद्यद्ब्राह्मणः क्षत्रियमुपेयाद्ब्रह्म मे वक्ष्यतीति।
+व्येव त्वा ज्ञपयिष्यामीति।
+तं पाणावादायोत्तस्थौ।
+तौ ह पुरुषं सुप्तमाजग्मतुः।
+तमेतैर्नामभिरामन्त्रयां चक्रे बृहन्पाण्दरवासः सोम राजन्निति।
+स नोत्तस्थौ।
+तं पाणिनापेषं बोधयां चकार।
+स होत्तस्थौ॥', 'sa hovācājātaśatruḥ -- pratilomaṃ caitad yad brāhmaṇaḥ kṣatriyam upeyād brahma me vakṣyatīti
+vy eva tvā jñapayiṣyāmīti
+taṃ pāṇāv ādāyottasthau
+tau ha puruṣaṃ suptam ājagmatuḥ
+tam etair nāmabhir āmantrayāṃ cakre bṛhan pāṇdaravāsaḥ soma rājann iti
+sa nottasthau
+taṃ pāṇināpeṣaṃ bodhayāṃ cakāra
+sa hottasthau', null, 2001015),
+('brihadaranyaka-2-1-16', 16, 'Chapter 2, Section 1, Verse 16', 'स होवाचाजातशत्रुः -- यत्रैष एतत्सुप्तोऽभूद्य एष विज्ञानमयः पुरुषः क्वैष तदाभूत्कुत एतदागादिति।
+तदु ह न मेने गार्ग्यः॥', 'sa hovācājātaśatruḥ -- yatraiṣa etat supto ''bhūd ya eṣa vijñānamayaḥ puruṣaḥ kvaiṣa tadābhūt kuta etad āgād iti
+tad u ha na mene gārgyaḥ', null, 2001016),
+('brihadaranyaka-2-1-17', 17, 'Chapter 2, Section 1, Verse 17', 'स होवाचाजातशत्रुः -- यत्रैष एतत्सुप्तोऽभूद्य एष विज्ञानमयः पुरुषस्तदेषां प्राणानां विज्ञानेन विज्नानमादाय य एषोऽन्तर्हृदय आकाशस्तस्मिञ्छेते।
+तानि यदा गृह्णाति।
+अथ हैतत्पुरुषः स्वपिति नाम।
+तद्गृहीत एव प्राणो भवति।
+गृहीता वाग्।
+गृहीतं चक्षुर्।
+गृहीतं श्रोत्रम्।
+गृहीतं मनः॥', 'sa hovācājātaśatruḥ -- yatraiṣa etat supto ''bhūd ya eṣa vijñānamayaḥ puruṣas tad eṣāṃ prāṇānāṃ vijñānena vijnānam ādāya ya eṣo ''ntar hṛdaya ākāśas tasmiñ chete
+tāni yadā gṛhṇāti
+atha haitat puruṣaḥ svapiti nāma
+tad gṛhīta eva prāṇo bhavati
+gṛhītā vāg
+gṛhītaṃ cakṣur
+gṛhītaṃ śrotram
+gṛhītaṃ manaḥ', null, 2001017),
+('brihadaranyaka-2-1-18', 18, 'Chapter 2, Section 1, Verse 18', 'स यत्रैतत्स्वप्न्यया चरति ते हास्य लोकाः।
+तदुतेव महाराजो भवत्युतेव महाब्राह्मणः।
+उतेवोच्चावचं निगच्छति।
+स यथा महाराजो जानपदान्गृहीत्वा स्वे जनपदे यथाकामं परिवर्तेतैवमेवैष एतत्प्राणान्गृहीत्वा स्वे शरीरे यथाकामं परिवर्तते॥', 'sa yatraitat svapnyayā carati te hāsya lokāḥ
+tad uteva mahārājo bhavaty uteva mahābrāhmaṇaḥ
+utevoccāvacaṃ nigacchati
+sa yathā mahārājo jānapadān gṛhītvā sve janapade yathākāmaṃ parivartetaivam evaiṣa etat prāṇān gṛhītvā sve śarīre yathākāmaṃ parivartate', null, 2001018),
+('brihadaranyaka-2-1-19', 19, 'Chapter 2, Section 1, Verse 19', 'अथ यदा सुषुप्तो भवति।
+यदा न कस्य चन वेद।
+हिता नाम नाद्यो द्वासप्ततिः सहस्राणि हृदयात्पुरीततमभिप्रतिष्ठन्ते।
+ताभिः प्रत्यवसृप्य पुरीतति शेते।
+स यथा कुमारो अद्द्. वा महाराजो वा महाब्राह्मणो वातिघ्नीमानन्दस्य गत्वा शयीत।
+एवमेवैष एतच्छेते॥', 'atha yadā suṣupto bhavati
+yadā na kasya cana veda
+hitā nāma nādyo dvāsaptatiḥ sahasrāṇi hṛdayāt purītatam abhipratiṣṭhante
+tābhiḥ pratyavasṛpya purītati śete
+sa yathā kumāro add. vā mahārājo vā mahābrāhmaṇo vātighnīm ānandasya gatvā śayīta
+evam evaiṣa etac chete', null, 2001019),
+('brihadaranyaka-2-1-20', 20, 'Chapter 2, Section 1, Verse 20', 'स यथोर्णवाभिस्तन्तुनोच्चरेद्यथा अग्नेः क्षुद्रा विष्फुलिङ्गा व्युच्चरन्त्येवमेवास्मादात्मनः सर्वे प्राणाः सर्वे लोकाः सर्वे देवाः सर्वाणि भूतानि व्युच्चरन्ति।
+तस्योपनिषत्सत्यस्य सत्यमिति।
+प्राणा वै सत्यं तेषामेष सत्यम्॥', 'sa yathorṇavābhis tantunoccared yathā agneḥ kṣudrā viṣphuliṅgā vyuccaranty evam evāsmād ātmanaḥ sarve prāṇāḥ sarve lokāḥ sarve devāḥ sarvāṇi bhūtāni vyuccaranti
+tasyopaniṣat satyasya satyam iti
+prāṇā vai satyaṃ teṣām eṣa satyam', null, 2001020)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-2-1', 1, 'Chapter 2, Section 2, Verse 1', 'यो ह वै शिशुं साधानं सप्रत्याधानं सस्थूणं सदामं वेद सप्त ह द्विषतो भ्रातृव्यानवरुणद्धि।
+अयं वाव शिशुर्योऽयं मध्यमः प्राणः।
+तस्येदमेवाधानमिदं प्रत्याधानं प्राणः स्थूणान्नं दाम॥', 'yo ha vai śiśuṃ sādhānaṃ sapratyādhānaṃ sasthūṇaṃ sadāmaṃ veda sapta ha dviṣato bhrātṛvyān avaruṇaddhi
+ayaṃ vāva śiśur yo ''yaṃ madhyamaḥ prāṇaḥ
+tasyedam evādhānam idaṃ pratyādhānaṃ prāṇaḥ sthūṇānnaṃ dāma', null, 2002001),
+('brihadaranyaka-2-2-2', 2, 'Chapter 2, Section 2, Verse 2', 'तमेताः सप्ताक्षितय उपतिष्ठन्ते।
+तद्या इमा अक्षंल्लोहिन्यो राजयस्ताभिरेनं रुद्रोऽन्वायत्तः।
+अथ या अक्षन्नापस्ताभिः पर्जन्यः।
+या कनीनका तयादित्यः।
+यत्कृष्णं तेनाग्निर्।
+यच्छुक्लं तेनेन्द्रः।
+अधरयैनं वर्तन्या पृथिव्यन्वायत्ता।
+द्यौरुत्तरया।
+नास्यान्नं क्षीयते य एवं वेद॥', 'tam etāḥ saptākṣitaya upatiṣṭhante
+tad yā imā akṣaṃl lohinyo rājayas tābhir enaṃ rudro ''nvāyattaḥ
+atha yā akṣann āpas tābhiḥ parjanyaḥ
+yā kanīnakā tayādityaḥ
+yat kṛṣṇaṃ tenāgnir
+yac chuklaṃ tenendraḥ
+adharayainaṃ vartanyā pṛthivy anvāyattā
+dyaur uttarayā
+nāsyānnaṃ kṣīyate ya evaṃ veda', null, 2002002),
+('brihadaranyaka-2-2-3', 3, 'Chapter 2, Section 2, Verse 3', 'तदेष श्लोको भवति -- अर्वाग्बिलश्चमस ऊर्ध्वबुध्नस्तस्मिन्यशो निहितं विश्वरूपम्।
+तस्यासत ऋषयः सप्त तीरे वागष्टमी ब्रह्मणा संविदानेति।
+अर्वाग्बिलश्चमस ऊर्ध्वबुध्न इति।
+इदं तच्छरीर एष ह्यर्वाग्बिलश्चमस ऊर्ध्वबुध्नः।
+तस्मिन्यशो निहितं विश्वरूपमिति।
+प्राणा वै यशो विश्वरूपम्।
+प्राणानेतदाह।
+तस्यासत ऋषयः सप्त तीर इति।
+प्राणा वा ऋषयः।
+प्राणाणेतदाह।
+वागष्टमी ब्रह्मणा संविदानेति।
+वाग्घ्यष्टमी ब्रह्मणा संवित्ते॥', 'tad eṣa śloko bhavati -- arvāgbilaś camasa ūrdhvabudhnas tasmin yaśo nihitaṃ viśvarūpam
+tasyāsata ṛṣayaḥ sapta tīre vāg aṣṭamī brahmaṇā saṃvidāneti
+arvāgbilaś camasa ūrdhvabudhna iti
+idaṃ tac charīra eṣa hy arvāgbilaś camasa ūrdhvabudhnaḥ
+tasmin yaśo nihitaṃ viśvarūpam iti
+prāṇā vai yaśo viśvarūpam
+prāṇān etad āha
+tasyāsata ṛṣayaḥ sapta tīra iti
+prāṇā vā ṛṣayaḥ
+prāṇāṇ etad āha
+vāg aṣṭamī brahmaṇā saṃvidāneti
+vāg ghy aṣṭamī brahmaṇā saṃvitte', null, 2002003),
+('brihadaranyaka-2-2-4', 4, 'Chapter 2, Section 2, Verse 4', 'इमावेव गोतमभरद्वाजौ।
+अयमेव गोतमोऽयं भरद्वाजः।
+इमावेव विश्वामित्रजमदग्नी।
+अयमेव विश्वामित्रोऽयं जमदग्निः।
+इमावेव वसिष्ठकश्यपौ।
+अयमेव वसिष्ठोऽयं कश्यपः।
+वागेवात्रिः।
+वाचा ह्यन्नमद्यते।
+अत्तिर्ह वै नामैतद्यदौत्रिरिति।
+सर्वस्यात्ता भवति।
+सर्वमस्यान्नं भवति य एवं वेद॥', 'imāv eva gotamabharadvājau
+ayam eva gotamo ''yaṃ bharadvājaḥ
+imāv eva viśvāmitrajamadagnī
+ayam eva viśvāmitro ''yaṃ jamadagniḥ
+imāv eva vasiṣṭhakaśyapau
+ayam eva vasiṣṭho ''yaṃ kaśyapaḥ
+vāg evātriḥ
+vācā hy annam adyate
+attir ha vai nāmaitad yad autrir iti
+sarvasyāttā bhavati
+sarvam asyānnaṃ bhavati ya evaṃ veda', null, 2002004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-3-1', 1, 'Chapter 2, Section 3, Verse 1', 'द्वे वाव ब्रह्मणो रूपे।
+मूर्तं चैवामूर्तं च।
+मर्त्यं चामृतं च।
+स्थितं च यच्च।
+सच्च त्यं च॥', 'dve vāva brahmaṇo rūpe
+mūrtaṃ caivāmūrtaṃ ca
+martyaṃ cāmṛtaṃ ca
+sthitaṃ ca yac ca
+sac ca tyaṃ ca', null, 2003001),
+('brihadaranyaka-2-3-2', 2, 'Chapter 2, Section 3, Verse 2', 'तदेतन्मूर्तं यदन्यद्वायोश्चान्तरिक्षाच्च।
+एतन्मर्त्यम्।
+एतत्स्थितम्।
+एतत्सत्।
+तस्यैतस्य मूर्तस्यैतस्य मर्त्यस्यैतस्य स्थितस्यैतस्य सत एष रसो य एष तपति।
+सतो ह्येष रसः॥', 'tad etan mūrtaṃ yad anyad vāyoś cāntarikṣāc ca
+etan martyam
+etat sthitam
+etat sat
+tasyaitasya mūrtasyaitasya martyasyaitasya sthitasyaitasya sata eṣa raso ya eṣa tapati
+sato hy eṣa rasaḥ', null, 2003002),
+('brihadaranyaka-2-3-3', 3, 'Chapter 2, Section 3, Verse 3', 'अथामूर्तम्।
+वायुश्चान्तरिक्षश्च।
+एतदमृतम्।
+एतद्यत्।
+एतत्त्यम्।
+तस्यैतस्यामूर्तस्यैतस्यामृतस्यैतस्य यत एतस्य त्यस्यैष रसो य एष एतस्मिन्मण्डले पुरुषः।
+त्यस्य ह्येष रस।
+इत्यधिदैवतम्॥', 'athāmūrtam
+vāyuś cāntarikṣaś ca
+etad amṛtam
+etad yat
+etat tyam
+tasyaitasyāmūrtasyaitasyāmṛtasyaitasya yata etasya tyasyaiṣa raso ya eṣa etasmin maṇḍale puruṣaḥ
+tyasya hy eṣa rasa
+ity adhidaivatam', null, 2003003),
+('brihadaranyaka-2-3-4', 4, 'Chapter 2, Section 3, Verse 4', 'अथाध्यात्मम्।
+इदमेव मूर्तं यदन्यत्प्राणाच्च यश्चायमन्तरात्मन्नाकाशः।
+एतन्मर्त्यम्।
+एतत्स्थितम्।
+एतत्सत्।
+तस्यैतस्य मूर्तस्यैतस्य मर्त्यस्यैतस्य स्थितस्यैतस्य सत एष रसो यच्चक्षुः।
+सतो ह्येष रसः॥', 'athādhyātmam
+idam eva mūrtaṃ yad anyat prāṇāc ca yaś cāyam antar ātmann ākāśaḥ
+etan martyam
+etat sthitam
+etat sat
+tasyaitasya mūrtasyaitasya martyasyaitasya sthitasyaitasya sata eṣa raso yac cakṣuḥ
+sato hy eṣa rasaḥ', null, 2003004),
+('brihadaranyaka-2-3-5', 5, 'Chapter 2, Section 3, Verse 5', 'अथामूर्तं प्राणश्च यश्चायमन्तरात्मन्नाकाशः।
+एतदमृतम्।
+एतद्यत्।
+एतत्त्यत्।
+तस्यैतस्यामूर्तस्यैतस्यामृतस्यैतस्य यत एतस्य त्यस्यैष रसो योऽयं दक्षिणेऽक्षन्पुरुषः।
+त्यस्य ह्येष रसः॥', 'athāmūrtaṃ prāṇaś ca yaś cāyam antar ātmann ākāśaḥ
+etad amṛtam
+etad yat
+etat tyat
+tasyaitasyāmūrtasyaitasyāmṛtasyaitasya yata etasya tyasyaiṣa raso yo ''yaṃ dakṣiṇe ''kṣan puruṣaḥ
+tyasya hy eṣa rasaḥ', null, 2003005),
+('brihadaranyaka-2-3-6', 6, 'Chapter 2, Section 3, Verse 6', 'तस्य हैतस्य पुरुषस्य रूपम्।
+यथा माहारजनं वासो यथा पाण्ड्वाविकं यथेन्द्रगोपो यथाग्न्यर्चिर्यथा पुण्डरीकं यथा सकृद्विद्युत्तम्।
+सकृद्विद्युत्तेव ह वा अस्य श्रीर्भवति य एवं वेद।
+अथात आदेशो नेति नेति।
+न ह्येतस्मादिति नेत्यन्यत्परमस्ति।
+अथ नामधेयं सत्यस्य सत्यमिति।
+प्राणा वै सत्यम्।
+तेषामेष सत्यम्॥', 'tasya haitasya puruṣasya rūpam
+yathā māhārajanaṃ vāso yathā pāṇḍvāvikaṃ yathendragopo yathāgnyarcir yathā puṇḍarīkaṃ yathā sakṛdvidyuttam
+sakṛdvidyutteva ha vā asya śrīr bhavati ya evaṃ veda
+athāta ādeśo neti neti
+na hy etasmād iti nety anyat param asti
+atha nāmadheyaṃ satyasya satyam iti
+prāṇā vai satyam
+teṣām eṣa satyam', null, 2003006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-4-1', 1, 'Chapter 2, Section 4, Verse 1', 'मैत्रेयीति होवाच याज्ञवल्क्यः -- उद्यास्यन्वा अरेऽहमस्मात्स्थानादस्मि।
+हन्त तेऽनया कात्यायन्यान्तं करवाणीति॥', 'maitreyīti hovāca yājñavalkyaḥ -- udyāsyan vā are ''ham asmāt sthānād asmi
+hanta te ''nayā kātyāyanyāntaṃ karavāṇīti', null, 2004001),
+('brihadaranyaka-2-4-2', 2, 'Chapter 2, Section 4, Verse 2', 'सा होवाच मैत्रेयी -- यन्नु म इयं भगोः सर्वा पृथिवी वित्तेन पूर्णा स्यात्कथं तेनामृता स्यामिति।
+नेति होवाच याज्ञवल्क्यः।
+यथैवोपकरणवतां जीवितं तथैव ते जीवितं स्यात्।
+अमृतत्वस्य तु नाशास्ति वित्तेनेति॥', 'sā hovāca maitreyī -- yan nu ma iyaṃ bhagoḥ sarvā pṛthivī vittena pūrṇā syāt kathaṃ tenāmṛtā syām iti
+neti hovāca yājñavalkyaḥ
+yathaivopakaraṇavatāṃ jīvitaṃ tathaiva te jīvitaṃ syāt
+amṛtatvasya tu nāśāsti vitteneti', null, 2004002),
+('brihadaranyaka-2-4-3', 3, 'Chapter 2, Section 4, Verse 3', 'सा होवाच मैत्रेयी -- येनाहं नामृता स्यां किमहं तेन कुर्याम्।
+यदेव भगवान्वेद तदेव मे ब्रूहीति॥', 'sā hovāca maitreyī -- yenāhaṃ nāmṛtā syāṃ kim ahaṃ tena kuryām
+yad eva bhagavān veda tad eva me brūhīti', null, 2004003),
+('brihadaranyaka-2-4-4', 4, 'Chapter 2, Section 4, Verse 4', 'स होवाच याज्ञवल्क्यः -- प्रिया बतारे नः सती प्रियं भाषसे।
+एह्यास्स्व।
+व्याख्यास्यामि ते।
+व्याचक्षाणस्य तु मे निदिध्यासस्वेति॥', 'sa hovāca yājñavalkyaḥ -- priyā batāre naḥ satī priyaṃ bhāṣase
+ehy āssva
+vyākhyāsyāmi te
+vyācakṣāṇasya tu me nididhyāsasveti', null, 2004004),
+('brihadaranyaka-2-4-5', 5, 'Chapter 2, Section 4, Verse 5', 'स होवाच -- न वा अरे पत्युः कामाय पतिः प्रियो भवत्यात्मनस्तु कामाय पतिः प्रियो भवति।
+न वा अरे जायायै कामाय जाया प्रिया भवत्यात्मनस्तु कामाय जाया प्रिया भवति।
+न वा अरे पुत्राणां कामाय पुत्राः प्रिया भवन्त्यात्मनस्तु कामाय पुत्राः प्रिया भवन्ति।
+न वा अरे वित्तस्य कामाय वित्तं प्रियं भवत्यात्मनस्तु कामाय वित्तं प्रियं भवति।
+न वा अरे ब्रह्मणः कामाय ब्रह्म प्रियं भवत्यात्मनस्तु कामाय ब्रह्म प्रियं भवति।
+न वा अरे क्षत्रस्य कामाय क्षत्रं प्रियं भवत्यात्मनस्तु कामाय क्षत्रं प्रियं भवति।
+न वा अरे लोकानां कामाय लोकाः प्रिया भवन्त्यात्मनस्तु कामाय लोकाः प्रिया भवन्ति।
+न वा अरे देवानां कामाय देवाः प्रिया भवन्त्यात्मनस्तु कामाय देवाः प्रिया भवन्ति।
+न वा अरे भूतानां कामाय भूतानि प्रियाणि भवन्त्यात्मनस्तु कामाय भूतानि प्रियाणि भवन्ति।
+न वा अरे सर्वस्य कामाय सर्वं प्रियं भवत्यात्मनस्तु कामाय सर्वं प्रियं भवति।
+आत्मा वा अरे द्रष्टव्यः श्रोतव्यो मन्तव्यो निदिध्यासितव्यो मैत्रेयि।
+आत्मनो वा अरे दर्शनेन श्रवणेन मत्या विज्ञानेनेदं सर्वं विदितम्॥', 'sa hovāca -- na vā are patyuḥ kāmāya patiḥ priyo bhavaty ātmanas tu kāmāya patiḥ priyo bhavati
+na vā are jāyāyai kāmāya jāyā priyā bhavaty ātmanas tu kāmāya jāyā priyā bhavati
+na vā are putrāṇāṃ kāmāya putrāḥ priyā bhavanty ātmanas tu kāmāya putrāḥ priyā bhavanti
+na vā are vittasya kāmāya vittaṃ priyaṃ bhavaty ātmanas tu kāmāya vittaṃ priyaṃ bhavati
+na vā are brahmaṇaḥ kāmāya brahma priyaṃ bhavaty ātmanas tu kāmāya brahma priyaṃ bhavati
+na vā are kṣatrasya kāmāya kṣatraṃ priyaṃ bhavaty ātmanas tu kāmāya kṣatraṃ priyaṃ bhavati
+na vā are lokānāṃ kāmāya lokāḥ priyā bhavanty ātmanas tu kāmāya lokāḥ priyā bhavanti
+na vā are devānāṃ kāmāya devāḥ priyā bhavanty ātmanas tu kāmāya devāḥ priyā bhavanti
+na vā are bhūtānāṃ kāmāya bhūtāni priyāṇi bhavanty ātmanas tu kāmāya bhūtāni priyāṇi bhavanti
+na vā are sarvasya kāmāya sarvaṃ priyaṃ bhavaty ātmanas tu kāmāya sarvaṃ priyaṃ bhavati
+ātmā vā are draṣṭavyaḥ śrotavyo mantavyo nididhyāsitavyo maitreyi
+ātmano vā are darśanena śravaṇena matyā vijñānenedaṃ sarvaṃ viditam', null, 2004005),
+('brihadaranyaka-2-4-6', 6, 'Chapter 2, Section 4, Verse 6', 'ब्रह्म तं परादाद्योऽन्यत्रात्मनो ब्रह्म वेद।
+क्षत्रं तं परादाद्योऽन्यत्रात्मनः क्षत्रं वेद।
+लोकास्तं परादुर्योऽन्यत्रात्मनो लोकान्वेद।
+देवास्तं परादुर्योऽन्यत्रात्मनो देवान्वेद।
+भूतानि तं परादुर्योऽन्यत्रात्मनो भूतानि वेद।
+सर्वं तं परादाद्योऽन्यत्रात्मनः सर्वं वेद।
+इदं ब्रह्मेदं क्षत्रमिमे लोका इमे देवा इमानि भूतानीदं सर्वं यदयमात्मा॥', 'brahma taṃ parādād yo ''nyatrātmano brahma veda
+kṣatraṃ taṃ parādād yo ''nyatrātmanaḥ kṣatraṃ veda
+lokās taṃ parādur yo ''nyatrātmano lokān veda
+devās taṃ parādur yo ''nyatrātmano devān veda
+bhūtāni taṃ parādur yo ''nyatrātmano bhūtāni veda
+sarvaṃ taṃ parādād yo ''nyatrātmanaḥ sarvaṃ veda
+idaṃ brahmedaṃ kṣatram ime lokā ime devā imāni bhūtānīdaṃ sarvaṃ yad ayam ātmā', null, 2004006),
+('brihadaranyaka-2-4-7', 7, 'Chapter 2, Section 4, Verse 7', 'स यथा दुन्दुभेर्हन्यमानस्य न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय।
+दुन्दुभेस्तु ग्रहणेन दुन्दुभ्याघातस्य वा शब्दो गृहीतः॥', 'sa yathā dundubher hanyamānasya na bāhyāñ chabdāñ chaknuyād grahaṇāya
+dundubhes tu grahaṇena dundubhyāghātasya vā śabdo gṛhītaḥ', null, 2004007),
+('brihadaranyaka-2-4-8', 8, 'Chapter 2, Section 4, Verse 8', 'स यथा शङ्खस्य ध्मायमानस्य न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय शङ्खस्य तु ग्रहणेन शङ्खध्मस्य वा शब्दो गृहीतः॥', 'sa yathā śaṅkhasya dhmāyamānasya na bāhyāñ chabdāñ chaknuyād grahaṇāya śaṅkhasya tu grahaṇena śaṅkhadhmasya vā śabdo gṛhītaḥ', null, 2004008),
+('brihadaranyaka-2-4-9', 9, 'Chapter 2, Section 4, Verse 9', 'स यथा वीणायै वाद्यमानायै न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय वीणायै तु ग्रहणेन वीणावादस्य वा शब्दो गृहीतः॥', 'sa yathā vīṇāyai vādyamānāyai na bāhyāñ chabdāñ chaknuyād grahaṇāya vīṇāyai tu grahaṇena vīṇāvādasya vā śabdo gṛhītaḥ', null, 2004009),
+('brihadaranyaka-2-4-10', 10, 'Chapter 2, Section 4, Verse 10', 'स यथार्द्रैधाग्नेरभ्याहितात्पृथग्धूमा विनिश्चरन्त्येव वा अरेऽस्य महतो भूतस्य निःश्वसितमेतद्यदृग्वेदो यजुर्वेदः सामवेदोऽथर्वाङ्गिरस इतिहासः पुराणं विद्या उपनिषदः श्लोकाः सूत्राण्यनुव्याख्यानानि व्याख्याननि।
+अस्यैवैतानि निश्वसितानि॥', 'sa yathārdraidhāgner abhyāhitāt pṛthag dhūmā viniścaranty eva vā are ''sya mahato bhūtasya niḥśvasitam etad yad ṛgvedo yajurvedaḥ sāmavedo ''tharvāṅgirasa itihāsaḥ purāṇaṃ vidyā upaniṣadaḥ ślokāḥ sūtrāṇy anuvyākhyānāni vyākhyānani
+asyaivaitāni niśvasitāni', null, 2004010),
+('brihadaranyaka-2-4-11', 11, 'Chapter 2, Section 4, Verse 11', 'स यथा सर्वासामपां समुद्र एकायनम्।
+एवं सर्वेषां स्पर्शानां त्वगेकायनम्।
+एवं सर्वेषां गन्धानां नासिके एकायनम्।
+एवं सर्वेषां रसानां जिह्वैकायनम्।
+एवं सर्वेषां रूपाणां चक्षुरेकायनम्।
+एवं सर्वेषं शब्दानां श्रोत्रमेकायनम्।
+एवं सर्वेषां संकल्पानां मन एकायनम्।
+एवं सर्वासां विद्यानां हृदयमेकायनम्।
+एवं सर्वेषां कर्मणां हस्तावेकायनम्।
+एवं सर्वेषामानन्दानामुपस्थ एकायनम्।
+एवं सर्वेषां विसर्गाणां पायुरेकायनम्।
+एवं सर्वेषामध्वनां पादावेकायनम्।
+एवं सर्वेषां वेदानां वागेकायनम्॥', 'sa yathā sarvāsām apāṃ samudra ekāyanam
+evaṃ sarveṣāṃ sparśānāṃ tvag ekāyanam
+evaṃ sarveṣāṃ gandhānāṃ nāsike ekāyanam
+evaṃ sarveṣāṃ rasānāṃ jihvaikāyanam
+evaṃ sarveṣāṃ rūpāṇāṃ cakṣur ekāyanam
+evaṃ sarveṣaṃ śabdānāṃ śrotram ekāyanam
+evaṃ sarveṣāṃ saṃkalpānāṃ mana ekāyanam
+evaṃ sarvāsāṃ vidyānāṃ hṛdayam ekāyanam
+evaṃ sarveṣāṃ karmaṇāṃ hastāv ekāyanam
+evaṃ sarveṣām ānandānām upastha ekāyanam
+evaṃ sarveṣāṃ visargāṇāṃ pāyur ekāyanam
+evaṃ sarveṣām adhvanāṃ pādāv ekāyanam
+evaṃ sarveṣāṃ vedānāṃ vāg ekāyanam', null, 2004011),
+('brihadaranyaka-2-4-12', 12, 'Chapter 2, Section 4, Verse 12', 'स यथा सैन्धवखिल्य उदके प्रास्त उदकमेवानुविलीयेत न हास्योद्ग्रहणायेव स्यात्।
+यतो-यतस्त्वाददीत लवणम्।
+एवं वा अर इदं महद्भूतमनन्तमपारं विज्ञानघन एव।
+एतेभ्यो भूतेभ्यः समुत्थाय तान्येवानुविनश्यति।
+न प्रेत्य संज्ञास्तीत्यरे ब्रवीमि।
+इति होवाच याज्ञवल्क्यः॥', 'sa yathā saindhavakhilya udake prāsta udakam evānuvilīyeta na hāsyodgrahaṇāyeva syāt
+yato-yatas tv ādadīta lavaṇam
+evaṃ vā ara idaṃ mahad bhūtam anantam apāraṃ vijñānaghana eva
+etebhyo bhūtebhyaḥ samutthāya tāny evānuvinaśyati
+na pretya saṃjñāstīty are bravīmi
+iti hovāca yājñavalkyaḥ', null, 2004012),
+('brihadaranyaka-2-4-13', 13, 'Chapter 2, Section 4, Verse 13', 'सा होवाच मैत्रेयी -- अत्रैव मा भगवानमूमुहन्न प्रेत्य संज्ञास्तीति।
+स होवाच -- न वा अरेऽहं मोहं ब्रवीमि।
+अलं वा अर इदं विज्ञानाय॥', 'sā hovāca maitreyī -- atraiva mā bhagavān amūmuhan na pretya saṃjñāstīti
+sa hovāca -- na vā are ''haṃ mohaṃ bravīmi
+alaṃ vā ara idaṃ vijñānāya', null, 2004013),
+('brihadaranyaka-2-4-14', 14, 'Chapter 2, Section 4, Verse 14', 'यत्र हि द्वैतमिव भवति तदितर इतरं जिघ्रति तदितर इतरं पश्यति तदितर इतरं शृणोति तदितर इतरं जिघ्रति तदितर इतरमभिवदति तदितर इतरं मनुते तदितर इतरं विजानाति।
+यत्र वास्य सर्वमात्मैवाभूत्तत्केन कं जिघ्रेत्तत्केन कं जिघ्रेत्तत्केन कं पश्येत्तत्केन कं शृणुयात्तत्केन कमभिवदेत्तत्केन कं मन्वीत तत्केन कं विजानीयात्।
+येनेदं सर्वं विजानाति तं केन विजानीयात्।
+विज्ञातारमरे केन विजानीयादिति॥', 'yatra hi dvaitam iva bhavati tad itara itaraṃ jighrati tad itara itaraṃ paśyati tad itara itaraṃ śṛṇoti tad itara itaraṃ jighrati tad itara itaram abhivadati tad itara itaraṃ manute tad itara itaraṃ vijānāti
+yatra vāsya sarvam ātmaivābhūt tat kena kaṃ jighret tat kena kaṃ jighret tat kena kaṃ paśyet tat kena kaṃ śṛṇuyāt tat kena kam abhivadet tat kena kaṃ manvīta tat kena kaṃ vijānīyāt
+yenedaṃ sarvaṃ vijānāti taṃ kena vijānīyāt
+vijñātāram are kena vijānīyād iti', null, 2004014)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-5-1', 1, 'Chapter 2, Section 5, Verse 1', 'इयं पृथिवी सर्वेषां भूतानां मधु।
+अस्यै पृथिव्यै सर्वाणि भूतानि मधु।
+यश्चायमस्यां पृथिव्यां तेजोमयोऽमृतमयः पुरुषो यस्चायमध्यात्मं शारीरस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'iyaṃ pṛthivī sarveṣāṃ bhūtānāṃ madhu
+asyai pṛthivyai sarvāṇi bhūtāni madhu
+yaś cāyam asyāṃ pṛthivyāṃ tejomayo ''mṛtamayaḥ puruṣo yas cāyam adhyātmaṃ śārīras tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005001),
+('brihadaranyaka-2-5-2', 2, 'Chapter 2, Section 5, Verse 2', 'इमा आपः सर्वेषां भूतानां मधु।
+आसामपां सर्वाणि भूतानि मधु।
+यश्चायमास्वप्सु तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं रैतसस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'imā āpaḥ sarveṣāṃ bhūtānāṃ madhu
+āsām apāṃ sarvāṇi bhūtāni madhu
+yaś cāyam āsv apsu tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ raitasas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005002),
+('brihadaranyaka-2-5-3', 3, 'Chapter 2, Section 5, Verse 3', 'अयमग्निः सर्वेषां भूतानां मधु।
+अस्याग्नेः सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्नग्नौ तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं वाङ्मयस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayam agniḥ sarveṣāṃ bhūtānāṃ madhu
+asyāgneḥ sarvāṇi bhūtāni madhu
+yaś cāyam asminn agnau tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ vāṅmayas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005003),
+('brihadaranyaka-2-5-4', 4, 'Chapter 2, Section 5, Verse 4', 'अयं वायुः सर्वेषां भूतानां मधु।
+अस्य वायोः सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्वायौ तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं प्राणस्तेजोमयोऽमृतमयः पुरुषो यमेव स योऽयमात्मा।
+इदं अमृतमिदं ब्रह्मेदं सर्वम्॥', 'ayaṃ vāyuḥ sarveṣāṃ bhūtānāṃ madhu
+asya vāyoḥ sarvāṇi bhūtāni madhu
+yaś cāyam asmin vāyau tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ prāṇas tejomayo ''mṛtamayaḥ puruṣo yam eva sa yo ''yam ātmā
+idaṃ amṛtam idaṃ brahmedaṃ sarvam', null, 2005004),
+('brihadaranyaka-2-5-5', 5, 'Chapter 2, Section 5, Verse 5', 'अयमादित्यः सर्वेषां भूतानां मधु।
+अस्यादित्यस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्नादित्ये तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं चाक्षुषस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayam ādityaḥ sarveṣāṃ bhūtānāṃ madhu
+asyādityasya sarvāṇi bhūtāni madhu
+yaś cāyam asminn āditye tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ cākṣuṣas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005005),
+('brihadaranyaka-2-5-6', 6, 'Chapter 2, Section 5, Verse 6', 'इमा दिशः सर्वेषां भूतानां मधु।
+आसां दिशां सर्वाणि भूतानि मधु।
+यश्चायमासु दिक्षु तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं श्रौत्रः प्रातिश्रुत्कस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'imā diśaḥ sarveṣāṃ bhūtānāṃ madhu
+āsāṃ diśāṃ sarvāṇi bhūtāni madhu
+yaś cāyam āsu dikṣu tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ śrautraḥ prātiśrutkas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005006),
+('brihadaranyaka-2-5-7', 7, 'Chapter 2, Section 5, Verse 7', 'अयं चन्द्रः सर्वेषां भूतानां मध्व्।
+अस्य चन्द्रस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्चन्द्रे तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं मानसस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मेदममृतम्।
+इदं ब्रह्मेदं सर्वम्॥', 'ayaṃ candraḥ sarveṣāṃ bhūtānāṃ madhv
+asya candrasya sarvāṇi bhūtāni madhu
+yaś cāyam asmin candre tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ mānasas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmedam amṛtam
+idaṃ brahmedaṃ sarvam', null, 2005007),
+('brihadaranyaka-2-5-8', 8, 'Chapter 2, Section 5, Verse 8', 'इयं विद्युत्सर्वेषां भूतानं मधु।
+अस्यै विद्युतः सर्वाणि भूतानि मधु।
+यश्चायमस्यां विद्युति तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं तैजसस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'iyaṃ vidyut sarveṣāṃ bhūtānaṃ madhu
+asyai vidyutaḥ sarvāṇi bhūtāni madhu
+yaś cāyam asyāṃ vidyuti tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ taijasas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005008),
+('brihadaranyaka-2-5-9', 9, 'Chapter 2, Section 5, Verse 9', 'अयं स्तनयित्नुः सर्वेषां भुतानां मधु।
+अस्य स्तनयित्नोः सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्स्तनयित्नौ तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं शाब्दः सौवरस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayaṃ stanayitnuḥ sarveṣāṃ bhutānāṃ madhu
+asya stanayitnoḥ sarvāṇi bhūtāni madhu
+yaś cāyam asminstanayitnau tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ śābdaḥ sauvaras tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005009),
+('brihadaranyaka-2-5-10', 10, 'Chapter 2, Section 5, Verse 10', 'अयमाकाशः सर्वेषां भूतानां मधु।
+अस्याकाशस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्नाकाशे तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं हृद्याकाशस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayam ākāśaḥ sarveṣāṃ bhūtānāṃ madhu
+asyākāśasya sarvāṇi bhūtāni madhu
+yaś cāyam asminn ākāśe tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ hṛdy ākāśas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005010),
+('brihadaranyaka-2-5-11', 11, 'Chapter 2, Section 5, Verse 11', 'अयं धर्मः सर्वेषां भूतानां मधु।
+अस्य धर्मस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्धर्मे तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं धार्मस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayaṃ dharmaḥ sarveṣāṃ bhūtānāṃ madhu
+asya dharmasya sarvāṇi bhūtāni madhu
+yaś cāyam asmin dharme tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ dhārmas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005011),
+('brihadaranyaka-2-5-12', 12, 'Chapter 2, Section 5, Verse 12', 'इदं सत्यं सर्वेषां भूतानां मधु।
+अस्य सत्यस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्सत्ये तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं सात्यस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'idaṃ satyaṃ sarveṣāṃ bhūtānāṃ madhu
+asya satyasya sarvāṇi bhūtāni madhu
+yaś cāyam asmin satye tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ sātyas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005012),
+('brihadaranyaka-2-5-13', 13, 'Chapter 2, Section 5, Verse 13', 'इदं मानुषं सर्वेषां भूतानां मधु।
+अस्य मानुषस्य सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्मानुषे तेजोमयोऽमृतमयः पुरुषो यश्चायमध्यात्मं मानुषस्तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'idaṃ mānuṣaṃ sarveṣāṃ bhūtānāṃ madhu
+asya mānuṣasya sarvāṇi bhūtāni madhu
+yaś cāyam asmin mānuṣe tejomayo ''mṛtamayaḥ puruṣo yaś cāyam adhyātmaṃ mānuṣas tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005013),
+('brihadaranyaka-2-5-14', 14, 'Chapter 2, Section 5, Verse 14', 'अयमात्मा सर्वेषां भूतानां मधु।
+अस्यात्मनः सर्वाणि भूतानि मधु।
+यश्चायमस्मिन्नात्मनि तेजोमयोऽमृतमयः पुरुषो यश्चायमात्मा तेजोमयोऽमृतमयः पुरुषोऽयमेव स योऽयमात्मा।
+इदममृतमिदं ब्रह्मेदं सर्वम्॥', 'ayam ātmā sarveṣāṃ bhūtānāṃ madhu
+asyātmanaḥ sarvāṇi bhūtāni madhu
+yaś cāyam asminn ātmani tejomayo ''mṛtamayaḥ puruṣo yaś cāyam ātmā tejomayo ''mṛtamayaḥ puruṣo ''yam eva sa yo ''yam ātmā
+idam amṛtam idaṃ brahmedaṃ sarvam', null, 2005014),
+('brihadaranyaka-2-5-15', 15, 'Chapter 2, Section 5, Verse 15', 'स वा अयमात्मा सर्वेषां अधिपतिः सर्वेषां भूतानां राजा।
+तद्यथा रथनाभौ च रथनेमौ चाराः सर्वे समर्पिताः।
+एवमेवास्मिन्नात्मनि सर्वाणि भूतानि सर्वे देवाः सर्वे लोकाः सर्वे प्राणाः सर्व एत आत्मानः समर्पिताः॥', 'sa vā ayam ātmā sarveṣāṃ adhipatiḥ sarveṣāṃ bhūtānāṃ rājā
+tad yathā rathanābhau ca rathanemau cārāḥ sarve samarpitāḥ
+evam evāsminn ātmani sarvāṇi bhūtāni sarve devāḥ sarve lokāḥ sarve prāṇāḥ sarva eta ātmānaḥ samarpitāḥ', null, 2005015),
+('brihadaranyaka-2-5-16', 16, 'Chapter 2, Section 5, Verse 16', 'इदं वै तन्मधु दध्यङ्ङाथर्वणोऽश्विभ्यामुवाच।
+तदेतदृषिः पश्यन्नवोचत्-- तद्वां नरा सनये दंस उग्रमाविष्कृणोमि तन्यतुर्न वृष्टिम्।
+दध्यङ्ह यन्मध्वाथर्वणो वामश्वस्य शीर्ष्णा प्र यदीमुवाचेति॥', 'idaṃ vai tan madhu dadhyaṅṅ ātharvaṇo ''śvibhyām uvāca
+tad etad ṛṣiḥ paśyann avocat -- tad vāṃ narā sanaye daṃsa ugram āviṣ kṛṇomi tanyatur na vṛṣṭim
+dadhyaṅ ha yan madhv ātharvaṇo vām aśvasya śīrṣṇā pra yad īm uvāceti', null, 2005016),
+('brihadaranyaka-2-5-17', 17, 'Chapter 2, Section 5, Verse 17', 'इदं वै तन्मधु दध्यङ्ङाथर्वणोऽश्विभ्यामुवाच।
+तदेतदृषिः पश्यन्नवोचत्-- आथर्वणायाश्विनौ दधीचेऽश्व्यं शिरः प्रत्यैरयतम्।
+स वां मधु प्र वोचदृतायन्त्वाष्ट्रं यद्दस्रावपिकक्ष्यं वामिति॥', 'idaṃ vai tan madhu dadhyaṅṅ ātharvaṇo ''śvibhyām uvāca
+tad etad ṛṣiḥ paśyann avocat -- ātharvaṇāyāśvinau dadhīce ''śvyaṃ śiraḥ praty airayatam
+sa vāṃ madhu pra vocad ṛtāyan tvāṣṭraṃ yad dasrāv apikakṣyaṃ vām iti', null, 2005017),
+('brihadaranyaka-2-5-18', 18, 'Chapter 2, Section 5, Verse 18', 'इदं वै तन्मधु दध्यङ्ङाथर्वणोऽश्विभ्यामुवाच।
+तदेतदृषिः पश्यन्नवोचत्-- पुरश्चक्रे द्विपदः पुरश्चक्रे चतुष्पदः।
+पुरः स पक्षी भुत्वा पुरः पुरुष आविशदिति।
+स वा अयं पुरुषः सर्वासु पूर्षु पुरिशयः।
+नैनेन किं चनानावृतम्।
+नैनेन किं चनासंवृतम्॥', 'idaṃ vai tan madhu dadhyaṅṅ ātharvaṇo ''śvibhyām uvāca
+tad etad ṛṣiḥ paśyann avocat -- puraś cakre dvipadaḥ puraś cakre catuṣpadaḥ
+puraḥ sa pakṣī bhutvā puraḥ puruṣa āviśad iti
+sa vā ayaṃ puruṣaḥ sarvāsu pūrṣu puriśayaḥ
+nainena kiṃ canānāvṛtam
+nainena kiṃ canāsaṃvṛtam', null, 2005018),
+('brihadaranyaka-2-5-19', 19, 'Chapter 2, Section 5, Verse 19', 'इदं वै तन्मधु दध्यङ्ङाथर्वणोऽश्विभ्यामुवाच।
+तदेतदृषिः पश्यन्नवोचत्-- रूपंरूपं प्रतिरूपो बभूव तदस्य रूपं प्रतिचक्षणाय।
+इन्द्रो मायाभिः पुरुरूप ईयते युक्ता ह्यस्य हरयः शता दशेति।
+अयं वै हरयोऽयं वै दश च सहस्रणि बहूनि चानन्तानि च।
+तदेतद्ब्रह्मापूर्वमनपरमनन्तरमबाह्यम्।
+अयमात्मा ब्रह्म सर्वानुभूः।
+इत्यनुशासनम्॥', 'idaṃ vai tan madhu dadhyaṅṅ ātharvaṇo ''śvibhyām uvāca
+tad etad ṛṣiḥ paśyann avocat -- rūpaṃrūpaṃ pratirūpo babhūva tad asya rūpaṃ praticakṣaṇāya
+indro māyābhiḥ pururūpa īyate yuktā hy asya harayaḥ śatā daśeti
+ayaṃ vai harayo ''yaṃ vai daśa ca sahasraṇi bahūni cānantāni ca
+tad etad brahmāpūrvam anaparam anantaram abāhyam
+ayam ātmā brahma sarvānubhūḥ
+ity anuśāsanam', null, 2005019)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-2-6-1', 1, 'Chapter 2, Section 6, Verse 1', 'अथ वंशः: पौतिमाष्यो गौपवनात्।
+गौपवनः पशुतिमाष्यात्।
+पशुतिमाष्यो गौपवनात्।
+गौपवनः कौशिकात्।
+कौशिकः कौण्डिन्यात्।
+कौण्डिन्यः शाण्डिल्यात्।
+शाण्डिल्यः कौशिकाच्च गौतमाच्च।
+गौतमः॥', 'atha vaṃśaḥ: pautimāṣyo gaupavanāt
+gaupavanaḥ paśutimāṣyāt
+paśutimāṣyo gaupavanāt
+gaupavanaḥ kauśikāt
+kauśikaḥ kauṇḍinyāt
+kauṇḍinyaḥ śāṇḍilyāt
+śāṇḍilyaḥ kauśikāc ca gautamāc ca
+gautamaḥ', null, 2006001),
+('brihadaranyaka-2-6-2', 2, 'Chapter 2, Section 6, Verse 2', 'आग्निवेश्यात्।
+आग्निवेश्यः शाण्डिल्याच्चानभिम्लाताच्च।
+आनभिम्लात आनभिम्लातात्।
+आनभिम्लात आनभिम्लातात्।
+आनभिम्लातो गौतमात्।
+गौतमः सैतवप्राचीनयोग्याभ्याम्।
+सैतवप्राचीनयोग्यौ पाराशर्यात्।
+पाराशर्यो भारद्वाजात्।
+भारद्वाजो भारद्वाजाच्च गौतमाच्च।
+गौतमो भारद्वाजात्।
+भारद्वाजः पाराशर्यात्।
+पाराशर्यो वैजवापायनात्।
+वैजवापायनः कौशिकायनेः।
+कौशिकायनिः॥', 'āgniveśyāt
+āgniveśyaḥ śāṇḍilyāc cānabhimlātāc ca
+ānabhimlāta ānabhimlātāt
+ānabhimlāta ānabhimlātāt
+ānabhimlāto gautamāt
+gautamaḥ saitavaprācīnayogyābhyām
+saitavaprācīnayogyau pārāśaryāt
+pārāśaryo bhāradvājāt
+bhāradvājo bhāradvājāc ca gautamāc ca
+gautamo bhāradvājāt
+bhāradvājaḥ pārāśaryāt
+pārāśaryo vaijavāpāyanāt
+vaijavāpāyanaḥ kauśikāyaneḥ
+kauśikāyaniḥ', null, 2006002),
+('brihadaranyaka-2-6-3', 3, 'Chapter 2, Section 6, Verse 3', 'घृतकौशिकात्।
+घृतकौशिकः प्राशर्यायणात्।
+पारशर्यायणः पाराशर्यात्।
+पाराशर्यो जातूकर्ण्यात्।
+जातूकर्ण्य आसुरायणाच्च यास्काच्च।
+आसुरायणस्त्रैवणेः।
+त्रैवणिरौपजन्धनेः।
+औपजन्धनिरासुरेः।
+आसुरिर्भारद्वाजात्।
+भारद्वाज आत्रेयात्।
+आत्रेयो माण्टेः।
+माण्टिर्गौतमात्।
+गौतमो वात्स्यात्।
+वात्स्यः शाण्डिल्यात्।
+शाण्डिल्यः कैशोर्यात्काप्यात्।
+कैशोर्यः काप्यः कुमारहारितात्।
+कुमारहारितो गालवात्।
+गालवो विदर्भीकौण्डिन्यात्।
+विदर्भीकौण्डिन्यो वत्सनपातो बाभ्रवात्।
+वत्सनपाद्बाभ्रवः पथः सौभरात्।
+पन्थाः सौभरोऽयास्यादाङ्गिरसात्।
+अयास्य आङ्गिरस आभूतेस्त्वाष्ट्रात्।
+आभूतिस्त्वाष्ट्रो विश्वरूपात्त्वाष्ट्रात्।
+विश्वरूपस्त्वाष्ट्रोऽव्शिभ्याम्।
+अश्विनौ दधीच आथर्वणात्।
+दध्यङ्ङाथर्वणोऽथर्वणो दैवात्।
+अथर्वा दैवो मृत्योः प्राध्वंसनात्।
+मृत्युः प्राध्वंसनः प्रध्वंसनात्।
+प्रध्वंसन एकर्षेः।
+एकर्षिर्विप्रचित्तेः।
+विप्रचित्तिर्व्यष्टेर्।
+व्यष्टिः सनारोः।
+सनारुः सनातनात्।
+सनातनः सनगात्।
+सनगः परमेष्ठिनः।
+परमेष्ठी ब्रह्मणः।
+ब्रह्म स्वयंभु।
+ब्रह्मणे नमः॥', 'ghṛtakauśikāt
+ghṛtakauśikaḥ prāśaryāyaṇāt
+pāraśaryāyaṇaḥ pārāśaryāt
+pārāśaryo jātūkarṇyāt
+jātūkarṇya āsurāyaṇāc ca yāskāc ca
+āsurāyaṇas traivaṇeḥ
+traivaṇir aupajandhaneḥ
+aupajandhanir āsureḥ
+āsurir bhāradvājāt
+bhāradvāja ātreyāt
+ātreyo māṇṭeḥ
+māṇṭir gautamāt
+gautamo vātsyāt
+vātsyaḥ śāṇḍilyāt
+śāṇḍilyaḥ kaiśoryāt kāpyāt
+kaiśoryaḥ kāpyaḥ kumārahāritāt
+kumārahārito gālavāt
+gālavo vidarbhīkauṇḍinyāt
+vidarbhīkauṇḍinyo vatsanapāto bābhravāt
+vatsanapād bābhravaḥ pathaḥ saubharāt
+panthāḥ saubharo ''yāsyād āṅgirasāt
+ayāsya āṅgirasa ābhūtes tvāṣṭrāt
+ābhūtis tvāṣṭro viśvarūpāt tvāṣṭrāt
+viśvarūpas tvāṣṭro ''vśibhyām
+aśvinau dadhīca ātharvaṇāt
+dadhyaṅṅ ātharvaṇo ''tharvaṇo daivāt
+atharvā daivo mṛtyoḥ prādhvaṃsanāt
+mṛtyuḥ prādhvaṃsanaḥ pradhvaṃsanāt
+pradhvaṃsana ekarṣeḥ
+ekarṣir vipracitteḥ
+vipracittir vyaṣṭer
+vyaṣṭiḥ sanāroḥ
+sanāruḥ sanātanāt
+sanātanaḥ sanagāt
+sanagaḥ parameṣṭhinaḥ
+parameṣṭhī brahmaṇaḥ
+brahma svayaṃbhu
+brahmaṇe namaḥ', null, 2006003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-1-1', 1, 'Chapter 3, Section 1, Verse 1', 'जनको ह वैदेहो बहुदक्षिणेन यज्ञेनेजे।
+तत्र ह कुरुपञ्चालानां ब्राह्मणा अभिसमेता बभूवुः।
+तस्य ह जनकस्य वैदेहस्य विजिज्ञासा बभूव -- कः स्विदेषां ब्राह्मणानामनूचानतम इति।
+स ह गवां सहस्रमवरुरोध।
+दशदश पादा एकैकस्याः शृङ्गयोराबद्धा बभूवुः॥', 'janako ha vaideho bahudakṣiṇena yajñeneje
+tatra ha kurupañcālānāṃ brāhmaṇā abhisametā babhūvuḥ
+tasya ha janakasya vaidehasya vijijñāsā babhūva -- kaḥ svid eṣāṃ brāhmaṇānām anūcānatama iti
+sa ha gavāṃ sahasram avarurodha
+daśadaśa pādā ekaikasyāḥ śṛṅgayor ābaddhā babhūvuḥ', null, 3001001),
+('brihadaranyaka-3-1-2', 2, 'Chapter 3, Section 1, Verse 2', 'तान्होवाच -- ब्राह्मणा भगवन्तो यो वो ब्रह्मिष्ठः स एता गा उदजतामिति।
+ते ह ब्राह्मणा न दधृषुः।
+अथ ह याज्ञवल्क्यः स्वमेव ब्रह्मचारिणमुवाच -- एताः सौम्योदज सामश्रवा३ इति।
+ता होदाचकार।
+ते ह ब्राह्मणाश्चुक्रुधुः: -- कथं नु नो ब्रह्मिष्ठो ब्रुवीतेति।
+अथ ह जनकस्य वैदेहस्य होताश्वलो बभूव।
+स हैनं पप्रच्छ -- त्वं नु खलु नो याज्ञवल्क्य ब्रह्मिष्ठोऽसी३ इति।
+स होवाच -- नमो वयं ब्रह्मिष्ठाय कुर्मो गोकामा एव वयं स्म इति।
+तं ह तत एव प्रष्टुं दध्रे होताश्वलः॥', 'tān hovāca -- brāhmaṇā bhagavanto yo vo brahmiṣṭhaḥ sa etā gā udajatām iti
+te ha brāhmaṇā na dadhṛṣuḥ
+atha ha yājñavalkyaḥ svam eva brahmacāriṇam uvāca -- etāḥ saumyodaja sāmaśravā3 iti
+tā hodācakāra
+te ha brāhmaṇāś cukrudhuḥ: -- kathaṃ nu no brahmiṣṭho bruvīteti
+atha ha janakasya vaidehasya hotāśvalo babhūva
+sa hainaṃ papraccha -- tvaṃ nu khalu no yājñavalkya brahmiṣṭho ''sī3 iti
+sa hovāca -- namo vayaṃ brahmiṣṭhāya kurmo gokāmā eva vayaṃ sma iti
+taṃ ha tata eva praṣṭuṃ dadhre hotāśvalaḥ', null, 3001002),
+('brihadaranyaka-3-1-3', 3, 'Chapter 3, Section 1, Verse 3', 'याज्ञवल्क्येति होवाच -- यदिदं सर्वं मृत्युनाप्तं सर्वं मृत्युनाभिपन्नं केन यजमानो मृत्योराप्तिमतिमुच्यत इति।
+होत्रर्त्विजाग्निना वाचा।
+वाग्वै यज्ञस्य होता।
+तद्येयं वाक्सोऽयमग्निः स होता सा मुक्तिः सातिमुक्तिः॥', 'yājñavalkyeti hovāca -- yad idaṃ sarvaṃ mṛtyunāptaṃ sarvaṃ mṛtyunābhipannaṃ kena yajamāno mṛtyor āptim atimucyata iti
+hotrartvijāgninā vācā
+vāg vai yajñasya hotā
+tad yeyaṃ vāk so ''yam agniḥ sa hotā sā muktiḥ sātimuktiḥ', null, 3001003),
+('brihadaranyaka-3-1-4', 4, 'Chapter 3, Section 1, Verse 4', 'याज्ञवल्क्येति होवाच -- यदिदं सर्वमहोरात्राभ्यामाप्तं सर्वमहोरात्राभ्यामभिपन्नं केन यजमानोऽहोरात्रयोराप्तिमतिमुच्यत इति।
+अध्वर्युणर्त्विजा चक्षुषादित्येन।
+चक्षुर्वै यज्ञस्याध्वर्युः।
+तद्यदिदं चक्षुः सोऽसावादित्यः।
+सोऽध्वर्युः सा मुक्तिः सातिमुक्तिः॥', 'yājñavalkyeti hovāca -- yad idaṃ sarvam ahorātrābhyām āptaṃ sarvam ahorātrābhyām abhipannaṃ kena yajamāno ''horātrayor āptim atimucyata iti
+adhvaryuṇartvijā cakṣuṣādityena
+cakṣur vai yajñasyādhvaryuḥ
+tad yad idaṃ cakṣuḥ so ''sāv ādityaḥ
+so ''dhvaryuḥ sā muktiḥ sātimuktiḥ', null, 3001004),
+('brihadaranyaka-3-1-5', 5, 'Chapter 3, Section 1, Verse 5', 'याज्ञवल्क्येति होवाच -- यदिदं सर्वं पूर्वपक्षापरपक्षाभ्यामाप्तं सर्वं पूर्वपक्षापरपक्षाभ्यामभिपन्नं केन यजमानः पूर्वपक्षापरपक्षयोराप्तिमतिमुच्यत इति।
+उद्गात्रर्त्विजा वयुना प्राणेन।
+प्राणो वै यज्ञस्योद्गाता।
+तद्योऽयं प्राणः स वायुः स उद्गाता।
+स मुक्तिः सातिमुक्तिः॥', 'yājñavalkyeti hovāca -- yad idaṃ sarvaṃ pūrvapakṣāparapakṣābhyām āptaṃ sarvaṃ pūrvapakṣāparapakṣābhyām abhipannaṃ kena yajamānaḥ pūrvapakṣāparapakṣayor āptim atimucyata iti
+udgātrartvijā vayunā prāṇena
+prāṇo vai yajñasyodgātā
+tad yo ''yaṃ prāṇaḥ sa vāyuḥ sa udgātā
+sa muktiḥ sātimuktiḥ', null, 3001005),
+('brihadaranyaka-3-1-6', 6, 'Chapter 3, Section 1, Verse 6', 'याज्ञवल्क्येति होवाच -- यदिदमन्तरिक्षमनारम्बणमिव केनाक्रमेण यजमानः स्वर्गं लोकमाक्रमत इति।
+ब्रह्मणर्त्विजा मनसा चन्द्रेण।
+मनो वै यज्ञस्य ब्रह्मा।
+तद्यदिदं मनः सोऽसौ चन्द्रः स ब्रह्मा स मुक्तिः सातिमुक्तिरित्यतिमोक्षा।
+अथ संपदः॥', 'yājñavalkyeti hovāca -- yad idam antarikṣam anārambaṇam iva kenākrameṇa yajamānaḥ svargaṃ lokam ākramata iti
+brahmaṇartvijā manasā candreṇa
+mano vai yajñasya brahmā
+tad yad idaṃ manaḥ so ''sau candraḥ sa brahmā sa muktiḥ sātimuktir ity atimokṣā
+atha saṃpadaḥ', null, 3001006),
+('brihadaranyaka-3-1-7', 7, 'Chapter 3, Section 1, Verse 7', 'याज्ञवल्क्येति होवाच -- कतिभिरयमद्यर्ग्भिर्होतास्मिन्यज्ञे करिष्यतीति।
+तिसृभिरिति।
+कतमास्तास्तिस्र इति।
+पुरोनुवाक्या च याज्या च शस्यैव तृतीया।
+किं ताभिर्जयतीति।
+यत्किञ्चेदं प्राणभृदिति॥', 'yājñavalkyeti hovāca -- katibhir ayam adyargbhir hotāsmin yajñe kariṣyatīti
+tisṛbhir iti
+katamās tās tisra iti
+puronuvākyā ca yājyā ca śasyaiva tṛtīyā
+kiṃ tābhir jayatīti
+yat kiñcedaṃ prāṇabhṛd iti', null, 3001007),
+('brihadaranyaka-3-1-8', 8, 'Chapter 3, Section 1, Verse 8', 'याज्ञवल्क्येति होवाच -- कत्ययमद्याध्वर्युरस्मिन्यज्ञ आहुतीर्होष्यतीति।
+तिस्र इति।
+कतमास्तास्तिस्र इति।
+या हुता उज्ज्वलन्ति या हुता अतिनेदन्ति या हुता अधिशेरते।
+किं ताभिर्जयतीति।
+या हुता उज्ज्वलन्ति देवलोकमेव ताभिर्जयति।
+दीप्यत इव हि देवलोको।
+या हुता अतिनेदन्ते पितृलोकमेव ताभिर्जयति।
+अतीव हि पितृलोकः।
+या हुता अधिशेरते मनुष्यलोकमेव ताभिर्जयत्यि।
+अध इव हि मनुष्यलोकः॥', 'yājñavalkyeti hovāca -- katy ayam adyādhvaryur asmin yajña āhutīr hoṣyatīti
+tisra iti
+katamās tās tisra iti
+yā hutā ujjvalanti yā hutā atinedanti yā hutā adhiśerate
+kiṃ tābhir jayatīti
+yā hutā ujjvalanti devalokam eva tābhir jayati
+dīpyata iva hi devaloko
+yā hutā atinedante pitṛlokam eva tābhir jayati
+atīva hi pitṛlokaḥ
+yā hutā adhiśerate manuṣyalokam eva tābhir jayatyi
+adha iva hi manuṣyalokaḥ', null, 3001008),
+('brihadaranyaka-3-1-9', 9, 'Chapter 3, Section 1, Verse 9', 'याज्ञवल्क्येति होवाच -- कतिभिरयमद्य ब्रह्मा यज्ञं दक्षिणतो देवताभिर्गोपायतीति।
+एकयेति।
+कतमा सैकेति।
+मन एवेति।
+अनन्तं वै मनोऽनन्ता विश्वे देवाः।
+अनन्तमेव स तेन लोकं जयति॥', 'yājñavalkyeti hovāca -- katibhir ayam adya brahmā yajñaṃ dakṣiṇato devatābhir gopāyatīti
+ekayeti
+katamā saiketi
+mana eveti
+anantaṃ vai mano ''nantā viśve devāḥ
+anantam eva sa tena lokaṃ jayati', null, 3001009),
+('brihadaranyaka-3-1-10', 10, 'Chapter 3, Section 1, Verse 10', 'याज्ञवल्क्येति होवाच -- कत्ययमद्योद्गातास्मिन्यज्ञे स्तोत्रियाः स्तोष्यतीति।
+तिस्र इति।
+कतमास्तास्तिस्र इति।
+पुरोनुवाक्या च याज्या च शस्यैव तृतीया।
+कतमास्ताः।
+या अध्यात्ममिति।
+प्राण एव पुरोनुवाक्यापानो याज्या व्यानः शस्या।
+किं ताभिर्जयतीति।
+पृथिवीलोकमेव पुरोनुवाक्यया जयत्यन्तरिक्षलोकं याज्यया द्युलोकं शस्यया।
+ततो ह होताश्वल उपरराम॥', 'yājñavalkyeti hovāca -- katy ayam adyodgātāsmin yajñe stotriyāḥ stoṣyatīti
+tisra iti
+katamās tās tisra iti
+puronuvākyā ca yājyā ca śasyaiva tṛtīyā
+katamās tāḥ
+yā adhyātmam iti
+prāṇa eva puronuvākyāpāno yājyā vyānaḥ śasyā
+kiṃ tābhir jayatīti
+pṛthivīlokam eva puronuvākyayā jayaty antarikṣalokaṃ yājyayā dyulokaṃ śasyayā
+tato ha hotāśvala upararāma', null, 3001010)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-2-1', 1, 'Chapter 3, Section 2, Verse 1', 'अथ हैनं जारत्कारव आर्तभागः पप्रच्छ।
+याज्ञवल्क्येति होवाच -- कति ग्रहाः कत्यतिग्रहा इति।
+अष्टौ ग्रहा अष्टावतिग्रहा इति।
+ये तेऽष्टौ ग्रहा अष्टावतिग्रहाः कतमे त इति॥', 'atha hainaṃ jāratkārava ārtabhāgaḥ papraccha
+yājñavalkyeti hovāca -- kati grahāḥ katy atigrahā iti
+aṣṭau grahā aṣṭāv atigrahā iti
+ye te ''ṣṭau grahā aṣṭāv atigrahāḥ katame ta iti', null, 3002001),
+('brihadaranyaka-3-2-2', 2, 'Chapter 3, Section 2, Verse 2', 'प्राणो वै ग्रहः।
+सोऽपानेनातिग्रहेण गृहीतः।
+प्राणेन हि गन्धाञ्जिघ्रति॥', 'prāṇo vai grahaḥ
+so ''pānenātigraheṇa gṛhītaḥ
+prāṇena hi gandhāñ jighrati', null, 3002002),
+('brihadaranyaka-3-2-3', 3, 'Chapter 3, Section 2, Verse 3', 'वाग्वै ग्रहः।
+स नाम्नातिग्रहेण गृहीतः।
+वाचा हि नामान्यभिवदति॥', 'vāg vai grahaḥ
+sa nāmnātigraheṇa gṛhītaḥ
+vācā hi nāmāny abhivadati', null, 3002003),
+('brihadaranyaka-3-2-4', 4, 'Chapter 3, Section 2, Verse 4', 'जिह्वा वै ग्रहः।
+स रसेनातिग्रहेण गृहीतः।
+जिह्वया हि रसान्विजानाति॥', 'jihvā vai grahaḥ
+sa rasenātigraheṇa gṛhītaḥ
+jihvayā hi rasān vijānāti', null, 3002004),
+('brihadaranyaka-3-2-5', 5, 'Chapter 3, Section 2, Verse 5', 'चक्षुर्वै ग्रहः।
+स रूपेणातिग्रहेण गृहीतः।
+चक्षुषा हि रूपाणि पश्यति॥', 'cakṣur vai grahaḥ
+sa rūpeṇātigraheṇa gṛhītaḥ
+cakṣuṣā hi rūpāṇi paśyati', null, 3002005),
+('brihadaranyaka-3-2-6', 6, 'Chapter 3, Section 2, Verse 6', 'श्रोत्रं वै ग्रहः।
+स शब्देनातिग्रहेण गृहीतः।
+श्रोत्रेण हि शब्दाञ्शृणोति॥', 'śrotraṃ vai grahaḥ
+sa śabdenātigraheṇa gṛhītaḥ
+śrotreṇa hi śabdāñ śṛṇoti', null, 3002006),
+('brihadaranyaka-3-2-7', 7, 'Chapter 3, Section 2, Verse 7', 'मनो वै ग्रहः।
+स कामेनातिग्रहेण गृहीतः।
+मनसा हि कामान्कामयते॥', 'mano vai grahaḥ
+sa kāmenātigraheṇa gṛhītaḥ
+manasā hi kāmān kāmayate', null, 3002007),
+('brihadaranyaka-3-2-8', 8, 'Chapter 3, Section 2, Verse 8', 'हस्तौ वै ग्रहः।
+स कर्मणातिग्रहेण गृहीतः।
+हस्ताभ्यां हि कर्म करोति॥', 'hastau vai grahaḥ
+sa karmaṇātigraheṇa gṛhītaḥ
+hastābhyāṃ hi karma karoti', null, 3002008),
+('brihadaranyaka-3-2-9', 9, 'Chapter 3, Section 2, Verse 9', 'त्वग्वै ग्रहः।
+स स्पर्शेनातिग्रहेण गृहीतः।
+त्वचा हि स्पर्शान्वेदयत।
+इत्यष्टौ ग्रहा अष्टावतिग्रहाः॥', 'tvag vai grahaḥ
+sa sparśenātigraheṇa gṛhītaḥ
+tvacā hi sparśān vedayata
+ity aṣṭau grahā aṣṭāv atigrahāḥ', null, 3002009),
+('brihadaranyaka-3-2-10', 10, 'Chapter 3, Section 2, Verse 10', 'याज्ञवल्क्येति होवाच -- यदिदं सर्वं मृत्योरन्नं का स्वित्सा देवता यस्या मृत्युरन्नमिति।
+अग्निर्वै मृत्युः सोऽपामन्नम्।
+अप पुनर्मृत्युं जयति॥', 'yājñavalkyeti hovāca -- yad idaṃ sarvaṃ mṛtyor annaṃ kā svit sā devatā yasyā mṛtyur annam iti
+agnir vai mṛtyuḥ so ''pām annam
+apa punarmṛtyuṃ jayati', null, 3002010),
+('brihadaranyaka-3-2-11', 11, 'Chapter 3, Section 2, Verse 11', 'याज्ञवल्क्येति होवाच -- यत्रायं पुरुषो म्रियत उदस्मात्प्राणाः क्रामन्त्याहो नेति।
+नेति होवाच याज्ञवल्क्यः।
+अत्रैव समवनीयन्ते।
+स उच्छ्वयति।
+आध्मायति।
+आध्मातो मृतः शेते॥', 'yājñavalkyeti hovāca -- yatrāyaṃ puruṣo mriyata ud asmāt prāṇāḥ krāmanty āho neti
+neti hovāca yājñavalkyaḥ
+atraiva samavanīyante
+sa ucchvayati
+ādhmāyati
+ādhmāto mṛtaḥ śete', null, 3002011),
+('brihadaranyaka-3-2-12', 12, 'Chapter 3, Section 2, Verse 12', 'याज्ञवल्क्येति होवाच -- यत्रायं पुरुषो म्रियते।
+किमेनं न जहातीति।
+नामेति।
+अनन्तं वै नामानन्ता विश्वे देवाः।
+अनन्तमेव स तेन लोकं जयति॥', 'yājñavalkyeti hovāca -- yatrāyaṃ puruṣo mriyate
+kim enaṃ na jahātīti
+nāmeti
+anantaṃ vai nāmānantā viśve devāḥ
+anantam eva sa tena lokaṃ jayati', null, 3002012),
+('brihadaranyaka-3-2-13', 13, 'Chapter 3, Section 2, Verse 13', 'याज्ञवल्क्येति होवाच -- यत्रास्य पुरुषस्य मृतस्याग्निं वागप्येति वातं प्राणश्चक्षुरादित्यं मनश्चन्द्रं दिशः श्रोत्रं पृथिवीं शरीरमाकाशमात्मौषधीर्लोमानि वनस्पतीन्केशा अप्सु लोहितं च रेतश्च निधीयते क्वायं तदा पुरुषो भवतीति।
+आहर सौम्य हस्तमार्तभाग।
+आवामेवैतस्य वेदिष्यावो न नावेतत्सजन इति।
+तौ होत्क्रम्य मन्त्रयां चक्राते।
+तौ ह यदूचतुः कर्म हैव तदूचतुः।
+अथ ह यत्प्रशंसतुः कर्म हैव तत्प्रशशंसतुः।
+पुण्यो वै पुण्येन कर्मणा भवति पापः पापेनेति।
+ततो ह जारत्कारव आर्तभाग उपरराम॥', 'yājñavalkyeti hovāca -- yatrāsya puruṣasya mṛtasyāgniṃ vāg apyeti vātaṃ prāṇaś cakṣur ādityaṃ manaś candraṃ diśaḥ śrotraṃ pṛthivīṃ śarīram ākāśam ātmauṣadhīr lomāni vanaspatīn keśā apsu lohitaṃ ca retaś ca nidhīyate kvāyaṃ tadā puruṣo bhavatīti
+āhara saumya hastam ārtabhāga
+āvām evaitasya vediṣyāvo na nāv etat sajana iti
+tau hotkramya mantrayāṃ cakrāte
+tau ha yad ūcatuḥ karma haiva tad ūcatuḥ
+atha ha yat praśaṃsatuḥ karma haiva tat praśaśaṃsatuḥ
+puṇyo vai puṇyena karmaṇā bhavati pāpaḥ pāpeneti
+tato ha jāratkārava ārtabhāga upararāma', null, 3002013)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-3-1', 1, 'Chapter 3, Section 3, Verse 1', 'अथ हैनं भुज्युर्लाह्यायनिः पप्रच्छ -- याज्ञवल्क्येति होवाच -- मद्रेषु चरकाः पर्यव्रजाम।
+ते पतञ्चलस्य काप्यस्य गृहानैम।
+तस्यासीद्दुहिता गन्धर्वगृहीता।
+तमपृच्छाम कोऽसीति।
+सोऽब्रवीत्सुधन्वाङ्गिरस इति।
+तं यदा लोकानामन्तानपृच्छाम।
+अथैनमब्रूम -- क्व पारिक्षिता अभवन्निति।
+क्व पारिक्षिता अभवन्।
+स त्वा पृच्छामि याज्ञवल्क्य।
+क्व पारिक्षिता अभवन्निति॥', 'atha hainaṃ bhujyur lāhyāyaniḥ papraccha -- yājñavalkyeti hovāca -- madreṣu carakāḥ paryavrajāma
+te patañcalasya kāpyasya gṛhān aima
+tasyāsīd duhitā gandharvagṛhītā
+tam apṛcchāma ko ''sīti
+so ''bravīt sudhanvāṅgirasa iti
+taṃ yadā lokānām antān apṛcchāma
+athainam abrūma -- kva pārikṣitā abhavann iti
+kva pārikṣitā abhavan
+sa tvā pṛcchāmi yājñavalkya
+kva pārikṣitā abhavann iti', null, 3003001),
+('brihadaranyaka-3-3-2', 2, 'Chapter 3, Section 3, Verse 2', 'स होवाच -- उवाच वै सः।
+अगच्छन्वै ते तद्यत्राश्वमेधयाजिनो गच्छन्तीति।
+क्व न्वश्वमेधयाजिनो गच्छन्तीति।
+द्वात्रिंशतं वै देवरथाह्न्यान्ययं लोकः।
+तं समन्तं पृथिवी द्विस्तावत्पर्येति।
+तां समन्तं पृथिवीं द्विस्तावत्समुद्रः पर्येति।
+तद्यावती क्षुरस्य धारा यावद्वा मक्षिकायाः पत्त्रं तावानन्तरेणाकाशः तानैन्द्रः सुपर्णो भूत्वा वायवे प्रायच्छत्।
+तान्वायुरात्मनि धित्वा तत्रागमयद्यत्राश्वमेधयाजिनोऽभवन्निति।
+एवमिव वै स वायुमेव प्रशशंस तस्माद्वायुरेव व्यष्टिर्वायुः समष्टिः।
+अप पुनर्मृत्युं जयति य एवं वेद।
+ततो ह भुज्युर्लाह्यायनिरुपरराम॥', 'sa hovāca -- uvāca vai saḥ
+agacchan vai te tad yatrāśvamedhayājino gacchantīti
+kva nv aśvamedhayājino gacchantīti
+dvātriṃśataṃ vai devarathāhnyāny ayaṃ lokaḥ
+taṃ samantaṃ pṛthivī dvistāvat paryeti
+tāṃ samantaṃ pṛthivīṃ dvistāvat samudraḥ paryeti
+tad yāvatī kṣurasya dhārā yāvad vā makṣikāyāḥ pattraṃ tāvān antareṇākāśaḥ tān aindraḥ suparṇo bhūtvā vāyave prāyacchat
+tān vāyur ātmani dhitvā tatrāgamayad yatrāśvamedhayājino ''bhavann iti
+evam iva vai sa vāyum eva praśaśaṃsa tasmād vāyur eva vyaṣṭir vāyuḥ samaṣṭiḥ
+apa punarmṛtyuṃ jayati ya evaṃ veda
+tato ha bhujyur lāhyāyanir upararāma', null, 3003002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-4-1', 1, 'Chapter 3, Section 4, Verse 1', 'अथ हैनमुषस्तश्चाक्रायणः पप्रच्छ।
+याज्ञवल्क्येति होवाच -- यत्साक्षादपरोक्षाद्ब्रह्म य आत्मा सर्वान्तरस्तं मे व्याचक्ष्वेति।
+एष त आत्मा सर्वान्तरः।
+यः प्राणेन प्राणिति स त आत्मा सर्वान्तरः।
+योऽपानेनापानिति स त आत्मा सर्वान्तरः।
+यो व्यानेन व्यनिति स त आत्मा सर्वान्तरः।
+य उदानेनोदनिति स त आत्मा सर्वान्तरः।
+एष त आत्मा सर्वान्तरः॥', 'atha hainam uṣastaś cākrāyaṇaḥ papraccha
+yājñavalkyeti hovāca -- yat sākṣād aparokṣād brahma ya ātmā sarvāntaras taṃ me vyācakṣveti
+eṣa ta ātmā sarvāntaraḥ
+yaḥ prāṇena prāṇiti sa ta ātmā sarvāntaraḥ
+yo ''pānenāpāniti sa ta ātmā sarvāntaraḥ
+yo vyānena vyaniti sa ta ātmā sarvāntaraḥ
+ya udānenodaniti sa ta ātmā sarvāntaraḥ
+eṣa ta ātmā sarvāntaraḥ', null, 3004001),
+('brihadaranyaka-3-4-2', 2, 'Chapter 3, Section 4, Verse 2', 'स होवाचोषस्तश्चाक्रायणः -- यथा वै ब्रूयादसौ गौरसावश्व इत्येवमेवैतद्व्यपदिष्टं भवति।
+यदेव साक्षादपरोक्षाद्ब्रह्म य आत्मा सर्वान्तरस्तं मे व्याचक्ष्वेति।
+एष त आत्मा सर्वान्तरः।
+कतमो याज्ञवल्क्य सर्वान्तरः।
+न दृष्टेर्द्रष्टारं पश्येः।
+न श्रुतेः श्रोतारं शृणुयाः।
+न मतेर्मन्तारं मन्वीथा।
+न विज्ञातेर्विज्ञातारं विजानीयाः।
+एष त आत्मा सर्वान्तरः।
+अतोऽन्यदार्तम्।
+ततो होषस्तश्चाक्रायण उपरराम॥', 'sa hovācoṣastaś cākrāyaṇaḥ -- yathā vai brūyād asau gaur asāv aśva ity evam evaitad vyapadiṣṭaṃ bhavati
+yad eva sākṣād aparokṣād brahma ya ātmā sarvāntaras taṃ me vyācakṣveti
+eṣa ta ātmā sarvāntaraḥ
+katamo yājñavalkya sarvāntaraḥ
+na dṛṣṭer draṣṭāraṃ paśyeḥ
+na śruteḥ śrotāraṃ śṛṇuyāḥ
+na mater mantāraṃ manvīthā
+na vijñāter vijñātāraṃ vijānīyāḥ
+eṣa ta ātmā sarvāntaraḥ
+ato ''nyad ārtam
+tato hoṣastaś cākrāyaṇa upararāma', null, 3004002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-5-1', 1, 'Chapter 3, Section 5, Verse 1', 'अथ हैनं कहोलः कौषीतकेयः पप्रच्छ -- याज्ञवल्क्येति होवाच।
+यदेव साक्षादपरोक्षाद्ब्रह्म य आत्मा सर्वान्तरस्तं मे व्याचक्ष्वेति।
+एष त आत्मा सर्वान्तरः।
+कतमो याज्ञवल्क्य सर्वान्तरः।
+योऽशनायापिपासे शोकं मोहं जरां मृत्युमत्येति।
+एतं वै तमात्मानं विदित्वा ब्राह्मणाः पुत्रैषणायाश्च वित्तैषणायाश्च लोकैषणायाश्च व्युत्थायाथ भिक्षाचर्यं चरन्ति।
+या ह्येव पुत्रैषणा सा वित्तैषणा या वित्तैषणा सा लोकैषणा।
+उभे ह्येते एषणे एव भवतः।
+तस्माद्ब्रामणः पाण्डित्यं निर्विद्य बाल्येन तिष्ठासेत्।
+बाल्यं च पाण्डित्यं च निर्विद्याथ मुनिः।
+अमौनं च मौनं च निर्विद्याथ ब्राह्मणः।
+स ब्राह्मणः केन स्याद्येन स्यात्तेनेदृश एव।
+अतोऽन्यदार्तम्।
+ततो ह कहोलः कौषीतकेय उपरराम॥', 'atha hainaṃ kaholaḥ kauṣītakeyaḥ papraccha -- yājñavalkyeti hovāca
+yad eva sākṣād aparokṣād brahma ya ātmā sarvāntaras taṃ me vyācakṣveti
+eṣa ta ātmā sarvāntaraḥ
+katamo yājñavalkya sarvāntaraḥ
+yo ''śanāyāpipāse śokaṃ mohaṃ jarāṃ mṛtyum atyeti
+etaṃ vai tam ātmānaṃ viditvā brāhmaṇāḥ putraiṣaṇāyāś ca vittaiṣaṇāyāś ca lokaiṣaṇāyāś ca vyutthāyātha bhikṣācaryaṃ caranti
+yā hy eva putraiṣaṇā sā vittaiṣaṇā yā vittaiṣaṇā sā lokaiṣaṇā
+ubhe hy ete eṣaṇe eva bhavataḥ
+tasmād brāmaṇaḥ pāṇḍityaṃ nirvidya bālyena tiṣṭhāset
+bālyaṃ ca pāṇḍityaṃ ca nirvidyātha muniḥ
+amaunaṃ ca maunaṃ ca nirvidyātha brāhmaṇaḥ
+sa brāhmaṇaḥ kena syād yena syāt tenedṛśa eva
+ato ''nyad ārtam
+tato ha kaholaḥ kauṣītakeya upararāma', null, 3005001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-6-1', 1, 'Chapter 3, Section 6, Verse 1', 'अथ हैनं गार्गी वाचक्नवी पप्रच्छ -- याज्ञवल्क्येति होवाच।
+यदिदं सर्वमप्स्वोतं च प्रोतं च कस्मिन्नु खल्वाप ओताश्च प्रोताश्चेति।
+वायौ गार्गीति।
+कस्मिन्नु खलु वायुरोतश्च प्रोतश्चेति।
+अन्तरिक्षलोकेषु गार्गीति।
+कस्मिन्नु खल्वन्तरिक्षलोका ओतश्च प्रोतश्चेति।
+गन्धर्वलोकेषु गार्गीति।
+कस्मिन्नु खलु गन्धर्वलोका ओताश्च प्रोताश्चेति।
+अदित्यलोकेषु गार्गीति।
+कस्मिन्नु खल्वादित्यलोका ओताश्च प्रोताश्चेति।
+चन्द्रलोकेषु गार्गीति।
+कस्मिन्नु खलु चन्द्रलोका ओताश्च प्रोताश्चेति।
+नक्षत्रलोकेषु गार्गीति।
+कस्मिन्नु खलु नक्षत्रलोका ओताश्च प्रोताश्चेति।
+देवलोकेषु गार्गीति।
+कस्मिन्नु खलु देवलोका ओताश्च प्रोताश्चेति।
+इन्द्रलोकेषु गार्गीति।
+कस्मिन्नु खल्विन्द्रलोका ओताश्च प्रोताश्चेति।
+प्रजापतिलोकेषु गार्गीति।
+कस्मिन्नु खलु प्रजापतिलोका ओताश्च प्रोताश्चेति।
+ब्रह्मलोकेषु गार्गीति।
+कस्मिन्नु खलु ब्रह्मलोका ओताश्च प्रोताश्चेति।
+स होवाच -- गार्गि मातिप्राक्षीः।
+मा ते मूर्धा व्यपप्तत्।
+अनतिप्रश्न्यां वै देवतामतिपृच्छसि।
+गार्गि मातिप्राक्षीरिति।
+ततो ह गार्गी वाचक्नव्युपरराम॥', 'atha hainaṃ gārgī vācaknavī papraccha -- yājñavalkyeti hovāca
+yad idaṃ sarvam apsv otaṃ ca protaṃ ca kasmin nu khalv āpa otāś ca protāś ceti
+vāyau gārgīti
+kasmin nu khalu vāyur otaś ca protaś ceti
+antarikṣalokeṣu gārgīti
+kasmin nu khalv antarikṣalokā otaś ca protaś ceti
+gandharvalokeṣu gārgīti
+kasmin nu khalu gandharvalokā otāś ca protāś ceti
+adityalokeṣu gārgīti
+kasmin nu khalv ādityalokā otāś ca protāś ceti
+candralokeṣu gārgīti
+kasmin nu khalu candralokā otāś ca protāś ceti
+nakṣatralokeṣu gārgīti
+kasmin nu khalu nakṣatralokā otāś ca protāś ceti
+devalokeṣu gārgīti
+kasmin nu khalu devalokā otāś ca protāś ceti
+indralokeṣu gārgīti
+kasmin nu khalv indralokā otāś ca protāś ceti
+prajāpatilokeṣu gārgīti
+kasmin nu khalu prajāpatilokā otāś ca protāś ceti
+brahmalokeṣu gārgīti
+kasmin nu khalu brahmalokā otāś ca protāś ceti
+sa hovāca -- gārgi mātiprākṣīḥ
+mā te mūrdhā vyapaptat
+anatipraśnyāṃ vai devatām atipṛcchasi
+gārgi mātiprākṣīr iti
+tato ha gārgī vācaknavy upararāma', null, 3006001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-7-1', 1, 'Chapter 3, Section 7, Verse 1', 'अथैनमुद्दालक आरुणिः पप्रच्छ -- याज्ञवल्क्येति होवाच।
+मद्रेष्ववसाम पतञ्चलस्य काप्यस्य गृहेषु यज्ञमधीयानाः।
+तस्यासीद्भार्या गन्धर्वगृहीता।
+तमपृच्छाम -- कोऽसीति।
+सोऽब्रवीत्कबन्ध आथर्वण इति।
+सोऽब्रवीत्पतञ्चलं काप्यं याज्ञिकांश्च -- वेत्थ नु त्वं काप्य तत्सूत्रं यस्मिन्नयं च लोकः परश्च लोकः सर्वाणि च भूतानि संदृब्धानि भवन्तीति।
+सोऽब्रवीत्पतञ्चलः काप्यो नाहं तद्भगवन्वेदेति।
+सोऽब्रवीत्पतञ्चलं काप्यं याज्ञिकांश्च।
+वेत्थ नु त्वं काप्य तमन्तर्यामिणं य इमं च लोकं परं च लोकं सर्वाणि च भूतान्यन्तरो यमयति।
+सोऽब्रवीत्पतञ्चलः काप्यो नाहं तं भगवन्वेदेति।
+सोऽब्रवीत्पतञ्चलं काप्यं याज्ञिकांश्च।
+यो वै तत्काप्य सूत्रं विद्यात्तं चान्तर्यामिणमिति स ब्रह्मवित्स लोकवित्स देववित्स वेदवित्स आत्मवित्स सर्ववित्।
+इति तेभ्योऽब्रवीत्।
+तदहं वेद।
+तच्चेत्त्वं याज्ञवल्क्य सूत्रमविद्वांस्तं चान्तर्यामिणं ब्रह्मगवीरुदजसे मूर्धा ते विपतिष्यति।
+वेद वा अहं गौतम तत्सूत्रं तं चान्तर्यामिणमिति।
+यो वा इदं कश्च ब्रूयाद्वेद वेदेति यथा वेत्थ तथा ब्रूहीति॥', 'athainam uddālaka āruṇiḥ papraccha -- yājñavalkyeti hovāca
+madreṣv avasāma patañcalasya kāpyasya gṛheṣu yajñam adhīyānāḥ
+tasyāsīd bhāryā gandharvagṛhītā
+tam apṛcchāma -- ko ''sīti
+so ''bravīt kabandha ātharvaṇa iti
+so ''bravīt patañcalaṃ kāpyaṃ yājñikāṃś ca -- vettha nu tvaṃ kāpya tat sūtraṃ yasminn ayaṃ ca lokaḥ paraś ca lokaḥ sarvāṇi ca bhūtāni saṃdṛbdhāni bhavantīti
+so ''bravīt patañcalaḥ kāpyo nāhaṃ tad bhagavan vedeti
+so ''bravīt patañcalaṃ kāpyaṃ yājñikāṃś ca
+vettha nu tvaṃ kāpya tam antaryāmiṇaṃ ya imaṃ ca lokaṃ paraṃ ca lokaṃ sarvāṇi ca bhūtāny antaro yamayati
+so ''bravīt patañcalaḥ kāpyo nāhaṃ taṃ bhagavan vedeti
+so ''bravīt patañcalaṃ kāpyaṃ yājñikāṃś ca
+yo vai tat kāpya sūtraṃ vidyāt taṃ cāntaryāmiṇam iti sa brahmavit sa lokavit sa devavit sa vedavit sa ātmavit sa sarvavit
+iti tebhyo ''bravīt
+tad ahaṃ veda
+tac cet tvaṃ yājñavalkya sūtram avidvāṃs taṃ cāntaryāmiṇaṃ brahmagavīr udajase mūrdhā te vipatiṣyati
+veda vā ahaṃ gautama tat sūtraṃ taṃ cāntaryāmiṇam iti
+yo vā idaṃ kaśca brūyād veda vedeti yathā vettha tathā brūhīti', null, 3007001),
+('brihadaranyaka-3-7-2', 2, 'Chapter 3, Section 7, Verse 2', 'स होवच -- वायुर्वै गौतम तत्सूत्रम्।
+वायुना वै गौतम सूत्रेणायं च लोकः परश्च लोकः सर्वाणि च भूतानि संदृब्धानि भवन्ति।
+तस्माद्वै गौतम पुरुषं प्रेतमाहुर्व्यस्रंसिषतास्याङ्गानीति।
+वायुना हि गौतम सूत्रेण सम्दृब्धानि भवन्तीति।
+एवमेवैतद्याज्ञवल्क्य।
+अन्तर्यामिणं ब्रूहीति॥', 'sa hovaca -- vāyur vai gautama tat sūtram
+vāyunā vai gautama sūtreṇāyaṃ ca lokaḥ paraś ca lokaḥ sarvāṇi ca bhūtāni saṃdṛbdhāni bhavanti
+tasmād vai gautama puruṣaṃ pretam āhur vyasraṃsiṣatāsyāṅgānīti
+vāyunā hi gautama sūtreṇa samdṛbdhāni bhavantīti
+evam evaitad yājñavalkya
+antaryāmiṇaṃ brūhīti', null, 3007002),
+('brihadaranyaka-3-7-3', 3, 'Chapter 3, Section 7, Verse 3', 'यः पृथिव्यां तिष्ठन्पृथिव्या अन्तरो यं पृथिवी न वेद यस्य पृथिवी शरीरं यः पृथिवीमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yaḥ pṛthivyāṃ tiṣṭhan pṛthivyā antaro yaṃ pṛthivī na veda yasya pṛthivī śarīraṃ yaḥ pṛthivīm antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007003),
+('brihadaranyaka-3-7-4', 4, 'Chapter 3, Section 7, Verse 4', 'योऽप्सु तिष्ठन्नद्भ्योऽन्तरो यमापो न विदुर्यस्यापः शरीरं योऽपोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo ''psu tiṣṭhann adbhyo ''ntaro yam āpo na vidur yasyāpaḥ śarīraṃ yo ''po ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007004),
+('brihadaranyaka-3-7-5', 5, 'Chapter 3, Section 7, Verse 5', 'योऽग्नौ तिष्ठन्नग्नेरन्तरो यमग्निर्न वेद यस्याग्निः शरीरं योऽग्निमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo ''gnau tiṣṭhann agner antaro yam agnir na veda yasyāgniḥ śarīraṃ yo ''gnim antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007005),
+('brihadaranyaka-3-7-6', 6, 'Chapter 3, Section 7, Verse 6', 'योऽन्तरिक्षे तिष्ठन्नन्तरिक्षादन्तरो यमन्तरिक्षं न वेद यस्यान्तरिक्षं शरीरं योऽन्तरिक्षमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo ''ntarikṣe tiṣṭhann antarikṣād antaro yam antarikṣaṃ na veda yasyāntarikṣaṃ śarīraṃ yo ''ntarikṣam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007006),
+('brihadaranyaka-3-7-7', 7, 'Chapter 3, Section 7, Verse 7', 'यो वायौ तिष्ठन्वायोरन्तरो यं वायुर्न वेद यस्य वायुः शरीरं यो वायुमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo vāyau tiṣṭhan vāyor antaro yaṃ vāyur na veda yasya vāyuḥ śarīraṃ yo vāyum antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007007),
+('brihadaranyaka-3-7-8', 8, 'Chapter 3, Section 7, Verse 8', 'यो दिवि तिष्ठन्दिवोऽन्तरो यं द्यौर्न वेद यस्य द्यौः शरीरं यो दिवमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo divi tiṣṭhan divo ''ntaro yaṃ dyaur na veda yasya dyauḥ śarīraṃ yo divam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007008),
+('brihadaranyaka-3-7-9', 9, 'Chapter 3, Section 7, Verse 9', 'य आदित्ये तिष्ठन्नादित्यादन्तरो यमादित्यो न वेद यस्यादित्यः शरीरं य आदित्यमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'ya āditye tiṣṭhann ādityād antaro yam ādityo na veda yasyādityaḥ śarīraṃ ya ādityam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007009),
+('brihadaranyaka-3-7-10', 10, 'Chapter 3, Section 7, Verse 10', 'यो दिक्षु तिष्ठन्दिग्भ्योऽन्तरो यं दिशो न विदुर्यस्य दिशः शरीरं यो दिशोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo dikṣu tiṣṭhan digbhyo ''ntaro yaṃ diśo na vidur yasya diśaḥ śarīraṃ yo diśo ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007010),
+('brihadaranyaka-3-7-11', 11, 'Chapter 3, Section 7, Verse 11', 'यश्चन्द्रतारके तिष्ठञ्चन्द्रतारकादन्तरो यं चन्द्रतारकं न वेद यस्य चन्द्रतारकं शरीरं यश्चन्द्रतारकमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yaś candratārake tiṣṭhañ candratārakād antaro yaṃ candratārakaṃ na veda yasya candratārakaṃ śarīraṃ yaś candratārakam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007011),
+('brihadaranyaka-3-7-12', 12, 'Chapter 3, Section 7, Verse 12', 'य आकाशे तिष्ठन्नाकाशादन्तरो यमाकाशो न वेद यस्याकाशः शरीरं य आकाशमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'ya ākāśe tiṣṭhann ākāśād antaro yam ākāśo na veda yasyākāśaḥ śarīraṃ ya ākāśam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007012),
+('brihadaranyaka-3-7-13', 13, 'Chapter 3, Section 7, Verse 13', 'यस्तमसि तिष्ठंस्तमसोऽन्तरो यं तमो न वेद यस्य तमः शरीरं यस्तमोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yas tamasi tiṣṭhaṃs tamaso ''ntaro yaṃ tamo na veda yasya tamaḥ śarīraṃ yas tamo ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007013),
+('brihadaranyaka-3-7-14', 14, 'Chapter 3, Section 7, Verse 14', 'यस्तेजसि तिष्ठंस्तेजसोऽन्तरो यं तेजो न वेद यस्य तेजः शरीरं यस्तेजोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yas tejasi tiṣṭhaṃs tejaso ''ntaro yaṃ tejo na veda yasya tejaḥ śarīraṃ yas tejo ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007014),
+('brihadaranyaka-3-7-15', 15, 'Chapter 3, Section 7, Verse 15', 'अथाधिभूतम्।
+यः सर्वेषु भूतेषु तिष्ठन्सर्वेभ्यो भूतेभ्योऽन्तरो यं सर्वाणि भूतानि न विदुर्यस्य सर्वाणि भुतानि शरीरं यः सर्वाणि भूतान्यन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः।
+इत्यधिभूतम्॥', 'athādhibhūtam
+yaḥ sarveṣu bhūteṣu tiṣṭhan sarvebhyo bhūtebhyo ''ntaro yaṃ sarvāṇi bhūtāni na vidur yasya sarvāṇi bhutāni śarīraṃ yaḥ sarvāṇi bhūtāny antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ
+ity adhibhūtam', null, 3007015),
+('brihadaranyaka-3-7-16', 16, 'Chapter 3, Section 7, Verse 16', 'अथाध्यात्मम्।
+यः प्राणे तिष्ठन्प्राणादन्तरो यं प्राणो न वेद यस्य प्राणः शरीरं यः प्राणमन्तरो यमयति एष त आत्मान्तर्याम्यमृतः॥', 'athādhyātmam
+yaḥ prāṇe tiṣṭhan prāṇād antaro yaṃ prāṇo na veda yasya prāṇaḥ śarīraṃ yaḥ prāṇam antaro yamayati eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007016),
+('brihadaranyaka-3-7-17', 17, 'Chapter 3, Section 7, Verse 17', 'यो वाचि तिष्ठन्वाचोऽन्तरो यं वाङ्न वेद यस्य वाक्शरीरं यो वाचमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo vāci tiṣṭhan vāco ''ntaro yaṃ vāṅ na veda yasya vāk śarīraṃ yo vācam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007017),
+('brihadaranyaka-3-7-18', 18, 'Chapter 3, Section 7, Verse 18', 'यश्चक्षुषि तिष्ठञ्चक्षुषोऽन्तरो यं चक्षुर्न वेद यस्य चक्षुः शरीरं यश्चक्षुरन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yaś cakṣuṣi tiṣṭhañ cakṣuṣo ''ntaro yaṃ cakṣur na veda yasya cakṣuḥ śarīraṃ yaś cakṣur antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007018),
+('brihadaranyaka-3-7-19', 19, 'Chapter 3, Section 7, Verse 19', 'यः श्रोत्रे तिष्ठञ्छ्रोत्रादन्तरो यं श्रोत्रं न वेद यस्य श्रोत्रं शरीरं यः श्रोत्रमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yaḥ śrotre tiṣṭhañ chrotrād antaro yaṃ śrotraṃ na veda yasya śrotraṃ śarīraṃ yaḥ śrotram antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007019),
+('brihadaranyaka-3-7-20', 20, 'Chapter 3, Section 7, Verse 20', 'यो मनसि तिष्ठन्मनसोऽन्तरो यं मनो न वेद यस्य मनः शरीरं यो मनोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo manasi tiṣṭhan manaso ''ntaro yaṃ mano na veda yasya manaḥ śarīraṃ yo mano ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007020),
+('brihadaranyaka-3-7-21', 21, 'Chapter 3, Section 7, Verse 21', 'यस्त्वचि तिष्ठंस्त्वचोऽन्तरो यं त्वङ्न वेद यस्य त्वक्शरीरं यस्त्वचमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yas tvaci tiṣṭhaṃs tvaco ''ntaro yaṃ tvaṅ na veda yasya tvak śarīraṃ yas tvacam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007021),
+('brihadaranyaka-3-7-22', 22, 'Chapter 3, Section 7, Verse 22', 'यो विज्ञाने तिष्ठन्विज्ञानादन्तरो यं विज्ञानं न वेद यस्य विज्ञानं शरीरं यो विज्ञानमन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः॥', 'yo vijñāne tiṣṭhan vijñānād antaro yaṃ vijñānaṃ na veda yasya vijñānaṃ śarīraṃ yo vijñānam antaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ', null, 3007022),
+('brihadaranyaka-3-7-23', 23, 'Chapter 3, Section 7, Verse 23', 'यो रेतसि तिष्ठं रेतसोऽन्तरो यं रेतो न वेद यस्य रेतः शरीरं यो रेतोऽन्तरो यमयत्येष त आत्मान्तर्याम्यमृतः।
+अदृष्टो द्रष्टाश्रुतः श्रोतामतो मन्ताविज्ञतो विज्ञाता।
+नान्योऽतोऽस्ति द्रष्टा नान्योऽतोऽस्ति श्रोता नान्योऽतोऽस्ति मन्ता नान्योऽतोऽस्ति विज्ञाता।
+एष त आत्मान्तर्याम्यमृतः।
+अतोऽन्यदार्तम्।
+ततो होद्दालक आरुणिरुपरराम॥', 'yo retasi tiṣṭhaṃ retaso ''ntaro yaṃ reto na veda yasya retaḥ śarīraṃ yo reto ''ntaro yamayaty eṣa ta ātmāntaryāmy amṛtaḥ
+adṛṣṭo draṣṭāśrutaḥ śrotāmato mantāvijñato vijñātā
+nānyo ''to ''sti draṣṭā nānyo ''to ''sti śrotā nānyo ''to ''sti mantā nānyo ''to ''sti vijñātā
+eṣa ta ātmāntaryāmy amṛtaḥ
+ato ''nyad ārtam
+tato hoddālaka āruṇir upararāma', null, 3007023)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-8-1', 1, 'Chapter 3, Section 8, Verse 1', 'अथ ह वाचक्नव्युवाच -- ब्राह्मणा भगवन्तो हन्ताहमिमं द्वौ प्रश्नौ प्रक्ष्यामि।
+तौ चेन्मे विवक्ष्यति।
+न वै जातु युष्माकमिमं कश्चिद्ब्रह्मोद्यं जेतेति।
+पृच्छ गार्गीति॥', 'atha ha vācaknavy uvāca -- brāhmaṇā bhagavanto hantāham imaṃ dvau praśnau prakṣyāmi
+tau cen me vivakṣyati
+na vai jātu yuṣmākam imaṃ kaścid brahmodyaṃ jeteti
+pṛccha gārgīti', null, 3008001),
+('brihadaranyaka-3-8-2', 2, 'Chapter 3, Section 8, Verse 2', 'सा होवाच -- अहं वै त्वा याज्ञवल्क्य यथा काश्यो वा वैदेहो वोग्रपुत्र उज्ज्यं धनुरधिज्यं कृत्वा द्वौ बाणवन्तौ सपत्नातिव्याधिनौ हस्ते कृत्वोपोत्तिष्ठेदेवमेवाहं त्वा द्वाभ्यां प्रश्नाभ्यामुपोदस्थाम्।
+तौ मे ब्रूहीति।
+पृच्छ गार्गीति॥', 'sā hovāca -- ahaṃ vai tvā yājñavalkya yathā kāśyo vā vaideho vograputra ujjyaṃ dhanur adhijyaṃ kṛtvā dvau bāṇavantau sapatnātivyādhinau haste kṛtvopottiṣṭhed evam evāhaṃ tvā dvābhyāṃ praśnābhyām upodasthām
+tau me brūhīti
+pṛccha gārgīti', null, 3008002),
+('brihadaranyaka-3-8-3', 3, 'Chapter 3, Section 8, Verse 3', 'सा होवाच -- यदूर्ध्वं याज्ञवल्क्य दिवो यदवाक्पृथिव्या यदन्तरा द्यावापृथिवी इमे यद्भूतं च भवच्च भविष्यच्चेत्याचक्षते कस्मिंस्तदोतं च प्रोतं चेति॥', 'sā hovāca -- yad ūrdhvaṃ yājñavalkya divo yad avāk pṛthivyā yad antarā dyāvāpṛthivī ime yad bhūtaṃ ca bhavac ca bhaviṣyac cety ācakṣate kasmiṃs tad otaṃ ca protaṃ ceti', null, 3008003),
+('brihadaranyaka-3-8-4', 4, 'Chapter 3, Section 8, Verse 4', 'स होवाच -- यदूर्ध्वं गार्गि दिवो यदवाक्पृथिव्या यदन्तरा द्यावापृथिवी इमे यद्भूतं च भवच्च भविष्यच्चेत्याचक्षत आकाशे तदोतं च प्रोतं चेति॥', 'sa hovāca -- yad ūrdhvaṃ gārgi divo yad avāk pṛthivyā yad antarā dyāvāpṛthivī ime yad bhūtaṃ ca bhavac ca bhaviṣyac cety ācakṣata ākāśe tad otaṃ ca protaṃ ceti', null, 3008004),
+('brihadaranyaka-3-8-5', 5, 'Chapter 3, Section 8, Verse 5', 'सा होवच -- नमस्तेऽस्तु याज्ञवल्क्य यो म एतं व्यवोचोऽपरस्मै धारयस्वेति पृच्छ गार्गीति॥', 'sā hovaca -- namas te ''stu yājñavalkya yo ma etaṃ vyavoco ''parasmai dhārayasveti pṛccha gārgīti', null, 3008005),
+('brihadaranyaka-3-8-6', 6, 'Chapter 3, Section 8, Verse 6', 'सा होवाच -- यदूर्ध्वं याज्ञवल्क्य दिवो यदवाक्पृथिव्या यदन्तरा द्यावापृथिवी इमे यद्भूतं च भवच्च भविष्यच्चेत्याचक्षते कस्मिंस्तदोतं च प्रोतं चेति॥', 'sā hovāca -- yad ūrdhvaṃ yājñavalkya divo yad avāk pṛthivyā yad antarā dyāvāpṛthivī ime yad bhūtaṃ ca bhavac ca bhaviṣyac cety ācakṣate kasmiṃs tad otaṃ ca protaṃ ceti', null, 3008006),
+('brihadaranyaka-3-8-7', 7, 'Chapter 3, Section 8, Verse 7', 'स होवाच -- यदूर्ध्वं गार्गि दिवो यदवाक्पृथिव्या यदन्तरा द्यावापृथिवी इमे यद्भूतं च भवच्च भविष्यच्चेत्याचक्षत आकाश एव तदोतं च प्रोतं चेति।
+कस्मिन्नु खल्वाकाश ओतश्च प्रोतश्चेति॥', 'sa hovāca -- yad ūrdhvaṃ gārgi divo yad avāk pṛthivyā yad antarā dyāvāpṛthivī ime yad bhūtaṃ ca bhavac ca bhaviṣyac cety ācakṣata ākāśa eva tad otaṃ ca protaṃ ceti
+kasmin nu khalv ākāśa otaś ca protaś ceti', null, 3008007),
+('brihadaranyaka-3-8-8', 8, 'Chapter 3, Section 8, Verse 8', 'स होवाच -- एतद्वै तदक्षरं गार्गि ब्राह्मणा अभिवदन्त्यस्थूलमनण्वह्रस्वमदीर्घमलोहितमस्नेहमच्छायमतमोऽवाय्वनाकाशमसङ्गमरसमगन्धमचक्षुष्कमश्रोत्रमवागमनोऽतेजस्कमप्राणममुखमगात्रमनन्तरमबाह्यम्(वर्फ़ोरगात्रम्: अमात्रम्)।
+न तदश्नाति किं चन।
+न तदश्नाति कश्चन॥', 'sa hovāca -- etad vai tad akṣaraṃ gārgi brāhmaṇā abhivadanty asthūlam anaṇv ahrasvam adīrgham alohitam asneham acchāyam atamo ''vāyv anākāśam asaṅgam arasam agandham acakṣuṣkam aśrotram avāg amano ''tejaskam aprāṇam amukham agātram anantaram abāhyam (var for agātram: amātram)
+na tad aśnāti kiṃ cana
+na tad aśnāti kaś cana', null, 3008008),
+('brihadaranyaka-3-8-9', 9, 'Chapter 3, Section 8, Verse 9', 'एतस्य वा अक्षरस्य प्रशासने गार्गि सूर्यचन्द्रमसौ विधृतौ तिष्ठतः।
+एतस्य वा अक्षरस्य प्रशासने गार्गि द्यावापृथिव्यौ विधृते तिष्ठतः।
+एतस्य वा अक्षरस्य प्रशासने गार्गि निमेषा मुहूर्ता अहोरात्राण्यर्धमासा मासा ऋतवः संवत्सरा इति विधृतास्तिष्ठन्ति।
+एतस्य वा अक्षरस्य प्रशासने गार्गि प्राच्योऽन्या नद्यः स्यन्दन्ते श्वेतेभ्यः पर्वतेभ्यः प्रतीच्योऽन्या यां यां च दिशमनु।
+एतस्य वा अक्षरस्य प्रशासने गार्गि मनुष्याः प्रशसन्ति यजमानं देवा दर्वीं पितरोऽन्वायत्ताः॥', 'etasya vā akṣarasya praśāsane gārgi sūryacandramasau vidhṛtau tiṣṭhataḥ
+etasya vā akṣarasya praśāsane gārgi dyāvāpṛthivyau vidhṛte tiṣṭhataḥ
+etasya vā akṣarasya praśāsane gārgi nimeṣā muhūrtā ahorātrāṇy ardhamāsā māsā ṛtavaḥ saṃvatsarā iti vidhṛtās tiṣṭhanti
+etasya vā akṣarasya praśāsane gārgi prācyo ''nyā nadyaḥ syandante śvetebhyaḥ parvatebhyaḥ pratīcyo ''nyā yāṃ yāṃ ca diśam anu
+etasya vā akṣarasya praśāsane gārgi manuṣyāḥ praśasanti yajamānaṃ devā darvīṃ pitaro ''nvāyattāḥ', null, 3008009),
+('brihadaranyaka-3-8-10', 10, 'Chapter 3, Section 8, Verse 10', 'यो वा एतदक्षरम्गार्ग्यविदित्वास्मिंल्लोके जुहोति यजते तपस्तप्यते बहूनि वर्षसहस्राण्यन्तवदेवास्य तद्भवति यो वा एतदक्षरमविदित्वा गार्ग्यविदित्वास्माल्लोकात्प्रैति स कृपणः।
+अथ य एतदक्षरं गार्गि विदित्वास्माल्लोकात्प्रैति स ब्राह्मणः॥', 'yo vā etad akṣaram gārgy aviditvāsmiṃl loke juhoti yajate tapas tapyate bahūni varṣasahasrāṇy antavad evāsya tad bhavati yo vā etad akṣaram aviditvā gārgy aviditvāsmāl lokāt praiti sa kṛpaṇaḥ
+atha ya etad akṣaraṃ gārgi viditvāsmāl lokāt praiti sa brāhmaṇaḥ', null, 3008010),
+('brihadaranyaka-3-8-11', 11, 'Chapter 3, Section 8, Verse 11', 'तद्वा एतदक्षरं गार्ग्यदृष्टं द्रष्ट्रश्रुतं श्रोत्रमतं मन्त्रविज्ञातं विज्ञातृ।
+नान्यदतोऽस्ति द्रष्टृ।
+नान्यदतोऽस्ति श्रोतृ।
+नान्यदतोऽस्ति मन्तृ।
+नान्यदतोऽस्ति विज्ञातृ।
+एतस्मिन्नु खल्वक्षरे गार्ग्याकाश ओतश्च प्रोतश्च॥', 'tad vā etad akṣaraṃ gārgy adṛṣṭaṃ draṣṭraśrutaṃ śrotramataṃ mantravijñātaṃ vijñātṛ
+nānyad ato ''sti draṣṭṛ
+nānyad ato ''sti śrotṛ
+nānyad ato ''sti mantṛ
+nānyad ato ''sti vijñātṛ
+etasmin nu khalv akṣare gārgy ākāśa otaś ca protaś ca', null, 3008011),
+('brihadaranyaka-3-8-12', 12, 'Chapter 3, Section 8, Verse 12', 'सा होवाच -- ब्राह्मणा भगवन्तस्तदेव बहु मन्यध्वं यदस्मान्नमस्कारेण मुच्येध्वम्।
+न वै जातु युष्माकमिमं कश्चिद्ब्रह्मोद्यं जेतेति।
+ततो ह वाचक्नव्युपरराम॥', 'sā hovāca -- brāhmaṇā bhagavantas tad eva bahu manyadhvaṃ yad asmān namaskāreṇa mucyedhvam
+na vai jātu yuṣmākam imaṃ kaścid brahmodyaṃ jeteti
+tato ha vācaknavy upararāma', null, 3008012)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-3-9-1', 1, 'Chapter 3, Section 9, Verse 1', 'अथ हैनं विदग्धः शाकल्यः पप्रच्छ -- कति देवा याज्ञवल्क्येति।
+स हैतयैव निविदा प्रतिपेदे यावन्तो वैश्वदेवस्य निविद्युच्यन्ते।
+त्रयश्च त्री च शता त्रयश्च त्री च सहस्रेति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+त्रयस्त्रिंशदिति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+षडिति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+त्रय इति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+द्वाविति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+अध्यर्ध इति।
+ओमिति होवाच।
+कत्येव देवा याज्ञवल्क्येति।
+एक इति।
+ओमिति होवाच।
+कतमे ते त्रयश्च त्री च शता त्रयश्च त्री च सहस्रेति॥', 'atha hainaṃ vidagdhaḥ śākalyaḥ papraccha -- kati devā yājñavalkyeti
+sa haitayaiva nividā pratipede yāvanto vaiśvadevasya nividy ucyante
+trayaś ca trī ca śatā trayaś ca trī ca sahasreti
+om iti hovāca
+katy eva devā yājñavalkyeti
+trayastriṃśad iti
+om iti hovāca
+katy eva devā yājñavalkyeti
+ṣaḍ iti
+om iti hovāca
+katy eva devā yājñavalkyeti
+traya iti
+om iti hovāca
+katy eva devā yājñavalkyeti
+dvāv iti
+om iti hovāca
+katy eva devā yājñavalkyeti
+adhyardha iti
+om iti hovāca
+katy eva devā yājñavalkyeti
+eka iti
+om iti hovāca
+katame te trayaś ca trī ca śatā trayaś ca trī ca sahasreti', null, 3009001),
+('brihadaranyaka-3-9-2', 2, 'Chapter 3, Section 9, Verse 2', 'स होवाच -- महिमान एवैषामेते।
+त्रयस्त्रिंशत्त्वेव देवा इति।
+कतमे ते त्रयस्त्रिंशदिति।
+अष्टौ वसव एकादश रुद्रा द्वादशादित्याः त एकत्रिंशदैन्द्रश्चैव प्रजापतिश्च त्रयस्त्रिंशाविति॥', 'sa hovāca -- mahimāna evaiṣām ete
+trayastriṃśat tv eva devā iti
+katame te trayastriṃśad iti
+aṣṭau vasava ekādaśa rudrā dvādaśādityāḥ ta ekatriṃśad aindraś caiva prajāpatiś ca trayastriṃśāv iti', null, 3009002),
+('brihadaranyaka-3-9-3', 3, 'Chapter 3, Section 9, Verse 3', 'कतमे वसव इति।
+अग्निश्च पृथिवी च वायुश्चान्तरिक्षं चादित्यश्च द्यौः च चन्द्रमाश्च नक्षत्राणि चैते वसवः।
+एतेषु हीदं सर्वं वसु हितं इति तस्माद्वसव इति॥', 'katame vasava iti
+agniś ca pṛthivī ca vāyuś cāntarikṣaṃ cādityaś ca dyauḥ ca candramāś ca nakṣatrāṇi caite vasavaḥ
+eteṣu hīdaṃ sarvaṃ vasu hitaṃ iti tasmād vasava iti', null, 3009003),
+('brihadaranyaka-3-9-4', 4, 'Chapter 3, Section 9, Verse 4', 'कतमे रुद्रा इति।
+दशेमे पुरुषे प्राणा आत्मैकादशः।
+ते यदास्माच्छरीरान्मर्त्यादुत्क्रामन्त्यथ रोदयन्ति।
+तद्यद्रोदयन्ति तस्माद्रुद्रा इति॥', 'katame rudrā iti
+daśeme puruṣe prāṇā ātmaikādaśaḥ
+te yadāsmāc charīrān martyād utkrāmanty atha rodayanti
+tad yad rodayanti tasmād rudrā iti', null, 3009004),
+('brihadaranyaka-3-9-5', 5, 'Chapter 3, Section 9, Verse 5', 'कतम आदित्या इति।
+द्वादश वै मासाः संवत्सरस्यैत आदित्याः।
+एते हीदं सर्वमाददाना यन्ति।
+ते यदिदं सर्वमाददाना यन्ति तस्मादादित्या इति॥', 'katama ādityā iti
+dvādaśa vai māsāḥ saṃvatsarasyaita ādityāḥ
+ete hīdaṃ sarvam ādadānā yanti
+te yad idaṃ sarvam ādadānā yanti tasmād ādityā iti', null, 3009005),
+('brihadaranyaka-3-9-6', 6, 'Chapter 3, Section 9, Verse 6', 'कतम इन्द्रः कतमः प्रजापतिरिति।
+स्तनयित्नुरेवेन्द्रो यज्ञः प्रजापतिरिति।
+कतमः स्तनयित्नुरिति।
+अशनिरिति।
+कतमो यज्ञ इति।
+पशव इति॥', 'katama indraḥ katamaḥ prajāpatir iti
+stanayitnur evendro yajñaḥ prajāpatir iti
+katamaḥ stanayitnur iti
+aśanir iti
+katamo yajña iti
+paśava iti', null, 3009006),
+('brihadaranyaka-3-9-7', 7, 'Chapter 3, Section 9, Verse 7', 'कतमे षडिति।
+अग्निश्च पृथिवी च वायुश्चान्तरिक्षश्चादित्यश्च द्यौश्चैते षट्।
+एते हीदं सर्वं षडिति॥', 'katame ṣaḍ iti
+agniś ca pṛthivī ca vāyuś cāntarikṣaś cādityaś ca dyauś caite ṣaṭ
+ete hīdaṃ sarvaṃ ṣaḍ iti', null, 3009007),
+('brihadaranyaka-3-9-8', 8, 'Chapter 3, Section 9, Verse 8', 'कतमे ते त्रयो देवा इति।
+इम एव त्रयो लोकाः।
+एषु हीमे सर्वे देवा इति।
+कतमौ तौ द्वौ देवा इति।
+अन्नं चैव प्राणश्चेति।
+कतमोऽध्यर्ध इति।
+योऽयं पवत इति॥', 'katame te trayo devā iti
+ima eva trayo lokāḥ
+eṣu hīme sarve devā iti
+katamau tau dvau devā iti
+annaṃ caiva prāṇaś ceti
+katamo ''dhyardha iti
+yo ''yaṃ pavata iti', null, 3009008),
+('brihadaranyaka-3-9-9', 9, 'Chapter 3, Section 9, Verse 9', 'तदाहुर्यदयमेक इवैव पवते।
+अथ कथमध्यर्ध इति।
+यदस्मिन्निदं सर्वमध्यार्ध्नोत्तेनाध्यर्ध इति।
+कतम एको देव इति।
+प्राण इति।
+स ब्रह्म त्यदित्याचक्षते॥', 'tad āhur yad ayam eka ivaiva pavate
+atha katham adhyardha iti
+yad asminn idaṃ sarvam adhyārdhnot tenādhyardha iti
+katama eko deva iti
+prāṇa iti
+sa brahma tyad ity ācakṣate', null, 3009009),
+('brihadaranyaka-3-9-10', 10, 'Chapter 3, Section 9, Verse 10', 'पृथिव्येव यस्यायतनमग्निर्लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायं शारीरः पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+अमृतमिति होवाच॥', 'pṛthivy eva yasyāyatanam agnir loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyaṃ śārīraḥ puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+amṛtam iti hovāca', null, 3009010),
+('brihadaranyaka-3-9-11', 11, 'Chapter 3, Section 9, Verse 11', 'काम एव यस्यायतनं हृदयं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायं काममयः पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+स्त्रिय इति होवाच॥', 'kāma eva yasyāyatanaṃ hṛdayaṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyaṃ kāmamayaḥ puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+striya iti hovāca', null, 3009011),
+('brihadaranyaka-3-9-12', 12, 'Chapter 3, Section 9, Verse 12', 'रूपाण्येव यस्यायतनं चक्षुर्लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवासावादित्ये पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+सत्यमिति होवाच॥', 'rūpāṇy eva yasyāyatanaṃ cakṣur loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāsāv āditye puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+satyam iti hovāca', null, 3009012),
+('brihadaranyaka-3-9-13', 13, 'Chapter 3, Section 9, Verse 13', 'आकश एव यस्यायतनं श्रोत्रं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायम्श्रौतः प्रातिश्रुत्कः पुरुषः स एष।
+वदैव शाकल्य तस्य का देवतेति।
+दिश इति होवच॥', 'ākaśa eva yasyāyatanaṃ śrotraṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyam śrautaḥ prātiśrutkaḥ puruṣaḥ sa eṣa
+vadaiva śākalya tasya kā devateti
+diśa iti hovaca', null, 3009013),
+('brihadaranyaka-3-9-14', 14, 'Chapter 3, Section 9, Verse 14', 'तम एव यस्यायतनं हृदयं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायं छायामयः पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+मृत्युरिति होवाच॥', 'tama eva yasyāyatanaṃ hṛdayaṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyaṃ chāyāmayaḥ puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+mṛtyur iti hovāca', null, 3009014),
+('brihadaranyaka-3-9-15', 15, 'Chapter 3, Section 9, Verse 15', 'रूपाण्येव यस्यायतनं हृदयं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायमादर्शे पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+सत्यमिति होवाच॥', 'rūpāṇy eva yasyāyatanaṃ hṛdayaṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyam ādarśe puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+satyam iti hovāca', null, 3009015),
+('brihadaranyaka-3-9-16', 16, 'Chapter 3, Section 9, Verse 16', 'आप एव यस्यायतनं हृदयं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायं अप्सु पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+वरुण इति होवाच॥', 'āpa eva yasyāyatanaṃ hṛdayaṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyaṃ apsu puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+varuṇa iti hovāca', null, 3009016),
+('brihadaranyaka-3-9-17', 17, 'Chapter 3, Section 9, Verse 17', 'रेत एव यस्यायतनं हृदयं लोको मनो ज्योतिर्यो वै तं पुरुषं विद्यात्सर्वस्यात्मनः परायणं स वै वेदिता स्यात्।
+याज्ञवल्क्य वेद वा अहं तं पुरुषं सर्वस्यात्मनः परायणं यमात्थ।
+य एवायं पुत्रमयः पुरुषः स एषः।
+वदैव शाकल्य तस्य का देवतेति।
+प्रजापतिरिति होवाच॥', 'reta eva yasyāyatanaṃ hṛdayaṃ loko mano jyotir yo vai taṃ puruṣaṃ vidyāt sarvasyātmanaḥ parāyaṇaṃ sa vai veditā syāt
+yājñavalkya veda vā ahaṃ taṃ puruṣaṃ sarvasyātmanaḥ parāyaṇaṃ yam āttha
+ya evāyaṃ putramayaḥ puruṣaḥ sa eṣaḥ
+vadaiva śākalya tasya kā devateti
+prajāpatir iti hovāca', null, 3009017),
+('brihadaranyaka-3-9-18', 18, 'Chapter 3, Section 9, Verse 18', 'शाकल्येति होवाच याज्ञवल्क्यः।
+त्वां स्विदिमे ब्राह्मणा अङ्गारावक्षयणमक्रता३ इति॥', 'śākalyeti hovāca yājñavalkyaḥ
+tvāṃ svid ime brāhmaṇā aṅgārāvakṣayaṇam akratā3 iti', null, 3009018),
+('brihadaranyaka-3-9-19', 19, 'Chapter 3, Section 9, Verse 19', 'याज्ञवल्क्येति होवाच शाकल्यः।
+यदिदं कुरुपञ्चालानां ब्राह्मनानत्यवादीः किं ब्रह्म विद्वानिति।
+दिशो वेद सदेवाः सप्रतिष्ठा इति।
+यद्दिशो वेत्थ सदेवाः सप्रतिष्ठाः॥', 'yājñavalkyeti hovāca śākalyaḥ
+yad idaṃ kurupañcālānāṃ brāhmanān atyavādīḥ kiṃ brahma vidvān iti
+diśo veda sadevāḥ sapratiṣṭhā iti
+yad diśo vettha sadevāḥ sapratiṣṭhāḥ', null, 3009019),
+('brihadaranyaka-3-9-20', 20, 'Chapter 3, Section 9, Verse 20', 'किंदेवतोऽस्यां प्राच्यां दिश्यसीति।
+आदित्यदेवत इति।
+स आदित्यः कस्मिन्प्रतिष्ठित इति।
+चक्षुषीति।
+कस्मिन्नु चक्षुः प्रतिष्ठितमिति।
+रूपेष्विति।
+चक्षुषा हि रूपाणि पश्यति।
+कस्मिन्नु रूपाणि प्रतिष्ठितानीति।
+हृदय इति होवाच।
+हृदयेन हि रूपाणि जानाति।
+हृदये ह्येव रूपाणि प्रतिष्ठितानि भवन्तीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'kiṃdevato ''syāṃ prācyāṃ diśy asīti
+ādityadevata iti
+sa ādityaḥ kasmin pratiṣṭhita iti
+cakṣuṣīti
+kasmin nu cakṣuḥ pratiṣṭhitam iti
+rūpeṣv iti
+cakṣuṣā hi rūpāṇi paśyati
+kasmin nu rūpāṇi pratiṣṭhitānīti
+hṛdaya iti hovāca
+hṛdayena hi rūpāṇi jānāti
+hṛdaye hy eva rūpāṇi pratiṣṭhitāni bhavantīti
+evam evaitad yājñavalkya', null, 3009020),
+('brihadaranyaka-3-9-21', 21, 'Chapter 3, Section 9, Verse 21', 'किंदेवतोऽस्यां दक्षिणायां दिश्यसीति।
+यमदेवत इति।
+स यमः कस्मिन्प्रतिष्ठित इति।
+यज्ञ इति।
+कस्मिन्नु यज्ञः प्रतिष्ठित इति।
+दक्षिणायामिति।
+कस्मिन्नु दक्षिणा प्रतिष्ठितेति।
+श्रद्धायामिति।
+यदा ह्येव श्रद्धत्तेऽथ दक्षिणां ददाति।
+श्रद्धायां ह्येव दक्षिणा प्रतिष्ठितेति।
+कस्मिन्नु श्रद्धा प्रतिष्ठितेति।
+हृदय इति होवाच।
+हृदयेन हि श्रद्धाम्।
+हृदये ह्येव श्रद्धा प्रतिष्ठिता भवतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'kiṃdevato ''syāṃ dakṣiṇāyāṃ diśy asīti
+yamadevata iti
+sa yamaḥ kasmin pratiṣṭhita iti
+yajña iti
+kasmin nu yajñaḥ pratiṣṭhita iti
+dakṣiṇāyām iti
+kasmin nu dakṣiṇā pratiṣṭhiteti
+śraddhāyām iti
+yadā hy eva śraddhatte ''tha dakṣiṇāṃ dadāti
+śraddhāyāṃ hy eva dakṣiṇā pratiṣṭhiteti
+kasmin nu śraddhā pratiṣṭhiteti
+hṛdaya iti hovāca
+hṛdayena hi śraddhām
+hṛdaye hy eva śraddhā pratiṣṭhitā bhavatīti
+evam evaitad yājñavalkya', null, 3009021),
+('brihadaranyaka-3-9-22', 22, 'Chapter 3, Section 9, Verse 22', 'किंदेवतोऽस्यां प्रतीच्यां दिश्यसीति।
+वरुणदेवत इति।
+स वरुणः कस्मिन्प्रतिष्ठित इति।
+अप्स्विति।
+कस्मिन्न्वापः प्रतिष्ठिता इति।
+रेतसीति।
+कस्मिन्नु रेतः प्रतिष्ठितमिति।
+हृदय इति।
+तस्मादपि प्रतिरूपं जातमाहुर्हृदयादिव सृप्तो हृदयादिव निर्मित इति।
+हृदये ह्येव रेतः प्रतिष्ठितं भवतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'kiṃdevato ''syāṃ pratīcyāṃ diśy asīti
+varuṇadevata iti
+sa varuṇaḥ kasmin pratiṣṭhita iti
+apsv iti
+kasmin nv āpaḥ pratiṣṭhitā iti
+retasīti
+kasmin nu retaḥ pratiṣṭhitam iti
+hṛdaya iti
+tasmād api pratirūpaṃ jātam āhur hṛdayād iva sṛpto hṛdayād iva nirmita iti
+hṛdaye hy eva retaḥ pratiṣṭhitaṃ bhavatīti
+evam evaitad yājñavalkya', null, 3009022),
+('brihadaranyaka-3-9-23', 23, 'Chapter 3, Section 9, Verse 23', 'किंदेवतोऽस्यामुदीच्यां दिश्यसीति।
+सोमदेवत इति।
+स सोमः कस्मिन्प्रतिष्ठित इति।
+दीक्षायामिति।
+कस्मिन्नु दिक्षा प्रतिष्ठितेति।
+सत्य इति।
+तस्मादपि दीक्षितमाहुः सत्यं वदेति।
+सत्ये ह्येव दीक्षा प्रतिष्ठितेति।
+कस्मिन्नु सत्यं प्रतिष्ठितमिति।
+हृदय इति होवाच।
+हृदयेन हि सत्यं जानाति।
+हृदये ह्येव सत्यं प्रतिष्ठितं भवतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'kiṃdevato ''syām udīcyāṃ diśy asīti
+somadevata iti
+sa somaḥ kasmin pratiṣṭhita iti
+dīkṣāyām iti
+kasmin nu dikṣā pratiṣṭhiteti
+satya iti
+tasmād api dīkṣitam āhuḥ satyaṃ vadeti
+satye hy eva dīkṣā pratiṣṭhiteti
+kasmin nu satyaṃ pratiṣṭhitam iti
+hṛdaya iti hovāca
+hṛdayena hi satyaṃ jānāti
+hṛdaye hy eva satyaṃ pratiṣṭhitaṃ bhavatīti
+evam evaitad yājñavalkya', null, 3009023),
+('brihadaranyaka-3-9-24', 24, 'Chapter 3, Section 9, Verse 24', 'किंदेवतोऽस्यां ध्रुवायां दिश्यसीति।
+अग्निदेवत इति।
+सोऽग्निः कस्मिन्प्रतिष्ठित इति।
+वाचीति।
+कस्मिन्नु वाक्प्रतिष्ठितेति।
+हृदय इति।
+कस्मिन्नु हृदयं प्रतिष्ठितमिति॥', 'kiṃdevato ''syāṃ dhruvāyāṃ diśy asīti
+agnidevata iti
+so ''gniḥ kasmin pratiṣṭhita iti
+vācīti
+kasmin nu vāk pratiṣṭhiteti
+hṛdaya iti
+kasmin nu hṛdayaṃ pratiṣṭhitam iti', null, 3009024),
+('brihadaranyaka-3-9-25', 25, 'Chapter 3, Section 9, Verse 25', 'अहल्लिकेति होवाच याज्ञवल्क्यः।
+यत्रैतदन्यत्रास्मन्मन्यासै।
+यद्ध्येतदन्यत्रास्मत्स्याच्छ्वानो वैनदद्युर्वयांसि वैनद्विमथ्नीरन्निति॥', 'ahalliketi hovāca yājñavalkyaḥ
+yatraitad anyatrāsman manyāsai
+yad dhy etad anyatrāsmat syāc chvāno vainad adyur vayāṃsi vainad vimathnīrann iti', null, 3009025),
+('brihadaranyaka-3-9-26', 26, 'Chapter 3, Section 9, Verse 26', 'कस्मिन्नु त्वं चात्मा च प्रतिष्ठितौ स्थ इति।
+प्राण इति।
+कस्मिन्नु प्राणः प्रतिष्ठित इति।
+अपान इति।
+कस्मिन्न्वपानः प्रतिष्ठित इति।
+व्यान इति।
+कस्मिन्नु व्यानः प्रतिष्ठित इति।
+उदान इति।
+कस्मिन्नूदानः प्रतिष्ठित इति।
+समान इति।
+स एष नेति नेत्यात्मा।
+अगृह्यो न हि गृह्यते।
+अशीर्यो न हि शीर्यते।
+असङ्गो न सज्यते।
+असितो न व्यथते।
+न रिष्यति।
+एतान्यष्टावायतनान्यष्टौ लोका अद्द्. अष्टौ देवा अष्टौ पुरुषाः।
+स यस्तान्पुरुषान्निरुह्य प्रत्युह्यात्यक्रामत्तं त्वौपनिषदं पुरुषं पृच्छामि।
+तं चेन्मे न विवक्ष्यसि मूर्धा ते विपतिष्यतीति।
+तं ह न मेने शाकल्यस्।
+तस्य ह मूर्धा विपपात।
+अपि हास्य परिमोषिणोऽस्थीन्यपजह्रुरन्यन्मन्यमानाः॥', 'kasmin nu tvaṃ cātmā ca pratiṣṭhitau stha iti
+prāṇa iti
+kasmin nu prāṇaḥ pratiṣṭhita iti
+apāna iti
+kasmin nv apānaḥ pratiṣṭhita iti
+vyāna iti
+kasmin nu vyānaḥ pratiṣṭhita iti
+udāna iti
+kasmin nūdānaḥ pratiṣṭhita iti
+samāna iti
+sa eṣa neti nety ātmā
+agṛhyo na hi gṛhyate
+aśīryo na hi śīryate
+asaṅgo na sajyate
+asito na vyathate
+na riṣyati
+etāny aṣṭāv āyatanāny aṣṭau lokā add. aṣṭau devā aṣṭau puruṣāḥ
+sa yas tān puruṣān niruhya pratyuhyātyakrāmat taṃ tvaupaniṣadaṃ puruṣaṃ pṛcchāmi
+taṃ cen me na vivakṣyasi mūrdhā te vipatiṣyatīti
+taṃ ha na mene śākalyas
+tasya ha mūrdhā vipapāta
+api hāsya parimoṣiṇo ''sthīny apajahrur anyan manyamānāḥ', null, 3009026),
+('brihadaranyaka-3-9-27', 27, 'Chapter 3, Section 9, Verse 27', 'अथ होवाच -- ब्राह्मणा भगवन्तो यो वः कामयते स मा पृच्छतु।
+सर्वे वा मा पृच्छत।
+यो वः कामयते तं वः पृच्छामि सर्वान्वा वः पृच्छामीति।
+ते ह ब्राह्मणा न दधृषुः॥', 'atha hovāca -- brāhmaṇā bhagavanto yo vaḥ kāmayate sa mā pṛcchatu
+sarve vā mā pṛcchata
+yo vaḥ kāmayate taṃ vaḥ pṛcchāmi sarvān vā vaḥ pṛcchāmīti
+te ha brāhmaṇā na dadhṛṣuḥ', null, 3009027),
+('brihadaranyaka-3-9-28', 28, 'Chapter 3, Section 9, Verse 28', 'तान्हैतैः श्लोकैः पप्रच्छ -- यथा वृक्षो वनस्पतिस्तथैव पुरुषोऽमृषा।
+तस्य लोमानि पर्णानि त्वगस्योत्पाटिका बहिः।
+त्वच एवास्य रुधिरं प्रस्यन्दि त्वच उत्पटः।
+तस्मात्तदातृण्णात्प्रैति रसो वृक्षादिवाहतात्।
+मांसान्यस्य शकराणि किनाटं स्नाव तत्स्थिरम्।
+अस्थीन्यन्तरतो दारुणि मज्जा मज्जोपमा कृता।
+यद्वृक्षो वृक्णो रोहति मूलान्नवतरः पुनः।
+मर्त्यः स्विन्मृत्युना वृक्णः कस्मान्मूलात्प्ररोहति।
+रेतस इति मा वोचत जीवतस्तत्प्रजायते।
+धानारुह इव वै वृक्षोऽञ्जसा प्रेत्य सम्भवः।
+यत्समूलमावृहेयुर्वृक्षं न पुनराभवेत्।
+मर्त्यः स्विन्मृत्युना वृक्णः कस्मान्मूलात्प्ररोहति।
+जात एव न जायते को न्वेनं जनयेत्पुनः।
+विज्ञानमानन्दं ब्रह्म रातिर्दातुः परायणम्।
+तिष्ठमानस्य तद्विद इति॥', 'tān haitaiḥ ślokaiḥ papraccha -- yathā vṛkṣo vanaspatis tathaiva puruṣo ''mṛṣā
+tasya lomāni parṇāni tvag asyotpāṭikā bahiḥ
+tvaca evāsya rudhiraṃ prasyandi tvaca utpaṭaḥ
+tasmāt tad ātṛṇṇāt praiti raso vṛkṣād ivāhatāt
+māṃsāny asya śakarāṇi kināṭaṃ snāva tat sthiram
+asthīny antarato dāruṇi majjā majjopamā kṛtā
+yad vṛkṣo vṛkṇo rohati mūlān navataraḥ punaḥ
+martyaḥ svin mṛtyunā vṛkṇaḥ kasmān mūlāt prarohati
+retasa iti mā vocata jīvatas tat prajāyate
+dhānāruha iva vai vṛkṣo ''ñjasā pretya sambhavaḥ
+yat samūlam āvṛheyur vṛkṣaṃ na punar ābhavet
+martyaḥ svin mṛtyunā vṛkṇaḥ kasmān mūlāt prarohati
+jāta eva na jāyate ko nv enaṃ janayet punaḥ
+vijñānam ānandaṃ brahma rātir dātuḥ parāyaṇam
+tiṣṭhamānasya tadvida iti', null, 3009028)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-1-1', 1, 'Chapter 4, Section 1, Verse 1', 'जनको ह वैदेह आसां चक्रे।
+अथ ह याज्ञवल्क्य आवव्राज।
+तं होवाच -- याज्ञवल्क्य किमर्थमचारीः पशूनिच्छनण्वन्तानीति।
+उभयमेव संराडिति होवाच॥', 'janako ha vaideha āsāṃ cakre
+atha ha yājñavalkya āvavrāja
+taṃ hovāca -- yājñavalkya kim artham acārīḥ paśūn icchan aṇvantānīti
+ubhayam eva saṃrāḍ iti hovāca', null, 4001001),
+('brihadaranyaka-4-1-2', 2, 'Chapter 4, Section 1, Verse 2', 'यत्ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्मे जित्वा शैलिनिः -- वाग्वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तच्छैलिनिरब्रवीद्वाग्वै ब्रह्मेति।
+अवदतो हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञवल्क्य।
+वागेवायतनमाकाशः प्रतिष्ठा प्रज्ञेत्येनदुपासीत।
+का प्रज्ञता याज्ञवल्क्य।
+वागेव सम्राडिति होवाच।
+वाचा वै सम्राड्बन्धुः प्रज्ञायते।
+ऋग्वेदो यजुर्वेदः सामवेदोऽथर्वाङ्गिरस इतिहासः पुराणं विद्या उपनिषदः श्लोकाः सूत्राण्यनुव्याख्यानानि व्याख्यानानीष्टं हुतमाशितं पायितमयं च लोकः परश्च लोकः सर्वाणि च भूतानि वाचैव संराट्प्रज्ञायन्ते।
+वाग्वै सम्राट्परमं ब्रह्म।
+नैनं वाग्जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहः।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yat te kaścid abravīt tac chṛṇavāmeti
+abravīn me jitvā śailiniḥ -- vāg vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā tac chailinir abravīd vāg vai brahmeti
+avadato hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñavalkya
+vāg evāyatanam ākāśaḥ pratiṣṭhā prajñety enad upāsīta
+kā prajñatā yājñavalkya
+vāg eva samrāḍ iti hovāca
+vācā vai samrāḍ bandhuḥ prajñāyate
+ṛgvedo yajurvedaḥ sāmavedo ''tharvāṅgirasa itihāsaḥ purāṇaṃ vidyā upaniṣadaḥ ślokāḥ sūtrāṇy anuvyākhyānāni vyākhyānānīṣṭaṃ hutam āśitaṃ pāyitam ayaṃ ca lokaḥ paraś ca lokaḥ sarvāṇi ca bhūtāni vācaiva saṃrāṭ prajñāyante
+vāg vai samrāṭ paramaṃ brahma
+nainaṃ vāg jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehaḥ
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001002),
+('brihadaranyaka-4-1-3', 3, 'Chapter 4, Section 1, Verse 3', 'यदेव ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्म उदङ्कः शौल्बायनः।
+प्राणो वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तच्छौल्बायनोऽब्रवीत्प्राणो वै ब्रह्मेति।
+अप्राणतो हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञवल्क्य।
+प्राण एवायतनमाकाशः प्रतिष्ठा।
+प्रियमित्येनदुपासीत।
+का प्रियता याज्ञवल्क्य।
+प्राण एव सम्राडिति होवाच।
+प्राणस्य वै सम्राट्कामायायाज्यं याजयति।
+अप्रतिगृह्यस्य प्रतिगृह्णाति।
+अपि तत्र वधाशङ्का भवति यां दिशमेति प्राणस्यैव सम्राट्कामाय।
+प्राणो वै सम्राट्परमं ब्रह्म।
+नैनं प्राणो जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहह्।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yad eva te kaścid abravīt tac chṛṇavāmeti
+abravīn ma udaṅkaḥ śaulbāyanaḥ
+prāṇo vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā tac chaulbāyano ''bravīt prāṇo vai brahmeti
+aprāṇato hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñavalkya
+prāṇa evāyatanam ākāśaḥ pratiṣṭhā
+priyam ity enad upāsīta
+kā priyatā yājñavalkya
+prāṇa eva samrāḍ iti hovāca
+prāṇasya vai samrāṭ kāmāyāyājyaṃ yājayati
+apratigṛhyasya pratigṛhṇāti
+api tatra vadhāśaṅkā bhavati yāṃ diśam eti prāṇasyaiva samrāṭ kāmāya
+prāṇo vai samrāṭ paramaṃ brahma
+nainaṃ prāṇo jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehah
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001003),
+('brihadaranyaka-4-1-4', 4, 'Chapter 4, Section 1, Verse 4', 'यदेव ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्मे बर्कुर्वार्ष्णः।
+चक्षुर्वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तद्वार्ष्णोऽब्रवीच्चक्षुर्वै ब्रह्मेति।
+अपश्यतो हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञवल्क्य।
+चक्षुरेवायतनमाकाशः प्रतिष्ठा।
+सत्यमित्येतदुपासीत।
+का सत्यता याज्ञवल्क्य।
+चक्षुरेव सम्राडिति होवाच।
+चक्षुषा वै सम्राट्पश्यन्तमाहुरद्राक्षीरिति।
+स आहाद्राक्षमिति तत्सत्यं भवति।
+चक्षुर्वै सम्राट्परमं ब्रह्म।
+नैनम्चक्षुर्जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहः।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yad eva te kaścid abravīt tac chṛṇavāmeti
+abravīn me barkur vārṣṇaḥ
+cakṣur vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā tad vārṣṇo ''bravīc cakṣur vai brahmeti
+apaśyato hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñavalkya
+cakṣur evāyatanam ākāśaḥ pratiṣṭhā
+satyam ity etad upāsīta
+kā satyatā yājñavalkya
+cakṣur eva samrāḍ iti hovāca
+cakṣuṣā vai samrāṭ paśyantam āhur adrākṣīr iti
+sa āhādrākṣam iti tat satyaṃ bhavati
+cakṣur vai samrāṭ paramaṃ brahma
+nainam cakṣur jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehaḥ
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001004),
+('brihadaranyaka-4-1-5', 5, 'Chapter 4, Section 1, Verse 5', 'यदेव ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्मे गर्दभीविपीतो भारद्वाजः।
+श्रोत्रं वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तद्भारद्वाजोऽब्रवीच्छ्रोत्रं वै ब्रह्मेति।
+अशृण्वतो हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञवल्क्य।
+श्रोत्रमेवायतनमाकाशः प्रतिष्ठानन्तमित्येनदुपासीत।
+कानन्तता याज्ञवल्क्य।
+दिश एव सम्राडिति होवाच।
+तस्माद्वै सम्राडपि यां काञ्च दिशं गच्छति नैवास्या अन्तं गच्छति।
+अनन्ता हि दिशः।
+दिशो वै सम्राट्श्रोत्रम्।
+श्रोत्रं वै सम्राट्परमं ब्रह्म।
+नैनं श्रोत्रं जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहः।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yad eva te kaścid abravīt tac chṛṇavāmeti
+abravīn me gardabhīvipīto bhāradvājaḥ
+śrotraṃ vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā tad bhāradvājo ''bravīc chrotraṃ vai brahmeti
+aśṛṇvato hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñavalkya
+śrotram evāyatanam ākāśaḥ pratiṣṭhānantam ity enad upāsīta
+kānantatā yājñavalkya
+diśa eva samrāḍ iti hovāca
+tasmād vai samrāḍ api yāṃ kāñca diśaṃ gacchati naivāsyā antaṃ gacchati
+anantā hi diśaḥ
+diśo vai samrāṭ śrotram
+śrotraṃ vai samrāṭ paramaṃ brahma
+nainaṃ śrotraṃ jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehaḥ
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001005),
+('brihadaranyaka-4-1-6', 6, 'Chapter 4, Section 1, Verse 6', 'यदेव ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्मे सत्यकामो जाबालः -- मनो वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तज्जाबालोऽब्रवीन्मनो वै ब्रह्मेति।
+अमनसो हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञावल्क्य।
+मन एवायतनमाकाशः प्रतिष्ठानन्द इत्येनदुपासीत।
+कानन्दता याज्ञवल्क्य।
+मन एव सम्राडिति होवाच मनसा वै सम्राट्स्त्रियमभि हार्यति तस्यां प्रतिरूपः पुत्रो जायते।
+स आनन्दः।
+मनो वै सम्राट्परमं ब्रह्म।
+नैनं मनो जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहः।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yad eva te kaścid abravīt tac chṛṇavāmeti
+abravīn me satyakāmo jābālaḥ -- mano vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā taj jābālo ''bravīn mano vai brahmeti
+amanaso hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñāvalkya
+mana evāyatanam ākāśaḥ pratiṣṭhānanda ity enad upāsīta
+kānandatā yājñavalkya
+mana eva samrāḍ iti hovāca manasā vai samrāṭ striyam abhi hāryati tasyāṃ pratirūpaḥ putro jāyate
+sa ānandaḥ
+mano vai samrāṭ paramaṃ brahma
+nainaṃ mano jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehaḥ
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001006),
+('brihadaranyaka-4-1-7', 7, 'Chapter 4, Section 1, Verse 7', 'यदेव ते कश्चिदब्रवीत्तच्छृणवामेति।
+अब्रवीन्मे विदग्धः शाकल्यः।
+हृदयं वै ब्रह्मेति।
+यथा मातृमान्पितृमानाचार्यवान्ब्रूयात्तथा तच्छाकल्योऽब्रवीद्धृदयं वै ब्रह्मेति।
+अहृदयस्य हि किं स्यादिति।
+अब्रवीत्तु ते तस्यायतनं प्रतिष्ठाम्।
+न मेऽब्रवीदिति।
+एकपाद्वा एतत्सम्राडिति।
+स वै नो ब्रूहि याज्ञवल्क्य।
+हृदयमेवायतनमाकाशः प्रतिष्ठा।
+स्थितिरित्येनदुपासीत।
+का स्थितिता याज्ञवल्क्य।
+हृदयमेव सम्राडिति होवाच।
+हृदयं वै सम्राट्सर्वेषां भूतानामायतनम्।
+हृदयं वै सम्राट्सर्वेषां भूतानां प्रतिष्ठा।
+हृदये ह्येव सम्राट्सर्वाणि भूतानि प्रतिष्ठितानि भवन्ति।
+हृदयं वै सम्राट्परमं ब्रह्म।
+नैनं हृदयं जहाति।
+सर्वाण्येनं भूतान्यभिक्षरन्ति।
+देवो भूत्वा देवानप्येति।
+य एवं विद्वानेतदुपास्ते।
+हस्त्यृषभं सहस्रं ददामीति होवाच जनको वैदेहः।
+स होवाच याज्ञवल्क्यः -- पिता मेऽमन्यत नाननुशिष्य हरेतेति॥', 'yad eva te kaścid abravīt tac chṛṇavāmeti
+abravīn me vidagdhaḥ śākalyaḥ
+hṛdayaṃ vai brahmeti
+yathā mātṛmān pitṛmān ācāryavān brūyāt tathā tac chākalyo ''bravīd dhṛdayaṃ vai brahmeti
+ahṛdayasya hi kiṃ syād iti
+abravīt tu te tasyāyatanaṃ pratiṣṭhām
+na me ''bravīd iti
+ekapād vā etat samrāḍ iti
+sa vai no brūhi yājñavalkya
+hṛdayam evāyatanam ākāśaḥ pratiṣṭhā
+sthitir ity enad upāsīta
+kā sthititā yājñavalkya
+hṛdayam eva samrāḍ iti hovāca
+hṛdayaṃ vai samrāṭ sarveṣāṃ bhūtānām āyatanam
+hṛdayaṃ vai samrāṭ sarveṣāṃ bhūtānāṃ pratiṣṭhā
+hṛdaye hy eva samrāṭ sarvāṇi bhūtāni pratiṣṭhitāni bhavanti
+hṛdayaṃ vai samrāṭ paramaṃ brahma
+nainaṃ hṛdayaṃ jahāti
+sarvāṇy enaṃ bhūtāny abhikṣaranti
+devo bhūtvā devān apyeti
+ya evaṃ vidvān etad upāste
+hastyṛṣabhaṃ sahasraṃ dadāmīti hovāca janako vaidehaḥ
+sa hovāca yājñavalkyaḥ -- pitā me ''manyata nānanuśiṣya hareteti', null, 4001007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-2-1', 1, 'Chapter 4, Section 2, Verse 1', 'जनको ह वैदेहः कूर्चादुपावसर्पन्नुवाच -- नमस्तेऽस्तु याज्ञवल्क्य।
+अनु मा शाधीति।
+स होवाच यथा वै सम्राण्महान्तमध्वानमेष्यन्रथं वा नावं वा समाददीतैवमेवैताभिरुपनिषद्भिः समाहितात्मासि।
+एवं वृन्दारक आढ्यः सन्नधीतवेद उक्तोपनिषत्क इतो विमुच्यमानः क्व गमिष्यसीति।
+नाहं तद्भगवन्वेद यत्र गमिष्यामीति।
+अथ वै तेऽहं तद्वक्ष्यामि यत्र गमिष्यसीति।
+ब्रवीतु भगवानिति॥', 'janako ha vaidehaḥ kūrcād upāvasarpann uvāca -- namas te ''stu yājñavalkya
+anu mā śādhīti
+sa hovāca yathā vai samrāṇ mahāntam adhvānam eṣyan rathaṃ vā nāvaṃ vā samādadītaivam evaitābhir upaniṣadbhiḥ samāhitātmāsi
+evaṃ vṛndāraka āḍhyaḥ sann adhītaveda uktopaniṣatka ito vimucyamānaḥ kva gamiṣyasīti
+nāhaṃ tad bhagavan veda yatra gamiṣyāmīti
+atha vai te ''haṃ tad vakṣyāmi yatra gamiṣyasīti
+bravītu bhagavān iti', null, 4002001),
+('brihadaranyaka-4-2-2', 2, 'Chapter 4, Section 2, Verse 2', 'इन्धो ह वै नामैष योऽयं दक्षिणेऽक्षन्पुरुषः।
+तं वा एतमिन्धं सन्तमिन्द्र इत्याचक्षते परोक्षेणैव।
+परोक्षप्रिया इव हि देवाः प्रत्यक्षद्विषः॥', 'indho ha vai nāmaiṣa yo ''yaṃ dakṣiṇe ''kṣan puruṣaḥ
+taṃ vā etam indhaṃ santam indra ity ācakṣate parokṣeṇaiva
+parokṣapriyā iva hi devāḥ pratyakṣadviṣaḥ', null, 4002002),
+('brihadaranyaka-4-2-3', 3, 'Chapter 4, Section 2, Verse 3', 'अथैतद्वामेऽक्षणि पुरुषरूपमेषास्य पत्नी विराट्।
+तयोरेष संस्तावो य एषोऽन्तर्हृदय आकाशः।
+अथैनयोरेतदन्नं य एषोऽन्तर्हृदये लोहितपिण्डः।
+अथैनयोरेतत्प्रावरणं यदेतदन्तर्हृदये जालकमिव।
+अथैनयोरेषा सृतिः संचरणी यैषा हृदयादूर्ध्वा नाड्युच्चरति।
+यथा केशः सहस्रधा भिन्न एवमस्यैता हिता नाम नाड्योऽन्तर्हृदये प्रतिष्ठिता भवन्ति।
+एताभिर्वा एतदास्रवदास्रवति।
+तस्मादेष प्रविविक्ताहारतर इव भवत्यस्माच्छारीरादात्मनः॥', 'athaitad vāme ''kṣaṇi puruṣarūpam eṣāsya patnī virāṭ
+tayor eṣa saṃstāvo ya eṣo ''ntar hṛdaya ākāśaḥ
+athainayor etad annaṃ ya eṣo ''ntar hṛdaye lohitapiṇḍaḥ
+athainayor etat prāvaraṇaṃ yad etad antar hṛdaye jālakam iva
+athainayor eṣā sṛtiḥ saṃcaraṇī yaiṣā hṛdayād ūrdhvā nāḍy uccarati
+yathā keśaḥ sahasradhā bhinna evam asyaitā hitā nāma nāḍyo ''ntar hṛdaye pratiṣṭhitā bhavanti
+etābhir vā etad āsravad āsravati
+tasmād eṣa praviviktāhāratara iva bhavaty asmāc chārīrād ātmanaḥ', null, 4002003),
+('brihadaranyaka-4-2-4', 4, 'Chapter 4, Section 2, Verse 4', 'तस्य प्राची दिक्प्राञ्चः प्राणाः।
+दक्षिणा दिग्दक्षिणे प्राणाः।
+प्रतीची दिक्प्रत्यञ्चः प्राणाः।
+उदीची दिगुदञ्चः प्राणाः।
+ऊर्ध्वा दिगूर्ध्वाः प्राणाः।
+अवाची दिगवाञ्चः प्राणाः।
+सर्वा दिशः सर्वे प्राणाः।
+स एष नेति नेत्यात्मा।
+अगृह्यो न हि गृह्यते।
+अशीर्यो न हि शीर्यते।
+असङ्गो न हि सज्यते।
+असितो न व्यथते।
+न रिष्यति।
+अभयं वै जनक प्राप्तोऽसीति होवाच याज्ञवल्क्यः।
+स होवाच जनको वैदेहोऽभयं त्वा गच्छताद्याज्ञवल्क्य यो नो भगवन्नभयं वेदयसे।
+नमस्तेऽस्तु।
+इमे विदेहा अयमहमस्मीति॥', 'tasya prācī dik prāñcaḥ prāṇāḥ
+dakṣiṇā dig dakṣiṇe prāṇāḥ
+pratīcī dik pratyañcaḥ prāṇāḥ
+udīcī dig udañcaḥ prāṇāḥ
+ūrdhvā dig ūrdhvāḥ prāṇāḥ
+avācī dig avāñcaḥ prāṇāḥ
+sarvā diśaḥ sarve prāṇāḥ
+sa eṣa neti nety ātmā
+agṛhyo na hi gṛhyate
+aśīryo na hi śīryate
+asaṅgo na hi sajyate
+asito na vyathate
+na riṣyati
+abhayaṃ vai janaka prāpto ''sīti hovāca yājñavalkyaḥ
+sa hovāca janako vaideho ''bhayaṃ tvā gacchatād yājñavalkya yo no bhagavann abhayaṃ vedayase
+namas te ''stu
+ime videhā ayam aham asmīti', null, 4002004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-3-1', 1, 'Chapter 4, Section 3, Verse 1', 'जनकं ह वैदेहं याज्ञवल्क्यो जगाम।
+समेनेन वदिष्य इति।
+अथ ह यज्जनकश्च वैदेहो याज्ञवल्क्यश्चाग्निहोत्रे समूदाते।
+तस्मै ह याज्ञवल्क्यो वरं ददौ।
+स ह कामप्रश्नमेव वव्रे।
+तं हास्मै ददौ।
+तं ह सम्राडेव पूर्वः पप्रच्छ॥', 'janakaṃ ha vaidehaṃ yājñavalkyo jagāma
+sam enena vadiṣya iti
+atha ha yaj janakaś ca vaideho yājñavalkyaś cāgnihotre samūdāte
+tasmai ha yājñavalkyo varaṃ dadau
+sa ha kāmapraśnam eva vavre
+taṃ hāsmai dadau
+taṃ ha samrāḍ eva pūrvaḥ papraccha', null, 4003001),
+('brihadaranyaka-4-3-2', 2, 'Chapter 4, Section 3, Verse 2', 'याज्ञवल्क्य किंज्योतिरयं पुरुष इति।
+आदित्यज्योतिः सम्राडिति होवाच।
+आदित्येनैवायं ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'yājñavalkya kiṃjyotir ayaṃ puruṣa iti
+ādityajyotiḥ samrāḍ iti hovāca
+ādityenaivāyaṃ jyotiṣāste palyayate karma kurute vipalyetīti
+evam evaitad yājñavalkya', null, 4003002),
+('brihadaranyaka-4-3-3', 3, 'Chapter 4, Section 3, Verse 3', 'अस्तमित आदित्ये याज्ञवल्क्य किंज्योतिरेवायं पुरुष इति।
+चन्द्रमा एवास्य ज्योतिर्भवतीति।
+चन्द्रमसैवायं ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'astamita āditye yājñavalkya kiṃjyotir evāyaṃ puruṣa iti
+candramā evāsya jyotir bhavatīti
+candramasaivāyaṃ jyotiṣāste palyayate karma kurute vipalyetīti
+evam evaitad yājñavalkya', null, 4003003),
+('brihadaranyaka-4-3-4', 4, 'Chapter 4, Section 3, Verse 4', 'अस्तमित आदित्ये याज्ञवल्क्य चन्द्रमस्यस्तमिते किंज्योतिरेवायं पुरुष इति।
+अग्निरेवास्य ज्योतिर्भवतीति।
+अग्निनैव ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'astamita āditye yājñavalkya candramasy astamite kiṃjyotir evāyaṃ puruṣa iti
+agnir evāsya jyotir bhavatīti
+agninaiva jyotiṣāste palyayate karma kurute vipalyetīti
+evam evaitad yājñavalkya', null, 4003004),
+('brihadaranyaka-4-3-5', 5, 'Chapter 4, Section 3, Verse 5', 'अस्तमित आदित्ये याज्ञवल्क्य चन्द्रमस्यस्तमिते शान्तेऽग्नौ किंज्योतिरेवायं पुरुष इति।
+वागेवास्य ज्योतिर्भवतीति।
+वाचैवायं ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येति।
+तस्माद्वै सम्राडपि यत्र स्वः पाणिर्न विनिर्ज्ञायतेऽथ यत्र वागुच्चरत्युपैव तत्र न्येतीति।
+एवमेवैतद्याज्ञवल्क्य॥', 'astamita āditye yājñavalkya candramasy astamite śānte ''gnau kiṃjyotir evāyaṃ puruṣa iti
+vāg evāsya jyotir bhavatīti
+vācaivāyaṃ jyotiṣāste palyayate karma kurute vipalyeti
+tasmād vai samrāḍ api yatra svaḥ pāṇir na vinirjñāyate ''tha yatra vāg uccaraty upaiva tatra nyetīti
+evam evaitad yājñavalkya', null, 4003005),
+('brihadaranyaka-4-3-6', 6, 'Chapter 4, Section 3, Verse 6', 'अस्तमित आदित्ये याज्ञवल्क्य चन्द्रमस्यस्तमिते शान्तेऽग्नौ शान्तायां वाचि किंज्योतिरेवायं पुरुष इति।
+आत्मैवास्य ज्योतिर्भवतीति।
+आत्मनैवायं ज्योतिषास्ते पल्ययते कर्म कुरुते विपल्येतीति॥', 'astamita āditye yājñavalkya candramasy astamite śānte ''gnau śāntāyāṃ vāci kiṃjyotir evāyaṃ puruṣa iti
+ātmaivāsya jyotir bhavatīti
+ātmanaivāyaṃ jyotiṣāste palyayate karma kurute vipalyetīti', null, 4003006),
+('brihadaranyaka-4-3-7', 7, 'Chapter 4, Section 3, Verse 7', 'कतम आत्मेति -- योऽयं विज्ञानमयः प्राणेषु हृद्यन्तर्ज्योतिः पुरुषः।
+स समानः सन्नुभौ लोकावनुसंचरति ध्यायतीव लेलायतीव।
+स हि स्वप्नो भूत्वेमं लोकमतिक्रामति अद्द्. मृत्यो रूपाणि॥', 'katama ātmeti -- yo ''yaṃ vijñānamayaḥ prāṇeṣu hṛdy antarjyotiḥ puruṣaḥ
+sa samānaḥ sann ubhau lokāv anusaṃcarati dhyāyatīva lelāyatīva
+sa hi svapno bhūtvemaṃ lokam atikrāmati add. mṛtyo rūpāṇi', null, 4003007),
+('brihadaranyaka-4-3-8', 8, 'Chapter 4, Section 3, Verse 8', 'स वा अयं पुरुषो जायमानः शरीरमभिसम्पद्यमानः पाप्मभिः संसृज्यते।
+स उत्क्रामन्म्रियमाणः पाप्मनो विजहाति॥', 'sa vā ayaṃ puruṣo jāyamānaḥ śarīram abhisampadyamānaḥ pāpmabhiḥ saṃsṛjyate
+sa utkrāman mriyamāṇaḥ pāpmano vijahāti', null, 4003008),
+('brihadaranyaka-4-3-9', 9, 'Chapter 4, Section 3, Verse 9', 'तस्य वा एतस्य पुरुषस्य द्वे एव स्थाने भवतः।
+इदं च परलोकस्थानं च।
+सन्ध्यं तृतीयं स्वप्नस्थानम्।
+तस्मिन्सन्ध्ये स्थाने तिष्ठनुभे स्थाने पश्यतीदं च परलोकस्थानं च।
+अथ यथाक्रमोऽयं परलोकस्थाने भवति।
+तमाक्रममाक्रम्योभयान्पाप्मन आनन्दांश्च पश्यति।
+स यत्र प्रस्वपित्यस्य लोकस्य सर्वावतो मात्रामपादाय स्वयं विहत्य स्वयं निर्माय स्वेन भासा स्वेन ज्योतिषा प्रस्वपिति।
+अत्रायं पुरुषः स्वयंज्योतिर्भवति॥', 'tasya vā etasya puruṣasya dve eva sthāne bhavataḥ
+idaṃ ca paralokasthānaṃ ca
+sandhyaṃ tṛtīyaṃ svapnasthānam
+tasminsandhye sthāne tiṣṭhan ubhe sthāne paśyatīdaṃ ca paralokasthānaṃ ca
+atha yathākramo ''yaṃ paralokasthāne bhavati
+tam ākramam ākramyobhayān pāpmana ānandāṃś ca paśyati
+sa yatra prasvapity asya lokasya sarvāvato mātrām apādāya svayaṃ vihatya svayaṃ nirmāya svena bhāsā svena jyotiṣā prasvapiti
+atrāyaṃ puruṣaḥ svayaṃjyotir bhavati', null, 4003009),
+('brihadaranyaka-4-3-10', 10, 'Chapter 4, Section 3, Verse 10', 'न तत्र रथा न रथयोगा न पन्थानो भवन्ति।
+अथ रथान्रथयोगान्पथः सृजते।
+न तत्रानन्दा मुदः प्रमुदो भवन्ति।
+अथानन्दान्मुदः प्रमुदः सृजते।
+न तत्र वेशान्ताः पुष्करिण्यः स्रवन्त्यो भवन्ति।
+अथ वेशान्तान्पुष्करिणीः स्रवन्तीः सृजते।
+स हि कर्ता॥', 'na tatra rathā na rathayogā na panthāno bhavanti
+atha rathān rathayogān pathaḥ sṛjate
+na tatrānandā mudaḥ pramudo bhavanti
+athānandān mudaḥ pramudaḥ sṛjate
+na tatra veśāntāḥ puṣkariṇyaḥ sravantyo bhavanti
+atha veśāntān puṣkariṇīḥ sravantīḥ sṛjate
+sa hi kartā', null, 4003010),
+('brihadaranyaka-4-3-11', 11, 'Chapter 4, Section 3, Verse 11', 'तदेते श्लोका भवन्ति -- स्वप्नेन शारीरमभिप्रहत्यासुप्तः सुप्तानभिचाकशीति।
+शुक्रमादाय पुनरैति स्थानं हिरण्मयःपुरुष एकहंसः॥', 'tad ete ślokā bhavanti -- svapnena śārīram abhiprahatyāsuptaḥ suptān abhicākaśīti
+śukram ādāya punar aiti sthānaṃ hiraṇmayaḥpuruṣa ekahaṃsaḥ', null, 4003011),
+('brihadaranyaka-4-3-12', 12, 'Chapter 4, Section 3, Verse 12', 'प्राणेन रक्षन्नवरं कुलायं बहिष्कुलायादमृतश्चरित्वा।
+स ईयतेऽमृतो यत्रकामं हिरण्मयः पुरुष एकहंसः॥', 'prāṇena rakṣann avaraṃ kulāyaṃ bahiṣkulāyād amṛtaś caritvā
+sa īyate ''mṛto yatrakāmaṃ hiraṇmayaḥ puruṣa ekahaṃsaḥ', null, 4003012),
+('brihadaranyaka-4-3-13', 13, 'Chapter 4, Section 3, Verse 13', 'स्वप्नान्त उच्चावचमीयमानो रूपाणि देवः कुरुते बहूनि।
+उतेव स्त्रीभिः सह मोदमानो जक्षदुतेवापि भयानि पश्यन्॥', 'svapnānta uccāvacam īyamāno rūpāṇi devaḥ kurute bahūni
+uteva strībhiḥ saha modamāno jakṣad utevāpi bhayāni paśyan', null, 4003013),
+('brihadaranyaka-4-3-14', 14, 'Chapter 4, Section 3, Verse 14', 'आराममस्य पश्यन्ति न तं पश्यति कश्चनेति।
+तं नायतं बोधयेदित्याहुः।
+दुर्भिषज्यं हास्मै भवति यमेष न प्रतिपद्यते।
+अथो खल्वाहुर्जागरितदेश एवास्यैस इति।
+यानि ह्येव जाग्रत्पश्यति तानि सुप्त इति।
+अत्रायं पुरुषः स्वयंज्योतिर्भवति।
+सोऽहं भगवते सहस्रं ददामि।
+अत ऊर्ध्वं विमोक्षाय ब्रूहीति॥', 'ārāmam asya paśyanti na taṃ paśyati kaś caneti
+taṃ nāyataṃ bodhayed ity āhuḥ
+durbhiṣajyaṃ hāsmai bhavati yam eṣa na pratipadyate
+atho khalv āhur jāgaritadeśa evāsyaisa iti
+yāni hy eva jāgrat paśyati tāni supta iti
+atrāyaṃ puruṣaḥ svayaṃjyotir bhavati
+so ''haṃ bhagavate sahasraṃ dadāmi
+ata ūrdhvaṃ vimokṣāya brūhīti', null, 4003014),
+('brihadaranyaka-4-3-15', 15, 'Chapter 4, Section 3, Verse 15', 'स वा एष एतस्मिन्संप्रसादे रत्वा चरित्वा दृष्ट्वैव पुण्यं च पापं च पुनः प्रतिन्यायं प्रतियोन्याद्रवति स्वप्नायैव।
+स यत्तत्र किञ्चित्पश्यत्यनन्वागतस्तेन भवति।
+असङ्गो ह्ययं पुरुष इति।
+एवमेवैतत्याज्ञवल्क्य।
+सोऽहं भगवते सहस्रं ददामि।
+अत ऊर्ध्वं विमोक्षायैव ब्रूहीति॥', 'sa vā eṣa etasmin saṃprasāde ratvā caritvā dṛṣṭvaiva puṇyaṃ ca pāpaṃ ca punaḥ pratinyāyaṃ pratiyony ādravati svapnāyaiva
+sa yat tatra kiñcit paśyaty ananvāgatas tena bhavati
+asaṅgo hy ayaṃ puruṣa iti
+evam evaitat yājñavalkya
+so ''haṃ bhagavate sahasraṃ dadāmi
+ata ūrdhvaṃ vimokṣāyaiva brūhīti', null, 4003015),
+('brihadaranyaka-4-3-16', 16, 'Chapter 4, Section 3, Verse 16', 'स वा एष एतस्मिन्स्वप्ने रत्वा चरित्वा दृष्ट्वैव पुण्यं च पापं च पुनः प्रतिन्यायं प्रतियोन्याद्रवति बुद्धान्तायैव।
+स यत्तत्र किञ्चित्पश्यत्यनन्वागतस्तेन भवति।
+असङ्गो ह्ययं पुरुष इति।
+एवमेवैतत्याज्ञवल्क्य।
+सोऽहं भगवते सहस्रं ददामि।
+अत ऊर्ध्वं विमोक्षायैव ब्रूहीति॥', 'sa vā eṣa etasmin svapne ratvā caritvā dṛṣṭvaiva puṇyaṃ ca pāpaṃ ca punaḥ pratinyāyaṃ pratiyony ādravati buddhāntāyaiva
+sa yat tatra kiñcit paśyaty ananvāgatas tena bhavati
+asaṅgo hy ayaṃ puruṣa iti
+evam evaitat yājñavalkya
+so ''haṃ bhagavate sahasraṃ dadāmi
+ata ūrdhvaṃ vimokṣāyaiva brūhīti', null, 4003016),
+('brihadaranyaka-4-3-17', 17, 'Chapter 4, Section 3, Verse 17', 'स वा एष एतस्मिन्बुद्धान्ते रत्वा चरित्वा दृष्ट्वैव पुण्यं च पापं च पुनः प्रतिन्यायं प्रतियोन्याद्रवति स्वप्नान्तायैव॥', 'sa vā eṣa etasmin buddhānte ratvā caritvā dṛṣṭvaiva puṇyaṃ ca pāpaṃ ca punaḥ pratinyāyaṃ pratiyony ādravati svapnāntāyaiva', null, 4003017),
+('brihadaranyaka-4-3-18', 18, 'Chapter 4, Section 3, Verse 18', 'तद्यथा महामत्स्य उभे कूले अनुसंचरति पूर्वं चापरं च।
+एवमेवायं पुरुष एतावुभावन्तावनुसंचरति स्वप्नान्तं च बुद्धान्तं च॥', 'tad yathā mahāmatsya ubhe kūle anusaṃcarati pūrvaṃ cāparaṃ ca
+evam evāyaṃ puruṣa etāv ubhāv antāv anusaṃcarati svapnāntaṃ ca buddhāntaṃ ca', null, 4003018),
+('brihadaranyaka-4-3-19', 19, 'Chapter 4, Section 3, Verse 19', 'तद्यथास्मिन्नाकाशे श्येनो वा सुपर्णो वा विपरिपत्य श्रान्तः संहत्य पक्षौ संलयायैव ध्रियते।
+एवमेवायं पुरुष एतस्मा अन्ताय धवति।
+यत्र सुप्तो न कं चन कामं कामयते न कं चन स्वप्नं पश्यति॥', 'tad yathāsminn ākāśe śyeno vā suparṇo vā viparipatya śrāntaḥ saṃhatya pakṣau saṃlayāyaiva dhriyate
+evam evāyaṃ puruṣa etasmā antāya dhavati
+yatra supto na kaṃ cana kāmaṃ kāmayate na kaṃ cana svapnaṃ paśyati', null, 4003019),
+('brihadaranyaka-4-3-20', 20, 'Chapter 4, Section 3, Verse 20', 'ता वा अस्यैता हिता नाम नाड्यो यथा केशः सहस्रधा भिन्नस्तावताणिम्ना तिष्ठन्ति।
+शुक्लस्य नीलस्य पिङ्गलस्य हरितस्य लोहितस्य पूर्णाः।
+अथ यत्रैनं घ्नन्तीव जिनन्तीव हस्तीव विच्छाययति गर्तमिव पतति।
+यदेव जाग्रद्भयं पश्यति तदत्राविद्यया मन्यते।
+अथ यत्र देव इव राजेवाहमेवेदं सर्वोऽस्मीति मन्यते।
+सोऽस्य परमो लोकः॥', 'tā vā asyaitā hitā nāma nāḍyo yathā keśaḥ sahasradhā bhinnas tāvatāṇimnā tiṣṭhanti
+śuklasya nīlasya piṅgalasya haritasya lohitasya pūrṇāḥ
+atha yatrainaṃ ghnantīva jinantīva hastīva vicchāyayati gartam iva patati
+yad eva jāgrad bhayaṃ paśyati tad atrāvidyayā manyate
+atha yatra deva iva rājevāham evedaṃ sarvo ''smīti manyate
+so ''sya paramo lokaḥ', null, 4003020),
+('brihadaranyaka-4-3-21', 21, 'Chapter 4, Section 3, Verse 21', 'तद्वा अस्यैतदतिच्छन्दोऽपहतपाप्माभयं रूपम्।
+तद्यथा प्रियया स्त्रिया संपरिष्वक्तो न बाह्यं किं चन वेद नान्तरम्।
+एवमेवायं पुरुषः प्राज्ञेनात्मना संपरिष्वक्तो न बाह्यं किं चन वेद नान्तरम्।
+तद्वा अस्यैतदाप्तकाममात्मकाममकामं रूपम्शोकान्तरम्॥', 'tad vā asyaitad aticchando ''pahatapāpmābhayaṃ rūpam
+tad yathā priyayā striyā saṃpariṣvakto na bāhyaṃ kiṃ cana veda nāntaram
+evam evāyaṃ puruṣaḥ prājñenātmanā saṃpariṣvakto na bāhyaṃ kiṃ cana veda nāntaram
+tad vā asyaitad āptakāmam ātmakāmam akāmaṃ rūpam śokāntaram', null, 4003021),
+('brihadaranyaka-4-3-22', 22, 'Chapter 4, Section 3, Verse 22', 'अत्र पितापिता भवति मातामाता लोका अलोका देवा अदेवा वेदा अवेदाः।
+अत्र स्तेनोऽस्तेनो भवति भ्रूणहाभ्रूणहा चाण्ड्यालोऽचण्ड्यालः पौल्कसोऽपौल्कसः श्रमणोऽश्रमणस्तापसोऽतापसः।
+अनन्वागतं पुण्येनानन्वागतं पापेन।
+तीर्णो हि तदा सर्वाञ्शोकान्हृदयस्य भवति॥', 'atra pitāpitā bhavati mātāmātā lokā alokā devā adevā vedā avedāḥ
+atra steno ''steno bhavati bhrūṇahābhrūṇahā cāṇḍyālo ''caṇḍyālaḥ paulkaso ''paulkasaḥ śramaṇo ''śramaṇas tāpaso ''tāpasaḥ
+ananvāgataṃ puṇyenānanvāgataṃ pāpena
+tīrṇo hi tadā sarvāñ śokān hṛdayasya bhavati', null, 4003022),
+('brihadaranyaka-4-3-23', 23, 'Chapter 4, Section 3, Verse 23', 'यद्वै तन्न पश्यति पश्यन्वै तन्न पश्यति।
+न हि द्रष्टुर्दृष्टेर्विपरिलोपो विद्यतेऽविनाशित्वान्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यत्पश्येत्॥', 'yad vai tan na paśyati paśyan vai tan na paśyati
+na hi draṣṭur dṛṣṭer viparilopo vidyate ''vināśitvān
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yat paśyet', null, 4003023),
+('brihadaranyaka-4-3-24', 24, 'Chapter 4, Section 3, Verse 24', 'यद्वै तन्न जिघ्रति जिघ्रन्वै तन्न जिघ्रति।
+न हि घ्रातुर्घ्रातेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यज्जिघ्रेत्॥', 'yad vai tan na jighrati jighran vai tan na jighrati
+na hi ghrātur ghrāter viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yaj jighret', null, 4003024),
+('brihadaranyaka-4-3-25', 25, 'Chapter 4, Section 3, Verse 25', 'यद्वै तन्न रसयति रसयन्वै तन्न रसयति।
+न हि रसयितू रसयतेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यद्रसयेत्॥', 'yad vai tan na rasayati rasayan vai tan na rasayati
+na hi rasayitū rasayater viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yad rasayet', null, 4003025),
+('brihadaranyaka-4-3-26', 26, 'Chapter 4, Section 3, Verse 26', 'यद्वै तन्न वदति वदन्वै तन्न वदति।
+न हि वक्तुर्वक्तेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यद्वदेत्॥', 'yad vai tan na vadati vadan vai tan na vadati
+na hi vaktur vakter viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yad vadet', null, 4003026),
+('brihadaranyaka-4-3-27', 27, 'Chapter 4, Section 3, Verse 27', 'यद्वै तन्न शृणोति शृण्वन्वै तन्न शृणोति।
+न हि श्रोतुः श्रुतेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यच्छृणुयात्॥', 'yad vai tan na śṛṇoti śṛṇvan vai tan na śṛṇoti
+na hi śrotuḥ śruter viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yac chṛṇuyāt', null, 4003027),
+('brihadaranyaka-4-3-28', 28, 'Chapter 4, Section 3, Verse 28', 'यद्वै तन्न मनुते मन्वानो वै तन्न मनुते।
+न हि मन्तुर्मतेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यन्मन्वीत॥', 'yad vai tan na manute manvāno vai tan na manute
+na hi mantur mater viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yan manvīta', null, 4003028),
+('brihadaranyaka-4-3-29', 29, 'Chapter 4, Section 3, Verse 29', 'यद्वै तन्न स्पृशति स्पृशन्वै तन्न स्पृशति।
+न हि स्प्रष्टुः स्पृष्टेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यत्स्पृशेत्॥', 'yad vai tan na spṛśati spṛśan vai tan na spṛśati
+na hi spraṣṭuḥ spṛṣṭer viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yat spṛśet', null, 4003029),
+('brihadaranyaka-4-3-30', 30, 'Chapter 4, Section 3, Verse 30', 'यद्वै तन्न विजानाति विजानन्वै तन्न विजानाति।
+न हि विज्ञातुर्विज्ञातेर्विपरिलोपो विद्यतेऽविनाशित्वात्।
+न तु तद्द्वितीयमस्ति ततोऽन्यद्विभक्तं यद्विजानीयात्॥', 'yad vai tan na vijānāti vijānan vai tan na vijānāti
+na hi vijñātur vijñāter viparilopo vidyate ''vināśitvāt
+na tu tad dvitīyam asti tato ''nyad vibhaktaṃ yad vijānīyāt', null, 4003030),
+('brihadaranyaka-4-3-31', 31, 'Chapter 4, Section 3, Verse 31', 'यत्र वा अन्यदिव स्यात्तत्रान्योऽन्यत्पश्येदन्योऽन्यज्जिघ्रेदन्योऽन्यद्रसयेदन्योऽन्यद्वदेदन्योऽन्यच्छृणुयादन्योऽन्यन्मन्वीतान्योऽन्यत्स्पृशेदन्योऽन्यद्विजानीयात्॥', 'yatra vā anyad iva syāt tatrānyo ''nyat paśyed anyo ''nyaj jighred anyo ''nyad rasayed anyo ''nyad vaded anyo ''nyac chṛṇuyād anyo ''nyan manvītānyo ''nyat spṛśed anyo ''nyad vijānīyāt', null, 4003031),
+('brihadaranyaka-4-3-32', 32, 'Chapter 4, Section 3, Verse 32', 'सलिल एको द्रष्टाद्वैतो भवति।
+एष ब्रह्मलोकः सम्राट्।
+इति हैनमनुशशास याज्ञवल्क्यः।
+एषास्य परमा गतिः।
+एषास्य परमा संपत्।
+एषोऽस्य परमो लोकः।
+एषोऽस्य परम आनन्दः।
+एतस्यैवानन्दस्यान्यानि भूतानि मात्रामुपजीवन्ति॥', 'salila eko draṣṭādvaito bhavati
+eṣa brahmalokaḥ samrāṭ
+iti hainam anuśaśāsa yājñavalkyaḥ
+eṣāsya paramā gatiḥ
+eṣāsya paramā saṃpat
+eṣo ''sya paramo lokaḥ
+eṣo ''sya parama ānandaḥ
+etasyaivānandasyānyāni bhūtāni mātrām upajīvanti', null, 4003032),
+('brihadaranyaka-4-3-33', 33, 'Chapter 4, Section 3, Verse 33', 'स यो मनूष्याणां राद्धः समृद्धो भवत्यन्येषामधिपतिः सर्वैर्मानुष्यकैर्भोगैः सम्पन्नतमः स मनुष्याणां परम आनन्दः।
+अथ ये शतं मनुष्याणामानन्दाः स एकः पितॄणां जितलोकानामानन्दः।
+अथ ये शतं पितॄणां जितलोकानामानन्दाः स एको गन्धर्वलोक आनन्दः।
+अथ ये शतं गन्धर्वलोक आनन्दाः स एकः कर्मदेवानामानन्दो ये कर्मणा देवत्वमभिसम्पद्यन्ते।
+अथ ये शतं कर्मदेवानामानन्दाः स एक आजानदेवानामानन्दः।
+यश्च श्रोत्रियोऽवृजिनोऽकामहतः।
+अथ ये शतमाजानदेवानामानन्दाः स एकः प्रजापतिलोक आनन्दः।
+यश्च श्रोत्रियोऽवृजिनोऽकामहतः।
+अथ ये शतं प्रजापतिलोक आनन्दाः स एको ब्रह्मलोक आनन्दः।
+यश्च श्रोत्रियोऽवृजिनोऽकामहतः।
+अथैष एव परम आनन्दः।
+एष ब्रह्मलोकः सम्राट्।
+इति होवाच याज्ञवल्क्यः।
+सोऽहं भगवते सहस्रं ददामि।
+अत ऊर्ध्वं विमोक्षायैव ब्रूहीति।
+अत्र ह याज्ञवल्क्यो बिभयां चकार -- मेधावी राजा सर्वेभ्यो मान्तेभ्य उदरौत्सीदिति॥', 'sa yo manūṣyāṇāṃ rāddhaḥ samṛddho bhavaty anyeṣām adhipatiḥ sarvair mānuṣyakair bhogaiḥ sampannatamaḥ sa manuṣyāṇāṃ parama ānandaḥ
+atha ye śataṃ manuṣyāṇām ānandāḥ sa ekaḥ pitṝṇāṃ jitalokānām ānandaḥ
+atha ye śataṃ pitṝṇāṃ jitalokānām ānandāḥ sa eko gandharvaloka ānandaḥ
+atha ye śataṃ gandharvaloka ānandāḥ sa ekaḥ karmadevānām ānando ye karmaṇā devatvam abhisampadyante
+atha ye śataṃ karmadevānām ānandāḥ sa eka ājānadevānām ānandaḥ
+yaś ca śrotriyo ''vṛjino ''kāmahataḥ
+atha ye śatam ājānadevānām ānandāḥ sa ekaḥ prajāpatiloka ānandaḥ
+yaś ca śrotriyo ''vṛjino ''kāmahataḥ
+atha ye śataṃ prajāpatiloka ānandāḥ sa eko brahmaloka ānandaḥ
+yaś ca śrotriyo ''vṛjino ''kāmahataḥ
+athaiṣa eva parama ānandaḥ
+eṣa brahmalokaḥ samrāṭ
+iti hovāca yājñavalkyaḥ
+so ''haṃ bhagavate sahasraṃ dadāmi
+ata ūrdhvaṃ vimokṣāyaiva brūhīti
+atra ha yājñavalkyo bibhayāṃ cakāra -- medhāvī rājā sarvebhyo māntebhya udarautsīd iti', null, 4003033),
+('brihadaranyaka-4-3-34', 34, 'Chapter 4, Section 3, Verse 34', 'स वा एष एतस्मिन्स्वप्नान्ते रत्वा चरित्वा दृष्ट्वैव पुण्यं च पापं च पुनः प्रतिन्यायं प्रतियोन्याद्रवति बुद्धान्तायैव॥', 'sa vā eṣa etasmin svapnānte ratvā caritvā dṛṣṭvaiva puṇyaṃ ca pāpaṃ ca punaḥ pratinyāyaṃ pratiyony ādravati buddhāntāyaiva', null, 4003034),
+('brihadaranyaka-4-3-35', 35, 'Chapter 4, Section 3, Verse 35', 'तद्यथानः सुसमाहितमुत्सर्जं यायादेवमेवायं शारीर आत्मा प्राज्ञेनात्मनान्वारूढ उत्सर्जं याति।
+यत्रैतदूर्ध्वोच्छ्वासी भवति॥', 'tad yathānaḥ susamāhitam utsarjaṃ yāyād evam evāyaṃ śārīra ātmā prājñenātmanānvārūḍha utsarjaṃ yāti
+yatraitad ūrdhvocchvāsī bhavati', null, 4003035),
+('brihadaranyaka-4-3-36', 36, 'Chapter 4, Section 3, Verse 36', 'स यत्रायमणिमानं न्येति जरया वोपतपता वाणिमानं निगच्छति।
+तद्यथाम्रं वोदुम्बरं वा पिप्पलं वा बन्धनात्प्रमुच्यते।
+एवमेवायं पुरुष एभ्योऽङ्गेभ्यः संप्रमुच्य पुनः प्रतिन्यायं प्रतियोन्याद्रवति प्राणायैव॥', 'sa yatrāyam aṇimānaṃ nyeti jarayā vopatapatā vāṇimānaṃ nigacchati
+tad yathāmraṃ vodumbaraṃ vā pippalaṃ vā bandhanāt pramucyate
+evam evāyaṃ puruṣa ebhyo ''ṅgebhyaḥ saṃpramucya punaḥ pratinyāyaṃ pratiyony ādravati prāṇāyaiva', null, 4003036),
+('brihadaranyaka-4-3-37', 37, 'Chapter 4, Section 3, Verse 37', 'तद्यथा राजानमायन्तमुग्राः प्रत्येनसः सूतग्रामण्योऽन्नैः पानैरवसथैः प्रतिकल्पन्तेऽयमायात्ययमागच्छतीति।
+एवं हैवंविदं सर्वाणि भूतानि प्रतिकल्पन्त इदं ब्रह्मायातीदमागच्छतीति॥', 'tad yathā rājānam āyantam ugrāḥ pratyenasaḥ sūtagrāmaṇyo ''nnaiḥ pānair avasathaiḥ pratikalpante ''yam āyāty ayam āgacchatīti
+evaṃ haivaṃvidaṃ sarvāṇi bhūtāni pratikalpanta idaṃ brahmāyātīdam āgacchatīti', null, 4003037),
+('brihadaranyaka-4-3-38', 38, 'Chapter 4, Section 3, Verse 38', 'तद्यथा राजानं प्रयियासन्तमुग्राः प्रत्येनसः सूतग्रामण्योऽभिसमायन्ति।
+एवमेवेममात्मानमन्तकाले सर्वे प्राणा अभिसमायन्ति।
+यत्रैतदूर्ध्वोच्छ्वासी भवति॥', 'tad yathā rājānaṃ prayiyāsantam ugrāḥ pratyenasaḥ sūtagrāmaṇyo ''bhisamāyanti
+evam evemam ātmānam antakāle sarve prāṇā abhisamāyanti
+yatraitad ūrdhvocchvāsī bhavati', null, 4003038)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-4-1', 1, 'Chapter 4, Section 4, Verse 1', 'स यत्रायमात्माबल्यं न्येत्य संमोहमिव न्येति।
+अथैनमेते प्राणा अभिसमायन्ति।
+स एतास्तेजोमात्राः समभ्याददानो हृदयमेवान्ववक्रामति।
+स यत्रैष चाक्षुषः पुरुषः पराङ्पर्यावर्तते।
+अथारूपज्ञो भवति॥', 'sa yatrāyam ātmābalyaṃ nyetya saṃmoham iva nyeti
+athainam ete prāṇā abhisamāyanti
+sa etās tejomātrāḥ samabhyādadāno hṛdayam evānvavakrāmati
+sa yatraiṣa cākṣuṣaḥ puruṣaḥ parāṅ paryāvartate
+athārūpajño bhavati', null, 4004001),
+('brihadaranyaka-4-4-2', 2, 'Chapter 4, Section 4, Verse 2', 'एकीभवति न पश्यतीत्याहुः।
+एकीभवति न जिघ्रतीत्याहुः।
+एकीभवति न रसयतीत्याहुः।
+एकीभवति न वदतीत्याहुः।
+एकीभवति न शृणोतीत्याहुः।
+एकीभवति न मनुत इत्याहुः।
+एकीभवति न स्पृशतीत्याहुः।
+एकीभवति न विजानातीत्याहुः।
+तस्य हैतस्य हृदयस्याग्रं प्रद्योतते।
+तेन प्रद्योतेनैष आत्मा निष्क्रामति।
+चक्षुष्टो वा मूर्ध्नो वान्येभ्यो वा शरीरदेशेभ्यः।
+तमुत्क्रामन्तं प्राणोऽनूत्क्रामति।
+प्राणमनूत्क्रामन्तं सर्वे प्राणा अनूत्क्रामन्ति।
+सविज्ञनो भवति।
+संजानमेवान्ववक्रामति।
+तं विद्याकर्मणी समन्वारभेते पूर्वप्रज्ञा च॥', 'ekībhavati na paśyatīty āhuḥ
+ekībhavati na jighratīty āhuḥ
+ekībhavati na rasayatīty āhuḥ
+ekībhavati na vadatīty āhuḥ
+ekībhavati na śṛṇotīty āhuḥ
+ekībhavati na manuta ity āhuḥ
+ekībhavati na spṛśatīty āhuḥ
+ekībhavati na vijānātīty āhuḥ
+tasya haitasya hṛdayasyāgraṃ pradyotate
+tena pradyotenaiṣa ātmā niṣkrāmati
+cakṣuṣṭo vā mūrdhno vānyebhyo vā śarīradeśebhyaḥ
+tam utkrāmantaṃ prāṇo ''nūtkrāmati
+prāṇam anūtkrāmantaṃ sarve prāṇā anūtkrāmanti
+savijñano bhavati
+saṃjānam evānvavakrāmati
+taṃ vidyākarmaṇī samanvārabhete pūrvaprajñā ca', null, 4004002),
+('brihadaranyaka-4-4-3', 3, 'Chapter 4, Section 4, Verse 3', 'तद्यथा तृणजलायुका तृणस्यान्तं गत्वान्यमाक्रममाक्रम्यात्मानमुपसंहरति।
+एवमेवायमात्मेदं शरीरं निहत्याविद्यां गमयित्वान्यमाक्रममाक्रम्यात्मानमुपसंहरति॥', 'tad yathā tṛṇajalāyukā tṛṇasyāntaṃ gatvānyam ākramam ākramyātmānam upasaṃharati
+evam evāyam ātmedaṃ śarīraṃ nihatyāvidyāṃ gamayitvānyam ākramam ākramyātmānam upasaṃharati', null, 4004003),
+('brihadaranyaka-4-4-4', 4, 'Chapter 4, Section 4, Verse 4', 'तद्यथा पेशस्कारी पेशसो मात्रामपादायान्यन्नवतरं कल्याणतरं रूपं तनुते।
+एवमेवायमात्मेदं शरीरं निहत्याविद्यां गमयित्वान्यन्नवतरं कल्याणतरं रूपं कुरुते।
+पित्र्यं वा गान्धर्वं वा दैवं वा प्राजापत्यं वा ब्राह्मं वान्येषां वा भूतानाम्॥', 'tad yathā peśaskārī peśaso mātrām apādāyānyan navataraṃ kalyāṇataraṃ rūpaṃ tanute
+evam evāyam ātmedaṃ śarīraṃ nihatyāvidyāṃ gamayitvānyan navataraṃ kalyāṇataraṃ rūpaṃ kurute
+pitryaṃ vā gāndharvaṃ vā daivaṃ vā prājāpatyaṃ vā brāhmaṃ vānyeṣāṃ vā bhūtānām', null, 4004004),
+('brihadaranyaka-4-4-5', 5, 'Chapter 4, Section 4, Verse 5', 'स वा अयमात्मा ब्रह्म विज्ञानमयो मनोमयो प्राणमयश्चक्षुर्मयः श्रोत्रमयः पृथिवीमय आपोमयो वायुमय आकाशमयस्तेजोमयोऽतेजोमयः काममयोऽकाममयः क्रोधमयोऽक्रोधमयो धर्ममयोऽधर्ममयः सर्वमयः।
+तद्यदेतदिदंमयोऽदोमय इति।
+यथाकारी यथाचारी तथा भवति।
+साधुकारी साधुर्भवति।
+पापकारी पापो भवति।
+पुण्यः पुण्येन कर्मणा पापः पापेन।
+अथो खल्वाहुः।
+काममय एवायं पुरुष इति।
+स यथाकामो भवति तत्क्रतुर्भवति।
+यत्क्रतुर्भवति तत्कर्म कुरुते।
+यत्कर्म कुरुते तदभिसंपद्यते॥', 'sa vā ayam ātmā brahma vijñānamayo manomayo prāṇamayaś cakṣurmayaḥ śrotramayaḥ pṛthivīmaya āpomayo vāyumaya ākāśamayas tejomayo ''tejomayaḥ kāmamayo ''kāmamayaḥ krodhamayo ''krodhamayo dharmamayo ''dharmamayaḥ sarvamayaḥ
+tad yad etad idaṃmayo ''domaya iti
+yathākārī yathācārī tathā bhavati
+sādhukārī sādhur bhavati
+pāpakārī pāpo bhavati
+puṇyaḥ puṇyena karmaṇā pāpaḥ pāpena
+atho khalv āhuḥ
+kāmamaya evāyaṃ puruṣa iti
+sa yathākāmo bhavati tatkratur bhavati
+yatkratur bhavati tat karma kurute
+yat karma kurute tad abhisaṃpadyate', null, 4004005),
+('brihadaranyaka-4-4-6', 6, 'Chapter 4, Section 4, Verse 6', 'तदेष श्लोको भवति -- तदेव सक्तः सह कर्मणैति लिङ्गं मनो यत्र निषक्तमस्य।
+प्राप्यान्तं कर्मणस्तस्य यत्किञ्चेह करोत्ययम्।
+तस्माल्लोकात्पुनरैत्यस्मै लोकाय कर्मणे।
+इति नु कामयमानः।
+अथाकामयमानो योऽकामो निष्काम आप्तकाम आत्मकामो न तस्य प्राणा उत्क्रामन्ति।
+ब्रह्मैव सन्ब्रह्माप्येति॥', 'tad eṣa śloko bhavati -- tad eva saktaḥ saha karmaṇaiti liṅgaṃ mano yatra niṣaktam asya
+prāpyāntaṃ karmaṇas tasya yat kiñceha karoty ayam
+tasmāl lokāt punar aity asmai lokāya karmaṇe
+iti nu kāmayamānaḥ
+athākāmayamāno yo ''kāmo niṣkāma āptakāma ātmakāmo na tasya prāṇā utkrāmanti
+brahmaiva san brahmāpyeti', null, 4004006),
+('brihadaranyaka-4-4-7', 7, 'Chapter 4, Section 4, Verse 7', 'तदेष श्लोको भवति -- यदा सर्वे प्रमुच्यन्ते कामा येऽस्य हृदि श्रिताः।
+अथ मर्त्योऽमृतो भवत्यत्र ब्रह्म समश्नुत इति।
+तद्यथाहिनिर्ल्वयनी वल्मीके मृता प्रत्यस्ता शयीत।
+एवमेवेदं शरीरं शेते।
+अथायमशरीरोऽमृतः प्राणो ब्रह्मैव तेज एव।
+सोऽहं भगवते सहस्रं ददामीति होवाच जनको वैदेहः॥', 'tad eṣa śloko bhavati -- yadā sarve pramucyante kāmā ye ''sya hṛdi śritāḥ
+atha martyo ''mṛto bhavaty atra brahma samaśnuta iti
+tad yathāhinirlvayanī valmīke mṛtā pratyastā śayīta
+evam evedaṃ śarīraṃ śete
+athāyam aśarīro ''mṛtaḥ prāṇo brahmaiva teja eva
+so ''haṃ bhagavate sahasraṃ dadāmīti hovāca janako vaidehaḥ', null, 4004007),
+('brihadaranyaka-4-4-8', 8, 'Chapter 4, Section 4, Verse 8', 'तदेते श्लोका भवन्ति -- अणुः पन्था विततः पुराणो मां स्पृष्टोऽनुवित्तो मयैव।
+तेन धीरा अपियन्ति ब्रह्मविदः स्वर्गं लोकमित ऊर्ध्वं विमुक्ताः॥', 'tad ete ślokā bhavanti -- aṇuḥ panthā vitataḥ purāṇo māṃ spṛṣṭo ''nuvitto mayaiva
+tena dhīrā apiyanti brahmavidaḥ svargaṃ lokam ita ūrdhvaṃ vimuktāḥ', null, 4004008),
+('brihadaranyaka-4-4-9', 9, 'Chapter 4, Section 4, Verse 9', 'तस्मिञ्शुक्लमुत नीलमाहुः पिङ्गलं हरितं लोहितं च।
+एष पन्था ब्रह्मणा हानुवित्तस्तेनैति ब्रह्मवित्पुण्यकृत्तैजसश्च॥', 'tasmiñ śuklam uta nīlam āhuḥ piṅgalaṃ haritaṃ lohitaṃ ca
+eṣa panthā brahmaṇā hānuvittas tenaiti brahmavit puṇyakṛt taijasaś ca', null, 4004009),
+('brihadaranyaka-4-4-10', 10, 'Chapter 4, Section 4, Verse 10', 'अन्धं तमः प्रविशन्ति येऽविद्यामुपासते।
+ततो भूय इव ते तमो य उ विद्यायां रताः॥', 'andhaṃ tamaḥ praviśanti ye ''vidyām upāsate
+tato bhūya iva te tamo ya u vidyāyāṃ ratāḥ', null, 4004010),
+('brihadaranyaka-4-4-11', 11, 'Chapter 4, Section 4, Verse 11', 'अनन्दा नाम ते लोका अन्धेन तमसावृताः।
+तांस्ते प्रेत्याभिगच्छत्यविद्वांसोऽबुधा जनाः॥', 'anandā nāma te lokā andhena tamasāvṛtāḥ
+tāṃs te pretyābhigacchaty avidvāṃso ''budhā janāḥ', null, 4004011),
+('brihadaranyaka-4-4-12', 12, 'Chapter 4, Section 4, Verse 12', 'आत्मानं चेद्विजानीयादयमस्मीति पुरुषः।
+किमिच्छन्कस्य कामाय शरीरमनु संज्वरेत्॥', 'ātmānaṃ ced vijānīyād ayam asmīti puruṣaḥ
+kim icchan kasya kāmāya śarīram anu saṃjvaret', null, 4004012),
+('brihadaranyaka-4-4-13', 13, 'Chapter 4, Section 4, Verse 13', 'यस्यानुवित्तः प्रतिबुद्ध आत्मास्मिन्संदेह्ये गहने प्रविष्टः।
+स विश्वकृत्स हि सर्वस्य कर्ता तस्य लोकः स उ लोक एव॥', 'yasyānuvittaḥ pratibuddha ātmāsmin saṃdehye gahane praviṣṭaḥ
+sa viśvakṛt sa hi sarvasya kartā tasya lokaḥ sa u loka eva', null, 4004013),
+('brihadaranyaka-4-4-14', 14, 'Chapter 4, Section 4, Verse 14', 'इहैव सन्तोऽथ विद्मस्तद्वयं न चेदवेदिर्महती विनष्टिः।
+ये तद्विदुरमृतास्ते भवन्त्यथेतरे दुःखमेवापियन्ति॥', 'ihaiva santo ''tha vidmas tad vayaṃ na ced avedir mahatī vinaṣṭiḥ
+ye tad vidur amṛtās te bhavanty athetare duḥkham evāpiyanti', null, 4004014),
+('brihadaranyaka-4-4-15', 15, 'Chapter 4, Section 4, Verse 15', 'यदैतमनुपश्यत्यत्मानं देवमङ्जसा।
+ईशानं भूतभव्यस्य न ततो विजुगुप्सते॥', 'yadaitam anupaśyaty atmānaṃ devam aṅjasā
+īśānaṃ bhūtabhavyasya na tato vijugupsate', null, 4004015),
+('brihadaranyaka-4-4-16', 16, 'Chapter 4, Section 4, Verse 16', 'यस्मादर्वाक्संवत्सरोऽहोभिः परिवर्तते।
+तद्देवा ज्योतिषां ज्योतिरायुर्होपासतेऽमृतम्॥', 'yasmād arvāk saṃvatsaro ''hobhiḥ parivartate
+tad devā jyotiṣāṃ jyotir āyur hopāsate ''mṛtam', null, 4004016),
+('brihadaranyaka-4-4-17', 17, 'Chapter 4, Section 4, Verse 17', 'यस्मिन्पञ्च पञ्चजना आकाशश्च प्रतिष्ठितः।
+तमेव मन्य आत्मानं विद्वान्ब्रह्मामृतोऽमृतम्॥', 'yasmin pañca pañcajanā ākāśaś ca pratiṣṭhitaḥ
+tam eva manya ātmānaṃ vidvān brahmāmṛto ''mṛtam', null, 4004017),
+('brihadaranyaka-4-4-18', 18, 'Chapter 4, Section 4, Verse 18', 'प्राणस्य प्राणमुत चक्षुषश्चक्षुरुत श्रोत्रस्य श्रोत्रम्मनसो ये मनो विदुः।
+ते निचिक्युर्ब्रह्म पुराणमग्र्यम्॥', 'prāṇasya prāṇam uta cakṣuṣaś cakṣur uta śrotrasya śrotram manaso ye mano viduḥ
+te nicikyur brahma purāṇam agryam', null, 4004018),
+('brihadaranyaka-4-4-20', 20, 'Chapter 4, Section 4, Verse 20', 'एकधैवानुद्रष्टव्यमेतदप्रमयं ध्रुवम्।
+विरजः पर आकाशादज आत्मा महान्ध्रुवः॥', 'ekadhaivānudraṣṭavyam etad apramayaṃ dhruvam
+virajaḥ para ākāśād aja ātmā mahān dhruvaḥ', null, 4004020),
+('brihadaranyaka-4-4-21', 21, 'Chapter 4, Section 4, Verse 21', 'तमेव धीरो विज्ञाय प्रज्ञां कुर्वीत ब्राह्मणः।
+नानुध्यायाद्बहूञ्छब्दान्वाचो विग्लापनं हि तदिति॥', 'tam eva dhīro vijñāya prajñāṃ kurvīta brāhmaṇaḥ
+nānudhyāyād bahūñ chabdān vāco viglāpanaṃ hi tad iti', null, 4004021),
+('brihadaranyaka-4-4-22', 22, 'Chapter 4, Section 4, Verse 22', 'स वा एष महानज आत्मा योऽयं विज्ञानमयः प्राणेषु।
+य एषोऽन्तर्हृदय आकाशस्तस्मिञ्छेते।
+सर्वस्य वशी।
+सर्वस्येशानः।
+सर्वस्याधिपतिः।
+स न साधुना कर्मणा भूयान्।
+नो एवासाधुना कनीयान्।
+एष सर्वेश्वरः।
+एष भूताधिपतिः।
+एष भूतपालः।
+एष सेतुर्विधरण एषां लोकानामसंभेदाय।
+तमेतं वेदानुवचनेन ब्राह्मणा विविदिषन्ति यज्ञेन दानेन तपसानाशकेन।
+एतमेव विदित्वा मुनिर्भवति।
+एतमेव प्रव्राजिनो लोकमिच्छन्तः प्रव्रजन्ति॥', 'sa vā eṣa mahān aja ātmā yo ''yaṃ vijñānamayaḥ prāṇeṣu
+ya eṣo ''ntar hṛdaya ākāśas tasmiñ chete
+sarvasya vaśī
+sarvasyeśānaḥ
+sarvasyādhipatiḥ
+sa na sādhunā karmaṇā bhūyān
+no evāsādhunā kanīyān
+eṣa sarveśvaraḥ
+eṣa bhūtādhipatiḥ
+eṣa bhūtapālaḥ
+eṣa setur vidharaṇa eṣāṃ lokānām asaṃbhedāya
+tam etaṃ vedānuvacanena brāhmaṇā vividiṣanti yajñena dānena tapasānāśakena
+etam eva viditvā munir bhavati
+etam eva pravrājino lokam icchantaḥ pravrajanti', null, 4004022),
+('brihadaranyaka-4-4-23', 23, 'Chapter 4, Section 4, Verse 23', 'तदेतदृचाभ्युक्तम्-- एष नित्यो महिमा ब्राह्मणस्य न कर्मणा वर्धते नो कनीयान्।
+तस्यैव स्यात्पदवित्तं विदित्वा न लिप्यते कर्मणा पापकेनेति।
+तस्मादेवंविच्छान्तो दान्त उपरतस्तितिक्षुः समाहितो भूत्वात्मन्येवात्मानं पश्यति।
+सर्वमात्मानं पश्यति।
+नैनं पाप्मा तरति।
+सर्वं पाप्मानं तरति।
+नैनं पाप्मा तपति।
+सर्वं पाप्मानं तपति।
+विपापो विरजोऽविचिकित्सो ब्राह्मणो भवति।
+एष ब्रह्मलोकः सम्राट्।
+एनं प्रापितोऽसीति होवाच याज्ञवल्क्यः।
+सोऽहं भगवते विदेहान्ददामि माम्चापि सह दास्यायेति॥', 'tad etad ṛcābhyuktam -- eṣa nityo mahimā brāhmaṇasya na karmaṇā vardhate no kanīyān
+tasyaiva syāt padavittaṃ viditvā na lipyate karmaṇā pāpakeneti
+tasmād evaṃvic chānto dānta uparatas titikṣuḥ samāhito bhūtvātmany evātmānaṃ paśyati
+sarvam ātmānaṃ paśyati
+nainaṃ pāpmā tarati
+sarvaṃ pāpmānaṃ tarati
+nainaṃ pāpmā tapati
+sarvaṃ pāpmānaṃ tapati
+vipāpo virajo ''vicikitso brāhmaṇo bhavati
+eṣa brahmalokaḥ samrāṭ
+enaṃ prāpito ''sīti hovāca yājñavalkyaḥ
+so ''haṃ bhagavate videhān dadāmi mām cāpi saha dāsyāyeti', null, 4004023),
+('brihadaranyaka-4-4-24', 24, 'Chapter 4, Section 4, Verse 24', 'स वा एष महानज आत्मान्नादो वसुदानः।
+विन्दते वसु य एवं वेद॥', 'sa vā eṣa mahān aja ātmānnādo vasudānaḥ
+vindate vasu ya evaṃ veda', null, 4004024),
+('brihadaranyaka-4-4-25', 25, 'Chapter 4, Section 4, Verse 25', 'स वा एष महानज आत्माजरोऽमरोऽमृतोऽभयो ब्रह्म।
+अभयं वै ब्रह्म।
+अभयं हि वै ब्रह्म भवति य एवं वेद॥', 'sa vā eṣa mahān aja ātmājaro ''maro ''mṛto ''bhayo brahma
+abhayaṃ vai brahma
+abhayaṃ hi vai brahma bhavati ya evaṃ veda', null, 4004025)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-5-1', 1, 'Chapter 4, Section 5, Verse 1', 'अथ ह याज्ञवल्क्यस्य द्वे भार्ये बभूवतुर्मैत्रेयी च कात्यायनी च।
+तयोर्ह मैत्रेयी ब्रह्मवादिनी बभूव।
+स्त्रीप्रज्ञैव तर्हि कात्यायनी।
+अथ ह याज्ञवल्क्योऽन्यद्वृत्तमुपाकरिष्यन्॥', 'atha ha yājñavalkyasya dve bhārye babhūvatur maitreyī ca kātyāyanī ca
+tayor ha maitreyī brahmavādinī babhūva
+strīprajñaiva tarhi kātyāyanī
+atha ha yājñavalkyo ''nyad vṛttam upākariṣyan', null, 4005001),
+('brihadaranyaka-4-5-2', 2, 'Chapter 4, Section 5, Verse 2', 'मैत्रेयीति होवाच याज्ञवल्क्यः।
+प्रव्रजिष्यन्वा अरेऽहमस्मात्स्थानादस्मि।
+हन्त तेऽनया कत्यायन्यान्तं करवाणीति॥', 'maitreyīti hovāca yājñavalkyaḥ
+pravrajiṣyan vā are ''ham asmāt sthānād asmi
+hanta te ''nayā katyāyanyāntaṃ karavāṇīti', null, 4005002),
+('brihadaranyaka-4-5-3', 3, 'Chapter 4, Section 5, Verse 3', 'सा होवाच मैत्रेयी -- यन्नु म इयम्भगोः सर्वा पृथिवी वित्तेन पूर्णा स्यात्स्यां न्वहं तेनामृताहो३ नेति।
+नेति होवाच याज्ञवल्क्यः।
+यथैवोपकरणवतां जीवितम्।
+तथैव ते जीवितं स्यात्।
+अमृतत्वस्य तु नाशास्ति वित्तेनेति॥', 'sā hovāca maitreyī -- yan nu ma iyam bhagoḥ sarvā pṛthivī vittena pūrṇā syāt syāṃ nv ahaṃ tenāmṛtāho3 neti
+neti hovāca yājñavalkyaḥ
+yathaivopakaraṇavatāṃ jīvitam
+tathaiva te jīvitaṃ syāt
+amṛtatvasya tu nāśāsti vitteneti', null, 4005003),
+('brihadaranyaka-4-5-4', 4, 'Chapter 4, Section 5, Verse 4', 'सा होवाच मैत्रेयी -- येनाहं नामृता स्याम्किमहं तेन कुर्याम्।
+यदेव भगवान्वेद तदेव मे ब्रूहीति॥', 'sā hovāca maitreyī -- yenāhaṃ nāmṛtā syām kim ahaṃ tena kuryām
+yad eva bhagavān veda tad eva me brūhīti', null, 4005004),
+('brihadaranyaka-4-5-5', 5, 'Chapter 4, Section 5, Verse 5', 'स होवाच याज्ञवल्क्यः -- प्रिया वै खलु नो भवती सती प्रियमवृधत्।
+हन्त तर्हि।
+भवत्येतद्व्याख्यास्यामि ते।
+व्याचक्षाणस्य तु मे निदिध्यासस्वेति॥', 'sa hovāca yājñavalkyaḥ -- priyā vai khalu no bhavatī satī priyam avṛdhat
+hanta tarhi
+bhavaty etad vyākhyāsyāmi te
+vyācakṣāṇasya tu me nididhyāsasveti', null, 4005005),
+('brihadaranyaka-4-5-6', 6, 'Chapter 4, Section 5, Verse 6', 'स होवाच।
+न वा अरे पत्युः कामाय पतिः प्रियो भवत्यात्मनस्तु कामाय पतिः प्रियो भवति।
+न वा अरे जायायै कामाय जाया प्रिया भवत्यात्मनस्तु कामाय जाया प्रिया भवति।
+न वा अरे पुत्राणां कामाय पुत्राः प्रिया भवन्त्यात्मनस्तु कामाय पुत्राः प्रिया भवन्ति।
+न वा अरे वित्तस्य कामाय वित्तं प्रियं भवत्यात्मनस्तु कामाय वित्तं प्रियं भवति।
+न वा अरे पशूनां कामाय पशवः प्रियं भवत्यात्मनस्तु कामाय पशवः प्रियं भवति।
+न वा अरे ब्रह्मणः कामाय ब्रह्म प्रियं भवत्यात्मनस्तु कामाय ब्रह्म प्रियं भवति।
+न वा अरे क्षत्रस्य कामाय क्षत्रं प्रियं भवत्यात्मनस्तु कामाय क्षत्रं प्रियं भवति।
+न वा अरे लोकानां कामाय लोकाः प्रिया भवन्त्यात्मनस्तु कामाय लोकाः प्रिया भवन्ति।
+न वा अरे देवानां कामाय देवाः प्रिया भवन्त्यात्मनस्तु कामाय देवाः प्रिया भवन्ति।
+न वा अरे वेदानां कामाय वेदाः प्रिया भवन्त्यात्मनस्तु कामाय वेदाः प्रिया भवन्ति।
+न वा अरे भूतानां कामाय भूतानि प्रियाणि भवन्त्यात्मनस्तु कामाय भूतानि प्रियाणि भवन्ति।
+न वा अरे सर्वस्य कामाय सर्वं प्रियं भवत्यात्मनस्तु कामाय सर्वं प्रियं भवति।
+आत्मा वा अरे द्रष्टव्यः श्रोतव्यो मन्तव्यो निदिध्यासितव्यो मैत्रेयि।
+आत्मनि खल्वरे दृष्टे श्रुते मते विज्ञात इदं सर्वं विदितम्॥', 'sa hovāca
+na vā are patyuḥ kāmāya patiḥ priyo bhavaty ātmanas tu kāmāya patiḥ priyo bhavati
+na vā are jāyāyai kāmāya jāyā priyā bhavaty ātmanas tu kāmāya jāyā priyā bhavati
+na vā are putrāṇāṃ kāmāya putrāḥ priyā bhavanty ātmanas tu kāmāya putrāḥ priyā bhavanti
+na vā are vittasya kāmāya vittaṃ priyaṃ bhavaty ātmanas tu kāmāya vittaṃ priyaṃ bhavati
+na vā are paśūnāṃ kāmāya paśavaḥ priyaṃ bhavaty ātmanas tu kāmāya paśavaḥ priyaṃ bhavati
+na vā are brahmaṇaḥ kāmāya brahma priyaṃ bhavaty ātmanas tu kāmāya brahma priyaṃ bhavati
+na vā are kṣatrasya kāmāya kṣatraṃ priyaṃ bhavaty ātmanas tu kāmāya kṣatraṃ priyaṃ bhavati
+na vā are lokānāṃ kāmāya lokāḥ priyā bhavanty ātmanas tu kāmāya lokāḥ priyā bhavanti
+na vā are devānāṃ kāmāya devāḥ priyā bhavanty ātmanas tu kāmāya devāḥ priyā bhavanti
+na vā are vedānāṃ kāmāya vedāḥ priyā bhavanty ātmanas tu kāmāya vedāḥ priyā bhavanti
+na vā are bhūtānāṃ kāmāya bhūtāni priyāṇi bhavanty ātmanas tu kāmāya bhūtāni priyāṇi bhavanti
+na vā are sarvasya kāmāya sarvaṃ priyaṃ bhavaty ātmanas tu kāmāya sarvaṃ priyaṃ bhavati
+ātmā vā are draṣṭavyaḥ śrotavyo mantavyo nididhyāsitavyo maitreyi
+ātmani khalv are dṛṣṭe śrute mate vijñāta idaṃ sarvaṃ viditam', null, 4005006),
+('brihadaranyaka-4-5-7', 7, 'Chapter 4, Section 5, Verse 7', 'ब्रह्म तं परादाद्योऽन्यत्रात्मनो वेदान्वेद।
+क्षत्रं तं परादाद्योऽन्यत्रात्मनः क्षत्रं वेद।
+लोकास्तं परादुर्योऽन्यत्रात्मनो लोकान्वेद।
+देवास्तं परादुर्योऽन्यत्रात्मनो देवान्वेद।
+वेदास्तं परादुर्योऽन्यत्रात्मनो वेदान्वेद।
+भूतानि तं परादुर्योऽन्यत्रात्मनो भूतानि वेद।
+सर्वं तं परादाद्योऽन्यत्रात्मनः सर्वं वेद।
+इदं ब्रह्मेदं क्षत्रमिमे लोका इमे देवा इमे वेदा इमानि भूतानीदं सर्वं यदयमात्मा॥', 'brahma taṃ parādād yo ''nyatrātmano vedān veda
+kṣatraṃ taṃ parādād yo ''nyatrātmanaḥ kṣatraṃ veda
+lokās taṃ parādur yo ''nyatrātmano lokān veda
+devās taṃ parādur yo ''nyatrātmano devān veda
+vedās taṃ parādur yo ''nyatrātmano vedān veda
+bhūtāni taṃ parādur yo ''nyatrātmano bhūtāni veda
+sarvaṃ taṃ parādād yo ''nyatrātmanaḥ sarvaṃ veda
+idaṃ brahmedaṃ kṣatram ime lokā ime devā ime vedā imāni bhūtānīdaṃ sarvaṃ yad ayam ātmā', null, 4005007),
+('brihadaranyaka-4-5-8', 8, 'Chapter 4, Section 5, Verse 8', 'स यथा दुन्दुभेर्हन्यमानस्य न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय।
+दुन्दुभेस्तु ग्रहणेन दुन्दुभ्याघातस्य वा शब्दो गृहीतः॥', 'sa yathā dundubher hanyamānasya na bāhyāñ chabdāñ chaknuyād grahaṇāya
+dundubhes tu grahaṇena dundubhyāghātasya vā śabdo gṛhītaḥ', null, 4005008),
+('brihadaranyaka-4-5-9', 9, 'Chapter 4, Section 5, Verse 9', 'स यथा शङ्खस्य ध्मायमानस्य न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय।
+शङ्खस्य तु ग्रहणेन शङ्खध्मस्य वा शब्दो गृहीतः॥', 'sa yathā śaṅkhasya dhmāyamānasya na bāhyāñ chabdāñ chaknuyād grahaṇāya
+śaṅkhasya tu grahaṇena śaṅkhadhmasya vā śabdo gṛhītaḥ', null, 4005009),
+('brihadaranyaka-4-5-10', 10, 'Chapter 4, Section 5, Verse 10', 'स यथा वीणायै वाद्यमानायै न बाह्याञ्छब्दाञ्छक्नुयाद्ग्रहणाय।
+वीणायै तु ग्रहणेन वीणावादस्य वा शब्दो ग्र्हीतः॥', 'sa yathā vīṇāyai vādyamānāyai na bāhyāñ chabdāñ chaknuyād grahaṇāya
+vīṇāyai tu grahaṇena vīṇāvādasya vā śabdo grhītaḥ', null, 4005010),
+('brihadaranyaka-4-5-11', 11, 'Chapter 4, Section 5, Verse 11', 'स यथार्द्रैधाग्नेरभ्याहितस्य पृथग्धूमा विनिश्चरन्त्येवं वा अरेऽस्य महतो भूतस्य निःश्वसितमेतद्यदृग्वेदो यजुर्वेदः सामवेदोऽथर्वाङ्गिरस इतिहासः पुराणं विद्या उपनिषदः श्लोकाः सूत्राण्यनुव्याख्यानानि व्याख्याननीष्टं हुतमाशितं पायितमयं च लोकः परश्च लोकः सर्वाणि च भूतानि।
+अस्यैवैतानि सर्वाणि निश्वसितानि॥', 'sa yathārdraidhāgner abhyāhitasya pṛthag dhūmā viniścaranty evaṃ vā are ''sya mahato bhūtasya niḥśvasitam etad yad ṛgvedo yajurvedaḥ sāmavedo ''tharvāṅgirasa itihāsaḥ purāṇaṃ vidyā upaniṣadaḥ ślokāḥ sūtrāṇy anuvyākhyānāni vyākhyānanīṣṭaṃ hutam āśitaṃ pāyitam ayaṃ ca lokaḥ paraś ca lokaḥ sarvāṇi ca bhūtāni
+asyaivaitāni sarvāṇi niśvasitāni', null, 4005011),
+('brihadaranyaka-4-5-12', 12, 'Chapter 4, Section 5, Verse 12', 'स यथा सर्वासामपां समुद्र एकायनम्।
+एवं सर्वेषां स्पर्शानां त्वगेकायनम्।
+एवं सर्वेषां गन्धानां नासिके एकायनम्।
+एवं सर्वेषां रसानां जिह्वैकायनम्।
+एवं सर्वेषां रूपाणां चक्षुरेकायनम्।
+एवं सर्वेषं शब्दानां श्रोत्रमेकायनम्।
+एवं सर्वेषां संकल्पानां मन एकायनम्।
+एवं सर्वासां विद्यानां हृदयमेकायनम्।
+एवं सर्वेषां कर्मणां हस्तावेकायनम्।
+एवं सर्वेषामानन्दानामुपस्थ एकायनम्।
+एवं सर्वेषां विसर्गाणां पायुरेकायनम्।
+एवं सर्वेषामध्वनां पादावेकायनम्।
+एवं सर्वेषां वेदानां वागेकायनम्॥', 'sa yathā sarvāsām apāṃ samudra ekāyanam
+evaṃ sarveṣāṃ sparśānāṃ tvag ekāyanam
+evaṃ sarveṣāṃ gandhānāṃ nāsike ekāyanam
+evaṃ sarveṣāṃ rasānāṃ jihvaikāyanam
+evaṃ sarveṣāṃ rūpāṇāṃ cakṣur ekāyanam
+evaṃ sarveṣaṃ śabdānāṃ śrotram ekāyanam
+evaṃ sarveṣāṃ saṃkalpānāṃ mana ekāyanam
+evaṃ sarvāsāṃ vidyānāṃ hṛdayam ekāyanam
+evaṃ sarveṣāṃ karmaṇāṃ hastāv ekāyanam
+evaṃ sarveṣām ānandānām upastha ekāyanam
+evaṃ sarveṣāṃ visargāṇāṃ pāyur ekāyanam
+evaṃ sarveṣām adhvanāṃ pādāv ekāyanam
+evaṃ sarveṣāṃ vedānāṃ vāg ekāyanam', null, 4005012),
+('brihadaranyaka-4-5-13', 13, 'Chapter 4, Section 5, Verse 13', 'स यथा सैन्धवघनोऽनन्तरोऽबाह्यः कृत्स्नो रसघन एव।
+एवं वा अरेऽयमात्मानन्तरोऽबाह्यः कृत्स्नः प्रज्ञानघन एव।
+एतेभ्यो भूतेभ्यः समुत्थाय तान्येवानुविनयति।
+न प्रेत्य संज्ञास्तीत्यरे ब्रवीमि।
+इति होवाच याज्ञवल्क्यः॥', 'sa yathā saindhavaghano ''nantaro ''bāhyaḥ kṛtsno rasaghana eva
+evaṃ vā are ''yam ātmānantaro ''bāhyaḥ kṛtsnaḥ prajñānaghana eva
+etebhyo bhūtebhyaḥ samutthāya tāny evānuvinayati
+na pretya saṃjñāstīty are bravīmi
+iti hovāca yājñavalkyaḥ', null, 4005013),
+('brihadaranyaka-4-5-14', 14, 'Chapter 4, Section 5, Verse 14', 'सा होवाच मैत्रेयी -- अत्रैव मा भगवान्मोहान्तमापीपदत्।
+न वा अहमिमं विजानामीति।
+स होवाच -- न वा अरेऽहं मोहं ब्रवीमि।
+अविनाशी वा अरेऽयमात्मानुच्छित्तिधर्मा॥', 'sā hovāca maitreyī -- atraiva mā bhagavān mohāntam āpīpadat
+na vā aham imaṃ vijānāmīti
+sa hovāca -- na vā are ''haṃ mohaṃ bravīmi
+avināśī vā are ''yam ātmānucchittidharmā', null, 4005014),
+('brihadaranyaka-4-5-15', 15, 'Chapter 4, Section 5, Verse 15', 'यत्र हि द्वैतमिव भवति तदितर इतरं पश्यति, तदितर इतरं जिघ्रति, तदितर इतरं रसयते, तदितर इतरमभिवदति, तदितर इतरं शृणोति, तदितर इतरं मनुते. तदितर इतरं स्पृशति, तदितर इतरं विजानाति।
+यत्र त्वस्य सर्वमात्मैवाभूत्तत्केन कं पश्येत्तत्केन कं जिघ्रेत्तत्केन कं रसयेत्तत्केन कमभिवदेत्तत्केन कं शृणुयात्तत्केन कं मन्वीत तत्केन कं स्पृशेत्तत्केन कं विजानीयात्।
+येनेदं सर्वं विजानाति तं केन विजानीयात्।
+स एष नेति नेत्यात्मा।
+अगृह्यो न हि गृह्यते।
+अशीर्यो न हि शीर्यते।
+असङ्गो न हि सज्यते।
+असितो न व्यथते न रिष्यति।
+विज्ञातारमरे केन विजानीयादित्युक्तानुशासनासि मैत्रेयि।
+एतावदरे खल्वमृतत्वमिति होक्त्वा याज्ञवल्क्यो विजहार॥', 'yatra hi dvaitam iva bhavati tad itara itaraṃ paśyati, tad itara itaraṃ jighrati, tad itara itaraṃ rasayate, tad itara itaram abhivadati, tad itara itaraṃ śṛṇoti, tad itara itaraṃ manute. tad itara itaraṃ spṛśati, tad itara itaraṃ vijānāti
+yatra tv asya sarvam ātmaivābhūt tat kena kaṃ paśyet tat kena kaṃ jighret tat kena kaṃ rasayet tat kena kam abhivadet tat kena kaṃ śṛṇuyāt tat kena kaṃ manvīta tat kena kaṃ spṛśet tat kena kaṃ vijānīyāt
+yenedaṃ sarvaṃ vijānāti taṃ kena vijānīyāt
+sa eṣa neti nety ātmā
+agṛhyo na hi gṛhyate
+aśīryo na hi śīryate
+asaṅgo na hi sajyate
+asito na vyathate na riṣyati
+vijñātāram are kena vijānīyād ity uktānuśāsanāsi maitreyi
+etāvad are khalv amṛtatvam iti hoktvā yājñavalkyo vijahāra', null, 4005015)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-4-6-1', 1, 'Chapter 4, Section 6, Verse 1', 'अथ वंशः।
+पौतिमाष्यो गौपवनात्।
+गौपवनः पौतिमाष्यात्।
+पौतिमाष्यो गौपवनात्।
+गौपवनः कौशिकात्।
+कौशिकः कौण्डिन्यात्।
+कौण्डिन्यः शाण्डिल्यात्।
+शाण्डिल्यः कौशिकाच्च गौतमाच्च।
+गौतमः॥', 'atha vaṃśaḥ
+pautimāṣyo gaupavanāt
+gaupavanaḥ pautimāṣyāt
+pautimāṣyo gaupavanāt
+gaupavanaḥ kauśikāt
+kauśikaḥ kauṇḍinyāt
+kauṇḍinyaḥ śāṇḍilyāt
+śāṇḍilyaḥ kauśikāc ca gautamāc ca
+gautamaḥ', null, 4006001),
+('brihadaranyaka-4-6-2', 2, 'Chapter 4, Section 6, Verse 2', 'अग्निवेश्यात्।
+अग्निवेश्यो गार्ग्यात्।
+गार्ग्यो गार्ग्यात्।
+गार्ग्यो गौतमात्।
+गौतमः सैतवात्।
+सैतवः पाराशर्यायणात्।
+पाराशर्यायणो गार्ग्यायणात्।
+गार्ग्यायण उद्दालकायनात्।
+उद्दालकायनो जाबालायनात्।
+जाबालायनो माध्यन्दिनायनात्।
+माध्यन्दिनायनः सौकरायणात्।
+सौकरायणः काषायणात्।
+काषायणः सायकायनात्।
+साकायनः कौशिकायनेः कौशिकायनिः॥', 'agniveśyāt
+agniveśyo gārgyāt
+gārgyo gārgyāt
+gārgyo gautamāt
+gautamaḥ saitavāt
+saitavaḥ pārāśaryāyaṇāt
+pārāśaryāyaṇo gārgyāyaṇāt
+gārgyāyaṇa uddālakāyanāt
+uddālakāyano jābālāyanāt
+jābālāyano mādhyandināyanāt
+mādhyandināyanaḥ saukarāyaṇāt
+saukarāyaṇaḥ kāṣāyaṇāt
+kāṣāyaṇaḥ sāyakāyanāt
+sākāyanaḥ kauśikāyaneḥ kauśikāyaniḥ', null, 4006002),
+('brihadaranyaka-4-6-3', 3, 'Chapter 4, Section 6, Verse 3', 'घृतकौशिकात्।
+घृतकौशिकः पाराशर्यात्।
+पाराशर्यः पाराशर्यात्।
+पाराशर्यो जातुकर्ण्यात्।
+जातुकर्ण्य आसुरायणाच्च यस्काच्च।
+आसुरायणस्त्रैवणेः।
+त्रैवणिरौपजन्धनेः।
+औपजन्धनिरासुरेः।
+आसुरिर्भारद्वाजात्।
+भारद्वाज आत्रेयात्।
+आत्रेयो माण्टेः।
+माण्टिर्गौतमात्।
+गौतमो गौतमात्।
+गौतमो वात्स्यात्।
+वात्स्यः शाण्डिल्यात्।
+शाण्डिल्यः कैशोर्यात्काप्यात्।
+कैशोर्यः काप्यः कुमारहरितात्।
+कुमारहरितो गालवात्।
+गालवो विदर्भीकौण्डिन्यात्।
+विदर्भीकौण्डिन्यो वत्सनपातो बाभ्रवात्।
+वत्सनपाद्बाभ्रवः पथः सौभरात्।
+पन्थाः सौभरोऽयास्यादङ्गिरसात्।
+अयास्य आङ्गिरस आभुतेस्त्वाष्ट्रात्।
+आभुतिस्त्वाष्ट्रो विश्वरूपात्त्वाष्ट्रात्।
+विश्वरूपस्त्वाष्ट्रोऽश्विभ्याम्।
+अश्विनौ दधिच आथर्वणात्।
+दध्यङ्ङाथर्वणोऽथर्वणो दैवात्।
+अथर्वा दैवो मृत्योः प्राध्वंसनात्।
+मृत्युः प्राध्वंसनः प्राध्वंसनात्।
+प्राध्वंसनः एकर्षेः।
+एकर्षिर्विप्रजित्तेः।
+विप्रजित्तिर्व्यष्टेर्।
+व्यष्टिः सनारोः।
+सनारुः सनातनात्।
+सनातनः सनगात्।
+सनगः परमेष्टिणः।
+परमेष्टी ब्रह्मणः।
+ब्रह्म स्वयम्भु।
+ब्रह्मणे नमः॥', 'ghṛtakauśikāt
+ghṛtakauśikaḥ pārāśaryāt
+pārāśaryaḥ pārāśaryāt
+pārāśaryo jātukarṇyāt
+jātukarṇya āsurāyaṇāc ca yaskāc ca
+āsurāyaṇas traivaṇeḥ
+traivaṇir aupajandhaneḥ
+aupajandhanir āsureḥ
+āsurir bhāradvājāt
+bhāradvāja ātreyāt
+ātreyo māṇṭeḥ
+māṇṭir gautamāt
+gautamo gautamāt
+gautamo vātsyāt
+vātsyaḥ śāṇḍilyāt
+śāṇḍilyaḥ kaiśoryāt kāpyāt
+kaiśoryaḥ kāpyaḥ kumāraharitāt
+kumāraharito gālavāt
+gālavo vidarbhīkauṇḍinyāt
+vidarbhīkauṇḍinyo vatsanapāto bābhravāt
+vatsanapād bābhravaḥ pathaḥ saubharāt
+panthāḥ saubharo ''yāsyād aṅgirasāt
+ayāsya āṅgirasa ābhutes tvāṣṭrāt
+ābhutis tvāṣṭro viśvarūpāt tvāṣṭrāt
+viśvarūpas tvāṣṭro ''śvibhyām
+aśvinau dadhica ātharvaṇāt
+dadhyaṅṅ ātharvaṇo ''tharvaṇo daivāt
+atharvā daivo mṛtyoḥ prādhvaṃsanāt
+mṛtyuḥ prādhvaṃsanaḥ prādhvaṃsanāt
+prādhvaṃsanaḥ ekarṣeḥ
+ekarṣir viprajitteḥ
+viprajittir vyaṣṭer
+vyaṣṭiḥ sanāroḥ
+sanāruḥ sanātanāt
+sanātanaḥ sanagāt
+sanagaḥ parameṣṭiṇaḥ
+parameṣṭī brahmaṇaḥ
+brahma svayambhu
+brahmaṇe namaḥ', null, 4006003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-1-1', 1, 'Chapter 5, Section 1, Verse 1', 'पूर्णमदः पूर्णमिदं पूर्णात्पूर्णमुदच्यते।
+पूर्णस्य पूर्णमादाय पूर्णमेवावशिष्यते।
+खं ब्रह्म।
+खं पुराणम्।
+वायुरं खम्।
+इति ह स्माह कौरव्यायणीपुत्रः।
+वेदोऽयं ब्राह्मणा विदुः।
+वेदैनेन यद्वेदितव्यम्॥', 'pūrṇam adaḥ pūrṇam idaṃ pūrṇāt pūrṇam udacyate
+pūrṇasya pūrṇam ādāya pūrṇam evāvaśiṣyate
+khaṃ brahma
+khaṃ purāṇam
+vāyuraṃ kham
+iti ha smāha kauravyāyaṇīputraḥ
+vedo ''yaṃ brāhmaṇā viduḥ
+vedainena yad veditavyam', null, 5001001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-2-1', 1, 'Chapter 5, Section 2, Verse 1', 'त्रयाः प्राजापत्याः प्रजापतौ पितरि ब्रह्मचर्यमूषुः।
+देवा मनुष्या असुराः।
+उषित्वा ब्रह्मचर्यं देवा ऊचुर्ब्रवीतु नो भवानिति।
+तेभ्यो हैतदक्षरमुवाच द इति।
+व्यज्ञासिष्टा३ इति।
+व्यज्ञासिष्मेति होचुः।
+दाम्यतेति न आत्थेति।
+ओमिति होवाच व्यज्ञासिष्टेति॥', 'trayāḥ prājāpatyāḥ prajāpatau pitari brahmacaryam ūṣuḥ
+devā manuṣyā asurāḥ
+uṣitvā brahmacaryaṃ devā ūcur bravītu no bhavān iti
+tebhyo haitad akṣaram uvāca da iti
+vyajñāsiṣṭā3 iti
+vyajñāsiṣmeti hocuḥ
+dāmyateti na āttheti
+om iti hovāca vyajñāsiṣṭeti', null, 5002001),
+('brihadaranyaka-5-2-2', 2, 'Chapter 5, Section 2, Verse 2', 'अथ हैनं मनुष्या ऊचुर्ब्रवीतु नो भवानिति।
+तेभ्यो हैतदेवाक्षरमुवाच द इति।
+व्यज्ञासिष्टा३ इति।
+व्यज्ञासिष्मेति होचुः।
+दत्तेति न आत्थेति।
+ओमिति होवाच व्यज्ञासिष्टेति॥', 'atha hainaṃ manuṣyā ūcur bravītu no bhavān iti
+tebhyo haitad evākṣaram uvāca da iti
+vyajñāsiṣṭā3 iti
+vyajñāsiṣmeti hocuḥ
+datteti na āttheti
+om iti hovāca vyajñāsiṣṭeti', null, 5002002),
+('brihadaranyaka-5-2-3', 3, 'Chapter 5, Section 2, Verse 3', 'अथ हैनमसुरा ऊचुर्ब्रवीतु नो भवानिति।
+तेभ्यो हैतदेवाक्षरमुवाच द इति।
+व्यज्ञासिष्टा३ इति।
+व्यज्ञासिष्मेति होचुः।
+दयध्वमिति न आत्थेति।
+ओमिति होवाच व्यज्ञासिष्टेति।
+तदेतदेवैषा दैवी वागनुवदति स्तनयित्नुर्द द द इति।
+दम्यत दत्त दयध्वमिति।
+तदेतत्त्रयं शिक्षेद्दमम्दानम्दयामिति॥', 'atha hainam asurā ūcur bravītu no bhavān iti
+tebhyo haitad evākṣaram uvāca da iti
+vyajñāsiṣṭā3 iti
+vyajñāsiṣmeti hocuḥ
+dayadhvam iti na āttheti
+om iti hovāca vyajñāsiṣṭeti
+tad etad evaiṣā daivī vāg anuvadati stanayitnur da da da iti
+damyata datta dayadhvam iti
+tad etat trayaṃ śikṣed damam dānam dayām iti', null, 5002003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-3-1', 1, 'Chapter 5, Section 3, Verse 1', 'एष प्रजापतिर्यद्धृदयम्।
+एतद्ब्रह्म।
+एतत्सर्वम्।
+तदेतत्त्र्यक्षरं हृदयमिति।
+हृ इत्येकमक्षरम्।
+अभिहरन्त्यस्मै स्वाश्चान्ये च य एवं वेद।
+द इत्येकमक्षरम्।
+ददत्यस्मै स्वाश्चान्ये च य एवं वेद।
+यमित्येकमक्षरम्।
+एति स्वर्गं लोकं य एवं वेद॥', 'eṣa prajāpatir yad dhṛdayam
+etad brahma
+etat sarvam
+tad etat tryakṣaraṃ hṛdayam iti
+hṛ ity ekam akṣaram
+abhiharanty asmai svāś cānye ca ya evaṃ veda
+da ity ekam akṣaram
+dadaty asmai svāś cānye ca ya evaṃ veda
+yam ity ekam akṣaram
+eti svargaṃ lokaṃ ya evaṃ veda', null, 5003001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-4-1', 1, 'Chapter 5, Section 4, Verse 1', 'तद्वै तदेतदेव तदास।
+सत्यमेव।
+स यो हैतं महद्यक्षं प्रथमजं वेद सत्यं ब्रह्मेति जयतीमांल्लोकान्-- जित इन्न्वसावसत्-- य एवमेतन्महद्यक्षं प्रथमजं वेद सत्यं ब्रह्मेति।
+सत्यं ह्येव ब्रह्म॥', 'tad vai tad etad eva tad āsa
+satyam eva
+sa yo haitaṃ mahad yakṣaṃ prathamajaṃ veda satyaṃ brahmeti jayatīmāṃl lokān -- jita in nv asāv asat -- ya evam etan mahad yakṣaṃ prathamajaṃ veda satyaṃ brahmeti
+satyaṃ hy eva brahma', null, 5004001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-5-1', 1, 'Chapter 5, Section 5, Verse 1', 'आप एवेदमग्र आसुः।
+ता आपः सत्यमसृजन्त।
+सत्यं ब्रह्म।
+ब्रह्म प्रजापतिम्।
+प्रजापतिर्देवान्।
+ते देवाः सत्यमेवोपासते।
+तदेतत्त्र्यक्षरं स-ति-यमिति स इत्येकमक्षरम्।
+तीत्येकमक्षरम्।
+यमित्येकमक्षरम्।
+प्रथमोत्तमे अक्षरे सत्यम्मध्यतोऽनृतम्।
+तदेतदनृतमुभयतः सत्येन परिगृहीतम्।
+सत्यभूयमेव भवति।
+नैवंविद्वांसमनृतं हिनस्ति॥', 'āpa evedam agra āsuḥ
+tā āpaḥ satyam asṛjanta
+satyaṃ brahma
+brahma prajāpatim
+prajāpatir devān
+te devāḥ satyam evopāsate
+tad etat tryakṣaraṃ sa-ti-yam iti sa ity ekam akṣaram
+tīty ekam akṣaram
+yam ity ekam akṣaram
+prathamottame akṣare satyam madhyato ''nṛtam
+tad etad anṛtam ubhayataḥ satyena parigṛhītam
+satyabhūyam eva bhavati
+naivaṃvidvāṃsam anṛtaṃ hinasti', null, 5005001),
+('brihadaranyaka-5-5-2', 2, 'Chapter 5, Section 5, Verse 2', 'तद्यत्तत्सत्यमसौ स आदित्यः।
+य एष एतस्मिन्मण्डले पुरुषो यश्चायं दक्षिणेऽक्षन्पुरुषस्तावेतावन्योऽन्यस्मिन्प्रतिष्ठितौ।
+रश्मिभिरेषोऽस्मिन्प्रतिष्ठितः प्राणैरयममुष्मिन्।
+स यदोत्क्रमिष्यन्भवति शुद्धमेवैतन्मण्डलं पश्यति।
+नैनमेते रश्मयः प्रत्यायन्ति॥', 'tad yat tat satyam asau sa ādityaḥ
+ya eṣa etasmin maṇḍale puruṣo yaś cāyaṃ dakṣiṇe ''kṣan puruṣas tāv etāv anyo ''nyasmin pratiṣṭhitau
+raśmibhir eṣo ''smin pratiṣṭhitaḥ prāṇair ayam amuṣmin
+sa yadotkramiṣyan bhavati śuddham evaitan maṇḍalaṃ paśyati
+nainam ete raśmayaḥ pratyāyanti', null, 5005002),
+('brihadaranyaka-5-5-3', 3, 'Chapter 5, Section 5, Verse 3', 'य एष एतस्मिन्मण्डले पुरुषस्तस्य भूरिति शिरः।
+एकं शिर एकमेतदक्षरम्।
+भुव इति बाहू।
+द्वौ बाहू द्वे एते अक्षरे।
+स्वरिति प्रतिष्ठा।
+द्वे प्रतिष्ठे द्वे एते अक्षरे।
+तस्योपनिषदहरिति।
+हन्ति पाप्मानं जहाति च य एवं वेद॥', 'ya eṣa etasmin maṇḍale puruṣas tasya bhūr iti śiraḥ
+ekaṃ śira ekam etad akṣaram
+bhuva iti bāhū
+dvau bāhū dve ete akṣare
+svar iti pratiṣṭhā
+dve pratiṣṭhe dve ete akṣare
+tasyopaniṣad ahar iti
+hanti pāpmānaṃ jahāti ca ya evaṃ veda', null, 5005003),
+('brihadaranyaka-5-5-4', 4, 'Chapter 5, Section 5, Verse 4', 'योऽयं दक्षिणेऽक्षन्पुरुषस्तस्य भूरिति शिरः।
+एकं शिर एकमेतदक्षरम्।
+भुव इति बाहू।
+द्वौ बाहू द्वे एते अक्षरे।
+स्वरिति प्रतिष्ठा।
+द्वे प्रतिष्ठे द्वे एते अक्षरे।
+तस्योपनिषदहमिति।
+हन्ति पाप्मानं जहाति च य एवं वेद॥', 'yo ''yaṃ dakṣiṇe ''kṣan puruṣas tasya bhūr iti śiraḥ
+ekaṃ śira ekam etad akṣaram
+bhuva iti bāhū
+dvau bāhū dve ete akṣare
+svar iti pratiṣṭhā
+dve pratiṣṭhe dve ete akṣare
+tasyopaniṣad aham iti
+hanti pāpmānaṃ jahāti ca ya evaṃ veda', null, 5005004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-6-1', 1, 'Chapter 5, Section 6, Verse 1', 'मनोमयोऽयं पुरुषो भाःसत्यः।
+तस्मिन्नन्तर्हृदये यथा व्रीहिर्वा यवो वा।
+स एष सर्वस्येशानः सर्वस्याधिपतिः सर्वमिदं प्रशास्ति यदिदं किञ्च॥', 'manomayo ''yaṃ puruṣo bhāḥsatyaḥ
+tasminn antar hṛdaye yathā vrīhir vā yavo vā
+sa eṣa sarvasyeśānaḥ sarvasyādhipatiḥ sarvam idaṃ praśāsti yad idaṃ kiñca', null, 5006001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-7-1', 1, 'Chapter 5, Section 7, Verse 1', 'विद्युद्ब्रह्मेत्याहुः।
+विदानाद्विद्युत्।
+विद्यत्येनं पाप्मनो य एवं वेद विद्युद्ब्रह्मेति।
+विद्युद्ध्येव ब्रह्म॥', 'vidyud brahmety āhuḥ
+vidānād vidyut
+vidyaty enaṃ pāpmano ya evaṃ veda vidyud brahmeti
+vidyud dhy eva brahma', null, 5007001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-8-1', 1, 'Chapter 5, Section 8, Verse 1', 'वाचं धेनुमुपासीत।
+तस्याश्चत्वारः स्तनाः।
+स्वाहाकारो वषट्कारो हन्तकारः स्वधाकारः।
+तस्यै द्वौ स्तनौ देवा उपजीवन्ति।
+स्वाहाकारं च वषट्कारं च।
+हन्तकारं मनुष्याः।
+स्वधाकारं पितरः।
+तस्याः प्राण ऋषभो मनो वत्सः॥', 'vācaṃ dhenum upāsīta
+tasyāś catvāraḥ stanāḥ
+svāhākāro vaṣaṭkāro hantakāraḥ svadhākāraḥ
+tasyai dvau stanau devā upajīvanti
+svāhākāraṃ ca vaṣaṭkāraṃ ca
+hantakāraṃ manuṣyāḥ
+svadhākāraṃ pitaraḥ
+tasyāḥ prāṇa ṛṣabho mano vatsaḥ', null, 5008001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-9-1', 1, 'Chapter 5, Section 9, Verse 1', 'अयमग्निर्वैश्वानरो योऽयमन्तः पुरुषे।
+येनेदमन्नं पच्यते।
+यदिदमद्यते।
+तस्यैष घोषो भवति।
+यमेतत्कर्णावपिधाय शृणोति।
+स यदोत्क्रमिष्यन्भवति नैनं घोषं शृणोति॥', 'ayam agnir vaiśvānaro yo ''yam antaḥ puruṣe
+yenedam annaṃ pacyate
+yad idam adyate
+tasyaiṣa ghoṣo bhavati
+yam etat karṇāv apidhāya śṛṇoti
+sa yadotkramiṣyan bhavati nainaṃ ghoṣaṃ śṛṇoti', null, 5009001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-10-1', 1, 'Chapter 5, Section 10, Verse 1', 'यदा वै पुरुषोऽस्माल्लोकात्प्रैति स वायुमागच्छति।
+तस्मै स तत्र विजिहीते यथा रथचक्रस्य खम्।
+तेन स ऊर्ध्व आक्रमते।
+स आदित्यमागच्छति।
+तस्मै स तत्र विजिहीते।
+यथा लम्बरस्य खम्।
+तेन स ऊर्ध्व आक्रमते।
+स चन्द्रमसमागच्छति।
+तस्मै स तत्र विजिहीते।
+यथा दुन्दुभेः खम्।
+तेन स ऊर्ध्व आक्रमते।
+स लोकमागच्छत्यशोकमहिमम्।
+तस्मिन्वसति शाश्वतीः समाः॥', 'yadā vai puruṣo ''smāl lokāt praiti sa vāyum āgacchati
+tasmai sa tatra vijihīte yathā rathacakrasya kham
+tena sa ūrdhva ākramate
+sa ādityam āgacchati
+tasmai sa tatra vijihīte
+yathā lambarasya kham
+tena sa ūrdhva ākramate
+sa candramasam āgacchati
+tasmai sa tatra vijihīte
+yathā dundubheḥ kham
+tena sa ūrdhva ākramate
+sa lokam āgacchaty aśokam ahimam
+tasmin vasati śāśvatīḥ samāḥ', null, 5010001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-11-1', 1, 'Chapter 5, Section 11, Verse 1', 'एतद्वै परमं तपो यद्व्याहितस्तप्यते।
+परमं हैव लोकं जयति य एवं वेद।
+एतद्वै परमं तपो यं प्रेतमरण्यं हरन्ति।
+परमं हैव लोकं जयति य एवं वेद।
+एतद्वै परमं तपो यं प्रेतमग्नावभ्यादधति।
+परमं हैव लोकं जयति य एवं वेद॥', 'etad vai paramaṃ tapo yad vyāhitas tapyate
+paramaṃ haiva lokaṃ jayati ya evaṃ veda
+etad vai paramaṃ tapo yaṃ pretam araṇyaṃ haranti
+paramaṃ haiva lokaṃ jayati ya evaṃ veda
+etad vai paramaṃ tapo yaṃ pretam agnāv abhyādadhati
+paramaṃ haiva lokaṃ jayati ya evaṃ veda', null, 5011001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-12-1', 1, 'Chapter 5, Section 12, Verse 1', 'अन्नं ब्रह्मेत्येक आहुः।
+तन्न तथा।
+पूयति वा अन्नमृते प्राणात्।
+प्राणो ब्रह्मेत्येक आहुः।
+तन्न तथा।
+शुष्यति वै प्रण ऋतेऽन्नात्।
+एते ह त्वेव देवते एकधाभूयं भूत्वा परमतां गच्छतः।
+तद्ध स्माह प्रातृदः पितरम्।
+किं स्विदेवैवं विदुषे साधु कुर्यां किमेवास्मा असाधु कुर्यामिति।
+स ह स्माह पाणिना मा प्रातृद।
+कस्त्वेनयोरेकधाभूयं भूत्वा परमतां गच्छतीति।
+तस्मा उ हैतदुवाच वीति।
+अन्नं वै वि।
+अन्ने हीमानि सर्वाणि भूतानि विष्टानि।
+रमिति।
+प्राणो वै रम्।
+प्राणे हीमानि सर्वाणि भूतानि रमन्ते।
+सर्वाणि ह वा अस्मिन्भूतानि विशन्ति।
+सर्वाणि भूतानि रमन्ते य एवं वेद॥', 'annaṃ brahmety eka āhuḥ
+tan na tathā
+pūyati vā annam ṛte prāṇāt
+prāṇo brahmety eka āhuḥ
+tan na tathā
+śuṣyati vai praṇa ṛte ''nnāt
+ete ha tv eva devate ekadhābhūyaṃ bhūtvā paramatāṃ gacchataḥ
+tad dha smāha prātṛdaḥ pitaram
+kiṃ svid evaivaṃ viduṣe sādhu kuryāṃ kim evāsmā asādhu kuryām iti
+sa ha smāha pāṇinā mā prātṛda
+kas tv enayor ekadhābhūyaṃ bhūtvā paramatāṃ gacchatīti
+tasmā u haitad uvāca vīti
+annaṃ vai vi
+anne hīmāni sarvāṇi bhūtāni viṣṭāni
+ram iti
+prāṇo vai ram
+prāṇe hīmāni sarvāṇi bhūtāni ramante
+sarvāṇi ha vā asmin bhūtāni viśanti
+sarvāṇi bhūtāni ramante ya evaṃ veda', null, 5012001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-13-1', 1, 'Chapter 5, Section 13, Verse 1', 'उक्थम्।
+प्राणो वा उक्थम्।
+प्राणो हीदं सर्वमुत्थापयति।
+उद्धस्मादुक्थविद्वीरस्तिष्ठति।
+उक्थस्य सायुज्यं सलोकतां जयति य एवं वेद॥', 'uktham
+prāṇo vā uktham
+prāṇo hīdaṃ sarvam utthāpayati
+ud dhasmād ukthavid vīras tiṣṭhati
+ukthasya sāyujyaṃ salokatāṃ jayati ya evaṃ veda', null, 5013001),
+('brihadaranyaka-5-13-2', 2, 'Chapter 5, Section 13, Verse 2', 'यजुः।
+प्राणो वै यजुः।
+प्राणे हीमानि सर्वाणि भूतानि युज्यन्ते।
+युज्यन्ते हास्मै सर्वाणि भूतानि श्रैष्ठ्याय।
+यजुषः सायुज्यं सलोकतां जयति य एवं वेद॥', 'yajuḥ
+prāṇo vai yajuḥ
+prāṇe hīmāni sarvāṇi bhūtāni yujyante
+yujyante hāsmai sarvāṇi bhūtāni śraiṣṭhyāya
+yajuṣaḥ sāyujyaṃ salokatāṃ jayati ya evaṃ veda', null, 5013002),
+('brihadaranyaka-5-13-3', 3, 'Chapter 5, Section 13, Verse 3', 'साम।
+प्राणो वै साम।
+प्राणे हीमानि सर्वाणि भूतानि सम्यञ्चि।
+सम्यञ्चि हास्मै सर्वाणि भूतानि श्रैष्ठ्याय कल्पन्ते।
+साम्नः सायुज्यं सलोकतां जयति य एवं वेद॥', 'sāma
+prāṇo vai sāma
+prāṇe hīmāni sarvāṇi bhūtāni samyañci
+samyañci hāsmai sarvāṇi bhūtāni śraiṣṭhyāya kalpante
+sāmnaḥ sāyujyaṃ salokatāṃ jayati ya evaṃ veda', null, 5013003),
+('brihadaranyaka-5-13-4', 4, 'Chapter 5, Section 13, Verse 4', 'त्रायते हैनं प्राणः क्षणितोः।
+प्र क्षत्रमत्रमाप्नोति।
+क्षत्रस्य सायुज्यं सलोकतां जयति य एवं वेद॥', 'trāyate hainaṃ prāṇaḥ kṣaṇitoḥ
+pra kṣatram atram āpnoti
+kṣatrasya sāyujyaṃ salokatāṃ jayati ya evaṃ veda', null, 5013004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-14-1', 1, 'Chapter 5, Section 14, Verse 1', 'भूमिरन्तरिक्षं द्यौरित्यष्टावक्षराणि।
+अष्टाक्षरं ह वा एकं गायत्र्यै पदम्।
+एतदु हैवास्या एतत्।
+स यावदेषु त्रिषु लोकेषु तावद्ध जयति योऽस्या एतदेवं पदं वेद॥', 'bhūmir antarikṣaṃ dyaur ity aṣṭāv akṣarāṇi
+aṣṭākṣaraṃ ha vā ekaṃ gāyatryai padam
+etad u haivāsyā etat
+sa yāvad eṣu triṣu lokeṣu tāvad dha jayati yo ''syā etad evaṃ padaṃ veda', null, 5014001),
+('brihadaranyaka-5-14-2', 2, 'Chapter 5, Section 14, Verse 2', 'ऋचो यजूषि सामानीत्यष्टावक्षराणि।
+अष्टाक्षरं ह वा एकं गायत्र्यै पदम्।
+एतदु हैवास्या एतत्।
+स यावतीयं त्रयी विद्या तावद्ध जयति योऽस्या एतदेवं पदं वेद॥', 'ṛco yajūṣi sāmānīty aṣṭāv akṣarāṇi
+aṣṭākṣaraṃ ha vā ekaṃ gāyatryai padam
+etad u haivāsyā etat
+sa yāvatīyaṃ trayī vidyā tāvad dha jayati yo ''syā etad evaṃ padaṃ veda', null, 5014002),
+('brihadaranyaka-5-14-3', 3, 'Chapter 5, Section 14, Verse 3', 'प्राणोऽपानो व्यान इत्यष्टावक्षराणि।
+अष्टाक्षरं ह वा एकं गायत्र्यै पदम्।
+एतदु हैवास्या एतत्।
+स यावदिदं प्राणि तावद्ध जयति योऽस्या एतदेवं पदं वेद।
+अथास्या एतदेव तुरीयं दर्शतं पदं परोरजा य एष तपति।
+यद्वै चतुर्थं तत्तुरीयम्।
+दर्शतं पदमिति ददृश इव ह्येषः।
+परोरजा इति सर्वमु ह्येवैष रज उपर्युपरि तपति।
+एवं हैव श्रिया यशसा तपति योऽस्या एतदेवं पदं वेद॥', 'prāṇo ''pāno vyāna ity aṣṭāv akṣarāṇi
+aṣṭākṣaraṃ ha vā ekaṃ gāyatryai padam
+etad u haivāsyā etat
+sa yāvad idaṃ prāṇi tāvad dha jayati yo ''syā etad evaṃ padaṃ veda
+athāsyā etad eva turīyaṃ darśataṃ padaṃ parorajā ya eṣa tapati
+yad vai caturthaṃ tat turīyam
+darśataṃ padam iti dadṛśa iva hy eṣaḥ
+parorajā iti sarvam u hy evaiṣa raja upary upari tapati
+evaṃ haiva śriyā yaśasā tapati yo ''syā etad evaṃ padaṃ veda', null, 5014003),
+('brihadaranyaka-5-14-4', 4, 'Chapter 5, Section 14, Verse 4', 'सैषा गायत्र्येतस्मिंस्तुरीये दर्शते पदे परोरजसि प्रतिष्ठिता।
+तद्वै तत्सत्ये प्रतिष्ठितम्।
+चक्षुर्वै सत्यम्।
+चक्षुर्हि वै सत्यम्।
+तस्माद्यदिदानीं द्वौ विवदमानावेयातमहमदर्शमहमश्रौषमिति।
+य एवं ब्रूयादहमदर्शमिति।
+तस्मा एव श्रद्दध्याम।
+तद्वै तत्सत्यं बले प्रतिष्ठितम्।
+प्राणो वै बलम्।
+तत्प्राणे प्रतिष्ठितम्।
+तस्मादाहुर्बलं सत्यादोगीय इति।
+एवं वेषा गायत्र्यध्यात्मं प्रतिष्ठिता।
+सा हैषा गयांस्तत्रे।
+प्राणा वै गयाः।
+तत्प्राणास्तत्रे।
+तद्यद्गयांस्तत्रे तस्माद्गायत्री नाम।
+स यामेवामूं सावित्रीमन्वाहैषैव सा।
+स यस्मा अन्वाह तस्य प्राणांस्त्रायते॥', 'saiṣā gāyatry etasmiṃs turīye darśate pade parorajasi pratiṣṭhitā
+tad vai tat satye pratiṣṭhitam
+cakṣur vai satyam
+cakṣur hi vai satyam
+tasmād yad idānīṃ dvau vivadamānāv eyātam aham adarśam aham aśrauṣam iti
+ya evaṃ brūyād aham adarśam iti
+tasmā eva śraddadhyāma
+tad vai tat satyaṃ bale pratiṣṭhitam
+prāṇo vai balam
+tat prāṇe pratiṣṭhitam
+tasmād āhur balaṃ satyād ogīya iti
+evaṃ v eṣā gāyatry adhyātmaṃ pratiṣṭhitā
+sā haiṣā gayāṃs tatre
+prāṇā vai gayāḥ
+tat prāṇās tatre
+tad yad gayāṃs tatre tasmād gāyatrī nāma
+sa yām evāmūṃ sāvitrīm anvāhaiṣaiva sā
+sa yasmā anvāha tasya prāṇāṃs trāyate', null, 5014004),
+('brihadaranyaka-5-14-5', 5, 'Chapter 5, Section 14, Verse 5', 'तां हैतामेके सावित्रीमनुष्टुभमन्वाहुः।
+वागनुष्टुप्।
+एतद्वाचमनुब्रूम इति।
+न तथा कुर्यात्।
+गायत्रीमेव सावित्रीमानुब्रूयात्।
+यदि ह वा अप्येवंविद्बह्विव प्रतिगृह्णाति न हैव तद्गायत्र्या एकं चन पदं प्रति॥', 'tāṃ haitām eke sāvitrīm anuṣṭubham anvāhuḥ
+vāg anuṣṭup
+etad vācam anubrūma iti
+na tathā kuryāt
+gāyatrīm eva sāvitrīm ānubrūyāt
+yadi ha vā apy evaṃvid bahv iva pratigṛhṇāti na haiva tad gāyatryā ekaṃ cana padaṃ prati', null, 5014005),
+('brihadaranyaka-5-14-6', 6, 'Chapter 5, Section 14, Verse 6', 'स य इमांस्त्रींल्लोकान्पूर्णान्प्रतिगृह्णीयात्सोऽस्या एतत्प्रथमं पदमाप्नुयात्।
+अथ यावतीयं त्रयी विद्या यस्तावत्प्रतिगृह्णीयात्सोऽस्या एतद्द्वितीयं पदमाप्नुयात्।
+अथ यावदिदं प्राणि यस्तावत्प्रतिगृह्णीयात्सोऽस्या एतत्तृतीयं पदमाप्नुयात्।
+अथास्या एतदेव तुरीयं दर्शतं पदं परोरजा य एष तपति।
+नैव केन चनाप्यम्।
+कुत उ एतावत्प्रतिगृह्णीयात्॥', 'sa ya imāṃs trīṃl lokān pūrṇān pratigṛhṇīyāt so ''syā etat prathamaṃ padam āpnuyāt
+atha yāvatīyaṃ trayī vidyā yas tāvat pratigṛhṇīyāt so ''syā etad dvitīyaṃ padam āpnuyāt
+atha yāvad idaṃ prāṇi yas tāvat pratigṛhṇīyāt so ''syā etat tṛtīyaṃ padam āpnuyāt
+athāsyā etad eva turīyaṃ darśataṃ padaṃ parorajā ya eṣa tapati
+naiva kena canāpyam
+kuta u etāvat pratigṛhṇīyāt', null, 5014006),
+('brihadaranyaka-5-14-7', 7, 'Chapter 5, Section 14, Verse 7', 'तस्या उपस्थानम्।
+गायत्र्यस्येकपदी द्विपदी त्रिपदी चतुष्पदि।
+अपदसि।
+न हि पद्यसे।
+नमस्ते तुरीयाय दर्शताय पदाय परोरजसे।
+असावदो मा प्रापदिति।
+यं द्विष्यादसावस्मै कामो मा समर्धीति वा।
+न हैवास्मै स कामः समृध्यते यस्मा एवमुपतिष्ठते।
+अहमदः प्रापमिति वा॥', 'tasyā upasthānam
+gāyatry asy ekapadī dvipadī tripadī catuṣpadi
+apad asi
+na hi padyase
+namas te turīyāya darśatāya padāya parorajase
+asāv ado mā prāpad iti
+yaṃ dviṣyād asāv asmai kāmo mā samardhīti vā
+na haivāsmai sa kāmaḥ samṛdhyate yasmā evam upatiṣṭhate
+aham adaḥ prāpam iti vā', null, 5014007),
+('brihadaranyaka-5-14-8', 8, 'Chapter 5, Section 14, Verse 8', 'एतद्ध वै तज्जनको वैदेहो बुडिलमाश्वतराश्विमुवाच -- यन्नु हो तद्गायत्रीविदब्रूथाः।
+अथ कथं हस्तीभूतो वहसीति।
+मुखं ह्यस्याः सम्राण्न विदां चकरेति होवाच।
+तस्या अग्निरेव मुखम्।
+यदि ह वा अपि बह्विवाग्नावभ्यादधति सर्वमेव तत्संदहति।
+एवं हैवैवंविद्यद्यपि बह्विव पापं कुरुते सर्वमेव तत्संप्साय शुद्धः पूतोऽजरोऽमृतः संभवति॥', 'etad dha vai taj janako vaideho buḍilam āśvatarāśvim uvāca -- yan nu ho tad gāyatrīvid abrūthāḥ
+atha kathaṃ hastībhūto vahasīti
+mukhaṃ hy asyāḥ samrāṇ na vidāṃ cakareti hovāca
+tasyā agnir eva mukham
+yadi ha vā api bahv ivāgnāv abhyādadhati sarvam eva tat saṃdahati
+evaṃ haivaivaṃvid yady api bahv iva pāpaṃ kurute sarvam eva tat saṃpsāya śuddhaḥ pūto ''jaro ''mṛtaḥ saṃbhavati', null, 5014008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-5-15-1', 1, 'Chapter 5, Section 15, Verse 1', 'हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम्।
+तत्त्वम्पूषन्नपावृणु सत्यधर्माय दृष्टये।
+पूषन्नेकर्षे यम सूर्य प्राजापत्य व्यूह रश्मीन्समूह तेजः।
+यत्ते रूपं कल्याणतमम्तत्ते पश्यामि योऽसावसौ पुरुषः सोऽहमस्मि।
+वायुरनिलममृतमथेदं भस्मान्तं शरीरम्।
+ॐ क्रतो स्मर कृतं स्मर क्रतो स्मर कृतं स्मर।
+अग्ने नय सुपथा रायेऽस्मान्विश्वानि देव वयुनानि विद्वान्।
+युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नमौक्तिं विधेम॥', 'hiraṇmayena pātreṇa satyasyāpihitaṃ mukham
+tat tvam pūṣann apāvṛṇu satyadharmāya dṛṣṭaye
+pūṣann ekarṣe yama sūrya prājāpatya vyūha raśmīn samūha tejaḥ
+yat te rūpaṃ kalyāṇatamam tat te paśyāmi yo ''sāv asau puruṣaḥ so ''ham asmi
+vāyur anilam amṛtam athedaṃ bhasmāntaṃ śarīram
+oṃ krato smara kṛtaṃ smara krato smara kṛtaṃ smara
+agne naya supathā rāye ''smān viśvāni deva vayunāni vidvān
+yuyodhy asmaj juhurāṇam eno bhūyiṣṭhāṃ te namauktiṃ vidhema', null, 5015001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-6-1-1', 1, 'Chapter 6, Section 1, Verse 1', 'यो ह वै ज्येष्ठं च श्रेष्ठं च वेद ज्येष्ठश्च श्रेष्ठश्च स्वानां भवति।
+प्राणो वै ज्येष्ठश्च श्रेष्ठश्च।
+ज्येष्ठश्च श्रेष्ठश्च स्वानां भवति।
+अपि च येषां बुभूषति।
+य एवं वेद॥', 'yo ha vai jyeṣṭhaṃ ca śreṣṭhaṃ ca veda jyeṣṭhaś ca śreṣṭhaś ca svānāṃ bhavati
+prāṇo vai jyeṣṭhaś ca śreṣṭhaś ca
+jyeṣṭhaś ca śreṣṭhaś ca svānāṃ bhavati
+api ca yeṣāṃ bubhūṣati
+ya evaṃ veda', null, 6001001),
+('brihadaranyaka-6-1-2', 2, 'Chapter 6, Section 1, Verse 2', 'यो ह वै वसिष्ठां वेद वसिष्ठः स्वानां भवति।
+वाग्वै वसिष्ठा।
+वसिष्ठः स्वानां भवति।
+अपि च येषां बुभूषति।
+य एवं वेद॥', 'yo ha vai vasiṣṭhāṃ veda vasiṣṭhaḥ svānāṃ bhavati
+vāg vai vasiṣṭhā
+vasiṣṭhaḥ svānāṃ bhavati
+api ca yeṣāṃ bubhūṣati
+ya evaṃ veda', null, 6001002),
+('brihadaranyaka-6-1-3', 3, 'Chapter 6, Section 1, Verse 3', 'यो ह वै प्रतिष्ठां वेद प्रतितिष्ठति समे।
+प्रतितिष्ठति दुर्गे।
+चक्षुर्वै प्रतिष्ठा।
+चक्षुषा हि समे च दुर्गे च प्रतितिष्ठति।
+प्रतितिष्ठति समे प्रतितिष्ठति दुर्गे।
+य एवं वेद॥', 'yo ha vai pratiṣṭhāṃ veda pratitiṣṭhati same
+pratitiṣṭhati durge
+cakṣur vai pratiṣṭhā
+cakṣuṣā hi same ca durge ca pratitiṣṭhati
+pratitiṣṭhati same pratitiṣṭhati durge
+ya evaṃ veda', null, 6001003),
+('brihadaranyaka-6-1-4', 4, 'Chapter 6, Section 1, Verse 4', 'यो ह वै संपदं वेद सं हास्मै पद्यते यं कामं कामयते।
+श्रोत्रं वै संपत्।
+श्रोत्रे हीमे सर्वे वेदा अभिसंपन्नाः।
+सं हास्मै पद्यते यं कामं कामयते।
+य एवं वेद॥', 'yo ha vai saṃpadaṃ veda saṃ hāsmai padyate yaṃ kāmaṃ kāmayate
+śrotraṃ vai saṃpat
+śrotre hīme sarve vedā abhisaṃpannāḥ
+saṃ hāsmai padyate yaṃ kāmaṃ kāmayate
+ya evaṃ veda', null, 6001004),
+('brihadaranyaka-6-1-5', 5, 'Chapter 6, Section 1, Verse 5', 'यो ह वा आयतनं वेदायतनं स्वानां भवत्यायतनं जनानाम्।
+मनो वा आयतनम्।
+आयतनं स्वानां भवत्यायतनं जनानाम्।
+य एवं वेद॥', 'yo ha vā āyatanaṃ vedāyatanaṃ svānāṃ bhavaty āyatanaṃ janānām
+mano vā āyatanam
+āyatanaṃ svānāṃ bhavaty āyatanaṃ janānām
+ya evaṃ veda', null, 6001005),
+('brihadaranyaka-6-1-6', 6, 'Chapter 6, Section 1, Verse 6', 'यो ह वै प्रजातिं वेद प्रजायते ह प्रजया पशुभिः।
+रेतो वै प्रजातिः।
+प्रजायते ह प्रजया पशुभिः।
+य एवं वेद॥', 'yo ha vai prajātiṃ veda prajāyate ha prajayā paśubhiḥ
+reto vai prajātiḥ
+prajāyate ha prajayā paśubhiḥ
+ya evaṃ veda', null, 6001006),
+('brihadaranyaka-6-1-7', 7, 'Chapter 6, Section 1, Verse 7', 'ते हेमे प्राणा अहंश्रेयसे विवदमाना ब्रह्म जग्मुः।
+तद्धोचुः -- को नो वसिष्ठ इति।
+तद्धोवाच -- यस्मिन्व उत्क्रान्त इदं शरीरं पापियो मन्यते स वो वसिष्ठ इति॥', 'te heme prāṇā ahaṃśreyase vivadamānā brahma jagmuḥ
+tad dhocuḥ -- ko no vasiṣṭha iti
+tad dhovāca -- yasmin va utkrānta idaṃ śarīraṃ pāpiyo manyate sa vo vasiṣṭha iti', null, 6001007),
+('brihadaranyaka-6-1-8', 8, 'Chapter 6, Section 1, Verse 8', 'वाग्घोच्चक्राम।
+सा संवत्सरं प्रोष्यागत्योवाच -- कथमशकत मदृते जीवितुमिति।
+ते होचुः -- यथाकला अवदन्तो वाचा प्राणन्तः प्राणेन पश्यन्तश्चक्षुषा शृण्वन्तः श्रोत्रेण विद्वांसो मनसा प्रजायमाना रेतसैवमजीविष्मेति।
+प्रविवेश ह वाक्॥', 'vāg ghoccakrāma
+sā saṃvatsaraṃ proṣyāgatyovāca -- katham aśakata mad ṛte jīvitum iti
+te hocuḥ -- yathākalā avadanto vācā prāṇantaḥ prāṇena paśyantaś cakṣuṣā śṛṇvantaḥ śrotreṇa vidvāṃso manasā prajāyamānā retasaivam ajīviṣmeti
+praviveśa ha vāk', null, 6001008),
+('brihadaranyaka-6-1-9', 9, 'Chapter 6, Section 1, Verse 9', 'चक्षुर्होच्चक्राम।
+तत्संवत्सरं प्रोष्यागत्योवाच -- कथमशकत मदृते जीवितुमिति।
+ते होचुः -- यथान्धा अपश्यन्तश्चक्षुषा प्राणन्तः प्राणेन वदन्तो वाचा शृण्वन्तः श्रोत्रेण विद्वांसो मनसा प्रजायमाना रेतसैवमजीविष्मेति।
+प्रविवेश ह चक्षुः॥', 'cakṣur hoccakrāma
+tat saṃvatsaraṃ proṣyāgatyovāca -- katham aśakata mad ṛte jīvitum iti
+te hocuḥ -- yathāndhā apaśyantaś cakṣuṣā prāṇantaḥ prāṇena vadanto vācā śṛṇvantaḥ śrotreṇa vidvāṃso manasā prajāyamānā retasaivam ajīviṣmeti
+praviveśa ha cakṣuḥ', null, 6001009),
+('brihadaranyaka-6-1-10', 10, 'Chapter 6, Section 1, Verse 10', 'श्रोत्रं होच्चक्राम।
+तत्संवत्सरं प्रोष्यागत्योवाच -- कथमशकत मदृते जीवितुमिति।
+ते होचुः -- यथा बधिरा अशृण्वन्तः श्रोत्रेण प्राणन्तः प्राणेन वदन्तो वाचा पश्यन्तश्चक्षुषा विद्वांसो मनसा प्रजायमाना रेतसैवमजीविष्मेति।
+प्रविवेश ह श्रोत्रम्॥', 'śrotraṃ hoccakrāma
+tat saṃvatsaraṃ proṣyāgatyovāca -- katham aśakata mad ṛte jīvitum iti
+te hocuḥ -- yathā badhirā aśṛṇvantaḥ śrotreṇa prāṇantaḥ prāṇena vadanto vācā paśyantaś cakṣuṣā vidvāṃso manasā prajāyamānā retasaivam ajīviṣmeti
+praviveśa ha śrotram', null, 6001010),
+('brihadaranyaka-6-1-11', 11, 'Chapter 6, Section 1, Verse 11', 'मनो होच्चक्राम।
+तत्संवत्सरं प्रोष्यागत्योवाच -- कथमशकत मदृते जीवितुमिति।
+ते होचुः -- यथा मुग्धा अविद्वांसो मनसा प्राणन्तः प्राणेन वदन्तो वाचा पश्यन्तश्चक्षुषा शृण्वन्तः श्रोत्रेण प्रजायमाना रेतसैवमजीविष्मेति।
+प्रविवेश ह मनः॥', 'mano hoccakrāma
+tat saṃvatsaraṃ proṣyāgatyovāca -- katham aśakata mad ṛte jīvitum iti
+te hocuḥ -- yathā mugdhā avidvāṃso manasā prāṇantaḥ prāṇena vadanto vācā paśyantaś cakṣuṣā śṛṇvantaḥ śrotreṇa prajāyamānā retasaivam ajīviṣmeti
+praviveśa ha manaḥ', null, 6001011),
+('brihadaranyaka-6-1-12', 12, 'Chapter 6, Section 1, Verse 12', 'रेतो होच्चक्राम।
+तत्संवत्सरं प्रोष्यागत्योवाच -- कथमशकत मदृते जीवितुमिति।
+ते होचुः -- यथा क्लीबा अप्रजायमाना रेतासा प्राणन्तः प्राणेन वदन्तो वाचा पश्यन्तश्चक्षुषा शृण्वन्तः श्रोत्रेण विद्वांसो मनसैवमजीविष्मेति।
+प्रविवेश ह रेतः॥', 'reto hoccakrāma
+tat saṃvatsaraṃ proṣyāgatyovāca -- katham aśakata mad ṛte jīvitum iti
+te hocuḥ -- yathā klībā aprajāyamānā retāsā prāṇantaḥ prāṇena vadanto vācā paśyantaś cakṣuṣā śṛṇvantaḥ śrotreṇa vidvāṃso manasaivam ajīviṣmeti
+praviveśa ha retaḥ', null, 6001012),
+('brihadaranyaka-6-1-13', 13, 'Chapter 6, Section 1, Verse 13', 'अथ ह प्राण उत्क्रमिष्यन्यथा महासुहयः सैन्धवः पड्वीशशङ्खून्त्संवृहेदेवं हैवेमान्प्राणान्त्संववर्ह।
+ते होचुः -- मा भगव उत्क्रमीः।
+न वै शक्ष्यामस्त्वदृते जीवितुमिति।
+तस्यो मे बलिं कुरुतेति।
+तथेति॥', 'atha ha prāṇa utkramiṣyan yathā mahāsuhayaḥ saindhavaḥ paḍvīśaśaṅkhūnt saṃvṛhed evaṃ haivemān prāṇānt saṃvavarha
+te hocuḥ -- mā bhagava utkramīḥ
+na vai śakṣyāmas tvad ṛte jīvitum iti
+tasyo me baliṃ kuruteti
+tatheti', null, 6001013),
+('brihadaranyaka-6-1-14', 14, 'Chapter 6, Section 1, Verse 14', 'सा ह वागुवाच -- यद्वा अहं वसिष्ठास्मि त्वं तद्वसिष्ठोऽसीति।
+यद्वा अहं प्रतिष्ठास्मि त्वं तत्प्रतिष्ठोऽसीति चक्षुः।
+यद्वा अहं संपदस्मि त्वं तत्संपदसीति श्रोत्रम्।
+यद्वा अहमायतनमस्मि त्वं तदायतनमसीति मनः।
+यद्वा अहं प्रजातिरस्मि त्वं तत्प्रजातिरसीति रेतः।
+तस्यो मे किमन्नं किं वास इति।
+यदिदं किञ्चा श्वभ्य आ कृमिभ्य आ कीटपतङ्गेभ्यस्तत्तेऽन्नम्।
+आपो वास इति।
+न ह वा अस्यानन्नं जग्धं भवति नानन्नं प्रतिगृहीतं य एवमेतदनस्यान्नं वेद।
+तद्विद्वांसः श्रोत्रिया अशिष्यन्त आचामन्त्यशित्वाचामन्ति।
+एतमेव तदन्नमनग्नं कुर्वन्तो मन्यन्ते॥', 'sā ha vāg uvāca -- yad vā ahaṃ vasiṣṭhāsmi tvaṃ tad vasiṣṭho ''sīti
+yad vā ahaṃ pratiṣṭhāsmi tvaṃ tat pratiṣṭho ''sīti cakṣuḥ
+yad vā ahaṃ saṃpad asmi tvaṃ tat saṃpad asīti śrotram
+yad vā aham āyatanam asmi tvaṃ tad āyatanam asīti manaḥ
+yad vā ahaṃ prajātir asmi tvaṃ tat prajātir asīti retaḥ
+tasyo me kim annaṃ kiṃ vāsa iti
+yad idaṃ kiñcā śvabhya ā kṛmibhya ā kīṭapataṅgebhyas tat te ''nnam
+āpo vāsa iti
+na ha vā asyānannaṃ jagdhaṃ bhavati nānannaṃ pratigṛhītaṃ ya evam etad anasyānnaṃ veda
+tad vidvāṃsaḥ śrotriyā aśiṣyanta ācāmanty aśitvācāmanti
+etam eva tad annam anagnaṃ kurvanto manyante', null, 6001014)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-6-2-1', 1, 'Chapter 6, Section 2, Verse 1', 'श्वेतकेतुर्वा आरुणेयः पन्चालानां परिषदमाजगाम।
+स आजगाम जैवलिं प्रवाहणं परिचारयमाणम्।
+तमुदीक्ष्याभ्युवाद कुमारा३ इति।
+स भो३ इति प्रतिशुश्राव।
+अनुशिष्टो न्वसि पित्रेति।
+ओमिति होवाच॥', 'śvetaketur vā āruṇeyaḥ pancālānāṃ pariṣadam ājagāma
+sa ājagāma jaivaliṃ pravāhaṇaṃ paricārayamāṇam
+tam udīkṣyābhyuvāda kumārā3 iti
+sa bho3 iti pratiśuśrāva
+anuśiṣṭo nv asi pitreti
+om iti hovāca', null, 6002001),
+('brihadaranyaka-6-2-2', 2, 'Chapter 6, Section 2, Verse 2', 'वेत्थ यथेमाः प्रजाः प्रयत्यो विप्रतिपद्यन्ता३ इति।
+नेति होवाच।
+वेत्थो यथेमं लोकं पुनरापद्यन्ता३ इति।
+नेति हैवोवाच।
+वेत्थो यथासौ लोक एवं बहुभिः पुनः पुनः प्रयद्भिर्न संपूर्यता३ इति।
+नेति हैवोवाच।
+वेत्थो यतिथ्यामाहुत्यां हुतायामापः पुरुषवाचो भूत्वा समुत्थाय वदन्ती३ इति।
+नेति हैवोवाच।
+वेत्थो देवयानस्य वा पथः प्रतिपदं पितृयाणस्य वा।
+यत्कृत्वा देवयानं वा पन्थानं प्रतिपद्यन्ते पितृयाणं वा।
+अपि हि न ऋषेर्वचः श्रुतं -- द्वे सृती अशृणवं पितॄणामहं देवानामुत मर्त्यानाम्।
+ताभ्यामिदं विश्वमेजत्समेति यदन्तरा पितरं मातरं चेति।
+नाहमत एकं चन वेदेति होवाच॥', 'vettha yathemāḥ prajāḥ prayatyo vipratipadyantā3 iti
+neti hovāca
+vettho yathemaṃ lokaṃ punar āpadyantā3 iti
+neti haivovāca
+vettho yathāsau loka evaṃ bahubhiḥ punaḥ punaḥ prayadbhir na saṃpūryatā3 iti
+neti haivovāca
+vettho yatithyām āhutyāṃ hutāyām āpaḥ puruṣavāco bhūtvā samutthāya vadantī3 iti
+neti haivovāca
+vettho devayānasya vā pathaḥ pratipadaṃ pitṛyāṇasya vā
+yat kṛtvā devayānaṃ vā panthānaṃ pratipadyante pitṛyāṇaṃ vā
+api hi na ṛṣer vacaḥ śrutaṃ -- dve sṛtī aśṛṇavaṃ pitṝṇām ahaṃ devānām uta martyānām
+tābhyām idaṃ viśvam ejat sameti yad antarā pitaraṃ mātaraṃ ceti
+nāham ata ekaṃ cana vedeti hovāca', null, 6002002),
+('brihadaranyaka-6-2-3', 3, 'Chapter 6, Section 2, Verse 3', 'अथैनं वसत्योपमन्त्रयां चक्रे।
+अनादृत्य वसतिं कुमारः प्रदुद्राव।
+स आजगाम पितरम्।
+तं होवाच -- इति वाव किल नो भवान्पुरानुशिष्टानवोच इति।
+कथम्सुमेध इति।
+पञ्च मा प्रश्नान्राजन्यबन्धुरप्राक्षीत्।
+ततो नैकं चन वेदेति।
+कतमे त इति।
+इम इति ह प्रतीकान्युदाजहार॥', 'athainaṃ vasatyopamantrayāṃ cakre
+anādṛtya vasatiṃ kumāraḥ pradudrāva
+sa ājagāma pitaram
+taṃ hovāca -- iti vāva kila no bhavān purānuśiṣṭān avoca iti
+katham sumedha iti
+pañca mā praśnān rājanyabandhur aprākṣīt
+tato naikaṃ cana vedeti
+katame ta iti
+ima iti ha pratīkāny udājahāra', null, 6002003),
+('brihadaranyaka-6-2-4', 4, 'Chapter 6, Section 2, Verse 4', 'स होवाच -- तथा नस्त्वं तत जानीथा यथा यदहं किंच वेद सर्वमहं तत्तुभमवोचम्।
+प्रेहि तु तत्र।
+प्रतीत्य ब्रह्मचर्यं वत्स्याव इति।
+भवानेव गच्छत्विति।
+स आजगाम गौतमो यत्र प्रवाहणस्य जैवलेरास।
+तस्मा आसनमाहृत्योदकमाहारयां चकार।
+अथ हास्मा अर्घ्यं चकार।
+तं होवाच -- वरं भगवते गौतमाय दद्म इति॥', 'sa hovāca -- tathā nas tvaṃ tata jānīthā yathā yad ahaṃ kiṃca veda sarvam ahaṃ tat tubham avocam
+prehi tu tatra
+pratītya brahmacaryaṃ vatsyāva iti
+bhavān eva gacchatv iti
+sa ājagāma gautamo yatra pravāhaṇasya jaivaler āsa
+tasmā āsanam āhṛtyodakam āhārayāṃ cakāra
+atha hāsmā arghyaṃ cakāra
+taṃ hovāca -- varaṃ bhagavate gautamāya dadma iti', null, 6002004),
+('brihadaranyaka-6-2-5', 5, 'Chapter 6, Section 2, Verse 5', 'स होवाच -- प्रतिज्ञतो म एष वरः।
+यां तु कुमारस्यान्ते वाचमभाषथास्तां मे ब्रूहीति॥', 'sa hovāca -- pratijñato ma eṣa varaḥ
+yāṃ tu kumārasyānte vācam abhāṣathās tāṃ me brūhīti', null, 6002005),
+('brihadaranyaka-6-2-6', 6, 'Chapter 6, Section 2, Verse 6', 'स होवाच -- दैवेषु वै गौतम तद्वरेषु।
+मानुषाणां ब्रूहीति॥', 'sa hovāca -- daiveṣu vai gautama tad vareṣu
+mānuṣāṇāṃ brūhīti', null, 6002006),
+('brihadaranyaka-6-2-7', 7, 'Chapter 6, Section 2, Verse 7', 'स होवाच -- विज्ञायते हास्तिहिरण्यस्यापात्तं गोअश्वानां दासीनां प्रवाराणां परिधानस्य।
+मा नो भवान्बहोरनन्तस्यापर्यन्तस्याभ्यवदान्यो भूदिति।
+स वै गौतम तीर्थेनेच्छसा इति।
+उपैम्यहं भवन्तमिति।
+वाचा ह स्मैव पूर्व उपयन्ति।
+स होपायनकीर्त्योवास॥', 'sa hovāca -- vijñāyate hāstihiraṇyasyāpāttaṃ goaśvānāṃ dāsīnāṃ pravārāṇāṃ paridhānasya
+mā no bhavān bahor anantasyāparyantasyābhyavadānyo bhūd iti
+sa vai gautama tīrthenecchasā iti
+upaimy ahaṃ bhavantam iti
+vācā ha smaiva pūrva upayanti
+sa hopāyanakīrtyovāsa', null, 6002007),
+('brihadaranyaka-6-2-8', 8, 'Chapter 6, Section 2, Verse 8', 'स होवाच -- तथा नस्त्वम्गौतम मापराधास्तव च पितामहाः।
+यथेयं विद्येतः पूर्वं न कस्मिंश्चन ब्राह्मन उवास।
+तां त्वहं तुभ्यं वक्ष्यामि।
+को हि त्वैवं ब्रुवन्तमर्हति प्रत्याख्यातुमिति॥', 'sa hovāca -- tathā nas tvam gautama māparādhās tava ca pitāmahāḥ
+yatheyaṃ vidyetaḥ pūrvaṃ na kasmiṃś cana brāhmana uvāsa
+tāṃ tv ahaṃ tubhyaṃ vakṣyāmi
+ko hi tvaivaṃ bruvantam arhati pratyākhyātum iti', null, 6002008),
+('brihadaranyaka-6-2-9', 9, 'Chapter 6, Section 2, Verse 9', 'असौ वै लोकोऽग्निर्गौतम।
+तस्यादित्य एव समित्।
+रश्मयो धूमः।
+अहरर्चिः।
+दिशोऽङ्गाराः।
+अवान्तरदिशो विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवाः श्रद्धां जुह्वति।
+तस्या आहुत्यै सोमो राजा संभवति॥', 'asau vai loko ''gnir gautama
+tasyāditya eva samit
+raśmayo dhūmaḥ
+ahar arciḥ
+diśo ''ṅgārāḥ
+avāntaradiśo viṣphuliṅgāḥ
+tasminn etasminn agnau devāḥ śraddhāṃ juhvati
+tasyā āhutyai somo rājā saṃbhavati', null, 6002009),
+('brihadaranyaka-6-2-10', 10, 'Chapter 6, Section 2, Verse 10', 'पर्जन्यो वा अग्निर्गौतम।
+तस्य संवत्सर एव समित्।
+अभ्राणि धूमः।
+विद्युदर्चिः।
+अशनिरङ्गाराः।
+ह्रादुनयो विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवाः सोमं राजानं जुह्वति।
+तस्या आहुत्यै वृष्टिः संभवति॥', 'parjanyo vā agnir gautama
+tasya saṃvatsara eva samit
+abhrāṇi dhūmaḥ
+vidyud arciḥ
+aśanir aṅgārāḥ
+hrādunayo viṣphuliṅgāḥ
+tasminn etasminn agnau devāḥ somaṃ rājānaṃ juhvati
+tasyā āhutyai vṛṣṭiḥ saṃbhavati', null, 6002010),
+('brihadaranyaka-6-2-11', 11, 'Chapter 6, Section 2, Verse 11', 'अयं वै लोकोऽग्निर्गौतम।
+तस्य पृथिव्येव समित्।
+अग्निर्धूमः।
+रात्रिरर्चिः।
+चन्द्रमा अङ्गाराः।
+नक्षत्राणि विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवा वृष्टिं जुह्वति।
+तस्या आहुत्या अन्नं संभवति॥', 'ayaṃ vai loko ''gnir gautama
+tasya pṛthivy eva samit
+agnir dhūmaḥ
+rātrir arciḥ
+candramā aṅgārāḥ
+nakṣatrāṇi viṣphuliṅgāḥ
+tasminn etasminn agnau devā vṛṣṭiṃ juhvati
+tasyā āhutyā annaṃ saṃbhavati', null, 6002011),
+('brihadaranyaka-6-2-12', 12, 'Chapter 6, Section 2, Verse 12', 'पुरुषो वा अग्निर्गौतम।
+तस्य व्यात्तमेव समित्।
+प्राणो धूमः।
+वागर्चिः।
+चक्षुरङ्गाराः।
+श्रोत्रं विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवा अन्नं जुह्वति।
+तस्या आहुत्यै रेतः संभवति॥', 'puruṣo vā agnir gautama
+tasya vyāttam eva samit
+prāṇo dhūmaḥ
+vāg arciḥ
+cakṣur aṅgārāḥ
+śrotraṃ viṣphuliṅgāḥ
+tasminn etasminn agnau devā annaṃ juhvati
+tasyā āhutyai retaḥ saṃbhavati', null, 6002012),
+('brihadaranyaka-6-2-13', 13, 'Chapter 6, Section 2, Verse 13', 'योषा वा अग्निर्गौतम।
+तस्या उपस्थ एव समित्।
+लोमानि धूमः।
+योनिरर्चिः।
+यदन्तः करोति तेऽङ्गाराः।
+अभिनन्दा विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवा रेतो जुह्वति।
+तस्या आहुत्यै पुरुषः संभवति।
+स जीवति यावज्जीवति।
+अथ यदा म्रियते॥', 'yoṣā vā agnir gautama
+tasyā upastha eva samit
+lomāni dhūmaḥ
+yonir arciḥ
+yad antaḥ karoti te ''ṅgārāḥ
+abhinandā viṣphuliṅgāḥ
+tasminn etasminn agnau devā reto juhvati
+tasyā āhutyai puruṣaḥ saṃbhavati
+sa jīvati yāvaj jīvati
+atha yadā mriyate', null, 6002013),
+('brihadaranyaka-6-2-14', 14, 'Chapter 6, Section 2, Verse 14', 'अथैनमग्नये हरन्ति।
+तस्याग्निरेवाग्निर्भवति।
+समित्समित्।
+धूमो धूमः।
+अर्चिरर्चिः।
+अङ्गारा अङ्गाराः।
+विष्फुलिङ्गा विष्फुलिङ्गाः।
+तस्मिन्नेतस्मिन्नग्नौ देवाः पुरुषं जुह्वति।
+तस्या आहुत्यै पुरुषो भास्वरवर्णः संभवति॥', 'athainam agnaye haranti
+tasyāgnir evāgnir bhavati
+samit samit
+dhūmo dhūmaḥ
+arcir arciḥ
+aṅgārā aṅgārāḥ
+viṣphuliṅgā viṣphuliṅgāḥ
+tasminn etasminn agnau devāḥ puruṣaṃ juhvati
+tasyā āhutyai puruṣo bhāsvaravarṇaḥ saṃbhavati', null, 6002014),
+('brihadaranyaka-6-2-15', 15, 'Chapter 6, Section 2, Verse 15', 'ते य एवमेतद्विदुर्ये चामी अरण्ये श्रद्धां सत्यमुपासते तेऽर्चिरभिसंभवन्ति।
+अर्चिषोऽहः।
+अह्न आपूर्यमाणपक्षम्।
+आपूर्यमाणपक्षाद्यान्षण्मासानुदङ्ङादित्य एति।
+मासेभ्यो देवलोकम्।
+देवलोकादादित्यम्।
+आदित्याद्वैद्युतम्।
+तान्वैद्युतान्पुरुषो मानस एत्य ब्रह्मलोकान्गमयति।
+ते तेषु ब्रह्मलोकेषु पराः परावतो वसन्ति।
+तेषां न पुनरावृत्तिः॥', 'te ya evam etad vidur ye cāmī araṇye śraddhāṃ satyam upāsate te ''rcir abhisaṃbhavanti
+arciṣo ''haḥ
+ahna āpūryamāṇapakṣam
+āpūryamāṇapakṣād yān ṣaṇ māsān udaṅṅ āditya eti
+māsebhyo devalokam
+devalokād ādityam
+ādityād vaidyutam
+tān vaidyutān puruṣo mānasa etya brahmalokān gamayati
+te teṣu brahmalokeṣu parāḥ parāvato vasanti
+teṣāṃ na punar āvṛttiḥ', null, 6002015),
+('brihadaranyaka-6-2-16', 16, 'Chapter 6, Section 2, Verse 16', 'अथ ये यज्ञेन दानेन तपसा लोकाञ्जयन्ति ते धूममभिसंभवन्ति।
+धूमाद्रात्रिम्।
+रात्रेरपक्षीयमाणपक्षम्।
+अपक्षीयमाणपक्षाद्यान्षण्मासान्दक्षिणादित्य एति।
+मासेभ्यः पितृलोकम्।
+पितृलोकाच्चन्द्रम्।
+ते चन्द्रं प्राप्यान्नं भवन्ति।
+तांस्तत्र देवा यथा सोमं राजानमाप्यायस्वापक्षीयस्वेत्येवमेनांस्तत्र भक्षयन्ति।
+तेषां यदा तत्पर्यवैत्यथेममेवाकाशमभिनिष्पद्यन्ते।
+आकाशाद्वायुम्।
+वायोर्वृष्टिम्।
+वृष्टेः पृथिवीम्।
+ते पृथिवीं प्राप्यान्नं भवन्ति।
+ते पुनः पुरुषाग्नौ हूयन्ते ततो योषाग्नौ जायन्ते।
+लोकान्प्रत्युथायिनस्त एवमेवानुपरिवर्तन्ते।
+अथ य एतौ पन्थानौ न विदुस्ते कीटाः पतङ्गा यदिदं दन्दशूकम्॥', 'atha ye yajñena dānena tapasā lokāñ jayanti te dhūmam abhisaṃbhavanti
+dhūmād rātrim
+rātrer apakṣīyamāṇapakṣam
+apakṣīyamāṇapakṣād yān ṣaṇ māsān dakṣiṇāditya eti
+māsebhyaḥ pitṛlokam
+pitṛlokāc candram
+te candraṃ prāpyānnaṃ bhavanti
+tāṃs tatra devā yathā somaṃ rājānam āpyāyasvāpakṣīyasvety evam enāṃs tatra bhakṣayanti
+teṣāṃ yadā tat paryavaity athemam evākāśam abhiniṣpadyante
+ākāśād vāyum
+vāyor vṛṣṭim
+vṛṣṭeḥ pṛthivīm
+te pṛthivīṃ prāpyānnaṃ bhavanti
+te punaḥ puruṣāgnau hūyante tato yoṣāgnau jāyante
+lokān pratyuthāyinas ta evam evānuparivartante
+atha ya etau panthānau na vidus te kīṭāḥ pataṅgā yad idaṃ dandaśūkam', null, 6002016)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-6-3-1', 1, 'Chapter 6, Section 3, Verse 1', 'स यः कामयेत -- महत्प्राप्नुयामित्युदगयन आपूर्यमाणपक्षस्य पुण्याहे द्वादशाहमुपसद्व्रती भूत्वौदुम्बरे कंसे चमसे वा सर्वौषधं फलानीति संभृत्य परिसमुह्य परिलिप्याग्निमुपसमाधाय परिस्तीर्यावृताज्यं संस्कृत्य पुंसा नक्षत्रेण मन्थं संनीय जुहोति -- यावन्तो देवास्त्वयि जातवेदस्तिर्यञ्चो घ्नन्ति पुरुषस्य कामान्।
+तेभ्योऽहं भागधेयं जुहोमि ते मा तृप्ताः सर्वैः कामैस्तर्पयन्तु स्वाहा।
+या तिरश्ची निपद्यसेऽहं विधरणी इति।
+तां त्वा घृतस्य धारया यजे संराधनीमहं स्वाहा॥', 'sa yaḥ kāmayeta -- mahat prāpnuyām ity udagayana āpūryamāṇapakṣasya puṇyāhe dvādaśāham upasadvratī bhūtvaudumbare kaṃse camase vā sarvauṣadhaṃ phalānīti saṃbhṛtya parisamuhya parilipyāgnim upasamādhāya paristīryāvṛtājyaṃ saṃskṛtya puṃsā nakṣatreṇa manthaṃ saṃnīya juhoti -- yāvanto devās tvayi jātavedas tiryañco ghnanti puruṣasya kāmān
+tebhyo ''haṃ bhāgadheyaṃ juhomi te mā tṛptāḥ sarvaiḥ kāmais tarpayantu svāhā
+yā tiraścī nipadyase ''haṃ vidharaṇī iti
+tāṃ tvā ghṛtasya dhārayā yaje saṃrādhanīm ahaṃ svāhā', null, 6003001),
+('brihadaranyaka-6-3-2', 2, 'Chapter 6, Section 3, Verse 2', 'ज्येष्ठाय स्वाहा श्रेष्ठाय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+प्राणाय स्वाहा वसिष्ठायै स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+वाचे स्वाहा प्रतिष्ठायै स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+चक्षुषे स्वाहा संपदे स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+श्रोत्राय स्वाहायतनाय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+मनसे स्वाहा प्रजात्यै स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+रेतसे स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति॥', 'jyeṣṭhāya svāhā śreṣṭhāya svāhety agnau hutvā manthe saṃsravam avanayati
+prāṇāya svāhā vasiṣṭhāyai svāhety agnau hutvā manthe saṃsravam avanayati
+vāce svāhā pratiṣṭhāyai svāhety agnau hutvā manthe saṃsravam avanayati
+cakṣuṣe svāhā saṃpade svāhety agnau hutvā manthe saṃsravam avanayati
+śrotrāya svāhāyatanāya svāhety agnau hutvā manthe saṃsravam avanayati
+manase svāhā prajātyai svāhety agnau hutvā manthe saṃsravam avanayati
+retase svāhety agnau hutvā manthe saṃsravam avanayati', null, 6003002),
+('brihadaranyaka-6-3-3', 3, 'Chapter 6, Section 3, Verse 3', 'अग्नये स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+सोमाय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+भूः स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+भुवः स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+स्वः स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+भूर्भुवः स्वः स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+ब्रह्मणे स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+क्षत्राय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+भूताय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+भविष्यते स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+विश्वाय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+सर्वाय स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति।
+प्रजापतये स्वाहेत्यग्नौ हुत्वा मन्थे संस्रवमवनयति॥', 'agnaye svāhety agnau hutvā manthe saṃsravam avanayati
+somāya svāhety agnau hutvā manthe saṃsravam avanayati
+bhūḥ svāhety agnau hutvā manthe saṃsravam avanayati
+bhuvaḥ svāhety agnau hutvā manthe saṃsravam avanayati
+svaḥ svāhety agnau hutvā manthe saṃsravam avanayati
+bhūr bhuvaḥ svaḥ svāhety agnau hutvā manthe saṃsravam avanayati
+brahmaṇe svāhety agnau hutvā manthe saṃsravam avanayati
+kṣatrāya svāhety agnau hutvā manthe saṃsravam avanayati
+bhūtāya svāhety agnau hutvā manthe saṃsravam avanayati
+bhaviṣyate svāhety agnau hutvā manthe saṃsravam avanayati
+viśvāya svāhety agnau hutvā manthe saṃsravam avanayati
+sarvāya svāhety agnau hutvā manthe saṃsravam avanayati
+prajāpataye svāhety agnau hutvā manthe saṃsravam avanayati', null, 6003003),
+('brihadaranyaka-6-3-4', 4, 'Chapter 6, Section 3, Verse 4', 'अथैनमभिमृशति -- भ्रमदसि।
+ज्वलदसि।
+पूर्णमसि।
+प्रस्तब्धमसि।
+एकसभमसि।
+हिङ्कृतमसि।
+हिङ्क्रियमानमसि।
+उद्गीथमसि।
+उद्गीयमानमसि।
+श्रावितमसि।
+प्रत्याश्रावितमसि।
+आर्द्रे संदीप्तमसि।
+विभूरसि।
+प्रभूरसि।
+अन्नमसि।
+ज्योतिरसि।
+निधनमसि।
+संवर्गोऽसीति॥', 'athainam abhimṛśati -- bhramad asi
+jvalad asi
+pūrṇam asi
+prastabdham asi
+ekasabham asi
+hiṅkṛtam asi
+hiṅkriyamānam asi
+udgītham asi
+udgīyamānam asi
+śrāvitam asi
+pratyāśrāvitam asi
+ārdre saṃdīptam asi
+vibhūr asi
+prabhūr asi
+annam asi
+jyotir asi
+nidhanam asi
+saṃvargo ''sīti', null, 6003004),
+('brihadaranyaka-6-3-5', 5, 'Chapter 6, Section 3, Verse 5', 'अथैनमुद्यच्छत्यामंस्यामं हि ते महि।
+स हि राजेशानोऽधिपतिः।
+स मां राजेशनोऽधिपतिं करोत्विति॥', 'athainam udyacchaty āmaṃsy āmaṃ hi te mahi
+sa hi rājeśāno ''dhipatiḥ
+sa māṃ rājeśano ''dhipatiṃ karotv iti', null, 6003005),
+('brihadaranyaka-6-3-6', 6, 'Chapter 6, Section 3, Verse 6', 'अथैनमाचामति -- तत्सवितुर्वरेण्यम्।
+मधु वाता ऋतायते मधु क्षरन्ति सिन्धवः।
+माध्वीर्नः सन्त्वोषधीः।
+भूः स्वाहा।
+भर्गो देवस्य धीमहि मधु नक्तमुतोषसो मधुमत्पार्थिवं रजः।
+मधु द्यौरस्तु नः पिता।
+भुवः स्वाहा।
+धियो यो नः प्रचोदयात्।
+मधुमान्नो वनस्पतिर्मधुमां अस्तु सूर्यः।
+माध्वीर्गवो भवन्तु नः।
+स्वः स्वाहा।
+सर्वां च सावित्रीमन्वाह।
+सर्वाश्च मधुमतीरहमेवेदं सर्वं भूयासं भूर्भुवः स्वः स्वाहेति अन्तत आचम्य पाणी प्रक्षाल्य जघनेनाग्निं प्राक्शिराः संविशति।
+प्रातरादित्यमुपतिष्ठते।
+दिशामेकपुण्डरीकमसि।
+अहं मनुष्याणामेकपुण्डरीकं भूयासमिति।
+यथेतमेत्य जघनेनाग्निमासीनो वंशं जपति॥', 'athainam ācāmati -- tat savitur vareṇyam
+madhu vātā ṛtāyate madhu kṣaranti sindhavaḥ
+mādhvīr naḥ santv oṣadhīḥ
+bhūḥ svāhā
+bhargo devasya dhīmahi madhu naktam utoṣaso madhumat pārthivaṃ rajaḥ
+madhu dyaur astu naḥ pitā
+bhuvaḥ svāhā
+dhiyo yo naḥ pracodayāt
+madhumān no vanaspatir madhumāṃ astu sūryaḥ
+mādhvīr gavo bhavantu naḥ
+svaḥ svāhā
+sarvāṃ ca sāvitrīm anvāha
+sarvāś ca madhumatīr aham evedaṃ sarvaṃ bhūyāsaṃ bhūr bhuvaḥ svaḥ svāheti antata ācamya pāṇī prakṣālya jaghanenāgniṃ prākśirāḥ saṃviśati
+prātar ādityam upatiṣṭhate
+diśām ekapuṇḍarīkam asi
+ahaṃ manuṣyāṇām ekapuṇḍarīkaṃ bhūyāsam iti
+yathetam etya jaghanenāgnim āsīno vaṃśaṃ japati', null, 6003006),
+('brihadaranyaka-6-3-7', 7, 'Chapter 6, Section 3, Verse 7', 'तं हैतमुद्दालक आरुणिर्वाजसनेयाय याज्ञवल्क्यायान्तेवासिन उक्त्वोवाच -- अपि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'taṃ haitam uddālaka āruṇir vājasaneyāya yājñavalkyāyāntevāsina uktvovāca -- api ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti', null, 6003007),
+('brihadaranyaka-6-3-8', 8, 'Chapter 6, Section 3, Verse 8', 'एतमु हैव वाजसनेयो याज्नवल्क्यो मधुकाय पैङ्ग्यायान्तेवासिन उक्त्वोवाच -- अपि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'etam u haiva vājasaneyo yājnavalkyo madhukāya paiṅgyāyāntevāsina uktvovāca -- api ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti', null, 6003008),
+('brihadaranyaka-6-3-9', 9, 'Chapter 6, Section 3, Verse 9', 'एतमु हैव मधुकः पैङ्ग्यश्चूलाय भागवित्तयेऽन्तेवासिन उक्त्वोवाच -- अपि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'etam u haiva madhukaḥ paiṅgyaś cūlāya bhāgavittaye ''ntevāsina uktvovāca -- api ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti', null, 6003009),
+('brihadaranyaka-6-3-10', 10, 'Chapter 6, Section 3, Verse 10', 'एतमु हैव चूलो भागवित्तिर्जानकय आयःस्थूणायान्तेवासिन उक्त्वोवाच -- अपि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'etam u haiva cūlo bhāgavittir jānakaya āyaḥsthūṇāyāntevāsina uktvovāca -- api ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti', null, 6003010),
+('brihadaranyaka-6-3-11', 11, 'Chapter 6, Section 3, Verse 11', 'एतमु हैव जानकिरायस्थूणः सत्यकामाय जाबालायान्तेवासिन उक्त्वोवाच -- अपि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'etam u haiva jānakir āyasthūṇaḥ satyakāmāya jābālāyāntevāsina uktvovāca -- api ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti', null, 6003011),
+('brihadaranyaka-6-3-12', 12, 'Chapter 6, Section 3, Verse 12', 'एतमु हैव सत्यकामो जाबालोऽन्तेवासिभ्य उक्त्वोव -- अचापि य एनं शुष्के स्थाणौ निषिञ्चेज्जायेरञ्छाखाः प्ररोहेयुः पलाशानीति।
+तमेतं नापुत्राय वानन्तेवासिने वा ब्रूयात्॥', 'etam u haiva satyakāmo jābālo ''ntevāsibhya uktvova -- acāpi ya enaṃ śuṣke sthāṇau niṣiñcej jāyerañ chākhāḥ praroheyuḥ palāśānīti
+tam etaṃ nāputrāya vānantevāsine vā brūyāt', null, 6003012),
+('brihadaranyaka-6-3-13', 13, 'Chapter 6, Section 3, Verse 13', 'चतुरौदुम्बरो भवति।
+औदुम्बरः स्रुव औदुम्बरश्चमस औदुम्बर इध्म औदुम्बर्या उपमन्थन्यौ।
+दश ग्राम्याणि धान्यानि भवन्ति।
+व्रीहियवास्तिलमाषा अणुप्रियंगवो गोधूमाश्च मसूराश्च खल्वाश्च खलकुलाश्च।
+तान्पिष्टान्दधनि मधुनि घृत उपसिञ्चति।
+आज्यस्य जुहोति॥', 'caturaudumbaro bhavati
+audumbaraḥ sruva audumbaraś camasa audumbara idhma audumbaryā upamanthanyau
+daśa grāmyāṇi dhānyāni bhavanti
+vrīhiyavās tilamāṣā aṇupriyaṃgavo godhūmāś ca masūrāś ca khalvāś ca khalakulāś ca
+tān piṣṭān dadhani madhuni ghṛta upasiñcati
+ājyasya juhoti', null, 6003013)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-6-4-1', 1, 'Chapter 6, Section 4, Verse 1', 'एषां वै भूतानां पृथिवी रसः।
+पृथिव्या आपः।
+अपामोषधयः।
+ओषधीनां पुष्पाणि।
+पुष्पाणां फलानि।
+फलानां पुरुषः।
+पुरुषस्य रेतः॥', 'eṣāṃ vai bhūtānāṃ pṛthivī rasaḥ
+pṛthivyā āpaḥ
+apām oṣadhayaḥ
+oṣadhīnāṃ puṣpāṇi
+puṣpāṇāṃ phalāni
+phalānāṃ puruṣaḥ
+puruṣasya retaḥ', null, 6004001),
+('brihadaranyaka-6-4-2', 2, 'Chapter 6, Section 4, Verse 2', 'स ह प्रजापतिरीक्षां चक्रे -- हन्तास्मै प्रतिष्ठां कल्पयानीति स स्त्रियं ससृजे।
+तां सृष्ट्वाध उपास्त।
+तस्मात्स्त्रियमध उपासीत।
+स एतं प्राञ्चं ग्रावाणमात्मन एव समुदपारयत्।
+तेनैनामभ्यसृजत॥', 'sa ha prajāpatir īkṣāṃ cakre -- hantāsmai pratiṣṭhāṃ kalpayānīti sa striyaṃ sasṛje
+tāṃ sṛṣṭvādha upāsta
+tasmāt striyam adha upāsīta
+sa etaṃ prāñcaṃ grāvāṇam ātmana eva samudapārayat
+tenainām abhyasṛjata', null, 6004002),
+('brihadaranyaka-6-4-3', 3, 'Chapter 6, Section 4, Verse 3', 'तस्या वेदिरुपस्थः।
+लोमानि बर्हिश्।
+चर्माधिषवणे।
+समिद्धो मध्यतस्तौ मुष्कौ।
+स यावान्ह वै वाजपेयेन यजमनस्य लोको भवति तावानस्य लोको भवति।
+य एवं विद्वानधोपहासं चरत्यासां स्त्रीणां सुकृतं वृङ्क्ते।
+अथ य इदमविद्वानधोपहासं चरत्यास्य स्त्रियः सुकृतं वृञ्जते॥', 'tasyā vedir upasthaḥ
+lomāni barhiś
+carmādhiṣavaṇe
+samiddho madhyatas tau muṣkau
+sa yāvān ha vai vājapeyena yajamanasya loko bhavati tāvān asya loko bhavati
+ya evaṃ vidvān adhopahāsaṃ caraty āsāṃ strīṇāṃ sukṛtaṃ vṛṅkte
+atha ya idam avidvān adhopahāsaṃ caraty āsya striyaḥ sukṛtaṃ vṛñjate', null, 6004003),
+('brihadaranyaka-6-4-4', 4, 'Chapter 6, Section 4, Verse 4', 'एतद्ध स्म वै तद्विद्वानुद्दालक आरुनिराह।
+एतद्ध स्म वै तद्विद्वान्नाको मौद्गल्य आह।
+एतद्ध स्म वै तद्विद्वान्कुमारहारित आह -- बहवो मर्या ब्राह्मनायना निरिन्द्रिया विसुकृतोऽस्माल्लोकात्प्रयन्ति य इदमविद्वांसोऽधोपहासं चरन्तीति।
+बहु वा इदं सुप्तस्य वा जाग्रतो वा रेतः स्कन्दति॥', 'etad dha sma vai tad vidvān uddālaka ārunir āha
+etad dha sma vai tad vidvān nāko maudgalya āha
+etad dha sma vai tad vidvān kumārahārita āha -- bahavo maryā brāhmanāyanā nirindriyā visukṛto ''smāl lokāt prayanti ya idam avidvāṃso ''dhopahāsaṃ carantīti
+bahu vā idaṃ suptasya vā jāgrato vā retaḥ skandati', null, 6004004),
+('brihadaranyaka-6-4-5', 5, 'Chapter 6, Section 4, Verse 5', 'तदभिमृशेदनु वा मन्त्रयेत -- यन्मेऽद्य रेतः पृथिवीमस्कान्त्सीद्यदोषधीरप्यसरद्यदपः।
+इदमहं तद्रेत आददे।
+पुनर्मामैतु इन्द्रियं पुनस्तेजः पुनर्भगः।
+पुनरग्निर्धिष्ण्या यथास्थानं कल्पन्ताम्।
+इत्यनामिकाङ्गुष्ठाभ्यामादायान्तरेण स्तनौ वा भ्रुवौ वा निमृज्यात्॥', 'tad abhimṛśed anu vā mantrayeta -- yan me ''dya retaḥ pṛthivīm askāntsīd yad oṣadhīr apy asarad yad apaḥ
+idam ahaṃ tad reta ādade
+punar mām aitu indriyaṃ punas tejaḥ punar bhagaḥ
+punar agnir dhiṣṇyā yathāsthānaṃ kalpantām
+ity anāmikāṅguṣṭhābhyām ādāyāntareṇa stanau vā bhruvau vā nimṛjyāt', null, 6004005),
+('brihadaranyaka-6-4-6', 6, 'Chapter 6, Section 4, Verse 6', 'अथ यद्युदक आत्मानं पश्येत्तदभिमन्त्रयेत -- मयि तेज इन्द्रियं यशो द्रविणं सुकृतमिति।
+श्रीर्ह वा एषा स्त्रीणां यन्मलोद्वासाः।
+तस्मान्मलोद्वाससं यशस्विनीमभिक्रम्योपमन्त्रयेत॥', 'atha yady udaka ātmānaṃ paśyet tad abhimantrayeta -- mayi teja indriyaṃ yaśo draviṇaṃ sukṛtam iti
+śrīr ha vā eṣā strīṇāṃ yan malodvāsāḥ
+tasmān malodvāsasaṃ yaśasvinīm abhikramyopamantrayeta', null, 6004006),
+('brihadaranyaka-6-4-7', 7, 'Chapter 6, Section 4, Verse 7', 'सा चेदस्मै न दद्यात्काममेनामवक्रिणीयात्।
+सा चेदस्मै नैव दद्यात्काममेनां यष्ट्या वा पाणिना वोपहत्यातिक्रामेत्।
+इन्द्रियेन ते यशसा यश आदद इति।
+अयशा एव भवति॥', 'sā ced asmai na dadyāt kāmam enām avakriṇīyāt
+sā ced asmai naiva dadyāt kāmam enāṃ yaṣṭyā vā pāṇinā vopahatyātikrāmet
+indriyena te yaśasā yaśa ādada iti
+ayaśā eva bhavati', null, 6004007),
+('brihadaranyaka-6-4-8', 8, 'Chapter 6, Section 4, Verse 8', 'सा चेदस्मै दद्यादिन्द्रियेण ते यशसा यश आदधामीति।
+यशस्विनावेव भवतः॥', 'sā ced asmai dadyād indriyeṇa te yaśasā yaśa ādadhāmīti
+yaśasvināv eva bhavataḥ', null, 6004008),
+('brihadaranyaka-6-4-9', 9, 'Chapter 6, Section 4, Verse 9', 'स यामिच्छेत्-- कामयेत मेति तस्यामर्थं निष्ठाय मुखेन मुखं संधायोपस्थमस्या अभिमृश्य जपेत्-- अङ्गादङ्गात्संभवसि हृदयादधिजायसे।
+स त्वमङ्गकषायोऽसि दिग्धविद्धामिव मादयेमाममूं मयीति॥', 'sa yām icchet -- kāmayeta meti tasyām arthaṃ niṣṭhāya mukhena mukhaṃ saṃdhāyopastham asyā abhimṛśya japet -- aṅgād aṅgāt saṃbhavasi hṛdayād adhijāyase
+sa tvam aṅgakaṣāyo ''si digdhaviddhām iva mādayemām amūṃ mayīti', null, 6004009),
+('brihadaranyaka-6-4-10', 10, 'Chapter 6, Section 4, Verse 10', 'अथ यामिच्छेन्न गर्भं दधीतेति तस्यामर्थं निष्ठाय मुखेन मुखं संधायाभिप्राण्यापान्यात्।
+इन्द्रियेण ते रेतसा रेत आदद इति।
+अरेता एव भवति॥', 'atha yām icchen na garbhaṃ dadhīteti tasyām arthaṃ niṣṭhāya mukhena mukhaṃ saṃdhāyābhiprāṇyāpānyāt
+indriyeṇa te retasā reta ādada iti
+aretā eva bhavati', null, 6004010),
+('brihadaranyaka-6-4-11', 11, 'Chapter 6, Section 4, Verse 11', 'अथ यामिच्छेद्दधीतेति तस्यामर्थं निष्ठाय मुखेन मुखं संधायापान्याभिप्राण्यात्।
+इन्द्रियेण ते रेतसा रेत आदधामीति।
+गर्भिण्येव भवति॥', 'atha yām icched dadhīteti tasyām arthaṃ niṣṭhāya mukhena mukhaṃ saṃdhāyāpānyābhiprāṇyāt
+indriyeṇa te retasā reta ādadhāmīti
+garbhiṇy eva bhavati', null, 6004011),
+('brihadaranyaka-6-4-12', 12, 'Chapter 6, Section 4, Verse 12', 'अथ यस्य जायायै जारः स्यात्तं चेद्द्विष्यादामपात्रेऽग्निमुपसमाधाय प्रतिलोमं शरबर्हिः स्तीर्त्वा तस्मिन्नेताः शरभृष्टीः प्रतिलोमाः सर्पिषाक्ता जुहुयात्।
+मम समिद्धेऽहौषीः।
+प्राणापानौ त आददेऽसाविति।
+मम समिद्धेऽहौषीः।
+पुत्रपशूंस्त आददेऽसाविति।
+मम समिद्धेऽहौषीः।
+इष्टासुकृते त आददेऽसाविति।
+मम समिद्धेऽहौषीः।
+अशापराकाशौ त आददेऽसाविति।
+स वा एष निरिन्द्रियो विसुकृतोऽस्माल्लोकाद्प्रैति यमेवंविद्ब्राह्मणः शपति।
+तस्मादेवंवित्श्रोत्रियस्य दारेण नोपहासमिच्छेत्।
+उत ह्येवंवित्परो भवति॥', 'atha yasya jāyāyai jāraḥ syāt taṃ ced dviṣyād āmapātre ''gnim upasamādhāya pratilomaṃ śarabarhiḥ stīrtvā tasminn etāḥ śarabhṛṣṭīḥ pratilomāḥ sarpiṣāktā juhuyāt
+mama samiddhe ''hauṣīḥ
+prāṇāpānau ta ādade ''sāv iti
+mama samiddhe ''hauṣīḥ
+putrapaśūṃs ta ādade ''sāv iti
+mama samiddhe ''hauṣīḥ
+iṣṭāsukṛte ta ādade ''sāv iti
+mama samiddhe ''hauṣīḥ
+aśāparākāśau ta ādade ''sāv iti
+sa vā eṣa nirindriyo visukṛto ''smāl lokād praiti yam evaṃvid brāhmaṇaḥ śapati
+tasmād evaṃvitśrotriyasya dāreṇa nopahāsam icchet
+uta hy evaṃvit paro bhavati', null, 6004012),
+('brihadaranyaka-6-4-13', 13, 'Chapter 6, Section 4, Verse 13', 'अथ यस्य जायामार्तवं विन्देत्त्र्यहं कंसे न पिबेत्।
+अहतवासाः।
+नैनां वृषलो न वृषल्यपहन्यात्।
+त्रिरात्रान्त आप्लुत्य व्रीहीनवघातयेत्॥', 'atha yasya jāyām ārtavaṃ vindet tryahaṃ kaṃse na pibet
+ahatavāsāḥ
+naināṃ vṛṣalo na vṛṣaly apahanyāt
+trirātrānta āplutya vrīhīn avaghātayet', null, 6004013),
+('brihadaranyaka-6-4-14', 14, 'Chapter 6, Section 4, Verse 14', 'स य इच्छेत्-- पुत्रो मे शुक्लो जायेत वेदमनुब्रुवीत सर्वमायुरियादिति क्षीरौदनं पाचयित्वा सर्पिष्मन्तमश्नीयाताम्।
+ईश्वरौ जनयितवै॥', 'sa ya icchet -- putro me śuklo jāyeta vedam anubruvīta sarvam āyur iyād iti kṣīraudanaṃ pācayitvā sarpiṣmantam aśnīyātām
+īśvarau janayitavai', null, 6004014),
+('brihadaranyaka-6-4-15', 15, 'Chapter 6, Section 4, Verse 15', 'अथ य इच्छेत्-- पुत्रो मे कपिलः पिङ्गलो जायेत द्वौ वेदावनुब्रुवीत सर्वमायुरियादिति दध्योदनं पाचयित्वा सर्पिष्मन्तमश्नीयाताम्।
+ईश्वरौ जनयितवै॥', 'atha ya icchet -- putro me kapilaḥ piṅgalo jāyeta dvau vedāv anubruvīta sarvam āyur iyād iti dadhyodanaṃ pācayitvā sarpiṣmantam aśnīyātām
+īśvarau janayitavai', null, 6004015),
+('brihadaranyaka-6-4-16', 16, 'Chapter 6, Section 4, Verse 16', 'अथ य इच्छेत्-- पुत्रो मे श्यामो लोहिताक्षो जायेत त्रीन्वेदाननुब्रुवीत सर्वमायुरियादिति उदौदनं पाचयित्वा सर्पिष्मन्तमश्नीयाताम्।
+ईश्वरौ जनयितवै॥', 'atha ya icchet -- putro me śyāmo lohitākṣo jāyeta trīn vedān anubruvīta sarvam āyur iyād iti udaudanaṃ pācayitvā sarpiṣmantam aśnīyātām
+īśvarau janayitavai', null, 6004016),
+('brihadaranyaka-6-4-17', 17, 'Chapter 6, Section 4, Verse 17', 'अथ य इच्छेद्-- दुहिता मे पण्डिता जायेत सर्वमायुरियादिति तिलौदनं पाचयित्वा सर्पिष्मन्तमश्नीयाताम्।
+ईश्वरौ जनयितवै॥', 'atha ya icched -- duhitā me paṇḍitā jāyeta sarvam āyur iyād iti tilaudanaṃ pācayitvā sarpiṣmantam aśnīyātām
+īśvarau janayitavai', null, 6004017),
+('brihadaranyaka-6-4-18', 18, 'Chapter 6, Section 4, Verse 18', 'अथ य इच्छेत्-- पुत्रो मे पण्डितो विगीतः समितिंगमः शुश्रूषितां वाचं भाषिता जायेत सर्वान्वेदाननुब्रुवीत सर्वमायुरियादिति मांसौदनं पाचयित्वा सर्पिष्मन्तमश्नीयाताम्।
+ईश्वरौ जनयितवाइ।
+औक्षेण वार्षभेण वा॥', 'atha ya icchet -- putro me paṇḍito vigītaḥ samitiṃgamaḥ śuśrūṣitāṃ vācaṃ bhāṣitā jāyeta sarvān vedān anubruvīta sarvam āyur iyād iti māṃsaudanaṃ pācayitvā sarpiṣmantam aśnīyātām
+īśvarau janayitavāi
+aukṣeṇa vārṣabheṇa vā', null, 6004018),
+('brihadaranyaka-6-4-19', 19, 'Chapter 6, Section 4, Verse 19', 'अथाभिप्रातरेव स्थालीपाकावृताज्यं चेष्टित्वा स्थालीपाकस्योपघातं जुहोत्यग्नये स्वाहानुमतये स्वाहा देवाय सवित्रे सत्यप्रसवाय स्वाहेति।
+हुत्वोद्धृत्य प्राश्नाति।
+प्राश्येतरस्याः प्रयच्छति।
+प्रक्षाल्य पाणी उदपात्रं पूरयित्वा तेनैनां त्रिरभ्युक्षति -- उत्तिष्ठातो विश्वावसोऽन्यामिच्छ प्रपूर्व्याम्।
+सं जायां पत्या सहेति॥', 'athābhiprātar eva sthālīpākāvṛtājyaṃ ceṣṭitvā sthālīpākasyopaghātaṃ juhoty agnaye svāhānumataye svāhā devāya savitre satyaprasavāya svāheti
+hutvoddhṛtya prāśnāti
+prāśyetarasyāḥ prayacchati
+prakṣālya pāṇī udapātraṃ pūrayitvā tenaināṃ trir abhyukṣati -- uttiṣṭhāto viśvāvaso ''nyām iccha prapūrvyām
+saṃ jāyāṃ patyā saheti', null, 6004019),
+('brihadaranyaka-6-4-20', 20, 'Chapter 6, Section 4, Verse 20', 'अथैनामभिपद्यते -- अमोऽहमस्मि सा त्वम्।
+सा त्वमस्यमोऽहम्।
+सामाहमस्मि ऋक्त्वम्।
+द्यौरहम्पृथिवी त्वम्।
+तावेहि संरभावहै सह रेतो दधावहै।
+पुंसे पुत्राय वित्तय इति॥', 'athainām abhipadyate -- amo ''ham asmi sā tvam
+sā tvam asy amo ''ham
+sāmāham asmi ṛk tvam
+dyaur aham pṛthivī tvam
+tāv ehi saṃrabhāvahai saha reto dadhāvahai
+puṃse putrāya vittaya iti', null, 6004020),
+('brihadaranyaka-6-4-21', 21, 'Chapter 6, Section 4, Verse 21', 'अथास्या ऊरू विहापयति -- विजिहीथां द्यावापृथिवी इति।
+तस्यामर्थं निष्ठाय मुखेन मुखं संधाय त्रिरेनामनुलोमामनुमार्ष्टि -- विष्णुर्योनिं कल्पयतु त्वष्टा रूपाणि पिंशतु।
+आ सिञ्चतु प्रजापतिर्धाता गर्भं दधातु ते।
+गर्भं धेहि सिनीवालि गर्भं धेहि पृथुष्टुके।
+गर्भं ते अश्विनौ देवावाधत्तां पुष्करस्रजौ॥', 'athāsyā ūrū vihāpayati -- vijihīthāṃ dyāvāpṛthivī iti
+tasyām arthaṃ niṣṭhāya mukhena mukhaṃ saṃdhāya trir enām anulomām anumārṣṭi -- viṣṇur yoniṃ kalpayatu tvaṣṭā rūpāṇi piṃśatu
+ā siñcatu prajāpatir dhātā garbhaṃ dadhātu te
+garbhaṃ dhehi sinīvāli garbhaṃ dhehi pṛthuṣṭuke
+garbhaṃ te aśvinau devāv ādhattāṃ puṣkarasrajau', null, 6004021),
+('brihadaranyaka-6-4-22', 22, 'Chapter 6, Section 4, Verse 22', 'हिरण्मयी अरणी याभ्यां निर्मन्थतामश्विनौ।
+तं ते गर्भं हवामहे दशमे मासि सूतये।
+यथाग्निगर्भा पृथिवी यथा द्यौरैन्द्रेण गर्भिणी।
+वायुर्दिशां यथा गर्भ एवं गर्भं दधामि तेऽसाविति॥', 'hiraṇmayī araṇī yābhyāṃ nirmanthatām aśvinau
+taṃ te garbhaṃ havāmahe daśame māsi sūtaye
+yathāgnigarbhā pṛthivī yathā dyaur aindreṇa garbhiṇī
+vāyur diśāṃ yathā garbha evaṃ garbhaṃ dadhāmi te ''sāv iti', null, 6004022),
+('brihadaranyaka-6-4-23', 23, 'Chapter 6, Section 4, Verse 23', 'सोष्यन्तीमद्भिरभ्युक्षति -- यथा वायुः पुष्करिणीं समिङ्गयति सर्वतः।
+एवा ते गर्भ एजतु सहावैतु जरायुणा।
+इन्द्रस्यायं व्रजः कृतः सार्गलः सपरिश्रयः।
+तमिन्द्र निर्जहि गर्भेण सावरां सहेति॥', 'soṣyantīm adbhir abhyukṣati -- yathā vāyuḥ puṣkariṇīṃ samiṅgayati sarvataḥ
+evā te garbha ejatu sahāvaitu jarāyuṇā
+indrasyāyaṃ vrajaḥ kṛtaḥ sārgalaḥ sapariśrayaḥ
+tam indra nirjahi garbheṇa sāvarāṃ saheti', null, 6004023),
+('brihadaranyaka-6-4-24', 24, 'Chapter 6, Section 4, Verse 24', 'जातेऽग्निमुपसमाधायाङ्क आधाय कंसे पृषदाज्यं संनीय पृषदाज्यस्योपघातं जुहोति -- अस्मिन्सहस्रं पुष्यासमेधमानः स्वे गृहे।
+अस्योपसन्द्यां मा छैत्सीत्प्रजया च पशुभिश्च स्वाहा।
+मयि प्राणांस्त्वयि मनसा जुहोमि स्वाहा।
+यत्कर्मणात्यरीरिचम्यद्वा न्यूनमिहाकरम्।
+अग्निष्टत्स्विष्टकृद्विद्वान्स्विष्टं सुहुतं करोतु नः स्वाहेति॥', 'jāte ''gnim upasamādhāyāṅka ādhāya kaṃse pṛṣadājyaṃ saṃnīya pṛṣadājyasyopaghātaṃ juhoti -- asminsahasraṃ puṣyāsam edhamānaḥ sve gṛhe
+asyopasandyāṃ mā chaitsīt prajayā ca paśubhiś ca svāhā
+mayi prāṇāṃs tvayi manasā juhomi svāhā
+yat karmaṇātyarīricam yad vā nyūnam ihākaram
+agniṣṭat sviṣṭakṛd vidvān sviṣṭaṃ suhutaṃ karotu naḥ svāheti', null, 6004024),
+('brihadaranyaka-6-4-25', 25, 'Chapter 6, Section 4, Verse 25', 'अथास्य दक्षिणं कर्णमभिनिधाय वाग्वागिति त्रिः।
+अथ दधि मधु घृतं संनीयानन्तर्हितेन जातरूपेण प्राशयति।
+भूस्ते दधामि भुवस्ते दधामि स्वस्ते दधामि भूर्भुवः स्वः सर्वं त्वयि दधामीति॥', 'athāsya dakṣiṇaṃ karṇam abhinidhāya vāg vāg iti triḥ
+atha dadhi madhu ghṛtaṃ saṃnīyānantarhitena jātarūpeṇa prāśayati
+bhūs te dadhāmi bhuvas te dadhāmi svas te dadhāmi bhūr bhuvaḥ svaḥ sarvaṃ tvayi dadhāmīti', null, 6004025),
+('brihadaranyaka-6-4-26', 26, 'Chapter 6, Section 4, Verse 26', 'अथास्य नाम करोति वेदोऽसीति।
+तदस्यैतद्गुह्यमेव नाम भवति॥', 'athāsya nāma karoti vedo ''sīti
+tad asyaitad guhyam eva nāma bhavati', null, 6004026),
+('brihadaranyaka-6-4-27', 27, 'Chapter 6, Section 4, Verse 27', 'अथैनं मात्रे प्रदाय स्तनं प्रयच्छति -- यस्ते स्तनः शशयो यो मयोभूर्यो रत्नधा वसुविद्यः सुदत्रः।
+येन विश्वा पुष्यसि वार्याणि सरस्वति तमिह धातवे करिति॥', 'athainaṃ mātre pradāya stanaṃ prayacchati -- yas te stanaḥ śaśayo yo mayobhūr yo ratnadhā vasuvid yaḥ sudatraḥ
+yena viśvā puṣyasi vāryāṇi sarasvati tam iha dhātave kar iti', null, 6004027),
+('brihadaranyaka-6-4-28', 28, 'Chapter 6, Section 4, Verse 28', 'अथास्य मातरमभिमन्त्रयते -- इलासि मैत्रावरुणी वीरे वीरमजीजनत्।
+सा त्वं वीरवती भव यास्मान्वीरवतोऽकरदिति।
+तं वा एतमाहुः -- अतिपिता बताभूः।
+अतिपितामहो बताभूः।
+परमां बत काष्ठां प्राप श्रिया यशसा ब्रह्मवर्चसेन।
+य एवंविदो ब्राह्मणस्य पुत्रो जायत इति॥', 'athāsya mātaram abhimantrayate -- ilāsi maitrāvaruṇī vīre vīram ajījanat
+sā tvaṃ vīravatī bhava yāsmān vīravato ''karad iti
+taṃ vā etam āhuḥ -- atipitā batābhūḥ
+atipitāmaho batābhūḥ
+paramāṃ bata kāṣṭhāṃ prāpa śriyā yaśasā brahmavarcasena
+ya evaṃvido brāhmaṇasya putro jāyata iti', null, 6004028)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'brihadaranyaka-upanishad', (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'brihadaranyaka-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('brihadaranyaka-6-5-1', 1, 'Chapter 6, Section 5, Verse 1', 'अथ वंशः।
+पौतिमाषीपुत्रः कात्यायनीपुत्रात्।
+कात्यायनीपुत्रो गौतमीपुत्रात्।
+गौतमीपुत्रो भारद्वाजीपुत्रात्।
+भारद्वाजीपुत्रः पाराशरीपुत्रात्।
+पाराशरीपुत्र औपस्वस्तीपुत्रात्।
+औपस्वस्तीपुत्रः पाराशरीपुत्रात्।
+पाराशरीपुत्रः कात्यायनीपुत्रात्।
+कात्यायनीपुत्रः कौशिकीपुत्रात्।
+कौशिकीपुत्र आलम्बीपुत्राच्च वैयाघ्रपदीपुत्राच्च।
+वैयाघ्रपदीपुत्रह्काण्वीपुत्राच्च कापीपुत्राच्च।
+कापीपुत्रः॥', 'atha vaṃśaḥ
+pautimāṣīputraḥ kātyāyanīputrāt
+kātyāyanīputro gautamīputrāt
+gautamīputro bhāradvājīputrāt
+bhāradvājīputraḥ pārāśarīputrāt
+pārāśarīputra aupasvastīputrāt
+aupasvastīputraḥ pārāśarīputrāt
+pārāśarīputraḥ kātyāyanīputrāt
+kātyāyanīputraḥ kauśikīputrāt
+kauśikīputra ālambīputrāc ca vaiyāghrapadīputrāc ca
+vaiyāghrapadīputrah kāṇvīputrāc ca kāpīputrāc ca
+kāpīputraḥ', null, 6005001),
+('brihadaranyaka-6-5-3', 3, 'Chapter 6, Section 5, Verse 3', 'याज्ञवल्क्यात्।
+याज्ञवल्क्य उद्दालकात्।
+उद्दालकोऽरुणात्।
+अरुण उपवेशेः।
+उपवेशिः कुश्रेः।
+कुश्रिर्वाजश्रवसः।
+वाजश्रवा जीह्वावतो बाध्योगात्।
+जीह्वावान्बाध्योगोऽसिताद्वार्षगणात्।
+असितो वार्षगणो हरितात्कश्यपात्।
+हरितः कश्यपः शिल्पात्कश्यपात्।
+शिल्पः कश्यपः कश्यपान्नैध्रुवेः।
+कश्यपो नैध्रुविर्वाचः।
+वागम्भिण्याः।
+अम्भिण्यादित्यात्।
+आदित्यानीमानि शुक्लानि यजूंषि वाजसनेयेन याज्ञवल्क्येनाख्ययन्ते॥', 'yājñavalkyāt
+yājñavalkya uddālakāt
+uddālako ''ruṇāt
+aruṇa upaveśeḥ
+upaveśiḥ kuśreḥ
+kuśrir vājaśravasaḥ
+vājaśravā jīhvāvato bādhyogāt
+jīhvāvān bādhyogo ''sitād vārṣagaṇāt
+asito vārṣagaṇo haritāt kaśyapāt
+haritaḥ kaśyapaḥ śilpāt kaśyapāt
+śilpaḥ kaśyapaḥ kaśyapān naidhruveḥ
+kaśyapo naidhruvir vācaḥ
+vāg ambhiṇyāḥ
+ambhiṇy ādityāt
+ādityānīmāni śuklāni yajūṃṣi vājasaneyena yājñavalkyenākhyayante', null, 6005003),
+('brihadaranyaka-6-5-4', 4, 'Chapter 6, Section 5, Verse 4', 'समानमा साञ्जीवीपुत्रात्।
+सञ्जिवीपुत्रो माण्डूकायनेः।
+माण्डूकायनिर्माण्डव्यात्।
+माण्डव्यः कौत्सात्।
+कौत्सो माहित्थेः।
+माहित्थिर्वामकक्षायणात्।
+वामकक्षायणः शाण्डिल्यात्।
+शाण्डिल्यो वात्स्यात्।
+वात्स्यः कुश्रेः।
+कुश्रिर्यज्ञवचसः राजस्तम्बायनात्।
+यज्ञवचा राजस्तम्बायनः तुरात्कावषेयात्।
+तुरः कावषेयः प्रजापतेः।
+प्रजापतिर्ब्रह्मणः।
+ब्रह्म स्वयंभु।
+ब्रह्मणे नमः॥', 'samānam ā sāñjīvīputrāt
+sañjivīputro māṇḍūkāyaneḥ
+māṇḍūkāyanir māṇḍavyāt
+māṇḍavyaḥ kautsāt
+kautso māhittheḥ
+māhitthir vāmakakṣāyaṇāt
+vāmakakṣāyaṇaḥ śāṇḍilyāt
+śāṇḍilyo vātsyāt
+vātsyaḥ kuśreḥ
+kuśrir yajñavacasaḥ rājastambāyanāt
+yajñavacā rājastambāyanaḥ turāt kāvaṣeyāt
+turaḥ kāvaṣeyaḥ prajāpateḥ
+prajāpatir brahmaṇaḥ
+brahma svayaṃbhu
+brahmaṇe namaḥ', null, 6005004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: chandogya-upanishad (upanishad-chandogya.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 1, 'Chapter 1', null, 104) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 1, 'Section 1', null, 10) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 2, 'Section 2', null, 14) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 3, 'Section 3', null, 12) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 4, 'Section 4', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 5, 'Section 5', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 6, 'Section 6', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 7, 'Section 7', null, 9) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 8, 'Section 8', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 9, 'Section 9', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 10, 'Section 10', null, 11) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 11, 'Section 11', null, 9) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 12, 'Section 12', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 13, 'Section 13', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 2, 'Chapter 2', null, 82) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 1, 'Section 1', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 2, 'Section 2', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 3, 'Section 3', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 4, 'Section 4', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 5, 'Section 5', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 6, 'Section 6', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 7, 'Section 7', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 8, 'Section 8', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 9, 'Section 9', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 10, 'Section 10', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 11, 'Section 11', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 12, 'Section 12', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 13, 'Section 13', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 14, 'Section 14', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 15, 'Section 15', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 16, 'Section 16', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 17, 'Section 17', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 18, 'Section 18', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 19, 'Section 19', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 20, 'Section 20', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 21, 'Section 21', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 22, 'Section 22', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 23, 'Section 23', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 24, 'Section 24', null, 16) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 3, 'Chapter 3', null, 93) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 1, 'Section 1', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 2, 'Section 2', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 3, 'Section 3', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 4, 'Section 4', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 5, 'Section 5', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 6, 'Section 6', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 7, 'Section 7', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 8, 'Section 8', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 9, 'Section 9', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 10, 'Section 10', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 11, 'Section 11', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 12, 'Section 12', null, 9) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 13, 'Section 13', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 14, 'Section 14', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 15, 'Section 15', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 16, 'Section 16', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 17, 'Section 17', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 18, 'Section 18', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null), 2, 19, 'Section 19', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 4, 'Chapter 4', null, 76) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 1, 'Section 1', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 2, 'Section 2', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 3, 'Section 3', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 4, 'Section 4', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 5, 'Section 5', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 6, 'Section 6', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 7, 'Section 7', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 8, 'Section 8', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 9, 'Section 9', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 10, 'Section 10', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 11, 'Section 11', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 12, 'Section 12', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 13, 'Section 13', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 14, 'Section 14', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 15, 'Section 15', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 16, 'Section 16', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null), 2, 17, 'Section 17', null, 10) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 5, 'Chapter 5', null, 88) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 1, 'Section 1', null, 15) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 2, 'Section 2', null, 8) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 3, 'Section 3', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 4, 'Section 4', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 5, 'Section 5', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 6, 'Section 6', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 7, 'Section 7', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 8, 'Section 8', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 9, 'Section 9', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 10, 'Section 10', null, 10) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 11, 'Section 11', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 12, 'Section 12', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 13, 'Section 13', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 14, 'Section 14', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 15, 'Section 15', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 16, 'Section 16', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 17, 'Section 17', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 18, 'Section 18', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 19, 'Section 19', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 20, 'Section 20', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 21, 'Section 21', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 22, 'Section 22', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 23, 'Section 23', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null), 2, 24, 'Section 24', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 6, 'Chapter 6', null, 68) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 1, 'Section 1', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 2, 'Section 2', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 3, 'Section 3', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 4, 'Section 4', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 5, 'Section 5', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 6, 'Section 6', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 7, 'Section 7', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 8, 'Section 8', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 9, 'Section 9', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 10, 'Section 10', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 11, 'Section 11', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 12, 'Section 12', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 13, 'Section 13', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 14, 'Section 14', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 15, 'Section 15', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null), 2, 16, 'Section 16', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 7, 'Chapter 7', null, 51) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 1, 'Section 1', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 2, 'Section 2', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 3, 'Section 3', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 4, 'Section 4', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 5, 'Section 5', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 6, 'Section 6', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 7, 'Section 7', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 8, 'Section 8', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 9, 'Section 9', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 10, 'Section 10', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 11, 'Section 11', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 12, 'Section 12', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 13, 'Section 13', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 14, 'Section 14', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 15, 'Section 15', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 16, 'Section 16', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 17, 'Section 17', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 18, 'Section 18', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 19, 'Section 19', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 20, 'Section 20', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 21, 'Section 21', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 22, 'Section 22', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 23, 'Section 23', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 24, 'Section 24', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 25, 'Section 25', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null), 2, 26, 'Section 26', null, 2) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', null, 1, 8, 'Chapter 8', null, 61) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 1, 'Section 1', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 2, 'Section 2', null, 10) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 3, 'Section 3', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 4, 'Section 4', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 5, 'Section 5', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 6, 'Section 6', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 7, 'Section 7', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 8, 'Section 8', null, 5) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 9, 'Section 9', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 10, 'Section 10', null, 4) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 11, 'Section 11', null, 3) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 12, 'Section 12', null, 6) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 13, 'Section 13', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 14, 'Section 14', null, 1) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null), 2, 15, 'Section 15', null, 1) on conflict do nothing;
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-1-1', 1, 'Chapter 1, Section 1, Verse 1', 'ओमित्येतदक्षरमुद्गीथमुपासीत।
+ओमिति ह्युद्गायति।
+तस्योपव्याख्यानम्॥', 'om ity etad akṣaram udgītham upāsīta
+om iti hy udgāyati
+tasyopavyākhyānam', null, 1001001),
+('chandogya-1-1-2', 2, 'Chapter 1, Section 1, Verse 2', 'एषां भूतानां पृथिवी रसः।
+पृथिव्या आपो रसः।
+अपामोषधयो रसः।
+ओषधीनां पुरुषो रसः।
+पुरुषस्य वाग्रसः।
+वाच ऋग्रसः।
+ऋचः साम रसः।
+साम्न उद्गीथो रसः॥', 'eṣāṃ bhūtānāṃ pṛthivī rasaḥ
+pṛthivyā āpo rasaḥ
+apām oṣadhayo rasaḥ
+oṣadhīnāṃ puruṣo rasaḥ
+puruṣasya vāg rasaḥ
+vāca ṛg rasaḥ
+ṛcaḥ sāma rasaḥ
+sāmna udgītho rasaḥ', null, 1001002),
+('chandogya-1-1-3', 3, 'Chapter 1, Section 1, Verse 3', 'स एष रसानां रसतमः परमः परार्ध्योऽष्टमो यदुद्गीथः॥', 'sa eṣa rasānāṃ rasatamaḥ paramaḥ parārdhyo ''ṣṭamo yadudgīthaḥ', null, 1001003),
+('chandogya-1-1-4', 4, 'Chapter 1, Section 1, Verse 4', 'कतमा कतम र्क्कतमत्कतमत्साम कतमः कतम उद्गीथ इति विमृष्टं भवति॥', 'katamā katama rk katamat katamat sāma katamaḥ katama udgītha iti vimṛṣṭaṃ bhavati', null, 1001004),
+('chandogya-1-1-5', 5, 'Chapter 1, Section 1, Verse 5', 'वागेवर्क्।
+प्राणः साम।
+ओमित्येतदक्षरमुद्गीथः।
+तद्वा एतन्मिथुनं यद्वाक्च प्राणश्चर्क्च साम च॥', 'vāg evark
+prāṇaḥ sāma
+om ity etad akṣaram udgīthaḥ
+tad vā etan mithunaṃ yad vāk ca prāṇaś cark ca sāma ca', null, 1001005),
+('chandogya-1-1-6', 6, 'Chapter 1, Section 1, Verse 6', 'तदेतन्मिथुनमोमित्येतस्मिन्नक्षरे संसृज्यते।
+यदा वै मिथुनौ समागच्छत आपयतो वै तावन्योऽन्यस्य कामम्॥', 'tad etan mithunam om ity etasminn akṣare saṃsṛjyate
+yadā vai mithunau samāgacchata āpayato vai tāv anyo ''nyasya kāmam', null, 1001006),
+('chandogya-1-1-7', 7, 'Chapter 1, Section 1, Verse 7', 'आपयिता ह वै कामानां भवति य एतदेवं विद्वानक्षरमुद्गीथमुपास्ते॥', 'āpayitā ha vai kāmānāṃ bhavati ya etad evaṃ vidvān akṣaram udgītham upāste', null, 1001007),
+('chandogya-1-1-8', 8, 'Chapter 1, Section 1, Verse 8', 'तद्वा एतदनुज्ञाक्षरम्।
+यद्धि किंचानुजानात्योमित्येव तदाह।
+एषो एव समृद्धिर्यदनुज्ञा।
+समर्धयिता ह वै कामानां भवति य एतदेवं विद्वानक्षरमुद्गीथमुपास्ते॥', 'tad vā etad anujñākṣaram
+yad dhi kiṃcānujānāty om ity eva tad āha
+eṣo eva samṛddhir yad anujñā
+samardhayitā ha vai kāmānāṃ bhavati ya etad evaṃ vidvān akṣaram udgītham upāste', null, 1001008),
+('chandogya-1-1-9', 9, 'Chapter 1, Section 1, Verse 9', 'तेनेयं त्रयी विद्या वर्तते।
+ओमित्याश्रावयति।
+ओमिति शंसति।
+ओमित्युद्गायति।
+एतस्यैव अक्षरस्यापचित्यै महिम्ना रसेन॥', 'teneyaṃ trayī vidyā vartate
+om ity āśrāvayati
+om iti śaṃsati
+om ity udgāyati
+etasyaiva akṣarasyāpacityai mahimnā rasena', null, 1001009),
+('chandogya-1-1-10', 10, 'Chapter 1, Section 1, Verse 10', 'तेनोभौ कुरुतः।
+यश्चैतदेवं वेद यश्च न वेद।
+नाना तु विद्या चाविद्या च।
+यदेव विद्यया करोति श्रद्धयोपनिषदा तदेव वीर्यवत्तरं भवतीति खल्वेतस्यैवाक्षरस्योपव्याख्यानं भवति॥', 'tenobhau kurutaḥ
+yaś caitad evaṃ veda yaś ca na veda
+nānā tu vidyā cāvidyā ca
+yad eva vidyayā karoti śraddhayopaniṣadā tad eva vīryavattaraṃ bhavatīti khalv etasyaivākṣarasyopavyākhyānaṃ bhavati', null, 1001010)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-2-1', 1, 'Chapter 1, Section 2, Verse 1', 'देवासुरा ह वै यत्र संयेतिरे।
+उभये प्राजापत्यास्तद्ध देवा उद्गीथमाजह्रुरनेनैनानभिभविष्याम इति॥', 'devāsurā ha vai yatra saṃyetire
+ubhaye prājāpatyās tad dha devā udgītham ājahrur anenainān abhibhaviṣyāma iti', null, 1002001),
+('chandogya-1-2-2', 2, 'Chapter 1, Section 2, Verse 2', 'ते ह नासिक्यं प्राणमुद्गीथमुपासां चक्रिरे।
+तं ह असुराः पाप्मना विविधुः।
+तस्मात्तेनोभयं जिघ्रति सुरभि च दुर्गन्धि च।
+पाप्मना ह्येष विद्धः॥', 'te ha nāsikyaṃ prāṇam udgītham upāsāṃ cakrire
+taṃ ha asurāḥ pāpmanā vividhuḥ
+tasmāt tenobhayaṃ jighrati surabhi ca durgandhi ca
+pāpmanā hy eṣa viddhaḥ', null, 1002002),
+('chandogya-1-2-3', 3, 'Chapter 1, Section 2, Verse 3', 'अथ ह वाचमुद्गीथमुपासां चक्रिरे।
+तां हासुराः पाप्मना विविधुः।
+तस्मात्तयोभयं वदति सत्यं चानृतं च।
+पाप्मना ह्येषा विद्धा॥', 'atha ha vācam udgītham upāsāṃ cakrire
+tāṃ hāsurāḥ pāpmanā vividhuḥ
+tasmāt tayobhayaṃ vadati satyaṃ cānṛtaṃ ca
+pāpmanā hy eṣā viddhā', null, 1002003),
+('chandogya-1-2-4', 4, 'Chapter 1, Section 2, Verse 4', 'अथ ह चक्षुरुद्गीथमुपासां चक्रिरे।
+तद्धासुराः पाप्मना विविधुः।
+तस्मात्तेनोभयं पश्यति दर्शनीयं चादर्शनीयं च।
+पाप्मना ह्येतद्विद्धम्॥', 'atha ha cakṣur udgītham upāsāṃ cakrire
+tad dhāsurāḥ pāpmanā vividhuḥ
+tasmāt tenobhayaṃ paśyati darśanīyaṃ cādarśanīyaṃ ca
+pāpmanā hy etad viddham', null, 1002004),
+('chandogya-1-2-5', 5, 'Chapter 1, Section 2, Verse 5', 'अथ ह श्रोत्रमुद्गीथमुपासां चक्रिरे।
+तद्धासुराः पाप्मना विविधुः।
+तस्मात्तेनोभयं शृणोति श्रवणीयं चाश्रवणीयं च।
+पाप्मना ह्येतद्विद्धम्॥', 'atha ha śrotram udgītham upāsāṃ cakrire
+tad dhāsurāḥ pāpmanā vividhuḥ
+tasmāt tenobhayaṃ śṛṇoti śravaṇīyaṃ cāśravaṇīyaṃ ca
+pāpmanā hy etad viddham', null, 1002005),
+('chandogya-1-2-6', 6, 'Chapter 1, Section 2, Verse 6', 'अथ ह मन उद्गीथमुपासां चक्रिरे।
+तद्धासुराः पाप्मना विविधुः।
+तस्मात्तेनोभयं संकल्पयते संकल्पनीयं च।
+पाप्मना ह्येतद्विद्धम्॥', 'atha ha mana udgītham upāsāṃ cakrire
+tad dhāsurāḥ pāpmanā vividhuḥ
+tasmāt tenobhayaṃ saṃkalpayate saṃkalpanīyaṃ ca
+pāpmanā hy etad viddham', null, 1002006),
+('chandogya-1-2-7', 7, 'Chapter 1, Section 2, Verse 7', 'अथ ह य एवायं मुख्यः प्राणस्तमुद्गीथमुपासां चक्रिरे।
+तं हासुरा ऋत्वा विदध्वंसुर्यथाश्मानमाखणमृत्वा विध्वंसेतैवम्॥', 'atha ha ya evāyaṃ mukhyaḥ prāṇas tam udgītham upāsāṃ cakrire
+taṃ hāsurā ṛtvā vidadhvaṃsur yathāśmānam ākhaṇam ṛtvā vidhvaṃsetaivam', null, 1002007),
+('chandogya-1-2-8', 8, 'Chapter 1, Section 2, Verse 8', 'एवं यथाश्मानमाखणमृत्वा विध्वंसत एवं हैव स विध्वंसते य एवंविदि पापं कामयते यश्चैनमभिदासति।
+स एषोऽश्माखणः॥', 'evaṃ yathāśmānam ākhaṇam ṛtvā vidhvaṃsata evaṃ haiva sa vidhvaṃsate ya evaṃvidi pāpaṃ kāmayate yaś cainam abhidāsati
+sa eṣo ''śmākhaṇaḥ', null, 1002008),
+('chandogya-1-2-9', 9, 'Chapter 1, Section 2, Verse 9', 'नैवैतेन सुरभि न दुर्गन्धि विजानाति।
+अपहतपाप्मा ह्येषः।
+तेन यदश्नाति यत्पिबति तेनेतरान्प्राणानवति।
+एतमु एवान्ततोऽवित्त्वोत्क्रामति।
+व्याददात्येवान्तत इति॥', 'naivaitena surabhi na durgandhi vijānāti
+apahatapāpmā hy eṣaḥ
+tena yad aśnāti yat pibati tenetarān prāṇān avati
+etam u evāntato ''vittvotkrāmati
+vyādadāty evāntata iti', null, 1002009),
+('chandogya-1-2-10', 10, 'Chapter 1, Section 2, Verse 10', 'तं हाङ्गिरा उद्गीथमुपासां चक्रे।
+एतमु एवाङ्गिरसं मन्यन्तेऽङ्गानां यद्रसः॥', 'taṃ hāṅgirā udgītham upāsāṃ cakre
+etam u evāṅgirasaṃ manyante ''ṅgānāṃ yad rasaḥ', null, 1002010),
+('chandogya-1-2-11', 11, 'Chapter 1, Section 2, Verse 11', 'तेन तं ह बृहस्पतिरुद्गीथमुपासां चक्रे।
+एतमु एव बृहस्पतिं मन्यन्ते।
+वाग्घि बृहती तस्या एषपतिः॥', 'tena taṃ ha bṛhaspatir udgītham upāsāṃ cakre
+etam u eva bṛhaspatiṃ manyante
+vāg ghi bṛhatī tasyā eṣapatiḥ', null, 1002011),
+('chandogya-1-2-12', 12, 'Chapter 1, Section 2, Verse 12', 'तेन तं हायास्य उद्गीथमुपासां चक्रे।
+एतमु एवायास्यं मन्यन्ते।
+आस्याद्यदयते॥', 'tena taṃ hāyāsya udgītham upāsāṃ cakre
+etam u evāyāsyaṃ manyante
+āsyād yad ayate', null, 1002012),
+('chandogya-1-2-13', 13, 'Chapter 1, Section 2, Verse 13', 'तेन तं ह बको दाल्भ्यो विदां चकार।
+स ह नैमिशीयानामुद्गाता बभूव।
+स ह स्मैभ्यः कामानागायति॥', 'tena taṃ ha bako dālbhyo vidāṃ cakāra
+sa ha naimiśīyānām udgātā babhūva
+sa ha smaibhyaḥ kāmān āgāyati', null, 1002013),
+('chandogya-1-2-14', 14, 'Chapter 1, Section 2, Verse 14', 'आगाता ह वै कामानां भवति य एतदेवं विद्वानक्षरमुद्गीथमुपास्ते।
+इत्यध्यात्मम्॥', 'āgātā ha vai kāmānāṃ bhavati ya etad evaṃ vidvān akṣaram udgītham upāste
+ity adhyātmam', null, 1002014)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-3-1', 1, 'Chapter 1, Section 3, Verse 1', 'अथाधिदैवतम्।
+य एवासौ तपति तमुद्गीथमुपासीत।
+उद्यन्वा एष प्रजाभ्य उद्गायति।
+उद्यंस्तमो भयमपहन्ति।
+अपहन्ता ह वै भयस्य तमसो भवति य एवं वेद॥', 'athādhidaivatam
+ya evāsau tapati tam udgītham upāsīta
+udyan vā eṣa prajābhya udgāyati
+udyaṃs tamo bhayam apahanti
+apahantā ha vai bhayasya tamaso bhavati ya evaṃ veda', null, 1003001),
+('chandogya-1-3-2', 2, 'Chapter 1, Section 3, Verse 2', 'समान उ एवायं चासौ च।
+उष्णोऽयमुष्णोऽसौ।
+स्वर इतीममाचक्षते स्वर इति प्रत्यास्वर इत्यमुम्।
+तस्माद्वा एतमिमममुं च उद्गीथमुपासीत॥', 'samāna u evāyaṃ cāsau ca
+uṣṇo ''yam uṣṇo ''sau
+svara itīmam ācakṣate svara iti pratyāsvara ity amum
+tasmād vā etam imam amuṃ ca udgītham upāsīta', null, 1003002),
+('chandogya-1-3-3', 3, 'Chapter 1, Section 3, Verse 3', 'अथ खलु व्यानमेवोद्गीथमुपासीत।
+यद्वै प्राणिति स प्राणः।
+यदपानिति सोऽपानः।
+अथ यः प्राणापानयोः संधिः स व्यानः।
+यो व्यानः सा वाक्।
+तस्मादप्राणन्ननपानन्वाचमभिव्याहरति॥', 'atha khalu vyānam evodgītham upāsīta
+yad vai prāṇiti sa prāṇaḥ
+yad apāniti so ''pānaḥ
+atha yaḥ prāṇāpānayoḥ saṃdhiḥ sa vyānaḥ
+yo vyānaḥ sā vāk
+tasmād aprāṇann anapānan vācam abhivyāharati', null, 1003003),
+('chandogya-1-3-4', 4, 'Chapter 1, Section 3, Verse 4', 'या वाक्सर्क्।
+तस्मादप्राणन्ननपानन्नृचमभिव्याहरति।
+यर्क्तत्साम।
+तस्मादप्राणन्ननपानन्साम गायति।
+यत्साम स उद्गीथः।
+तस्मादप्रानन्ननपानन्नुद्गायति॥', 'yā vāk sark
+tasmād aprāṇann anapānann ṛcam abhivyāharati
+yark tat sāma
+tasmād aprāṇann anapānan sāma gāyati
+yat sāma sa udgīthaḥ
+tasmād aprānann anapānann udgāyati', null, 1003004),
+('chandogya-1-3-5', 5, 'Chapter 1, Section 3, Verse 5', 'अतो यान्यन्यानि वीर्यवन्ति कर्माणि यथाग्नेर्मन्थनमाजेः सरणं दृढस्य धनुष आयमनमप्राणन्ननपानंस्तानि करोति।
+एतस्य हेतोर्व्यानमेवोद्गीथमुपासीत॥', 'ato yāny anyāni vīryavanti karmāṇi yathāgner manthanam ājeḥ saraṇaṃ dṛḍhasya dhanuṣa āyamanam aprāṇann anapānaṃs tāni karoti
+etasya hetor vyānam evodgītham upāsīta', null, 1003005),
+('chandogya-1-3-6', 6, 'Chapter 1, Section 3, Verse 6', 'अथ खलूद्गीथाक्षराण्युपासीत उद्-गी-थ इति।
+प्राण एवोत्।
+प्राणेन ह्युत्तिष्ठति।
+वग्गीः।
+वाचो ह गिर इत्याचक्षते।
+अन्नं थम्।
+अन्ने हीदं सर्वं स्थितम्॥', 'atha khalūdgīthākṣarāṇy upāsīta ud-gī-tha iti
+prāṇa evot
+prāṇena hy uttiṣṭhati
+vag gīḥ
+vāco ha gira ity ācakṣate
+annaṃ tham
+anne hīdaṃ sarvaṃ sthitam', null, 1003006),
+('chandogya-1-3-7', 7, 'Chapter 1, Section 3, Verse 7', 'द्यौरेवोत्।
+अन्तरिक्षं गीः।
+पृथिवी थम्।
+आदित्य एवोत्।
+वायुर्गीः।
+अग्निस्थम्।
+सामवेद एवोत्।
+यजुर्वेदो गीः।
+ऋग्वेदस्थम्।
+दुग्धेऽस्मै वाग्दोहं यो वाचो दोहः।
+अन्नवानन्नादो भवति।
+य एतान्येवं विद्वानुद्गीथाक्षराण्युपास्त उद्-गी-थ इति॥', 'dyaur evot
+antarikṣaṃ gīḥ
+pṛthivī tham
+āditya evot
+vāyur gīḥ
+agnis tham
+sāmaveda evot
+yajurvedo gīḥ
+ṛgvedas tham
+dugdhe ''smai vāg dohaṃ yo vāco dohaḥ
+annavān annādo bhavati
+ya etāny evaṃ vidvān udgīthākṣarāṇy upāsta ud-gī-tha iti', null, 1003007),
+('chandogya-1-3-8', 8, 'Chapter 1, Section 3, Verse 8', 'अथ खल्वाशीः समृद्धिः।
+उपसरणानीत्युपासीत।
+येन साम्ना स्तोष्यन्स्यात्तत्सामोपधावेत्॥', 'atha khalv āśīḥ samṛddhiḥ
+upasaraṇānīty upāsīta
+yena sāmnā stoṣyan syāt tat sāmopadhāvet', null, 1003008),
+('chandogya-1-3-9', 9, 'Chapter 1, Section 3, Verse 9', 'यस्यामृचि तामृचं, यदार्षेयं तमृषिं, यां देवतामभिष्टोष्यन्स्यात्तां देवतामुपधावेत्॥', 'yasyām ṛci tām ṛcaṃ, yad ārṣeyaṃ tam ṛṣiṃ, yāṃ devatām abhiṣṭoṣyan syāt tāṃ devatām upadhāvet', null, 1003009),
+('chandogya-1-3-10', 10, 'Chapter 1, Section 3, Verse 10', 'येन च्छन्दसा स्तोष्यन्स्यात्तच्छन्द उपधावेत्।
+येन स्तोमेन स्तोष्यमाणः स्यात्तं स्तोममुपधावेत्॥', 'yena cchandasā stoṣyan syāt tac chanda upadhāvet
+yena stomena stoṣyamāṇaḥ syāt taṃ stomam upadhāvet', null, 1003010),
+('chandogya-1-3-11', 11, 'Chapter 1, Section 3, Verse 11', 'यां दिशमभिष्टोष्यन्स्यात्तां दिशमुपधावेत्॥', 'yāṃ diśam abhiṣṭoṣyan syāt tāṃ diśam upadhāvet', null, 1003011),
+('chandogya-1-3-12', 12, 'Chapter 1, Section 3, Verse 12', 'आत्मानमन्तत उपसृत्य स्तुवीत कामं ध्यायन्नप्रमत्तः।
+अभ्याशो ह यदस्मै स कामः स्मृध्येत यत्कामः स्तुवीतेति यत्कामः स्तुवीतेति॥', 'ātmānam antata upasṛtya stuvīta kāmaṃ dhyāyann apramattaḥ
+abhyāśo ha yad asmai sa kāmaḥ smṛdhyeta yatkāmaḥ stuvīteti yatkāmaḥ stuvīteti', null, 1003012)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-4-1', 1, 'Chapter 1, Section 4, Verse 1', 'ओमित्येतदक्षरमुद्गीथमुपासीत।
+ओमिति ह्युद्गायति।
+तस्योपव्याख्यानम्॥', 'om ity etad akṣaram udgītham upāsīta
+om iti hy udgāyati
+tasyopavyākhyānam', null, 1004001),
+('chandogya-1-4-2', 2, 'Chapter 1, Section 4, Verse 2', 'देवा वै मृत्योर्बिभ्यतस्त्रयीं विद्यां प्राविशन्।
+ते छन्दोभिरच्छादयन्।
+यदेभिरच्छादयंस्तच्छन्दसां छन्दस्त्वम्॥', 'devā vai mṛtyor bibhyatas trayīṃ vidyāṃ prāviśan
+te chandobhir acchādayan
+yad ebhir acchādayaṃs tac chandasāṃ chandastvam', null, 1004002),
+('chandogya-1-4-3', 3, 'Chapter 1, Section 4, Verse 3', 'तानु तत्र मृत्युर्यथा मत्स्यमुदके परिपश्येदेवं पर्यपश्यदृचि साम्नि यजुषि।
+ते नु वित्त्वोर्ध्वा ऋचः साम्नो यजुषः स्वरमेव प्राविशन्॥', 'tān u tatra mṛtyur yathā matsyam udake paripaśyed evaṃ paryapaśyad ṛci sāmni yajuṣi
+te nu vittvordhvā ṛcaḥ sāmno yajuṣaḥ svaram eva prāviśan', null, 1004003),
+('chandogya-1-4-4', 4, 'Chapter 1, Section 4, Verse 4', 'यदा वा ऋचमाप्नोत्योमित्येवातिस्वरति एवं सामैवं यजुः।
+एष उ स्वरो यदेतदक्षरमेतदमृतमभयम्।
+तत्प्रविश्य देवा अमृता अभवन्॥', 'yadā vā ṛcam āpnoty om ity evātisvarati evaṃ sāmaivaṃ yajuḥ
+eṣa u svaro yad etad akṣaram etad amṛtam abhayam
+tat praviśya devā amṛtā abhavan', null, 1004004),
+('chandogya-1-4-5', 5, 'Chapter 1, Section 4, Verse 5', 'स य एतदेवं विद्वानक्षरं प्रणौत्येतदेवाक्षरं स्वरममृतमभयं प्रविशति।
+तत्प्रविश्य यदमृता देवास्तदमृतो भवति॥', 'sa ya etad evaṃ vidvān akṣaraṃ praṇauty etad evākṣaraṃ svaram amṛtam abhayaṃ praviśati
+tat praviśya yad amṛtā devās tad amṛto bhavati', null, 1004005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-5-1', 1, 'Chapter 1, Section 5, Verse 1', 'अथ खलु य उद्गीथः स प्रणवो यः प्रणवः स उद्गीथ इति।
+असौ वा आदित्य उद्गीथ एष प्रणवः।
+ओमिति ह्येष स्वरन्नेति॥', 'atha khalu ya udgīthaḥ sa praṇavo yaḥ praṇavaḥ sa udgītha iti
+asau vā āditya udgītha eṣa praṇavaḥ
+om iti hy eṣa svarann eti', null, 1005001),
+('chandogya-1-5-2', 2, 'Chapter 1, Section 5, Verse 2', 'एतमु एवाहमभ्यगासिषं तस्मान्मम त्वमेकोऽसीति ह कौषीतकिः पुत्रमुवाच।
+रश्मींस्त्वं पर्यावर्तयात्।
+बहवो वै ते भविष्यन्ति।
+इत्यधिदैवतम्॥', 'etam u evāham abhyagāsiṣaṃ tasmān mama tvam eko ''sīti ha kauṣītakiḥ putram uvāca
+raśmīṃs tvaṃ paryāvartayāt
+bahavo vai te bhaviṣyanti
+ity adhidaivatam', null, 1005002),
+('chandogya-1-5-3', 3, 'Chapter 1, Section 5, Verse 3', 'अथाध्यात्मम्।
+य एवायं मुख्यः प्राणस्तमुद्गीथमुपासित।
+ओमिति ह्येष स्वरन्नेति॥', 'athādhyātmam
+ya evāyaṃ mukhyaḥ prāṇas tam udgītham upāsita
+om iti hy eṣa svarann eti', null, 1005003),
+('chandogya-1-5-4', 4, 'Chapter 1, Section 5, Verse 4', 'एतमु एवाहमभ्यगासिषं तस्मान्मम त्वमेकोऽसीति ह कौषीतकिः पुत्रमुवाच।
+प्राणांस्त्वं भूमानमभिगायताद्बहवो वै मे भविष्यन्तीति॥', 'etam u evāham abhyagāsiṣaṃ tasmān mama tvam eko ''sīti ha kauṣītakiḥ putram uvāca
+prāṇāṃs tvaṃ bhūmānam abhigāyatād bahavo vai me bhaviṣyantīti', null, 1005004),
+('chandogya-1-5-5', 5, 'Chapter 1, Section 5, Verse 5', 'अथ खलु य उद्गीथः स प्रणवो यः प्रणवः स उद्गीथ इति।
+होतृषदनाद्ध एवापि दुरुद्गीथमनुसमाहरतीत्यनुसमाहरतीति॥', 'atha khalu ya udgīthaḥ sa praṇavo yaḥ praṇavaḥ sa udgītha iti
+hotṛṣadanād dha evāpi durudgītham anusamāharatīty anusamāharatīti', null, 1005005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-6-1', 1, 'Chapter 1, Section 6, Verse 1', 'इयमेवर्क्।
+अग्निः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+इयमेव सा।
+अग्निरमः।
+तत्साम॥', 'iyam evark
+agniḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+iyam eva sā
+agnir amaḥ
+tat sāma', null, 1006001),
+('chandogya-1-6-2', 2, 'Chapter 1, Section 6, Verse 2', 'अन्तरिक्षमेवर्क्।
+वायुः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+अन्तरिक्षमेव सा।
+वायुरमः।
+तत्साम॥', 'antarikṣam evark
+vāyuḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+antarikṣam eva sā
+vāyur amaḥ
+tat sāma', null, 1006002),
+('chandogya-1-6-3', 3, 'Chapter 1, Section 6, Verse 3', 'द्यौरेवर्क्।
+आदित्यः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+द्यौरेव सा।
+आदित्योऽमः।
+तत्साम॥', 'dyaur evark
+ādityaḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+dyaur eva sā
+ādityo ''maḥ
+tat sāma', null, 1006003),
+('chandogya-1-6-4', 4, 'Chapter 1, Section 6, Verse 4', 'नक्षत्रान्येवर्क्।
+चन्द्रमाः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+नक्षत्राण्येव सा।
+चन्द्रमा अमः।
+तत्साम॥', 'nakṣatrāny evark
+candramāḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+nakṣatrāṇy eva sā
+candramā amaḥ
+tat sāma', null, 1006004),
+('chandogya-1-6-5', 5, 'Chapter 1, Section 6, Verse 5', 'अथ यदेतदादित्यस्य शुक्लं भाः सैवर्क्।
+अथ यन्नीलं परःकृष्णं तत्साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मदृच्यध्यूढं साम गीयते॥', 'atha yad etad ādityasya śuklaṃ bhāḥ saivark
+atha yan nīlaṃ paraḥkṛṣṇaṃ tat sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmad ṛcy adhyūḍhaṃ sāma gīyate', null, 1006005),
+('chandogya-1-6-6', 6, 'Chapter 1, Section 6, Verse 6', 'अथ यदेवैतदादित्यस्य शुक्लं भाः सैव सा।
+अथ यन्नीलं परःकृष्णं तदमः।
+तत्साम।
+अथ य एषोऽन्तरादित्ये हिरण्मयः पुरुषो दृश्यते हिरण्यश्मश्रुर्हिरण्यकेश आ प्रणखात्सर्व एव सुवर्नः॥', 'atha yad evaitad ādityasya śuklaṃ bhāḥ saiva sā
+atha yan nīlaṃ paraḥkṛṣṇaṃ tad amaḥ
+tat sāma
+atha ya eṣo ''ntarāditye hiraṇmayaḥ puruṣo dṛśyate hiraṇyaśmaśrur hiraṇyakeśa ā praṇakhāt sarva eva suvarnaḥ', null, 1006006),
+('chandogya-1-6-7', 7, 'Chapter 1, Section 6, Verse 7', 'तस्य यथा कप्यासं पुण्डरीकमेवमक्षिणी।
+तस्योदिति नाम।
+स एष सर्वेभ्यः पाप्मभ्य उदितः।
+उदेति ह वै सर्वेभ्यः पाप्मभ्यो य एवं वेद॥', 'tasya yathā kapyāsaṃ puṇḍarīkam evam akṣiṇī
+tasyod iti nāma
+sa eṣa sarvebhyaḥ pāpmabhya uditaḥ
+udeti ha vai sarvebhyaḥ pāpmabhyo ya evaṃ veda', null, 1006007),
+('chandogya-1-6-8', 8, 'Chapter 1, Section 6, Verse 8', 'तस्यर्क्च साम च गेष्णौ।
+तस्मादुद्गीथः।
+तस्मात्त्वेव उद्गाता।
+एतस्य हि गाता।
+स एष ये चामुष्मात्पराञ्चो लोकास्तेषां चेष्ट देवकामानां च।
+इत्यधिदैवतम्॥', 'tasyark ca sāma ca geṣṇau
+tasmād udgīthaḥ
+tasmāt tv eva udgātā
+etasya hi gātā
+sa eṣa ye cāmuṣmāt parāñco lokās teṣāṃ ceṣṭa devakāmānāṃ ca
+ity adhidaivatam', null, 1006008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-7-1', 1, 'Chapter 1, Section 7, Verse 1', 'अथाध्यात्मम्।
+वागेवर्क्।
+प्राणः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+वागेव सा।
+प्राणोऽमः।
+तत्साम॥', 'athādhyātmam
+vāg evark
+prāṇaḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+vāg eva sā
+prāṇo ''maḥ
+tat sāma', null, 1007001),
+('chandogya-1-7-2', 2, 'Chapter 1, Section 7, Verse 2', 'चक्षुरेवर्क्।
+आत्मा साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+चक्षुरेव सा।
+आत्मामः।
+तत्साम॥', 'cakṣur evark
+ātmā sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+cakṣur eva sā
+ātmāmaḥ
+tat sāma', null, 1007002),
+('chandogya-1-7-3', 3, 'Chapter 1, Section 7, Verse 3', 'श्रोत्रमेवर्क्।
+मनः साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+श्रोत्रमेव सा।
+मनोऽमः।
+तत्साम॥', 'śrotram evark
+manaḥ sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+śrotram eva sā
+mano ''maḥ
+tat sāma', null, 1007003),
+('chandogya-1-7-4', 4, 'Chapter 1, Section 7, Verse 4', 'अथ यदेतदक्ष्नः शुक्लं भाः सैवर्क्।
+अथ यन्नीलं परःकृष्णं तत्साम।
+तदेतदेतस्यामृच्यध्यूढं साम।
+तस्मादृच्यध्यूढं साम गीयते।
+अथ यदेवैतदक्ष्णः शुक्लं भाः सैव सा।
+अथ यन्नीलं परःकृष्णं तदमः।
+तत्साम॥', 'atha yad etad akṣnaḥ śuklaṃ bhāḥ saivark
+atha yan nīlaṃ paraḥkṛṣṇaṃ tat sāma
+tad etad etasyām ṛcy adhyūḍhaṃ sāma
+tasmād ṛcy adhyūḍhaṃ sāma gīyate
+atha yad evaitad akṣṇaḥ śuklaṃ bhāḥ saiva sā
+atha yan nīlaṃ paraḥkṛṣṇaṃ tad amaḥ
+tat sāma', null, 1007004),
+('chandogya-1-7-5', 5, 'Chapter 1, Section 7, Verse 5', 'अथ य एषोऽन्तरक्षिणि पुरुषो दृश्यते सैवर्क्।
+तत्साम।
+तदुक्थम्।
+तद्यजुः।
+तद्ब्रह्म।
+तस्य एतस्य तदेव रूपं यदमुष्य रूपम्।
+यावमुष्य गेष्णौ तौ तौ गोष्णौ।
+यन्नाम तन्नाम॥', 'atha ya eṣo ''ntar akṣiṇi puruṣo dṛśyate saivark
+tat sāma
+tad uktham
+tad yajuḥ
+tad brahma
+tasya etasya tad eva rūpaṃ yad amuṣya rūpam
+yāv amuṣya geṣṇau tau tau goṣṇau
+yan nāma tan nāma', null, 1007005),
+('chandogya-1-7-6', 6, 'Chapter 1, Section 7, Verse 6', 'स एष ये चैतस्मादर्वाञ्चो लोकास्तेषां चेष्टे मनुष्यकामानां चेति।
+तद्य इमे वीणायां गायन्त्येतं ते गायन्ति।
+तस्मात्ते धनसनयः॥', 'sa eṣa ye caitasmād arvāñco lokās teṣāṃ ceṣṭe manuṣyakāmānāṃ ceti
+tad ya ime vīṇāyāṃ gāyanty etaṃ te gāyanti
+tasmāt te dhanasanayaḥ', null, 1007006),
+('chandogya-1-7-7', 7, 'Chapter 1, Section 7, Verse 7', 'अथ य एतदेवं विद्वान्साम गायत्युभौ स गायति।
+सोऽमुनैव स एष ये चामुष्मात्पराञ्चो लोकास्तांश्चाप्नोति देवकामांश्च॥', 'atha ya etad evaṃ vidvān sāma gāyaty ubhau sa gāyati
+so ''munaiva sa eṣa ye cāmuṣmāt parāñco lokās tāṃś cāpnoti devakāmāṃś ca', null, 1007007),
+('chandogya-1-7-8', 8, 'Chapter 1, Section 7, Verse 8', 'अथानेनैव ये चैतस्मादर्वाञ्चो लोकास्तांश्चाप्नोति मनुष्यकामांश्च।
+तस्मादु हैवंविदुद्गाता ब्रूयात्॥', 'athānenaiva ye caitasmād arvāñco lokās tāṃś cāpnoti manuṣyakāmāṃś ca
+tasmād u haivaṃvid udgātā brūyāt', null, 1007008),
+('chandogya-1-7-9', 9, 'Chapter 1, Section 7, Verse 9', 'कं ते काममागायानीति।
+एष ह्येव कामागानस्येष्टे य एवं विद्वान्साम गायति साम गायति॥', 'kaṃ te kāmam āgāyānīti
+eṣa hy eva kāmāgānasyeṣṭe ya evaṃ vidvān sāma gāyati sāma gāyati', null, 1007009)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-8-1', 1, 'Chapter 1, Section 8, Verse 1', 'त्रयो होद्गीथे कुशला बभूवुः शिलकः शालावत्यश्चैकितायनो दाल्भ्यः प्रवाहणो जैवलिरिति।
+ते होचुरुद्गीथे वै कुशलाः स्मो हन्तोद्गीथे कथां वदाम इति॥', 'trayo hodgīthe kuśalā babhūvuḥ śilakaḥ śālāvatyaś caikitāyano dālbhyaḥ pravāhaṇo jaivalir iti
+te hocur udgīthe vai kuśalāḥ smo hantodgīthe kathāṃ vadāma iti', null, 1008001),
+('chandogya-1-8-2', 2, 'Chapter 1, Section 8, Verse 2', 'तथेति ह समुपविविशुः।
+स ह प्रावहणो जैवलिरुवाच।
+भगवन्तावग्रे वदताम्।
+भ्रामणयोर्वदतोर्वाचं श्रोष्यामीति॥', 'tatheti ha samupaviviśuḥ
+sa ha prāvahaṇo jaivalir uvāca
+bhagavantāv agre vadatām
+bhrāmaṇayor vadator vācaṃ śroṣyāmīti', null, 1008002),
+('chandogya-1-8-3', 3, 'Chapter 1, Section 8, Verse 3', 'स ह शिलकः शालावत्यश्चैकितायनं दाल्भ्यमुवाच हन्त त्वा पृच्छानीति।
+पृच्छेति होवाच॥', 'sa ha śilakaḥ śālāvatyaś caikitāyanaṃ dālbhyam uvāca hanta tvā pṛcchānīti
+pṛccheti hovāca', null, 1008003),
+('chandogya-1-8-4', 4, 'Chapter 1, Section 8, Verse 4', 'का साम्नो गतिरिति।
+स्वर इति होवाच।
+स्वरस्य का गतिरिति।
+प्राण इति होवाच।
+अन्नस्य का गतिरिति।
+अन्नमिति होवाच।
+अन्नस्य का गतिरिति।
+आप इति होवाच॥', 'kā sāmno gatir iti
+svara iti hovāca
+svarasya kā gatir iti
+prāṇa iti hovāca
+annasya kā gatir iti
+annam iti hovāca
+annasya kā gatir iti
+āpa iti hovāca', null, 1008004),
+('chandogya-1-8-5', 5, 'Chapter 1, Section 8, Verse 5', 'अपां का गतिरिति।
+असौ लोक इति होवाच।
+अमुष्य लोकस्य का गतिरिति।
+न स्वर्गं लोकमतिनयेदिति होवाच।
+स्वर्गं वयं लोकं सामाभिसंस्थापयामः।
+स्वर्गसंस्तावं हि सामेति॥', 'apāṃ kā gatir iti
+asau loka iti hovāca
+amuṣya lokasya kā gatir iti
+na svargaṃ lokam atinayed iti hovāca
+svargaṃ vayaṃ lokaṃ sāmābhisaṃsthāpayāmaḥ
+svargasaṃstāvaṃ hi sāmeti', null, 1008005),
+('chandogya-1-8-6', 6, 'Chapter 1, Section 8, Verse 6', 'तं ह शिलकः शालावत्यश्चैकितायनं दाल्भ्यमुवाचाप्रतिष्ठितं वै किल ते दाल्भ्य साम।
+यस्त्वेतर्हि ब्रूयान्मूर्धा ते विपतिष्यतीति मूर्धा ते विपतेदिति॥', 'taṃ ha śilakaḥ śālāvatyaś caikitāyanaṃ dālbhyam uvācāpratiṣṭhitaṃ vai kila te dālbhya sāma
+yas tv etarhi brūyān mūrdhā te vipatiṣyatīti mūrdhā te vipated iti', null, 1008006),
+('chandogya-1-8-7', 7, 'Chapter 1, Section 8, Verse 7', 'हन्ताहमेतद्भगवत्तो वेदानीति।
+विद्धीति होवाच।
+अमुष्य लोकस्य का गतिरिति।
+अयं लोक इति होवाच।
+अस्य लोकस्य का गतिरिति।
+न प्रतिष्ठां लोकमतिनयेदिति होवाच।
+प्रतिष्ठां वयं लोकं सामाभिसंस्थापयामः।
+प्रतिष्ठासंस्तावं हि सामेति॥', 'hantāham etad bhagavatto vedānīti
+viddhīti hovāca
+amuṣya lokasya kā gatir iti
+ayaṃ loka iti hovāca
+asya lokasya kā gatir iti
+na pratiṣṭhāṃ lokam atinayed iti hovāca
+pratiṣṭhāṃ vayaṃ lokaṃ sāmābhisaṃsthāpayāmaḥ
+pratiṣṭhāsaṃstāvaṃ hi sāmeti', null, 1008007),
+('chandogya-1-8-8', 8, 'Chapter 1, Section 8, Verse 8', 'तं ह प्रवाहणो जैवलिरुवाच।
+अन्तवद्वै किल ते शालावत्य साम।
+यस्त्वेतर्हि ब्रूयान्मूर्धा ते विपतिष्यतीति मूर्धा ते विपतेदिति।
+हन्ताहमेतद्भगवत्तो वेदानीति।
+विद्धीति होवाच॥', 'taṃ ha pravāhaṇo jaivalir uvāca
+antavad vai kila te śālāvatya sāma
+yas tv etarhi brūyān mūrdhā te vipatiṣyatīti mūrdhā te vipated iti
+hantāham etad bhagavatto vedānīti
+viddhīti hovāca', null, 1008008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-9-1', 1, 'Chapter 1, Section 9, Verse 1', 'अस्य लोकस्य का गतिरिति।
+आकाश इति होवाच।
+सर्वाणि ह वा इमानि भूतान्याकाशादेव समुत्पद्यन्ते।
+आकाशं प्रत्यस्तं यन्ति।
+आकाशो ह्येवैभ्यो ज्यायान्।
+आकाशः परायणम्॥', 'asya lokasya kā gatir iti
+ākāśa iti hovāca
+sarvāṇi ha vā imāni bhūtāny ākāśād eva samutpadyante
+ākāśaṃ praty astaṃ yanti
+ākāśo hy evaibhyo jyāyān
+ākāśaḥ parāyaṇam', null, 1009001),
+('chandogya-1-9-2', 2, 'Chapter 1, Section 9, Verse 2', 'स एष परोवरीयानुद्गीथः।
+स एषोऽनन्तः।
+परोवरीयो हास्य भवति परोवरीयसो ह लोकाञ्जयति य एतदेवं विद्वान्परोवरीयांसमुद्गीथमुपास्ते॥', 'sa eṣa parovarīyān udgīthaḥ
+sa eṣo ''nantaḥ
+parovarīyo hāsya bhavati parovarīyaso ha lokāñ jayati ya etad evaṃ vidvān parovarīyāṃsam udgītham upāste', null, 1009002),
+('chandogya-1-9-3', 3, 'Chapter 1, Section 9, Verse 3', 'तं हैतमतिधन्वा शौनक उदरशाण्डिल्यायोक्त्वोवाच।
+यावत्त एनं प्रजायामुद्गीथं वेदिष्यन्ते परोवरीयो हैभ्यस्तावदस्मिंल्लोके जीवनं भविष्यति॥', 'taṃ haitam atidhanvā śaunaka udaraśāṇḍilyāyoktvovāca
+yāvat ta enaṃ prajāyām udgīthaṃ vediṣyante parovarīyo haibhyas tāvad asmiṃl loke jīvanaṃ bhaviṣyati', null, 1009003),
+('chandogya-1-9-4', 4, 'Chapter 1, Section 9, Verse 4', 'तथामुष्मिंल्लोके लोक इति।
+स य एतमेव विद्वानुपास्ते परोवरीय एव हास्यामुष्मिंल्लोके जीवनं भवति तथामुष्मिंल्लोके लोक इति लोके लोक इति॥', 'tathāmuṣmiṃl loke loka iti
+sa ya etam eva vidvān upāste parovarīya eva hāsyāmuṣmiṃl loke jīvanaṃ bhavati tathāmuṣmiṃl loke loka iti loke loka iti', null, 1009004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-10-1', 1, 'Chapter 1, Section 10, Verse 1', 'मटचीहतेषु कुरुष्वाटिक्या सह जाययोषस्तिर्ह चाक्रायण इभ्यग्रामे प्रद्राणक उवास॥', 'maṭacīhateṣu kuruṣv āṭikyā saha jāyayoṣastir ha cākrāyaṇa ibhyagrāme pradrāṇaka uvāsa', null, 1010001),
+('chandogya-1-10-2', 2, 'Chapter 1, Section 10, Verse 2', 'स हेभ्यं कुल्माषान्खादन्तं बिभिक्षे।
+तं होवाच।
+नेतोऽन्ये विद्यन्ते यच्च ये म इम उपनिहिता इति॥', 'sa hebhyaṃ kulmāṣān khādantaṃ bibhikṣe
+taṃ hovāca
+neto ''nye vidyante yac ca ye ma ima upanihitā iti', null, 1010002),
+('chandogya-1-10-3', 3, 'Chapter 1, Section 10, Verse 3', 'एतेषां मे देहीति होवाच।
+तानस्मै प्रददौ।
+हन्तानुपानमिति।
+उच्छिष्टं वै मे पीतं स्यादिति होवाच॥', 'eteṣāṃ me dehīti hovāca
+tān asmai pradadau
+hantānupānam iti
+ucchiṣṭaṃ vai me pītaṃ syād iti hovāca', null, 1010003),
+('chandogya-1-10-4', 4, 'Chapter 1, Section 10, Verse 4', 'न स्विदेतेऽप्युच्छिष्टा इति।
+न वा अजीविष्यमिमानखादन्निति होवाच।
+कामो म उदपानमिति॥', 'na svid ete ''py ucchiṣṭā iti
+na vā ajīviṣyam imān akhādann iti hovāca
+kāmo ma udapānam iti', null, 1010004),
+('chandogya-1-10-5', 5, 'Chapter 1, Section 10, Verse 5', 'स ह खादित्वातिशेषाञ्जायाया आजहार।
+साग्र एव सुभिक्षा बभूव।
+तान्प्रतिगृह्य निदधौ॥', 'sa ha khāditvātiśeṣāñ jāyāyā ājahāra
+sāgra eva subhikṣā babhūva
+tān pratigṛhya nidadhau', null, 1010005),
+('chandogya-1-10-6', 6, 'Chapter 1, Section 10, Verse 6', 'स ह प्रातः संजिहान उवाच।
+यद्बतान्नस्य लभेमहि लभेमहि धनमात्राम्।
+राजासौ यक्ष्यते।
+स मा सर्वैरार्त्विज्यैर्वृणीतेति॥', 'sa ha prātaḥ saṃjihāna uvāca
+yad batānnasya labhemahi labhemahi dhanamātrām
+rājāsau yakṣyate
+sa mā sarvair ārtvijyair vṛṇīteti', null, 1010006),
+('chandogya-1-10-7', 7, 'Chapter 1, Section 10, Verse 7', 'तं जायोवाच।
+हन्त पत इम एव कुल्माषा इति।
+तान्खादित्वामुं यज्ञं विततमेयाय॥', 'taṃ jāyovāca
+hanta pata ima eva kulmāṣā iti
+tān khāditvāmuṃ yajñaṃ vitatam eyāya', null, 1010007),
+('chandogya-1-10-8', 8, 'Chapter 1, Section 10, Verse 8', 'तत्रोद्गात्ःनास्तावे स्तोष्यमाणानुपोपविवेश।
+स ह प्रस्तोतरमुवाच॥', 'tatrodgātḥn āstāve stoṣyamāṇān upopaviveśa
+sa ha prastotaram uvāca', null, 1010008),
+('chandogya-1-10-9', 9, 'Chapter 1, Section 10, Verse 9', 'प्रस्तोतर्या देवता प्रस्तावमन्वायत्ता तां चेदविद्वान्प्रस्तोष्यसि मूर्धा ते विपतिष्यतीति॥', 'prastotar yā devatā prastāvam anvāyattā tāṃ ced avidvān prastoṣyasi mūrdhā te vipatiṣyatīti', null, 1010009),
+('chandogya-1-10-10', 10, 'Chapter 1, Section 10, Verse 10', 'एवमेवोद्गातारमुवाच।
+उद्गातर्या देवतोद्गीथमन्वायत्ता तां चेदविद्वानुद्गास्यसि मूर्धा ते विपतिष्यतीति॥', 'evam evodgātāram uvāca
+udgātar yā devatodgītham anvāyattā tāṃ ced avidvān udgāsyasi mūrdhā te vipatiṣyatīti', null, 1010010),
+('chandogya-1-10-11', 11, 'Chapter 1, Section 10, Verse 11', 'एवमेव प्रतिहर्तारमुवाच।
+प्रतिहर्तर्या देवता प्रतिहारमन्वायत्ता तां चेदविद्वान्प्रतिहरिष्यसि मूर्धा ते विपतिष्यतीति।
+ते ह समारतास्तूष्णीमासां चक्रिरे॥', 'evam eva pratihartāram uvāca
+pratihartar yā devatā pratihāram anvāyattā tāṃ ced avidvān pratihariṣyasi mūrdhā te vipatiṣyatīti
+te ha samāratās tūṣṇīm āsāṃ cakrire', null, 1010011)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-11-1', 1, 'Chapter 1, Section 11, Verse 1', 'अथ हैनं यजमान उवाच।
+भगवन्तं वा अहं विविदिषाणीति।
+उषस्तिरस्मि चाक्रायण इति होवाच॥', 'atha hainaṃ yajamāna uvāca
+bhagavantaṃ vā ahaṃ vividiṣāṇīti
+uṣastir asmi cākrāyaṇa iti hovāca', null, 1011001),
+('chandogya-1-11-2', 2, 'Chapter 1, Section 11, Verse 2', 'स होवाच।
+भगवन्तं वा अहमेभिः सर्वैरार्त्विज्यैः पर्यैषिषम्।
+भगवतो वा अहमवित्त्यान्यानवृषि॥', 'sa hovāca
+bhagavantaṃ vā aham ebhiḥ sarvair ārtvijyaiḥ paryaiṣiṣam
+bhagavato vā aham avittyānyān avṛṣi', null, 1011002),
+('chandogya-1-11-3', 3, 'Chapter 1, Section 11, Verse 3', 'भगवांस्त्वेव मे सर्वैरार्त्विज्यैरिति।
+तथेति।
+अथ तर्ह्येत एव समतिसृष्टाः स्तुवताम्।
+यावत्त्वेभ्यो धनं दद्यास्तावन्मम दद्या इति।
+तथेति ह यजमान उवाच॥', 'bhagavāṃs tv eva me sarvair ārtvijyair iti
+tatheti
+atha tarhy eta eva samatisṛṣṭāḥ stuvatām
+yāvat tv ebhyo dhanaṃ dadyās tāvan mama dadyā iti
+tatheti ha yajamāna uvāca', null, 1011003),
+('chandogya-1-11-4', 4, 'Chapter 1, Section 11, Verse 4', 'अथ हैनं प्रस्तोतोपससाद।
+प्रस्तोतर्या देवता प्रस्तावमन्वायत्ता तां चेदविद्वान्प्रस्तोष्यसि मूर्धा ते विपतिष्यतीति मा भगवानवोचत्।
+कतमा सा देवतेति॥', 'atha hainaṃ prastotopasasāda
+prastotar yā devatā prastāvam anvāyattā tāṃ ced avidvān prastoṣyasi mūrdhā te vipatiṣyatīti mā bhagavān avocat
+katamā sā devateti', null, 1011004),
+('chandogya-1-11-5', 5, 'Chapter 1, Section 11, Verse 5', 'प्राण इति होवाच।
+सर्वाणि ह वा इमानि भूतानि प्राणमेवाभिसंविशन्ति।
+प्राणमभ्युज्जिहते।
+सैषा देवता प्रस्तावमन्वायत्ता।
+तां चेदविद्वान्प्रास्तोष्यो मूर्धा ते विपतिष्यत्तथोक्तस्य मयेति॥', 'prāṇa iti hovāca
+sarvāṇi ha vā imāni bhūtāni prāṇam evābhisaṃviśanti
+prāṇam abhyujjihate
+saiṣā devatā prastāvam anvāyattā
+tāṃ ced avidvān prāstoṣyo mūrdhā te vipatiṣyat tathoktasya mayeti', null, 1011005),
+('chandogya-1-11-6', 6, 'Chapter 1, Section 11, Verse 6', 'अथ हैनमुद्गातोपससाद।
+उद्गातर्या देवतोद्गीथमन्वायत्ता तां चेदविद्वानुद्गास्यसि मूर्धा ते विपतिष्यतीति मा भगवानवोचत्।
+कतमा सा देवता इति॥', 'atha hainam udgātopasasāda
+udgātar yā devatodgītham anvāyattā tāṃ ced avidvān udgāsyasi mūrdhā te vipatiṣyatīti mā bhagavān avocat
+katamā sā devatā iti', null, 1011006),
+('chandogya-1-11-7', 7, 'Chapter 1, Section 11, Verse 7', 'आदित्य इति होवाच।
+सर्वाणि ह वा इमानि भूतान्यादित्यमुच्चैः सन्तं गायन्ति।
+सैषा देवतोद्गीथमन्वायत्ता।
+तां चेदविद्वानुदगास्यो मूर्धा ते व्यपतिष्यत्तथोक्तस्य मयेति॥', 'āditya iti hovāca
+sarvāṇi ha vā imāni bhūtāny ādityam uccaiḥ santaṃ gāyanti
+saiṣā devatodgītham anvāyattā
+tāṃ ced avidvān udagāsyo mūrdhā te vyapatiṣyat tathoktasya mayeti', null, 1011007),
+('chandogya-1-11-8', 8, 'Chapter 1, Section 11, Verse 8', 'अथ हैनं प्रतिहर्तोपससाद।
+प्रतिहर्तर्या देवता प्रतिहारमन्वायत्ता तां चेदविद्वान्प्रतिहरिष्यसि मूर्धा ते विपतिष्यतीति मा भगवानवोचत्।
+कतमा सा देवतेति॥', 'atha hainaṃ pratihartopasasāda
+pratihartar yā devatā pratihāram anvāyattā tāṃ ced avidvān pratihariṣyasi mūrdhā te vipatiṣyatīti mā bhagavān avocat
+katamā sā devateti', null, 1011008),
+('chandogya-1-11-9', 9, 'Chapter 1, Section 11, Verse 9', 'अन्नमिति होवाच।
+सर्वाणि ह वा इमानि भूतन्यन्नमेव प्रतिहरमाणानि जीवन्ति।
+सैषा देवता प्रतिहारमन्वायत्ता।
+तां चेदविद्वान्प्रत्यहरिष्यो मूर्धा ते व्यपतिष्यत्तथोक्तस्य मयेति तथोक्तस्य मयेति॥', 'annam iti hovāca
+sarvāṇi ha vā imāni bhūtany annam eva pratiharamāṇāni jīvanti
+saiṣā devatā pratihāram anvāyattā
+tāṃ ced avidvān pratyahariṣyo mūrdhā te vyapatiṣyat tathoktasya mayeti tathoktasya mayeti', null, 1011009)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-12-1', 1, 'Chapter 1, Section 12, Verse 1', 'अथातः शौव उद्गीथः।
+तद्ध बको दाल्भ्यो ग्लावो वा मैत्रेयः स्वाध्यायमुद्वव्राज॥', 'athātaḥ śauva udgīthaḥ
+tad dha bako dālbhyo glāvo vā maitreyaḥ svādhyāyam udvavrāja', null, 1012001),
+('chandogya-1-12-2', 2, 'Chapter 1, Section 12, Verse 2', 'तस्मै श्वा श्वेतः प्रादुर्बभूव।
+तमन्ये श्वान उपसमेत्योचुः।
+अन्नं नो भगवानागायतु।
+अशनायाम वा इति॥', 'tasmai śvā śvetaḥ prādur babhūva
+tam anye śvāna upasametyocuḥ
+annaṃ no bhagavān āgāyatu
+aśanāyāma vā iti', null, 1012002),
+('chandogya-1-12-3', 3, 'Chapter 1, Section 12, Verse 3', 'तान्होवाचेहैव मा प्रातरुपसमीयतेति।
+तद्ध बको दाल्भ्यो ग्लावो वा मैत्रेयः प्रतिपालयां चकार॥', 'tān hovācehaiva mā prātar upasamīyateti
+tad dha bako dālbhyo glāvo vā maitreyaḥ pratipālayāṃ cakāra', null, 1012003),
+('chandogya-1-12-4', 4, 'Chapter 1, Section 12, Verse 4', 'ते ह यथैवेदं बहिष्पवमानेन स्तोष्यमाणाः संरब्धाः सर्पन्तीत्येवमाससृपुः।
+ते ह समुपविश्य हिञ्चक्रुः॥', 'te ha yathaivedaṃ bahiṣpavamānena stoṣyamāṇāḥ saṃrabdhāḥ sarpantīty evam āsasṛpuḥ
+te ha samupaviśya hiñ cakruḥ', null, 1012004),
+('chandogya-1-12-5', 5, 'Chapter 1, Section 12, Verse 5', 'ओ३मदा३म।
+ओं३ पिबा३म।
+ओं३ देवो वरुणः प्रजापतिः सविता२ऽन्नमिहा२ऽहरत्।
+अन्नपते३ऽन्नमिहा२ऽऽहरा२ऽऽहरो३मिति॥', 'o3madā3ma
+oṃ3 pibā3ma
+oṃ3 devo varuṇaḥ prajāpatiḥ savitā2''nnam ihā2''harat
+annapate3''nnamihā2''''harā2''''haro3miti', null, 1012005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-1-13-1', 1, 'Chapter 1, Section 13, Verse 1', 'अयं वाव लोको हाउकारः।
+वायुर्हाइकारः।
+चन्द्रमा अथकारः।
+आत्मेहकारः।
+अग्निरीकारः॥', 'ayaṃ vāva loko hāukāraḥ
+vāyur hāikāraḥ
+candramā athakāraḥ
+ātmehakāraḥ
+agnir īkāraḥ', null, 1013001),
+('chandogya-1-13-2', 2, 'Chapter 1, Section 13, Verse 2', 'आदित्य ऊकारः।
+निहव एकारः।
+विश्वे देवा औहोयिकारः।
+प्रजपतिर्हिङ्कारः।
+प्राणः स्वरः।
+अन्नं या।
+वाग्विराट्॥', 'āditya ūkāraḥ
+nihava ekāraḥ
+viśve devā auhoyikāraḥ
+prajapatir hiṅkāraḥ
+prāṇaḥ svaraḥ
+annaṃ yā
+vāg virāṭ', null, 1013002),
+('chandogya-1-13-3', 3, 'Chapter 1, Section 13, Verse 3', 'अनिरुक्तस्त्रयोदशः स्तोभः संचरो हुङ्कारः॥', 'aniruktas trayodaśaḥ stobhaḥ saṃcaro huṅkāraḥ', null, 1013003),
+('chandogya-1-13-4', 4, 'Chapter 1, Section 13, Verse 4', 'दुग्धेऽस्मै वाग्दोहं यो वाचो दोहः।
+अन्नवानन्नादो भवति।
+य एतामेवं साम्नामुपनिषदं वेदोपनिषदं वेद॥', 'dugdhe ''smai vāg dohaṃ yo vāco dohaḥ
+annavān annādo bhavati
+ya etām evaṃ sāmnām upaniṣadaṃ vedopaniṣadaṃ veda', null, 1013004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-1-1', 1, 'Chapter 2, Section 1, Verse 1', 'समस्तस्य खलु साम्न उपासनं साधु।
+यत्खलु साधु तत्सामेत्याचक्षते।
+यदसाधु तदसामेति॥', 'samastasya khalu sāmna upāsanaṃ sādhu
+yat khalu sādhu tat sāmety ācakṣate
+yad asādhu tad asāmeti', null, 2001001),
+('chandogya-2-1-2', 2, 'Chapter 2, Section 1, Verse 2', 'तदुताप्याहुः।
+साम्नैनमुपागादिति साधुनैनमुपागादित्येव तदाहुः।
+असाम्नैनमुपागादित्येव तदाहुः॥', 'tad utāpy āhuḥ
+sāmnainam upāgād iti sādhunainam upāgād ity eva tad āhuḥ
+asāmnainam upāgād ity eva tad āhuḥ', null, 2001002),
+('chandogya-2-1-3', 3, 'Chapter 2, Section 1, Verse 3', 'अथोताप्याहुः।
+साम नो बतेति यत्साधु भवति साधु बतेत्येव तदाहुः।
+असाम नो बतेति यदसाधु भवत्यसाधु बतेत्येव तदाहुः॥', 'athotāpy āhuḥ
+sāma no bateti yat sādhu bhavati sādhu batety eva tad āhuḥ
+asāma no bateti yad asādhu bhavaty asādhu batety eva tad āhuḥ', null, 2001003),
+('chandogya-2-1-4', 4, 'Chapter 2, Section 1, Verse 4', 'स य एतदेवं विद्वान्साधु सामेत्युपास्तेऽभ्याशो ह यदेनं साधवो धर्मा आ च गच्छेयुरुप च नमेयुः॥', 'sa ya etad evaṃ vidvān sādhu sāmety upāste ''bhyāśo ha yad enaṃ sādhavo dharmā ā ca gaccheyur upa ca nameyuḥ', null, 2001004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-2-1', 1, 'Chapter 2, Section 2, Verse 1', 'लोकेषु पञ्चविधं सामोपासीत।
+पृथिवी हिङ्कारः।
+अग्निः प्रस्तावः।
+अन्तरिक्षमुद्गीथः।
+आदित्यः प्रतिहारः।
+द्यौर्निधनम्।
+इत्यूर्ध्वेषु॥', 'lokeṣu pañcavidhaṃ sāmopāsīta
+pṛthivī hiṅkāraḥ
+agniḥ prastāvaḥ
+antarikṣam udgīthaḥ
+ādityaḥ pratihāraḥ
+dyaur nidhanam
+ity ūrdhveṣu', null, 2002001),
+('chandogya-2-2-2', 2, 'Chapter 2, Section 2, Verse 2', 'अथावृत्तेषु।
+द्यौर्हिङ्कारः।
+आदित्यः प्रस्तावः।
+अन्तरिक्षमुद्गीथः।
+अग्निः प्रतिहारः।
+पृथिवी निधनम्॥', 'athāvṛtteṣu
+dyaur hiṅkāraḥ
+ādityaḥ prastāvaḥ
+antarikṣam udgīthaḥ
+agniḥ pratihāraḥ
+pṛthivī nidhanam', null, 2002002),
+('chandogya-2-2-3', 3, 'Chapter 2, Section 2, Verse 3', 'कल्पन्ते हास्मै लोका ऊर्ध्वाश्चावृत्तश्च य एतदेवं विद्वांल्लोकेषु पञ्चविधं सामोपास्ते॥', 'kalpante hāsmai lokā ūrdhvāś cāvṛttaś ca ya etad evaṃ vidvāṃl lokeṣu pañcavidhaṃ sāmopāste', null, 2002003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-3-1', 1, 'Chapter 2, Section 3, Verse 1', 'वृष्टौ पञ्चविधं सामोपासीत।
+पुरोवातो हिङ्कारः।
+मेघो जायते स प्रस्तावः।
+वर्षति स उद्गीथः।
+विद्योतते स्तनयति स प्रतिहारः॥', 'vṛṣṭau pañcavidhaṃ sāmopāsīta
+purovāto hiṅkāraḥ
+megho jāyate sa prastāvaḥ
+varṣati sa udgīthaḥ
+vidyotate stanayati sa pratihāraḥ', null, 2003001),
+('chandogya-2-3-2', 2, 'Chapter 2, Section 3, Verse 2', 'उद्गृह्णाति तन्निधनं वर्षयति ह य एतदेवं विद्वान्वृष्टौ पञ्चविधं सामोपास्ते॥', 'udgṛhṇāti tan nidhanaṃ varṣayati ha ya etad evaṃ vidvān vṛṣṭau pañcavidhaṃ sāmopāste', null, 2003002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-4-1', 1, 'Chapter 2, Section 4, Verse 1', 'सर्वास्वप्सु पञ्चविधं सामोपासीत।
+मेघो यत्संप्लवते स हिङ्कारः।
+यद्वर्षति स प्रस्तावः।
+याः प्राच्यः स्यन्दन्ते स उद्गीथः।
+याः प्रतीच्यः स प्रतिहारः।
+समुद्रो निधनम्॥', 'sarvāsv apsu pañcavidhaṃ sāmopāsīta
+megho yat saṃplavate sa hiṅkāraḥ
+yad varṣati sa prastāvaḥ
+yāḥ prācyaḥ syandante sa udgīthaḥ
+yāḥ pratīcyaḥ sa pratihāraḥ
+samudro nidhanam', null, 2004001),
+('chandogya-2-4-2', 2, 'Chapter 2, Section 4, Verse 2', 'न हाप्सु प्रैत्यप्सुमान्भवति य एतदेवं विद्वान्सर्वास्वप्सु पञ्चविधं सामोपास्ते॥', 'na hāpsu praity apsumān bhavati ya etad evaṃ vidvān sarvāsv apsu pañcavidhaṃ sāmopāste', null, 2004002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-5-1', 1, 'Chapter 2, Section 5, Verse 1', 'ऋतुषु पञ्चविधं सामोपासीत।
+वसन्तो हिङ्कारः।
+ग्रीष्मः प्रस्तावः।
+वर्षा उद्गीथः।
+शरत्प्रतिहारः।
+हेमन्तो निधनम्॥', 'ṛtuṣu pañcavidhaṃ sāmopāsīta
+vasanto hiṅkāraḥ
+grīṣmaḥ prastāvaḥ
+varṣā udgīthaḥ
+śarat pratihāraḥ
+hemanto nidhanam', null, 2005001),
+('chandogya-2-5-2', 2, 'Chapter 2, Section 5, Verse 2', 'कल्पन्ते हास्मा ऋतव ऋतुमान्भवति य एतदेवं विद्वानृतुषु पञ्चविधं सामोपास्ते॥', 'kalpante hāsmā ṛtava ṛtumān bhavati ya etad evaṃ vidvān ṛtuṣu pañcavidhaṃ sāmopāste', null, 2005002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-6-1', 1, 'Chapter 2, Section 6, Verse 1', 'पशुषु पञ्चविधं सामोपासीत।
+अजा हिङ्कारः।
+अवयः प्रस्तावः।
+गाव उद्गीथः।
+अश्वः प्रतिहारः।
+पुरुषो निधनम्॥', 'paśuṣu pañcavidhaṃ sāmopāsīta
+ajā hiṅkāraḥ
+avayaḥ prastāvaḥ
+gāva udgīthaḥ
+aśvaḥ pratihāraḥ
+puruṣo nidhanam', null, 2006001),
+('chandogya-2-6-2', 2, 'Chapter 2, Section 6, Verse 2', 'भवन्ति हास्य पशवः पशुमान्भवति य एतदेवं विद्वान्पशुषु पञ्चविधं सामोपास्ते॥', 'bhavanti hāsya paśavaḥ paśumān bhavati ya etad evaṃ vidvān paśuṣu pañcavidhaṃ sāmopāste', null, 2006002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-7-1', 1, 'Chapter 2, Section 7, Verse 1', 'प्राणेषु पञ्चविधं परोवरीयः सामोपासीत।
+प्राणो हिङ्कारः।
+वाक्प्रस्तावः।
+चक्षुरुद्गीथः।
+श्रोत्रं प्रतिहारः।
+मनो निधनम्।
+परोवरीयांसि वा एतानि॥', 'prāṇeṣu pañcavidhaṃ parovarīyaḥ sāmopāsīta
+prāṇo hiṅkāraḥ
+vāk prastāvaḥ
+cakṣur udgīthaḥ
+śrotraṃ pratihāraḥ
+mano nidhanam
+parovarīyāṃsi vā etāni', null, 2007001),
+('chandogya-2-7-2', 2, 'Chapter 2, Section 7, Verse 2', 'परोवरीयो हास्य भवति परोवरीयसो ह लोकाञ्जयति य एतदेवं विद्वान्प्राणेषु पञ्चविधं परोवरीयः सामोपास्ते।
+इति तु पञ्चविधस्य॥', 'parovarīyo hāsya bhavati parovarīyaso ha lokāñ jayati ya etad evaṃ vidvān prāṇeṣu pañcavidhaṃ parovarīyaḥ sāmopāste
+iti tu pañcavidhasya', null, 2007002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-8-1', 1, 'Chapter 2, Section 8, Verse 1', 'अथ सप्तविधस्य।
+वाचि सप्तविध्.अम्सामोपासीत।
+यत्किंच वाचो हुमिति स हिङ्कारः।
+यत्प्रेति स प्रस्तावः।
+यदेति स आदिः॥', 'atha saptavidhasya
+vāci saptavidh.am sāmopāsīta
+yat kiṃca vāco hum iti sa hiṅkāraḥ
+yat preti sa prastāvaḥ
+yad eti sa ādiḥ', null, 2008001),
+('chandogya-2-8-2', 2, 'Chapter 2, Section 8, Verse 2', 'यदुदिति स उद्गीथः।
+यत्प्रतीति स प्रतिहारः।
+यदुपेति स उपद्रवः।
+यन्नीति तन्निधनम्॥', 'yad ud iti sa udgīthaḥ
+yat pratīti sa pratihāraḥ
+yad upeti sa upadravaḥ
+yan nīti tan nidhanam', null, 2008002),
+('chandogya-2-8-3', 3, 'Chapter 2, Section 8, Verse 3', 'दुग्धेऽस्मै वाग्दोहं यो वाचो दोहः।
+अन्नवानन्नादो भवति।
+य एतदेवं विद्वान्वाचि सप्तविधं सामोपास्ते॥', 'dugdhe ''smai vāg dohaṃ yo vāco dohaḥ
+annavān annādo bhavati
+ya etad evaṃ vidvān vāci saptavidhaṃ sāmopāste', null, 2008003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-9-1', 1, 'Chapter 2, Section 9, Verse 1', 'अथ खल्वमुमादित्यं सप्तविधं सामोपासीत।
+सर्वदा समस्तेन साम।
+मां प्रति मां प्रतीति सर्वेण समस्तेन साम॥', 'atha khalv amum ādityaṃ saptavidhaṃ sāmopāsīta
+sarvadā samas tena sāma
+māṃ prati māṃ pratīti sarveṇa samas tena sāma', null, 2009001),
+('chandogya-2-9-2', 2, 'Chapter 2, Section 9, Verse 2', 'तस्मिन्निमानि सर्वाणि भूतान्यन्वायत्तानीति विद्यात्।
+तस्य यत्पुरोदयात्स हिङ्कारः।
+तदस्य पशवोऽन्वायत्ताः।
+तस्मात्ते हिङ्कुर्वन्ति।
+हिङ्कारभाजिनो ह्येतस्य साम्नः॥', 'tasminn imāni sarvāṇi bhūtāny anvāyattānīti vidyāt
+tasya yat purodayāt sa hiṅkāraḥ
+tad asya paśavo ''nvāyattāḥ
+tasmāt te hiṅkurvanti
+hiṅkārabhājino hy etasya sāmnaḥ', null, 2009002),
+('chandogya-2-9-3', 3, 'Chapter 2, Section 9, Verse 3', 'अथ यत्प्रथमोदिते स प्रस्तावः।
+तदस्य मनुष्या अन्वायत्ताः।
+तस्मात्ते प्रस्तुतिकामाः प्रशंसाकामाः।
+प्रस्तावभाजिनो ह्येतस्य साम्नः॥', 'atha yat prathamodite sa prastāvaḥ
+tad asya manuṣyā anvāyattāḥ
+tasmāt te prastutikāmāḥ praśaṃsākāmāḥ
+prastāvabhājino hy etasya sāmnaḥ', null, 2009003),
+('chandogya-2-9-4', 4, 'Chapter 2, Section 9, Verse 4', 'अथ यत्संगववेलायां स आदिः।
+तदस्य वयांस्यन्वायत्तानि।
+तस्मात्तान्यन्तरिक्षेऽनारम्भणान्यादायात्मानं परिपतन्ति।
+आदिभाजीनि ह्येतस्य साम्नः॥', 'atha yat saṃgavavelāyāṃ sa ādiḥ
+tad asya vayāṃsy anvāyattāni
+tasmāt tāny antarikṣe ''nārambhaṇāny ādāyātmānaṃ paripatanti
+ādibhājīni hy etasya sāmnaḥ', null, 2009004),
+('chandogya-2-9-5', 5, 'Chapter 2, Section 9, Verse 5', 'अथ यत्संप्रति मध्यंदिने स उद्गीथः।
+तदस्य देवा अन्वायत्ताः।
+तस्मात्ते सत्तमाः प्राजापत्यानाम्।
+उद्गीथभाजिनो ह्येतस्य साम्नः॥', 'atha yat saṃprati madhyaṃdine sa udgīthaḥ
+tad asya devā anvāyattāḥ
+tasmāt te sattamāḥ prājāpatyānām
+udgīthabhājino hy etasya sāmnaḥ', null, 2009005),
+('chandogya-2-9-6', 6, 'Chapter 2, Section 9, Verse 6', 'अथ यदूर्ध्वं मध्यंदिनात्प्रागपराह्णात्स प्रतिहारः।
+तदस्य गर्भा अन्वायत्ताः।
+तस्मात्ते प्रतिहृता नावपद्यन्ते।
+प्रतिहारभाजिनो ह्येतस्य साम्नः॥', 'atha yad ūrdhvaṃ madhyaṃdināt prāg aparāhṇāt sa pratihāraḥ
+tad asya garbhā anvāyattāḥ
+tasmāt te pratihṛtā nāvapadyante
+pratihārabhājino hy etasya sāmnaḥ', null, 2009006),
+('chandogya-2-9-7', 7, 'Chapter 2, Section 9, Verse 7', 'अथ यदूर्ध्वमपराह्णात्प्रागस्तमयात्स उपद्रवः।
+तदस्यारण्या अन्वायत्ताः।
+तस्मात्ते पुरुषं दृष्ट्वा कक्षं श्वभ्रमित्युपद्रवन्ति।
+उपद्रवभाजिनो ह्येतस्य साम्नः॥', 'atha yad ūrdhvam aparāhṇāt prāg astam ayāt sa upadravaḥ
+tad asyāraṇyā anvāyattāḥ
+tasmāt te puruṣaṃ dṛṣṭvā kakṣaṃ śvabhram ity upadravanti
+upadravabhājino hy etasya sāmnaḥ', null, 2009007),
+('chandogya-2-9-8', 8, 'Chapter 2, Section 9, Verse 8', 'अथ यत्प्रथमास्तमिते तन्निधनम्।
+तदस्य पितरोऽन्वायत्ताः।
+तस्मात्तान्निदधति।
+निधनभाजिनो ह्येतस्य साम्नः।
+एवं खल्वमुमादित्यं सप्तविधं सामोपास्ते॥', 'atha yat prathamāstamite tan nidhanam
+tad asya pitaro ''nvāyattāḥ
+tasmāt tān nidadhati
+nidhanabhājino hy etasya sāmnaḥ
+evaṃ khalv amum ādityaṃ saptavidhaṃ sāmopāste', null, 2009008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-10-1', 1, 'Chapter 2, Section 10, Verse 1', 'अथ खल्वात्मसंमितमतिमृत्यु सप्तविधं सामोपासीत।
+हिङ्कार इति त्र्यक्षरम्।
+प्रस्ताव इति त्र्यक्षरम्।
+तत्समम्॥', 'atha khalv ātmasaṃmitam atimṛtyu saptavidhaṃ sāmopāsīta
+hiṅkāra iti tryakṣaram
+prastāva iti tryakṣaram
+tat samam', null, 2010001),
+('chandogya-2-10-2', 2, 'Chapter 2, Section 10, Verse 2', 'आदिरिति द्व्यक्षरम्।
+प्रतिहार इति चतुरक्षरम्।
+तत इहैकम्।
+तत्समम्॥', 'ādir iti dvyakṣaram
+pratihāra iti caturakṣaram
+tata ihaikam
+tat samam', null, 2010002),
+('chandogya-2-10-3', 3, 'Chapter 2, Section 10, Verse 3', 'उद्गीथ इति त्र्यक्षरमुपद्रव इति चतुरक्षरं त्रिभिस्त्रिभिः समं भवति।
+अक्षरमतिशिष्यते त्र्यक्षरम्।
+तत्समम्॥', 'udgītha iti tryakṣaram upadrava iti caturakṣaraṃ tribhis tribhiḥ samaṃ bhavati
+akṣaram atiśiṣyate tryakṣaram
+tat samam', null, 2010003),
+('chandogya-2-10-4', 4, 'Chapter 2, Section 10, Verse 4', 'निधनमिति त्र्यक्षरम्।
+तत्सममेव भवति।
+तानि ह वा एतानि द्वाविंशतिरक्षराणि॥', 'nidhanam iti tryakṣaram
+tat samam eva bhavati
+tāni ha vā etāni dvāviṃśatir akṣarāṇi', null, 2010004),
+('chandogya-2-10-5', 5, 'Chapter 2, Section 10, Verse 5', 'एकविंशत्यादित्यमाप्नोति।
+एकविंशो वा इतोऽसावादित्यः।
+द्वाविंशेन परमादित्याज्जयति।
+तन्नाकम्।
+तद्विशोकम्॥', 'ekaviṃśatyādityam āpnoti
+ekaviṃśo vā ito ''sāv ādityaḥ
+dvāviṃśena param ādityāj jayati
+tan nākam
+tad viśokam', null, 2010005),
+('chandogya-2-10-6', 6, 'Chapter 2, Section 10, Verse 6', 'आप्नोतीहादित्यस्य जयम्।
+परो हास्यादित्यजयाज्जयो भवति य एतदेवं विद्वानात्मसंमितमतिमृत्यु सप्तविधं सामोपास्ते सामोपास्ते॥', 'āpnotīhādityasya jayam
+paro hāsyādityajayāj jayo bhavati ya etad evaṃ vidvān ātmasaṃmitam atimṛtyu saptavidhaṃ sāmopāste sāmopāste', null, 2010006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-11-1', 1, 'Chapter 2, Section 11, Verse 1', 'मनो हिङ्कारः।
+वाक्प्रस्तावः।
+चक्षुरुद्गीथः।
+श्रोत्रं प्रतिहारः।
+प्राणो निधनम्।
+एतद्गायत्रं प्राणेषु प्रोतम्॥', 'mano hiṅkāraḥ
+vāk prastāvaḥ
+cakṣur udgīthaḥ
+śrotraṃ pratihāraḥ
+prāṇo nidhanam
+etad gāyatraṃ prāṇeṣu protam', null, 2011001),
+('chandogya-2-11-2', 2, 'Chapter 2, Section 11, Verse 2', 'स य एवमेतद्गायत्रं प्राणेषु प्रोतं वेद।
+प्राणी भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+महामनाः स्यात्।
+तद्व्रतम्॥', 'sa ya evam etad gāyatraṃ prāṇeṣu protaṃ veda
+prāṇī bhavati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+mahāmanāḥ syāt
+tad vratam', null, 2011002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-12-1', 1, 'Chapter 2, Section 12, Verse 1', 'अभिमन्थति स हिङ्कारः।
+धूमो जायते स प्रस्तावः।
+ज्वलति स उद्गीथः।
+अङ्गारा भवन्ति स प्रतिहारः।
+उपशाम्यति तन्निधनम्।
+संशाम्यति तन्निधनम्।
+एतद्रथंतरमग्नौ प्रोतम्॥', 'abhimanthati sa hiṅkāraḥ
+dhūmo jāyate sa prastāvaḥ
+jvalati sa udgīthaḥ
+aṅgārā bhavanti sa pratihāraḥ
+upaśāmyati tan nidhanam
+saṃśāmyati tan nidhanam
+etad rathaṃtaram agnau protam', null, 2012001),
+('chandogya-2-12-2', 2, 'Chapter 2, Section 12, Verse 2', 'स य एवमेतद्रथंतरमग्नौ प्रोतं वेद।
+ब्रह्मवर्चस्य्: अन्नादो भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+न प्रत्यङ्ङग्निमाचामेन्न निष्ठीवेत्।
+तद्व्रतम्॥', 'sa ya evam etad rathaṃtaram agnau protaṃ veda
+brahmavarcasy: annādo bhavati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+na pratyaṅṅ agnim ācāmen na niṣṭhīvet
+tad vratam', null, 2012002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-13-1', 1, 'Chapter 2, Section 13, Verse 1', 'उपमन्त्रयते स हिङ्कारः।
+ज्ञपयते स प्रस्तावः।
+स्त्रिया सह शेते स उद्गीथः।
+प्रति स्त्रीं सह शेते स प्रतिहारः।
+कालं गच्छति तन्निधनम्।
+पारं गच्छति तन्निधनम्।
+एतद्वामदेव्यं मिथुने प्रोतम्॥', 'upamantrayate sa hiṅkāraḥ
+jñapayate sa prastāvaḥ
+striyā saha śete sa udgīthaḥ
+prati strīṃ saha śete sa pratihāraḥ
+kālaṃ gacchati tan nidhanam
+pāraṃ gacchati tan nidhanam
+etad vāmadevyaṃ mithune protam', null, 2013001),
+('chandogya-2-13-2', 2, 'Chapter 2, Section 13, Verse 2', 'स य एवमेतद्वामदेव्यं मिथुने प्रोतं वेद।
+मिथुनी भवति।
+मिथुनान्मिथुनात्प्रजायते।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+न कांचन परिहरेत्।
+तद्व्रतम्॥', 'sa ya evam etad vāmadevyaṃ mithune protaṃ veda
+mithunī bhavati
+mithunān mithunāt prajāyate
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+na kāṃcana pariharet
+tad vratam', null, 2013002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-14-1', 1, 'Chapter 2, Section 14, Verse 1', 'उद्यन्हिङ्कारः।
+उदितः प्रस्तावः।
+मध्यंदिन उद्गीथः।
+अपराह्णः प्रतिहारः।
+अस्तं यन्निधनम्।
+एतद्बृहदादित्ये प्रोतम्॥', 'udyan hiṅkāraḥ
+uditaḥ prastāvaḥ
+madhyaṃdina udgīthaḥ
+aparāhṇaḥ pratihāraḥ
+astaṃ yan nidhanam
+etad bṛhad āditye protam', null, 2014001),
+('chandogya-2-14-2', 2, 'Chapter 2, Section 14, Verse 2', 'स य एवमेतद्बृहदादित्ये प्रोतं वेद।
+तेजस्व्य्: अन्नादो भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+तपन्तं न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etad bṛhad āditye protaṃ veda
+tejasvy: annādo bhavati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+tapantaṃ na nindet
+tad vratam', null, 2014002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-15-1', 1, 'Chapter 2, Section 15, Verse 1', 'अभ्राणि संप्लवन्ते स हिङ्कारः।
+मेघो जायते स प्रस्तावः।
+वर्षति स उद्गीथः।
+विद्योतते स्तनयति स प्रतिहारः।
+उद्गृह्णाति तन्निधनम्।
+एतद्वैरूपं पर्जन्ये प्रोतम्॥', 'abhrāṇi saṃplavante sa hiṅkāraḥ
+megho jāyate sa prastāvaḥ
+varṣati sa udgīthaḥ
+vidyotate stanayati sa pratihāraḥ
+udgṛhṇāti tan nidhanam
+etad vairūpaṃ parjanye protam', null, 2015001),
+('chandogya-2-15-2', 2, 'Chapter 2, Section 15, Verse 2', 'स य एवमेतद्वैरूपं पर्जन्ये प्रोतं वेद।
+विरूपांश्च सुरूपंश्च पशूनवरुन्धे।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+वर्षन्तं न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etad vairūpaṃ parjanye protaṃ veda
+virūpāṃś ca surūpaṃś ca paśūn avarundhe
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+varṣantaṃ na nindet
+tad vratam', null, 2015002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-16-1', 1, 'Chapter 2, Section 16, Verse 1', 'वसन्तो हिङ्कारः।
+ग्रीष्मः प्रस्तावः।
+वर्षा उद्गीथः।
+शरत्प्रतिहारः।
+हेमन्तो निधनम्।
+एतद्वैराजमृतुषु प्रोतम्॥', 'vasanto hiṅkāraḥ
+grīṣmaḥ prastāvaḥ
+varṣā udgīthaḥ
+śarat pratihāraḥ
+hemanto nidhanam
+etad vairājam ṛtuṣu protam', null, 2016001),
+('chandogya-2-16-2', 2, 'Chapter 2, Section 16, Verse 2', 'स य एवमेतद्वैराजमृतुषु प्रोतं वेद।
+विराजति प्रजया।
+पशुभिर्ब्रह्मवर्चसेन।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+ऋतून्न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etad vairājam ṛtuṣu protaṃ veda
+virājati prajayā
+paśubhir brahmavarcasena
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+ṛtūn na nindet
+tad vratam', null, 2016002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 17 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-17-1', 1, 'Chapter 2, Section 17, Verse 1', 'पृथिवी हिङ्कारः।
+अन्तरिक्षं प्रस्तावः।
+द्यौरुद्गीथः।
+दिशः प्रतिहारः।
+समुद्रो निधनम्।
+एताः शक्वर्यो लोकेषु प्रोताः॥', 'pṛthivī hiṅkāraḥ
+antarikṣaṃ prastāvaḥ
+dyaur udgīthaḥ
+diśaḥ pratihāraḥ
+samudro nidhanam
+etāḥ śakvaryo lokeṣu protāḥ', null, 2017001),
+('chandogya-2-17-2', 2, 'Chapter 2, Section 17, Verse 2', 'स य एवमेताः शक्वर्यो लोकेषु प्रोता वेद।
+लोकी भवति सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+लोकान्न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etāḥ śakvaryo lokeṣu protā veda
+lokī bhavati sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+lokān na nindet
+tad vratam', null, 2017002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 18 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-18-1', 1, 'Chapter 2, Section 18, Verse 1', 'अजा हिङ्कारः।
+अवयः प्रस्तावः।
+गाव उद्गीथः।
+अश्वाः प्रतिहारः।
+पुरुषो निधनम्।
+एता रेवत्यः पशुषु प्रोताः॥', 'ajā hiṅkāraḥ
+avayaḥ prastāvaḥ
+gāva udgīthaḥ
+aśvāḥ pratihāraḥ
+puruṣo nidhanam
+etā revatyaḥ paśuṣu protāḥ', null, 2018001),
+('chandogya-2-18-2', 2, 'Chapter 2, Section 18, Verse 2', 'स य एवमेता रेवत्यः पशुषु प्रोता वेद।
+पशुमान्भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+पशून्न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etā revatyaḥ paśuṣu protā veda
+paśumān bhavati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+paśūn na nindet
+tad vratam', null, 2018002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 19 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-19-1', 1, 'Chapter 2, Section 19, Verse 1', 'लोम हिङ्कारः।
+त्वक्प्रस्तावः।
+मांसमुद्गीथः।
+अस्थि प्रतिहारः।
+मज्जा निधनम्।
+एतद्यज्ञायज्ञीयमङ्गेषु प्रोतम्॥', 'loma hiṅkāraḥ
+tvak prastāvaḥ
+māṃsam udgīthaḥ
+asthi pratihāraḥ
+majjā nidhanam
+etad yajñāyajñīyam aṅgeṣu protam', null, 2019001),
+('chandogya-2-19-2', 2, 'Chapter 2, Section 19, Verse 2', 'स य एवमेतद्यज्ञायज्ञीयमङ्गेषु प्रोतं वेद।
+अङ्गी भवति।
+नाङ्गेन विहूर्छति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+संवत्सरं मज्ज्ञो नाश्नीयात्।
+तद्व्रतम्।
+मज्ज्ञो नाश्नीयादिति वा॥', 'sa ya evam etad yajñāyajñīyam aṅgeṣu protaṃ veda
+aṅgī bhavati
+nāṅgena vihūrchati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+saṃvatsaraṃ majjño nāśnīyāt
+tad vratam
+majjño nāśnīyād iti vā', null, 2019002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 20 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-20-1', 1, 'Chapter 2, Section 20, Verse 1', 'अग्निर्हिङ्कारः।
+वायुः प्रस्तावः।
+आदित्य उद्गीथः।
+नक्षत्राणि प्रतिहारः।
+चन्द्रमा निधनम्।
+एतद्राजनं देवतासु प्रोतम्॥', 'agnir hiṅkāraḥ
+vāyuḥ prastāvaḥ
+āditya udgīthaḥ
+nakṣatrāṇi pratihāraḥ
+candramā nidhanam
+etad rājanaṃ devatāsu protam', null, 2020001),
+('chandogya-2-20-2', 2, 'Chapter 2, Section 20, Verse 2', 'स य एवमेतद्राजनं देवतासु प्रोतं वेद।
+एतासामेव देवतानां सलोकतां सर्ष्टितां सायुज्यं गच्छति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+महान्प्रजया पशुभिर्भवति।
+महान्कीर्त्या।
+ब्राह्मणान्न निन्देत्।
+तद्व्रतम्॥', 'sa ya evam etad rājanaṃ devatāsu protaṃ veda
+etāsām eva devatānāṃ salokatāṃ sarṣṭitāṃ sāyujyaṃ gacchati
+sarvam āyur eti
+jyog jīvati
+mahān prajayā paśubhir bhavati
+mahān kīrtyā
+brāhmaṇān na nindet
+tad vratam', null, 2020002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 21 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-21-1', 1, 'Chapter 2, Section 21, Verse 1', 'त्रयी विद्या हिङ्कारः।
+त्रय इमे लोकाः स प्रस्तावः।
+अग्निर्वायुरादित्यः स उद्गीथः।
+नक्षत्राणि वयांसि मरीचयः स प्रतिहारः।
+सर्पा गन्धर्वाः पितरस्तन्निधनम्।
+एतत्साम सर्वस्मिन्प्रोतम्॥', 'trayī vidyā hiṅkāraḥ
+traya ime lokāḥ sa prastāvaḥ
+agnir vāyur ādityaḥ sa udgīthaḥ
+nakṣatrāṇi vayāṃsi marīcayaḥ sa pratihāraḥ
+sarpā gandharvāḥ pitaras tan nidhanam
+etat sāma sarvasmin protam', null, 2021001),
+('chandogya-2-21-2', 2, 'Chapter 2, Section 21, Verse 2', 'स य एवमेतत्साम सर्वस्मिन्प्रोतं वेद सर्वं ह भवति॥', 'sa ya evam etat sāma sarvasmin protaṃ veda sarvaṃ ha bhavati', null, 2021002),
+('chandogya-2-21-3', 3, 'Chapter 2, Section 21, Verse 3', 'तदेष श्लोकः।
+यानि पञ्चधा त्रीणि त्रीणि।
+तेभ्यो न ज्यायः परमन्यदस्ति॥', 'tad eṣa ślokaḥ
+yāni pañcadhā trīṇi trīṇi
+tebhyo na jyāyaḥ param anyad asti', null, 2021003),
+('chandogya-2-21-4', 4, 'Chapter 2, Section 21, Verse 4', 'यस्तद्वेद स वेद सर्वम्।
+सर्वा दिशो बलिमस्मै हरन्ति।
+सर्वमस्मीत्युपासित।
+तद्व्रतं तद्व्रतम्॥', 'yas tad veda sa veda sarvam
+sarvā diśo balim asmai haranti
+sarvam asmīty upāsita
+tad vrataṃ tad vratam', null, 2021004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 22 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-22-1', 1, 'Chapter 2, Section 22, Verse 1', 'विनर्दि साम्नो वृणे पशव्यमित्यग्नेरुद्गीथः।
+अनिरुक्तः प्रजापतेः।
+निरुक्तः सोमस्य।
+मृदु श्लक्ष्णं वायोः।
+श्लक्ष्णं बलवदिन्द्रस्य।
+क्रौञ्चं बृहस्पतेः।
+अपध्वान्तं वरुणस्य।
+तान्सर्वानेवोपसेवेत।
+वारुणं त्वेव वर्जयेत्॥', 'vinardi sāmno vṛṇe paśavyam ity agner udgīthaḥ
+aniruktaḥ prajāpateḥ
+niruktaḥ somasya
+mṛdu ślakṣṇaṃ vāyoḥ
+ślakṣṇaṃ balavad indrasya
+krauñcaṃ bṛhaspateḥ
+apadhvāntaṃ varuṇasya
+tān sarvān evopaseveta
+vāruṇaṃ tv eva varjayet', null, 2022001),
+('chandogya-2-22-2', 2, 'Chapter 2, Section 22, Verse 2', 'अमृतत्वं देवेभ्य आगायानीत्यागायेत्।
+स्वधां पितृभ्य आशां मनुष्येभ्यस्तृणोदकं पशुभ्यः स्वर्गं लोकं यजमानायान्नमात्मन आगायानीत्येतानि मनसा ध्यायन्नप्रमत्तः स्तुवीत॥', 'amṛtatvaṃ devebhya āgāyānīty āgāyet
+svadhāṃ pitṛbhya āśāṃ manuṣyebhyas tṛṇodakaṃ paśubhyaḥ svargaṃ lokaṃ yajamānāyānnam ātmana āgāyānīty etāni manasā dhyāyann apramattaḥ stuvīta', null, 2022002),
+('chandogya-2-22-3', 3, 'Chapter 2, Section 22, Verse 3', 'सर्वे स्वरा इन्द्रस्यात्मानः।
+सर्व ऊष्माणः प्रजापतेरात्मानः।
+सर्वे स्पर्शा मृत्योरात्मानः।
+तं यदि स्वरेषूपालभेत।
+इन्द्रं शरणं प्रपन्नोऽभूवं स त्वा प्रति वक्ष्यतीत्येनं ब्रूयात्॥', 'sarve svarā indrasyātmānaḥ
+sarva ūṣmāṇaḥ prajāpater ātmānaḥ
+sarve sparśā mṛtyor ātmānaḥ
+taṃ yadi svareṣūpālabheta
+indraṃ śaraṇaṃ prapanno ''bhūvaṃ sa tvā prati vakṣyatīty enaṃ brūyāt', null, 2022003),
+('chandogya-2-22-4', 4, 'Chapter 2, Section 22, Verse 4', 'अथ यद्येनमूष्मासूपालभेत।
+प्रजापतिं शरणं प्रपन्नोऽभूवं स त्वा प्रति पेक्ष्यतीत्येनं ब्रूयात्।
+अथ यद्येनं स्पर्शेषूपालभेत।
+मृत्युं शरणं प्रपन्नोऽभूवं स त्वा प्रति धक्ष्यतीत्येनं ब्रूयात्॥', 'atha yady enam ūṣmāsūpālabheta
+prajāpatiṃ śaraṇaṃ prapanno ''bhūvaṃ sa tvā prati pekṣyatīty enaṃ brūyāt
+atha yady enaṃ sparśeṣūpālabheta
+mṛtyuṃ śaraṇaṃ prapanno ''bhūvaṃ sa tvā prati dhakṣyatīty enaṃ brūyāt', null, 2022004),
+('chandogya-2-22-5', 5, 'Chapter 2, Section 22, Verse 5', 'सर्वे स्वरा घोषवन्तो बलवन्तो वक्तव्या इन्द्रे बलं ददानीति।
+सर्व ऊष्माणोऽग्रस्ता अनिरस्ता विवृता वक्तव्याः प्रजापतेरात्मानं परिददानीति।
+सर्वे स्पर्शा लेशेनानभिनिहिता वक्तव्या मृत्योरात्मानं परिहराणीति॥', 'sarve svarā ghoṣavanto balavanto vaktavyā indre balaṃ dadānīti
+sarva ūṣmāṇo ''grastā anirastā vivṛtā vaktavyāḥ prajāpater ātmānaṃ paridadānīti
+sarve sparśā leśenānabhinihitā vaktavyā mṛtyor ātmānaṃ pariharāṇīti', null, 2022005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 23 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-23-1', 1, 'Chapter 2, Section 23, Verse 1', 'त्रयो धर्मस्कन्धाः।
+यज्ञोऽध्ययनं दानमिति प्रथमः।
+तप एव द्वितीयः।
+ब्रह्मचार्याचार्यकुलवासी तृतीयोऽत्यन्तमात्मानमाचार्यकुलेऽवसादयन्।
+सर्व एते पुण्यलोका भवन्ति।
+ब्रह्मसंस्थोऽमृतत्वमेति॥', 'trayo dharmaskandhāḥ
+yajño ''dhyayanaṃ dānam iti prathamaḥ
+tapa eva dvitīyaḥ
+brahmacāryācāryakulavāsī tṛtīyo ''tyantam ātmānam ācāryakule ''vasādayan
+sarva ete puṇyalokā bhavanti
+brahmasaṃstho ''mṛtatvam eti', null, 2023001),
+('chandogya-2-23-2', 2, 'Chapter 2, Section 23, Verse 2', 'प्रजापतिर्लोकानभ्यतपत्।
+तेभ्योऽभितप्तेभ्यस्त्रयी विद्या संप्रास्रवत्।
+तामभ्यतपत्।
+तस्या अभितप्ताया एतान्यक्षराणि संप्रस्र्वन्त भूर्भुवः स्वरिति॥', 'prajāpatir lokān abhyatapat
+tebhyo ''bhitaptebhyas trayī vidyā saṃprāsravat
+tām abhyatapat
+tasyā abhitaptāyā etāny akṣarāṇi saṃprasrvanta bhūr bhuvaḥ svar iti', null, 2023002),
+('chandogya-2-23-3', 3, 'Chapter 2, Section 23, Verse 3', 'तान्यभ्यतपत्।
+तेभ्योऽभितप्तेभ्य ओंकारः संप्रास्रवत्।
+तद्यथा शङ्कुना सर्वाणि पर्णानि संतृण्णान्येवमोंकारेण सर्वा वाक्संतृण्णा।
+ओंकार एवेदं सर्वमोंकार एव इदं सर्वम्॥', 'tāny abhyatapat
+tebhyo ''bhitaptebhya oṃkāraḥ saṃprāsravat
+tad yathā śaṅkunā sarvāṇi parṇāni saṃtṛṇṇāny evam oṃkāreṇa sarvā vāk saṃtṛṇṇā
+oṃkāra evedaṃ sarvam oṃkāra eva idaṃ sarvam', null, 2023003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 24 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-2-24-1', 1, 'Chapter 2, Section 24, Verse 1', 'ब्रह्मवादिनो वदन्ति।
+यद्वसूनां प्रातःसवनम्।
+रुद्राणां माध्यंदिनं सवनम्।
+आदित्यानां च विश्वेषां च देवानां तृतीयसवनम्॥', 'brahmavādino vadanti
+yad vasūnāṃ prātaḥsavanam
+rudrāṇāṃ mādhyaṃdinaṃ savanam
+ādityānāṃ ca viśveṣāṃ ca devānāṃ tṛtīyasavanam', null, 2024001),
+('chandogya-2-24-2', 2, 'Chapter 2, Section 24, Verse 2', 'क्व तर्हि यजमानस्य लोक इति।
+स यस्तं न विद्यात्कथं कुर्यात्।
+अथ विद्वान्कुर्यात्॥', 'kva tarhi yajamānasya loka iti
+sa yas taṃ na vidyāt kathaṃ kuryāt
+atha vidvān kuryāt', null, 2024002),
+('chandogya-2-24-3', 3, 'Chapter 2, Section 24, Verse 3', 'पुरा प्रातरनुवाकस्योपाकरणाज्जघनेन गार्हपत्यस्योदाङ्मुख उपविश्य स वासवं सामाभिगायति॥', 'purā prātaranuvākasyopākaraṇāj jaghanena gārhapatyasyodāṅmukha upaviśya sa vāsavaṃ sāmābhigāyati', null, 2024003),
+('chandogya-2-24-4', 4, 'Chapter 2, Section 24, Verse 4', 'लो ३ कद्वारमपावा ३ र्णू ३३।
+पश्येम त्वा वयं रा ३३३३३ हु ३ मा ३३ ज्या ३ यो ३ आ ३२१११ इति॥', 'lo 3 kadvāram apāvā 3 rṇū 33
+paśyema tvā vayaṃ rā 33333 hu 3 m ā 33 jyā 3 yo 3 ā 32111 iti', null, 2024004),
+('chandogya-2-24-5', 5, 'Chapter 2, Section 24, Verse 5', 'अथ जुहोति।
+नमोऽग्नये पृथिवीक्षिते लोकक्षिते।
+लोकं मे यजमानाय विन्द।
+एष वै यजमानस्य लोकः।
+एता अस्मि॥', 'atha juhoti
+namo ''gnaye pṛthivīkṣite lokakṣite
+lokaṃ me yajamānāya vinda
+eṣa vai yajamānasya lokaḥ
+etā asmi', null, 2024005),
+('chandogya-2-24-6', 6, 'Chapter 2, Section 24, Verse 6', 'अत्र यजमानः परस्तादायुषः स्वाहा।
+अपजहि परिघमित्युक्त्वोत्तिष्ठति।
+तस्मै वसवः प्रातःसवनं संप्रयच्छन्ति॥', 'atra yajamānaḥ parastād āyuṣaḥ svāhā
+apajahi parigham ity uktvottiṣṭhati
+tasmai vasavaḥ prātaḥsavanaṃ saṃprayacchanti', null, 2024006),
+('chandogya-2-24-7', 7, 'Chapter 2, Section 24, Verse 7', 'पुरा माध्यन्दिनस्य सवनस्योपाकरणाज्जघनेनाग्नीध्रीयस्योदङ्मुख उपविश्य स रौद्रं सामाभिगायति॥', 'purā mādhyandinasya savanasyopākaraṇāj jaghanenāgnīdhrīyasyodaṅmukha upaviśya sa raudraṃ sāmābhigāyati', null, 2024007),
+('chandogya-2-24-8', 8, 'Chapter 2, Section 24, Verse 8', 'लो ३ कद्वारमपावार्३ णू ३३।
+पश्येम त्वा वयं वैरा ३३३३३ हु ३ मा ३३ ज्या ३ यो ३ आ ३२१११ इति॥', 'lo 3 kadvāramapāvār 3 ṇū 33
+paśyema tvā vayaṃ vairā 33333 hu 3 m ā 33 jyā 3 yo 3 ā 32111 iti', null, 2024008),
+('chandogya-2-24-9', 9, 'Chapter 2, Section 24, Verse 9', 'अथ जुहोति।
+नामो वायवेऽन्तरिक्षक्षिते लोकक्षिते।
+लोकं मे यजमानाय विन्द।
+एष वै यजमानस्य लोकः।
+एतास्मि॥', 'atha juhoti
+nāmo vāyave ''ntarikṣakṣite lokakṣite
+lokaṃ me yajamānāya vinda
+eṣa vai yajamānasya lokaḥ
+etāsmi', null, 2024009),
+('chandogya-2-24-10', 10, 'Chapter 2, Section 24, Verse 10', 'अत्र यजमानः परस्तादायुषः स्वाहा।
+अपजहि परिघमित्युक्त्वोत्तिष्ठति।
+तस्मै रुद्रा माध्यन्दिनं सवनं संप्रयच्छन्ति॥', 'atra yajamānaḥ parastād āyuṣaḥ svāhā
+apajahi parigham ity uktvottiṣṭhati
+tasmai rudrā mādhyandinaṃ savanaṃ saṃprayacchanti', null, 2024010),
+('chandogya-2-24-11', 11, 'Chapter 2, Section 24, Verse 11', 'पुरा तृतीयसवनस्योपाकरणाज्जघनेनाहवनीयस्योदङ्मुख उपविश्य स आदित्यं स वैश्वदेवं सामाभिगायति॥', 'purā tṛtīyasavanasyopākaraṇāj jaghanenāhavanīyasyodaṅmukha upaviśya sa ādityaṃ sa vaiśvadevaṃ sāmābhigāyati', null, 2024011),
+('chandogya-2-24-12', 12, 'Chapter 2, Section 24, Verse 12', 'लो ३ कद्वारमपावा ३ र्णू३३।
+पश्येम त्वा वयं स्वारा ३३३३३ हु३म्, आ ३३ ज्या ३ यो ३ आ ३२१११ इत्यादित्यम्॥', 'lo 3 kadvāramapāvā 3 rṇū33
+paśyema tvā vayaṃ svārā 33333 hu3m, ā 33 jyā 3 yo 3 ā 32111 ity ādityam', null, 2024012),
+('chandogya-2-24-13', 13, 'Chapter 2, Section 24, Verse 13', 'अथ वैश्वदेवम्।
+लो३कद्वारमपावा३र्णू३३।
+पश्येम त्वा वयं साम्रा ३३३३३ हु३मा ३३ ज्या ३ यो ३ आ ३२१११ इति॥', 'atha vaiśvadevam
+lo3kadvāramapāvā3rṇū33
+paśyema tvā vayaṃ sāmrā 33333 hu3m ā 33 jyā 3 yo 3 ā 32111 iti', null, 2024013),
+('chandogya-2-24-14', 14, 'Chapter 2, Section 24, Verse 14', 'अथ जुहोति।
+नम आदित्येभ्यश्च विश्वेभ्यश्च देवेभ्यो दिविक्षिद्भ्यो लोकक्षिद्भ्यः।
+लोकं मे यजमानाय विन्दत॥', 'atha juhoti
+nama ādityebhyaś ca viśvebhyaś ca devebhyo divikṣidbhyo lokakṣidbhyaḥ
+lokaṃ me yajamānāya vindata', null, 2024014),
+('chandogya-2-24-15', 15, 'Chapter 2, Section 24, Verse 15', 'एष वै यजमानस्य लोकः।
+एतास्म्यत्र यजमानः परस्तादायुषः स्वाहा।
+अपहत परिघमित्युक्त्वोत्तिष्ठति॥', 'eṣa vai yajamānasya lokaḥ
+etāsmy atra yajamānaḥ parastād āyuṣaḥ svāhā
+apahata parigham ity uktvottiṣṭhati', null, 2024015),
+('chandogya-2-24-16', 16, 'Chapter 2, Section 24, Verse 16', 'तस्मा आदित्याश्च विश्वे च देवास्तृतीयसवनं संप्रयच्छन्ति।
+एष ह वै यज्ञस्य मात्रां वेद य एवं वेद य एवं वेद॥', 'tasmā ādityāś ca viśve ca devās tṛtīyasavanaṃ saṃprayacchanti
+eṣa ha vai yajñasya mātrāṃ veda ya evaṃ veda ya evaṃ veda', null, 2024016)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-1-1', 1, 'Chapter 3, Section 1, Verse 1', 'असौ वा आदित्यो देवमधु।
+तस्य द्यौरेव तिरश्चीनवंशः।
+अन्तरिक्षमपूपः।
+मरीचयः पुत्राः॥', 'asau vā ādityo devamadhu
+tasya dyaur eva tiraścīnavaṃśaḥ
+antarikṣam apūpaḥ
+marīcayaḥ putrāḥ', null, 3001001),
+('chandogya-3-1-2', 2, 'Chapter 3, Section 1, Verse 2', 'तस्य ये प्राञ्चो रश्मयस्ता एवास्य प्राच्यो मधुनाड्यः।
+ऋच एव मधुकृतः।
+ऋग्वेद एव पुष्पम्।
+ता अमृता आपः।
+ता वा एता ऋचः॥', 'tasya ye prāñco raśmayas tā evāsya prācyo madhunāḍyaḥ
+ṛca eva madhukṛtaḥ
+ṛgveda eva puṣpam
+tā amṛtā āpaḥ
+tā vā etā ṛcaḥ', null, 3001002),
+('chandogya-3-1-3', 3, 'Chapter 3, Section 1, Verse 3', 'एतमृग्वेदमभ्यतपन्।
+तस्याभितप्तस्य यशस्तेज इन्द्रियं वीर्यमन्नाद्यं रसोऽजायत॥', 'etam ṛgvedam abhyatapan
+tasyābhitaptasya yaśas teja indriyaṃ vīryam annādyaṃ raso ''jāyata', null, 3001003),
+('chandogya-3-1-4', 4, 'Chapter 3, Section 1, Verse 4', 'तद्व्यक्षरत्।
+तदादित्यमभितोऽश्रयत्।
+तद्वा एतद्यदेतदादित्यस्य रोहितं रूपम्॥', 'tad vyakṣarat
+tad ādityam abhito ''śrayat
+tad vā etad yad etad ādityasya rohitaṃ rūpam', null, 3001004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-2-1', 1, 'Chapter 3, Section 2, Verse 1', 'अथ येऽस्य दक्षिणा रश्मयस्ता एवास्य दक्षिणा मधुनाड्यः।
+यजूंष्येव मधुकृतः।
+यजुर्वेद एव पुष्पम्।
+ता अमृता आपः॥', 'atha ye ''sya dakṣiṇā raśmayas tā evāsya dakṣiṇā madhunāḍyaḥ
+yajūṃṣy eva madhukṛtaḥ
+yajurveda eva puṣpam
+tā amṛtā āpaḥ', null, 3002001),
+('chandogya-3-2-2', 2, 'Chapter 3, Section 2, Verse 2', 'तानि वा एतानि यजूंष्येतं यजुर्वेदमभ्यतपन्।
+तस्य अभितप्तस्य यशस्तेज इन्द्रियं वीर्यमन्नाद्यं रसोऽजायत॥', 'tāni vā etāni yajūṃṣy etaṃ yajurvedam abhyatapan
+tasya abhitaptasya yaśas teja indriyaṃ vīryam annādyaṃ raso ''jāyata', null, 3002002),
+('chandogya-3-2-3', 3, 'Chapter 3, Section 2, Verse 3', 'तद्व्यक्षरत्।
+तदादित्यमभितोऽश्रयत्।
+तद्वा एतद्यदेतदादित्यस्य शुक्लं रूपम्॥', 'tad vyakṣarat
+tad ādityam abhito ''śrayat
+tad vā etad yad etad ādityasya śuklaṃ rūpam', null, 3002003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-3-1', 1, 'Chapter 3, Section 3, Verse 1', 'अथ येऽस्य प्रत्यञ्चो रश्मायस्ता एवास्य प्रतीच्यो मधुनाड्यः।
+सामान्येव मधुकृतः।
+सामवेद एव पुष्पम्।
+ता अमृता आपः॥', 'atha ye ''sya pratyañco raśmāyas tā evāsya pratīcyo madhunāḍyaḥ
+sāmāny eva madhukṛtaḥ
+sāmaveda eva puṣpam
+tā amṛtā āpaḥ', null, 3003001),
+('chandogya-3-3-2', 2, 'Chapter 3, Section 3, Verse 2', 'तानि वा एतानि सामान्येतं सामवेदमभ्यतपन्।
+तस्याभितप्तस्य यशस्तेज इन्द्रियं वीर्यमन्नाद्यं रसोऽजायत॥', 'tāni vā etāni sāmāny etaṃ sāmavedam abhyatapan
+tasyābhitaptasya yaśas teja indriyaṃ vīryam annādyaṃ raso ''jāyata', null, 3003002),
+('chandogya-3-3-3', 3, 'Chapter 3, Section 3, Verse 3', 'तद्व्यक्षरत्।
+तदादित्यमभितोऽश्रयत्।
+तद्वा एतद्यदेतदादित्यस्य कृष्णं रूपम्॥', 'tad vyakṣarat
+tad ādityam abhito ''śrayat
+tad vā etad yad etad ādityasya kṛṣṇaṃ rūpam', null, 3003003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-4-1', 1, 'Chapter 3, Section 4, Verse 1', 'अथ येऽस्योदञ्चो रश्मयस्ता एवास्योदीच्यो मधुनाड्यः।
+अथर्वाङ्गिरस एव मधुकृतः।
+इतिहासपुराणं पुष्पम्।
+ता अमृता आपः॥', 'atha ye ''syodañco raśmayas tā evāsyodīcyo madhunāḍyaḥ
+atharvāṅgirasa eva madhukṛtaḥ
+itihāsapurāṇaṃ puṣpam
+tā amṛtā āpaḥ', null, 3004001),
+('chandogya-3-4-2', 2, 'Chapter 3, Section 4, Verse 2', 'ते वा एतेऽथर्वाङ्गिरस एतदितिहासपूराणमभ्यतपन्।
+तस्याभितप्तस्य यशस्तेज इन्द्रियां वीर्यमन्नाद्यं रसोऽजायत॥', 'te vā ete ''tharvāṅgirasa etad itihāsapūrāṇam abhyatapan
+tasyābhitaptasya yaśas teja indriyāṃ vīryam annādyaṃ raso ''jāyata', null, 3004002),
+('chandogya-3-4-3', 3, 'Chapter 3, Section 4, Verse 3', 'तद्व्यक्षरत्।
+तदादित्यमभितोऽश्रयत्।
+तद्वा एतद्यदेतदादित्यस्य परःकृष्णं रूपम्॥', 'tad vyakṣarat
+tad ādityam abhito ''śrayat
+tad vā etad yad etad ādityasya paraḥkṛṣṇaṃ rūpam', null, 3004003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-5-1', 1, 'Chapter 3, Section 5, Verse 1', 'अथ येऽस्योर्ध्वा रश्मयस्ता एवास्योर्ध्वा मधुनाड्यः।
+गुह्या एवादेशा मधुकृतः।
+ब्रह्मैव पुष्पं।
+ता अमृता आपः॥', 'atha ye ''syordhvā raśmayas tā evāsyordhvā madhunāḍyaḥ
+guhyā evādeśā madhukṛtaḥ
+brahmaiva puṣpaṃ
+tā amṛtā āpaḥ', null, 3005001),
+('chandogya-3-5-2', 2, 'Chapter 3, Section 5, Verse 2', 'ते वा एते गुह्या आदेशा एतद्ब्रह्माभ्यतपन्।
+तस्याभितप्तस्य यशस्तेज इन्द्रियं वीर्यमन्नाद्यं रसोऽजायत॥', 'te vā ete guhyā ādeśā etad brahmābhyatapan
+tasyābhitaptasya yaśas teja indriyaṃ vīryam annādyaṃ raso ''jāyata', null, 3005002),
+('chandogya-3-5-3', 3, 'Chapter 3, Section 5, Verse 3', 'तद्व्यक्षरत्।
+तदादित्यमभितोऽश्रयत्।
+तद्वा एतद्यदेतदादित्यस्य मध्ये क्षोभत इव॥', 'tad vyakṣarat
+tad ādityam abhito ''śrayat
+tad vā etad yad etad ādityasya madhye kṣobhata iva', null, 3005003),
+('chandogya-3-5-4', 4, 'Chapter 3, Section 5, Verse 4', 'ते वा एते रसानां रसाः।
+वेदा हि रसाः।
+तेषामेते रसाः।
+तानि वा एतान्यमृतानाममृतानि।
+वेदा ह्यमृताः।
+तेषामेतान्यमृतानि॥', 'te vā ete rasānāṃ rasāḥ
+vedā hi rasāḥ
+teṣām ete rasāḥ
+tāni vā etāny amṛtānām amṛtāni
+vedā hy amṛtāḥ
+teṣām etāny amṛtāni', null, 3005004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-6-1', 1, 'Chapter 3, Section 6, Verse 1', 'तद्यत्प्रथमममृतं तद्वसव उपजीवन्त्यग्निना मुखेन।
+न वै देवा अश्नन्ति न पिबन्ति।
+एतदेवामृतं दृष्ट्वा तृप्यन्ति॥', 'tad yat prathamam amṛtaṃ tad vasava upajīvanty agninā mukhena
+na vai devā aśnanti na pibanti
+etad evāmṛtaṃ dṛṣṭvā tṛpyanti', null, 3006001),
+('chandogya-3-6-2', 2, 'Chapter 3, Section 6, Verse 2', 'त एतदेव रूपमभिसंविशन्ति।
+एतस्माद्रूपादुद्यन्ति॥', 'ta etad eva rūpam abhisaṃviśanti
+etasmād rūpād udyanti', null, 3006002),
+('chandogya-3-6-3', 3, 'Chapter 3, Section 6, Verse 3', 'स य एतदेवममृतं वेद वसूनामेवैको भूत्वाग्निनैव मुखेनैतदेवामृतं दृष्ट्वा तृप्यति।
+स एतदेव रूपमभिसंविशति।
+एतस्माद्रूपादुदेति॥', 'sa ya etad evam amṛtaṃ veda vasūnām evaiko bhūtvāgninaiva mukhenaitad evāmṛtaṃ dṛṣṭvā tṛpyati
+sa etad eva rūpam abhisaṃviśati
+etasmād rūpād udeti', null, 3006003),
+('chandogya-3-6-4', 4, 'Chapter 3, Section 6, Verse 4', 'स यावदादित्यः पुरस्तादुदेता पश्चादस्तमेता वसूनामेव तावदाधिपत्यं स्वाराज्यं पर्येता॥', 'sa yāvad ādityaḥ purastād udetā paścād astam etā vasūnām eva tāvad ādhipatyaṃ svārājyaṃ paryetā', null, 3006004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-7-1', 1, 'Chapter 3, Section 7, Verse 1', 'अथ यद्द्वितीयममृतं तद्रुद्रा उपजीवन्तीन्द्रेण मुखेन।
+न वै देवा अश्नन्ति न पिबन्ति।
+एतदेवामृतं दृष्ट्वा तृप्यन्ति॥', 'atha yad dvitīyam amṛtaṃ tad rudrā upajīvantīndreṇa mukhena
+na vai devā aśnanti na pibanti
+etad evāmṛtaṃ dṛṣṭvā tṛpyanti', null, 3007001),
+('chandogya-3-7-2', 2, 'Chapter 3, Section 7, Verse 2', 'त एतदेव रूपमभिसंविशन्ति।
+एतस्माद्रूपादुद्यन्ति॥', 'ta etad eva rūpam abhisaṃviśanti
+etasmād rūpād udyanti', null, 3007002),
+('chandogya-3-7-3', 3, 'Chapter 3, Section 7, Verse 3', 'स य एतदेवममृतं वेद रुद्राणामेवैको भूत्वेन्द्रेणैव मुखेनैतदेवामृतं दृष्ट्वा तृप्यति।
+स एतदेव रूपमभिसंविशति।
+एतस्माद्रूपादुदेति॥', 'sa ya etad evam amṛtaṃ veda rudrāṇām evaiko bhūtvendreṇaiva mukhenaitad evāmṛtaṃ dṛṣṭvā tṛpyati
+sa etad eva rūpam abhisaṃviśati
+etasmād rūpād udeti', null, 3007003),
+('chandogya-3-7-4', 4, 'Chapter 3, Section 7, Verse 4', 'स यावदादित्यः पुरस्तादुदेता पश्चादस्तमेता द्विस्तावद्दक्षिणत उदेतोत्तरतोऽस्तमेता रुद्राणामेव तावदाधिपत्यं स्वाराज्यं पर्येता॥', 'sa yāvad ādityaḥ purastād udetā paścād astam etā dvis tāvad dakṣiṇata udetottarato ''stam etā rudrāṇām eva tāvad ādhipatyaṃ svārājyaṃ paryetā', null, 3007004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-8-1', 1, 'Chapter 3, Section 8, Verse 1', 'अथ यत्तृतीयममृतं तदादित्या उपजीवन्ति वरुणेन मुखेन।
+न वै देवा अश्नन्ति न पिबन्ति।
+एतदेवामृतं दृष्ट्वा तृप्यन्ति॥', 'atha yat tṛtīyam amṛtaṃ tad ādityā upajīvanti varuṇena mukhena
+na vai devā aśnanti na pibanti
+etad evāmṛtaṃ dṛṣṭvā tṛpyanti', null, 3008001),
+('chandogya-3-8-2', 2, 'Chapter 3, Section 8, Verse 2', 'त एतदेव रूपमभिसंविशन्ति।
+एतस्माद्रूपादुद्यन्ति॥', 'ta etad eva rūpam abhisaṃviśanti
+etasmād rūpād udyanti', null, 3008002),
+('chandogya-3-8-3', 3, 'Chapter 3, Section 8, Verse 3', 'स य एतदेवममृतं वेदादित्यानामेवैको भूत्वा वरुणेनैव मुखेनैतदेवामृतं दृष्ट्वा तृप्यति।
+स एतदेव रूपमभिसंविशति।
+एतस्माद्रूपादुदेति॥', 'sa ya etad evam amṛtaṃ vedādityānām evaiko bhūtvā varuṇenaiva mukhenaitad evāmṛtaṃ dṛṣṭvā tṛpyati
+sa etad eva rūpam abhisaṃviśati
+etasmād rūpād udeti', null, 3008003),
+('chandogya-3-8-4', 4, 'Chapter 3, Section 8, Verse 4', 'स यावदादित्यो दक्षिणत उदेतोत्तरतोऽस्तमेता द्विस्तावत्पश्चादुदेता पुरस्तादस्तमेतादित्यानामेव तावदाधिपत्यं स्वाराज्यं पर्येता॥', 'sa yāvad ādityo dakṣiṇata udetottarato ''stam etā dvis tāvat paścād udetā purastād astam etādityānām eva tāvad ādhipatyaṃ svārājyaṃ paryetā', null, 3008004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-9-1', 1, 'Chapter 3, Section 9, Verse 1', 'अथ यच्चतुर्थममृतं तन्मरुत उपजीवन्ति सोमेन मुखेन।
+न वै देवा अश्नन्ति न पिबन्ति।
+एतदेवामृतं दृष्ट्वा तृप्यन्ति॥', 'atha yac caturtham amṛtaṃ tan maruta upajīvanti somena mukhena
+na vai devā aśnanti na pibanti
+etad evāmṛtaṃ dṛṣṭvā tṛpyanti', null, 3009001),
+('chandogya-3-9-2', 2, 'Chapter 3, Section 9, Verse 2', 'त एतदेव रूपमभिसंविशन्ति।
+एतस्माद्रूपादुद्यन्ति॥', 'ta etad eva rūpam abhisaṃviśanti
+etasmād rūpād udyanti', null, 3009002),
+('chandogya-3-9-3', 3, 'Chapter 3, Section 9, Verse 3', 'स य एतदेवममृतं वेद मरुतामेवैको भूत्वा सोमेनैव मुखेनैतदेवामृतं दृष्ट्वा तृप्यति।
+स एतदेव रूपमभिसंविशति।
+एतस्माद्रूपादुदेति॥', 'sa ya etad evam amṛtaṃ veda marutām evaiko bhūtvā somenaiva mukhenaitad evāmṛtaṃ dṛṣṭvā tṛpyati
+sa etad eva rūpam abhisaṃviśati
+etasmād rūpād udeti', null, 3009003),
+('chandogya-3-9-4', 4, 'Chapter 3, Section 9, Verse 4', 'स यावदादित्यः पश्चादुदेता पुरस्तादस्तमेता द्विस्तावदुत्तरत उदेता दक्षिणतोऽस्तमेता मरुतामेव तावदाधिपत्यं स्वाराज्यं पर्येता॥', 'sa yāvad ādityaḥ paścād udetā purastād astam etā dvis tāvad uttarata udetā dakṣiṇato ''stam etā marutām eva tāvad ādhipatyaṃ svārājyaṃ paryetā', null, 3009004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-10-1', 1, 'Chapter 3, Section 10, Verse 1', 'अथ यत्पञ्चमममृतं तत्साध्या उपजीवन्ति ब्रह्मणा मुखेन।
+न वै देवा अश्नन्ति न पिबन्ति।
+एतदेवामृतं दृष्ट्वा तृप्यन्ति॥', 'atha yat pañcamam amṛtaṃ tat sādhyā upajīvanti brahmaṇā mukhena
+na vai devā aśnanti na pibanti
+etad evāmṛtaṃ dṛṣṭvā tṛpyanti', null, 3010001),
+('chandogya-3-10-2', 2, 'Chapter 3, Section 10, Verse 2', 'त एतदेव रूपमभिसंविशन्ति।
+एतस्माद्रूपादुद्यन्ति॥', 'ta etad eva rūpam abhisaṃviśanti
+etasmād rūpād udyanti', null, 3010002),
+('chandogya-3-10-3', 3, 'Chapter 3, Section 10, Verse 3', 'स य एतदेवममृतं वेद साध्यानामेवैको भूत्वा ब्रह्मणैव मुखेनैतदेवामृतं दृष्ट्वा तृप्यति।
+स एतदेव रूपमभिसंविशति।
+एतस्माद्रूपादुदेति॥', 'sa ya etad evam amṛtaṃ veda sādhyānām evaiko bhūtvā brahmaṇaiva mukhenaitad evāmṛtaṃ dṛṣṭvā tṛpyati
+sa etad eva rūpam abhisaṃviśati
+etasmād rūpād udeti', null, 3010003),
+('chandogya-3-10-4', 4, 'Chapter 3, Section 10, Verse 4', 'स यावदादित्य उत्तरत उदेता दक्षिणतोऽस्तमेता द्विस्तावदूर्ध्वमुदेतार्वागस्तमेता साध्यानामेव तावदाधिपत्यं स्वाराज्यं पर्येता॥', 'sa yāvad āditya uttarata udetā dakṣiṇato ''stam etā dvis tāvad ūrdhvam udetārvāg astam etā sādhyānām eva tāvad ādhipatyaṃ svārājyaṃ paryetā', null, 3010004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-11-1', 1, 'Chapter 3, Section 11, Verse 1', 'अथ तत ऊर्ध्व उदेत्य नैवोदेता नास्तमेतैकल एव मध्ये स्थाता।
+तदेष श्लोकः॥', 'atha tata ūrdhva udetya naivodetā nāstam etaikala eva madhye sthātā
+tad eṣa ślokaḥ', null, 3011001),
+('chandogya-3-11-2', 2, 'Chapter 3, Section 11, Verse 2', 'न वै तत्र न निम्लोच।
+नोदियाय कदाचन।
+देवास्तेनाहं सत्येन।
+मा विराधिषि ब्रह्मणेति॥', 'na vai tatra na nimloca
+nodiyāya kadācana
+devās tenāhaṃ satyena
+mā virādhiṣi brahmaṇeti', null, 3011002),
+('chandogya-3-11-3', 3, 'Chapter 3, Section 11, Verse 3', 'न ह वा अस्मा उदेति न निम्लोचति।
+सकृद्दिवा हैवास्मै भवति।
+य एतामेवं ब्रह्मोपनिषदं वेद॥', 'na ha vā asmā udeti na nimlocati
+sakṛd divā haivāsmai bhavati
+ya etām evaṃ brahmopaniṣadaṃ veda', null, 3011003),
+('chandogya-3-11-4', 4, 'Chapter 3, Section 11, Verse 4', 'तद्धैतद्ब्रह्मा प्रजापतय उवाच।
+प्रजापतिर्मनवे।
+मनुः प्रजाभ्यः।
+तद्धैतदुद्दालकायारुणये ज्येष्ठाय पुत्राय पिता ब्रह्म प्रोवाच॥', 'tad dhaitad brahmā prajāpataya uvāca
+prajāpatir manave
+manuḥ prajābhyaḥ
+tad dhaitad uddālakāyāruṇaye jyeṣṭhāya putrāya pitā brahma provāca', null, 3011004),
+('chandogya-3-11-5', 5, 'Chapter 3, Section 11, Verse 5', 'इदं वाव तज्ज्येष्ठाय पुत्राय पिता ब्रह्म प्रब्रूयात्प्रणाय्याय वान्तेवासिने॥', 'idaṃ vāva taj jyeṣṭhāya putrāya pitā brahma prabrūyāt praṇāyyāya vāntevāsine', null, 3011005),
+('chandogya-3-11-6', 6, 'Chapter 3, Section 11, Verse 6', 'नान्यस्मै कस्मैचन।
+यद्यप्यस्मा इमामद्भिः परिगृहीतां धनस्य पूर्णां दद्यादेतदेव ततो भूय इति॥', 'nānyasmai kasmaicana
+yady apy asmā imām adbhiḥ parigṛhītāṃ dhanasya pūrṇāṃ dadyād etad eva tato bhūya iti', null, 3011006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-12-1', 1, 'Chapter 3, Section 12, Verse 1', 'गायत्री वा इदं सर्वं भूतं यदिदम्किञ्च।
+वाग्वै गायत्री।
+वाग्वा इदं सर्वं भूतं गायति च त्रायते च॥', 'gāyatrī vā idaṃ sarvaṃ bhūtaṃ yad idam kiñca
+vāg vai gāyatrī
+vāg vā idaṃ sarvaṃ bhūtaṃ gāyati ca trāyate ca', null, 3012001),
+('chandogya-3-12-2', 2, 'Chapter 3, Section 12, Verse 2', 'या वै सा गायत्रीयं वाव सा येयं पृथिवी।
+अस्यां हीदं सर्वं भूतं प्रतिष्ठितम्।
+एतामेव नातिशीयते॥', 'yā vai sā gāyatrīyaṃ vāva sā yeyaṃ pṛthivī
+asyāṃ hīdaṃ sarvaṃ bhūtaṃ pratiṣṭhitam
+etām eva nātiśīyate', null, 3012002),
+('chandogya-3-12-3', 3, 'Chapter 3, Section 12, Verse 3', 'या वै सा पृथिवीयं वाव सा यदिदमस्मिन्पुरुषे शरीरम्।
+अस्मिन्हीमे प्राणाः प्रतिष्ठिताः।
+एतदेव नातिशीयन्ते॥', 'yā vai sā pṛthivīyaṃ vāva sā yad idam asmin puruṣe śarīram
+asmin hīme prāṇāḥ pratiṣṭhitāḥ
+etad eva nātiśīyante', null, 3012003),
+('chandogya-3-12-4', 4, 'Chapter 3, Section 12, Verse 4', 'यद्वै तत्पुरुषे शरीरमिदं वाव तद्यदिदमस्मिन्नन्तः पुरुषे हृदयम्।
+अस्मिन्हीमे प्राणाः प्रतिष्ठिताः।
+एतदेव नातिशीयन्ते॥', 'yad vai tat puruṣe śarīram idaṃ vāva tad yad idam asminn antaḥ puruṣe hṛdayam
+asmin hīme prāṇāḥ pratiṣṭhitāḥ
+etad eva nātiśīyante', null, 3012004),
+('chandogya-3-12-5', 5, 'Chapter 3, Section 12, Verse 5', 'सैषा चतुष्पदा षड्विधा गायत्री।
+तदेतदृचाभ्यनूक्तम्॥', 'saiṣā catuṣpadā ṣaḍvidhā gāyatrī
+tad etad ṛcābhyanūktam', null, 3012005),
+('chandogya-3-12-6', 6, 'Chapter 3, Section 12, Verse 6', 'तावानस्य महिमा ततो ज्यायांश्च पुरुषः।
+पादोऽस्य सर्वा भूतानि त्रिपादस्यामृतं दिवीति॥', 'tāvān asya mahimā tato jyāyāṃś ca puruṣaḥ
+pādo ''sya sarvā bhūtāni tripād asyāmṛtaṃ divīti', null, 3012006),
+('chandogya-3-12-7', 7, 'Chapter 3, Section 12, Verse 7', 'यद्वै तद्ब्रह्मेतीदं वाव तद्योऽयं बहिर्धा पुरुषादाकाशः।
+यो वै स बहिर्धा पुरुषादाकाशः॥', 'yad vai tad brahmetīdaṃ vāva tad yo ''yaṃ bahirdhā puruṣād ākāśaḥ
+yo vai sa bahirdhā puruṣād ākāśaḥ', null, 3012007),
+('chandogya-3-12-8', 8, 'Chapter 3, Section 12, Verse 8', 'अयं वाव स योऽयमन्तः पुरुष आकाशः।
+यो वै सोऽन्तः पुरुष आकाशः॥', 'ayaṃ vāva sa yo ''yam antaḥ puruṣa ākāśaḥ
+yo vai so ''ntaḥ puruṣa ākāśaḥ', null, 3012008),
+('chandogya-3-12-9', 9, 'Chapter 3, Section 12, Verse 9', 'अयं वाव स योऽयमन्तर्हृदय आकाशः।
+तदेतत्पूर्णमप्रवर्ति।
+पूर्णमप्रवर्तिनीं श्रियं लभते य एवं वेद॥', 'ayaṃ vāva sa yo ''yam antarhṛdaya ākāśaḥ
+tad etat pūrṇam apravarti
+pūrṇam apravartinīṃ śriyaṃ labhate ya evaṃ veda', null, 3012009)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-13-1', 1, 'Chapter 3, Section 13, Verse 1', 'तस्य ह वा एतस्य हृदयस्य पञ्च देवसुषयः।
+स योऽस्य प्राङ्सुषिः स प्राणः।
+तच्चक्षुः।
+स आदित्यः।
+तदेतत्तेजोऽन्नाद्यमित्युपासीत।
+तेजस्व्यन्नादो भवति य एवं वेद॥', 'tasya ha vā etasya hṛdayasya pañca devasuṣayaḥ
+sa yo ''sya prāṅ suṣiḥ sa prāṇaḥ
+tac cakṣuḥ
+sa ādityaḥ
+tad etat tejo ''nnādyam ity upāsīta
+tejasvy annādo bhavati ya evaṃ veda', null, 3013001),
+('chandogya-3-13-2', 2, 'Chapter 3, Section 13, Verse 2', 'अथ योऽस्य दक्षिणः सुषिः स व्यानः।
+तच्छ्रोत्रम्।
+स चन्द्रमाः।
+तदेतच्छ्रीश्च यशश्चेत्युपासीत।
+श्रीमान्यशस्वी भवति य एवं वेद॥', 'atha yo ''sya dakṣiṇaḥ suṣiḥ sa vyānaḥ
+tac chrotram
+sa candramāḥ
+tad etac chrīś ca yaśaś cety upāsīta
+śrīmān yaśasvī bhavati ya evaṃ veda', null, 3013002),
+('chandogya-3-13-3', 3, 'Chapter 3, Section 13, Verse 3', 'अथ योऽस्य प्रत्यङ्सुषिः सोऽपानः।
+सा वाक्।
+सोऽग्निः।
+तदेतद्ब्रह्मवर्चसमन्नाद्यमित्युपासीत।
+ब्रह्मवर्चस्यन्नादो भवति य एवं वेद॥', 'atha yo ''sya pratyaṅ suṣiḥ so ''pānaḥ
+sā vāk
+so ''gniḥ
+tad etad brahmavarcasam annādyam ity upāsīta
+brahmavarcasy annādo bhavati ya evaṃ veda', null, 3013003),
+('chandogya-3-13-4', 4, 'Chapter 3, Section 13, Verse 4', 'अथ योऽस्योदङ्सुषिः स समानः।
+तन्मनः।
+स पर्जन्यः।
+तदेतत्कीर्तिश्च व्युष्टिश्चेत्युपासीत।
+कीर्तिमान्व्युष्टिमान्भवति य एवं वेद॥', 'atha yo ''syodaṅ suṣiḥ sa samānaḥ
+tan manaḥ
+sa parjanyaḥ
+tad etat kīrtiś ca vyuṣṭiś cetyupāsīta
+kīrtimān vyuṣṭimān bhavati ya evaṃ veda', null, 3013004),
+('chandogya-3-13-5', 5, 'Chapter 3, Section 13, Verse 5', 'अथ योऽस्योर्ध्वः सुषिः स उदानः।
+स वायुः।
+स आकाशः।
+तदेतदोजश्च महश्चेत्युपासीत।
+ओजस्वी महस्वान्भवति य एवं वेद॥', 'atha yo ''syordhvaḥ suṣiḥ sa udānaḥ
+sa vāyuḥ
+sa ākāśaḥ
+tad etad ojaś ca mahaś cety upāsīta
+ojasvī mahasvān bhavati ya evaṃ veda', null, 3013005),
+('chandogya-3-13-6', 6, 'Chapter 3, Section 13, Verse 6', 'ते वा एते पञ्च ब्रह्मपुरुषाः स्वर्गस्य लोकस्य द्वारपाः।
+स य एतानेवं पञ्च ब्रह्मपुरुषान्स्वर्गस्य लोकस्य द्वारपान्वेदास्य कुले वीरो जायते।
+प्रतिपद्यते स्वर्गं लोकं य एतानेवं पञ्च ब्रह्मपुरुषान्स्वर्गस्य लोकस्य द्वारपान्वेद॥', 'te vā ete pañca brahmapuruṣāḥ svargasya lokasya dvārapāḥ
+sa ya etān evaṃ pañca brahmapuruṣān svargasya lokasya dvārapān vedāsya kule vīro jāyate
+pratipadyate svargaṃ lokaṃ ya etān evaṃ pañca brahmapuruṣān svargasya lokasya dvārapān veda', null, 3013006),
+('chandogya-3-13-7', 7, 'Chapter 3, Section 13, Verse 7', 'अथ यदतः परो दिवो ज्योतिर्दीप्यते विश्वतःपृष्ठेषु सर्वतःपृष्ठेष्वनुत्तमेषूत्तमेषु लोकेष्विदं वाव तद्यदिदमस्मिन्नन्तः पुरुषे ज्योतिः।
+तस्यैषा दृष्टिर्यत्रैतदस्मिञ्छरीरे संस्पर्शेनोष्णिमानं विजानाति।
+तस्यैषा श्रुतिर्यत्रैतत्कर्णावपिगृह्य निनदमिव नदथुरिवाग्नेरिव ज्वलत उपशृनोति।
+तदेतद्दृष्टं च श्रुतं चेत्युपासीत।
+चक्षुष्यः श्रुतो भवति य एवं वेद य एवं वेद॥', 'atha yad ataḥ paro divo jyotir dīpyate viśvataḥpṛṣṭheṣu sarvataḥpṛṣṭheṣv anuttameṣūttameṣu lokeṣv idaṃ vāva tad yad idam asminn antaḥ puruṣe jyotiḥ
+tasyaiṣā dṛṣṭir yatraitad asmiñ charīre saṃsparśenoṣṇimānaṃ vijānāti
+tasyaiṣā śrutir yatraitat karṇāv apigṛhya ninadam iva nadathur ivāgner iva jvalata upaśṛnoti
+tad etad dṛṣṭaṃ ca śrutaṃ cety upāsīta
+cakṣuṣyaḥ śruto bhavati ya evaṃ veda ya evaṃ veda', null, 3013007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-14-1', 1, 'Chapter 3, Section 14, Verse 1', 'सर्वं खल्विदं ब्रह्म तज्जलानिति शान्त उपासीत।
+अथ खलु क्रतुमयः पुरुषो यथाक्रतुरस्मिंल्लोके पुरुषो भवति तथेतः प्रेत्य भवति।
+स क्रतुं कुर्वीत॥', 'sarvaṃ khalv idaṃ brahma tajjalān iti śānta upāsīta
+atha khalu kratumayaḥ puruṣo yathākratur asmiṃl loke puruṣo bhavati tathetaḥ pretya bhavati
+sa kratuṃ kurvīta', null, 3014001),
+('chandogya-3-14-2', 2, 'Chapter 3, Section 14, Verse 2', 'मनोमयः प्राणशरीरो भारूपः सत्यसंकल्प आकाशात्मा सर्वकर्मा सर्वकामः सर्वगन्धः सर्वरसः सर्वमिदमभ्यत्तोऽवाक्यनादरः॥', 'manomayaḥ prāṇaśarīro bhārūpaḥ satyasaṃkalpa ākāśātmā sarvakarmā sarvakāmaḥ sarvagandhaḥ sarvarasaḥ sarvam idam abhyatto ''vāky anādaraḥ', null, 3014002),
+('chandogya-3-14-3', 3, 'Chapter 3, Section 14, Verse 3', 'एष म आत्मा अन्तर्हृदयेऽणीयान्व्रीहेर्वा यवाद्वा सर्षपाद्वा श्यामाकाद्वा श्यामाकतण्डुलाद्वा।
+एष म आत्मा अन्तर्हृदये ज्यायान्पृथिव्या ज्यायानन्तरिक्षाज्ज्यायान्दिवो ज्यायानेभ्यो लोकेभ्यः॥', 'eṣa ma ātmā antarhṛdaye ''ṇīyān vrīher vā yavād vā sarṣapād vā śyāmākād vā śyāmākataṇḍulād vā
+eṣa ma ātmā antarhṛdaye jyāyān pṛthivyā jyāyān antarikṣāj jyāyān divo jyāyān ebhyo lokebhyaḥ', null, 3014003),
+('chandogya-3-14-4', 4, 'Chapter 3, Section 14, Verse 4', 'सर्वकर्मा सर्वकामः सर्वगन्धः सर्वरसः सर्वमिदमभ्यत्तोऽवाक्यनादरः।
+एष म आत्मा अन्तर्हृदये।
+एतद्ब्रह्म।
+एतमितः प्रेत्याभिसंभविता अस्मीति यस्य स्यादद्धा न विचिकित्सा अस्ति।
+इति ह स्माह शाण्डिल्यः शाण्डिल्यः॥', 'sarvakarmā sarvakāmaḥ sarvagandhaḥ sarvarasaḥ sarvam idam abhyatto ''vākyanādaraḥ
+eṣa ma ātmā antarhṛdaye
+etad brahma
+etam itaḥ pretyābhisaṃbhavitā asmīti yasya syād addhā na vicikitsā asti
+iti ha smāha śāṇḍilyaḥ śāṇḍilyaḥ', null, 3014004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-15-1', 1, 'Chapter 3, Section 15, Verse 1', 'अन्तरिक्षोदरः कोशो भूमिबुध्नो न जीर्यति।
+दिशो ह्यस्य स्रक्तयो द्यौरस्योत्तरं बिलम्।
+स एष कोशो वसुधानस्तस्मिन्विश्वमिदं श्रितम्॥', 'antarikṣodaraḥ kośo bhūmibudhno na jīryati
+diśo hy asya sraktayo dyaur asyottaraṃ bilam
+sa eṣa kośo vasudhānas tasmin viśvam idaṃ śritam', null, 3015001),
+('chandogya-3-15-2', 2, 'Chapter 3, Section 15, Verse 2', 'तस्य प्राची दिग्जुहूर्नाम।
+सहमाना नाम दक्षिणा।
+राज्ञी नाम प्रतीची।
+सुभूता नामोदीची।
+तासां वायुर्वत्सः।
+स य एतमेवं वायुं दिशां वत्सं वेद न पुत्ररोदं रोदिति।
+सोऽहमेतमेवं वायुं दिशां वत्सं वेद।
+मा पुत्ररोदं रुदम्॥', 'tasya prācī dig juhūr nāma
+sahamānā nāma dakṣiṇā
+rājñī nāma pratīcī
+subhūtā nāmodīcī
+tāsāṃ vāyur vatsaḥ
+sa ya etam evaṃ vāyuṃ diśāṃ vatsaṃ veda na putrarodaṃ roditi
+so ''ham etam evaṃ vāyuṃ diśāṃ vatsaṃ veda
+mā putrarodaṃ rudam', null, 3015002),
+('chandogya-3-15-3', 3, 'Chapter 3, Section 15, Verse 3', 'अरिष्टं कोशं प्रपद्येऽमुनामुनामुना।
+प्राणं प्रपद्येऽमुनामुनामुना।
+भूः प्रपद्येऽमुनामुनामुना।
+भुवः प्रपद्येऽमुनामुनामुना।
+स्वः प्रपद्येऽमुनामुनामुना॥', 'ariṣṭaṃ kośaṃ prapadye ''munāmunāmunā
+prāṇaṃ prapadye ''munāmunāmunā
+bhūḥ prapadye ''munāmunāmunā
+bhuvaḥ prapadye ''munāmunāmunā
+svaḥ prapadye ''munāmunāmunā', null, 3015003),
+('chandogya-3-15-4', 4, 'Chapter 3, Section 15, Verse 4', 'स यदवोचं प्राणं प्रपद्य इति।
+प्रानो वा इदं सर्वं भूतं यदिदं किंच।
+तमेव तत्प्रापत्सि॥', 'sa yad avocaṃ prāṇaṃ prapadya iti
+prāno vā idaṃ sarvaṃ bhūtaṃ yad idaṃ kiṃca
+tam eva tat prāpatsi', null, 3015004),
+('chandogya-3-15-6', 6, 'Chapter 3, Section 15, Verse 6', 'अथ यदवोचं भुवः प्रपद्य इत्यग्निं प्रपद्ये वायुं प्रपद्य आदित्यं प्रपद्य इत्येव तदवोचम्॥', 'atha yad avocaṃ bhuvaḥ prapadya ity agniṃ prapadye vāyuṃ prapadya ādityaṃ prapadya ity eva tad avocam', null, 3015006),
+('chandogya-3-15-7', 7, 'Chapter 3, Section 15, Verse 7', 'अथ यदवोचं स्वः प्रपद्य इत्यृग्वेदं प्रपद्ये यजुर्वेदं प्रपद्ये सामवेदं प्रपद्य इत्येव तदवोचम्॥', 'atha yad avocaṃ svaḥ prapadya ity ṛgvedaṃ prapadye yajurvedaṃ prapadye sāmavedaṃ prapadya ity eva tad avocam', null, 3015007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-16-1', 1, 'Chapter 3, Section 16, Verse 1', 'पुरुषो वाव यज्ञः।
+तस्य यानि चतुर्विंशतिवर्षाणि तत्प्रातःसवनम्।
+चतुर्विंशत्यक्षरा गायत्री।
+गायत्रं प्रातःसवनम्।
+तदस्य वसवोऽन्वायत्ताः।
+प्राणा वाव वसवः।
+एते हीदं सर्वं वासयन्ति॥', 'puruṣo vāva yajñaḥ
+tasya yāni caturviṃśativarṣāṇi tat prātaḥsavanam
+caturviṃśatyakṣarā gāyatrī
+gāyatraṃ prātaḥsavanam
+tad asya vasavo ''nvāyattāḥ
+prāṇā vāva vasavaḥ
+ete hīdaṃ sarvaṃ vāsayanti', null, 3016001),
+('chandogya-3-16-2', 2, 'Chapter 3, Section 16, Verse 2', 'तं चेदेतस्मिन्वयसि किंचिदुपतपेत्स ब्रूयात्।
+प्राणा वसव इदं मे प्रातःसवनं माध्यंदिनं सवनमनुसंतनुतेति माहं प्राणानां वसूनां मध्ये यज्ञो विलोप्सीयेति।
+उद्धैव तत एत्यगदो ह भवति॥', 'taṃ ced etasmin vayasi kiṃcid upatapet sa brūyāt
+prāṇā vasava idaṃ me prātaḥsavanaṃ mādhyaṃdinaṃ savanam anusaṃtanuteti māhaṃ prāṇānāṃ vasūnāṃ madhye yajño vilopsīyeti
+ud dhaiva tata ety agado ha bhavati', null, 3016002),
+('chandogya-3-16-3', 3, 'Chapter 3, Section 16, Verse 3', 'अथ यानि चतुश्चत्वारिंशद्वर्षाणि तन्माध्यंदिनं सवनम्।
+चतुश्चत्वारिंशदक्षरा त्रिष्टुप्।
+त्रैष्टुभं माध्यंदिनं सवनम्।
+तदस्य रुद्रा अन्वायत्ताः।
+प्राणा वाव रुद्राः।
+एते हीदं सर्वं रोदयन्ति॥', 'atha yāni catuścatvāriṃśad varṣāṇi tan mādhyaṃdinaṃ savanam
+catuścatvāriṃśadakṣarā triṣṭup
+traiṣṭubhaṃ mādhyaṃdinaṃ savanam
+tad asya rudrā anvāyattāḥ
+prāṇā vāva rudrāḥ
+ete hīdaṃ sarvaṃ rodayanti', null, 3016003),
+('chandogya-3-16-4', 4, 'Chapter 3, Section 16, Verse 4', 'तं चेदेतस्मिन्वयसि किंचिदुपतपेत्स ब्रूयात्।
+प्राणा रुद्रा इदं मे माध्यंदिनं सवनं तृतीयसवनमनुसंतनुतेति माहं प्राणानां रुद्राणां मध्ये यज्ञो विलोप्सीयेति।
+उद्धैव तत एत्यगदो ह भवति॥', 'taṃ ced etasmin vayasi kiṃcid upatapet sa brūyāt
+prāṇā rudrā idaṃ me mādhyaṃdinaṃ savanaṃ tṛtīyasavanam anusaṃtanuteti māhaṃ prāṇānāṃ rudrāṇāṃ madhye yajño vilopsīyeti
+ud dhaiva tata ety agado ha bhavati', null, 3016004),
+('chandogya-3-16-5', 5, 'Chapter 3, Section 16, Verse 5', 'अथ यान्यष्टाचत्वारिंशद्वर्षाणि तत्तृतीयसवनम्।
+अष्टाचत्वारिंशदक्षरा जगती।
+जागतं तृतीयसवनम्।
+तदस्यादित्या अन्वायत्ताः।
+प्राणा वावादित्याः।
+एते हीदं सर्वमाददते॥', 'atha yāny aṣṭācatvāriṃśad varṣāṇi tat tṛtīyasavanam
+aṣṭācatvāriṃśadakṣarā jagatī
+jāgataṃ tṛtīyasavanam
+tad asyādityā anvāyattāḥ
+prāṇā vāvādityāḥ
+ete hīdaṃ sarvam ādadate', null, 3016005),
+('chandogya-3-16-6', 6, 'Chapter 3, Section 16, Verse 6', 'तं चेदेतस्मिन्वयसि किंचिदुपतपेत्स ब्रूयात्।
+प्राणा आदित्या इदं मे तृतीयसवनमायुरनुसंतनुतेति माहं प्राणानामादित्यानां मध्ये यज्ञो विलोप्सीयेति।
+उद्धैव तत एत्यगदो हैव भवति॥', 'taṃ ced etasmin vayasi kiṃcid upatapet sa brūyāt
+prāṇā ādityā idaṃ me tṛtīyasavanam āyur anusaṃtanuteti māhaṃ prāṇānām ādityānāṃ madhye yajño vilopsīyeti
+ud dhaiva tata ety agado haiva bhavati', null, 3016006),
+('chandogya-3-16-7', 7, 'Chapter 3, Section 16, Verse 7', 'एतद्ध स्म वै तद्विद्वानाह महिदास ऐतरेयः।
+स किं म एतदुपतपसि योऽहमनेन न प्रेष्यामिति।
+स ह षोडशं वर्षशतमजीवत्।
+प्र ह षोडशं वर्षशतं जीवति य एवं वेद॥', 'etad dha sma vai tad vidvān āha mahidāsa aitareyaḥ
+sa kiṃ ma etad upatapasi yo ''ham anena na preṣyām iti
+sa ha ṣoḍaśaṃ varṣaśatam ajīvat
+pra ha ṣoḍaśaṃ varṣaśataṃ jīvati ya evaṃ veda', null, 3016007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 17 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-17-1', 1, 'Chapter 3, Section 17, Verse 1', 'स यदशिशिषति यत्पिपासति यन्न रमते ता अस्य दीक्षाः॥', 'sa yad aśiśiṣati yat pipāsati yan na ramate tā asya dīkṣāḥ', null, 3017001),
+('chandogya-3-17-2', 2, 'Chapter 3, Section 17, Verse 2', 'अथ यदश्नाति यत्पिबति यद्रमते तदुपसदैरेति॥', 'atha yad aśnāti yat pibati yad ramate tad upasadair eti', null, 3017002),
+('chandogya-3-17-3', 3, 'Chapter 3, Section 17, Verse 3', 'अथ यद्धसति यज्जक्षति यन्मैथुनं चरति स्तुतशस्त्रैरेव तदेति॥', 'atha yad dhasati yaj jakṣati yan maithunaṃ carati stutaśastrair eva tad eti', null, 3017003),
+('chandogya-3-17-4', 4, 'Chapter 3, Section 17, Verse 4', 'अथ यत्तपो दानमार्जवमहिंसा सत्यवचनमिति ता अस्य दक्षिणाः॥', 'atha yat tapo dānam ārjavam ahiṃsā satyavacanam iti tā asya dakṣiṇāḥ', null, 3017004),
+('chandogya-3-17-5', 5, 'Chapter 3, Section 17, Verse 5', 'तस्मादाहुः सोष्यत्यसोष्टेति।
+पुनरुत्पादनमेवास्य तत्।
+मरणमेवावभृथः॥', 'tasmād āhuḥ soṣyaty asoṣṭeti
+punar utpādanam evāsya tat
+maraṇam evāvabhṛthaḥ', null, 3017005),
+('chandogya-3-17-6', 6, 'Chapter 3, Section 17, Verse 6', 'तद्धैतद्घोर आङ्गिरसः कृष्णाय देवकीपुत्रायोक्त्वोवाच।
+अपिपास एव स बभूव।
+सोऽन्तवेलायामेतत्त्रयं प्रतिपद्येताक्षितमस्यच्युतमसि प्राणसंशितमसीति।
+तत्रैते द्वे ऋचौ भवतः॥', 'tad dhaitad ghora āṅgirasaḥ kṛṣṇāya devakīputrāyoktvovāca
+apipāsa eva sa babhūva
+so ''ntavelāyām etat trayaṃ pratipadyetākṣitam asy acyutam asi prāṇasaṃśitam asīti
+tatraite dve ṛcau bhavataḥ', null, 3017006),
+('chandogya-3-17-7', 7, 'Chapter 3, Section 17, Verse 7', 'आदित्प्रत्नस्य रेतसः।
+उद्वयं तमसस्परि।
+ज्योतिः पश्यन्त उत्तरम्।
+स्वः पश्यन्त उत्तरम्।
+देवं देवत्रा सूर्यमगन्म ज्योतिरुत्तममिति ज्योतिरुत्तममिति॥', 'ādit pratnasya retasaḥ
+ud vayaṃ tamasaspari
+jyotiḥ paśyanta uttaram
+svaḥ paśyanta uttaram
+devaṃ devatrā sūryam aganma jyotir uttamam iti jyotir uttamam iti', null, 3017007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 18 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-18-1', 1, 'Chapter 3, Section 18, Verse 1', 'मनो ब्रह्मेत्युपासीत।
+इत्यध्यात्मम्।
+अथाधिदैवतम्।
+आकाशो ब्रह्म।
+इत्युभयमादिष्टं भवत्यध्यात्मं चाधिदैवतं च॥', 'mano brahmety upāsīta
+ity adhyātmam
+athādhidaivatam
+ākāśo brahma
+ity ubhayam ādiṣṭaṃ bhavaty adhyātmaṃ cādhidaivataṃ ca', null, 3018001),
+('chandogya-3-18-2', 2, 'Chapter 3, Section 18, Verse 2', 'तदेतच्चतुष्पाद्ब्रह्म।
+वाक्पादः प्राणः पादश्चक्षुः पादः श्रोत्रं पादः।
+इत्यध्यात्मम्।
+अथाधिदैवतम्।
+अग्निः पादो वायुः पाद आदित्यः पादो दिशः पादः।
+इत्युभयमेवादिष्टं भवत्यध्यात्मं चाधिदैवतं च॥', 'tad etac catuṣpād brahma
+vāk pādaḥ prāṇaḥ pādaś cakṣuḥ pādaḥ śrotraṃ pādaḥ
+ity adhyātmam
+athādhidaivatam
+agniḥ pādo vāyuḥ pāda ādityaḥ pādo diśaḥ pādaḥ
+ity ubhayam evādiṣṭaṃ bhavaty adhyātmaṃ cādhidaivataṃ ca', null, 3018002),
+('chandogya-3-18-3', 3, 'Chapter 3, Section 18, Verse 3', 'वागेव ब्रह्मणश्चतुर्थः पादः।
+सोऽग्निना ज्योतिषा भाति च तपति च।
+भाति च तपति च कीर्त्या यशसा ब्रह्मवर्चसेन य एवं वेद॥', 'vāg eva brahmaṇaś caturthaḥ pādaḥ
+so ''gninā jyotiṣā bhāti ca tapati ca
+bhāti ca tapati ca kīrtyā yaśasā brahmavarcasena ya evaṃ veda', null, 3018003),
+('chandogya-3-18-4', 4, 'Chapter 3, Section 18, Verse 4', 'प्राण एव ब्रह्मणश्चतुर्थः पादः।
+स वायुना ज्योतिषा भाति च तपति च।
+भाति च तपति च कीर्त्या यशसा ब्रह्मवर्चसेन य एवं वेद॥', 'prāṇa eva brahmaṇaś caturthaḥ pādaḥ
+sa vāyunā jyotiṣā bhāti ca tapati ca
+bhāti ca tapati ca kīrtyā yaśasā brahmavarcasena ya evaṃ veda', null, 3018004),
+('chandogya-3-18-5', 5, 'Chapter 3, Section 18, Verse 5', 'चक्षुरेव ब्रह्मणश्चतुर्थः पादः।
+स आदित्येन ज्योतिषा भाति च तपति च।
+भाति च तपति च कीर्त्या यशसा ब्रह्मवर्चसेन य एवं वेद॥', 'cakṣur eva brahmaṇaś caturthaḥ pādaḥ
+sa ādityena jyotiṣā bhāti ca tapati ca
+bhāti ca tapati ca kīrtyā yaśasā brahmavarcasena ya evaṃ veda', null, 3018005),
+('chandogya-3-18-6', 6, 'Chapter 3, Section 18, Verse 6', 'श्रोत्रमेव ब्रह्मणश्चतुर्थः पादः।
+स दिग्भिर्ज्योतिषा भाति च तपति च।
+भाति च तपति च कीर्त्या यशसा ब्रह्मवर्चसेन य एवं वेद य एवं वेद॥', 'śrotram eva brahmaṇaś caturthaḥ pādaḥ
+sa digbhir jyotiṣā bhāti ca tapati ca
+bhāti ca tapati ca kīrtyā yaśasā brahmavarcasena ya evaṃ veda ya evaṃ veda', null, 3018006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 19 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 3 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-3-19-1', 1, 'Chapter 3, Section 19, Verse 1', 'आदित्यो ब्रह्मेत्यादेशः।
+तस्योपव्याख्यानम्।
+असदेवेदमग्र आसीत्।
+तत्सदासीत्।
+तत्समभवत्।
+तदाण्डं निरवर्तत।
+तत्संवत्सरस्य मात्रामशयत।
+तन्निरभिद्यत।
+ते आण्डकपाले रजतं च सुवर्णं चाभवताम्॥', 'ādityo brahmety ādeśaḥ
+tasyopavyākhyānam
+asad evedam agra āsīt
+tat sad āsīt
+tat samabhavat
+tad āṇḍaṃ niravartata
+tat saṃvatsarasya mātrām aśayata
+tan nirabhidyata
+te āṇḍakapāle rajataṃ ca suvarṇaṃ cābhavatām', null, 3019001),
+('chandogya-3-19-2', 2, 'Chapter 3, Section 19, Verse 2', 'तद्यद्रजतं सेयं पृथिवी।
+यत्सुवर्णं सा द्यौः।
+यज्जरायु ते पर्वताः।
+यदुल्बं (स) समेघो नीहारः।
+या धमनयस्ता नद्यः।
+यद्वास्तेयमुदकं स समुद्रः॥', 'tad yad rajataṃ seyaṃ pṛthivī
+yat suvarṇaṃ sā dyauḥ
+yaj jarāyu te parvatāḥ
+yad ulbaṃ (sa) samegho nīhāraḥ
+yā dhamanayas tā nadyaḥ
+yad vāsteyam udakaṃ sa samudraḥ', null, 3019002),
+('chandogya-3-19-3', 3, 'Chapter 3, Section 19, Verse 3', 'अथ यत्तदजायत सोऽसावादित्यः।
+तं जायमानं घोषा उलूलवोऽनूदतिष्ठन्त्सर्वाणि च भूतानि सर्वे च कामाः।
+तस्मात्तस्योदयं प्रति प्रत्यायनं प्रति घोषा उलूलवोऽनूत्तिष्ठन्ति सर्वाणि च भूतानि सर्वे च कामाः॥', 'atha yat tad ajāyata so ''sāv ādityaḥ
+taṃ jāyamānaṃ ghoṣā ulūlavo ''nūdatiṣṭhant sarvāṇi ca bhūtāni sarve ca kāmāḥ
+tasmāt tasyodayaṃ prati pratyāyanaṃ prati ghoṣā ulūlavo ''nūttiṣṭhanti sarvāṇi ca bhūtāni sarve ca kāmāḥ', null, 3019003),
+('chandogya-3-19-4', 4, 'Chapter 3, Section 19, Verse 4', 'स य एतमेवं विद्वानादित्यं ब्रह्मेत्युपास्ते।
+अभ्याशो ह यदेनं साधवो घोषा आ च गच्छेयुरुप च निम्रेडेरन्निम्रेडेरन्॥', 'sa ya etam evaṃ vidvān ādityaṃ brahmety upāste
+abhyāśo ha yad enaṃ sādhavo ghoṣā ā ca gaccheyur upa ca nimreḍeran nimreḍeran', null, 3019004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-1-1', 1, 'Chapter 4, Section 1, Verse 1', 'जानश्रुतिर्ह पौत्रायणः श्रद्धादेयो बहुदायी बहुपाक्य आस।
+स ह सर्वत आवसथान्मापयां चक्रे सर्वत एव मेऽन्नमत्स्यन्तीति॥', 'jānaśrutir ha pautrāyaṇaḥ śraddhādeyo bahudāyī bahupākya āsa
+sa ha sarvata āvasathān māpayāṃ cakre sarvata eva me ''nnam atsyantīti', null, 4001001),
+('chandogya-4-1-2', 2, 'Chapter 4, Section 1, Verse 2', 'अथ ह हंसा निशायामतिपेतुः।
+तद्धैवं हंसो हंसमभ्युवाद।
+हो होऽयि भल्लाक्ष भल्लाक्ष जानश्रुतेः पौत्रायणस्य समं दिवा ज्योतिराततं तन्मा प्रसाङ्क्षीस्तत्त्वां मा प्रधाक्षीरिति॥', 'atha ha haṃsā niśāyām atipetuḥ
+tad dhaivaṃ haṃso haṃsam abhyuvāda
+ho ho ''yi bhallākṣa bhallākṣa jānaśruteḥ pautrāyaṇasya samaṃ divā jyotir ātataṃ tan mā prasāṅkṣīs tat tvāṃ mā pradhākṣīr iti', null, 4001002),
+('chandogya-4-1-3', 3, 'Chapter 4, Section 1, Verse 3', 'तमु ह परः प्रत्युवाच कम्वर एनमेतत्सन्तं सयुग्वानमिव रैक्वमात्थ इति।
+यो नु कथं सयुग्वा रैक्व इति॥', 'tam u ha paraḥ pratyuvāca kam v ara enam etat santaṃ sayugvānam iva raikvam āttha iti
+yo nu kathaṃ sayugvā raikva iti', null, 4001003),
+('chandogya-4-1-4', 4, 'Chapter 4, Section 1, Verse 4', 'यथा कृताय विजितायाधरेयाः संयन्त्येवमेनं सर्वं तदभिसमेति यत्किंच प्रजाः साधु कुर्वन्ति।
+यस्तद्वेद यत्स वेद स मयैतदुक्त इति॥', 'yathā kṛtāya vijitāyādhareyāḥ saṃyanty evam enaṃ sarvaṃ tad abhisameti yat kiṃca prajāḥ sādhu kurvanti
+yas tad veda yat sa veda sa mayaitad ukta iti', null, 4001004),
+('chandogya-4-1-5', 5, 'Chapter 4, Section 1, Verse 5', 'तदु ह जानश्रुतिः पौत्रायण उपशुश्राव।
+स ह संजिहान एव क्षत्तारमुवाचाङ्गारे ह सयुग्वानमिव रैक्वमात्थेति।
+यो नु कथं सयुग्वा रैक्व इति॥', 'tad u ha jānaśrutiḥ pautrāyaṇa upaśuśrāva
+sa ha saṃjihāna eva kṣattāram uvācāṅgāre ha sayugvānam iva raikvam āttheti
+yo nu kathaṃ sayugvā raikva iti', null, 4001005),
+('chandogya-4-1-6', 6, 'Chapter 4, Section 1, Verse 6', 'यथा कृताय विजितायाधरेयाः संयन्त्येवमेनं सर्वं तदभिसमेति यत्किंच प्रजाः साधु कुर्वन्ति।
+यस्तद्वेद यत्स वेद स मयैतदुक्त इति॥', 'yathā kṛtāya vijitāyādhareyāḥ saṃyanty evam enaṃ sarvaṃ tad abhisameti yat kiṃca prajāḥ sādhu kurvanti
+yas tad veda yat sa veda sa mayaitad ukta iti', null, 4001006),
+('chandogya-4-1-7', 7, 'Chapter 4, Section 1, Verse 7', 'स ह क्षत्तान्विष्य नाविदमिति प्रत्येयाय।
+तं होवाच यत्रारे ब्राह्मणस्यान्वेषणा तदेनमर्च्छेति॥', 'sa ha kṣattānviṣya nāvidam iti pratyeyāya
+taṃ hovāca yatrāre brāhmaṇasyānveṣaṇā tad enam arccheti', null, 4001007),
+('chandogya-4-1-8', 8, 'Chapter 4, Section 1, Verse 8', 'सोऽधस्ताच्छकटस्य पामानं कषमाणमुपोपविवेश।
+तं हाभ्युवाद त्वं नु भगवः सयुग्वा रैक्व इति।
+अहं ह्यरा ३ इति ह प्रतिजज्ञे।
+स ह क्षत्ताविदमिति प्रत्येयाय॥', 'so ''dhastāc chakaṭasya pāmānaṃ kaṣamāṇam upopaviveśa
+taṃ hābhyuvāda tvaṃ nu bhagavaḥ sayugvā raikva iti
+ahaṃ hy arā 3 iti ha pratijajñe
+sa ha kṣattāvidam iti pratyeyāya', null, 4001008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-2-1', 1, 'Chapter 4, Section 2, Verse 1', 'तदु ह जानश्रुतिः पौत्रायणः षट्शतानि गवां निष्कमश्वतरीरथं तदादाय प्रतिचक्रमे।
+तं हाभ्युवाद॥', 'tad u ha jānaśrutiḥ pautrāyaṇaḥ ṣaṭ śatāni gavāṃ niṣkam aśvatarīrathaṃ tad ādāya praticakrame
+taṃ hābhyuvāda', null, 4002001),
+('chandogya-4-2-2', 2, 'Chapter 4, Section 2, Verse 2', 'रैक्वेमानि षट्शतानि गवामयं निष्कोऽयमश्वतरीरथः।
+अनु म एतां भगवो देवतां शाधि यां देवतामुपास्स इति॥', 'raikvemāni ṣaṭ śatāni gavām ayaṃ niṣko ''yam aśvatarīrathaḥ
+anu ma etāṃ bhagavo devatāṃ śādhi yāṃ devatām upāssa iti', null, 4002002),
+('chandogya-4-2-3', 3, 'Chapter 4, Section 2, Verse 3', 'तमु ह परः प्रत्युवाचाह हारेत्वा शूद्र तवैव सह गोभिरस्त्विति।
+तदु ह पुनरेव जानश्रुतिः पौत्रायणः सहस्रं गवां निष्कमश्वतरीरथं दुहितरं तदादाय प्रतिचक्रमे॥', 'tam u ha paraḥ pratyuvācāha hāretvā śūdra tavaiva saha gobhir astv iti
+tad u ha punar eva jānaśrutiḥ pautrāyaṇaḥ sahasraṃ gavāṃ niṣkam aśvatarīrathaṃ duhitaraṃ tad ādāya praticakrame', null, 4002003),
+('chandogya-4-2-4', 4, 'Chapter 4, Section 2, Verse 4', 'तं हाभ्युवाद।
+रैक्वेदं सहस्रं गवामयं निष्कोऽयमश्वतरीरथ इयं जायायं ग्रामो यस्मिन्नास्सेऽन्वेव मा भगवः शाधीति॥', 'taṃ hābhyuvāda
+raikvedaṃ sahasraṃ gavām ayaṃ niṣko ''yam aśvatarīratha iyaṃ jāyāyaṃ grāmo yasminn āsse ''nv eva mā bhagavaḥ śādhīti', null, 4002004),
+('chandogya-4-2-5', 5, 'Chapter 4, Section 2, Verse 5', 'तस्या ह मुखमुपोद्गृह्णन्नुवाचाजहारेमाः शूद्रानेनैव मुखेनालापयिष्यथा इति।
+ते हैते रैक्वपर्णा नाम महावृषेषु यत्रास्मा उवास।
+तस्मै होवाच॥', 'tasyā ha mukham upodgṛhṇann uvācājahāremāḥ śūdrānenaiva mukhenālāpayiṣyathā iti
+te haite raikvaparṇā nāma mahāvṛṣeṣu yatrāsmā uvāsa
+tasmai hovāca', null, 4002005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-3-1', 1, 'Chapter 4, Section 3, Verse 1', 'वायुर्वाव संवर्गः।
+यदा वा अग्निरुद्वायति वायुमेवाप्येति।
+यदा सूर्योऽस्तमेति वायुमेवाप्येति।
+यदा चन्द्रोऽस्तमेति वायुमेवाप्येति॥', 'vāyur vāva saṃvargaḥ
+yadā vā agnir udvāyati vāyum evāpyeti
+yadā sūryo ''stam eti vāyum evāpyeti
+yadā candro ''stam eti vāyum evāpyeti', null, 4003001),
+('chandogya-4-3-2', 2, 'Chapter 4, Section 3, Verse 2', 'यदाप उच्छुष्यन्ति वायुमेवापियन्ति।
+वायुर्ह्येवैतान्सर्वान्संवृङ्क्ते।
+इत्यधिदैवतम्॥', 'yadāpa ucchuṣyanti vāyum evāpiyanti
+vāyur hy evaitān sarvān saṃvṛṅkte
+ity adhidaivatam', null, 4003002),
+('chandogya-4-3-3', 3, 'Chapter 4, Section 3, Verse 3', 'अथाध्यात्मम्।
+प्राणो वाव सम्वर्गः।
+स यदा स्वपिति प्राणमेव वागप्येति।
+प्राणं चक्षुः।
+प्राणं श्रोत्रम्।
+प्राणं मनः।
+प्राणो ह्येवैतान्सर्वान्संवृङ्क्त इति॥', 'athādhyātmam
+prāṇo vāva samvargaḥ
+sa yadā svapiti prāṇam eva vāg apy eti
+prāṇaṃ cakṣuḥ
+prāṇaṃ śrotram
+prāṇaṃ manaḥ
+prāṇo hy evaitān sarvān saṃvṛṅkta iti', null, 4003003),
+('chandogya-4-3-4', 4, 'Chapter 4, Section 3, Verse 4', 'तौ वा एतौ द्वौ सम्वर्गौ।
+वायुरेव देवेषु प्राणः प्राणेषु॥', 'tau vā etau dvau samvargau
+vāyur eva deveṣu prāṇaḥ prāṇeṣu', null, 4003004),
+('chandogya-4-3-5', 5, 'Chapter 4, Section 3, Verse 5', 'अथ ह शौनकं च कापेयमभिप्रतारिणं च काक्षसेनिं परिविष्यमाणौ ब्रह्मचारी बिभिक्षे।
+तस्मा उ ह न ददतुः॥', 'atha ha śaunakaṃ ca kāpeyam abhipratāriṇaṃ ca kākṣaseniṃ pariviṣyamāṇau brahmacārī bibhikṣe
+tasmā u ha na dadatuḥ', null, 4003005),
+('chandogya-4-3-6', 6, 'Chapter 4, Section 3, Verse 6', 'स होवाच।
+महात्मनश्चतुरो देव एकः कः स जगार भुवनस्य गोपाः।
+तं कापेय नाभिपश्यन्ति मर्त्या अभिप्रतारिन्बहुधा वसन्तम्।
+यस्मै वा एतदन्नं तस्मा एतन्न दत्तमिति॥', 'sa hovāca
+mahātmanaś caturo deva ekaḥ kaḥ sa jagāra bhuvanasya gopāḥ
+taṃ kāpeya nābhipaśyanti martyā abhipratārin bahudhā vasantam
+yasmai vā etad annaṃ tasmā etan na dattam iti', null, 4003006),
+('chandogya-4-3-7', 7, 'Chapter 4, Section 3, Verse 7', 'तदु ह शौनकः कापेयः प्रतिमन्वानः प्रत्येयाय।
+आत्मा देवानां जनिता प्रजानां हिरङ्यदंष्ट्रो बभसोऽनसूरिः।
+महान्तमस्य महिमानमाहुरनद्यमानो यदनन्नमत्ति।
+इति वै वयम्ब्रह्मचारिन्नेदमुपास्महे दत्तास्मै भिक्षामिति॥', 'tad u ha śaunakaḥ kāpeyaḥ pratimanvānaḥ pratyeyāya
+ātmā devānāṃ janitā prajānāṃ hiraṅyadaṃṣṭro babhaso ''nasūriḥ
+mahāntam asya mahimānam āhur anadyamāno yad anannam atti
+iti vai vayam brahmacārin nedam upāsmahe dattāsmai bhikṣām iti', null, 4003007),
+('chandogya-4-3-8', 8, 'Chapter 4, Section 3, Verse 8', 'तस्मै उ ह ददुः।
+ते वा एते पञ्चान्ये पञ्चान्ये दश सन्तस्तत्कृतम्।
+तस्मात्सर्वासु दिक्ष्वन्नमेव दश कृतम्।
+सैषा विराडन्नादी।
+तयेदं सर्वं दृष्टम्।
+सर्वमस्य इदं दृष्टं भवत्यन्नादो भवति य एवं वेद य एवं वेद॥', 'tasmai u ha daduḥ
+te vā ete pañcānye pañcānye daśa santas tat kṛtam
+tasmāt sarvāsu dikṣv annam eva daśa kṛtam
+saiṣā virāḍ annādī
+tayedaṃ sarvaṃ dṛṣṭam
+sarvam asya idaṃ dṛṣṭaṃ bhavaty annādo bhavati ya evaṃ veda ya evaṃ veda', null, 4003008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-4-1', 1, 'Chapter 4, Section 4, Verse 1', 'सत्यकामो ह जाबालो जबालां मातरमामन्त्रयां चक्रे।
+ब्रह्मचर्यं भवति विवत्स्यामि किंगोत्रो न्वहमस्मीति॥', 'satyakāmo ha jābālo jabālāṃ mātaram āmantrayāṃ cakre
+brahmacaryaṃ bhavati vivatsyāmi kiṃgotro nv aham asmīti', null, 4004001),
+('chandogya-4-4-2', 2, 'Chapter 4, Section 4, Verse 2', 'सा हैनमुवाच।
+नाहमेतद्वेद तात यद्गोत्रस्त्वमसि।
+बह्वहम्चरन्ती परिचारिणी यौवने त्वामलभे।
+साहमेतन्न वेद यद्गोत्रस्त्वमसि।
+जबाला तु नामाहमस्मि।
+सत्यकामो नाम त्वमसि।
+स सत्यकाम एव जाबालो ब्रुवीथा इति॥', 'sā hainam uvāca
+nāham etad veda tāta yadgotras tvam asi
+bahv aham carantī paricāriṇī yauvane tvām alabhe
+sāham etan na veda yadgotras tvam asi
+jabālā tu nāmāham asmi
+satyakāmo nāma tvam asi
+sa satyakāma eva jābālo bruvīthā iti', null, 4004002),
+('chandogya-4-4-3', 3, 'Chapter 4, Section 4, Verse 3', 'स ह हारिद्रुमतं गौतममेत्योवाच।
+ब्रह्मचर्यं भगवति वत्स्यामि।
+उपेयां भगवन्तमिति॥', 'sa ha hāridrumataṃ gautamam etyovāca
+brahmacaryaṃ bhagavati vatsyāmi
+upeyāṃ bhagavantam iti', null, 4004003),
+('chandogya-4-4-4', 4, 'Chapter 4, Section 4, Verse 4', 'तं होवाच किंगोत्रो नु सोम्यासीति।
+स होवाच।
+नाहमेतद्वेद भो यद्गोत्रोऽहमस्मि।
+अपृच्छं मातरम्।
+सा मा प्रत्यब्रवीद्बह्वहम्चरन्ती परिचरिणी यौवने त्वामलभे।
+साहमेतन्न वेद यद्गोत्रस्त्वमसि।
+जबाला तु नामाहमस्मि।
+सत्यकामो नाम त्वमसीति।
+सोऽहं सत्यकामो जाबालोऽस्मि भो इति॥', 'taṃ hovāca kiṃgotro nu somyāsīti
+sa hovāca
+nāham etad veda bho yadgotro ''ham asmi
+apṛcchaṃ mātaram
+sā mā pratyabravīd bahv aham carantī paricariṇī yauvane tvām alabhe
+sāham etan na veda yadgotras tvam asi
+jabālā tu nāmāham asmi
+satyakāmo nāma tvam asīti
+so ''haṃ satyakāmo jābālo ''smi bho iti', null, 4004004),
+('chandogya-4-4-5', 5, 'Chapter 4, Section 4, Verse 5', 'तं होवाच।
+नैतदब्रह्मणो विवक्तुमर्हति।
+समिधं सोम्याहर।
+उप त्वा नेष्ये न सत्यादगा इति।
+तमुपनीय कृशानामबलानां चतुःशता गा निराकृत्य उवाचेमाः सोम्यानुसंव्रजेति।
+ता अभिप्रस्थापयन्नुवाच।
+नासहस्रेणावर्तेयेति।
+स ह वर्षगणं प्रोवास।
+ता यदा सहस्रं सम्पेदुः॥', 'taṃ hovāca
+naitad abrahmaṇo vivaktum arhati
+samidhaṃ somyāhara
+upa tvā neṣye na satyād agā iti
+tam upanīya kṛśānām abalānāṃ catuḥśatā gā nirākṛtya uvācemāḥ somyānusaṃvrajeti
+tā abhiprasthāpayann uvāca
+nāsahasreṇāvarteyeti
+sa ha varṣagaṇaṃ provāsa
+tā yadā sahasraṃ sampeduḥ', null, 4004005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-5-1', 1, 'Chapter 4, Section 5, Verse 1', 'अथ हैनमृषभोऽभ्युवाद सत्यकाम ३ इति।
+भगव इति ह प्रतिशुश्राव।
+प्राप्ताः सोम्य सहस्रं स्मः।
+प्रापय न आचार्यकुलम्॥', 'atha hainam ṛṣabho ''bhyuvāda satyakāma 3 iti
+bhagava iti ha pratiśuśrāva
+prāptāḥ somya sahasraṃ smaḥ
+prāpaya na ācāryakulam', null, 4005001),
+('chandogya-4-5-2', 2, 'Chapter 4, Section 5, Verse 2', 'ब्रह्मणश्च ते पादं ब्रवाणि इति।
+ब्रवीतु मे भगवानिति।
+तस्मै होवाच।
+प्राची दिक्कला।
+प्रतिची दिक्कला।
+दक्षिणा दिक्कला।
+उदीची दिक्कला।
+एष वै सोम्य चतुष्कलः पादो ब्रह्मणः प्रकाशवान्नाम॥', 'brahmaṇaś ca te pādaṃ bravāṇi iti
+bravītu me bhagavān iti
+tasmai hovāca
+prācī dik kalā
+praticī dik kalā
+dakṣiṇā dik kalā
+udīcī dik kalā
+eṣa vai somya catuṣkalaḥ pādo brahmaṇaḥ prakāśavān nāma', null, 4005002),
+('chandogya-4-5-3', 3, 'Chapter 4, Section 5, Verse 3', 'स य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणः प्रकाशवानित्युपास्ते प्रकाशवानस्मिंल्लोके भवति।
+प्रकाशवतो ह लोकाञ्जयति य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणः प्रकाशवानित्युपास्ते॥', 'sa ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇaḥ prakāśavān ity upāste prakāśavān asmiṃl loke bhavati
+prakāśavato ha lokāñ jayati ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇaḥ prakāśavān ity upāste', null, 4005003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-6-1', 1, 'Chapter 4, Section 6, Verse 1', 'अग्निष्टे पादं वक्तेति।
+स ह श्वो भूते गा अभिप्रस्थापयां चकार।
+ता यत्राभिसायं बभूवुस्तत्राग्निमुपसमाधाय गा उपरुध्य समिधमाधाय पश्चादग्नेः प्राङुपोपविवेश॥', 'agniṣṭe pādaṃ vakteti
+sa ha śvo bhūte gā abhiprasthāpayāṃ cakāra
+tā yatrābhisāyaṃ babhūvus tatrāgnim upasamādhāya gā uparudhya samidham ādhāya paścād agneḥ prāṅ upopaviveśa', null, 4006001),
+('chandogya-4-6-2', 2, 'Chapter 4, Section 6, Verse 2', 'तमग्निरभ्युवाद सत्यकाम ३ इति।
+भगव इति ह प्रतिशुश्राव॥', 'tam agnir abhyuvāda satyakāma 3 iti
+bhagava iti ha pratiśuśrāva', null, 4006002),
+('chandogya-4-6-3', 3, 'Chapter 4, Section 6, Verse 3', 'ब्रह्मणः सोम्य ते पादं ब्रवाणीति।
+ब्रवीतु मे भगवानिति।
+तस्मै ह उवाच।
+पृथिवी कला।
+अन्तरिक्षं कला।
+द्यौः कला।
+समुद्रः कला।
+एष वै सोम्य चतुष्कलः पादो ब्रह्मणोऽनन्तवान्नाम॥', 'brahmaṇaḥ somya te pādaṃ bravāṇīti
+bravītu me bhagavān iti
+tasmai ha uvāca
+pṛthivī kalā
+antarikṣaṃ kalā
+dyauḥ kalā
+samudraḥ kalā
+eṣa vai somya catuṣkalaḥ pādo brahmaṇo ''nantavān nāma', null, 4006003),
+('chandogya-4-6-4', 4, 'Chapter 4, Section 6, Verse 4', 'स य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणोऽनन्तवानित्युपास्तेऽनन्तवानस्मिंल्लोके भवति।
+अनन्तवतो ह लोकाञ्जयति य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणोऽनन्तवानित्युपास्ते॥', 'sa ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇo ''nantavān ity upāste ''nantavān asmiṃl loke bhavati
+anantavato ha lokāñ jayati ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇo ''nantavān ity upāste', null, 4006004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-7-3', 3, 'Chapter 4, Section 7, Verse 3', 'ब्रह्मणः सोम्य ते पादं ब्रवाणीति।
+ब्रवीतु मे भगवानिति।
+तस्मै होवाच।
+अग्निः कला।
+सूर्यः कला।
+चन्द्रः कला।
+विद्युत्कला।
+एष वै सोम्य चतुष्कलः पादो ब्रह्मणो ज्योतिष्मान्नाम॥', 'brahmaṇaḥ somya te pādaṃ bravāṇīti
+bravītu me bhagavān iti
+tasmai hovāca
+agniḥ kalā
+sūryaḥ kalā
+candraḥ kalā
+vidyut kalā
+eṣa vai somya catuṣkalaḥ pādo brahmaṇo jyotiṣmān nāma', null, 4007003),
+('chandogya-4-7-4', 4, 'Chapter 4, Section 7, Verse 4', 'स य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणो ज्योतिष्मानित्युपास्ते ज्योतिष्मानस्मिंल्लोके भवति।
+ज्योतिष्मतो ह लोकाञ्जयति य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मणो ज्योतिष्मानित्युपास्ते॥', 'sa ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇo jyotiṣmān ity upāste jyotiṣmān asmiṃl loke bhavati
+jyotiṣmato ha lokāñ jayati ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇo jyotiṣmān ity upāste', null, 4007004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-8-1', 1, 'Chapter 4, Section 8, Verse 1', 'मद्गुष्टे पादं वक्तेति।
+स ह श्वो भूते गा अभिप्रस्थापयां चकार।
+ता यत्राभिसायं बभूवुस्तत्राग्निमुपसमाधाय गा उपरुध्य समिधमाधाय पश्चादग्नेः प्राङुपोपविवेश॥', 'madguṣṭe pādaṃ vakteti
+sa ha śvo bhūte gā abhiprasthāpayāṃ cakāra
+tā yatrābhisāyaṃ babhūvus tatrāgnim upasamādhāya gā uparudhya samidham ādhāya paścād agneḥ prāṅ upopaviveśa', null, 4008001),
+('chandogya-4-8-2', 2, 'Chapter 4, Section 8, Verse 2', 'तं मद्गुरुपनिपत्याभ्युवाद सत्यकाम ३ इति।
+भगव इति ह प्रतिशुश्राव॥', 'taṃ madgur upanipatyābhyuvāda satyakāma 3 iti
+bhagava iti ha pratiśuśrāva', null, 4008002),
+('chandogya-4-8-3', 3, 'Chapter 4, Section 8, Verse 3', 'ब्रह्मणः सोम्य ते पादं ब्रवाणीति।
+ब्रवीतु मे भगवानिति।
+तस्मै होवाच।
+प्राणः कला।
+चक्षुः कला।
+श्रोत्रं कला।
+मनः कला।
+एष वै सोम्य चतुष्कलः पादो ब्रह्मण आयतनवान्नाम॥', 'brahmaṇaḥ somya te pādaṃ bravāṇīti
+bravītu me bhagavān iti
+tasmai hovāca
+prāṇaḥ kalā
+cakṣuḥ kalā
+śrotraṃ kalā
+manaḥ kalā
+eṣa vai somya catuṣkalaḥ pādo brahmaṇa āyatanavān nāma', null, 4008003),
+('chandogya-4-8-4', 4, 'Chapter 4, Section 8, Verse 4', 'स य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मण आयतनवानित्युपास्त आयतनवानस्मिंल्लोके भवति।
+आयतनवतो ह लोकाञ्जयति य एतमेवं विद्वांश्चतुष्कलं पादं ब्रह्मण आयतनवानित्युपास्ते॥', 'sa ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇa āyatanavān ity upāsta āyatanavān asmiṃl loke bhavati
+āyatanavato ha lokāñ jayati ya etam evaṃ vidvāṃś catuṣkalaṃ pādaṃ brahmaṇa āyatanavān ity upāste', null, 4008004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-9-1', 1, 'Chapter 4, Section 9, Verse 1', 'प्राप हाचर्यकुलम्।
+तमाचर्योऽभ्युवाद सत्यकाम ३ इति।
+भगव इति ह प्रतिशुश्राव॥', 'prāpa hācaryakulam
+tam ācaryo ''bhyuvāda satyakāma 3 iti
+bhagava iti ha pratiśuśrāva', null, 4009001),
+('chandogya-4-9-2', 2, 'Chapter 4, Section 9, Verse 2', 'ब्रह्मविदिव वै सोम्य भासि।
+को नु त्वानुशशासेति।
+अन्ये मनुष्येभ्य इति ह प्रतिजज्ञे।
+भगवांस्त्वेव मे कामे ब्रूयात्॥', 'brahmavid iva vai somya bhāsi
+ko nu tvānuśaśāseti
+anye manuṣyebhya iti ha pratijajñe
+bhagavāṃs tv eva me kāme brūyāt', null, 4009002),
+('chandogya-4-9-3', 3, 'Chapter 4, Section 9, Verse 3', 'श्रुतं ह्येव मे भगवद्दृशेभ्य आचार्याद्धैव विद्या विदिता साधिष्ठं प्रापतीति।
+तस्मै ह एतदेव उवाच।
+अत्र ह न किंचन वीयायेति वीयायेति॥', 'śrutaṃ hy eva me bhagavaddṛśebhya ācāryād dhaiva vidyā viditā sādhiṣṭhaṃ prāpatīti
+tasmai ha etad eva uvāca
+atra ha na kiṃcana vīyāyeti vīyāyeti', null, 4009003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-10-1', 1, 'Chapter 4, Section 10, Verse 1', 'उपकोसलो ह वै कामलायनः सत्यकामे जाबाले ब्रह्मचार्यमुवास।
+तस्य ह द्वादश वार्षान्यग्नीन्परिचचार।
+स ह स्मान्यानन्तेवासिनः समावर्तयंस्तं ह स्मैव न समावर्तयति॥', 'upakosalo ha vai kāmalāyanaḥ satyakāme jābāle brahmacāryam uvāsa
+tasya ha dvādaśa vārṣāny agnīn paricacāra
+sa ha smānyān antevāsinaḥ samāvartayaṃs taṃ ha smaiva na samāvartayati', null, 4010001),
+('chandogya-4-10-2', 2, 'Chapter 4, Section 10, Verse 2', 'तं जायोवाच तप्तो ब्रह्मचारी कुशलमग्नीन्परिचचारीत्।
+मा त्वा अग्नयः परिप्रवोचन्।
+प्रब्रूह्यस्मा इति।
+तस्मै हाप्रोच्यैव प्रवासां चक्रे॥', 'taṃ jāyovāca tapto brahmacārī kuśalam agnīn paricacārīt
+mā tvā agnayaḥ paripravocan
+prabrūhy asmā iti
+tasmai hāprocyaiva pravāsāṃ cakre', null, 4010002),
+('chandogya-4-10-3', 3, 'Chapter 4, Section 10, Verse 3', 'स ह व्याधिना अनशितुं दध्रे।
+तमाचार्यजाया उवाच ब्रह्मचारिन्नशान।
+किं नु न अश्नासि इति।
+स ह उवाच बहव इमेऽस्मिन्पुरुषे कामा नानात्यायाः।
+व्याधीभीः प्रतिपूर्णोऽस्मि।
+न अस्।
+इष्यामि इति॥', 'sa ha vyādhinā anaśituṃ dadhre
+tam ācāryajāyā uvāca brahmacārinn aśāna
+kiṃ nu na aśnāsi iti
+sa ha uvāca bahava ime ''smin puruṣe kāmā nānātyāyāḥ
+vyādhībhīḥ pratipūrṇo ''smi
+na as
+iṣyāmi iti', null, 4010003),
+('chandogya-4-10-4', 4, 'Chapter 4, Section 10, Verse 4', 'अथ हाग्नयः समूदिरे।
+तप्तो ब्रह्मचारी कुशलं नः पर्यचारीत्।
+हन्तास्मै प्रब्रवामेति तस्मै होचुः।
+प्राणो ब्रह्म कं ब्रह्म खं ब्रह्मेति॥', 'atha hāgnayaḥ samūdire
+tapto brahmacārī kuśalaṃ naḥ paryacārīt
+hantāsmai prabravāmeti tasmai hocuḥ
+prāṇo brahma kaṃ brahma khaṃ brahmeti', null, 4010004),
+('chandogya-4-10-5', 5, 'Chapter 4, Section 10, Verse 5', 'स होवाच।
+विजानाम्यहं यत्प्राणो ब्रह्म।
+कं च तु खं च न विजानामीति।
+ते होचुः।
+यद्वाव कं तदेव खम्।
+यदेव खं तदेव कमिति।
+प्राणं च हास्मै तदाकाशं चोचुः॥', 'sa hovāca
+vijānāmy ahaṃ yat prāṇo brahma
+kaṃ ca tu khaṃ ca na vijānāmīti
+te hocuḥ
+yad vāva kaṃ tad eva kham
+yad eva khaṃ tad eva kam iti
+prāṇaṃ ca hāsmai tad ākāśaṃ cocuḥ', null, 4010005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-11-1', 1, 'Chapter 4, Section 11, Verse 1', 'अथ हैनं गार्हपत्योऽनुशशास पृथिव्यग्निरन्नमादित्य इति।
+य एष आदित्ये पुरुषो दृश्यते सोऽहमस्मि स एव अहमस्मि इति॥', 'atha hainaṃ gārhapatyo ''nuśaśāsa pṛthivy agnir annam āditya iti
+ya eṣa āditye puruṣo dṛśyate so ''ham asmi sa eva aham asmi iti', null, 4011001),
+('chandogya-4-11-2', 2, 'Chapter 4, Section 11, Verse 2', 'स य एतमेवं विद्वानुपास्ते।
+अपहते पापकृत्याम्।
+लोकी भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+न अस्य अवरपुरुषाः क्षीयन्ते।
+उप वयं तं भुञ्जामोऽस्मिंश्च लोकेऽमुष्मिंश्च।
+य एतमेवं विद्वानुपास्ते॥', 'sa ya etam evaṃ vidvān upāste
+apahate pāpakṛtyām
+lokī bhavati
+sarvam āyur eti
+jyog jīvati
+na asya avarapuruṣāḥ kṣīyante
+upa vayaṃ taṃ bhuñjāmo ''smiṃś ca loke ''muṣmiṃś ca
+ya etam evaṃ vidvān upāste', null, 4011002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-12-1', 1, 'Chapter 4, Section 12, Verse 1', 'अथ ह एनमन्वाहार्यपचनोऽनुशशास आपो दिशो नक्षत्राणि चन्द्रमा इति।
+य एष चन्द्रमसि पुरुषो दृष्यते सोऽहमस्मि स एव अहमस्मि इति॥', 'atha ha enam anvāhāryapacano ''nuśaśāsa āpo diśo nakṣatrāṇi candramā iti
+ya eṣa candramasi puruṣo dṛṣyate so ''ham asmi sa eva aham asmi iti', null, 4012001),
+('chandogya-4-12-2', 2, 'Chapter 4, Section 12, Verse 2', 'स य एतमेवं विद्वानुपास्ते।
+अपहते पापकृत्याम्।
+लोकी भवति।
+सर्वमायुरेति।
+ज्योग्जीवति।
+न अस्य अवरपुरुषाः क्षीयन्ते।
+उप वयं तं भुञ्जामोऽस्मिंश्च लोकेऽमुष्मिंश्च।
+य एतमेवं विद्वानुपास्ते॥', 'sa ya etam evaṃ vidvān upāste
+apahate pāpakṛtyām
+lokī bhavati
+sarvam āyur eti
+jyog jīvati
+na asya avarapuruṣāḥ kṣīyante
+upa vayaṃ taṃ bhuñjāmo ''smiṃś ca loke ''muṣmiṃś ca
+ya etam evaṃ vidvān upāste', null, 4012002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-13-1', 1, 'Chapter 4, Section 13, Verse 1', 'अथ हैनमाहवनीयोऽनुशशास प्राण आकाशो द्यौर्विद्युदिति।
+य एष विद्युति पुरुषो दृश्यते सोऽहमस्मि स एवाहमस्मीति॥', 'atha hainam āhavanīyo ''nuśaśāsa prāṇa ākāśo dyaur vidyud iti
+ya eṣa vidyuti puruṣo dṛśyate so ''ham asmi sa evāham asmīti', null, 4013001),
+('chandogya-4-13-2', 2, 'Chapter 4, Section 13, Verse 2', 'स य एतमेवं विद्वानुपास्ते।
+अपहते पापकृत्याम्।
+लोकी भवति।
+सर्वमयुरेति।
+ज्योग्जीवति।
+नास्यावरपुरुषाः क्षीयन्ते।
+उप वयं तं भुञ्जामोऽस्मिंश्च लोकेऽमुष्मिंश्च।
+य एतमेवं विद्वानुपास्ते॥', 'sa ya etam evaṃ vidvān upāste
+apahate pāpakṛtyām
+lokī bhavati
+sarvam ayur eti
+jyog jīvati
+nāsyāvarapuruṣāḥ kṣīyante
+upa vayaṃ taṃ bhuñjāmo ''smiṃś ca loke ''muṣmiṃś ca
+ya etam evaṃ vidvān upāste', null, 4013002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-14-1', 1, 'Chapter 4, Section 14, Verse 1', 'ते होचुः।
+उपकोसलैषा सोम्य तेऽस्मद्विद्यात्मविद्या च।
+आचार्यस्तु ते गतिं वक्तेति।
+आजगाम हास्याचार्यः।
+तमाचार्योऽभ्युवादोपकोसल ३ इति॥', 'te hocuḥ
+upakosalaiṣā somya te ''smadvidyātmavidyā ca
+ācāryas tu te gatiṃ vakteti
+ājagāma hāsyācāryaḥ
+tam ācāryo ''bhyuvādopakosala 3 iti', null, 4014001),
+('chandogya-4-14-2', 2, 'Chapter 4, Section 14, Verse 2', 'भगव इति ह प्रतिशुश्राव।
+ब्रह्मविद इव सोम्य मुखं भाति।
+को नु त्वानुशशासेति।
+को नु मानुशिश्याद्भो इतीहापेव निह्नुते।
+इमे नूनमीदृशा अन्यादृशा इतीहाग्नीनभ्यूदे।
+किं नु सोम्य किल तेऽवोचन्निति॥', 'bhagava iti ha pratiśuśrāva
+brahmavida iva somya mukhaṃ bhāti
+ko nu tvānuśaśāseti
+ko nu mānuśiśyād bho itīhāpeva nihnute
+ime nūnam īdṛśā anyādṛśā itīhāgnīn abhyūde
+kiṃ nu somya kila te ''vocann iti', null, 4014002),
+('chandogya-4-14-3', 3, 'Chapter 4, Section 14, Verse 3', 'इदमिति ह प्रतिजज्ञे।
+लोकान्वाव किल सोम्य तेऽवोचन्।
+अहं तु ते तद्वक्ष्यामि यथा पुष्करपलाश आपो न श्लिष्यन्त एवमेवंविदि पापं कर्म न श्लिष्यत इति।
+ब्रवीतु मे भगवानिति।
+तस्मै होवाच॥', 'idam iti ha pratijajñe
+lokān vāva kila somya te ''vocan
+ahaṃ tu te tad vakṣyāmi yathā puṣkarapalāśa āpo na śliṣyanta evam evaṃvidi pāpaṃ karma na śliṣyata iti
+bravītu me bhagavān iti
+tasmai hovāca', null, 4014003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-15-1', 1, 'Chapter 4, Section 15, Verse 1', 'य एषोऽक्षिणि पुरुषो दृश्यत एष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+तद्यद्यप्यस्मिन्सर्पिर्वोदकं वा सिञ्चति वर्त्मनी एव गच्छति॥', 'ya eṣo ''kṣiṇi puruṣo dṛśyata eṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+tad yady apy asmin sarpir vodakaṃ vā siñcati vartmanī eva gacchati', null, 4015001),
+('chandogya-4-15-2', 2, 'Chapter 4, Section 15, Verse 2', 'एतं संयद्वाम इत्याचक्षते।
+एतं हि सर्वाणि वामान्यभिसंयन्ति।
+सर्वाण्येनं वामान्यभिसंयन्ति य एवं वेद॥', 'etaṃ saṃyadvāma ity ācakṣate
+etaṃ hi sarvāṇi vāmāny abhisaṃyanti
+sarvāṇy enaṃ vāmāny abhisaṃyanti ya evaṃ veda', null, 4015002),
+('chandogya-4-15-3', 3, 'Chapter 4, Section 15, Verse 3', 'एष उ एव वामनीः।
+एष हि सर्वाणि वामानि नयति।
+सर्वाणि वामानि नयति य एवं वेद॥', 'eṣa u eva vāmanīḥ
+eṣa hi sarvāṇi vāmāni nayati
+sarvāṇi vāmāni nayati ya evaṃ veda', null, 4015003),
+('chandogya-4-15-4', 4, 'Chapter 4, Section 15, Verse 4', 'एष उ एव भामनीः।
+एष हि सर्वेषु लोकेषु भाति।
+सर्वेषु लोकेषु भाति य एवं वेद॥', 'eṣa u eva bhāmanīḥ
+eṣa hi sarveṣu lokeṣu bhāti
+sarveṣu lokeṣu bhāti ya evaṃ veda', null, 4015004),
+('chandogya-4-15-5', 5, 'Chapter 4, Section 15, Verse 5', 'अथ यदु चैवास्मिञ्छव्यं कुर्वन्ति यदि च नार्चिषमेवाभिसंभवन्ति।
+अर्चिषोऽहः।
+अह्न आपूर्यमाणपक्षम्।
+आपूर्यमाणपक्षाद्यान्षडुदङ्ङेति मासांस्तान्।
+मासेभ्यः संवत्सरम्।
+संवत्सरादादित्यम्।
+आदित्याच्चन्द्रमसम्।
+चन्द्रमसो विद्युतम्।
+तत्पुरुषोऽमानवः।
+स एनान्ब्रह्म गमयति।
+एष देवपथो ब्रह्मपथः।
+एतेन प्रतिपद्यमाना इमं मानवमावर्तं नावर्तन्ते नावर्तन्ते॥', 'atha yad u caivāsmiñ chavyaṃ kurvanti yadi ca nārciṣam evābhisaṃbhavanti
+arciṣo ''haḥ
+ahna āpūryamāṇapakṣam
+āpūryamāṇapakṣād yān ṣaḍ udaṅṅ eti māsāṃs tān
+māsebhyaḥ saṃvatsaram
+saṃvatsarād ādityam
+ādityāc candramasam
+candramaso vidyutam
+tat puruṣo ''mānavaḥ
+sa enān brahma gamayati
+eṣa devapatho brahmapathaḥ
+etena pratipadyamānā imaṃ mānavam āvartaṃ nāvartante nāvartante', null, 4015005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-16-1', 1, 'Chapter 4, Section 16, Verse 1', 'एष ह वै यज्ञो योऽयं पवते।
+एष ह यन्निदं सर्वं पुनाति।
+यदेष यन्निदं सर्वं पुनाति।
+तस्मादेष एव यज्ञः।
+तस्य मनश्च वाक्च वर्तनी॥', 'eṣa ha vai yajño yo ''yaṃ pavate
+eṣa ha yann idaṃ sarvaṃ punāti
+yad eṣa yann idaṃ sarvaṃ punāti
+tasmād eṣa eva yajñaḥ
+tasya manaś ca vāk ca vartanī', null, 4016001),
+('chandogya-4-16-2', 2, 'Chapter 4, Section 16, Verse 2', 'तयोरन्यतरां मनसा संस्करोति ब्रह्मा।
+वाचा होताध्वर्युरुद्गातान्यतराम्।
+स यत्रोपाकृते प्रातरनुवाके पुरा परिधानीयाया ब्रह्मा व्यववदति॥', 'tayor anyatarāṃ manasā saṃskaroti brahmā
+vācā hotādhvaryur udgātānyatarām
+sa yatropākṛte prātaranuvāke purā paridhānīyāyā brahmā vyavavadati', null, 4016002),
+('chandogya-4-16-3', 3, 'Chapter 4, Section 16, Verse 3', 'अन्यतरामेव वर्तनीं संस्करोति।
+हीयतेऽन्यतरा।
+स यथैकपाद्व्रजन्रथो वैकेन चक्रेण वर्तमानो रिष्यत्येवमस्य यज्ञो रिष्यति।
+यज्ञं रिष्यन्तं यजमानोऽनु रिष्यति।
+स इष्ट्वा पापीयान्भवति॥', 'anyatarām eva vartanīṃ saṃskaroti
+hīyate ''nyatarā
+sa yathaikapād vrajan ratho vaikena cakreṇa vartamāno riṣyaty evam asya yajño riṣyati
+yajñaṃ riṣyantaṃ yajamāno ''nu riṣyati
+sa iṣṭvā pāpīyān bhavati', null, 4016003),
+('chandogya-4-16-4', 4, 'Chapter 4, Section 16, Verse 4', 'अथ यत्र उपाकृते प्रातरनुवाके न पुरा परिधानीयाया ब्रह्मा व्यववदत्युभे एव वर्तनी संस्कुर्वन्ति।
+न हीयतेऽन्यतरा॥', 'atha yatra upākṛte prātaranuvāke na purā paridhānīyāyā brahmā vyavavadaty ubhe eva vartanī saṃskurvanti
+na hīyate ''nyatarā', null, 4016004),
+('chandogya-4-16-5', 5, 'Chapter 4, Section 16, Verse 5', 'स यथोभयपाद्व्रजन्रथो वोभाभ्यां चक्राभ्यां वर्तमानः प्रतितिष्ठत्येवमस्य यज्ञः प्रतितिष्ठति यज्ञं प्रतितिष्ठन्तं यजमानोऽनु प्रतितिष्ठति।
+स इष्ट्वा श्रेयान्भवति॥', 'sa yathobhayapād vrajan ratho vobhābhyāṃ cakrābhyāṃ vartamānaḥ pratitiṣṭhaty evam asya yajñaḥ pratitiṣṭhati yajñaṃ pratitiṣṭhantaṃ yajamāno ''nu pratitiṣṭhati
+sa iṣṭvā śreyān bhavati', null, 4016005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 17 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 4 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-4-17-1', 1, 'Chapter 4, Section 17, Verse 1', 'प्रजापतिर्लोकानभ्यतपत्।
+तेषां तप्यमानानां रसान्प्रावृहत्।
+अग्निं पृथिव्याः।
+वायुमन्तरिक्षात्।
+आदित्यं दिवः॥', 'prajāpatir lokān abhyatapat
+teṣāṃ tapyamānānāṃ rasān prāvṛhat
+agniṃ pṛthivyāḥ
+vāyum antarikṣāt
+ādityaṃ divaḥ', null, 4017001),
+('chandogya-4-17-2', 2, 'Chapter 4, Section 17, Verse 2', 'स एतास्तिस्रो देवता अभ्यतपत्।
+तासां तप्यमानानां रसान्प्रावृहत्।
+अग्नेरृचः।
+वायोर्यजूंषि।
+सामान्यादित्यात्॥', 'sa etās tisro devatā abhyatapat
+tāsāṃ tapyamānānāṃ rasān prāvṛhat
+agner ṛcaḥ
+vāyor yajūṃṣi
+sāmāny ādityāt', null, 4017002),
+('chandogya-4-17-3', 3, 'Chapter 4, Section 17, Verse 3', 'स एतां त्रयीं विद्यामभ्यतपत्।
+तस्यास्तप्यमानाया रसान्प्रावृहत्।
+भूरित्यृग्भ्यः।
+भुवरिति यजुर्भ्यः।
+स्वरिति सामभ्यः॥', 'sa etāṃ trayīṃ vidyām abhyatapat
+tasyās tapyamānāyā rasān prāvṛhat
+bhūr ity ṛgbhyaḥ
+bhuvar iti yajurbhyaḥ
+svar iti sāmabhyaḥ', null, 4017003),
+('chandogya-4-17-4', 4, 'Chapter 4, Section 17, Verse 4', 'तद्यद्यृक्तो रिष्येद्भूः स्वाहेति गार्हपत्ये जुहुयात्।
+ऋचामेव तद्रसेनर्चां वीर्येणर्चां यज्ञस्य विरिष्टं संदधाति॥', 'tad yady ṛkto riṣyed bhūḥ svāheti gārhapatye juhuyāt
+ṛcām eva tadrasenarcāṃ vīryeṇarcāṃ yajñasya viriṣṭaṃ saṃdadhāti', null, 4017004),
+('chandogya-4-17-5', 5, 'Chapter 4, Section 17, Verse 5', 'अथ यदि यजुष्टो रिष्येद्भुवः स्वाहेति दक्षिणाग्नौ जुहुयात्।
+यजुषामेव तद्रसेन यजुषां वीर्येण यजुषां यज्ञस्य विरिष्टं संदधाति॥', 'atha yadi yajuṣṭo riṣyed bhuvaḥ svāheti dakṣiṇāgnau juhuyāt
+yajuṣām eva tadrasena yajuṣāṃ vīryeṇa yajuṣāṃ yajñasya viriṣṭaṃ saṃdadhāti', null, 4017005),
+('chandogya-4-17-6', 6, 'Chapter 4, Section 17, Verse 6', 'अथ यदि सामतो रिष्येत्स्वः स्वाहेत्याहवनीये जुहुयात्।
+साम्नामेव तद्रसेन साम्नां वीर्येण साम्नां यज्ञस्य विरिष्टं संदधाति॥', 'atha yadi sāmato riṣyet svaḥ svāhety āhavanīye juhuyāt
+sāmnām eva tadrasena sāmnāṃ vīryeṇa sāmnāṃ yajñasya viriṣṭaṃ saṃdadhāti', null, 4017006),
+('chandogya-4-17-7', 7, 'Chapter 4, Section 17, Verse 7', 'तद्यथा लवणेन सुवर्णं संदध्यात्।
+सुवर्णेन रजतं रजतेन त्रपु त्रपुणा सीसं सीसेन लोहं लोहेन दारु दारु चर्मणा॥', 'tad yathā lavaṇena suvarṇaṃ saṃdadhyāt
+suvarṇena rajataṃ rajatena trapu trapuṇā sīsaṃ sīsena lohaṃ lohena dāru dāru carmaṇā', null, 4017007),
+('chandogya-4-17-8', 8, 'Chapter 4, Section 17, Verse 8', 'एवमेषां लोकानामासां देवतानामस्यास्त्रय्या विद्याया वीर्येण यज्ञस्य विरिष्टं संदधाति।
+भेषजकृतो ह वा एष यज्ञो यत्रैवंविद्ब्रह्मा भवति॥', 'evam eṣāṃ lokānām āsāṃ devatānām asyās trayyā vidyāyā vīryeṇa yajñasya viriṣṭaṃ saṃdadhāti
+bheṣajakṛto ha vā eṣa yajño yatraivaṃvid brahmā bhavati', null, 4017008),
+('chandogya-4-17-9', 9, 'Chapter 4, Section 17, Verse 9', 'एष ह वा उदक्प्रवणो यज्ञो यत्रैवंविद्ब्रह्मा भवति।
+एवंविदं ह वा एषा ब्रह्माणमनु गाथा।
+यतो यत आवर्तते तत्तद्गच्छति॥', 'eṣa ha vā udakpravaṇo yajño yatraivaṃvid brahmā bhavati
+evaṃvidaṃ ha vā eṣā brahmāṇam anu gāthā
+yato yata āvartate tat tad gacchati', null, 4017009),
+('chandogya-4-17-10', 10, 'Chapter 4, Section 17, Verse 10', 'मानवो ब्रह्मैवैक ऋत्विक्कुरूनश्वाभिरक्षत्येवंविद्ध वै ब्रह्मा यज्ञं यजमानं सर्वांश्चर्त्विजोऽभिरक्षति तस्मादेवंविदमेव ब्रह्माणं कुर्वीत नानेवंविदं नानेवंविदम्।
+मानवः।
+ब्रह्मैवैक ऋत्विक्कुरूनश्वाभिरक्षति।
+एवंविद्ध वै ब्रह्मा यज्ञं यजमानं सर्वांश्चर्त्विजोऽभिरक्षति।
+तस्मादेवंविदमेव ब्रह्माणं कुर्वीत नानेवंविदं नानेवंविदम्॥', 'mānavo brahmaivaika ṛtvikkurūnaśvābhirakṣatyevaṃviddha vai brahmā yajñaṃ yajamānaṃ sarvāṃś cartvijo ''bhirakṣati tasmādevaṃvidameva brahmāṇaṃ kurvīta nānevaṃvidaṃ nānevaṃvidam
+mānavaḥ
+brahmaivaika ṛtvik kurūn aśvābhirakṣati
+evaṃvid dha vai brahmā yajñaṃ yajamānaṃ sarvāṃś cartvijo ''bhirakṣati
+tasmād evaṃvidam eva brahmāṇaṃ kurvīta nānevaṃvidaṃ nānevaṃvidam', null, 4017010)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-1-1', 1, 'Chapter 5, Section 1, Verse 1', 'यो ह वै ज्येष्ठं च श्रेष्ठं च वेद ज्येष्ठश्च ह वै श्रेष्ठश्च भवति।
+प्राणो वाव ज्येष्ठश्च श्रेष्ठश्च॥', 'yo ha vai jyeṣṭhaṃ ca śreṣṭhaṃ ca veda jyeṣṭhaś ca ha vai śreṣṭhaś ca bhavati
+prāṇo vāva jyeṣṭhaś ca śreṣṭhaś ca', null, 5001001),
+('chandogya-5-1-2', 2, 'Chapter 5, Section 1, Verse 2', 'यो ह वै वसिष्ठं वेद वसिष्ठो ह स्वानां भवति।
+वाग्वाव वसिष्ठः॥', 'yo ha vai vasiṣṭhaṃ veda vasiṣṭho ha svānāṃ bhavati
+vāg vāva vasiṣṭhaḥ', null, 5001002),
+('chandogya-5-1-3', 3, 'Chapter 5, Section 1, Verse 3', 'यो ह वै प्रतिष्ठां वेद प्रति ह तिष्ठत्यस्मिंश्च लोकेऽमुष्मिंश्च।
+चक्षुर्वाव प्रतिष्ठा॥', 'yo ha vai pratiṣṭhāṃ veda prati ha tiṣṭhaty asmiṃś ca loke ''muṣmiṃś ca
+cakṣur vāva pratiṣṭhā', null, 5001003),
+('chandogya-5-1-4', 4, 'Chapter 5, Section 1, Verse 4', 'यो ह वै संपदं वेद सं हास्मै कामाः पद्यन्ते दैवाश्च मानुषाश्च।
+श्रोत्रं वाव संपत्॥', 'yo ha vai saṃpadaṃ veda saṃ hāsmai kāmāḥ padyante daivāś ca mānuṣāś ca
+śrotraṃ vāva saṃpat', null, 5001004),
+('chandogya-5-1-5', 5, 'Chapter 5, Section 1, Verse 5', 'यो ह वा आयतनं वेदायतनं ह स्वानां भवति।
+मनो ह वा आयतनम्॥', 'yo ha vā āyatanaṃ vedāyatanaṃ ha svānāṃ bhavati
+mano ha vā āyatanam', null, 5001005),
+('chandogya-5-1-6', 6, 'Chapter 5, Section 1, Verse 6', 'अथ ह प्राणा अहंश्रेयसि व्यूदिरे।
+अहं श्रेयानस्म्यहं श्रेयानस्मीति॥', 'atha ha prāṇā ahaṃśreyasi vyūdire
+ahaṃ śreyān asmy ahaṃ śreyān asmīti', null, 5001006),
+('chandogya-5-1-7', 7, 'Chapter 5, Section 1, Verse 7', 'ते ह प्राणाः प्रजापतिं पितरमेत्योचुः भगवन्को नः श्रेष्ठ इति।
+तान्होवाच।
+यस्मिन्व उत्क्रान्ते शरीरं पापिष्ठतरमिव दृश्येत स वः श्रेष्ठ इति॥', 'te ha prāṇāḥ prajāpatiṃ pitaram etyocuḥ bhagavan ko naḥ śreṣṭha iti
+tān hovāca
+yasmin va utkrānte śarīraṃ pāpiṣṭhataram iva dṛśyeta sa vaḥ śreṣṭha iti', null, 5001007),
+('chandogya-5-1-8', 8, 'Chapter 5, Section 1, Verse 8', 'सा ह वागुच्चक्राम।
+सा संवत्सरं प्रोष्य पर्येत्योवाच।
+कथमशकतर्ते मज्जीवितुमिति।
+यथा कला अवदन्तः प्राणन्तः प्राणेन पश्यन्तश्चक्षुषा शृण्वन्तः श्रोत्रेण ध्यायन्तो मनसैवमिति।
+प्रविवेश ह वाक्॥', 'sā ha vāg uccakrāma
+sā saṃvatsaraṃ proṣya paryetyovāca
+katham aśakatarte maj jīvitum iti
+yathā kalā avadantaḥ prāṇantaḥ prāṇena paśyantaś cakṣuṣā śṛṇvantaḥ śrotreṇa dhyāyanto manasaivam iti
+praviveśa ha vāk', null, 5001008),
+('chandogya-5-1-9', 9, 'Chapter 5, Section 1, Verse 9', 'चक्षुर्होच्चक्राम।
+तत्संवत्सरं प्रोष्य पर्येत्योवाच।
+कथमशकतर्ते मज्जीवितुमिति।
+यथान्धा अपश्यन्तः प्राणन्तः प्राणेन वदन्तो वाचा शृण्वन्तः श्रोत्रेण ध्यायन्तो मनसैवमिति।
+प्रविवेश ह चक्षुः॥', 'cakṣur hoccakrāma
+tat saṃvatsaraṃ proṣya paryetyovāca
+katham aśakatarte maj jīvitum iti
+yathāndhā apaśyantaḥ prāṇantaḥ prāṇena vadanto vācā śṛṇvantaḥ śrotreṇa dhyāyanto manasaivam iti
+praviveśa ha cakṣuḥ', null, 5001009),
+('chandogya-5-1-10', 10, 'Chapter 5, Section 1, Verse 10', 'श्रोत्रं होच्चक्राम।
+तत्संवत्सरं प्रोष्य पर्येत्योवाच कथमशकतर्ते मज्जीवितुमिति।
+यथा बधिरा अशृण्वन्तः प्राणन्तः प्राणेन वदन्तो वाचा पश्यन्तश्चक्षुषा ध्यायन्तो मनसैवमिति।
+प्रविवेश ह श्रोत्रम्॥', 'śrotraṃ hoccakrāma
+tat saṃvatsaraṃ proṣya paryetyovāca katham aśakatarte maj jīvitum iti
+yathā badhirā aśṛṇvantaḥ prāṇantaḥ prāṇena vadanto vācā paśyantaś cakṣuṣā dhyāyanto manasaivam iti
+praviveśa ha śrotram', null, 5001010),
+('chandogya-5-1-11', 11, 'Chapter 5, Section 1, Verse 11', 'मनो होच्चक्राम।
+तत्संवत्सरं प्रोष्य पर्येत्योवाच।
+कथमशकतर्ते मज्जीवितुमिति।
+यथा बाला अमनसः प्राणन्तः प्राणेन वदन्तो वाचा पश्यन्तश्चक्षुषा शृण्वन्तः श्रोत्रेणैवमिति।
+प्रविवेश ह मनः॥', 'mano hoccakrāma
+tat saṃvatsaraṃ proṣya paryetyovāca
+katham aśakatarte maj jīvitum iti
+yathā bālā amanasaḥ prāṇantaḥ prāṇena vadanto vācā paśyantaś cakṣuṣā śṛṇvantaḥ śrotreṇaivam iti
+praviveśa ha manaḥ', null, 5001011),
+('chandogya-5-1-12', 12, 'Chapter 5, Section 1, Verse 12', 'अथ ह प्राण उच्चिक्रमिषन्स यथा सुहयः पड्वीशशङ्कून्संखिदेदेवमितरान्प्राणान्समखिदत्।
+तं हाभिसमेत्योचुः।
+भगवन्नेधि।
+त्वं नः श्रेष्ठोऽसि।
+मोत्क्रमीरिति॥', 'atha ha prāṇa uccikramiṣan sa yathā suhayaḥ paḍvīśaśaṅkūn saṃkhided evam itarān prāṇān samakhidat
+taṃ hābhisametyocuḥ
+bhagavann edhi
+tvaṃ naḥ śreṣṭho ''si
+motkramīr iti', null, 5001012),
+('chandogya-5-1-13', 13, 'Chapter 5, Section 1, Verse 13', 'अथ हैनं वागुवाच।
+यदहं वसिष्ठोऽस्मि त्वं तद्वसिष्ठोऽसीति।
+अथ हैनं चक्षुरुवाच।
+यदहं प्रतिष्ठास्मि त्वं तत्प्रतिष्ठासीति॥', 'atha hainaṃ vāg uvāca
+yad ahaṃ vasiṣṭho ''smi tvaṃ tadvasiṣṭho ''sīti
+atha hainaṃ cakṣur uvāca
+yad ahaṃ pratiṣṭhāsmi tvaṃ tatpratiṣṭhāsīti', null, 5001013),
+('chandogya-5-1-14', 14, 'Chapter 5, Section 1, Verse 14', 'अथ हैनं श्रोत्रमुवाच।
+यदहं संपदस्मि त्वं तत्संपदसीति।
+अथ हैनं मन उवाच।
+यदहमायतनमस्मि त्वं तदायतनमसीति॥', 'atha hainaṃ śrotram uvāca
+yad ahaṃ saṃpad asmi tvaṃ tatsaṃpad asīti
+atha hainaṃ mana uvāca
+yad aham āyatanam asmi tvaṃ tadāyatanam asīti', null, 5001014),
+('chandogya-5-1-15', 15, 'Chapter 5, Section 1, Verse 15', 'न वै वाचो न चक्षूंषि न श्रोत्राणि न मनांसीत्याचक्षते।
+प्राणा इत्येवाचक्षते।
+प्राणो ह्येवैतानि सर्वाणि भवति॥', 'na vai vāco na cakṣūṃṣi na śrotrāṇi na manāṃsīty ācakṣate
+prāṇā ity evācakṣate
+prāṇo hy evaitāni sarvāṇi bhavati', null, 5001015)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-2-1', 1, 'Chapter 5, Section 2, Verse 1', 'स होवाच किं मेऽन्नं भविष्यतीति।
+यत्किंचिदिदमा श्वभ्य आ शकुनिभ्य इति होचुः।
+तद्वा एतदनस्यान्नम्।
+अनो ह वै नाम प्रत्यक्षम्।
+न ह वा एवंविदि किंचनानन्नं भवतीति॥', 'sa hovāca kiṃ me ''nnaṃ bhaviṣyatīti
+yat kiṃcid idam ā śvabhya ā śakunibhya iti hocuḥ
+tad vā etad anasyānnam
+ano ha vai nāma pratyakṣam
+na ha vā evaṃvidi kiṃcanānannaṃ bhavatīti', null, 5002001),
+('chandogya-5-2-2', 2, 'Chapter 5, Section 2, Verse 2', 'स होवाच किं मे वासो भविष्यतीति।
+आप इति होचुः।
+तस्माद्वा एतदशिष्यन्तः पुरस्ताच्चोपरिष्टाच्चाद्भिः परिदधति।
+लम्भुको ह वासो भवति।
+अनग्नो ह भवति॥', 'sa hovāca kiṃ me vāso bhaviṣyatīti
+āpa iti hocuḥ
+tasmād vā etad aśiṣyantaḥ purastāc copariṣṭāc cādbhiḥ paridadhati
+lambhuko ha vāso bhavati
+anagno ha bhavati', null, 5002002),
+('chandogya-5-2-3', 3, 'Chapter 5, Section 2, Verse 3', 'तद्धैतत्सत्यकामो जाबालो गोश्रुतये वैयाघ्रपद्यायोक्त्वोवाच।
+यद्यप्येनच्छुष्काय स्थाणवे ब्रूयाज्जायेरन्नेवास्मिञ्छाखाः प्ररोहेयुः पलाशानीति॥', 'tad dhaitat satyakāmo jābālo gośrutaye vaiyāghrapadyāyoktvovāca
+yady apy enac chuṣkāya sthāṇave brūyāj jāyerann evāsmiñ chākhāḥ praroheyuḥ palāśānīti', null, 5002003),
+('chandogya-5-2-4', 4, 'Chapter 5, Section 2, Verse 4', 'अथ यदि महज्जिगमिषेत्, अमावास्यायाम्दीक्षित्वा पौर्णमास्यां रात्रौ सर्वौषधस्य मन्थम्दधिमधुनोरुपमथ्य ज्येष्ठाय श्रेष्ठाय स्वाहेत्यग्नावाज्यस्य हुत्वा मन्थे संपातमवनयेत्॥', 'atha yadi mahaj jigamiṣet, amāvāsyāyām dīkṣitvā paurṇamāsyāṃ rātrau sarvauṣadhasya mantham dadhimadhunor upamathya jyeṣṭhāya śreṣṭhāya svāhety agnāv ājyasya hutvā manthe saṃpātam avanayet', null, 5002004),
+('chandogya-5-2-5', 5, 'Chapter 5, Section 2, Verse 5', 'वसिष्ठाय स्वाहेत्यग्नावाज्यस्य हुत्वा मन्थे संपातमवनयेत्।
+प्रतिष्ठायै स्वाहेत्यग्नावाज्यस्य हुत्वा मन्थे संपातमवनयेत्।
+संपदे स्वाहेत्यग्नावाज्यस्य हुत्वा मन्थे संपातमवनयेत्।
+आयतनाय स्वाहेत्यग्नावाज्यस्य हुत्वा मन्थे संपातमवनयेत्॥', 'vasiṣṭhāya svāhety agnāv ājyasya hutvā manthe saṃpātam avanayet
+pratiṣṭhāyai svāhety agnāv ājyasya hutvā manthe saṃpātam avanayet
+saṃpade svāhety agnāv ājyasya hutvā manthe saṃpātam avanayet
+āyatanāya svāhety agnāv ājyasya hutvā manthe saṃpātam avanayet', null, 5002005),
+('chandogya-5-2-6', 6, 'Chapter 5, Section 2, Verse 6', 'अथ प्रतिसृप्याञ्जलौ मन्थमाधाय जपति।
+अमो नामासि।
+अमा हि ते सर्वमिदम्।
+स हि ज्येष्ठः श्रेष्ठो राजाधिपतिः।
+स मा ज्यैष्ठ्यं श्रैष्ठ्यं राज्यमाधिपत्यं गमयतु।
+अहमेवेदं सर्वमसानीति॥', 'atha pratisṛpyāñjalau mantham ādhāya japati
+amo nāmāsi
+amā hi te sarvam idam
+sa hi jyeṣṭhaḥ śreṣṭho rājādhipatiḥ
+sa mā jyaiṣṭhyaṃ śraiṣṭhyaṃ rājyam ādhipatyaṃ gamayatu
+aham evedaṃ sarvam asānīti', null, 5002006),
+('chandogya-5-2-7', 7, 'Chapter 5, Section 2, Verse 7', 'अथ खल्वेतयर्चा पच्छ आचामति।
+तत्सवितुर्वृणीमह इत्याचामति।
+वयं देवस्य भोजनमित्याचामति।
+श्रेष्ठं सर्वधातममित्याचामति।
+तुरं भगस्य धीमहीति सर्वं पिबति।
+निर्णिज्य कंसं चमसं वा पश्चादग्नेः संविशति।
+चर्मणि वा स्थण्डिले वा वाचंयमोऽप्रसाहः।
+स यदि स्त्रियं पश्येत्समृद्धं कर्मेति विद्यात्॥', 'atha khalv etayarcā paccha ācāmati
+tat savitur vṛṇīmaha ity ācāmati
+vayaṃ devasya bhojanam ity ācāmati
+śreṣṭhaṃ sarvadhātamam ity ācāmati
+turaṃ bhagasya dhīmahīti sarvaṃ pibati
+nirṇijya kaṃsaṃ camasaṃ vā paścād agneḥ saṃviśati
+carmaṇi vā sthaṇḍile vā vācaṃyamo ''prasāhaḥ
+sa yadi striyaṃ paśyet samṛddhaṃ karmeti vidyāt', null, 5002007),
+('chandogya-5-2-8', 8, 'Chapter 5, Section 2, Verse 8', 'तदेष श्लोकः।
+यदा कर्मसु काम्येषु स्त्रियं स्वप्नेषु पश्यति।
+समृद्धिं तत्र जानीयात्तस्मिन्स्वप्ननिदर्शने तस्मिन्स्वप्ननिदर्शने॥', 'tad eṣa ślokaḥ
+yadā karmasu kāmyeṣu striyaṃ svapneṣu paśyati
+samṛddhiṃ tatra jānīyāt tasmin svapnanidarśane tasmin svapnanidarśane', null, 5002008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-3-1', 1, 'Chapter 5, Section 3, Verse 1', 'श्वेतकेतुर्हारुणेयः पञ्चालानां समितिमेयाय।
+तं ह प्रवाहणो जैवलिरुवाच।
+कुमारानु त्वा अशिषत्पितेति।
+अनु हि भगव इति॥', 'śvetaketur hāruṇeyaḥ pañcālānāṃ samitim eyāya
+taṃ ha pravāhaṇo jaivalir uvāca
+kumārānu tvā aśiṣat piteti
+anu hi bhagava iti', null, 5003001),
+('chandogya-5-3-2', 2, 'Chapter 5, Section 3, Verse 2', 'वेत्थ यदितोऽधि प्रजाः प्रयन्तीति।
+न भगव इति।
+वेत्थ यथा पुनरावर्तन्त ३ इति।
+न भगव इति।
+वेत्थ पथोर्देवयानस्य पितृयाणस्य च व्यावर्तना ३ इति।
+न भगव इति॥', 'vettha yad ito ''dhi prajāḥ prayantīti
+na bhagava iti
+vettha yathā punar āvartanta 3 iti
+na bhagava iti
+vettha pathor devayānasya pitṛyāṇasya ca vyāvartanā 3 iti
+na bhagava iti', null, 5003002),
+('chandogya-5-3-3', 3, 'Chapter 5, Section 3, Verse 3', 'वेत्थ यथासौ लोको न संपूर्यत ३ इति।
+न भगव इति।
+वेत्थ यथा पञ्चम्यामाहुतावापः पुरुषवचसो भवन्तीति।
+नैव भगव इति॥', 'vettha yathāsau loko na saṃpūryata 3 iti
+na bhagava iti
+vettha yathā pañcamyām āhutāv āpaḥ puruṣavacaso bhavantīti
+naiva bhagava iti', null, 5003003),
+('chandogya-5-3-4', 4, 'Chapter 5, Section 3, Verse 4', 'अथानु किमनु शिष्ठोऽवोचथा यो हीमानि न विद्यात्।
+कथं सोऽनुशिष्टो ब्रुवीतेति।
+स हायस्तः पितुरर्धमेयाय।
+तं होवाचाननुशिष्य वाव किल मा भगवानब्रवीदनु त्वाशिषमिति॥', 'athānu kim anu śiṣṭho ''vocathā yo hīmāni na vidyāt
+kathaṃ so ''nuśiṣṭo bruvīteti
+sa hāyastaḥ pitur ardham eyāya
+taṃ hovācānanuśiṣya vāva kila mā bhagavān abravīd anu tvāśiṣam iti', null, 5003004),
+('chandogya-5-3-5', 5, 'Chapter 5, Section 3, Verse 5', 'पञ्च मा राजन्यबन्धुः प्रश्नानप्राक्षीत्।
+तेषां नैकंचनाशकं विवक्तुमिति।
+स होवाच यथा मा त्वं तदैतानवदो यथाहमेषां नैकंचन वेद।
+यद्यहमिमानवेदिष्यं कथं ते नावक्ष्यमिति॥', 'pañca mā rājanyabandhuḥ praśnān aprākṣīt
+teṣāṃ naikaṃcanāśakaṃ vivaktum iti
+sa hovāca yathā mā tvaṃ tadaitān avado yathāham eṣāṃ naikaṃcana veda
+yady aham imān avediṣyaṃ kathaṃ te nāvakṣyam iti', null, 5003005),
+('chandogya-5-3-6', 6, 'Chapter 5, Section 3, Verse 6', 'स ह गौतमो राज्ञोऽर्धमेयाय।
+तस्मै ह प्राप्तायार्हां चकार।
+स ह प्रातः सभाग उदेयाय।
+तं होवाच।
+मानुषस्य भगवन्गौतम वित्तस्य वरं वृणीथा इति।
+स होवाच।
+तवैव राजन्मानुषं वित्तम्।
+यामेव कुमारस्यान्ते वाचमभाषथास्तामेव मे ब्रूहीति।
+स ह कृच्छ्री बभूव॥', 'sa ha gautamo rājño ''rdham eyāya
+tasmai ha prāptāyārhāṃ cakāra
+sa ha prātaḥ sabhāga udeyāya
+taṃ hovāca
+mānuṣasya bhagavan gautama vittasya varaṃ vṛṇīthā iti
+sa hovāca
+tavaiva rājan mānuṣaṃ vittam
+yām eva kumārasyānte vācam abhāṣathās tām eva me brūhīti
+sa ha kṛcchrī babhūva', null, 5003006),
+('chandogya-5-3-7', 7, 'Chapter 5, Section 3, Verse 7', 'तं ह चिरं वसेत्याज्ञापयां चकार।
+तं होवाच।
+यथा मा त्वं गौतमावदः।
+यथेयं न प्राक्त्वत्तः पुरा विद्या ब्राह्मणान्गच्छति।
+तस्मादु सर्वेषु लोकेषु क्षत्रस्यैव प्रशासनमभूदिति।
+तस्मै होवाच॥', 'taṃ ha ciraṃ vasety ājñāpayāṃ cakāra
+taṃ hovāca
+yathā mā tvaṃ gautamāvadaḥ
+yatheyaṃ na prāk tvattaḥ purā vidyā brāhmaṇān gacchati
+tasmād u sarveṣu lokeṣu kṣatrasyaiva praśāsanam abhūd iti
+tasmai hovāca', null, 5003007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-4-1', 1, 'Chapter 5, Section 4, Verse 1', 'असौ वाव लोको गौतमाग्निः।
+तस्यादित्य एव समित्।
+रश्मयो धूमः।
+अहरर्चिः।
+चन्द्रमा अङ्गाराः।
+नक्षत्राणि विस्फुलिङ्गाः॥', 'asau vāva loko gautamāgniḥ
+tasyāditya eva samit
+raśmayo dhūmaḥ
+ahar arciḥ
+candramā aṅgārāḥ
+nakṣatrāṇi visphuliṅgāḥ', null, 5004001),
+('chandogya-5-4-2', 2, 'Chapter 5, Section 4, Verse 2', 'तस्मिन्नेतस्मिन्नग्नौ देवाः श्रद्धां जुह्वति।
+तस्या आहुतेः सोमो राजा संभवति॥', 'tasminn etasminn agnau devāḥ śraddhāṃ juhvati
+tasyā āhuteḥ somo rājā saṃbhavati', null, 5004002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-5-1', 1, 'Chapter 5, Section 5, Verse 1', 'पर्जन्यो वाव गौतमाग्निः।
+तस्य वायुरेव समित्।
+अभ्रं धूमः।
+विद्युदर्चिः।
+अशनिरङ्गाराः।
+ह्रादुनयो विस्फुलिङ्गाः॥', 'parjanyo vāva gautamāgniḥ
+tasya vāyur eva samit
+abhraṃ dhūmaḥ
+vidyud arciḥ
+aśanir aṅgārāḥ
+hrādunayo visphuliṅgāḥ', null, 5005001),
+('chandogya-5-5-2', 2, 'Chapter 5, Section 5, Verse 2', 'तस्मिन्नेतस्मिन्नग्नौ देवाः सोमं राजानं जुह्वति।
+तस्या आहुतेर्वर्षं संभवति॥', 'tasminn etasminn agnau devāḥ somaṃ rājānaṃ juhvati
+tasyā āhuter varṣaṃ saṃbhavati', null, 5005002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-6-1', 1, 'Chapter 5, Section 6, Verse 1', 'पृथिवी वाव गौतमाग्निः।
+तस्याः सम्वत्सर एव समित्।
+आकाशो धूमः।
+रात्रिरर्चिः।
+दिशोऽङ्गाराः।
+अवान्तरदिशो विस्फुलिङ्गाः॥', 'pṛthivī vāva gautamāgniḥ
+tasyāḥ samvatsara eva samit
+ākāśo dhūmaḥ
+rātrir arciḥ
+diśo ''ṅgārāḥ
+avāntaradiśo visphuliṅgāḥ', null, 5006001),
+('chandogya-5-6-2', 2, 'Chapter 5, Section 6, Verse 2', 'तस्मिन्नेतस्मिन्नग्नौ देवा वर्षं जुह्वति।
+तस्या आहुतेरन्नं संभवति॥', 'tasminn etasminn agnau devā varṣaṃ juhvati
+tasyā āhuter annaṃ saṃbhavati', null, 5006002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-7-1', 1, 'Chapter 5, Section 7, Verse 1', 'पुरुषो वाव गौतमाग्निः।
+तस्य वागेव समित्।
+प्राणो धूमः।
+जिह्वार्चिः।
+चक्षुरङ्गाराः।
+श्रोत्रं विस्फुलिङ्गाः॥', 'puruṣo vāva gautamāgniḥ
+tasya vāg eva samit
+prāṇo dhūmaḥ
+jihvārciḥ
+cakṣur aṅgārāḥ
+śrotraṃ visphuliṅgāḥ', null, 5007001),
+('chandogya-5-7-2', 2, 'Chapter 5, Section 7, Verse 2', 'तस्मिन्नेतस्मिन्नग्नौ देवा अन्नं जुह्वति।
+तस्या आहुतेर्रेतः सम्भवति॥', 'tasminn etasminn agnau devā annaṃ juhvati
+tasyā āhuter retaḥ sambhavati', null, 5007002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-8-1', 1, 'Chapter 5, Section 8, Verse 1', 'योषा वाव गौतमाग्निः।
+तस्या उपस्थ एव समित्।
+यदुपमन्त्रयते स धूमः।
+योनिरर्चिः।
+यदन्तः करोति तेऽङ्गाराः।
+अभिनन्दा विस्फुलिङ्गाः॥', 'yoṣā vāva gautamāgniḥ
+tasyā upastha eva samit
+yad upamantrayate sa dhūmaḥ
+yonir arciḥ
+yad antaḥ karoti te ''ṅgārāḥ
+abhinandā visphuliṅgāḥ', null, 5008001),
+('chandogya-5-8-2', 2, 'Chapter 5, Section 8, Verse 2', 'तस्मिन्नेतस्मिन्नग्नौ देवा रेतो जुह्वति।
+तस्या आहुतेर्गर्भः संभवति॥', 'tasminn etasminn agnau devā reto juhvati
+tasyā āhuter garbhaḥ saṃbhavati', null, 5008002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-9-1', 1, 'Chapter 5, Section 9, Verse 1', 'इति तु पञ्चम्यामाहुतावापः पुरुषवचसो भवन्तीति।
+स उल्बावृतो गर्भो दश वा नव वा मासानन्तः शयित्वा यावद्वाथ जायते॥', 'iti tu pañcamyām āhutāv āpaḥ puruṣavacaso bhavantīti
+sa ulbāvṛto garbho daśa vā nava vā māsān antaḥ śayitvā yāvad vātha jāyate', null, 5009001),
+('chandogya-5-9-2', 2, 'Chapter 5, Section 9, Verse 2', 'स जातो यावदायुषं जीवति।
+तं प्रेतं दिष्टमितोऽग्नय एव हरन्ति यत एवेतो यतः संभूतो भवति॥', 'sa jāto yāvadāyuṣaṃ jīvati
+taṃ pretaṃ diṣṭam ito ''gnaya eva haranti yata eveto yataḥ saṃbhūto bhavati', null, 5009002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-10-1', 1, 'Chapter 5, Section 10, Verse 1', 'तद्य इत्थं विदुः।
+ये चेमेऽरण्ये श्रद्धा तप इत्युपासते।
+तेऽर्चिषमभिसंभवन्ति।
+अर्चिषोऽहः।
+अह्न आपूर्यमाणपक्षम्।
+आपूर्यमाणपक्षाद्यान्षडुदङ्ङेति मासांस्तान्॥', 'tad ya itthaṃ viduḥ
+ye ceme ''raṇye śraddhā tapa ity upāsate
+te ''rciṣam abhisaṃbhavanti
+arciṣo ''haḥ
+ahna āpūryamāṇapakṣam
+āpūryamāṇapakṣād yān ṣaḍ udaṅṅ eti māsāṃs tān', null, 5010001),
+('chandogya-5-10-2', 2, 'Chapter 5, Section 10, Verse 2', 'मासेभ्यः संवत्सरम्।
+संवत्सरादादित्यम्।
+आदित्याच्चन्द्रमसम्।
+चन्द्रमसो विद्युतम्।
+तत्पुरुषोऽमानवः।
+स एनान्ब्रह्म गमयति।
+एष देवयानः पन्था इति॥', 'māsebhyaḥ saṃvatsaram
+saṃvatsarād ādityam
+ādityāc candramasam
+candramaso vidyutam
+tat puruṣo ''mānavaḥ
+sa enān brahma gamayati
+eṣa devayānaḥ panthā iti', null, 5010002),
+('chandogya-5-10-3', 3, 'Chapter 5, Section 10, Verse 3', 'अथ य इमे ग्राम इष्टापूर्ते दत्तमित्युपासते।
+ते धूममभिसंभवन्ति।
+धूमाद्रात्रिम्।
+रात्रेरपरपक्षम्।
+अपरपक्षाद्यान्षड्दक्षिणैति मासांस्तान्।
+नैते संवत्सरमभिप्राप्नुवन्ति॥', 'atha ya ime grāma iṣṭāpūrte dattam ity upāsate
+te dhūmam abhisaṃbhavanti
+dhūmād rātrim
+rātrer aparapakṣam
+aparapakṣād yān ṣaḍ dakṣiṇaiti māsāṃs tān
+naite saṃvatsaram abhiprāpnuvanti', null, 5010003),
+('chandogya-5-10-4', 4, 'Chapter 5, Section 10, Verse 4', 'मासेभ्यः पितृलोकम्।
+पितृलोकादाकाशम्।
+आकासाच्चन्द्रमसम्।
+एष सोमो राजा।
+तद्देवानामन्नम्।
+तं देवा भक्षयन्ति॥', 'māsebhyaḥ pitṛlokam
+pitṛlokād ākāśam
+ākāsāc candramasam
+eṣa somo rājā
+tad devānām annam
+taṃ devā bhakṣayanti', null, 5010004),
+('chandogya-5-10-5', 5, 'Chapter 5, Section 10, Verse 5', 'तस्मिन्यवात्संपातमुषित्वाथैतमेवाध्वानं पुनर्निवर्तन्ते।
+आकाशम्।
+आकाशाद्वायुम्।
+वायुर्भूत्वा धूमो भवति।
+धूमो भूत्वाभ्रं भवति॥', 'tasmin yavātsaṃpātam uṣitvāthaitam evādhvānaṃ punar nivartante
+ākāśam
+ākāśād vāyum
+vāyur bhūtvā dhūmo bhavati
+dhūmo bhūtvābhraṃ bhavati', null, 5010005),
+('chandogya-5-10-6', 6, 'Chapter 5, Section 10, Verse 6', 'अभ्रं भूत्वा मेघो भवति।
+मेघो भूत्वा प्रवर्षति।
+त इह व्रीहियवा ओषधिवनस्पतयस्तिलमासा इति जायन्तेऽतो वै खलु दुर्निष्प्रपतरम्।
+यो यो ह्यन्नमत्ति यो रेतः सिञ्चति तद्भूय एव भवति॥', 'abhraṃ bhūtvā megho bhavati
+megho bhūtvā pravarṣati
+ta iha vrīhiyavā oṣadhivanaspatayas tilamāsā iti jāyante ''to vai khalu durniṣprapataram
+yo yo hy annam atti yo retaḥ siñcati tad bhūya eva bhavati', null, 5010006),
+('chandogya-5-10-7', 7, 'Chapter 5, Section 10, Verse 7', 'तद्य इह रमणीयचरणा अभ्याशो ह यत्ते रमणीयां योनिमापद्येरन्ब्राह्मणयोनिं वा क्षत्रिययोनिं वा वैश्ययोनिं वा।
+अथ य इह कपूयचरणा अभ्याशो ह यत्ते कपूयां योनिमापद्येरञ्श्वयोनिम्वा सूकरयोनिं वा चण्डालयोनिं वा॥', 'tad ya iha ramaṇīyacaraṇā abhyāśo ha yat te ramaṇīyāṃ yonim āpadyeran brāhmaṇayoniṃ vā kṣatriyayoniṃ vā vaiśyayoniṃ vā
+atha ya iha kapūyacaraṇā abhyāśo ha yat te kapūyāṃ yonim āpadyerañ śvayonim vā sūkarayoniṃ vā caṇḍālayoniṃ vā', null, 5010007),
+('chandogya-5-10-8', 8, 'Chapter 5, Section 10, Verse 8', 'अथैतयोः पथोर्न कतरेणचन तानीमानि क्षुद्राण्यसकृदावर्तीनि भूतानि भवन्ति जायस्व म्रियस्वेति।
+एतत्तृतीयं स्थानम्।
+तेनासौ लोको न संपूर्यते।
+तस्माज्जुगुप्सेत।
+तदेष श्लोकः॥', 'athaitayoḥ pathor na katareṇacana tānīmāni kṣudrāṇy asakṛdāvartīni bhūtāni bhavanti jāyasva mriyasveti
+etat tṛtīyaṃ sthānam
+tenāsau loko na saṃpūryate
+tasmāj jugupseta
+tad eṣa ślokaḥ', null, 5010008),
+('chandogya-5-10-9', 9, 'Chapter 5, Section 10, Verse 9', 'स्तेनो हिरण्यस्य सुरां पिबंश्च।
+गुरोस्तल्पमावसन्ब्रह्महा च।
+एते पतन्ति चत्वारः पञ्चमश्चाचरंस्तैरिति॥', 'steno hiraṇyasya surāṃ pibaṃś ca
+guros talpam āvasan brahmahā ca
+ete patanti catvāraḥ pañcamaś cācaraṃs tair iti', null, 5010009),
+('chandogya-5-10-10', 10, 'Chapter 5, Section 10, Verse 10', 'अथ ह य एतानेवं पञ्चाग्नीन्वेद न सह तैरप्याचरन्पाप्मना लिप्यते।
+शुद्धः पूतः पुण्यलोको भवति य एवं वेद य एवं वेद॥', 'atha ha ya etān evaṃ pañcāgnīn veda na saha tair apy ācaran pāpmanā lipyate
+śuddhaḥ pūtaḥ puṇyaloko bhavati ya evaṃ veda ya evaṃ veda', null, 5010010)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-11-1', 1, 'Chapter 5, Section 11, Verse 1', 'प्राचीनशाल औपमन्यवः सत्ययज्ञः पौलुषिरिन्द्रद्युम्नो भाल्लवेयो जनः शार्कराक्ष्यो बुडिल आश्वतराश्विस्ते हैते महाशाला महाश्रोत्रियाः समेत्य मीमांसां चक्रुः।
+को न आत्मा किं ब्रह्मेति॥', 'prācīnaśāla aupamanyavaḥ satyayajñaḥ pauluṣir indradyumno bhāllaveyo janaḥ śārkarākṣyo buḍila āśvatarāśvis te haite mahāśālā mahāśrotriyāḥ sametya mīmāṃsāṃ cakruḥ
+ko na ātmā kiṃ brahmeti', null, 5011001),
+('chandogya-5-11-2', 2, 'Chapter 5, Section 11, Verse 2', 'ते ह संपादयां चक्रुः।
+उद्दालको वै भगवन्तोऽयमारुणिः संप्रतीममात्मानं वैश्वानरमध्येति।
+तं हन्ताभ्यागच्छामेति।
+तं हाभ्याजग्मुः॥', 'te ha saṃpādayāṃ cakruḥ
+uddālako vai bhagavanto ''yam āruṇiḥ saṃpratīmam ātmānaṃ vaiśvānaram adhyeti
+taṃ hantābhyāgacchāmeti
+taṃ hābhyājagmuḥ', null, 5011002),
+('chandogya-5-11-3', 3, 'Chapter 5, Section 11, Verse 3', 'स ह संपादयां चकार।
+प्रक्ष्यन्ति मामिमे महाशाला महाश्रोत्रियाः।
+तेभ्यो न सर्वमिव प्रतिपत्स्ये।
+हन्ताहमन्यमभ्यनुशासानीति॥', 'sa ha saṃpādayāṃ cakāra
+prakṣyanti mām ime mahāśālā mahāśrotriyāḥ
+tebhyo na sarvam iva pratipatsye
+hantāham anyam abhyanuśāsānīti', null, 5011003),
+('chandogya-5-11-4', 4, 'Chapter 5, Section 11, Verse 4', 'तान्होवाच।
+अश्वपतिर्वै भगवन्तोऽयं कैकेयः संप्रतीममात्मानं वैश्वानरमध्येति।
+तं हन्ताभ्यागच्छामेति।
+तं हाभ्याजग्मुः॥', 'tān hovāca
+aśvapatir vai bhagavanto ''yaṃ kaikeyaḥ saṃpratīmam ātmānaṃ vaiśvānaram adhyeti
+taṃ hantābhyāgacchāmeti
+taṃ hābhyājagmuḥ', null, 5011004),
+('chandogya-5-11-5', 5, 'Chapter 5, Section 11, Verse 5', 'तेभ्यो ह प्राप्तेभ्यः पृथगर्हाणि कारयां चकार।
+स ह प्रातः संजिहान उवाच।
+न मे स्तेनो जनपदे न कदर्यो न मद्यपः।
+नानाहिताग्निर्नाविद्वान्न स्वैरी स्वैरिणी कुतः।
+यक्ष्यमाणो वै भगवन्तोऽहमस्मि।
+यावदेकैकस्मा ऋत्विजे धनं दास्यामि तावद्भगवद्भ्यो दास्यामि।
+वसन्तु भगवन्त इति॥', 'tebhyo ha prāptebhyaḥ pṛthag arhāṇi kārayāṃ cakāra
+sa ha prātaḥ saṃjihāna uvāca
+na me steno janapade na kadaryo na madyapaḥ
+nānāhitāgnir nāvidvān na svairī svairiṇī kutaḥ
+yakṣyamāṇo vai bhagavanto ''ham asmi
+yāvad ekaikasmā ṛtvije dhanaṃ dāsyāmi tāvad bhagavadbhyo dāsyāmi
+vasantu bhagavanta iti', null, 5011005),
+('chandogya-5-11-6', 6, 'Chapter 5, Section 11, Verse 6', 'ते होचुः।
+येन हैवार्थेन पुरुषश्चरेत्तं हैव वदेत्।
+आत्मानमेवेमं वैश्वानरं संप्रत्यध्येषि।
+तमेव नो ब्रूहीति॥', 'te hocuḥ
+yena haivārthena puruṣaś caret taṃ haiva vadet
+ātmānam evemaṃ vaiśvānaraṃ saṃpraty adhyeṣi
+tam eva no brūhīti', null, 5011006),
+('chandogya-5-11-7', 7, 'Chapter 5, Section 11, Verse 7', 'तान्होवाच।
+प्रातर्वः प्रतिवक्तास्मीति।
+ते ह समित्पाणयः पूर्वाह्णे प्रतिचक्रमिरे।
+तान्हानुपनीयैवैतदुवाच॥', 'tān hovāca
+prātar vaḥ prativaktāsmīti
+te ha samitpāṇayaḥ pūrvāhṇe praticakramire
+tān hānupanīyaivaitad uvāca', null, 5011007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-12-1', 1, 'Chapter 5, Section 12, Verse 1', 'औपमन्यव कं त्वमात्मानमुपास्स इति।
+दिवमेव भगवो राजन्निति होवाच।
+एष वै सुतेजा आत्मा वैश्वानरो यं त्वमात्मानमुपास्से।
+तस्मात्तव सुतं प्रसुतमासुतं कुले दृश्यते॥', 'aupamanyava kaṃ tvam ātmānam upāssa iti
+divam eva bhagavo rājann iti hovāca
+eṣa vai sutejā ātmā vaiśvānaro yaṃ tvam ātmānam upāsse
+tasmāt tava sutaṃ prasutam āsutaṃ kule dṛśyate', null, 5012001),
+('chandogya-5-12-2', 2, 'Chapter 5, Section 12, Verse 2', 'अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियम्भवत्यस्य ब्रह्मवर्चसं कुले ये एतमेवमात्मानं वैश्वानरमुपास्ते।
+मूधा त्वेष आत्मन इति होवाच।
+मूर्धा ते व्यपतिष्यद्यन्मां नागमिष्य इति॥', 'atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyam bhavaty asya brahmavarcasaṃ kule ye etam evam ātmānaṃ vaiśvānaram upāste
+mūdhā tv eṣa ātmana iti hovāca
+mūrdhā te vyapatiṣyad yan māṃ nāgamiṣya iti', null, 5012002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-13-1', 1, 'Chapter 5, Section 13, Verse 1', 'अथ होवाच सत्ययज्ञं पौलुषिम्।
+प्राचीनयोग्य कं त्वमात्मानमुपास्स इति।
+आदित्यमेव भगवो राजन्निति होवाच।
+एष वै विश्वरूप आत्मा वैश्वानरो यं त्वमात्मानमुपास्ते।
+तस्मात्तव बहु विश्वरूपं कुले दृश्यते॥', 'atha hovāca satyayajñaṃ pauluṣim
+prācīnayogya kaṃ tvam ātmānam upāssa iti
+ādityam eva bhagavo rājann iti hovāca
+eṣa vai viśvarūpa ātmā vaiśvānaro yaṃ tvam ātmānam upāste
+tasmāt tava bahu viśvarūpaṃ kule dṛśyate', null, 5013001),
+('chandogya-5-13-2', 2, 'Chapter 5, Section 13, Verse 2', 'प्रवृत्तोऽश्वतरीरथो दासी निष्कः।
+अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियं भवत्यस्य ब्रह्मवर्चसं कुले य एतमेवमात्मानं वैश्वानरमुपास्ते।
+चक्षुष्ट्वेतदात्मन इति होवाच।
+अन्धोऽभविष्यो यन्मां नागमिष्य इति॥', 'pravṛtto ''śvatarīratho dāsī niṣkaḥ
+atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyaṃ bhavaty asya brahmavarcasaṃ kule ya etam evam ātmānaṃ vaiśvānaram upāste
+cakṣuṣ ṭv etad ātmana iti hovāca
+andho ''bhaviṣyo yan māṃ nāgamiṣya iti', null, 5013002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-14-1', 1, 'Chapter 5, Section 14, Verse 1', 'अथ होवाचेन्द्रद्युम्नं भाल्लवेयम्।
+वैयाघ्रपद्य कं त्वमात्मानमुपास्स इति।
+वायुमेव भगवो राजन्निति होवाच।
+एष वै पृथग्वर्त्मात्मा वैश्वानरो यं त्वमात्मानमुपास्से।
+तस्मात्त्वां पृथग्बलय आयन्ति पृथग्रथश्रेणयोऽनुयन्ति॥', 'atha hovācendradyumnaṃ bhāllaveyam
+vaiyāghrapadya kaṃ tvam ātmānam upāssa iti
+vāyum eva bhagavo rājann iti hovāca
+eṣa vai pṛthagvartmātmā vaiśvānaro yaṃ tvam ātmānam upāsse
+tasmāt tvāṃ pṛthag balaya āyanti pṛthag rathaśreṇayo ''nuyanti', null, 5014001),
+('chandogya-5-14-2', 2, 'Chapter 5, Section 14, Verse 2', 'अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियं भवत्यस्य ब्रह्मवर्चसं कुले य एतमेवमात्मानं वैश्वानरमुपास्ते।
+प्राणस्त्वेष आत्मन इति होवाच।
+प्राणस्त उदक्रमिष्यद्यन्मां नागमिष्य इति॥', 'atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyaṃ bhavaty asya brahmavarcasaṃ kule ya etam evam ātmānaṃ vaiśvānaram upāste
+prāṇas tv eṣa ātmana iti hovāca
+prāṇas ta udakramiṣyad yan māṃ nāgamiṣya iti', null, 5014002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-15-1', 1, 'Chapter 5, Section 15, Verse 1', 'अथ होवाच जनं शार्कराक्ष्यम्।
+शार्कराक्ष्य कं त्वमात्मानमुपास्स इति।
+आकाशमेव भगवो राजन्निति होवाच।
+एष वै बहुल आत्मा वैश्वानरो यं त्वमात्मानमुपस्से।
+तस्मात्त्वं बहुलोऽसि प्रजया च धनेन च॥', 'atha hovāca janaṃ śārkarākṣyam
+śārkarākṣya kaṃ tvam ātmānam upāssa iti
+ākāśam eva bhagavo rājann iti hovāca
+eṣa vai bahula ātmā vaiśvānaro yaṃ tvam ātmānam upasse
+tasmāt tvaṃ bahulo ''si prajayā ca dhanena ca', null, 5015001),
+('chandogya-5-15-2', 2, 'Chapter 5, Section 15, Verse 2', 'अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियं भवत्यस्य ब्रह्मवर्चसं कुले य एतमेवमात्मानं वैश्वानरमुपास्ते।
+संदेहस्त्वेष आत्मन इति होवाच।
+संदेहस्ते व्यशीर्यद्यन्मां नागमिष्य इति॥', 'atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyaṃ bhavaty asya brahmavarcasaṃ kule ya etam evam ātmānaṃ vaiśvānaram upāste
+saṃdehas tv eṣa ātmana iti hovāca
+saṃdehas te vyaśīryad yan māṃ nāgamiṣya iti', null, 5015002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-16-1', 1, 'Chapter 5, Section 16, Verse 1', 'अथ होवाच बुडिलमाश्वतराश्विम्।
+वैयाघ्रपद्य कं त्वमात्मानमुपास्स इति।
+अप एव भगवो राजन्निति होवाच।
+एष वै रयिरात्मा वैश्वानरो यं त्वमात्मानमुपास्से।
+तस्मात्त्वं रयिमान्पुष्टिमानसि॥', 'atha hovāca buḍilam āśvatarāśvim
+vaiyāghrapadya kaṃ tvam ātmānam upāssa iti
+apa eva bhagavo rājann iti hovāca
+eṣa vai rayir ātmā vaiśvānaro yaṃ tvam ātmānam upāsse
+tasmāt tvaṃ rayimān puṣṭimān asi', null, 5016001),
+('chandogya-5-16-2', 2, 'Chapter 5, Section 16, Verse 2', 'अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियं भवत्यस्य ब्रह्मवर्चसं कुले य एतमेवमात्मानं वैश्वानरमुपास्ते।
+बस्तिस्त्वेष आत्मन इति होवाच।
+बस्तिस्ते व्यभेत्स्यद्यन्मां नागमिष्य इति॥', 'atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyaṃ bhavaty asya brahmavarcasaṃ kule ya etam evam ātmānaṃ vaiśvānaram upāste
+bastis tv eṣa ātmana iti hovāca
+bastis te vyabhetsyad yan māṃ nāgamiṣya iti', null, 5016002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 17 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-17-1', 1, 'Chapter 5, Section 17, Verse 1', 'अथ होवाचोद्दालकमारुणिम्।
+गौतम कं त्वमात्मानमुपस्स इति।
+पृथिवीमेव भगवो राजन्निति होवाच।
+एष वै प्रतिष्ठात्मा वैश्वानरो यं त्वमात्मानमुपास्से।
+तस्मात्त्वं प्रतिष्ठितोऽसि प्रजया च पशुभिश्च॥', 'atha hovācoddālakam āruṇim
+gautama kaṃ tvam ātmānam upassa iti
+pṛthivīm eva bhagavo rājann iti hovāca
+eṣa vai pratiṣṭhātmā vaiśvānaro yaṃ tvam ātmānam upāsse
+tasmāt tvaṃ pratiṣṭhito ''si prajayā ca paśubhiś ca', null, 5017001),
+('chandogya-5-17-2', 2, 'Chapter 5, Section 17, Verse 2', 'अत्स्यन्नं पश्यसि प्रियम्।
+अत्त्यन्नं पश्यति प्रियं भवत्यस्य ब्रह्मवर्चसं कुले य एतमेवमात्मानं वैश्वानरमुपास्ते।
+पादौ त्वेतावात्मन इति होवाच।
+पादौ ते व्यम्लास्येतां यन्मां नागमिष्य इति॥', 'atsy annaṃ paśyasi priyam
+atty annaṃ paśyati priyaṃ bhavaty asya brahmavarcasaṃ kule ya etam evam ātmānaṃ vaiśvānaram upāste
+pādau tv etāv ātmana iti hovāca
+pādau te vyamlāsyetāṃ yan māṃ nāgamiṣya iti', null, 5017002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 18 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-18-1', 1, 'Chapter 5, Section 18, Verse 1', 'तान्होवाच।
+एते वै खलु यूयं पृथगिवेममात्मानं वैश्वानरं विद्वांसोऽन्नमत्थ।
+यस्त्वेतमेवं प्रादेशमात्रमभिविमानमात्मानं वैश्वानरमुपास्ते।
+स सर्वेषु लोकेषु सर्वेषु भूतेषु सर्वेष्वात्मस्वन्नमत्ति॥', 'tān hovāca
+ete vai khalu yūyaṃ pṛthag ivemam ātmānaṃ vaiśvānaraṃ vidvāṃso ''nnam attha
+yas tv etam evaṃ prādeśamātram abhivimānam ātmānaṃ vaiśvānaram upāste
+sa sarveṣu lokeṣu sarveṣu bhūteṣu sarveṣv ātmasv annam atti', null, 5018001),
+('chandogya-5-18-2', 2, 'Chapter 5, Section 18, Verse 2', 'तस्य ह वा एतस्यात्मनो वैश्वानरस्य मूर्धैव सुतेजाश्चक्षुर्विश्वरूपः प्राणः पृथग्वर्त्मात्मा संदेहो बहुलो बस्तिरेव रयिः पृथिव्येव पादावुर एव वेदिर्लोमाणि बर्हिर्हृदयं गार्हपत्यो मनोऽन्वाहार्यपचन आस्यमाहवनीयः॥', 'tasya ha vā etasyātmano vaiśvānarasya mūrdhaiva sutejāś cakṣur viśvarūpaḥ prāṇaḥ pṛthagvartmātmā saṃdeho bahulo bastir eva rayiḥ pṛthivy eva pādāv ura eva vedir lomāṇi barhir hṛdayaṃ gārhapatyo mano ''nvāhāryapacana āsyam āhavanīyaḥ', null, 5018002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 19 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-19-1', 1, 'Chapter 5, Section 19, Verse 1', 'तद्यद्भक्तं प्रथममागच्छेत्तद्धोमीयम्।
+स यां प्रथमामाहुतिं जुहुयात्तां जुहुयात्प्राणाय स्वाहेति।
+प्राणस्तृप्यति॥', 'tad yad bhaktaṃ prathamam āgacchet tad dhomīyam
+sa yāṃ prathamām āhutiṃ juhuyāt tāṃ juhuyāt prāṇāya svāheti
+prāṇas tṛpyati', null, 5019001),
+('chandogya-5-19-2', 2, 'Chapter 5, Section 19, Verse 2', 'प्राणे तृप्यति चक्षुस्तृप्यति।
+चक्षुषि तृप्यत्यादित्यस्तृप्यति।
+आदित्ये तृप्यति द्यौस्तृप्यति।
+दिवि तृप्यन्त्यां यत्किंच द्यौश्चादित्यश्चाधितिष्ठतस्तत्तृप्यति।
+तस्यानु तृप्तिं तृप्यति प्रजया पशुभिरन्नाद्येन तेजसा ब्रह्मवर्चसेनेति॥', 'prāṇe tṛpyati cakṣus tṛpyati
+cakṣuṣi tṛpyaty ādityas tṛpyati
+āditye tṛpyati dyaus tṛpyati
+divi tṛpyantyāṃ yat kiṃca dyauś cādityaś cādhitiṣṭhatas tat tṛpyati
+tasyānu tṛptiṃ tṛpyati prajayā paśubhir annādyena tejasā brahmavarcaseneti', null, 5019002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 20 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-20-1', 1, 'Chapter 5, Section 20, Verse 1', 'अथ यां द्वितीयां जुहुयात्तां जुहुयाद्व्यानाय स्वाहेति।
+व्यानस्तृप्यति॥', 'atha yāṃ dvitīyāṃ juhuyāt tāṃ juhuyād vyānāya svāheti
+vyānas tṛpyati', null, 5020001),
+('chandogya-5-20-2', 2, 'Chapter 5, Section 20, Verse 2', 'व्याने तृप्यति श्रोत्रं तृप्यति।
+श्रोत्रे तृप्यति चन्द्रमास्तृप्यति।
+चन्द्रमसि तृप्यति दिशस्तृप्यन्ति।
+दिक्षु तृप्यन्तीषु यत्किंच दिशश्चन्द्रमाश्चाधितिष्ठन्ति तत्तृप्यति।
+तस्यानु तृप्तिं तृप्यति प्रजया पशुभिरन्नाद्येन तेजसा ब्रह्मवर्चसेनेति॥', 'vyāne tṛpyati śrotraṃ tṛpyati
+śrotre tṛpyati candramās tṛpyati
+candramasi tṛpyati diśas tṛpyanti
+dikṣu tṛpyantīṣu yat kiṃca diśaś candramāś cādhitiṣṭhanti tat tṛpyati
+tasyānu tṛptiṃ tṛpyati prajayā paśubhir annādyena tejasā brahmavarcaseneti', null, 5020002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 21 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-21-1', 1, 'Chapter 5, Section 21, Verse 1', 'अथ यां तृतीयां जुहुयात्तां जुहुयादपानाय स्वाहेति।
+अपानस्तृप्यति॥', 'atha yāṃ tṛtīyāṃ juhuyāt tāṃ juhuyād apānāya svāheti
+apānas tṛpyati', null, 5021001),
+('chandogya-5-21-2', 2, 'Chapter 5, Section 21, Verse 2', 'अपाने तृप्यति वाक्तृप्यति।
+वाचि तृप्यन्त्यामग्निस्तृप्यति।
+अग्नौ तृप्यति पृथिवी तृप्यति।
+पृथिव्यां तृप्यन्त्यां यत्किं च पृथिवी चाग्निश्चाधितिष्ठतस्तत्तृप्यति।
+तस्यानुतृप्तिं तृप्यति प्रजया पशुभिरन्नाद्येन तेजसा ब्रह्मवर्चसेनेति॥', 'apāne tṛpyati vāk tṛpyati
+vāci tṛpyantyām agnis tṛpyati
+agnau tṛpyati pṛthivī tṛpyati
+pṛthivyāṃ tṛpyantyāṃ yat kiṃ ca pṛthivī cāgniś cādhitiṣṭhatas tat tṛpyati
+tasyānutṛptiṃ tṛpyati prajayā paśubhir annādyena tejasā brahmavarcaseneti', null, 5021002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 22 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-22-1', 1, 'Chapter 5, Section 22, Verse 1', 'अथ यां चतुर्थीं जुहुयात्तां जुहुयात्समानाय स्वाहेति।
+समानस्तृप्यति॥', 'atha yāṃ caturthīṃ juhuyāt tāṃ juhuyāt samānāya svāheti
+samānas tṛpyati', null, 5022001),
+('chandogya-5-22-2', 2, 'Chapter 5, Section 22, Verse 2', 'समाने तृप्यति मनस्तृप्यति।
+मनसि तृप्यति पर्जन्यस्तृप्यति।
+पर्जन्ये तृप्यति विद्युत्तृप्यति।
+विद्युति तृप्यन्त्यां यत्किं च विद्युच्च पर्जन्यश्चाधितिष्ठतस्तत्तृप्यति।
+तस्यानु तृप्तिं तृप्यति प्रजया पशुभिरन्नाद्येन तेजसा ब्रह्मवर्चसेनेति॥', 'samāne tṛpyati manas tṛpyati
+manasi tṛpyati parjanyas tṛpyati
+parjanye tṛpyati vidyut tṛpyati
+vidyuti tṛpyantyāṃ yat kiṃ ca vidyuc ca parjanyaś cādhitiṣṭhatas tat tṛpyati
+tasyānu tṛptiṃ tṛpyati prajayā paśubhir annādyena tejasā brahmavarcaseneti', null, 5022002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 23 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-23-1', 1, 'Chapter 5, Section 23, Verse 1', 'अथ याम्पञ्चमीं जुहुयात्तां जुहुयातुदानाय स्वाहेति।
+उदानस्तृप्यति॥', 'atha yām pañcamīṃ juhuyāt tāṃ juhuyāt udānāya svāheti
+udānas tṛpyati', null, 5023001),
+('chandogya-5-23-2', 2, 'Chapter 5, Section 23, Verse 2', 'उदाने तृप्यति त्वक्तृप्यति त्वचि तृप्यन्त्यां वायुस्तृप्यति।
+वायौ तृप्यत्याकाशस्तृप्यति।
+आकाशे तृप्यति यत्किंच वायुश्चाकाशश्चाधितिष्ठतस्तत्तृप्यति।
+तस्यानु तृप्तिं तृप्यति प्रजया पशुभिरन्नाद्येन तेजसा ब्रह्मवर्चसेनेति॥', 'udāne tṛpyati tvak tṛpyati tvaci tṛpyantyāṃ vāyus tṛpyati
+vāyau tṛpyaty ākāśas tṛpyati
+ākāśe tṛpyati yat kiṃca vāyuś cākāśaś cādhitiṣṭhatas tat tṛpyati
+tasyānu tṛptiṃ tṛpyati prajayā paśubhir annādyena tejasā brahmavarcaseneti', null, 5023002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 24 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 5 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-5-24-1', 1, 'Chapter 5, Section 24, Verse 1', 'स य इदमविद्वानग्निहोत्रं जुहोति यथाङ्गारानपोह्य भस्मनि जुहुयात्तादृक्तत्स्यात्॥', 'sa ya idam avidvān agnihotraṃ juhoti yathāṅgārān apohya bhasmani juhuyāt tādṛk tat syāt', null, 5024001),
+('chandogya-5-24-2', 2, 'Chapter 5, Section 24, Verse 2', 'अथ य एतदेवं विद्वानग्निहोत्रं जुहोति तस्य सर्वेषु लोकेषु सर्वेषु भूतेषु सर्वेष्वात्मसु हुतं भवति॥', 'atha ya etad evaṃ vidvān agnihotraṃ juhoti tasya sarveṣu lokeṣu sarveṣu bhūteṣu sarveṣv ātmasu hutaṃ bhavati', null, 5024002),
+('chandogya-5-24-3', 3, 'Chapter 5, Section 24, Verse 3', 'तद्यथेषीकातूलमग्नौ प्रोतं प्रदूयेतैवं हास्य सर्वे पाप्मानः प्रदूयन्ते य एतदेवं विद्वानग्निहोत्रं जुहोति॥', 'tad yatheṣīkātūlam agnau protaṃ pradūyetaivaṃ hāsya sarve pāpmānaḥ pradūyante ya etad evaṃ vidvān agnihotraṃ juhoti', null, 5024003),
+('chandogya-5-24-4', 4, 'Chapter 5, Section 24, Verse 4', 'तस्मादु हैवंविद्यद्यपि चण्डालाय उच्छिष्टं प्रयच्छेत्।
+आत्मनि हैवास्य तद्वैश्वानरे हुतं स्यादिति।
+तदेष श्लोकः॥', 'tasmād u haivaṃvid yady api caṇḍālāya ucchiṣṭaṃ prayacchet
+ātmani haivāsya tad vaiśvānare hutaṃ syād iti
+tad eṣa ślokaḥ', null, 5024004),
+('chandogya-5-24-5', 5, 'Chapter 5, Section 24, Verse 5', 'यथेह क्षुधिता बाला मातरं पर्युपासते।
+एवं सर्वाणि भूतान्यग्निहोत्रमुपासत॥', 'yatheha kṣudhitā bālā mātaraṃ paryupāsate
+evaṃ sarvāṇi bhūtāny agnihotram upāsata', null, 5024005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-1-1', 1, 'Chapter 6, Section 1, Verse 1', 'श्वेतकेतुर्हारुणेय आस।
+तं ह पितोवाच श्वेतकेतो वस ब्रह्मचर्यम्।
+न वै सोम्यास्मत्कुलीनोऽननूच्य ब्रह्मबन्धुरिव भवतीति॥', 'śvetaketur hāruṇeya āsa
+taṃ ha pitovāca śvetaketo vasa brahmacaryam
+na vai somyāsmat kulīno ''nanūcya brahmabandhur iva bhavatīti', null, 6001001),
+('chandogya-6-1-2', 2, 'Chapter 6, Section 1, Verse 2', 'स ह द्वादशवर्ष उपेत्य चतुर्विंशतिवर्षः सर्वान्वेदानधीत्य महामना अनूचानमानी स्तब्ध एयाय।
+तं ह पितोवाच॥', 'sa ha dvādaśavarṣa upetya caturviṃśativarṣaḥ sarvān vedān adhītya mahāmanā anūcānamānī stabdha eyāya
+taṃ ha pitovāca', null, 6001002),
+('chandogya-6-1-3', 3, 'Chapter 6, Section 1, Verse 3', 'श्वेतकेतो यन्नु सोम्येदं महामना अनूचानमानी स्तब्धोऽसि।
+उत तमादेशमप्राक्ष्यः येनाश्रुतं श्रुतं भवत्यमतं मतमविज्ञातं विज्ञातमिति।
+कथं नु भगवः स आदेशो भवतीति॥', 'śvetaketo yan nu somyedaṃ mahāmanā anūcānamānī stabdho ''si
+uta tam ādeśam aprākṣyaḥ yenāśrutaṃ śrutaṃ bhavaty amataṃ matam avijñātaṃ vijñātam iti
+kathaṃ nu bhagavaḥ sa ādeśo bhavatīti', null, 6001003),
+('chandogya-6-1-4', 4, 'Chapter 6, Section 1, Verse 4', 'यथा सोम्यैकेन मृत्पिण्डेन सर्वं मृन्मयं विज्ञातं स्यात्।
+वाचारम्भणं विकारो नामधेयं मृत्तिकेत्येव सत्यम्॥', 'yathā somyaikena mṛtpiṇḍena sarvaṃ mṛnmayaṃ vijñātaṃ syāt
+vācārambhaṇaṃ vikāro nāmadheyaṃ mṛttikety eva satyam', null, 6001004),
+('chandogya-6-1-5', 5, 'Chapter 6, Section 1, Verse 5', 'यथा सोम्यैकेन लोहमणिना सर्वं लोहमयं विज्ञातं स्यात्।
+वाचारम्भणं विकारो नामधेयं लोहमित्येव सत्यम्॥', 'yathā somyaikena lohamaṇinā sarvaṃ lohamayaṃ vijñātaṃ syāt
+vācārambhaṇaṃ vikāro nāmadheyaṃ loham ity eva satyam', null, 6001005),
+('chandogya-6-1-6', 6, 'Chapter 6, Section 1, Verse 6', 'यथा सोम्यैकेन नखनिकृन्तनेन सर्वं कार्ष्णायसं विज्ञातं स्यात्।
+वाचारम्भणं विकारो नामधेयं कृष्णायसमित्येव सत्यम्।
+एवं सोम्य स आदेशो भवतीति॥', 'yathā somyaikena nakhanikṛntanena sarvaṃ kārṣṇāyasaṃ vijñātaṃ syāt
+vācārambhaṇaṃ vikāro nāmadheyaṃ kṛṣṇāyasam ity eva satyam
+evaṃ somya sa ādeśo bhavatīti', null, 6001006),
+('chandogya-6-1-7', 7, 'Chapter 6, Section 1, Verse 7', 'न वै नूनं भगवन्तस्त एतदवेदिषुः।
+यद्ध्येतदवेदिष्यन्कथं मे नावक्ष्यन्।
+इति भगवांस्त्वेव मे ब्रवीत्विति।
+तथा सोम्येति होवाच॥', 'na vai nūnaṃ bhagavantas ta etad avediṣuḥ
+yad dhy etad avediṣyan kathaṃ me nāvakṣyan
+iti bhagavāṃs tv eva me bravītv iti
+tathā somyeti hovāca', null, 6001007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-2-1', 1, 'Chapter 6, Section 2, Verse 1', 'सदेव सोम्येदमग्र आसीदेकमेवाद्वितीयम्।
+तद्धैक आहुरसदेवेदमग्र आसीदेकमेवाद्वितीयम्।
+तस्मादसतः सज्जायत॥', 'sad eva somyedam agra āsīd ekam evādvitīyam
+tad dhaika āhur asad evedam agra āsīd ekam evādvitīyam
+tasmād asataḥ saj jāyata', null, 6002001),
+('chandogya-6-2-2', 2, 'Chapter 6, Section 2, Verse 2', 'कुतस्तु खलु सोम्यैवं स्यादिति होवाच।
+कथमसतः सज्जायेत।
+सत्त्वेव सोम्येदमग्र आसीदेकमेवाद्वितीयम्॥', 'kutas tu khalu somyaivaṃ syād iti hovāca
+katham asataḥ saj jāyeta
+sat tv eva somyedam agra āsīd ekam evādvitīyam', null, 6002002),
+('chandogya-6-2-3', 3, 'Chapter 6, Section 2, Verse 3', 'तदैक्षत।
+बहु स्यां प्रजायेयेति।
+तत्तेजोऽसृजत।
+तत्तेज ऐक्षत।
+बहु स्यां प्रजायेयेति।
+तदपोऽसृजत।
+तस्माद्यत्र क्व च शोचति स्वेदते वा पुरुषस्तेजस एव तदध्यापो जायन्ते॥', 'tad aikṣata
+bahu syāṃ prajāyeyeti
+tat tejo ''sṛjata
+tat teja aikṣata
+bahu syāṃ prajāyeyeti
+tad apo ''sṛjata
+tasmād yatra kva ca śocati svedate vā puruṣas tejasa eva tad adhy āpo jāyante', null, 6002003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-3-1', 1, 'Chapter 6, Section 3, Verse 1', 'तेषां खल्वेषां भूतानां त्रीण्येव बीजानि भवन्त्याण्डजं जीवजमुद्भिज्जमिति॥', 'teṣāṃ khalv eṣāṃ bhūtānāṃ trīṇy eva bījāni bhavanty āṇḍajaṃ jīvajam udbhijjam iti', null, 6003001),
+('chandogya-6-3-2', 2, 'Chapter 6, Section 3, Verse 2', 'सेयं देवतैक्षत।
+हन्ताहमिमास्तिस्रो देवता अनेन जीवेनात्मनानुप्रविश्य नामरूपे व्याकरवाणीति॥', 'seyaṃ devataikṣata
+hantāham imās tisro devatā anena jīvenātmanānupraviśya nāmarūpe vyākaravāṇīti', null, 6003002),
+('chandogya-6-3-3', 3, 'Chapter 6, Section 3, Verse 3', 'तासां त्रिवृतं त्रिवृतमेकैकां करवाणीति।
+सेयं देवतेमास्तिस्रो देवता अनेनैव जीवेनात्मनानुप्रविश्य नामरूपे व्याकरोत्॥', 'tāsāṃ trivṛtaṃ trivṛtam ekaikāṃ karavāṇīti
+seyaṃ devatemās tisro devatā anenaiva jīvenātmanānupraviśya nāmarūpe vyākarot', null, 6003003),
+('chandogya-6-3-4', 4, 'Chapter 6, Section 3, Verse 4', 'तासां त्रिवृतं त्रिवृतमेकैकामकरोत्।
+यथा तु खलु सोम्येमास्तिस्रो देवतास्त्रिवृत्त्रिवृदेकैका भवति तन्मे विजानीहीति॥', 'tāsāṃ trivṛtaṃ trivṛtam ekaikām akarot
+yathā tu khalu somyemās tisro devatās trivṛt trivṛd ekaikā bhavati tan me vijānīhīti', null, 6003004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-4-1', 1, 'Chapter 6, Section 4, Verse 1', 'यदग्ने रोहितं रूपं तेजसस्तद्रूपम्।
+यच्छुक्लं तदपाम्।
+यत्कृष्णं तदन्नस्य।
+अपागादग्नेरग्नित्वम्।
+वाचारम्भणं विकारो नामधेयं त्रीणि रूपाणीत्येव सत्यम्॥', 'yad agne rohitaṃ rūpaṃ tejasas tad rūpam
+yac chuklaṃ tad apām
+yat kṛṣṇaṃ tad annasya
+apāgād agner agnitvam
+vācārambhaṇaṃ vikāro nāmadheyaṃ trīṇi rūpāṇīty eva satyam', null, 6004001),
+('chandogya-6-4-2', 2, 'Chapter 6, Section 4, Verse 2', 'यदादित्यस्य रोहितं रूपं तेजसस्तद्रूपम्।
+यच्छुक्लं तदपाम्।
+यत्कृष्णं तदन्नस्य।
+अपागादादित्यादादित्यत्वम्।
+वाचारम्भणं विकारो नामधेयं त्रीणि रूपाणीत्येव सत्यम्॥', 'yad ādityasya rohitaṃ rūpaṃ tejasas tad rūpam
+yac chuklaṃ tad apām
+yat kṛṣṇaṃ tad annasya
+apāgād ādityād ādityatvam
+vācārambhaṇaṃ vikāro nāmadheyaṃ trīṇi rūpāṇīty eva satyam', null, 6004002),
+('chandogya-6-4-3', 3, 'Chapter 6, Section 4, Verse 3', 'यच्चन्द्रमसो रोहितं रूपं तेजसस्तद्रूपम्।
+यच्छुक्लं तदपाम्।
+यत्कृष्णं तदन्नस्य।
+अपागाच्चन्द्राच्चन्द्रत्वम्।
+वाचारम्भणं विकारो नामधेयं त्रीणि रूपाणीत्येव सत्यम्॥', 'yac candramaso rohitaṃ rūpaṃ tejasas tad rūpam
+yac chuklaṃ tad apām
+yat kṛṣṇaṃ tad annasya
+apāgāc candrāc candratvam
+vācārambhaṇaṃ vikāro nāmadheyaṃ trīṇi rūpāṇīty eva satyam', null, 6004003),
+('chandogya-6-4-4', 4, 'Chapter 6, Section 4, Verse 4', 'यद्विद्युतो रोहितं रूपं तेजसस्तद्रूपम्।
+यच्छुक्लं तदपाम्।
+यत्कृष्णं तदन्नस्य।
+अपागाद्विद्युतो विद्युत्त्वम्।
+वाचारम्भणं विकारो नामधेयं त्रीणि रूपाणीत्येव सत्यम्॥', 'yad vidyuto rohitaṃ rūpaṃ tejasas tad rūpam
+yac chuklaṃ tad apām
+yat kṛṣṇaṃ tad annasya
+apāgād vidyuto vidyuttvam
+vācārambhaṇaṃ vikāro nāmadheyaṃ trīṇi rūpāṇīty eva satyam', null, 6004004),
+('chandogya-6-4-5', 5, 'Chapter 6, Section 4, Verse 5', 'एतद्ध स्म वै तद्विद्वांस आहुः पूर्वे महाशाला महाश्रोत्रियाः।
+न नोऽद्य कश्चनाश्रुतममतमविज्ञातमुदाहरिष्यति।
+इति ह्येभ्यो विदां चक्रुः॥', 'etad dha sma vai tadvidvāṃsa āhuḥ pūrve mahāśālā mahāśrotriyāḥ
+na no ''dya kaścanāśrutam amatam avijñātam udāhariṣyati
+iti hy ebhyo vidāṃ cakruḥ', null, 6004005),
+('chandogya-6-4-6', 6, 'Chapter 6, Section 4, Verse 6', 'यदु रोहितमिवाभूदिति तेजसस्तद्रूपमिति तद्विदां चक्रुः।
+यदु शुक्लमिवाभूदित्यपां रूपमिति तद्विदां चक्रुः।
+यदु कृष्णमिवाभूदित्यन्नस्य रूपमिति तद्विदां चक्रुः॥', 'yad u rohitam ivābhūd iti tejasas tad rūpam iti tad vidāṃ cakruḥ
+yad u śuklam ivābhūd ity apāṃ rūpam iti tad vidāṃ cakruḥ
+yad u kṛṣṇam ivābhūd ity annasya rūpam iti tad vidāṃ cakruḥ', null, 6004006),
+('chandogya-6-4-7', 7, 'Chapter 6, Section 4, Verse 7', 'यद्वविज्ञातमिवाभूदित्येतासामेव देवतानां समास इति तद्विदां चक्रुः।
+यथा नु खलु सोम्येमास्तिस्रो देवताः पुरुषं प्राप्य त्रिवृत्त्रिवृदेकैका भवति तन्मे विजानीहीति॥', 'yad v avijñātam ivābhūd ity etāsām eva devatānāṃ samāsa iti tad vidāṃ cakruḥ
+yathā nu khalu somyemās tisro devatāḥ puruṣaṃ prāpya trivṛt trivṛd ekaikā bhavati tan me vijānīhīti', null, 6004007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-5-1', 1, 'Chapter 6, Section 5, Verse 1', 'अन्नमशितं त्रेधा विधीयते।
+तस्य यः स्थविष्ठो धातुस्तत्पुरीषं भवति।
+यो मध्यमस्तन्मांसम्।
+योऽणिष्ठस्तन्मनः॥', 'annam aśitaṃ tredhā vidhīyate
+tasya yaḥ sthaviṣṭho dhātus tat purīṣaṃ bhavati
+yo madhyamas tan māṃsam
+yo ''ṇiṣṭhas tan manaḥ', null, 6005001),
+('chandogya-6-5-2', 2, 'Chapter 6, Section 5, Verse 2', 'आपः पीतास्त्रेधा विधीयन्ते।
+तासां यः स्थविष्ठो धातुस्तन्मूत्रं भवति।
+यो मध्यमस्तल्लोहितम्।
+योऽणिष्ठः स प्राणः॥', 'āpaḥ pītās tredhā vidhīyante
+tāsāṃ yaḥ sthaviṣṭho dhātus tan mūtraṃ bhavati
+yo madhyamas tal lohitam
+yo ''ṇiṣṭhaḥ sa prāṇaḥ', null, 6005002),
+('chandogya-6-5-3', 3, 'Chapter 6, Section 5, Verse 3', 'तेजोऽशितं त्रेधा विधीयते।
+तस्य यः स्थविष्ठो धातुस्तदस्थि भवति।
+यो मध्यमः स मज्जा।
+योऽणिष्ठः सा वाक्॥', 'tejo ''śitaṃ tredhā vidhīyate
+tasya yaḥ sthaviṣṭho dhātus tad asthi bhavati
+yo madhyamaḥ sa majjā
+yo ''ṇiṣṭhaḥ sā vāk', null, 6005003),
+('chandogya-6-5-4', 4, 'Chapter 6, Section 5, Verse 4', 'अन्नमयं हि सोम्य मनः।
+आपोमयः प्राणः।
+तेजोमयी वागिति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'annamayaṃ hi somya manaḥ
+āpomayaḥ prāṇaḥ
+tejomayī vāg iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6005004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-6-1', 1, 'Chapter 6, Section 6, Verse 1', 'दध्नः सोम्य मथ्यमानस्य योऽणिमा स ऊर्ध्वः समुदीषति।
+तत्सर्पिर्भवति॥', 'dadhnaḥ somya mathyamānasya yo ''ṇimā sa ūrdhvaḥ samudīṣati
+tat sarpir bhavati', null, 6006001),
+('chandogya-6-6-2', 2, 'Chapter 6, Section 6, Verse 2', 'एवमेव खलु सोम्यान्नस्याश्यमानस्य योऽणिमा स ऊर्ध्वः समुदीषति।
+तन्मनो भवति॥', 'evam eva khalu somyānnasyāśyamānasya yo ''ṇimā sa ūrdhvaḥ samudīṣati
+tan mano bhavati', null, 6006002),
+('chandogya-6-6-3', 3, 'Chapter 6, Section 6, Verse 3', 'अपां सोम्य पीयमानानां योऽणिमा स ऊर्ध्वः समुदीषति।
+सा प्रानो भवति॥', 'apāṃ somya pīyamānānāṃ yo ''ṇimā sa ūrdhvaḥ samudīṣati
+sā prāno bhavati', null, 6006003),
+('chandogya-6-6-4', 4, 'Chapter 6, Section 6, Verse 4', 'तेजसः सोम्याश्यमानस्य योऽणिमा स ऊर्ध्वः समुदीषति।
+सा वाग्भवति॥', 'tejasaḥ somyāśyamānasya yo ''ṇimā sa ūrdhvaḥ samudīṣati
+sā vāg bhavati', null, 6006004),
+('chandogya-6-6-5', 5, 'Chapter 6, Section 6, Verse 5', 'अन्नमयं हि सोम्य मनः।
+आपोमयः प्राणः।
+तेजोमयी वागिति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'annamayaṃ hi somya manaḥ
+āpomayaḥ prāṇaḥ
+tejomayī vāg iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6006005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-7-1', 1, 'Chapter 6, Section 7, Verse 1', 'षोडशकलः सोम्य पुरुषः।
+पञ्चदशाहानि माशीः।
+काममपः पिब।
+आपोमयः प्राणो न पिबतो विच्छेत्स्यत इति॥', 'ṣoḍaśakalaḥ somya puruṣaḥ
+pañcadaśāhāni māśīḥ
+kāmam apaḥ piba
+āpomayaḥ prāṇo na pibato vicchetsyata iti', null, 6007001),
+('chandogya-6-7-2', 2, 'Chapter 6, Section 7, Verse 2', 'स ह पञ्चदशाहानि नाश।
+अथ हैनमुपससाद किं ब्रवीमि भो इति।
+ऋचः सोम्य यजूंषि सामानीति।
+स होवाच न वै मा प्रतिभान्ति भो इति॥', 'sa ha pañcadaśāhāni nāśa
+atha hainam upasasāda kiṃ bravīmi bho iti
+ṛcaḥ somya yajūṃṣi sāmānīti
+sa hovāca na vai mā pratibhānti bho iti', null, 6007002),
+('chandogya-6-7-3', 3, 'Chapter 6, Section 7, Verse 3', 'तं होवाच यथा सोम्य महतोऽभ्याहितस्यैकोऽङ्गारः खद्योतमात्रः परिशिष्टः स्यात्।
+तेन ततोऽपि न बहु दहेत्।
+एवं सोम्य ते षोडशानां कलानामेका कला अतिशिष्टा स्यात्।
+तयैतर्हि वेदान्नानुभवसि।
+अशान।
+अथ मे विज्ञास्यसीति॥', 'taṃ hovāca yathā somya mahato ''bhyāhitasyaiko ''ṅgāraḥ khadyotamātraḥ pariśiṣṭaḥ syāt
+tena tato ''pi na bahu dahet
+evaṃ somya te ṣoḍaśānāṃ kalānām ekā kalā atiśiṣṭā syāt
+tayaitarhi vedān nānubhavasi
+aśāna
+atha me vijñāsyasīti', null, 6007003),
+('chandogya-6-7-4', 4, 'Chapter 6, Section 7, Verse 4', 'स हाश।
+अथ हैनमुपससाद।
+तं ह यत्किं च पप्रच्छ सर्वं ह प्रतिपेदे॥', 'sa hāśa
+atha hainam upasasāda
+taṃ ha yat kiṃ ca papraccha sarvaṃ ha pratipede', null, 6007004),
+('chandogya-6-7-5', 5, 'Chapter 6, Section 7, Verse 5', 'तं होवाच।
+यथा सोम्य महतोऽभ्याहितस्यैकमङ्गारं खद्योतमात्रं परिशिष्टं तं तृनैरुपसमाधाय प्राज्वलयेत्तेन ततोऽपि बहु दहेत्॥', 'taṃ hovāca
+yathā somya mahato ''bhyāhitasyaikam aṅgāraṃ khadyotamātraṃ pariśiṣṭaṃ taṃ tṛnair upasamādhāya prājvalayet tena tato ''pi bahu dahet', null, 6007005),
+('chandogya-6-7-6', 6, 'Chapter 6, Section 7, Verse 6', 'एवं सोम्य ते षोडशानां कलानामेका कलातिशिष्टाभूत्।
+सान्नेनोपसमाहिता प्राज्वाली।
+तयैतर्हि वेदाननुभवसि।
+अन्नमयं हि सोम्य मनः।
+आपोमयः प्राणः।
+तेजोमयी वागिति।
+तद्धास्य विजज्ञाविति विजज्ञाविति॥', 'evaṃ somya te ṣoḍaśānāṃ kalānām ekā kalātiśiṣṭābhūt
+sānnenopasamāhitā prājvālī
+tayaitarhi vedān anubhavasi
+annamayaṃ hi somya manaḥ
+āpomayaḥ prāṇaḥ
+tejomayī vāg iti
+tad dhāsya vijajñāv iti vijajñāv iti', null, 6007006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-8-1', 1, 'Chapter 6, Section 8, Verse 1', 'उद्दालको हारुणिः श्वेतकेतुं पुत्रमुवाच स्वप्नान्तं मे सोम्य विजानीहीति।
+यत्रैतत्पुरुषः स्वपिति नाम सता सोम्य तदा संपन्नो भवति।
+स्वमपीतो भवति।
+तस्मादेनं स्वपितीत्याचक्षते।
+स्वं ह्यपीतो भवति॥', 'uddālako hāruṇiḥ śvetaketuṃ putram uvāca svapnāntaṃ me somya vijānīhīti
+yatraitat puruṣaḥ svapiti nāma satā somya tadā saṃpanno bhavati
+svam apīto bhavati
+tasmād enaṃ svapitīty ācakṣate
+svaṃ hy apīto bhavati', null, 6008001),
+('chandogya-6-8-2', 2, 'Chapter 6, Section 8, Verse 2', 'स यथा शकुनिः सूत्रेण प्रबद्धो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा बन्धनमेवोपश्रयते।
+एवमेव खलु सोम्य तन्मनो दिशं दिशं पतित्वान्यत्रायतनमलब्ध्वा प्राणमेवोपश्रयते।
+प्राणबन्धनं हि सोम्य मन इति॥', 'sa yathā śakuniḥ sūtreṇa prabaddho diśaṃ diśaṃ patitvānyatrāyatanam alabdhvā bandhanam evopaśrayate
+evam eva khalu somya tan mano diśaṃ diśaṃ patitvānyatrāyatanam alabdhvā prāṇam evopaśrayate
+prāṇabandhanaṃ hi somya mana iti', null, 6008002),
+('chandogya-6-8-3', 3, 'Chapter 6, Section 8, Verse 3', 'अशनापिपासे मे सोम्य विजानीहीति।
+यत्रैतत्पुरुषोऽशिशिषति नामाप एव तदशितं नयन्ते।
+तद्यथा गोनायोऽश्वनायः पुरुषनाय इत्येवं तदप आचक्षतेऽशनायेति।
+तत्रैतच्छुङ्गमुत्पतितं सोम्य विजानीहि।
+नेदममूलं भविष्यतीति॥', 'aśanāpipāse me somya vijānīhīti
+yatraitat puruṣo ''śiśiṣati nāmāpa eva tad aśitaṃ nayante
+tad yathā gonāyo ''śvanāyaḥ puruṣanāya ity evaṃ tad apa ācakṣate ''śanāyeti
+tatraitac chuṅgam utpatitaṃ somya vijānīhi
+nedam amūlaṃ bhaviṣyatīti', null, 6008003),
+('chandogya-6-8-4', 4, 'Chapter 6, Section 8, Verse 4', 'तस्य क्व मूलं स्यादन्यत्रान्नात्।
+एवमेव खलु सोम्यान्नेन शुङ्गेनापो मूलमन्विच्छ।
+अद्भिः सोम्य शुङ्गेन तेजो मूलमन्विच्छ।
+तेजसा सोम्य शुङ्गेन सन्मूलमन्विच्छ।
+सन्मूलाः सोम्येमाः सर्वाः प्रजाः सदायतनाः सत्प्रतिष्ठाः॥', 'tasya kva mūlaṃ syād anyatrānnāt
+evam eva khalu somyānnena śuṅgenāpo mūlam anviccha
+adbhiḥ somya śuṅgena tejo mūlam anviccha
+tejasā somya śuṅgena sanmūlam anviccha
+sanmūlāḥ somyemāḥ sarvāḥ prajāḥ sadāyatanāḥ satpratiṣṭhāḥ', null, 6008004),
+('chandogya-6-8-5', 5, 'Chapter 6, Section 8, Verse 5', 'अथ यत्रैतत्पुरुषः पिपासति नाम तेज एव तत्पीतं नयते।
+तद्यथा गोनायोऽश्वनायः पुरुषनाय इत्येवं तत्तेज आचष्ट उदन्येति।
+तत्रैतदेव शुङ्गमुत्पतितं सोम्य विजानीहि।
+नेदममूलं भविष्यतीति॥', 'atha yatraitat puruṣaḥ pipāsati nāma teja eva tat pītaṃ nayate
+tad yathā gonāyo ''śvanāyaḥ puruṣanāya ity evaṃ tat teja ācaṣṭa udanyeti
+tatraitad eva śuṅgam utpatitaṃ somya vijānīhi
+nedam amūlaṃ bhaviṣyatīti', null, 6008005),
+('chandogya-6-8-6', 6, 'Chapter 6, Section 8, Verse 6', 'तस्य क्व मूलं स्यादन्यत्राद्भ्यः।
+अद्भिः सोम्य शुङ्गेन तेजो मूलमन्विच्छ।
+तेजसा सोम्य शुङ्गेन सन्मूलमन्विच्छ।
+सन्मूलाः सोम्येमाः सर्वाः प्रजाः सदायतनाः सत्प्रतिष्ठाः।
+यथा नु खलु सोम्येमास्तिस्रो देवताः पुरुषं प्राप्य त्रिवृत्त्रिवृदेकैका भवति तदुक्तं पुरस्तादेव भवति।
+अस्य सोम्य पुरुषस्य प्रयतो वाङ्मनसि संपद्यते मनः प्राणे प्राणस्तेजसि तेजः परस्यां देवतायाम्॥', 'tasya kva mūlaṃ syād anyatrādbhyaḥ
+adbhiḥ somya śuṅgena tejo mūlam anviccha
+tejasā somya śuṅgena sanmūlam anviccha
+sanmūlāḥ somyemāḥ sarvāḥ prajāḥ sad āyatanāḥ satpratiṣṭhāḥ
+yathā nu khalu somyemās tisro devatāḥ puruṣaṃ prāpya trivṛt trivṛd ekaikā bhavati tad uktaṃ purastād eva bhavati
+asya somya puruṣasya prayato vāṅ manasi saṃpadyate manaḥ prāṇe prāṇas tejasi tejaḥ parasyāṃ devatāyām', null, 6008006),
+('chandogya-6-8-7', 7, 'Chapter 6, Section 8, Verse 7', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6008007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-9-1', 1, 'Chapter 6, Section 9, Verse 1', 'यथा सोम्य मधु मधुकृतो निस्तिष्ठन्ति नानात्ययानां वृक्षाणां रसान्समवहारमेकतां रसं गमयन्ति॥', 'yathā somya madhu madhukṛto nistiṣṭhanti nānātyayānāṃ vṛkṣāṇāṃ rasān samavahāram ekatāṃ rasaṃ gamayanti', null, 6009001),
+('chandogya-6-9-2', 2, 'Chapter 6, Section 9, Verse 2', 'ते यथा तत्र न विवेकं लभन्तेऽमुष्याहं वृक्षस्य रसोऽस्म्यमुष्याहं वृक्षस्य रसोऽस्मीति।
+एवमेव खलु सोम्येमाः सर्वाः प्रजाः सति संपद्य न विदुः सति संपद्यामह इति॥', 'te yathā tatra na vivekaṃ labhante ''muṣyāhaṃ vṛkṣasya raso ''smy amuṣyāhaṃ vṛkṣasya raso ''smīti
+evam eva khalu somyemāḥ sarvāḥ prajāḥ sati saṃpadya na viduḥ sati saṃpadyāmaha iti', null, 6009002),
+('chandogya-6-9-3', 3, 'Chapter 6, Section 9, Verse 3', 'त इह व्यघ्रो वा सिंहो वा वृको वा वराहो वा कीटो वा पतङ्गो वा दंशो वा मशको वा यद्यद्भवन्ति तदाभवन्ति॥', 'ta iha vyaghro vā siṃho vā vṛko vā varāho vā kīṭo vā pataṅgo vā daṃśo vā maśako vā yad yad bhavanti tad ābhavanti', null, 6009003),
+('chandogya-6-9-4', 4, 'Chapter 6, Section 9, Verse 4', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6009004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-10-1', 1, 'Chapter 6, Section 10, Verse 1', 'इमाः सोम्य नद्यः पुरस्तात्प्राच्यः स्यन्दन्ते पश्चात्प्रतीच्यः।
+ताः समुद्रात्समुद्रमेवापियन्ति।
+स समुद्र एव भवति।
+ता यथा तत्र न विदुरियमहमस्मीयमहमस्मीति॥', 'imāḥ somya nadyaḥ purastāt prācyaḥ syandante paścāt pratīcyaḥ
+tāḥ samudrāt samudram evāpiyanti
+sa samudra eva bhavati
+tā yathā tatra na vidur iyam aham asmīyam aham asmīti', null, 6010001),
+('chandogya-6-10-2', 2, 'Chapter 6, Section 10, Verse 2', 'एवमेव खलु सोम्येमाः सर्वाः प्रजाः सत आगम्य न विदुः सत आगच्छामह इति।
+त इह व्याघ्रो वा सिंहो वा वृको वा वराहो वा कीटो वा पतङ्गो वा दंशो वा मशको वा यद्यद्भवन्ति तदाभवन्ति॥', 'evam eva khalu somyemāḥ sarvāḥ prajāḥ sata āgamya na viduḥ sata āgacchāmaha iti
+ta iha vyāghro vā siṃho vā vṛko vā varāho vā kīṭo vā pataṅgo vā daṃśo vā maśako vā yad yad bhavanti tad ābhavanti', null, 6010002),
+('chandogya-6-10-3', 3, 'Chapter 6, Section 10, Verse 3', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6010003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-11-1', 1, 'Chapter 6, Section 11, Verse 1', 'अस्य सोम्य महतो वृक्षस्य यो मूलेऽभ्याहन्याज्जीवन्स्रवेद्यो मध्येऽभ्याहन्याज्जीवन्स्रवेद्योऽग्रेऽभ्याहन्याज्जीवन्स्रवेत्।
+स एष जीवेनात्मनानुप्रभूतः पेपीयमानो मोदमानस्तिष्ठति॥', 'asya somya mahato vṛkṣasya yo mūle ''bhyāhanyāj jīvan sraved yo madhye ''bhyāhanyāj jīvan sraved yo ''gre ''bhyāhanyāj jīvan sravet
+sa eṣa jīvenātmanānuprabhūtaḥ pepīyamāno modamānas tiṣṭhati', null, 6011001),
+('chandogya-6-11-2', 2, 'Chapter 6, Section 11, Verse 2', 'अस्य यदेकां शाखां जीवो जहात्यथ सा शुष्यति।
+द्वितीयां जहात्यथ सा शुष्यति।
+तृतीयां जहात्यथ सा शुष्यति।
+सर्वं जहाति सर्वः शुष्यति॥', 'asya yad ekāṃ śākhāṃ jīvo jahāty atha sā śuṣyati
+dvitīyāṃ jahāty atha sā śuṣyati
+tṛtīyāṃ jahāty atha sā śuṣyati
+sarvaṃ jahāti sarvaḥ śuṣyati', null, 6011002),
+('chandogya-6-11-3', 3, 'Chapter 6, Section 11, Verse 3', 'एवमेव खलु सोम्य विद्धीति ह उवाच।
+जीवापेतं वाव किलेदं म्रियते न जीवो म्रियत इति।
+स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'evam eva khalu somya viddhīti ha uvāca
+jīvāpetaṃ vāva kiledaṃ mriyate na jīvo mriyata iti
+sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6011003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-12-1', 1, 'Chapter 6, Section 12, Verse 1', 'न्यग्रोधफलमत आहरेति।
+इदं भगव इति।
+भिन्द्धीति।
+भिन्नं भगव इति।
+किमत्र पश्यसीति।
+अण्व्य इवेमा धाना भगव इति।
+आसामङ्गैकां भिन्द्धीति।
+भिन्ना भगव इति।
+किमत्र पश्यसीति।
+न किंचन भगव इति॥', 'nyagrodhaphalam ata āhareti
+idaṃ bhagava iti
+bhinddhīti
+bhinnaṃ bhagava iti
+kim atra paśyasīti
+aṇvya ivemā dhānā bhagava iti
+āsām aṅgaikāṃ bhinddhīti
+bhinnā bhagava iti
+kim atra paśyasīti
+na kiṃcana bhagava iti', null, 6012001),
+('chandogya-6-12-2', 2, 'Chapter 6, Section 12, Verse 2', 'तं होवाच यं वै सोम्यैतमणिमानं न निभालयस एतस्य वै सोम्यैषोऽणिम्न एवं महान्यग्रोधस्तिष्ठति।
+श्रद्धत्स्व सोम्येति॥', 'taṃ hovāca yaṃ vai somyaitam aṇimānaṃ na nibhālayasa etasya vai somyaiṣo ''ṇimna evaṃ mahānyagrodhas tiṣṭhati
+śraddhatsva somyeti', null, 6012002),
+('chandogya-6-12-3', 3, 'Chapter 6, Section 12, Verse 3', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6012003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-13-1', 1, 'Chapter 6, Section 13, Verse 1', 'लवणमेतदुदकेऽवधायाथ मा प्रातरुपसीदथा इति।
+स ह तथा चकार।
+तं होवाच।
+यद्दोषा लवणमुदकेऽवाधा अङ्ग तदाहरेति।
+तद्धावमृश्य न विवेद॥', 'lavaṇam etad udake ''vadhāyātha mā prātar upasīdathā iti
+sa ha tathā cakāra
+taṃ hovāca
+yad doṣā lavaṇam udake ''vādhā aṅga tad āhareti
+tad dhāvamṛśya na viveda', null, 6013001),
+('chandogya-6-13-2', 2, 'Chapter 6, Section 13, Verse 2', 'यथा विलीनमेव।
+अन्;गास्यान्तादाचामेति।
+कथमिति।
+लवणमिति।
+मध्यादाचामेति।
+कथमिति।
+लवणमिति।
+अन्तादाचामेति।
+कथमिति।
+लवणमिति।
+अभिप्रास्यैतदथ मोपसीदथा इति।
+तद्ध तथा चकार।
+तच्छश्वत्संवर्तते।
+तं होवाचात्र वाव किल तत्सोम्य न निभालयसेऽत्रैव किलेति॥', 'yathā vilīnam eva
+an;gāsyāntād ācāmeti
+katham iti
+lavaṇam iti
+madhyād ācāmeti
+katham iti
+lavaṇam iti
+antād ācāmeti
+katham iti
+lavaṇam iti
+abhiprāsyaitad atha mopasīdathā iti
+tad dha tathā cakāra
+tac chaśvat saṃvartate
+taṃ hovācātra vāva kila tat somya na nibhālayase ''traiva kileti', null, 6013002),
+('chandogya-6-13-3', 3, 'Chapter 6, Section 13, Verse 3', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6013003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-14-1', 1, 'Chapter 6, Section 14, Verse 1', 'यथा सोम्य पुरुषं गन्धारेभ्योऽभिनद्धाक्षमानीय तं ततोऽतिजने विसृजेत्।
+स यथा तत्र प्राङ्वोदङ्वा अधराङ्वा प्रत्यङ्वा प्रध्मायीताभिनद्धाक्ष आनीतोऽभिनद्धाक्षो विसृष्टः॥', 'yathā somya puruṣaṃ gandhārebhyo ''bhinaddhākṣam ānīya taṃ tato ''tijane visṛjet
+sa yathā tatra prāṅ vodaṅ vā adharāṅ vā pratyaṅ vā pradhmāyītābhinaddhākṣa ānīto ''bhinaddhākṣo visṛṣṭaḥ', null, 6014001),
+('chandogya-6-14-2', 2, 'Chapter 6, Section 14, Verse 2', 'तस्य यथाभिनहनं प्रमुच्य प्रब्रूयादेतां दिशं गन्धारा एतां दिशं व्रजेति।
+स ग्रामाद्ग्रामं पृच्छन्पण्डितो मेधावी गन्धारानेवोपसंपद्येत।
+एवमेवेहाचार्यवान्पुरुषो वेद।
+तस्य तावदेव चिरं यावन्न विमोक्ष्येऽथ संपत्स्य इति॥', 'tasya yathābhinahanaṃ pramucya prabrūyād etāṃ diśaṃ gandhārā etāṃ diśaṃ vrajeti
+sa grāmād grāmaṃ pṛcchan paṇḍito medhāvī gandhārān evopasaṃpadyeta
+evam evehācāryavān puruṣo veda
+tasya tāvad eva ciraṃ yāvan na vimokṣye ''tha saṃpatsya iti', null, 6014002),
+('chandogya-6-14-3', 3, 'Chapter 6, Section 14, Verse 3', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6014003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-15-1', 1, 'Chapter 6, Section 15, Verse 1', 'पुरुषं सोम्योतोपतापिनं ज्ञातयः पर्युपासते जानासि मां जानासि मामिति।
+तस्य यावन्न वाङ्मनसि संपद्यते मनः प्राणे प्राणस्तेजसि तेजः परस्यां देवतायां तावज्जानाति॥', 'puruṣaṃ somyotopatāpinaṃ jñātayaḥ paryupāsate jānāsi māṃ jānāsi mām iti
+tasya yāvan na vāṅ manasi saṃpadyate manaḥ prāṇe prāṇas tejasi tejaḥ parasyāṃ devatāyāṃ tāvaj jānāti', null, 6015001),
+('chandogya-6-15-2', 2, 'Chapter 6, Section 15, Verse 2', 'अथ यदास्य वाङ्मनसि संपद्यते मनः प्राणे प्राणस्तेजसि तेजः परस्यां देवतायामथ न जानाति॥', 'atha yadāsya vāṅ manasi saṃpadyate manaḥ prāṇe prāṇas tejasi tejaḥ parasyāṃ devatāyām atha na jānāti', null, 6015002),
+('chandogya-6-15-3', 3, 'Chapter 6, Section 15, Verse 3', 'स य एषोऽणिमैतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+भूय एव मा भगवान्विज्ञापयत्विति।
+तथा सोम्येति होवाच॥', 'sa ya eṣo ''ṇimaitad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+bhūya eva mā bhagavān vijñāpayatv iti
+tathā somyeti hovāca', null, 6015003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 6 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-6-16-1', 1, 'Chapter 6, Section 16, Verse 1', 'पुरुषं सोम्योत हस्तगृहीतमानयन्ति।
+अपहार्षीत्स्तेयमकार्षीत्परशुमस्मै तपतेति।
+स यदि तस्य कर्ता भवति तत एवानृतमात्मानं कुरुते।
+सोऽनृताभिसंधोऽनृतेनात्मानमन्तर्धाय परशुं तप्तं प्रतिगृह्णाति।
+स दह्यते।
+अथ हन्यते॥', 'puruṣaṃ somyota hastagṛhītam ānayanti
+apahārṣīt steyam akārṣīt paraśum asmai tapateti
+sa yadi tasya kartā bhavati tata evānṛtam ātmānaṃ kurute
+so ''nṛtābhisaṃdho ''nṛtenātmānam antardhāya paraśuṃ taptaṃ pratigṛhṇāti
+sa dahyate
+atha hanyate', null, 6016001),
+('chandogya-6-16-2', 2, 'Chapter 6, Section 16, Verse 2', 'अथ यदि तस्याकर्ता भवति।
+तत एव सत्यमात्मानं कुरुते।
+स सत्याभिसन्धः सत्येनात्मानमन्तर्धाय परशुं तप्तं प्रतिगृह्णाति।
+स न दह्यते।
+अथ मुच्यते॥', 'atha yadi tasyākartā bhavati
+tata eva satyam ātmānaṃ kurute
+sa satyābhisandhaḥ satyenātmānam antardhāya paraśuṃ taptaṃ pratigṛhṇāti
+sa na dahyate
+atha mucyate', null, 6016002),
+('chandogya-6-16-3', 3, 'Chapter 6, Section 16, Verse 3', 'स यथा तत्र नादाह्येत।
+एतदात्म्यमिदं सर्वम्।
+तत्सत्यम्।
+स आत्मा।
+तत्त्वमसि श्वेतकेतो इति।
+तद्धास्य विजज्ञाविति विजज्ञाविति॥', 'sa yathā tatra nādāhyeta
+etad ātmyam idaṃ sarvam
+tat satyam
+sa ātmā
+tat tvam asi śvetaketo iti
+tad dhāsya vijajñāv iti vijajñāv iti', null, 6016003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-1-1', 1, 'Chapter 7, Section 1, Verse 1', 'अधीहि भगव इति होपससाद सनत्कुमारं नारदः।
+तं होवाच यद्वेत्थ तेन मोपसीद।
+ततस्त ऊर्ध्वं वक्ष्यामीति।
+स होवाच॥', 'adhīhi bhagava iti hopasasāda sanatkumāraṃ nāradaḥ
+taṃ hovāca yad vettha tena mopasīda
+tatas ta ūrdhvaṃ vakṣyāmīti
+sa hovāca', null, 7001001),
+('chandogya-7-1-2', 2, 'Chapter 7, Section 1, Verse 2', 'ऋग्वेदं भगवोऽध्येमि यजुर्वेदं सामवेदमाथर्वणं चतुर्थमितिहासपुराणं पञ्चमं वेदानां वेदं पित्र्यं राशिं दैवं निधिं वाकोवाक्यमेकायनं देवविद्यां ब्रह्मविद्यां भूतविद्यां क्षत्रविद्यां नक्षत्रविद्यां सर्पदेवजनविद्यामेतद्भगवोऽध्येमि॥', 'ṛgvedaṃ bhagavo ''dhyemi yajurvedaṃ sāmavedam ātharvaṇaṃ caturtham itihāsapurāṇaṃ pañcamaṃ vedānāṃ vedaṃ pitryaṃ rāśiṃ daivaṃ nidhiṃ vākovākyam ekāyanaṃ devavidyāṃ brahmavidyāṃ bhūtavidyāṃ kṣatravidyāṃ nakṣatravidyāṃ sarpadevajanavidyām etad bhagavo ''dhyemi', null, 7001002),
+('chandogya-7-1-3', 3, 'Chapter 7, Section 1, Verse 3', 'सोऽहं भगवो मन्त्रविदेवास्मि नात्मवित्।
+श्रुतं ह्येव मे भगवद्दृशेभ्यस्तरति शोकमात्मविदिति।
+सोऽहं भगवः शोचामि।
+तं मा भगवाञ्छोकस्य पारं तारयत्विति।
+तं होवाच यद्वै किंचैतदध्यगीष्ठा नामैवैतत्॥', 'so ''haṃ bhagavo mantravid evāsmi nātmavit
+śrutaṃ hy eva me bhagavaddṛśebhyas tarati śokam ātmavid iti
+so ''haṃ bhagavaḥ śocāmi
+taṃ mā bhagavāñ chokasya pāraṃ tārayatv iti
+taṃ hovāca yad vai kiṃcaitad adhyagīṣṭhā nāmaivaitat', null, 7001003),
+('chandogya-7-1-4', 4, 'Chapter 7, Section 1, Verse 4', 'नाम वा ऋग्वेदो यजुर्वेदः सामवेद आथर्वणश्चतुर्थ इतिहासपुराणः पञ्चमो वेदानां वेदः पित्र्यो राशिर्दैवो निधिर्वाकोवाक्यमेकायनं देवविद्या ब्रह्मविद्या भूतविद्या क्षत्रविद्या नक्षत्रविद्या सर्पदेवजनविद्या।
+नामैवैतत्।
+नामोपास्स्वेति॥', 'nāma vā ṛgvedo yajurvedaḥ sāmaveda ātharvaṇaś caturtha itihāsapurāṇaḥ pañcamo vedānāṃ vedaḥ pitryo rāśir daivo nidhir vākovākyam ekāyanaṃ devavidyā brahmavidyā bhūtavidyā kṣatravidyā nakṣatravidyā sarpadevajanavidyā
+nāmaivaitat
+nāmopāssveti', null, 7001004),
+('chandogya-7-1-5', 5, 'Chapter 7, Section 1, Verse 5', 'स यो नाम ब्रह्मेत्युपास्ते।
+यावन्नाम्नो गतं तत्रास्य यथाकामचारो भवति यो नाम ब्रह्मेत्युपास्ते।
+अस्ति भगवो नाम्नो भूय इति।
+नाम्नो वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo nāma brahmety upāste
+yāvan nāmno gataṃ tatrāsya yathākāmacāro bhavati yo nāma brahmety upāste
+asti bhagavo nāmno bhūya iti
+nāmno vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7001005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-2-1', 1, 'Chapter 7, Section 2, Verse 1', 'वाग्वाव नाम्नो भूयसी।
+वाग्वा ऋग्वेदं विज्ञापयति यजुर्वेदं सामवेदमाथर्वणं चतुर्थमितिहासपुराणं पञ्चमं वेदानां वेदं पित्र्यं राशिं दैवं निधिं वाकोवाक्यमेकायनं देवविद्यां ब्रह्मविद्यां भूतविद्यां क्षत्रविद्यां नक्षत्रविद्यां सर्पदेवजनविद्यां दिवं च पृथिवीं च वायुं चाकाशं चापश्च तेजश्च देवांश्च मनुष्यांश्च पशूंश्च वयांसि च तृणवनस्पतीञ्श्वापदान्याकीटपतङ्गपिपीलकं धर्मं चाधर्मं।
+च सत्यं चानृतं च साधु चासाधु च हृदयज्ञं चाहृदयज्ञं च।
+यद्वै वाङ्नाभविष्यन्न धर्मो नाधर्मो व्यज्ञापयिष्यन्न सत्यं नानृतं न साधु नासाधु न हृदयज्ञो नाहृदयज्ञः।
+वागेवैतद्सर्वं विज्ञापयति वाचमुपास्स्वेति॥', 'vāg vāva nāmno bhūyasī
+vāg vā ṛgvedaṃ vijñāpayati yajurvedaṃ sāmavedam ātharvaṇaṃ caturtham itihāsapurāṇaṃ pañcamaṃ vedānāṃ vedaṃ pitryaṃ rāśiṃ daivaṃ nidhiṃ vākovākyam ekāyanaṃ devavidyāṃ brahmavidyāṃ bhūtavidyāṃ kṣatravidyāṃ nakṣatravidyāṃ sarpadevajanavidyāṃ divaṃ ca pṛthivīṃ ca vāyuṃ cākāśaṃ cāpaś ca tejaś ca devāṃś ca manuṣyāṃś ca paśūṃś ca vayāṃsi ca tṛṇavanaspatīñ śvāpadāny ākīṭapataṅgapipīlakaṃ dharmaṃ cādharmaṃ
+ca satyaṃ cānṛtaṃ ca sādhu cāsādhu ca hṛdayajñaṃ cāhṛdayajñaṃ ca
+yad vai vāṅ nābhaviṣyan na dharmo nādharmo vyajñāpayiṣyan na satyaṃ nānṛtaṃ na sādhu nāsādhu na hṛdayajño nāhṛdayajñaḥ
+vāg evaitad sarvaṃ vijñāpayati vācam upāssveti', null, 7002001),
+('chandogya-7-2-2', 2, 'Chapter 7, Section 2, Verse 2', 'स यो वाचं ब्रह्मेत्युपास्ते।
+यावद्वाचो गतं तत्रास्य यथाकामचारो भवति यो वाचं ब्रह्मेत्युपास्ते।
+अस्ति भगवो वाचो भूय इति।
+वाचो वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo vācaṃ brahmety upāste
+yāvad vāco gataṃ tatrāsya yathākāmacāro bhavati yo vācaṃ brahmety upāste
+asti bhagavo vāco bhūya iti
+vāco vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7002002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-3-1', 1, 'Chapter 7, Section 3, Verse 1', 'मनो वाव वाचो भूयः।
+यथा वै द्वे वामलके द्वे वा कोले द्वौ वाक्षौ मुष्टिरनुभवत्येवं वाचं च नाम च मनोऽनुभवति।
+स यदा मनसा मनस्यति मन्त्रानधीयीयेत्यथाधीते।
+कर्माणि कुर्वीयेत्यथ कुरुते।
+पुत्रांश्च पशूंश्चेच्छेयेत्यथेच्छते।
+इमं च लोकममुं चेच्छेयेत्यथेच्छते।
+मनो ह्यात्मा।
+मनो हि लोकः।
+मनो हि ब्रह्म।
+मन उपास्स्वेति॥', 'mano vāva vāco bhūyaḥ
+yathā vai dve vāmalake dve vā kole dvau vākṣau muṣṭir anubhavaty evaṃ vācaṃ ca nāma ca mano ''nubhavati
+sa yadā manasā manasyati mantrān adhīyīyety athādhīte
+karmāṇi kurvīyety atha kurute
+putrāṃś ca paśūṃś ceccheyety athecchate
+imaṃ ca lokam amuṃ ceccheyety athecchate
+mano hy ātmā
+mano hi lokaḥ
+mano hi brahma
+mana upāssveti', null, 7003001),
+('chandogya-7-3-2', 2, 'Chapter 7, Section 3, Verse 2', 'स यो मनो ब्रह्मेत्युपास्ते।
+यावन्मनसो गतं तत्रास्य यथाकामचारो भवति यो मनो ब्रह्मेत्युपास्ते।
+अस्ति भगवो मनसो भूय इति।
+मनसो वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo mano brahmety upāste
+yāvan manaso gataṃ tatrāsya yathākāmacāro bhavati yo mano brahmety upāste
+asti bhagavo manaso bhūya iti
+manaso vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7003002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-4-1', 1, 'Chapter 7, Section 4, Verse 1', 'संकल्पो वाव मनसो भूयान्।
+यदा वै संकल्पयतेऽथ मनस्यति।
+अथ वाचमीरयति।
+तामु नाम्नीयूअति।
+नाम्नि मन्त्रा एकं भवन्ति।
+मन्त्रेषु कर्माणि॥', 'saṃkalpo vāva manaso bhūyān
+yadā vai saṃkalpayate ''tha manasyati
+atha vācam īrayati
+tām u nāmnīyūati
+nāmni mantrā ekaṃ bhavanti
+mantreṣu karmāṇi', null, 7004001),
+('chandogya-7-4-2', 2, 'Chapter 7, Section 4, Verse 2', 'तानि ह वा एतानि संकल्पैकायनानि संकल्पात्मकानि संकल्पे प्रतिष्ठितानि।
+समकॢपतां द्यावापृथिवी।
+समकल्पेतां वायुश्चाकाशं च।
+समकल्पन्तापश्च तेजश्च।
+तेषां संकॢप्त्यै वर्षं संकल्पते।
+वर्षस्य संकॢप्त्या अन्नं संकल्पते।
+अन्नस्य संकॢप्त्यै प्राणाः संकल्पन्ते।
+प्राणानां संकॢप्त्यै मन्त्राः संकल्पन्ते।
+मन्त्राणां संकॢप्त्यै कर्माणि संकल्पन्ते।
+कर्मणां संकॢप्त्यै लोकः संकल्पते।
+लोकस्य संकॢप्त्यै सर्वं संकल्पते।
+स एष संकल्पः।
+संकल्पमुपास्स्वेति॥', 'tāni ha vā etāni saṃkalpaikāyanāni saṃkalpātmakāni saṃkalpe pratiṣṭhitāni
+samakḷpatāṃ dyāvāpṛthivī
+samakalpetāṃ vāyuś cākāśaṃ ca
+samakalpantāpaś ca tejaś ca
+teṣāṃ saṃkḷptyai varṣaṃ saṃkalpate
+varṣasya saṃkḷptyā annaṃ saṃkalpate
+annasya saṃkḷptyai prāṇāḥ saṃkalpante
+prāṇānāṃ saṃkḷptyai mantrāḥ saṃkalpante
+mantrāṇāṃ saṃkḷptyai karmāṇi saṃkalpante
+karmaṇāṃ saṃkḷptyai lokaḥ saṃkalpate
+lokasya saṃkḷptyai sarvaṃ saṃkalpate
+sa eṣa saṃkalpaḥ
+saṃkalpam upāssveti', null, 7004002),
+('chandogya-7-4-3', 3, 'Chapter 7, Section 4, Verse 3', 'स यः संकल्पं ब्रह्मेत्युपास्ते।
+कॢप्तान्वै स लोकान्ध्रुवान्ध्रुवः प्रतिष्ठितान्प्रतिष्ठितोऽव्यथमानानव्यथमानोऽभिसिध्यति।
+यावत्संकल्पस्य गतं तत्रास्य यथाकामचारो भवति यः संकल्पं ब्रह्मेत्युपास्ते।
+अस्ति भगवः संकल्पाद्भूय इति।
+संकल्पाद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yaḥ saṃkalpaṃ brahmety upāste
+kḷptān vai sa lokān dhruvān dhruvaḥ pratiṣṭhitān pratiṣṭhito ''vyathamānān avyathamāno ''bhisidhyati
+yāvat saṃkalpasya gataṃ tatrāsya yathākāmacāro bhavati yaḥ saṃkalpaṃ brahmety upāste
+asti bhagavaḥ saṃkalpād bhūya iti
+saṃkalpād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7004003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-5-1', 1, 'Chapter 7, Section 5, Verse 1', 'चित्तं वाव संकल्पाद्भूयः।
+यदा वै चेतयतेऽथ संकल्पयते।
+अथ मनस्यति।
+अथ वाचमीरयति।
+तामु नाम्नीयूअति।
+नाम्नि मन्त्रा एकं भवन्ति।
+मन्त्रेषु कर्माणि॥', 'cittaṃ vāva saṃkalpād bhūyaḥ
+yadā vai cetayate ''tha saṃkalpayate
+atha manasyati
+atha vācam īrayati
+tām u nāmnīyūati
+nāmni mantrā ekaṃ bhavanti
+mantreṣu karmāṇi', null, 7005001),
+('chandogya-7-5-2', 2, 'Chapter 7, Section 5, Verse 2', 'तानि ह वा एतानि चित्तैकायनानि चित्तात्मानि चित्ते प्रतिष्ठितानि।
+तस्माद्यद्यपि बहुविदचित्तो भवति नायमस्तीत्येवैनमाहुः।
+यदयं वेद यद्वा अयं विद्वान्नेत्थमचित्तः स्यादिति।
+अथ यद्यल्पविच्चित्तवान्भवति तस्मा एवोत शुश्रूषन्ते।
+चित्तं ह्येवैषामेकायनम्।
+चित्तमात्मा।
+चित्तं प्रतिष्ठा।
+चित्तमुपास्स्वेति॥', 'tāni ha vā etāni cittaikāyanāni cittātmāni citte pratiṣṭhitāni
+tasmād yady api bahuvid acitto bhavati nāyam astīty evainam āhuḥ
+yad ayaṃ veda yad vā ayaṃ vidvān nettham acittaḥ syād iti
+atha yady alpavic cittavān bhavati tasmā evota śuśrūṣante
+cittaṃ hy evaiṣām ekāyanam
+cittam ātmā
+cittaṃ pratiṣṭhā
+cittam upāssveti', null, 7005002),
+('chandogya-7-5-3', 3, 'Chapter 7, Section 5, Verse 3', 'स यश्चित्तं ब्रह्मेत्युपास्ते।
+चित्तान्वै स लोकान्ध्रुवान्ध्रुवः प्रतिष्ठितान्प्रतिष्ठितोऽव्यथमानानव्यथमानोऽभिसिध्यति।
+यावच्चित्तस्य गतं तत्रास्य यथाकामचारो भवति यश्चित्तं ब्रह्मेत्युपास्ते।
+अस्ति भगवश्चित्ताद्भूय इति।
+चित्ताद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yaś cittaṃ brahmety upāste
+cittān vai sa lokān dhruvān dhruvaḥ pratiṣṭhitān pratiṣṭhito ''vyathamānān avyathamāno ''bhisidhyati
+yāvac cittasya gataṃ tatrāsya yathākāmacāro bhavati yaś cittaṃ brahmety upāste
+asti bhagavaś cittād bhūya iti
+cittād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7005003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-6-1', 1, 'Chapter 7, Section 6, Verse 1', 'ध्यानं वाव चित्ताद्भूयः।
+ध्यायतीव पृथिवी।
+ध्यायतीवान्तरिक्षम्।
+ध्यायतीव द्यौः।
+ध्यायन्तीवापः।
+ध्यायन्तीव पर्वताः।
+ध्यायन्तीव देवमनुष्याः।
+तस्माद्य इह मनुष्याणां महत्तां प्राप्नुवन्ति ध्यानापादांशा इवैव ते भवन्ति।
+अथ येऽल्पाः कलहिनः पिशुना उपवादिनस्ते।
+अथ ये प्रभवो ध्यानापादांशा इवैव ते भवन्ति।
+ध्यानमुपास्स्वेति॥', 'dhyānaṃ vāva cittād bhūyaḥ
+dhyāyatīva pṛthivī
+dhyāyatīvāntarikṣam
+dhyāyatīva dyauḥ
+dhyāyantīvāpaḥ
+dhyāyantīva parvatāḥ
+dhyāyantīva devamanuṣyāḥ
+tasmād ya iha manuṣyāṇāṃ mahattāṃ prāpnuvanti dhyānāpādāṃśā ivaiva te bhavanti
+atha ye ''lpāḥ kalahinaḥ piśunā upavādinas te
+atha ye prabhavo dhyānāpādāṃśā ivaiva te bhavanti
+dhyānam upāssveti', null, 7006001),
+('chandogya-7-6-2', 2, 'Chapter 7, Section 6, Verse 2', 'स यो ध्यानं ब्रह्मेत्युपास्ते।
+यावद्ध्यानस्य गतं तत्रास्य यथाकामचारो भवति यो ध्यानं ब्रह्मेत्युपास्ते।
+अस्ति भगवो द्यानाद्भूय इति।
+ध्यानाद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo dhyānaṃ brahmety upāste
+yāvad dhyānasya gataṃ tatrāsya yathākāmacāro bhavati yo dhyānaṃ brahmety upāste
+asti bhagavo dyānād bhūya iti
+dhyānād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7006002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-7-1', 1, 'Chapter 7, Section 7, Verse 1', 'विज्ञानं वाव ध्यानाद्भूयः।
+विज्ञानेन वा ऋग्वेदं विजानाति यजुर्वेदं सामवेदमाथर्वणं चतुर्थमितिहासपुराणं पञ्चमं वेदानां वेदं पित्र्यं राशिं दैवं निधिं वाकोवाक्यमेकायनं देवविद्यां ब्रह्मविद्यां भूतविद्यां क्षत्रविद्यां नक्षत्रविद्यां सर्पदेवजनविद्यां दिवं च पृथिवीं च वायुं चाकाशं चापश्च तेजश्च देवांश्च मनुष्यांश्च पशूंश्च वयांसि च तृणवनस्पतीञ्छ्वापदान्याकीटपतङ्गपिपीलकम्।
+धर्मं चाधर्मं च सत्यं चानृतं च साधु चासाधु च हृदयज्ञं चाहृदयज्ञं चान्नं च रसं चेमं च लोकममुं च विज्ञानेनैव विजानाति।
+विज्ञानमुपास्स्वेति॥', 'vijñānaṃ vāva dhyānād bhūyaḥ
+vijñānena vā ṛgvedaṃ vijānāti yajurvedaṃ sāmavedam ātharvaṇaṃ caturtham itihāsapurāṇaṃ pañcamaṃ vedānāṃ vedaṃ pitryaṃ rāśiṃ daivaṃ nidhiṃ vākovākyam ekāyanaṃ devavidyāṃ brahmavidyāṃ bhūtavidyāṃ kṣatravidyāṃ nakṣatravidyāṃ sarpadevajanavidyāṃ divaṃ ca pṛthivīṃ ca vāyuṃ cākāśaṃ cāpaś ca tejaś ca devāṃś ca manuṣyāṃś ca paśūṃś ca vayāṃsi ca tṛṇavanaspatīñ chvāpadāny ākīṭapataṅgapipīlakam
+dharmaṃ cādharmaṃ ca satyaṃ cānṛtaṃ ca sādhu cāsādhu ca hṛdayajñaṃ cāhṛdayajñaṃ cānnaṃ ca rasaṃ cemaṃ ca lokam amuṃ ca vijñānenaiva vijānāti
+vijñānam upāssveti', null, 7007001),
+('chandogya-7-7-2', 2, 'Chapter 7, Section 7, Verse 2', 'स यो विज्ञानं ब्रह्मेत्युपास्ते।
+विज्ञानवतो वै स लोकाञ्ज्ञानवतोऽभिसिध्यति।
+यावद्विज्ञानस्य गतं तत्रास्य यथाकामचारो भवति यो विज्ञानं ब्रह्मेत्युपास्ते।
+अस्ति भगवो विज्ञानाद्भूय इति।
+विज्ञानाद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo vijñānaṃ brahmety upāste
+vijñānavato vai sa lokāñ jñānavato ''bhisidhyati
+yāvad vijñānasya gataṃ tatrāsya yathākāmacāro bhavati yo vijñānaṃ brahmety upāste
+asti bhagavo vijñānād bhūya iti
+vijñānād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7007002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-8-1', 1, 'Chapter 7, Section 8, Verse 1', 'बलं वाव विज्ञानाद्भूयः।
+अपि ह शतं विज्ञानवतामेको बलवानाकम्पयते।
+स यदा बली भवत्यथोत्थाता भवति।
+उत्तिष्ठन्परिचरिता भवति।
+परिचरन्नुपसत्ता भवति।
+उपसीदन्द्रष्टा भवति श्रोता भवति मन्ता भवति बोद्धा भवति कर्ता भवति विज्ञाता भवति।
+बलेन वै पृथिवी तिष्ठति बलेनान्तरिक्षं बलेन द्यौर्बलेन पर्वता बलेन देवमनुष्या बलेन पशवश्च वयांसि च तृणवनस्पतयः श्वापदान्याकीटपतङ्गपिपीलकम्।
+बलेन लोकस्तिष्ठति।
+बलमुपास्स्वेति॥', 'balaṃ vāva vijñānād bhūyaḥ
+api ha śataṃ vijñānavatām eko balavān ākampayate
+sa yadā balī bhavaty athotthātā bhavati
+uttiṣṭhan paricaritā bhavati
+paricarann upasattā bhavati
+upasīdan draṣṭā bhavati śrotā bhavati mantā bhavati boddhā bhavati kartā bhavati vijñātā bhavati
+balena vai pṛthivī tiṣṭhati balenāntarikṣaṃ balena dyaur balena parvatā balena devamanuṣyā balena paśavaś ca vayāṃsi ca tṛṇavanaspatayaḥ śvāpadāny ākīṭapataṅgapipīlakam
+balena lokas tiṣṭhati
+balam upāssveti', null, 7008001),
+('chandogya-7-8-2', 2, 'Chapter 7, Section 8, Verse 2', 'स यो बलमुपास्ते।
+यावद्बलस्य गतं तत्रास्य यथाकामचारो भवति यो बलं ब्रह्मेत्युपास्ते।
+अस्ति भगवो बलाद्भूय इति।
+बलाद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo balam upāste
+yāvad balasya gataṃ tatrāsya yathākāmacāro bhavati yo balaṃ brahmety upāste
+asti bhagavo balād bhūya iti
+balād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7008002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-9-1', 1, 'Chapter 7, Section 9, Verse 1', 'अन्नं वाव बलाद्भूयः।
+तस्माद्यद्यपि दश रात्रीर्नाश्नीयात्।
+यद्यु ह जीवेत्।
+अथवाद्रष्टाश्रोतामन्ताबोद्धाकर्ताविज्ञाता भवति।
+अथान्नस्याये द्रष्टा भवति श्रोता भवति मन्ता भवति बोद्धा भवति कर्ता भवति विज्ञाता भवति।
+अन्नमुपास्स्वेति॥', 'annaṃ vāva balād bhūyaḥ
+tasmād yady api daśa rātrīr nāśnīyāt
+yady u ha jīvet
+athavādraṣṭāśrotāmantāboddhākartāvijñātā bhavati
+athānnasyāye draṣṭā bhavati śrotā bhavati mantā bhavati boddhā bhavati kartā bhavati vijñātā bhavati
+annam upāssveti', null, 7009001),
+('chandogya-7-9-2', 2, 'Chapter 7, Section 9, Verse 2', 'स योऽन्नं ब्रह्मेत्युपास्ते।
+अन्नवतो वै स लोकान्पानवतोऽभिसिध्यति।
+यावदन्नस्य गतं तत्रास्य यथाकामचारो भवति योऽन्नं ब्रह्मेत्युपास्ते।
+अस्ति भगवोऽन्नाद्भूय इति।
+अन्नाद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo ''nnaṃ brahmety upāste
+annavato vai sa lokān pānavato ''bhisidhyati
+yāvad annasya gataṃ tatrāsya yathākāmacāro bhavati yo ''nnaṃ brahmety upāste
+asti bhagavo ''nnād bhūya iti
+annād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7009002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-10-1', 1, 'Chapter 7, Section 10, Verse 1', 'आपो वावान्नाद्भूयस्यः।
+तस्माद्यदा सुवृष्टिर्न भवति व्याधीयन्ते प्राणा अन्नं कनीयो भविष्यतीति।
+अथ यदा सुवृष्टिर्भवत्यानन्दिनः प्राणा भवन्त्यन्नं बहु भविष्यतीति।
+आप एवेमा मूर्ता येयं पृथिवी यदन्तरिक्षं यद्द्यौर्यत्पर्वता यद्देवमनुष्या यत्पशवश्च वयांसि च तृणवनस्पतयः श्वापदान्याकीटपतङ्गपिपीलकम्।
+आप एवेमा मूर्ताः।
+अप उपास्स्वेति॥', 'āpo vāvānnād bhūyasyaḥ
+tasmād yadā suvṛṣṭir na bhavati vyādhīyante prāṇā annaṃ kanīyo bhaviṣyatīti
+atha yadā suvṛṣṭir bhavaty ānandinaḥ prāṇā bhavanty annaṃ bahu bhaviṣyatīti
+āpa evemā mūrtā yeyaṃ pṛthivī yad antarikṣaṃ yad dyaur yat parvatā yad devamanuṣyā yat paśavaś ca vayāṃsi ca tṛṇavanaspatayaḥ śvāpadāny ākīṭapataṅgapipīlakam
+āpa evemā mūrtāḥ
+apa upāssveti', null, 7010001),
+('chandogya-7-10-2', 2, 'Chapter 7, Section 10, Verse 2', 'स योऽपो ब्रह्मेत्युपास्ते।
+आप्नोति सर्वान्कामांस्तृप्तिमान्भवति।
+यावदपां गतं तत्रास्य यथाकामचारो भवति योऽपो ब्रह्मेत्युपास्ते।
+अस्ति भगवोऽद्भ्यो भूय इति।
+अद्भ्यो वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yo ''po brahmety upāste
+āpnoti sarvān kāmāṃs tṛptimān bhavati
+yāvad apāṃ gataṃ tatrāsya yathākāmacāro bhavati yo ''po brahmety upāste
+asti bhagavo ''dbhyo bhūya iti
+adbhyo vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7010002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-11-1', 1, 'Chapter 7, Section 11, Verse 1', 'तेजो वावाद्भ्यो भूयः।
+तद्वा एतद्वायुमागृह्याकाशमभितपति तदाहुर्निशोचति नितपति वर्षिष्यति वा इति।
+तेज एव तत्पूर्वं दर्शयित्वाथापः सृजते।
+तदेतदूर्ध्वाभिश्च तिरश्चीभिश्च विद्युद्भिराह्रादाश्चरन्ति तस्मादाहुर्विद्योतते स्तनयति वर्षिष्यति वा इति।
+तेज एव तत्पूर्वं दर्शयित्वाथापः सृजते।
+तेज उपास्स्वेति॥', 'tejo vāvādbhyo bhūyaḥ
+tad vā etad vāyum āgṛhyākāśam abhitapati tadāhur niśocati nitapati varṣiṣyati vā iti
+teja eva tatpūrvaṃ darśayitvāthāpaḥ sṛjate
+tad etad ūrdhvābhiś ca tiraścībhiś ca vidyudbhir āhrādāś caranti tasmād āhur vidyotate stanayati varṣiṣyati vā iti
+teja eva tatpūrvaṃ darśayitvāthāpaḥ sṛjate
+teja upāssveti', null, 7011001),
+('chandogya-7-11-2', 2, 'Chapter 7, Section 11, Verse 2', 'स यस्तेजो ब्रह्मेत्युपास्ते।
+तेजस्वी वै स तेजस्वतो लोकान्भास्वतोऽपहततमस्कानभिसिध्यति।
+यावत्तेजसो गतं तत्रास्य यथाकामचारो भवति यस्तेजो ब्रह्मेत्युपास्ते।
+अस्ति भगवस्तेजसो भूय इति।
+तेजसो वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yas tejo brahmety upāste
+tejasvī vai sa tejasvato lokān bhāsvato ''pahatatamaskān abhisidhyati
+yāvat tejaso gataṃ tatrāsya yathākāmacāro bhavati yas tejo brahmety upāste
+asti bhagavas tejaso bhūya iti
+tejaso vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7011002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-12-1', 1, 'Chapter 7, Section 12, Verse 1', 'आकाशो वाव तेजसो भूयान्।
+आकाशे वै सूर्याचन्द्रमसावुभौ विद्युन्नक्षत्राण्यग्निः।
+आकाशेनाह्वायति।
+आकाशेन सृणोति।
+आकाशेन प्रतिसृणोति।
+आकाशे रमते।
+आकाशे न रमते।
+आकाशे जायते।
+आकाशमभिजायते।
+आकाशमुपास्स्वेति॥', 'ākāśo vāva tejaso bhūyān
+ākāśe vai sūryācandramasāv ubhau vidyun nakṣatrāṇy agniḥ
+ākāśenāhvāyati
+ākāśena sṛṇoti
+ākāśena pratisṛṇoti
+ākāśe ramate
+ākāśe na ramate
+ākāśe jāyate
+ākāśam abhijāyate
+ākāśam upāssveti', null, 7012001),
+('chandogya-7-12-2', 2, 'Chapter 7, Section 12, Verse 2', 'स य आकाशं ब्रह्मेत्युपास्ते।
+आकाशवतो वै स लोकान्प्रकाशवतोऽसंबाधानुरुगायवतोऽभिसिध्यति।
+यावदाकाशस्य गतं तत्रास्य यथाकामचारो भवति य आकाशं ब्रह्मेत्युपास्ते।
+अस्ति भगव आकाशाद्भूय इति।
+आकाशद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa ya ākāśaṃ brahmety upāste
+ākāśavato vai sa lokān prakāśavato ''saṃbādhān urugāyavato ''bhisidhyati
+yāvad ākāśasya gataṃ tatrāsya yathākāmacāro bhavati ya ākāśaṃ brahmety upāste
+asti bhagava ākāśād bhūya iti
+ākāśad vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7012002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-13-1', 1, 'Chapter 7, Section 13, Verse 1', 'स्मरो वावाकाशाद्भूयः।
+तस्माद्यद्यपि बहव आसीरन्न स्मरन्तो नैव ते कंचन शृणुयुर्न मन्वीरन्न विजानीरन्।
+यदा वाव ते स्मरेयुरथ शृणुयुरथ मन्वीरन्नथ विजानीरन्।
+स्मरेण वै पुत्रान्विजानाति स्मरेण पशून्।
+स्मरमुपास्स्वेति॥', 'smaro vāvākāśād bhūyaḥ
+tasmād yady api bahava āsīrann a smaranto naiva te kaṃcana śṛṇuyur na manvīran na vijānīran
+yadā vāva te smareyur atha śṛṇuyur atha manvīrann atha vijānīran
+smareṇa vai putrān vijānāti smareṇa paśūn
+smaram upāssveti', null, 7013001),
+('chandogya-7-13-2', 2, 'Chapter 7, Section 13, Verse 2', 'स यः स्मरं ब्रह्मेत्युपास्ते।
+यावत्स्मरस्य गतं तत्रास्य यथाकामचारो भवति यः स्मरं ब्रह्मेत्युपास्ते।
+अस्ति भगवः स्मराद्भूय इति।
+स्मराद्वाव भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa yaḥ smaraṃ brahmety upāste
+yāvat smarasya gataṃ tatrāsya yathākāmacāro bhavati yaḥ smaraṃ brahmety upāste
+asti bhagavaḥ smarād bhūya iti
+smarād vāva bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7013002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-14-1', 1, 'Chapter 7, Section 14, Verse 1', 'आशा वाव स्मराद्भूयसी।
+आशेद्धो वै स्मरो मन्त्रानधीते कर्माणि कुरुते पुत्रांश्च पशूंश्चेच्छत इमं च लोकं अमुं चेच्छते।
+आशामुपास्स्वेति॥', 'āśā vāva smarād bhūyasī
+āśeddho vai smaro mantrān adhīte karmāṇi kurute putrāṃś ca paśūṃś cecchata imaṃ ca lokaṃ amuṃ cecchate
+āśām upāssveti', null, 7014001),
+('chandogya-7-14-2', 2, 'Chapter 7, Section 14, Verse 2', 'स य आशां ब्रह्मेत्युपास्ते।
+आशयास्य सर्वे कामाः समृध्यन्ति।
+अमोघा हास्याशिषो भवन्ति।
+यावदाशाया गतं तत्रास्य यथाकामचारो भवति य आशां ब्रह्मेत्युपास्ते।
+अस्ति भगव आशाया भूय इति।
+आशाया भूयोऽस्तीति।
+तन्मे भगवान्ब्रवीत्विति॥', 'sa ya āśāṃ brahmety upāste
+āśayāsya sarve kāmāḥ samṛdhyanti
+amoghā hāsyāśiṣo bhavanti
+yāvad āśāyā gataṃ tatrāsya yathākāmacāro bhavati ya āśāṃ brahmety upāste
+asti bhagava āśāyā bhūya iti
+āśāyā bhūyo ''stīti
+tan me bhagavān bravītv iti', null, 7014002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-15-1', 1, 'Chapter 7, Section 15, Verse 1', 'प्राणो वाव आशाया भूयान्।
+यथा वा अरा नाभौ समर्पिता एवमस्मिन्प्राणे सर्वं समर्पितम्।
+प्राणः प्राणेन याति।
+प्राणः प्राणं ददाति।
+प्राणाय ददाति।
+प्राणो ह पिता।
+प्राणो माता।
+प्राणो भ्राता।
+प्राणः स्वसा।
+प्राण आचार्यः।
+प्राणो ब्राह्मणः॥', 'prāṇo vāva āśāyā bhūyān
+yathā vā arā nābhau samarpitā evam asmin prāṇe sarvaṃ samarpitam
+prāṇaḥ prāṇena yāti
+prāṇaḥ prāṇaṃ dadāti
+prāṇāya dadāti
+prāṇo ha pitā
+prāṇo mātā
+prāṇo bhrātā
+prāṇaḥ svasā
+prāṇa ācāryaḥ
+prāṇo brāhmaṇaḥ', null, 7015001),
+('chandogya-7-15-2', 2, 'Chapter 7, Section 15, Verse 2', 'स यदि पितरं वा मातरं वा भ्रातरं वा स्वसारं वाचार्यं वा ब्राह्मणं वा किंचिद्भृशमिव प्रत्याह।
+धिक्त्वास्त्वित्येवैनमाहुः।
+पितृहा वै त्वमसि मातृहा वै त्वमसि भ्रातृहा वै त्वमसि स्वसृहा वै त्वमस्याचार्यहा वै त्वमसि ब्राह्मणहा वै त्वमसीति॥', 'sa yadi pitaraṃ vā mātaraṃ vā bhrātaraṃ vā svasāraṃ vācāryaṃ vā brāhmaṇaṃ vā kiṃcid bhṛśam iva pratyāha
+dhik tvāstv ity evainam āhuḥ
+pitṛhā vai tvam asi mātṛhā vai tvam asi bhrātṛhā vai tvam asi svasṛhā vai tvam asy ācāryahā vai tvam asi brāhmaṇahā vai tvam asīti', null, 7015002),
+('chandogya-7-15-3', 3, 'Chapter 7, Section 15, Verse 3', 'अथ यद्यप्येनानुत्क्रान्तप्राणाञ्छूलेन समासं व्यतिषंदहेत्।
+नैवैनं ब्रूयुः पितृहासीति न मातृहासीति न भ्रातृहासीति न स्वसृहासीति नाचार्यहासीति न ब्राह्मणहासीति॥', 'atha yady apy enān utkrāntaprāṇāñ chūlena samāsaṃ vyatiṣaṃdahet
+naivainaṃ brūyuḥ pitṛhāsīti na mātṛhāsīti na bhrātṛhāsīti na svasṛhāsīti nācāryahāsīti na brāhmaṇahāsīti', null, 7015003),
+('chandogya-7-15-4', 4, 'Chapter 7, Section 15, Verse 4', 'प्राणो ह्येवैतानि सर्वाणि भवति।
+स वा एष एवं पश्यन्नेवं मन्वान एवं विजानन्नतिवादी भवति।
+तं चेद्ब्रूयुरतिवाद्यसीति।
+अतिवाद्यस्मीति ब्रूयात्।
+नापह्नुवीत॥', 'prāṇo hy evaitāni sarvāṇi bhavati
+sa vā eṣa evaṃ paśyann evaṃ manvāna evaṃ vijānann ativādī bhavati
+taṃ ced brūyur ativādy asīti
+ativādy asmīti brūyāt
+nāpahnuvīta', null, 7015004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 16 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-16-1', 1, 'Chapter 7, Section 16, Verse 1', 'एष तु वा अतिवदति यः सत्येनातिवदति।
+सोऽहं भगवः सत्येनातिवदानीति।
+सत्यं त्वेव विजिज्ञासितव्यमिति।
+सत्यं भगवो विजिज्ञास इति॥', 'eṣa tu vā ativadati yaḥ satyenātivadati
+so ''haṃ bhagavaḥ satyenātivadānīti
+satyaṃ tveva vijijñāsitavyam iti
+satyaṃ bhagavo vijijñāsa iti', null, 7016001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 17 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-17-1', 1, 'Chapter 7, Section 17, Verse 1', 'यदा वै विजानात्यथ सत्यं वदति।
+नाविजानन्सत्यं वदति।
+विजानन्नेव सत्यं वदति।
+विज्ञानं त्वेव विजिज्ञासितव्यमिति।
+विज्ञानं भगवो विजिज्ञास इति॥', 'yadā vai vijānāty atha satyaṃ vadati
+nāvijānan satyaṃ vadati
+vijānann eva satyaṃ vadati
+vijñānaṃ tv eva vijijñāsitavyam iti
+vijñānaṃ bhagavo vijijñāsa iti', null, 7017001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 18 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-18-1', 1, 'Chapter 7, Section 18, Verse 1', 'यदा वै मनुतेऽथ विजानाति।
+नामत्वा विजानाति।
+मत्वैव विजानाति।
+मतिस्त्वेव विजिज्ञासितव्येति।
+मतिं भगवो विजिज्ञास इति॥', 'yadā vai manute ''tha vijānāti
+nāmatvā vijānāti
+matvaiva vijānāti
+matis tv eva vijijñāsitavyeti
+matiṃ bhagavo vijijñāsa iti', null, 7018001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 19 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-19-1', 1, 'Chapter 7, Section 19, Verse 1', 'यदा वै श्रद्दधात्यथ मनुते।
+नाश्रद्दधन्मनुते।
+श्रद्दधदेव मनुते।
+श्रद्धा त्वेव विजिज्ञासितव्येति।
+श्रद्धां भगवो विजिज्ञास इति॥', 'yadā vai śraddadhāty atha manute
+nāśraddadhan manute
+śraddadhad eva manute
+śraddhā tv eva vijijñāsitavyeti
+śraddhāṃ bhagavo vijijñāsa iti', null, 7019001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 20 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-20-1', 1, 'Chapter 7, Section 20, Verse 1', 'यदा वै निस्तिष्ठत्यथ श्रद्दधाति।
+नानिस्तिष्ठञ्छ्रद्दधाति।
+निस्तिष्ठन्नेव श्रद्दधाति।
+निष्ठा त्वेव विजिज्ञासितव्येति।
+निष्ठां भगवो विजिज्ञास इति॥', 'yadā vai nistiṣṭhaty atha śraddadhāti
+nānistiṣṭhañ chraddadhāti
+nistiṣṭhann eva śraddadhāti
+niṣṭhā tv eva vijijñāsitavyeti
+niṣṭhāṃ bhagavo vijijñāsa iti', null, 7020001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 21 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-21-1', 1, 'Chapter 7, Section 21, Verse 1', 'यदा वै करोत्यथ निस्तिष्ठति।
+नाकृत्वा निस्तिष्ठति।
+कृत्वैव निस्तिष्ठति।
+कृतिस्त्वेव विजिज्ञासितव्येति।
+कृतिं भगवो विजिज्ञास इति॥', 'yadā vai karoty atha nistiṣṭhati
+nākṛtvā nistiṣṭhati
+kṛtvaiva nistiṣṭhati
+kṛtis tv eva vijijñāsitavyeti
+kṛtiṃ bhagavo vijijñāsa iti', null, 7021001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 22 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-22-1', 1, 'Chapter 7, Section 22, Verse 1', 'यदा वै सुखं लभतेऽथ करोति।
+नासुखं लब्ध्वा करोति।
+सुखमेव लब्ध्वा करोति।
+सुखं त्वेव विजिज्ञासितव्यमिति।
+सुखं भगवो विजिज्ञास इति॥', 'yadā vai sukhaṃ labhate ''tha karoti
+nāsukhaṃ labdhvā karoti
+sukham eva labdhvā karoti
+sukhaṃ tv eva vijijñāsitavyam iti
+sukhaṃ bhagavo vijijñāsa iti', null, 7022001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 23 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-23-1', 1, 'Chapter 7, Section 23, Verse 1', 'यो वै भूमा तत्सुखम्।
+नाल्पे सुखमस्ति।
+भूमैव सुखम्।
+भूमा त्वेव विजिज्ञासितव्य इति।
+भूमानं भगवो विजिज्ञास इति॥', 'yo vai bhūmā tat sukham
+nālpe sukham asti
+bhūmaiva sukham
+bhūmā tv eva vijijñāsitavya iti
+bhūmānaṃ bhagavo vijijñāsa iti', null, 7023001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 24 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-24-1', 1, 'Chapter 7, Section 24, Verse 1', 'यत्र नान्यत्पश्यति नान्यच्छृणोति नान्यद्विजानाति स भूमा।
+अथ यत्रान्यत्पश्यत्यन्यच्छृणोत्यन्यद्विजानाति तदल्पम्।
+यो वै भूमा तदमृतम्।
+अथ यदल्पं तन्मर्त्यम्।
+स भगवः कस्मिन्प्रतिष्ठित इति।
+स्वे महिम्नि यदि वा न महिम्नीति॥', 'yatra nānyat paśyati nānyac chṛṇoti nānyad vijānāti sa bhūmā
+atha yatrānyat paśyaty anyac chṛṇoty anyad vijānāti tad alpam
+yo vai bhūmā tad amṛtam
+atha yad alpaṃ tan martyam
+sa bhagavaḥ kasmin pratiṣṭhita iti
+sve mahimni yadi vā na mahimnīti', null, 7024001),
+('chandogya-7-24-2', 2, 'Chapter 7, Section 24, Verse 2', 'गोऽश्वमिह महिमेत्याचक्षते हस्तिहिरण्यं दासभार्यं क्षेत्राण्यायतनानीति।
+नाहमेवं ब्रवीमि।
+ब्रवीमीति होवाच।
+अन्यो ह्यन्यस्मिन्प्रतिष्ठित इति॥', 'go ''śvam iha mahimety ācakṣate hastihiraṇyaṃ dāsabhāryaṃ kṣetrāṇy āyatanānīti
+nāham evaṃ bravīmi
+bravīmīti hovāca
+anyo hy anyasmin pratiṣṭhita iti', null, 7024002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 25 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-25-1', 1, 'Chapter 7, Section 25, Verse 1', 'स एवाधस्तात्स उपरिष्टात्स पश्चात्स पुरस्तात्स दक्षिणतः स उत्तरतः।
+स एवेदं सर्वमिति।
+अथातोऽहंकारादेश एव।
+अहमेवाधस्तादहमुपरिष्टादहं पश्चादहं पुरस्तादहं दक्षिणतोऽहमुत्तरतोऽहमेवेदं सर्वमिति॥', 'sa evādhastāt sa upariṣṭāt sa paścāt sa purastāt sa dakṣiṇataḥ sa uttarataḥ
+sa evedaṃ sarvam iti
+athāto ''haṃkārādeśa eva
+aham evādhastād aham upariṣṭād ahaṃ paścād ahaṃ purastād ahaṃ dakṣiṇato ''ham uttarato ''ham evedaṃ sarvam iti', null, 7025001),
+('chandogya-7-25-2', 2, 'Chapter 7, Section 25, Verse 2', 'अथात आत्मादेश एव।
+आत्मैवाधस्तादात्मोपरिष्टादात्मा पश्चादात्मा पुरस्तादात्मा दक्षिणत आत्मोत्तरत आत्मैवेदं सर्वमिति।
+स वा एष एवं पश्यन्नेवं मन्वान एवं विजानन्नात्मरतिरात्मक्रीड आत्ममिथुन आत्मानन्दः स स्वराड्भवति।
+तस्य सर्वेषु लोकेषु कामचारो भवति।
+अथ येऽन्यथातो विदुरन्यराजानस्ते क्षय्यलोका भवन्ति।
+तेषां सर्वेषु लोकेष्वकामचारो भवति॥', 'athāta ātmādeśa eva
+ātmaivādhastād ātmopariṣṭād ātmā paścād ātmā purastād ātmā dakṣiṇata ātmottarata ātmaivedaṃ sarvam iti
+sa vā eṣa evaṃ paśyann evaṃ manvāna evaṃ vijānann ātmaratir ātmakrīḍa ātmamithuna ātmānandaḥ sa svarāḍ bhavati
+tasya sarveṣu lokeṣu kāmacāro bhavati
+atha ye ''nyathāto vidur anyarājānas te kṣayyalokā bhavanti
+teṣāṃ sarveṣu lokeṣv akāmacāro bhavati', null, 7025002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 26 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 7 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-7-26-1', 1, 'Chapter 7, Section 26, Verse 1', 'तस्य ह वा एतस्यैवं पश्यत एवं मन्वानस्यैवं विजानत आत्मतः प्राण आत्मत आशात्मतः स्मर आत्मत आकाश आत्मतस्तेज आत्मत आप आत्मत आविर्भावतिरोभावावात्मतोऽन्नमात्मतो बलमात्मतो विज्ञानमात्मतो ध्यानमात्मतश्चित्तमात्मतः संकल्प आत्मतो मन आत्मतो वागात्मतो नामात्मतो मन्त्रा आत्मतः कर्माण्यात्मत एवेदं सर्वमिति॥', 'tasya ha vā etasyaivaṃ paśyata evaṃ manvānasyaivaṃ vijānata ātmataḥ prāṇa ātmata āśātmataḥ smara ātmata ākāśa ātmatas teja ātmata āpa ātmata āvirbhāvatirobhāvāv ātmato ''nnam ātmato balam ātmato vijñānam ātmato dhyānam ātmataś cittam ātmataḥ saṃkalpa ātmato mana ātmato vāg ātmato nāmātmato mantrā ātmataḥ karmāṇy ātmata evedaṃ sarvam iti', null, 7026001),
+('chandogya-7-26-2', 2, 'Chapter 7, Section 26, Verse 2', 'तदेष श्लोकः।
+न पश्यो मृत्युं पश्यति न रोगं नोत दुःखताम्।
+सर्वं ह पश्यः पश्यति सर्वमाप्नोति सर्वशः।
+इति।
+स एकधा भवति त्रिधा भवति पञ्चधा।
+सप्तधा नवधा चैव पुनश्चैकादश स्मृतः।
+शतं च दश चैकश्च सहस्राणि च विंशतिः।
+आहारशुद्धौ सत्त्वशुद्धिः।
+सत्त्वशुद्धौ ध्रुवा स्मृतिः।
+स्मृतिलम्भे सर्वग्रन्थीनां विप्रमोक्षः।
+तस्मै मृदितकषायाय तमसस्पारं दर्शयति भगवान्सनत्कुमारः।
+तं स्कन्द इत्याचक्षते॥', 'tad eṣa ślokaḥ
+na paśyo mṛtyuṃ paśyati na rogaṃ nota duḥkhatām
+sarvaṃ ha paśyaḥ paśyati sarvam āpnoti sarvaśaḥ
+iti
+sa ekadhā bhavati tridhā bhavati pañcadhā
+saptadhā navadhā caiva punaś caikādaśa smṛtaḥ
+śataṃ ca daśa caikaś ca sahasrāṇi ca viṃśatiḥ
+āhāraśuddhau sattvaśuddhiḥ
+sattvaśuddhau dhruvā smṛtiḥ
+smṛtilambhe sarvagranthīnāṃ vipramokṣaḥ
+tasmai mṛditakaṣāyāya tamasas pāraṃ darśayati bhagavān sanatkumāraḥ
+taṃ skanda ity ācakṣate', null, 7026002)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-1-1', 1, 'Chapter 8, Section 1, Verse 1', 'अथ यदिदमस्मिन्ब्रह्मपुरे दहरं पुण्डरीकं वेश्म दहरोऽस्मिन्नन्तराकासः।
+तस्मिन्यदन्तस्तदन्वेष्टव्यं तद्वाव विजिज्ञासितव्यमिति॥', 'atha yad idam asmin brahmapure daharaṃ puṇḍarīkaṃ veśma daharo ''sminn antarākāsaḥ
+tasmin yad antas tad anveṣṭavyaṃ tad vāva vijijñāsitavyam iti', null, 8001001),
+('chandogya-8-1-2', 2, 'Chapter 8, Section 1, Verse 2', 'तं चेद्ब्रूयुर्यदिदमस्मिन्ब्रह्मपुरे दहरं पुण्डरीकं वेश्म दहरोऽस्मिन्नन्तराकाशः किं तदत्र विद्यते यदन्वेष्टव्यं यद्वाव विजिज्ञासितव्यमिति।
+स ब्रूयात्॥', 'taṃ ced brūyur yad idam asmin brahmapure daharaṃ puṇḍarīkaṃ veśma daharo ''sminn antarākāśaḥ kiṃ tad atra vidyate yad anveṣṭavyaṃ yad vāva vijijñāsitavyam iti
+sa brūyāt', null, 8001002),
+('chandogya-8-1-3', 3, 'Chapter 8, Section 1, Verse 3', 'यावान्वा अयमाकाशस्तावानेषोऽन्तर्हृदय आकाशः।
+उभेऽस्मिन्द्यावापृथिवी अन्तरेव समाहिते।
+उभावग्निश्च वायुश्च सूर्याचन्द्रमसावुभौ विद्युन्नक्षत्राणि।
+यच्चास्येहास्ति यच्च नास्ति सर्वं तदस्मिन्समाहितमिति॥', 'yāvān vā ayam ākāśas tāvān eṣo ''ntarhṛdaya ākāśaḥ
+ubhe ''smin dyāvāpṛthivī antar eva samāhite
+ubhāv agniś ca vāyuś ca sūryācandramasāv ubhau vidyun nakṣatrāṇi
+yac cāsyehāsti yac ca nāsti sarvaṃ tad asmin samāhitam iti', null, 8001003),
+('chandogya-8-1-4', 4, 'Chapter 8, Section 1, Verse 4', 'तं चेद्ब्रूयुरस्मिंश्चेदं ब्रह्मपुरे सर्वं समाहितं सर्वाणि च भूतानि सर्वे च कामा यदेनज्जरा वाप्नोति प्रध्वंसते वा किं ततोऽतिशिष्यत इति॥', 'taṃ ced brūyur asmiṃś cedaṃ brahmapure sarvaṃ samāhitaṃ sarvāṇi ca bhūtāni sarve ca kāmā yad enaj jarā vāpnoti pradhvaṃsate vā kiṃ tato ''tiśiṣyata iti', null, 8001004),
+('chandogya-8-1-5', 5, 'Chapter 8, Section 1, Verse 5', 'स ब्रूयात्।
+नास्य जरयैतज्जीर्यति न वधेनास्य हन्यते।
+एतत्सत्यं ब्रह्मपुरमस्मिन्कामाः समाहिताः।
+एष आत्मापहतपाप्मा विजरो विमृत्युर्विशोको विजिघत्सोऽपिपासः सत्यकामः सत्यसंकल्पः।
+यथा ह्येवेह प्रजा अन्वाविशन्ति यथानुशासनम्।
+यं यमन्तमभिकामा भवन्ति यं जनपदं यं क्षेत्रभागं तं तमेवोपजीवन्ति॥', 'sa brūyāt
+nāsya jarayaitaj jīryati na vadhenāsya hanyate
+etat satyaṃ brahmapuram asmin kāmāḥ samāhitāḥ
+eṣa ātmāpahatapāpmā vijaro vimṛtyur viśoko vijighatso ''pipāsaḥ satyakāmaḥ satyasaṃkalpaḥ
+yathā hy eveha prajā anvāviśanti yathānuśāsanam
+yaṃ yam antam abhikāmā bhavanti yaṃ janapadaṃ yaṃ kṣetrabhāgaṃ taṃ tam evopajīvanti', null, 8001005),
+('chandogya-8-1-6', 6, 'Chapter 8, Section 1, Verse 6', 'तद्यथेह कर्मजितो लोकः क्षीयत एवमेवामुत्र पुण्यजितो लोकः क्षीयते।
+तद्य इहात्मानमननुविद्य व्रजन्त्येतांश्च सत्यान्कामांस्तेषां सर्वेषु लोकेष्वकामचारो भवति।
+अथ य इहात्मानमनिवुद्य व्रजन्त्येतंश्च सत्यान्कामांस्तेषां सर्वेषु लोकेषु कामचारो भवति॥', 'tad yatheha karmajito lokaḥ kṣīyata evam evāmutra puṇyajito lokaḥ kṣīyate
+tad ya ihātmānam ananuvidya vrajanty etāṃś ca satyān kāmāṃs teṣāṃ sarveṣu lokeṣv akāmacāro bhavati
+atha ya ihātmānam anivudya vrajanty etaṃś ca satyān kāmāṃs teṣāṃ sarveṣu lokeṣu kāmacāro bhavati', null, 8001006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-2-1', 1, 'Chapter 8, Section 2, Verse 1', 'स यदि पितृलोककामो भवति।
+संकल्पादेवास्य पितरः समुत्तिष्ठन्ति।
+तेन पितृलोकेन संपन्नो महीयते॥', 'sa yadi pitṛlokakāmo bhavati
+saṃkalpād evāsya pitaraḥ samuttiṣṭhanti
+tena pitṛlokena saṃpanno mahīyate', null, 8002001),
+('chandogya-8-2-2', 2, 'Chapter 8, Section 2, Verse 2', 'अथ यदि मातृलोककामो भवति।
+संकल्पादेवास्य मातरः समुत्तिष्ठन्ति।
+तेन मातृलोकेन संपन्नो महीयते॥', 'atha yadi mātṛlokakāmo bhavati
+saṃkalpād evāsya mātaraḥ samuttiṣṭhanti
+tena mātṛlokena saṃpanno mahīyate', null, 8002002),
+('chandogya-8-2-3', 3, 'Chapter 8, Section 2, Verse 3', 'अथ यदि भ्रातृलोककामो भवति।
+संकल्पादेवास्य भ्रातरः समुत्तिष्ठन्ति।
+तेन भ्रातृलोकेन संपन्नो महीयते॥', 'atha yadi bhrātṛlokakāmo bhavati
+saṃkalpād evāsya bhrātaraḥ samuttiṣṭhanti
+tena bhrātṛlokena saṃpanno mahīyate', null, 8002003),
+('chandogya-8-2-4', 4, 'Chapter 8, Section 2, Verse 4', 'अथ यदि स्वसृलोककामो भवति।
+संकल्पादेवास्य स्वसारः समुत्तिष्ठन्ति।
+तेन स्वसृलोकेन संपन्नो महीयते॥', 'atha yadi svasṛlokakāmo bhavati
+saṃkalpād evāsya svasāraḥ samuttiṣṭhanti
+tena svasṛlokena saṃpanno mahīyate', null, 8002004),
+('chandogya-8-2-5', 5, 'Chapter 8, Section 2, Verse 5', 'अथ यदि सखिलोककामो भवति।
+संकल्पादेवास्य सखायः समुत्तिष्ठन्ति।
+तेन सखिलोकेन संपन्नो महीयते॥', 'atha yadi sakhilokakāmo bhavati
+saṃkalpād evāsya sakhāyaḥ samuttiṣṭhanti
+tena sakhilokena saṃpanno mahīyate', null, 8002005),
+('chandogya-8-2-6', 6, 'Chapter 8, Section 2, Verse 6', 'अथ यदि गन्धमाल्यलोककामो भवति।
+संकल्पादेवास्य गन्धमाल्ये समुत्तिष्ठतः।
+तेन गन्धमाल्यलोकेन संपन्नो महीयते॥', 'atha yadi gandhamālyalokakāmo bhavati
+saṃkalpād evāsya gandhamālye samuttiṣṭhataḥ
+tena gandhamālyalokena saṃpanno mahīyate', null, 8002006),
+('chandogya-8-2-7', 7, 'Chapter 8, Section 2, Verse 7', 'अथ यद्यन्नपानलोककामो भवति।
+संकल्पादेवास्यान्नपाने समुत्तिष्ठतः।
+तेनान्नपानलोकेन संपन्नो महीयते॥', 'atha yady annapānalokakāmo bhavati
+saṃkalpād evāsyānnapāne samuttiṣṭhataḥ
+tenānnapānalokena saṃpanno mahīyate', null, 8002007),
+('chandogya-8-2-8', 8, 'Chapter 8, Section 2, Verse 8', 'अथ यदि गीतवादितलोककामो भवति।
+संकल्पादेवास्य गीतवादिते समुत्तिष्ठतः।
+तेन गीतवादितलोकेन संपन्नो महीयते॥', 'atha yadi gītavāditalokakāmo bhavati
+saṃkalpād evāsya gītavādite samuttiṣṭhataḥ
+tena gītavāditalokena saṃpanno mahīyate', null, 8002008),
+('chandogya-8-2-9', 9, 'Chapter 8, Section 2, Verse 9', 'अथ यदि स्त्रीलोककामो भवति।
+संकल्पादेवास्य स्त्रियः समुत्तिष्ठन्ति।
+तेन स्त्रीलोकेन संपन्नो महीयते॥', 'atha yadi strīlokakāmo bhavati
+saṃkalpād evāsya striyaḥ samuttiṣṭhanti
+tena strīlokena saṃpanno mahīyate', null, 8002009),
+('chandogya-8-2-10', 10, 'Chapter 8, Section 2, Verse 10', 'यं यमन्तमभिकामो भवति।
+यं कामं कामयते।
+सोऽस्य संकल्पादेव समुत्तिष्ठति।
+तेन संपन्नो महीयते॥', 'yaṃ yam antam abhikāmo bhavati
+yaṃ kāmaṃ kāmayate
+so ''sya saṃkalpād eva samuttiṣṭhati
+tena saṃpanno mahīyate', null, 8002010)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-3-1', 1, 'Chapter 8, Section 3, Verse 1', 'त इमे सत्याः कामा अनृतापिधानाः।
+तेषां सत्यानां सतामनृतमपिधानम्।
+यो यो ह्यस्येतः प्रैति न तमिह दर्शनाय लभते॥', 'ta ime satyāḥ kāmā anṛtāpidhānāḥ
+teṣāṃ satyānāṃ satām anṛtam apidhānam
+yo yo hy asyetaḥ praiti na tam iha darśanāya labhate', null, 8003001),
+('chandogya-8-3-2', 2, 'Chapter 8, Section 3, Verse 2', 'अथ ये चास्येह जीवा ये च प्रेता यच्चान्यदिच्छन्न लभते सर्वं तदत्र गत्वा विन्दते।
+अत्र ह्यस्यैते सत्याः कामा अनृतापिधानाः।
+तद्यथापि हिरण्यनिधिं निहितमक्षेत्रज्ञा उपर्युपरि सञ्चरन्तो न विन्देयुः।
+एवमेवेमाः सर्वाः प्रजा अहरहर्गच्छन्त्य एतं ब्रह्मलोकं न विन्दन्त्यनृतेन हि प्रत्यूढाः॥', 'atha ye cāsyeha jīvā ye ca pretā yac cānyad icchan na labhate sarvaṃ tad atra gatvā vindate
+atra hy asyaite satyāḥ kāmā anṛtāpidhānāḥ
+tad yathāpi hiraṇyanidhiṃ nihitam akṣetrajñā upary upari sañcaranto na vindeyuḥ
+evam evemāḥ sarvāḥ prajā ahar ahar gacchantya etaṃ brahmalokaṃ na vindanty anṛtena hi pratyūḍhāḥ', null, 8003002),
+('chandogya-8-3-3', 3, 'Chapter 8, Section 3, Verse 3', 'स वा एष आत्मा हृदि।
+तस्यैतदेव निरुक्तं हृद्ययमिति तस्माद्धृदयम्।
+अहरहर्वा एवंवित्स्वर्गं लोकमेति॥', 'sa vā eṣa ātmā hṛdi
+tasyaitad eva niruktaṃ hṛdy ayam iti tasmād dhṛd ayam
+ahar ahar vā evaṃvit svargaṃ lokam eti', null, 8003003),
+('chandogya-8-3-4', 4, 'Chapter 8, Section 3, Verse 4', 'अथ य एष संप्रसादोऽस्माच्छरीरात्समुत्थाय परं ज्योतिरुपसंपद्य स्वेन रूपेनाभिनिष्पद्यत एष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+तस्य ह वा एतस्य ब्रह्मणो नाम सत्यमिति॥', 'atha ya eṣa saṃprasādo ''smāc charīrāt samutthāya paraṃ jyotir upasaṃpadya svena rūpenābhiniṣpadyata eṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+tasya ha vā etasya brahmaṇo nāma satyam iti', null, 8003004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 4 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-4-1', 1, 'Chapter 8, Section 4, Verse 1', 'अथ य आत्मा स सेतुर्धृतिरेषां लोकानामसंभेदाय।
+नैतं सेतुमहोरात्रे तरतो न जरा न मृत्युर्न शोको न सुकृतम्।
+सर्वे पाप्मानोऽतो निवर्तन्ते।
+अपहतपाप्मा ह्येष ब्रह्मलोकः॥', 'atha ya ātmā sa setur dhṛtir eṣāṃ lokānām asaṃbhedāya
+naitaṃ setum ahorātre tarato na jarā na mṛtyur na śoko na sukṛtam
+sarve pāpmāno ''to nivartante
+apahatapāpmā hy eṣa brahmalokaḥ', null, 8004001),
+('chandogya-8-4-2', 2, 'Chapter 8, Section 4, Verse 2', 'तस्माद्वा एतं सेतुं तीर्त्वा अन्धः सन्ननन्धो भवति।
+विद्धः सन्नविद्धो भवति।
+उपतापी सन्ननुपतापी भवति।
+तस्माद्वा एतं सेतुं तीर्त्वा अपि नक्तमहरेवाभिनिष्पद्यते।
+सकृद्विभातो ह्येवैष ब्रह्मलोकः॥', 'tasmād vā etaṃ setuṃ tīrtvā andhaḥ sann anandho bhavati
+viddhaḥ sann aviddho bhavati
+upatāpī sann anupatāpī bhavati
+tasmād vā etaṃ setuṃ tīrtvā api naktam ahar evābhiniṣpadyate
+sakṛd vibhāto hy evaiṣa brahmalokaḥ', null, 8004002),
+('chandogya-8-4-3', 3, 'Chapter 8, Section 4, Verse 3', 'तद्य एवैतं ब्रह्मलोकं ब्रह्मचर्येणानुविन्दन्ति तेषामेवैष ब्रह्मलोकः।
+तेषां सर्वेषु लोकेषु कामचारो भवति॥', 'tad ya evaitaṃ brahmalokaṃ brahmacaryeṇānuvindanti teṣām evaiṣa brahmalokaḥ
+teṣāṃ sarveṣu lokeṣu kāmacāro bhavati', null, 8004003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 5 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-5-1', 1, 'Chapter 8, Section 5, Verse 1', 'अथ यद्यज्ञ इत्याचक्षते ब्रह्मचर्यमेव तत्।
+ब्रह्मचर्येण ह्येव यो ज्ञाता तं विन्दते।
+अथ यदिष्टमित्याचक्षते ब्रह्मचर्यमेव तत्।
+ब्रह्मचर्येण ह्येवेष्ट्वात्मानमनुविन्दते॥', 'atha yad yajña ity ācakṣate brahmacaryam eva tat
+brahmacaryeṇa hy eva yo jñātā taṃ vindate
+atha yad iṣṭam ity ācakṣate brahmacaryam eva tat
+brahmacaryeṇa hy eveṣṭvātmānam anuvindate', null, 8005001),
+('chandogya-8-5-2', 2, 'Chapter 8, Section 5, Verse 2', 'अथ यत्सत्त्रायणमित्याचक्षते ब्रह्मचर्यमेव तत्।
+ब्रह्मचर्येण ह्येव सत आत्मनस्त्राणं विन्दते।
+अथ यन्मौनमित्याचक्षते ब्रह्मचर्यमेव तत्।
+ब्रह्मचर्येण ह्येवात्मानमनुविद्य मनुते॥', 'atha yat sattrāyaṇam ity ācakṣate brahmacaryam eva tat
+brahmacaryeṇa hy eva sata ātmanas trāṇaṃ vindate
+atha yan maunam ity ācakṣate brahmacaryam eva tat
+brahmacaryeṇa hy evātmānam anuvidya manute', null, 8005002),
+('chandogya-8-5-3', 3, 'Chapter 8, Section 5, Verse 3', 'अथ यदनाशकायनमित्याचक्षते ब्रह्मचर्यमेव तत्।
+एष ह्यात्मा न नश्यति यं ब्रह्मचर्येणानुविन्दते।
+अथ यदरण्यायनमित्याचक्षते ब्रह्मचर्यमेव तत्।
+ततरश्च ह वै ण्यश्चार्णवौ ब्रह्मलोके तृतीयस्यामितो दिवि।
+तदैरंमदीयं सरः।
+तदश्वत्थः सोमसवनः।
+तदपराजिता पूर्ब्रह्मणः प्रभुविमितं हिरण्मयम्॥', 'atha yad anāśakāyanam ity ācakṣate brahmacaryam eva tat
+eṣa hy ātmā na naśyati yaṃ brahmacaryeṇānuvindate
+atha yad araṇyāyanam ity ācakṣate brahmacaryam eva tat
+tat araś ca ha vai ṇyaś cārṇavau brahmaloke tṛtīyasyām ito divi
+tad airaṃmadīyaṃ saraḥ
+tad aśvatthaḥ somasavanaḥ
+tad aparājitā pūr brahmaṇaḥ prabhuvimitaṃ hiraṇmayam', null, 8005003),
+('chandogya-8-5-4', 4, 'Chapter 8, Section 5, Verse 4', 'तद्य एवैतावरं च ण्यं चार्णवौ ब्रह्मलोके ब्रह्मचर्येणानुविन्दन्ति तेषामेवैष ब्रह्मलोकः।
+तेषां सर्वेषु लोकेषु कामचारो भवति॥', 'tad ya evaitāv araṃ ca ṇyaṃ cārṇavau brahmaloke brahmacaryeṇānuvindanti teṣām evaiṣa brahmalokaḥ
+teṣāṃ sarveṣu lokeṣu kāmacāro bhavati', null, 8005004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 6 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-6-1', 1, 'Chapter 8, Section 6, Verse 1', 'अथ या एता हृदयस्य नाड्यस्ताः पिङ्गलस्याणिम्नस्तिष्ठन्ति शुक्लस्य नीलस्य पीतस्य लोहितस्येति।
+असौ वादित्यः पिङ्गल एष शुक्ल एष नील एष पीत एष लोहितः॥', 'atha yā etā hṛdayasya nāḍyas tāḥ piṅgalasyāṇimnas tiṣṭhanti śuklasya nīlasya pītasya lohitasyeti
+asau vādityaḥ piṅgala eṣa śukla eṣa nīla eṣa pīta eṣa lohitaḥ', null, 8006001),
+('chandogya-8-6-2', 2, 'Chapter 8, Section 6, Verse 2', 'तद्यथा महापथ आतत उभौ ग्रामौ गच्छतीमं चामुं चैवमेवैता आदित्यस्य रश्मय उभौ लोकौ गच्छन्तीमं चामुं च।
+अमुष्मादादित्यात्प्रतायन्ते ता आसु नाडीषु सृप्ताः।
+आभ्यो नाडीभ्यः प्रतायन्ते तेऽमुष्मिन्नादित्ये सृप्ताः॥', 'tad yathā mahāpatha ātata ubhau grāmau gacchatīmaṃ cāmuṃ caivam evaitā ādityasya raśmaya ubhau lokau gacchantīmaṃ cāmuṃ ca
+amuṣmād ādityāt pratāyante tā āsu nāḍīṣu sṛptāḥ
+ābhyo nāḍībhyaḥ pratāyante te ''muṣminn āditye sṛptāḥ', null, 8006002),
+('chandogya-8-6-3', 3, 'Chapter 8, Section 6, Verse 3', 'तद्यत्रैतत्सुप्तः समस्तः संप्रसन्नः स्वप्नं न विजानाति।
+आसु तदा नाडीषु सृप्तो भवति।
+तं न कश्चन पाप्मा स्पृशति।
+तेजसा हि तदा संपन्नो भवति॥', 'tad yatraitat suptaḥ samastaḥ saṃprasannaḥ svapnaṃ na vijānāti
+āsu tadā nāḍīṣu sṛpto bhavati
+taṃ na kaścana pāpmā spṛśati
+tejasā hi tadā saṃpanno bhavati', null, 8006003),
+('chandogya-8-6-4', 4, 'Chapter 8, Section 6, Verse 4', 'अथ यत्रैतदबलिमानं नीतो भवति।
+तमभित आसीना आहुर्जानासि मां जानासि मामिति।
+स यावदस्माच्छरीरादनुत्क्रान्तो भवति।
+तावज्जानाति॥', 'atha yatraitad abalimānaṃ nīto bhavati
+tam abhita āsīnā āhur jānāsi māṃ jānāsi mām iti
+sa yāvad asmāc charīrād anutkrānto bhavati
+tāvaj jānāti', null, 8006004),
+('chandogya-8-6-5', 5, 'Chapter 8, Section 6, Verse 5', 'अथ यत्रैतदस्माच्छरीरादुत्क्रामति।
+अथैतैरेव रश्मिभिरूर्ध्वमाक्रमते।
+स ओमिति वा होद्वा मीयते।
+स यावत्क्षिप्येन्मनस्तावदादित्यं गच्छति।
+एतद्वै खलु लोकद्वारं विदुषां प्रपदनं निरोधोऽविदुषाम्॥', 'atha yatraitad asmāc charīrād utkrāmati
+athaitair eva raśmibhir ūrdhvam ākramate
+sa om iti vā hod vā mīyate
+sa yāvat kṣipyen manas tāvad ādityaṃ gacchati
+etad vai khalu lokadvāraṃ viduṣāṃ prapadanaṃ nirodho ''viduṣām', null, 8006005),
+('chandogya-8-6-6', 6, 'Chapter 8, Section 6, Verse 6', 'तदेष श्लोकः।
+शतं चैका च हृदयस्य नाड्यस्तासां मूर्धानमभिनिःसृतैका।
+तयोर्ध्वमायन्नमृतत्वमेति विष्वङ्ङन्या उत्क्रमणे भवन्त्युत्क्रमणे भवन्ति॥', 'tad eṣa ślokaḥ
+śataṃ caikā ca hṛdayasya nāḍyas tāsāṃ mūrdhānam abhiniḥsṛtaikā
+tayordhvam āyann amṛtatvam eti viṣvaṅṅ anyā utkramaṇe bhavanty utkramaṇe bhavanti', null, 8006006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 7 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-7-1', 1, 'Chapter 8, Section 7, Verse 1', 'य आत्मा अपहतपाप्मा विजरो विमृत्युर्विशोको विजिघत्सोऽपिपासः सत्यकामः सत्यसंकल्पः सोऽन्वेष्टव्यः स विजिज्ञासितव्यः।
+स सर्वांश्च लोकानाप्नोति सर्वांश्च कामान्यस्तमात्मानमनुविद्य विजानातीति ह प्रजापतिरुवाच॥', 'ya ātmā apahatapāpmā vijaro vimṛtyur viśoko vijighatso ''pipāsaḥ satyakāmaḥ satyasaṃkalpaḥ so ''nveṣṭavyaḥ sa vijijñāsitavyaḥ
+sa sarvāṃś ca lokān āpnoti sarvāṃś ca kāmān yas tam ātmānam anuvidya vijānātīti ha prajāpatir uvāca', null, 8007001),
+('chandogya-8-7-2', 2, 'Chapter 8, Section 7, Verse 2', 'तद्धोभये देवासुरा अनुबुबुधिरे।
+ते होचुर्हन्त तमात्मआनमन्वेच्छामो यमात्मानमन्विष्य सर्वांश्च लोकानाप्नोति सर्वांश्च कामानिति।
+इन्द्रो हैव देवानामभिप्रवव्राज विरोचनोऽसुराणाम्।
+तौ हासंविदानावेव समित्पाणी प्रजापतिसकाशमाजग्मतुः॥', 'tad dhobhaye devāsurā anububudhire
+te hocur hanta tam ātmaānam anvecchāmo yam ātmānam anviṣya sarvāṃś ca lokān āpnoti sarvāṃś ca kāmān iti
+indro haiva devānām abhipravavrāja virocano ''surāṇām
+tau hāsaṃvidānāv eva samitpāṇī prajāpatisakāśam ājagmatuḥ', null, 8007002),
+('chandogya-8-7-3', 3, 'Chapter 8, Section 7, Verse 3', 'तौ ह द्वात्रिंशतं वर्षाणि ब्रह्मचर्यमूषतुः।
+तौ ह प्रजापतिरुवाच।
+किमिच्छन्ताववास्तमिति।
+तौ होचतुर्य आत्मा अपहतपाप्मा विजरो विमृत्युर्विशोको विजिघत्सोऽपिपासः सत्यकामः सत्यसंकल्पः सोऽन्वेष्टव्यः स विजिज्ञासितव्यः।
+स सर्वांश्च लोकानाप्नोति सर्वांश्च कामान्यस्तमात्मानमनुविद्य विजानातीति भगवतो वचो वेदयन्ते।
+तमिच्छन्ताववास्तमिति॥', 'tau ha dvātriṃśataṃ varṣāṇi brahmacaryam ūṣatuḥ
+tau ha prajāpatir uvāca
+kim icchantāv avāstam iti
+tau hocatur ya ātmā apahatapāpmā vijaro vimṛtyur viśoko vijighatso ''pipāsaḥ satyakāmaḥ satyasaṃkalpaḥ so ''nveṣṭavyaḥ sa vijijñāsitavyaḥ
+sa sarvāṃś ca lokān āpnoti sarvāṃś ca kāmān yas tam ātmānam anuvidya vijānātīti bhagavato vaco vedayante
+tam icchantāv avāstam iti', null, 8007003),
+('chandogya-8-7-4', 4, 'Chapter 8, Section 7, Verse 4', 'तौ ह प्रजापतिरुवाच य एषोऽक्षिणि पुरुषो दृष्यत एष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+अथ योऽयं भगवोऽप्सु परिख्यायते यश्चायमादर्शे कतम एष इति।
+एष उ एवैषु सर्वेष्वन्न्तेषु परिख्यायत इति होवाच॥', 'tau ha prajāpatir uvāca ya eṣo ''kṣiṇi puruṣo dṛṣyata eṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+atha yo ''yaṃ bhagavo ''psu parikhyāyate yaś cāyam ādarśe katama eṣa iti
+eṣa u evaiṣu sarveṣvannteṣu parikhyāyata iti hovāca', null, 8007004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 8 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-8-1', 1, 'Chapter 8, Section 8, Verse 1', 'उदशराव आत्मानमवेक्ष्य यदात्मनो न विजानीथस्तन्मे प्रब्रूतमिति।
+तौ होदशरावेऽवेक्षां चक्राते।
+तौ ह प्रजापतिरुवाच किं पश्यथ इति।
+तौ होचतुः सर्वमेवेदमावां भगव आत्मानं पश्याव आ लोमभ्यः आ नखेभ्यः प्रतिरूपमिति॥', 'udaśarāva ātmānam avekṣya yad ātmano na vijānīthas tan me prabrūtam iti
+tau hodaśarāve ''vekṣāṃ cakrāte
+tau ha prajāpatir uvāca kiṃ paśyatha iti
+tau hocatuḥ sarvam evedam āvāṃ bhagava ātmānaṃ paśyāva ā lomabhyaḥ ā nakhebhyaḥ pratirūpam iti', null, 8008001),
+('chandogya-8-8-2', 2, 'Chapter 8, Section 8, Verse 2', 'तौ ह प्रजापतिरुवाच साध्वलंकृतौ सुवसनौ परिष्कृतौ भूत्वोदशरावेऽवेक्षेथामिति।
+तौ ह साध्वलंकृतौ सुवसनौ परिष्कृतौ भूत्वोदशरावेऽवेक्षां चक्राते।
+तौ ह प्रजापतिरुवाच किं पश्यथ इति॥', 'tau ha prajāpatir uvāca sādhvalaṃkṛtau suvasanau pariṣkṛtau bhūtvodaśarāve ''vekṣethām iti
+tau ha sādhvalaṃkṛtau suvasanau pariṣkṛtau bhūtvodaśarāve ''vekṣāṃ cakrāte
+tau ha prajāpatir uvāca kiṃ paśyatha iti', null, 8008002),
+('chandogya-8-8-3', 3, 'Chapter 8, Section 8, Verse 3', 'तौ होचतुर्यथैवेदमावां भगवः साध्वलंकृतौ सुवसनौ परिष्कृतौ स्व एवमेवेमौ भगवः साध्वल्लंकृतौ सुवसनौ परिष्कृताविति।
+एष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+तौ ह शान्तहृदयौ प्रवव्रजतुः॥', 'tau hocatur yathaivedam āvāṃ bhagavaḥ sādhvalaṃkṛtau suvasanau pariṣkṛtau sva evam evemau bhagavaḥ sādhvallaṃkṛtau suvasanau pariṣkṛtāv iti
+eṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+tau ha śāntahṛdayau pravavrajatuḥ', null, 8008003),
+('chandogya-8-8-4', 4, 'Chapter 8, Section 8, Verse 4', 'तौ हान्वीक्ष्य प्रजापतिरुवाच।
+अनुपलभ्यात्मानमननुविद्य व्रजतो यतर एतदुपनिषदो भविष्यन्ति देवा वा असुरा वा ते पराभविष्यन्तीति।
+स ह शान्तहृदय एव विरोचनोऽसुराञ्जगाम।
+तेभ्यो हैतामुपनिषदं प्रोवाच आत्मैवेह महय्य आत्मा परिचर्यः।
+आत्मानमेवेह महयन्नात्मानं परिचरन्नुभौ लोकावाप्नोतीमं चामुं चेति॥', 'tau hānvīkṣya prajāpatir uvāca
+anupalabhyātmānam ananuvidya vrajato yatara etadupaniṣado bhaviṣyanti devā vā asurā vā te parābhaviṣyantīti
+sa ha śāntahṛdaya eva virocano ''surāñ jagāma
+tebhyo haitām upaniṣadaṃ provāca ātmaiveha mahayya ātmā paricaryaḥ
+ātmānam eveha mahayann ātmānaṃ paricarann ubhau lokāv āpnotīmaṃ cāmuṃ ceti', null, 8008004),
+('chandogya-8-8-5', 5, 'Chapter 8, Section 8, Verse 5', 'तस्मादप्यद्द्येहाददानमश्रद्दधानमयजमानमाहुरासुरो बतेति।
+असुराणां ह्येषोपनिषत्।
+प्रेतस्य शरीरं भिक्षया वसनेनालंकारेणेति संस्कुर्वन्ति।
+एतेन ह्यम्मुं लोकं जेष्यन्तो मन्यन्ते॥', 'tasmād apyaddyehādadānam aśraddadhānam ayajamānam āhur āsuro bateti
+asurāṇāṃ hy eṣopaniṣat
+pretasya śarīraṃ bhikṣayā vasanenālaṃkāreṇeti saṃskurvanti
+etena hy ammuṃ lokaṃ jeṣyanto manyante', null, 8008005)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 9 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-9-1', 1, 'Chapter 8, Section 9, Verse 1', 'अथ हेन्द्रोऽप्राप्यैव देवानेतद्भयं ददर्श।
+यथैव खल्वयमस्मिञ्छरीरे साध्वलंकृते साध्वलंकृतो भवति सुवसने सुवसनः परिष्कृते परिष्कृत एवमेवायमस्मिन्नन्धेऽन्धो भवति स्रामे स्रामः परिवृक्णे परिवृक्णः।
+अस्यैव शरीरस्य नाशमन्वेष नश्यति।
+नाहमत्र भोग्यं पश्यामीति॥', 'atha hendro ''prāpyaiva devān etad bhayaṃ dadarśa
+yathaiva khalv ayam asmiñ charīre sādhvalaṃkṛte sādhvalaṃkṛto bhavati suvasane suvasanaḥ pariṣkṛte pariṣkṛta evam evāyam asminn andhe ''ndho bhavati srāme srāmaḥ parivṛkṇe parivṛkṇaḥ
+asyaiva śarīrasya nāśam anv eṣa naśyati
+nāham atra bhogyaṃ paśyāmīti', null, 8009001),
+('chandogya-8-9-2', 2, 'Chapter 8, Section 9, Verse 2', 'स समित्पाणिः पुनरेयाय।
+तं ह प्रजापतिरुवाच।
+मघवन्यच्छान्तहृदयः प्राव्राजीः सार्धं विरोचनेन किमिच्छन्पुनरागम इति।
+स होवाच यथा एव खल्वय्यं भगवोऽस्मिञ्छरीरे साध्वलंकृते साध्वलंकृतो भवति सुवसने सुवसनः परिष्कृते परिष्कृत एवमेवायमस्मिन्नन्धेऽन्धो भवति स्रामे स्रामः परिवृक्णे परिवृक्णः।
+अस्यैव शरीरस्य नाशमन्वेष नश्यति।
+नाहमत्र भोग्यं पश्यामीति॥', 'sa samitpāṇiḥ punar eyāya
+taṃ ha prajāpatir uvāca
+maghavan yac chāntahṛdayaḥ prāvrājīḥ sārdhaṃ virocanena kim icchan punar āgama iti
+sa hovāca yathā eva khalvayyaṃ bhagavo ''smiñ charīre sādhvalaṃkṛte sādhvalaṃkṛto bhavati suvasane suvasanaḥ pariṣkṛte pariṣkṛta evam evāyam asminn andhe ''ndho bhavati srāme srāmaḥ parivṛkṇe parivṛkṇaḥ
+asyaiva śarīrasya nāśam anv eṣa naśyati
+nāham atra bhogyaṃ paśyāmīti', null, 8009002),
+('chandogya-8-9-3', 3, 'Chapter 8, Section 9, Verse 3', 'एवमेवैष मघवन्निति होवाच।
+एतं त्वेव ते भूयोऽनुव्याख्यास्यामि।
+वसापराणि द्वात्रिंशतं वर्षाणीति।
+स हापराणि द्वात्रिंशतं वर्षाण्युवास।
+तस्मै होवाच॥', 'evam evaiṣa maghavann iti hovāca
+etaṃ tv eva te bhūyo ''nuvyākhyāsyāmi
+vasāparāṇi dvātriṃśataṃ varṣāṇīti
+sa hāparāṇi dvātriṃśataṃ varṣāṇyuvāsa
+tasmai hovāca', null, 8009003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 10 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-10-1', 1, 'Chapter 8, Section 10, Verse 1', 'य एष स्वप्ने महीयमानश्चरत्येष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+स ह शान्तहृदयः प्रवव्राज।
+स हाप्राप्यैव देवानेतद्भयं ददर्श।
+तद्यद्यपीदं शरीरमन्धं भवत्यनन्धः स भवति यदि स्राममस्रामः।
+नैवैषोऽस्य दोषेण दुष्यति॥', 'ya eṣa svapne mahīyamānaś caraty eṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+sa ha śāntahṛdayaḥ pravavrāja
+sa hāprāpyaiva devān etad bhayaṃ dadarśa
+tad yady apīdaṃ śarīram andhaṃ bhavaty anandhaḥ sa bhavati yadi srāmam asrāmaḥ
+naivaiṣo ''sya doṣeṇa duṣyati', null, 8010001),
+('chandogya-8-10-2', 2, 'Chapter 8, Section 10, Verse 2', 'न वधेनास्य हन्यते।
+नास्य स्राम्येण स्रामः।
+घ्नन्ति त्वेवैनम्।
+विच्छादयन्तीव।
+अप्रियवेत्तेव भवति।
+अपि रोदितीव नाहमत्र भोग्यं पश्यामीति॥', 'na vadhenāsya hanyate
+nāsya srāmyeṇa srāmaḥ
+ghnanti tv evainam
+vicchādayantīva
+apriyavetteva bhavati
+api roditīva nāham atra bhogyaṃ paśyāmīti', null, 8010002),
+('chandogya-8-10-3', 3, 'Chapter 8, Section 10, Verse 3', 'स समित्पाणिः पुनरेयाय।
+तं ह प्रजापतिरुवाच।
+मघवन्यच्छान्तहृदयः प्राव्राजीः किमिच्छन्पुनरागम इति।
+स होवाच।
+तद्यद्यपीदं भगवः शरीरमन्धं भवत्यनन्धः स भवति यदि स्राममस्रामः।
+नैवैषोऽस्य दोषेण दुष्यति॥', 'sa samitpāṇiḥ punar eyāya
+taṃ ha prajāpatir uvāca
+maghavan yac chāntahṛdayaḥ prāvrājīḥ kim icchan punar āgama iti
+sa hovāca
+tad yady apīdaṃ bhagavaḥ śarīram andhaṃ bhavaty anandhaḥ sa bhavati yadi srāmam asrāmaḥ
+naivaiṣo ''sya doṣeṇa duṣyati', null, 8010003),
+('chandogya-8-10-4', 4, 'Chapter 8, Section 10, Verse 4', 'न वधेनास्य हन्यते।
+नास्य स्राम्येण स्रामः।
+घ्नन्ति त्विवैनम्।
+विच्छादयन्तीव।
+अप्रियवेत्तेव भवति।
+अपि रोदितीव।
+नाहमत्र भोग्यं पश्यामीति।
+एवमेवैष मघवन्निति होवाच।
+एतं त्वेव ते भूयोऽनुव्याख्यास्यामि।
+वसापराणि द्वात्रिंशतं वर्षाणीति।
+स हापराणि द्वात्रिंशतं वर्षाण्युवास।
+तस्मै होवाच॥', 'na vadhenāsya hanyate
+nāsya srāmyeṇa srāmaḥ
+ghnanti tv ivainam
+vicchādayantīva
+apriyavetteva bhavati
+api roditīva
+nāham atra bhogyaṃ paśyāmīti
+evam evaiṣa maghavann iti hovāca
+etaṃ tv eva te bhūyo ''nuvyākhyāsyāmi
+vasāparāṇi dvātriṃśataṃ varṣāṇīti
+sa hāparāṇi dvātriṃśataṃ varṣāṇyuvāsa
+tasmai hovāca', null, 8010004)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 11 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-11-1', 1, 'Chapter 8, Section 11, Verse 1', 'तद्यत्रैतत्सुप्तः समस्तः संप्रसन्नः स्वप्नं न विजानात्येष आत्मेति होवाच।
+एतदमृतमभयमेतद्ब्रह्मेति।
+स ह शान्तहृदयः प्रवव्राज।
+स हाप्राप्यैव देवानेतद्भयं ददर्श।
+नाह खल्वयमेवं संप्रत्यात्मानं जानात्ययमहमस्मीति।
+नो एवेमानि भूतानि।
+विनाशमेवापीतो भवति।
+नाहमत्र भोग्यं पश्यामीति॥', 'tad yatraitat suptaḥ samastaḥ saṃprasannaḥ svapnaṃ na vijānātyeṣa ātmeti hovāca
+etad amṛtam abhayam etad brahmeti
+sa ha śāntahṛdayaḥ pravavrāja
+sa hāprāpyaiva devān etad bhayaṃ dadarśa
+nāha khalv ayam evaṃ saṃpraty ātmānaṃ jānāty ayam aham asmīti
+no evemāni bhūtāni
+vināśam evāpīto bhavati
+nāham atra bhogyaṃ paśyāmīti', null, 8011001),
+('chandogya-8-11-2', 2, 'Chapter 8, Section 11, Verse 2', 'स समित्पाणिः पुनरेयाय।
+तं ह प्रजापतिरुवाच - मघवन्यच्छान्तहृदयः प्राव्राजीः किमिच्छन्पुनरागम इति।
+स होवाच नाह खल्वयं भगव एवं संप्रत्यात्मानं जानात्ययमहमस्मीति।
+नो एवेमानि भूतानि।
+विनाशमेवापीतो भवति।
+नाहमत्र भोग्यं पश्यामीति॥', 'sa samitpāṇiḥ punar eyāya
+taṃ ha prajāpatir uvāca - maghavan yac chāntahṛdayaḥ prāvrājīḥ kim icchan punar āgama iti
+sa hovāca nāha khalv ayaṃ bhagava evaṃ saṃpraty ātmānaṃ jānāty ayam aham asmīti
+no evemāni bhūtāni
+vināśam evāpīto bhavati
+nāham atra bhogyaṃ paśyāmīti', null, 8011002),
+('chandogya-8-11-3', 3, 'Chapter 8, Section 11, Verse 3', 'एवमेवैष मघवन्निति होवाच।
+एतं त्वेव ते भूयोऽनुव्याख्यास्यामि।
+नो एवान्यत्रैतस्मात्।
+वसापराणि पञ्च वर्षाणीति।
+स हापराणि पञ्च वर्षाण्युवास।
+तान्येकशतं संपेदुः।
+एतत्तद्यदाहुः।
+एकशतं ह वै वर्षाणि मघवान्प्रजापतौ ब्रह्मचर्यमुवास।
+तस्मै होवाच॥', 'evam evaiṣa maghavann iti hovāca
+etaṃ tv eva te bhūyo ''nuvyākhyāsyāmi
+no evānyatraitasmāt
+vasāparāṇi pañca varṣāṇīti
+sa hāparāṇi pañca varṣāṇyuvāsa
+tāny ekaśataṃ saṃpeduḥ
+etat tad yad āhuḥ
+ekaśataṃ ha vai varṣāṇi maghavān prajāpatau brahmacaryam uvāsa
+tasmai hovāca', null, 8011003)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 12 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-12-1', 1, 'Chapter 8, Section 12, Verse 1', 'मघवन्मर्त्यं वा इदं शरीरमात्तं मृत्युना।
+तदस्यामृतस्याशरीरस्यात्मनोऽधिष्ठानम्।
+आत्तो वै सशरीरः प्रियाप्रियाभ्याम्।
+न वै सशरीरस्य सतः प्रियाप्रिययोरपहतिरस्ति।
+अशरीरं वाव सन्तं न प्रियाप्रिये स्पृशतः॥', 'maghavan martyaṃ vā idaṃ śarīram āttaṃ mṛtyunā
+tad asyāmṛtasyāśarīrasyātmano ''dhiṣṭhānam
+ātto vai saśarīraḥ priyāpriyābhyām
+na vai saśarīrasya sataḥ priyāpriyayor apahatir asti
+aśarīraṃ vāva santaṃ na priyāpriye spṛśataḥ', null, 8012001),
+('chandogya-8-12-2', 2, 'Chapter 8, Section 12, Verse 2', 'अशरीरो वायुः।
+अभ्रं विद्युत्स्तनयित्नुरशरीराण्येतानि।
+तद्यथैतान्यमुष्मादाकाशात्समुत्थाय परं ज्योतिरुपसंपद्य स्वेन रूपेणाभिनिष्पद्यन्ते॥', 'aśarīro vāyuḥ
+abhraṃ vidyut stanayitnur aśarīrāṇy etāni
+tad yathaitāny amuṣmād ākāśāt samutthāya paraṃ jyotir upasaṃpadya svena rūpeṇābhiniṣpadyante', null, 8012002),
+('chandogya-8-12-3', 3, 'Chapter 8, Section 12, Verse 3', 'एवमेवैष संप्रसादोऽस्माच्छरीरात्समुत्थाय परं ज्योतिरुपसंपद्य स्वेन रूपेणाभिनिष्पद्यते।
+स उत्तमपुरुषः।
+स तत्र पर्येति जक्षत्क्रीडन्रममाणः स्त्रीभिर्वा यानैर्वा ज्ञातिभिर्वा नोपजनं स्मरन्निदं शरीरम्।
+स यथा प्रयोग्य आचरणे युक्त एवमेवायमस्मिञ्छरीरे प्राणो युक्तः॥', 'evam evaiṣa saṃprasādo ''smāc charīrāt samutthāya paraṃ jyotir upasaṃpadya svena rūpeṇābhiniṣpadyate
+sa uttamapuruṣaḥ
+sa tatra paryeti jakṣat krīḍan ramamāṇaḥ strībhir vā yānair vā jñātibhir vā nopajanaṃ smarann idaṃ śarīram
+sa yathā prayogya ācaraṇe yukta evam evāyam asmiñ charīre prāṇo yuktaḥ', null, 8012003),
+('chandogya-8-12-4', 4, 'Chapter 8, Section 12, Verse 4', 'अथ यत्रैतदाकाशमनुविषण्णं चक्षुः स चाक्षुषः पुरुषो दर्शनाय चक्षुः।
+अथ यो वेदेदं जिघ्राणीति स आत्मा गन्धाय घ्राणम्।
+अथ यो वेदेदमभिव्याहराणीति स आत्मा अभिव्याहाराय वाक्।
+अथ यो वेदेदं शृण्वानीति स आत्मा श्रवणाय श्रोत्रम्॥', 'atha yatraitad ākāśam anuviṣaṇṇaṃ cakṣuḥ sa cākṣuṣaḥ puruṣo darśanāya cakṣuḥ
+atha yo vededaṃ jighrāṇīti sa ātmā gandhāya ghrāṇam
+atha yo vededam abhivyāharāṇīti sa ātmā abhivyāhārāya vāk
+atha yo vededaṃ śṛṇvānīti sa ātmā śravaṇāya śrotram', null, 8012004),
+('chandogya-8-12-5', 5, 'Chapter 8, Section 12, Verse 5', 'अथ यो वेदेदं मन्वानीति स आत्मा।
+मनोऽस्य दैवं चक्षुः।
+स वा एष एतेन दैवेन चक्षुषा मनसैतान्कामान्पश्यन्रमते य एते ब्रह्मलोके॥', 'atha yo vededaṃ manvānīti sa ātmā
+mano ''sya daivaṃ cakṣuḥ
+sa vā eṣa etena daivena cakṣuṣā manasaitān kāmān paśyan ramate ya ete brahmaloke', null, 8012005),
+('chandogya-8-12-6', 6, 'Chapter 8, Section 12, Verse 6', 'तं वा एतं देवा आत्मानमुपासते।
+तस्मात्तेषां सर्वे च लोका आत्ताः सर्वे च कामाः।
+स सर्वांश्च लोकानाप्नोति सर्वांश्च कामान्यस्तमात्मानमनुविद्य विजानाति।
+इति ह प्रजापतिरुवाच प्रजापतिरुवाच॥', 'taṃ vā etaṃ devā ātmānam upāsate
+tasmāt teṣāṃ sarve ca lokā āttāḥ sarve ca kāmāḥ
+sa sarvāṃś ca lokān āpnoti sarvāṃś ca kāmān yas tam ātmānam anuvidya vijānāti
+iti ha prajāpatir uvāca prajāpatir uvāca', null, 8012006)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 13 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-13-1', 1, 'Chapter 8, Section 13, Verse 1', 'श्यामाच्छबलं प्रपद्ये।
+शबलाच्छ्यामं प्रपद्ये।
+अश्व इव रोमाणि विधूय पापं चन्द्र इव राहोर्मुखात्प्रमुच्य धूत्वा शरीरमकृतं कृतात्मा ब्रह्मलोकमभिसंभवामीत्यभिसंभवामीति॥', 'śyāmāc chabalaṃ prapadye
+śabalāc chyāmaṃ prapadye
+aśva iva romāṇi vidhūya pāpaṃ candra iva rāhor mukhāt pramucya dhūtvā śarīram akṛtaṃ kṛtātmā brahmalokam abhisaṃbhavāmīty abhisaṃbhavāmīti', null, 8013001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 14 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-14-1', 1, 'Chapter 8, Section 14, Verse 1', 'आकाशो वै नाम नामरूपयोर्निर्वहिता।
+ते यदन्तरा तद्ब्रह्म तदमृतं स आत्मा।
+प्रजापतेः सभां वेश्म प्रपद्ये यशोऽहं भवामि ब्राह्मणानां यशो राज्ञाम्यशो विशाम्।
+यशोऽहमनुप्रापत्सि।
+स हाहं यशसां यशः।
+श्येतमदत्कमदत्कं श्येतं लिन्दु माभिगां लिन्दु माभिगाम्॥', 'ākāśo vai nāma nāmarūpayor nirvahitā
+te yadantarā tad brahma tad amṛtaṃ sa ātmā
+prajāpateḥ sabhāṃ veśma prapadye yaśo ''haṃ bhavāmi brāhmaṇānāṃ yaśo rājñām yaśo viśām
+yaśo ''ham anuprāpatsi
+sa hāhaṃ yaśasāṃ yaśaḥ
+śyetam adatkam adatkaṃ śyetaṃ lindu mābhigāṃ lindu mābhigām', null, 8014001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'chandogya-upanishad', (select id from sections where scripture_id = 'chandogya-upanishad' and level = 2 and number = 15 and parent_id = (select id from sections where scripture_id = 'chandogya-upanishad' and level = 1 and number = 8 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('chandogya-8-15-1', 1, 'Chapter 8, Section 15, Verse 1', 'तद्धैतद्ब्रह्मा प्रजापतय उवाच प्रजापतिर्मनवे मनुः प्रजाभ्यः।
+आचार्यकुलाद्वेदमधीत्य यथाविधानं गुरोः कर्मातिशेषेणाभिसमावृत्य कुटुम्बे शुचौ देशे स्वाध्यायमधीयानो धर्मिकान्विदधदात्मनि सर्वेन्द्रियाणि संप्रतिष्ठाप्याहिंसन्सर्वभूतान्यन्यत्र तीर्थेभ्यः।
+स खल्वेवं वर्तयन्यावदायुषं ब्रह्मलोकमभिसंपद्यते।
+न च पुनरावर्तते न च पुनरावर्तते॥', 'tad dhaitad brahmā prajāpataya uvāca prajāpatir manave manuḥ prajābhyaḥ
+ācāryakulād vedam adhītya yathāvidhānaṃ guroḥ karmātiśeṣeṇābhisamāvṛtya kuṭumbe śucau deśe svādhyāyam adhīyāno dharmikān vidadhad ātmani sarvendriyāṇi saṃpratiṣṭhāpyāhiṃsan sarvabhūtāny anyatra tīrthebhyaḥ
+sa khalv evaṃ vartayan yāvad āyuṣaṃ brahmalokam abhisaṃpadyate
+na ca punar āvartate na ca punar āvartate', null, 8015001)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: isha-upanishad (upanishad-isha.json)
+update verses set speaker = null where id = 'isha-1';
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'isha-upanishad', null, x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('isha-2', 2, 'Verse 2', 'कुर्वन्नेवेह कर्माणि जिजीविषेच्छतं समाः।
+एवं त्वयि नान्यथेतोऽस्ति न कर्म लिप्यते नरे॥', 'kurvann eveha karmāṇi jijīviṣecchataṃ samāḥ
+evaṃ tvayi nānyatheto ''sti na karma lipyate nare', null, 2),
+('isha-3', 3, 'Verse 3', 'असुर्या नाम ते लोका अन्धेन तमसावृताः।
+तांस्ते प्रेत्याभिगच्छन्ति ये के चात्महनो जनाः॥', 'asuryā nāma te lokā andhena tamasāvṛtāḥ
+tāṃste pretyābhigacchanti ye ke cātmahano janāḥ', null, 3),
+('isha-4', 4, 'Verse 4', 'अनेजदेकं मनसो जवीयो नैनद्देवा आप्नुवन्पूर्वमर्षत्।
+तद्धावतोऽन्यानत्येति तिष्ठत्तस्मिन्नपो मातरिश्वा दधाति॥', 'anejad ekaṃ manaso javīyo nainaddevā āpnuvanpūrvamarṣat
+taddhāvato ''nyānatyeti tiṣṭhat tasminn apo mātariśvā dadhāti', null, 4),
+('isha-5', 5, 'Verse 5', 'तदेजति तन्नैजति तद्दूरे तद्वन्तिके।
+तदन्तरस्य सर्वस्य तदु सर्वस्यास्य बाह्यतः॥', 'tad ejati tan naijati tad dūre tad v antike
+tad antar asya sarvasya tad u sarvasyāsya bāhyataḥ', null, 5),
+('isha-6', 6, 'Verse 6', 'यस्तु सर्वाणि भूतान्यात्मन्येवानुपश्यति।
+सर्वभूतेषु चात्मानं ततो न विजुगुप्सते॥', 'yas tu sarvāṇi bhūtāny ātmany evānupaśyati
+sarvabhūteṣu cātmānaṃ tato na vijugupsate', null, 6),
+('isha-7', 7, 'Verse 7', 'यस्मिन्सर्वाणि भूतान्यात्मैवाभूद्विजानतः।
+तत्र को मोहः कः शोक एकत्वमनुपश्यतः॥', 'yasmin sarvāṇi bhūtāny ātmaivābhūd vijānataḥ
+tatra ko mohaḥ kaḥ śoka ekatvam anupaśyataḥ', null, 7),
+('isha-8', 8, 'Verse 8', 'स पर्यगाच्छुक्रमकायमव्रणमस्नाविरं शुद्धमपापविद्धम्।
+कविर्मनीषी परिभूः स्वयम्भूर्याथातथ्यतोर्ऽथान्व्यदधाच्छाश्वतीभ्यः समाभ्यः॥', 'sa paryagāc chukram akāyam avraṇam asnāviraṃ śuddham apāpaviddham
+kavir manīṣī paribhūḥ svayambhūr yāthātathyator ''thān vyadadhāc chāśvatībhyaḥ samābhyaḥ', null, 8),
+('isha-9', 9, 'Verse 9', 'अन्धं तमः प्रविशन्ति येऽविद्यामुपासते।
+ततो भूय इव ते तमो य उविद्यायां रताः॥', 'andhaṃ tamaḥ praviśanti ye ''vidyām upāsate
+tato bhūya iva te tamo ya uvidyāyāṃ ratāḥ', null, 9),
+('isha-10', 10, 'Verse 10', 'अन्यदेवाहुर्विद्ययान्यदाहुरविद्यया।
+इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे॥', 'anyad evāhur vidyayān yad āhur avidyayā
+iti śuśruma dhīrāṇāṃ ye nas tad vicacakṣire', null, 10),
+('isha-11', 11, 'Verse 11', 'विद्यां चाविद्यां च यस्तद्वेदोभयं सह।
+अविद्यया मृत्युं तीर्त्वा विद्ययामृतमश्नुते॥', 'vidyāṃ cāvidyāṃ ca yas tad vedobhayaṃ saha
+avidyayā mṛtyuṃ tīrtvā vidyayāmṛtam aśnute', null, 11),
+('isha-12', 12, 'Verse 12', 'अन्धं तमः प्रविशन्ति येऽसम्भूतिमुपासते।
+ततो भूय इव ते तमो य उ सम्भूत्यां रताः॥', 'andhaṃ tamaḥ praviśanti ye ''sambhūtim upāsate
+tato bhūya iva te tamo ya u sambhūtyāṃ ratāḥ', null, 12),
+('isha-13', 13, 'Verse 13', 'अन्यदेवाहुः संभवादन्यदाहुरसंभवात्।
+इति शुश्रुम धीराणां ये नस्तद्विचचक्षिरे॥', 'anyad evāhuḥ saṃbhavād anyad āhur asaṃbhavāt
+iti śuśruma dhīrāṇāṃ ye nas tad vicacakṣire', null, 13),
+('isha-14', 14, 'Verse 14', 'संभूतिं च विनाशं च यस्तद्वेदोभयं सह।
+विनाशेन मृत्युं तीर्त्वा संभूत्यामृतमश्नुते॥', 'saṃbhūtiṃ ca vināśaṃ ca yas tad vedobhayaṃ saha
+vināśena mṛtyuṃ tīrtvā saṃbhūtyāmṛtam aśnute', null, 14),
+('isha-15', 15, 'Verse 15', 'हिरण्मयेन पात्रेण सत्यस्यापिहितं मुखम्।
+तत्त्वं पूषन्नपावृणु सत्यधर्माय दृष्टये॥', 'hiraṇmayena pātreṇa satyasyāpihitaṃ mukham
+tat tvaṃ pūṣann apāvṛṇu satyadharmāya dṛṣṭaye', null, 15),
+('isha-16', 16, 'Verse 16', 'पूषन्नेकर्षे यम सूर्य प्राजापत्य व्यूह रश्मीन्समूह तेजः।
+यत्ते रूपं कल्याणतमं तत्ते पश्यामि योऽसावसौ पुरुषः सोऽहमस्मि॥', 'pūṣann ekarṣe yama sūrya prājāpatya vyūha raśmīn samūha tejaḥ
+yat te rūpaṃ kalyāṇatamaṃ tat te paśyāmi yo ''sāv asau puruṣaḥ so ''ham asmi', null, 16),
+('isha-17', 17, 'Verse 17', 'वायुरनिलममृतमथेदं भस्मान्तं शरीरम्।
+ॐ क्रतो स्मर कृतं स्मर क्रतो स्मर कृतं स्मर॥', 'vāyur anilam amṛtam athedaṃ bhasmāntaṃ śarīram
+oṃ krato smara kṛtaṃ smara krato smara kṛtaṃ smara', null, 17),
+('isha-18', 18, 'Verse 18', 'अग्ने नय सुपथा राये अस्मान्विश्वानि देव वयुनानि विद्वान्।
+युयोध्यस्मज्जुहुराणमेनो भूयिष्ठां ते नम उक्तिं विधेम॥', 'agne naya supathā rāye asmān viśvāni deva vayunāni vidvān
+yuyodhy asmaj juhurāṇam eno bhūyiṣṭhāṃ te nama uktiṃ vidhema', null, 18)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: katha-upanishad (upanishad-katha.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', null, 1, 1, 'Chapter 1', null, 71) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 1, 'Section 1', null, 29) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 2, 'Section 2', null, 25) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null), 2, 3, 'Section 3', null, 17) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', null, 1, 2, 'Chapter 2', null, 48) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 1, 'Section 1', null, 15) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 2, 'Section 2', null, 15) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null), 2, 3, 'Section 3', null, 18) on conflict do nothing;
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-1-1-1', 1, 'Chapter 1, Section 1, Verse 1', 'उशन्ह वै वाजश्रवसः सर्ववेदसं ददौ।
+तस्य ह नचिकेता नाम पुत्र आस॥', 'uśan ha vai vājaśravasaḥ sarvavedasaṃ dadau
+tasya ha naciketā nāma putra āsa', null, 1001001),
+('katha-1-1-2', 2, 'Chapter 1, Section 1, Verse 2', 'तं ह कुमारं सन्तं दक्षिणासु नीयमानासु श्रद्धाविवेश।
+सोऽमन्यत॥', 'taṃ ha kumāraṃ santaṃ dakṣiṇāsu nīyamānāsu śraddhāviveśa
+so ''manyata', null, 1001002),
+('katha-1-1-3', 3, 'Chapter 1, Section 1, Verse 3', 'पीतोदका जग्धतृणा दुग्धदोहा निरिन्द्रियाः।
+अनन्दा नाम ते लोकास्तान्स गच्छति ता ददत्॥', 'pītodakā jagdhatṛṇā dugdhadohā nirindriyāḥ
+anandā nāma te lokās tān sa gacchati tā dadat', null, 1001003),
+('katha-1-1-4', 4, 'Chapter 1, Section 1, Verse 4', 'स होवाच पितरं तत कस्मै मां दास्यसीति।
+द्वितीयं तृतीयम्।
+तं होवाच मृत्यवे त्वा ददामीति॥', 'sa hovāca pitaraṃ tata kasmai māṃ dāsyasīti
+dvitīyaṃ tṛtīyam
+taṃ hovāca mṛtyave tvā dadāmīti', null, 1001004),
+('katha-1-1-5', 5, 'Chapter 1, Section 1, Verse 5', 'बहूनामेमि प्रथमो बहूनामेमि मध्यमः।
+किं स्विद्यमस्य कर्तव्यं यन्मयाद्य करिष्यति॥', 'bahūnām emi prathamo bahūnām emi madhyamaḥ
+kiṃ svid yamasya kartavyaṃ yan mayādya kariṣyati', null, 1001005),
+('katha-1-1-6', 6, 'Chapter 1, Section 1, Verse 6', 'अनुपश्य यथा पूर्वे प्रतिपश्य तथापरे।
+सस्यमिव मर्त्यः पच्यते सस्यमिवाजायते पुनः॥', 'anupaśya yathā pūrve pratipaśya tathāpare
+sasyam iva martyaḥ pacyate sasyam ivājāyate punaḥ', null, 1001006),
+('katha-1-1-7', 7, 'Chapter 1, Section 1, Verse 7', 'वैश्वानरः प्रविशति अतिथिर्ब्राह्मणो गृहान्।
+तस्यैतां शान्तिं कुर्वन्ति हर वैवस्वतोदकम्॥', 'vaiśvānaraḥ praviśati atithir brāhmaṇo gṛhān
+tasyaitāṃ śāntiṃ kurvanti hara vaivasvatodakam', null, 1001007),
+('katha-1-1-8', 8, 'Chapter 1, Section 1, Verse 8', 'आशाप्रतीक्षे संगतं सूनृतां च इष्टापूर्ते पुत्रपशूंश्च सर्वान्।
+एतद्वृङ्क्ते पुरुषस्याल्पमेधसो यस्यानश्नन्वसति ब्राह्मणो गृहे॥', 'āśāpratīkṣe saṃgataṃ sūnṛtāṃ ca iṣṭāpūrte putrapaśūṃś ca sarvān
+etad vṛṅkte puruṣasyālpamedhaso yasyānaśnan vasati brāhmaṇo gṛhe', null, 1001008),
+('katha-1-1-9', 9, 'Chapter 1, Section 1, Verse 9', 'तिस्रो रात्रीर्यदवत्सीर्गृहे मे अनश्नन्ब्रह्मन्नतिथिर्नमस्यः।
+नमस्तेऽस्तु ब्रह्मन्स्वस्ति मेऽस्तु तस्मात्प्रति त्रीन्वरान्वृणीष्व॥', 'tisro rātrīr yad avatsīr gṛhe me anaśnan brahmann atithir namasyaḥ
+namas te ''stu brahman svasti me ''stu tasmāt prati trīn varān vṛṇīṣva', null, 1001009),
+('katha-1-1-10', 10, 'Chapter 1, Section 1, Verse 10', 'शान्तसङ्कल्पः सुमना यथा स्याद्वीतमन्युर्गौतमो माभि मृत्यो।
+त्वत्प्रसृष्टं माभिवदेत्प्रतीत एतत्त्रयाणां प्रथमं वरं वृणे॥', 'śāntasaṅkalpaḥ sumanā yathā syād vītamanyur gautamo mābhi mṛtyo
+tvatprasṛṣṭaṃ mābhivadet pratīta etat trayāṇāṃ prathamaṃ varaṃ vṛṇe', null, 1001010),
+('katha-1-1-11', 11, 'Chapter 1, Section 1, Verse 11', 'यथा पुरस्ताद्भविता प्रतीत औद्दालकिरारुणिर्मत्प्रसृष्टः।
+सुखं रात्रीः शयिता वीतमन्युस्त्वां ददृशिवान्मृत्युमुखात्प्रमुक्तम्॥', 'yathā purastād bhavitā pratīta auddālakir āruṇir matprasṛṣṭaḥ
+sukhaṃ rātrīḥ śayitā vītamanyus tvāṃ dadṛśivān mṛtyumukhāt pramuktam', null, 1001011),
+('katha-1-1-12', 12, 'Chapter 1, Section 1, Verse 12', 'स्वर्गे लोके न भयं किंचनास्ति न तत्र त्वं न जरया बिभेति।
+उभे तीर्त्वा अशनायापिपासे शोकातिगो मोदते स्वर्गलोके॥', 'svarge loke na bhayaṃ kiṃcanāsti na tatra tvaṃ na jarayā bibheti
+ubhe tīrtvā aśanāyāpipāse śokātigo modate svargaloke', null, 1001012),
+('katha-1-1-13', 13, 'Chapter 1, Section 1, Verse 13', 'स त्वमग्निं स्वर्ग्यमध्येषि मृत्यो प्रब्रूहि तं श्रद्दधानाय मह्यम्।
+स्वर्गलोका अमृतत्वं भजन्त एतद्द्वितीयेन वृणे वरेण॥', 'sa tvam agniṃ svargyam adhyeṣi mṛtyo prabrūhi taṃ śraddadhānāya mahyam
+svargalokā amṛtatvaṃ bhajanta etad dvitīyena vṛṇe vareṇa', null, 1001013),
+('katha-1-1-14', 14, 'Chapter 1, Section 1, Verse 14', 'प्र ते ब्रवीमि तदु मे निबोध स्वर्ग्यमग्निं नचिकेतः प्रजानन्।
+अनन्तलोकाप्तिमथो प्रतिष्ठां विद्धि त्वमेतं निहितं गुहायाम्॥', 'pra te bravīmi tad u me nibodha svargyam agniṃ naciketaḥ prajānan
+anantalokāptim atho pratiṣṭhāṃ viddhi tvam etaṃ nihitaṃ guhāyām', null, 1001014),
+('katha-1-1-15', 15, 'Chapter 1, Section 1, Verse 15', 'लोकादिमग्निं तमुवाच तस्मै या इष्टका यावतीर्वा यथा वा।
+स चापि तत्प्रत्यवदद्यथोक्तमथास्य मृत्युः पुनराह तुष्टः॥', 'lokādim agniṃ tam uvāca tasmai yā iṣṭakā yāvatīr vā yathā vā
+sa cāpi tat pratyavadad yathoktam athāsya mṛtyuḥ punar āha tuṣṭaḥ', null, 1001015),
+('katha-1-1-16', 16, 'Chapter 1, Section 1, Verse 16', 'तमब्रवीत्प्रीयमाणो महात्मा वरं तवेहाद्य ददामि भूयः।
+तवैव नाम्ना भवितायमग्निः सृङ्कां चेमामनेकरूपां गृहाण॥', 'tam abravīt prīyamāṇo mahātmā varaṃ tavehādya dadāmi bhūyaḥ
+tavaiva nāmnā bhavitāyam agniḥ sṛṅkāṃ cemām anekarūpāṃ gṛhāṇa', null, 1001016),
+('katha-1-1-17', 17, 'Chapter 1, Section 1, Verse 17', 'त्रिणाचिकेतस्त्रिभिरेत्य सन्धिं त्रिकर्मकृत्तरति जन्ममृत्यू।
+ब्रह्मजज्ञं देवमीड्यं विदित्वा निचाय्येमां शान्तिमत्यन्तमेति॥', 'triṇāciketas tribhir etya sandhiṃ trikarmakṛt tarati janmamṛtyū
+brahmajajñaṃ devam īḍyaṃ viditvā nicāyyemāṃ śāntim atyantam eti', null, 1001017),
+('katha-1-1-18', 18, 'Chapter 1, Section 1, Verse 18', 'त्रिणाचिकेतस्त्रयमेतद्विदित्वा य एवं विद्वांश्चिनुते नाचिकेतम्।
+स मृत्युपाशान्पुरतः प्रणोद्य शोकातिगो मोदते स्वर्गलोके॥', 'triṇāciketas trayam etad viditvā ya evaṃ vidvāṃś cinute nāciketam
+sa mṛtyupāśān purataḥ praṇodya śokātigo modate svargaloke', null, 1001018),
+('katha-1-1-19', 19, 'Chapter 1, Section 1, Verse 19', 'एष तेऽग्निर्नचिकेतः स्वर्ग्यो यमवृणीथा द्वितीयेन वरेण।
+एतमग्निं तवैव प्रवक्ष्यन्ति जनासस्तृतीयं वरं नचिकेतो वृणीष्व॥', 'eṣa te ''gnir naciketaḥ svargyo yam avṛṇīthā dvitīyena vareṇa
+etam agniṃ tavaiva pravakṣyanti janāsas tṛtīyaṃ varaṃ naciketo vṛṇīṣva', null, 1001019),
+('katha-1-1-20', 20, 'Chapter 1, Section 1, Verse 20', 'येयं प्रेते विचिकित्सा मनुष्ये अस्तीत्येके नायमस्तीति चैके।
+एतद्विद्यामनुशिष्टस्त्वयाहं वराणामेष वरस्तृतीयः॥', 'yeyaṃ prete vicikitsā manuṣye astīty eke nāyam astīti caike
+etad vidyām anuśiṣṭas tvayāhaṃ varāṇām eṣa varas tṛtīyaḥ', null, 1001020),
+('katha-1-1-21', 21, 'Chapter 1, Section 1, Verse 21', 'देवैरत्रापि विचिकित्सितं पुरा न हि सुज्ञेयमणुरेष धर्मः।
+अन्यं वरं नचिकेतो वृणीष्व मा मोपरोत्सीरति मा सृजैनम्॥', 'devair atrāpi vicikitsitaṃ purā na hi sujñeyam aṇur eṣa dharmaḥ
+anyaṃ varaṃ naciketo vṛṇīṣva mā moparotsīr ati mā sṛjainam', null, 1001021),
+('katha-1-1-22', 22, 'Chapter 1, Section 1, Verse 22', 'देवैरत्रापि विचिकित्सितं किल त्वं च मृत्यो यन्न सुज्ञेयमात्थ।
+वक्ता चास्य त्वादृगन्यो न लभ्यो नान्यो वरस्तुल्य एतस्य कश्चित्॥', 'devair atrāpi vicikitsitaṃ kila tvaṃ ca mṛtyo yan na sujñeyam āttha
+vaktā cāsya tvādṛg anyo na labhyo nānyo varas tulya etasya kaścit', null, 1001022),
+('katha-1-1-23', 23, 'Chapter 1, Section 1, Verse 23', 'शतायुषः पुत्रपौत्रान्वृणीष्व बहून्पशून्हस्तिहिरण्यमश्वान्।
+भूमेर्महदायतनं वृणीष्व स्वयं च जीव शरदो यावदिच्छसि॥', 'śatāyuṣaḥ putrapautrān vṛṇīṣva bahūn paśūn hastihiraṇyam aśvān
+bhūmer mahad āyatanaṃ vṛṇīṣva svayaṃ ca jīva śarado yāvad icchasi', null, 1001023),
+('katha-1-1-24', 24, 'Chapter 1, Section 1, Verse 24', 'एतत्तुल्यं यदि मन्यसे वरं वृणीष्व वित्तं चिरजीविकां च।
+महाभूमौ नचिकेतस्त्वमेधि कामानां त्वा कामभाजं करोमि॥', 'etat tulyaṃ yadi manyase varaṃ vṛṇīṣva vittaṃ cirajīvikāṃ ca
+mahābhūmau naciketas tvam edhi kāmānāṃ tvā kāmabhājaṃ karomi', null, 1001024),
+('katha-1-1-25', 25, 'Chapter 1, Section 1, Verse 25', 'ये ये कामा दुर्लभा मर्त्यलोके सर्वान्कामांश्छन्दतः प्रार्थयस्व।
+इमा रामाः सरथाः सतूर्या न हीदृशा लम्भनीया मनुष्यैः।
+आभिर्मत्प्रत्ताभिः परिचारयस्व नचिकेतो मरणं मानुप्राक्षीः॥', 'ye ye kāmā durlabhā martyaloke sarvān kāmāṃś chandataḥ prārthayasva
+imā rāmāḥ sarathāḥ satūryā na hīdṛśā lambhanīyā manuṣyaiḥ
+ābhir matprattābhiḥ paricārayasva naciketo maraṇaṃ mānuprākṣīḥ', null, 1001025),
+('katha-1-1-26', 26, 'Chapter 1, Section 1, Verse 26', 'श्वोभावा मर्त्यस्य यदन्तकैतत्सर्वेन्द्रियाणां जरयन्ति तेजः।
+अपि सर्वं जीवितमल्पमेव तवैव वाहास्तव नृत्यगीते॥', 'śvobhāvā martyasya yad antakaitat sarvendriyāṇāṃ jarayanti tejaḥ
+api sarvaṃ jīvitam alpam eva tavaiva vāhās tava nṛtyagīte', null, 1001026),
+('katha-1-1-27', 27, 'Chapter 1, Section 1, Verse 27', 'न वित्तेन तर्पणीयो मनुष्यो लप्स्यामहे वित्तमद्राक्ष्म चेत्त्वा।
+जीविष्यामो यावदीशिष्यसि त्वं वरस्तु मे वरणीयः स एव॥', 'na vittena tarpaṇīyo manuṣyo lapsyāmahe vittam adrākṣma cet tvā
+jīviṣyāmo yāvad īśiṣyasi tvaṃ varas tu me varaṇīyaḥ sa eva', null, 1001027),
+('katha-1-1-28', 28, 'Chapter 1, Section 1, Verse 28', 'अजीर्यताममृतानामुपेत्य जीर्यन्मर्त्यः क्वधःस्थः प्रजानन्।
+अभिध्यायन्वर्णरतिप्रमोदानतिदीर्घे जीविते को रमेत॥', 'ajīryatām amṛtānām upetya jīryan martyaḥ kvadhaḥsthaḥ prajānan
+abhidhyāyan varṇaratipramodān atidīrghe jīvite ko rameta', null, 1001028),
+('katha-1-1-29', 29, 'Chapter 1, Section 1, Verse 29', 'यस्मिन्निदं विचिकित्सन्ति मृत्यो यत्साम्पराये महति ब्रूहि नस्तत्।
+योऽयं वरो गूढमनुप्रविष्टो नान्यं तस्मान्नचिकेता वृणीते॥', 'yasminn idaṃ vicikitsanti mṛtyo yat sāmparāye mahati brūhi nas tat
+yo ''yaṃ varo gūḍham anupraviṣṭo nānyaṃ tasmān naciketā vṛṇīte', null, 1001029)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-1-2-1', 1, 'Chapter 1, Section 2, Verse 1', 'अन्यच्छ्रेयोऽन्यदुतैव प्रेयस्ते उभे नानार्थे पुरुषं सिनीतः।
+तयोः श्रेय आददानस्य साधु भवति हीयतेऽर्थाद्य उ प्रेयो वृणीते॥', 'anyac chreyo ''nyad utaiva preyas te ubhe nānārthe puruṣaṃ sinītaḥ
+tayoḥ śreya ādadānasya sādhu bhavati hīyate ''rthād ya u preyo vṛṇīte', null, 1002001),
+('katha-1-2-2', 2, 'Chapter 1, Section 2, Verse 2', 'श्रेयश्च प्रेयश्च मनुष्यमेतस्तौ संपरीत्य विविनक्ति धीरः।
+श्रेयो हि धीरोऽभि प्रेयसो वृणीते प्रेयो मन्दो योगक्षेमाद्वृणीते॥', 'śreyaś ca preyaś ca manuṣyam etas tau saṃparītya vivinakti dhīraḥ
+śreyo hi dhīro ''bhi preyaso vṛṇīte preyo mando yogakṣemād vṛṇīte', null, 1002002),
+('katha-1-2-3', 3, 'Chapter 1, Section 2, Verse 3', 'स त्वं प्रियान्प्रियरूपांश्च कामानभिध्यायन्नचिकेतोऽत्यस्राक्षीः।
+नैतां सृङ्कां वित्तमयीमवाप्तो यस्यां मज्जन्ति बहवो मनुष्याः॥', 'sa tvaṃ priyān priyarūpāṃś ca kāmān abhidhyāyan naciketo ''tyasrākṣīḥ
+naitāṃ sṛṅkāṃ vittamayīm avāpto yasyāṃ majjanti bahavo manuṣyāḥ', null, 1002003),
+('katha-1-2-4', 4, 'Chapter 1, Section 2, Verse 4', 'दूरमेते विपरीते विषूची अविद्या या च विद्येति ज्ञाता।
+विद्याभीप्सिनं नचिकेतसं मन्ये न त्वा कामा बहवोऽलोलुपन्त॥', 'dūram ete viparīte viṣūcī avidyā yā ca vidyeti jñātā
+vidyābhīpsinaṃ naciketasaṃ manye na tvā kāmā bahavo ''lolupanta', null, 1002004),
+('katha-1-2-5', 5, 'Chapter 1, Section 2, Verse 5', 'अविद्यायामन्तरे वर्तमानाः स्वयं धीराः पण्डितं मन्यमानाः।
+दन्द्रम्यमाणाः परियन्ति मूढा अन्धेनैव नीयमाना यथान्धाः॥', 'avidyāyām antare vartamānāḥ svayaṃ dhīrāḥ paṇḍitaṃ manyamānāḥ
+dandramyamāṇāḥ pariyanti mūḍhā andhenaiva nīyamānā yathāndhāḥ', null, 1002005),
+('katha-1-2-6', 6, 'Chapter 1, Section 2, Verse 6', 'न साम्परायः प्रतिभाति बालं प्रमाद्यन्तं वित्तमोहेन मूढम्।
+अयं लोको नास्ति पर इति मानी पुनः पुनर्वशमापद्यते मे॥', 'na sāmparāyaḥ pratibhāti bālaṃ pramādyantaṃ vittamohena mūḍham
+ayaṃ loko nāsti para iti mānī punaḥ punar vaśam āpadyate me', null, 1002006),
+('katha-1-2-7', 7, 'Chapter 1, Section 2, Verse 7', 'श्रवणायापि बहुभिर्यो न लभ्यः शृण्वन्तोऽपि बहवो यं न विद्युः।
+आश्चर्यो वक्ता कुशलोऽस्य लब्धा आश्चर्यो ज्ञाता कुशलानुशिष्टः॥', 'śravaṇāyāpi bahubhir yo na labhyaḥ śṛṇvanto ''pi bahavo yaṃ na vidyuḥ
+āścaryo vaktā kuśalo ''sya labdhā āścaryo jñātā kuśalānuśiṣṭaḥ', null, 1002007),
+('katha-1-2-8', 8, 'Chapter 1, Section 2, Verse 8', 'न नरेणावरेण प्रोक्त एष सुविज्ञेयो बहुधा चिन्त्यमानः।
+अनन्यप्रोक्ते गतिरत्र नास्त्यणीयान्ह्यतर्क्यमणुप्रमाणात्॥', 'na nareṇāvareṇa prokta eṣa suvijñeyo bahudhā cintyamānaḥ
+ananyaprokte gatir atra nāsty aṇīyān hy atarkyam aṇupramāṇāt', null, 1002008),
+('katha-1-2-9', 9, 'Chapter 1, Section 2, Verse 9', 'नैषा तर्केण मतिरापनेया प्रोक्तान्येनैव सुज्ञानाय प्रेष्ठ।
+यां त्वमापः सत्यधृतिर्बतासि त्वादृङ्नो भूयान्नचिकेतः प्रेष्टा॥', 'naiṣā tarkeṇa matir āpaneyā proktānyenaiva sujñānāya preṣṭha
+yāṃ tvam āpaḥ satyadhṛtir batāsi tvādṛṅ no bhūyān naciketaḥ preṣṭā', null, 1002009),
+('katha-1-2-10', 10, 'Chapter 1, Section 2, Verse 10', 'जानाम्यहं शेवधिरित्यनित्यं न ह्यध्रुवैः प्राप्यते हि ध्रुवं तत्।
+ततो मया नाचिकेतश्चितोऽग्निरनित्यैर्द्रव्यैः प्राप्तवानस्मि नित्यम्॥', 'jānāmy ahaṃ śevadhir ity anityaṃ na hy adhruvaiḥ prāpyate hi dhruvaṃ tat
+tato mayā nāciketaś cito ''gnir anityair dravyaiḥ prāptavān asmi nityam', null, 1002010),
+('katha-1-2-11', 11, 'Chapter 1, Section 2, Verse 11', 'कामस्य आप्तिं जगतः प्रतिष्ठां क्रतोरनन्त्यमभयस्य पारम्।
+स्तोममहदुरुगायं प्रतिष्ठां दृष्ट्वा धृत्या धीरो नचिकेतोऽत्यस्राक्षीः॥', 'kāmasya āptiṃ jagataḥ pratiṣṭhāṃ krator anantyam abhayasya pāram
+stomamahad urugāyaṃ pratiṣṭhāṃ dṛṣṭvā dhṛtyā dhīro naciketo ''tyasrākṣīḥ', null, 1002011),
+('katha-1-2-12', 12, 'Chapter 1, Section 2, Verse 12', 'तं दुर्दर्शं गूढमनुप्रविष्टं गुहाहितं गह्वरेष्ठं पुराणम्।
+अध्यात्मयोगाधिगमेन देवं मत्वा धीरो हर्षशोकौ जहाति॥', 'taṃ durdarśaṃ gūḍham anupraviṣṭaṃ guhāhitaṃ gahvareṣṭhaṃ purāṇam
+adhyātmayogādhigamena devaṃ matvā dhīro harṣaśokau jahāti', null, 1002012),
+('katha-1-2-13', 13, 'Chapter 1, Section 2, Verse 13', 'एतच्छ्रुत्वा संपरिगृह्य मर्त्यः प्रवृह्य धर्म्यमणुमेतमाप्य।
+स मोदते मोदनीयं हि लब्ध्वा विवृतं सद्म नचिकेतसं मन्ये॥', 'etac chrutvā saṃparigṛhya martyaḥ pravṛhya dharmyam aṇum etam āpya
+sa modate modanīyaṃ hi labdhvā vivṛtaṃ sadma naciketasaṃ manye', null, 1002013),
+('katha-1-2-14', 14, 'Chapter 1, Section 2, Verse 14', 'अन्यत्र धर्मादन्यत्राधर्मादन्यत्रास्मात्कृताकृतात्।
+अन्यत्र भूताच्च भव्याच्च यत्तत्पश्यसि तद्वद॥', 'anyatra dharmād anyatrādharmād anyatrāsmāt kṛtākṛtāt
+anyatra bhūtāc ca bhavyāc ca yat tat paśyasi tad vada', null, 1002014),
+('katha-1-2-15', 15, 'Chapter 1, Section 2, Verse 15', 'सर्वे वेदा यत्पदमामनन्ति तपांसि सर्वाणि च यद्वदन्ति।
+यदिच्छन्तो ब्रह्मचर्यं चरन्ति तत्ते पदं संग्रहेण ब्रवीमि।
+ओमित्येतत्॥', 'sarve vedā yat padam āmananti tapāṃsi sarvāṇi ca yad vadanti
+yad icchanto brahmacaryaṃ caranti tat te padaṃ saṃgraheṇa bravīmi
+om ity etat', null, 1002015),
+('katha-1-2-16', 16, 'Chapter 1, Section 2, Verse 16', 'एतद्ध्येवाक्षरं ब्रह्म एतद्ध्येवाक्षरं परम्।
+एतद्ध्येवाक्षरं ज्ञात्वा यो यदिच्छति तस्य तत्॥', 'etad dhy evākṣaraṃ brahma etad dhy evākṣaraṃ param
+etad dhy evākṣaraṃ jñātvā yo yad icchati tasya tat', null, 1002016),
+('katha-1-2-17', 17, 'Chapter 1, Section 2, Verse 17', 'एतदालम्बनं श्रेष्ठमेतदालम्बनं परम्।
+एतदालम्बनं ज्ञात्वा ब्रह्मलोके महीयते॥', 'etad ālambanaṃ śreṣṭham etad ālambanaṃ param
+etad ālambanaṃ jñātvā brahmaloke mahīyate', null, 1002017),
+('katha-1-2-18', 18, 'Chapter 1, Section 2, Verse 18', 'न जायते म्रियते वा विपश्चिन्नायं कुतश्चिन्न बभूव कश्चित्।
+अजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे॥', 'na jāyate mriyate vā vipaścin nāyaṃ kutaścin na babhūva kaścit
+ajo nityaḥ śāśvato ''yaṃ purāṇo na hanyate hanyamāne śarīre', null, 1002018),
+('katha-1-2-19', 19, 'Chapter 1, Section 2, Verse 19', 'हन्ता चेन्मन्यते हन्तुं हतश्चेन्मन्यते हतम्।
+उभौ तौ न विजानीतो नायं हन्ति न हन्यते॥', 'hantā cen manyate hantuṃ hataś cen manyate hatam
+ubhau tau na vijānīto nāyaṃ hanti na hanyate', null, 1002019),
+('katha-1-2-20', 20, 'Chapter 1, Section 2, Verse 20', 'अणोरणीयान्महतो महीयानात्मास्य जन्तोर्निहितो गुहायाम्।
+तमक्रतुः पश्यति वीतशोको धातुप्रसादान्महिमानमात्मनः॥', 'aṇor aṇīyān mahato mahīyān ātmāsya jantor nihito guhāyām
+tam akratuḥ paśyati vītaśoko dhātuprasādān mahimānam ātmanaḥ', null, 1002020),
+('katha-1-2-21', 21, 'Chapter 1, Section 2, Verse 21', 'आसीनो दूरं व्रजति शयानो याति सर्वतः।
+कस्तं मदामदं देवं मदन्यो ज्ञातुमर्हति॥', 'āsīno dūraṃ vrajati śayāno yāti sarvataḥ
+kas taṃ madāmadaṃ devaṃ mad anyo jñātum arhati', null, 1002021),
+('katha-1-2-22', 22, 'Chapter 1, Section 2, Verse 22', 'अशरीरं शरीरेषु अनवस्थेष्ववस्थितम्।
+महान्तं विभुमात्मानं मत्वा धीरो न शोचति॥', 'aśarīraṃ śarīreṣu anavastheṣv avasthitam
+mahāntaṃ vibhum ātmānaṃ matvā dhīro na śocati', null, 1002022),
+('katha-1-2-23', 23, 'Chapter 1, Section 2, Verse 23', 'नायमात्मा प्रवचनेन लभ्यो न मेधया न बहुना श्रुतेन।
+यमेवैष वृणुते तेन लभ्यस्तस्यैष आत्मा विवृणुते तनूं स्वाम्॥', 'nāyam ātmā pravacanena labhyo na medhayā na bahunā śrutena
+yam evaiṣa vṛṇute tena labhyas tasyaiṣa ātmā vivṛṇute tanūṃ svām', null, 1002023),
+('katha-1-2-24', 24, 'Chapter 1, Section 2, Verse 24', 'नाविरतो दुश्चरितान्नाशान्तो नासमाहितः।
+नाशान्तमानसो वापि प्रज्ञानेनैनमाप्नुयात्॥', 'nāvirato duścaritān nāśānto nāsamāhitaḥ
+nāśāntamānaso vāpi prajñānenainam āpnuyāt', null, 1002024),
+('katha-1-2-25', 25, 'Chapter 1, Section 2, Verse 25', 'यस्य ब्रह्म च क्षत्रं च उभे भवत ओदनः।
+मृत्युर्यस्योपसेचनं क इत्था वेद यत्र सः॥', 'yasya brahma ca kṣatraṃ ca ubhe bhavata odanaḥ
+mṛtyur yasyopasecanaṃ ka itthā veda yatra saḥ', null, 1002025)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 1 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-1-3-1', 1, 'Chapter 1, Section 3, Verse 1', 'ऋतं पिबन्तौ सुकृतस्य लोके गुहां प्रविष्टौ परमे परार्धे।
+छायातपौ ब्रह्मविदो वदन्ति पञ्चाग्नयो ये च त्रिणाचिकेताः॥', 'ṛtaṃ pibantau sukṛtasya loke guhāṃ praviṣṭau parame parārdhe
+chāyātapau brahmavido vadanti pañcāgnayo ye ca triṇāciketāḥ', null, 1003001),
+('katha-1-3-2', 2, 'Chapter 1, Section 3, Verse 2', 'यः सेतुरीजानानामक्षरं ब्रह्म यत्परम्।
+अभयं तितीर्षतां पारं नाचिकेतं शकेमहि॥', 'yaḥ setur ījānānām akṣaraṃ brahma yat param
+abhayaṃ titīrṣatāṃ pāraṃ nāciketaṃ śakemahi', null, 1003002),
+('katha-1-3-3', 3, 'Chapter 1, Section 3, Verse 3', 'आत्मानं रथिनं विद्धि शरीरं रथमेव तु।
+बुद्धिं तु सारथिं विद्धि मनः प्रग्रहमेव च॥', 'ātmānaṃ rathinaṃ viddhi śarīraṃ ratham eva tu
+buddhiṃ tu sārathiṃ viddhi manaḥ pragraham eva ca', null, 1003003),
+('katha-1-3-4', 4, 'Chapter 1, Section 3, Verse 4', 'इन्द्रियाणि हयानाहुर्विषयांस्तेषु गोचरान्।
+आत्मेन्द्रियमनोयुक्तं भोक्तेत्याहुर्मनीषिणः॥', 'indriyāṇi hayān āhur viṣayāṃs teṣu gocarān
+ātmendriyamanoyuktaṃ bhoktety āhur manīṣiṇaḥ', null, 1003004),
+('katha-1-3-5', 5, 'Chapter 1, Section 3, Verse 5', 'यस्त्वविज्ञानवान्भवत्ययुक्तेन मनसा सदा।
+तस्येन्द्रियाण्यवश्यानि दुष्टाश्वा इव सारथेः॥', 'yas tv avijñānavān bhavaty ayuktena manasā sadā
+tasyendriyāṇy avaśyāni duṣṭāśvā iva sāratheḥ', null, 1003005),
+('katha-1-3-6', 6, 'Chapter 1, Section 3, Verse 6', 'यस्तु विज्ञानवान्भवति युक्तेन मनसा सदा।
+तस्येन्द्रियाणि वश्यानि सदश्वा इव सारथेः॥', 'yas tu vijñānavān bhavati yuktena manasā sadā
+tasyendriyāṇi vaśyāni sadaśvā iva sāratheḥ', null, 1003006),
+('katha-1-3-7', 7, 'Chapter 1, Section 3, Verse 7', 'यस्त्वविज्ञानवान्भवत्यमनस्कः सदाशुचिः।
+न स तत्पदमाप्नोति संसारं चाधिगच्छति॥', 'yas tv avijñānavān bhavaty amanaskaḥ sadāśuciḥ
+na sa tat padam āpnoti saṃsāraṃ cādhigacchati', null, 1003007),
+('katha-1-3-8', 8, 'Chapter 1, Section 3, Verse 8', 'यस्तु विज्ञानवान्भवति समनस्कः सदा शुचिः।
+स तु तत्पदमाप्नोति यस्माद्भूयो न जायते॥', 'yas tu vijñānavān bhavati samanaskaḥ sadā śuciḥ
+sa tu tat padam āpnoti yasmād bhūyo na jāyate', null, 1003008),
+('katha-1-3-9', 9, 'Chapter 1, Section 3, Verse 9', 'विज्ञानसारथिर्यस्तु मनः प्रग्रहवान्नरः।
+सोऽध्वनः पारमाप्नोति तद्विष्णोः परमं पदम्॥', 'vijñānasārathir yas tu manaḥ pragrahavān naraḥ
+so ''dhvanaḥ pāram āpnoti tad viṣṇoḥ paramaṃ padam', null, 1003009),
+('katha-1-3-10', 10, 'Chapter 1, Section 3, Verse 10', 'इन्द्रियेभ्यः परा ह्यर्था अर्थेभ्यश्च परं मनः।
+मनसस्तु परा बुद्धिर्बुद्धेरात्मा महान्परः॥', 'indriyebhyaḥ parā hy arthā arthebhyaś ca paraṃ manaḥ
+manasas tu parā buddhir buddher ātmā mahān paraḥ', null, 1003010),
+('katha-1-3-11', 11, 'Chapter 1, Section 3, Verse 11', 'महतः परमव्यक्तमव्यक्तात्पुरुषः परः।
+पुरुशान्न परं किंचित्सा काष्ठा सा परा गतिः॥', 'mahataḥ param avyaktam avyaktāt puruṣaḥ paraḥ
+puruśān na paraṃ kiṃcit sā kāṣṭhā sā parā gatiḥ', null, 1003011),
+('katha-1-3-12', 12, 'Chapter 1, Section 3, Verse 12', 'एष सर्वेषु भूतेषु गूढोऽत्मा न प्रकाशते।
+दृष्यते त्वग्र्यया बुद्ध्या सूक्ष्मया सूक्ष्मदर्शिभिः॥', 'eṣa sarveṣu bhūteṣu gūḍho ''tmā na prakāśate
+dṛṣyate tv agryayā buddhyā sūkṣmayā sūkṣmadarśibhiḥ', null, 1003012),
+('katha-1-3-13', 13, 'Chapter 1, Section 3, Verse 13', 'यच्छेद्वाङ्मनसी प्राज्ञस्तद्यच्छेज्ज्ञान आत्मनि।
+ज्ञानमात्मनि महति नियच्छेत्तद्यच्छेच्छान्त आत्मनि॥', 'yacched vāṅmanasī prājñas tad yacchej jñāna ātmani
+jñānam ātmani mahati niyacchet tad yacchec chānta ātmani', null, 1003013),
+('katha-1-3-14', 14, 'Chapter 1, Section 3, Verse 14', 'उत्तिष्ठत जाग्रत प्राप्य वरान्निबोधत।
+क्षुरस्य धारा निशिता दुरत्यया दुर्गं पथस्तत्कवयो वदन्ति॥', 'uttiṣṭhata jāgrata prāpya varān nibodhata
+kṣurasya dhārā niśitā duratyayā durgaṃ pathas tat kavayo vadanti', null, 1003014),
+('katha-1-3-15', 15, 'Chapter 1, Section 3, Verse 15', 'अशब्दमस्पर्शमरूपमव्ययं तथारसं नित्यमगन्धवच्च यत्।
+अनाद्यनन्तं महतः परं ध्रुवं निचाय्य तन्मृत्युमुखात्प्रमुच्यते॥', 'aśabdam asparśam arūpam avyayaṃ tathārasaṃ nityam agandhavac ca yat
+anādy anantaṃ mahataḥ paraṃ dhruvaṃ nicāyya tan mṛtyumukhāt pramucyate', null, 1003015),
+('katha-1-3-16', 16, 'Chapter 1, Section 3, Verse 16', 'नाचिकेतमुपाख्यानं मृत्युप्रोक्तं सनातनम्।
+उक्त्वा श्रुत्वा च मेधावी ब्रह्मलोके महीयते॥', 'nāciketam upākhyānaṃ mṛtyuproktaṃ sanātanam
+uktvā śrutvā ca medhāvī brahmaloke mahīyate', null, 1003016),
+('katha-1-3-17', 17, 'Chapter 1, Section 3, Verse 17', 'य इमं परमं गुह्यं श्रावयेद्ब्रह्मसंसदि।
+प्रयतः श्राद्धकाले वा तदानन्त्याय कल्पते।
+तदानन्त्याय कल्पत इति॥', 'ya imaṃ paramaṃ guhyaṃ śrāvayed brahmasaṃsadi
+prayataḥ śrāddhakāle vā tad ānantyāya kalpate
+tad ānantyāya kalpata iti', null, 1003017)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 1 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-2-1-1', 1, 'Chapter 2, Section 1, Verse 1', 'पराञ्चि खानि व्यतृणत्स्वयंभूस्तस्मात्पराङ्पश्यति नान्तरात्मन्।
+कश्चिद्धीरः प्रत्यगात्मानमैक्षदावृत्तचक्षुरमृतत्वमिच्छन्॥', 'parāñci khāni vyatṛṇat svayaṃbhūs tasmāt parāṅ paśyati nāntarātman
+kaścid dhīraḥ pratyag ātmānam aikṣad āvṛttacakṣur amṛtatvam icchan', null, 2001001),
+('katha-2-1-2', 2, 'Chapter 2, Section 1, Verse 2', 'पराचः कामाननुयन्ति बालास्ते मृत्योर्यन्ति विततस्य पाशम्।
+अथ धीरा अमृतत्वं विदित्वा ध्रुवमध्रुवेष्विह न प्रार्थयन्ते॥', 'parācaḥ kāmān anuyanti bālās te mṛtyor yanti vitatasya pāśam
+atha dhīrā amṛtatvaṃ viditvā dhruvam adhruveṣv iha na prārthayante', null, 2001002),
+('katha-2-1-3', 3, 'Chapter 2, Section 1, Verse 3', 'येन रूपं रसं गन्धं शब्दान्स्पर्शींश्च मैथुनान्।
+एतेनैव विजानाति किमत्र परिशिष्यते।
+एतद्वै तत्॥', 'yena rūpaṃ rasaṃ gandhaṃ śabdān sparśīṃś ca maithunān
+etenaiva vijānāti kim atra pariśiṣyate
+etad vai tat', null, 2001003),
+('katha-2-1-4', 4, 'Chapter 2, Section 1, Verse 4', 'स्वप्नान्तं जागरितान्तं चोभौ येनानुपश्यति।
+महान्तं विभुमात्मानं मत्वा धीरो न शोचति॥', 'svapnāntaṃ jāgaritāntaṃ cobhau yenānupaśyati
+mahāntaṃ vibhum ātmānaṃ matvā dhīro na śocati', null, 2001004),
+('katha-2-1-5', 5, 'Chapter 2, Section 1, Verse 5', 'य इमं मध्वदं वेद आत्मानं जीवमन्तिकात्।
+ईशानं भूतभव्यस्य न ततो विजुगुप्सते।
+एतद्वै तत्॥', 'ya imaṃ madhvadaṃ veda ātmānaṃ jīvam antikāt
+īśānaṃ bhūtabhavyasya na tato vijugupsate
+etad vai tat', null, 2001005),
+('katha-2-1-6', 6, 'Chapter 2, Section 1, Verse 6', 'यः पूर्वं तपसो जातमद्भ्यः पूर्वमजायत।
+गुहां प्रविश्य तिष्ठन्तं यो भूतेभिर्व्यपश्यत।
+एतद्वै तत्॥', 'yaḥ pūrvaṃ tapaso jātam adbhyaḥ pūrvam ajāyata
+guhāṃ praviśya tiṣṭhantaṃ yo bhūtebhir vyapaśyata
+etad vai tat', null, 2001006),
+('katha-2-1-7', 7, 'Chapter 2, Section 1, Verse 7', 'या प्राणेन संभवति अदितिर्देवतामयी।
+गुहां प्रविश्य तिष्ठन्तीं या भूतेभिर्व्यजायत।
+एतद्वै तत्॥', 'yā prāṇena saṃbhavati aditir devatāmayī
+guhāṃ praviśya tiṣṭhantīṃ yā bhūtebhir vyajāyata
+etad vai tat', null, 2001007),
+('katha-2-1-8', 8, 'Chapter 2, Section 1, Verse 8', 'अरण्योर्निहितो जातवेदा गर्भ इव सुभृतो गर्भिणीभिः।
+दिवेदिव ईड्यो जागृवद्भिर्हविष्मद्भिर्मनुष्येभिरग्निः।
+एतद्वै तत्॥', 'araṇyor nihito jātavedā garbha iva subhṛto garbhiṇībhiḥ
+divediva īḍyo jāgṛvadbhir haviṣmadbhir manuṣyebhir agniḥ
+etad vai tat', null, 2001008),
+('katha-2-1-9', 9, 'Chapter 2, Section 1, Verse 9', 'यतश्चोदेति सूर्यो अस्तं यत्र च गच्छति।
+तं देवाः सर्वे अर्पितास्तदु नात्येति कश्चन।
+एतद्वै तत्॥', 'yataś codeti sūryo astaṃ yatra ca gacchati
+taṃ devāḥ sarve arpitās tad u nātyeti kaścana
+etad vai tat', null, 2001009),
+('katha-2-1-10', 10, 'Chapter 2, Section 1, Verse 10', 'यदेवेह तदमुत्र यदमुत्र तदन्विह।
+मृत्योः स मृत्युमाप्नोति य इह नानेव पश्यति॥', 'yad eveha tad amutra yad amutra tad anv iha
+mṛtyoḥ sa mṛtyum āpnoti ya iha nāneva paśyati', null, 2001010),
+('katha-2-1-11', 11, 'Chapter 2, Section 1, Verse 11', 'मनसैवेदमाप्तव्यं नेह नानास्ति किंचन।
+मृत्योः स मृत्युं गच्छति य इह नानेव पश्यति॥', 'manasaivedam āptavyaṃ neha nānāsti kiṃcana
+mṛtyoḥ sa mṛtyuṃ gacchati ya iha nāneva paśyati', null, 2001011),
+('katha-2-1-12', 12, 'Chapter 2, Section 1, Verse 12', 'अङ्गुष्ठमात्रः पुरुषो मध्य आत्मनि तिष्ठति।
+ईशानो भूतभव्यस्य न ततो विजुगुप्सते।
+एतद्वै तत्॥', 'aṅguṣṭhamātraḥ puruṣo madhya ātmani tiṣṭhati
+īśāno bhūtabhavyasya na tato vijugupsate
+etad vai tat', null, 2001012),
+('katha-2-1-13', 13, 'Chapter 2, Section 1, Verse 13', 'अङ्गुष्ठमात्रः पुरुषो ज्योतिरिव अधूमकः।
+ईशानो भूतभव्यस्य स एवाद्य स उ श्वः।
+एतद्वै तत्॥', 'aṅguṣṭhamātraḥ puruṣo jyotir iva adhūmakaḥ
+īśāno bhūtabhavyasya sa evādya sa u śvaḥ
+etad vai tat', null, 2001013),
+('katha-2-1-14', 14, 'Chapter 2, Section 1, Verse 14', 'यथोदकं दुर्गे वृष्टं पर्वतेषु विधावति।
+एवं धर्मान्पृथक्पश्यंस्तानेवानु विधावति॥', 'yathodakaṃ durge vṛṣṭaṃ parvateṣu vidhāvati
+evaṃ dharmān pṛthak paśyaṃs tān evānu vidhāvati', null, 2001014),
+('katha-2-1-15', 15, 'Chapter 2, Section 1, Verse 15', 'यथोदकं शुद्धे शुद्धमासिक्तं तादृगेव भवति।
+एवं मुनेर्विजानत आत्मा भवति गौतम॥', 'yathodakaṃ śuddhe śuddham āsiktaṃ tādṛg eva bhavati
+evaṃ muner vijānata ātmā bhavati gautama', null, 2001015)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 2 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-2-2-1', 1, 'Chapter 2, Section 2, Verse 1', 'पुरमेकादशद्वारमजस्यावक्रचेतसः।
+अनुष्ठाय न शोचति विमुक्तश्च विमुच्यते।
+एतद्वै तत्॥', 'puram ekādaśadvāram ajasyāvakracetasaḥ
+anuṣṭhāya na śocati vimuktaś ca vimucyate
+etad vai tat', null, 2002001),
+('katha-2-2-2', 2, 'Chapter 2, Section 2, Verse 2', 'हंसः शुचिषद्वसुरन्तरिक्षसद्धोता वेदिषदतिथिर्दुरोणसत्।
+नृषद्वरसदृतसद्व्योमसदब्जा गोजा ऋतजा अद्रिजा ऋतं बृहत्॥', 'haṃsaḥ śuciṣad vasur antarikṣasad dhotā vediṣad atithir duroṇasat
+nṛṣad varasad ṛtasad vyomasad abjā gojā ṛtajā adrijā ṛtaṃ bṛhat', null, 2002002),
+('katha-2-2-3', 3, 'Chapter 2, Section 2, Verse 3', 'ऊर्ध्वं प्राणमुन्नयति अपानं प्रत्यगस्यति।
+मध्ये वामनमासीनं विश्वे देवा उपासते॥', 'ūrdhvaṃ prāṇam unnayati apānaṃ pratyag asyati
+madhye vāmanam āsīnaṃ viśve devā upāsate', null, 2002003),
+('katha-2-2-4', 4, 'Chapter 2, Section 2, Verse 4', 'अस्य विस्रंसमानस्य शरीरस्थस्य देहिनः।
+देहाद्विमुच्यमानस्य किमत्र परिशिष्यते।
+एतद्वै तत्॥', 'asya visraṃsamānasya śarīrasthasya dehinaḥ
+dehād vimucyamānasya kim atra pariśiṣyate
+etad vai tat', null, 2002004),
+('katha-2-2-5', 5, 'Chapter 2, Section 2, Verse 5', 'न प्राणेन नापानेन मर्त्यो जीवति कश्चन।
+इतरेण तु जीवन्ति यस्मिन्नेतावुपाश्रितौ॥', 'na prāṇena nāpānena martyo jīvati kaścana
+itareṇa tu jīvanti yasminn etāv upāśritau', null, 2002005),
+('katha-2-2-6', 6, 'Chapter 2, Section 2, Verse 6', 'हन्त त इदं प्रवक्ष्यामि गुह्यं ब्रह्म सनातनम्।
+यथा च मरणं प्राप्य आत्मा भवति गौतम॥', 'hanta ta idaṃ pravakṣyāmi guhyaṃ brahma sanātanam
+yathā ca maraṇaṃ prāpya ātmā bhavati gautama', null, 2002006),
+('katha-2-2-7', 7, 'Chapter 2, Section 2, Verse 7', 'योनिमन्ये प्रपद्यन्ते शरीरत्वाय देहिनः।
+स्थाणुमन्येऽनुसंयन्ति यथाकर्म यथाश्रुतम्॥', 'yonim anye prapadyante śarīratvāya dehinaḥ
+sthāṇum anye ''nusaṃyanti yathākarma yathāśrutam', null, 2002007),
+('katha-2-2-8', 8, 'Chapter 2, Section 2, Verse 8', 'य एष सुप्तेषु जागर्ति कामं कामं पुरुषो निर्मिमाणः।
+तदेव शुक्रं तद्ब्रह्म तदेवामृतमुच्यते।
+तस्मिंल्लोकाः श्रिताः सर्वे तदु नात्येति कश्चन।
+एतद्वै तत्॥', 'ya eṣa supteṣu jāgarti kāmaṃ kāmaṃ puruṣo nirmimāṇaḥ
+tad eva śukraṃ tad brahma tad evāmṛtam ucyate
+tasmiṃl lokāḥ śritāḥ sarve tad u nātyeti kaścana
+etad vai tat', null, 2002008),
+('katha-2-2-9', 9, 'Chapter 2, Section 2, Verse 9', 'अग्निर्यथैको भुवनं प्रविष्टो रूपं रूपं प्रतिरूपो बभूव।
+एकस्तथा सर्वभूतान्तरात्मा रूपं रूपं प्रतिरूपो बहिश्च॥', 'agnir yathaiko bhuvanaṃ praviṣṭo rūpaṃ rūpaṃ pratirūpo babhūva
+ekas tathā sarvabhūtāntarātmā rūpaṃ rūpaṃ pratirūpo bahiś ca', null, 2002009),
+('katha-2-2-10', 10, 'Chapter 2, Section 2, Verse 10', 'वायुर्यथैको भुवनं प्रविष्टो रूपं रूपं प्रतिरूपो बभूव।
+एकस्तथा सर्वभूतान्तरात्मा रूपं रूपं प्रतिरूपो बहिश्च॥', 'vāyur yathaiko bhuvanaṃ praviṣṭo rūpaṃ rūpaṃ pratirūpo babhūva
+ekas tathā sarvabhūtāntarātmā rūpaṃ rūpaṃ pratirūpo bahiś ca', null, 2002010),
+('katha-2-2-11', 11, 'Chapter 2, Section 2, Verse 11', 'सूर्यो यथा सर्वलोकस्य चक्षुर्न लिप्यते चाक्षुषैर्बाह्यदोषैः।
+एकस्तथा सर्वभूतान्तरात्मा न लिप्यते लोकदुःखेन बाह्यः॥', 'sūryo yathā sarvalokasya cakṣur na lipyate cākṣuṣair bāhyadoṣaiḥ
+ekas tathā sarvabhūtāntarātmā na lipyate lokaduḥkhena bāhyaḥ', null, 2002011),
+('katha-2-2-12', 12, 'Chapter 2, Section 2, Verse 12', 'एको वशी सर्वभूतान्तरात्मा एकं रूपं बहुधा यः करोति।
+तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां सुखं शाश्वतं नेतरेषाम्॥', 'eko vaśī sarvabhūtāntarātmā ekaṃ rūpaṃ bahudhā yaḥ karoti
+tam ātmasthaṃ ye ''nupaśyanti dhīrās teṣāṃ sukhaṃ śāśvataṃ netareṣām', null, 2002012),
+('katha-2-2-13', 13, 'Chapter 2, Section 2, Verse 13', 'नित्योऽनित्यानां चेतनश्चेतनानामेको बहूनां यो विदधाति कामान्।
+तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषं शान्तिः शाश्वती नेतरेषाम्॥', 'nityo ''nityānāṃ cetanaś cetanānām eko bahūnāṃ yo vidadhāti kāmān
+tam ātmasthaṃ ye ''nupaśyanti dhīrās teṣaṃ śāntiḥ śāśvatī netareṣām', null, 2002013),
+('katha-2-2-14', 14, 'Chapter 2, Section 2, Verse 14', 'तदेतदिति मन्यन्तेऽनिर्देश्यं परमं सुखम्।
+कथं नु तद्विजानीयां किमु भाति विभाति वा॥', 'tad etad iti manyante ''nirdeśyaṃ paramaṃ sukham
+kathaṃ nu tad vijānīyāṃ kim u bhāti vibhāti vā', null, 2002014),
+('katha-2-2-15', 15, 'Chapter 2, Section 2, Verse 15', 'न तत्र सूर्यो भाति न चन्द्रतारकं नेमा विद्युतो भान्ति कुतोऽयमग्निः।
+तमेव भान्तमनु भाति सर्वं तस्य भासा सर्वमिदं विभाति॥', 'na tatra sūryo bhāti na candratārakaṃ nemā vidyuto bhānti kuto ''yam agniḥ
+tam eva bhāntam anu bhāti sarvaṃ tasya bhāsā sarvam idaṃ vibhāti', null, 2002015)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'katha-upanishad', (select id from sections where scripture_id = 'katha-upanishad' and level = 2 and number = 3 and parent_id = (select id from sections where scripture_id = 'katha-upanishad' and level = 1 and number = 2 and parent_id is null)), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('katha-2-3-1', 1, 'Chapter 2, Section 3, Verse 1', 'ऊर्ध्वमूलो अवाक्शाख एषोऽश्वत्थः सनातनः।
+तदेव शुक्रं तद्ब्रह्म तदेवामृतमुच्यते।
+तस्मिंल्लोकाः श्रिताः सर्वे तदु नात्येति कश्चन।
+एतद्वै तत्॥', 'ūrdhvamūlo avākśākha eṣo ''śvatthaḥ sanātanaḥ
+tad eva śukraṃ tad brahma tad evāmṛtam ucyate
+tasmiṃl lokāḥ śritāḥ sarve tad u nātyeti kaścana
+etad vai tat', null, 2003001),
+('katha-2-3-2', 2, 'Chapter 2, Section 3, Verse 2', 'यदिदं किंच जगत्सर्वं प्राण एजति निःसृतम्।
+महद्भयं वज्रमुद्यतं य एतद्विदुरमृतास्ते भवन्ति॥', 'yad idaṃ kiṃca jagat sarvaṃ prāṇa ejati niḥsṛtam
+mahad bhayaṃ vajram udyataṃ ya etad vidur amṛtās te bhavanti', null, 2003002),
+('katha-2-3-3', 3, 'Chapter 2, Section 3, Verse 3', 'भयादस्याग्निस्तपति भयात्तपति सूर्यः।
+भयादिन्द्रश्च वायुश्च मृत्युर्धावति पञ्चमः॥', 'bhayād asyāgnis tapati bhayāt tapati sūryaḥ
+bhayād indraś ca vāyuś ca mṛtyur dhāvati pañcamaḥ', null, 2003003),
+('katha-2-3-4', 4, 'Chapter 2, Section 3, Verse 4', 'इह चेदशकद्बोद्धुं प्राक्शरीरस्य विस्रसः।
+ततः सर्गेषु लोकेषु शरीरत्वाय कल्पते॥', 'iha ced aśakad boddhuṃ prākśarīrasya visrasaḥ
+tataḥ sargeṣu lokeṣu śarīratvāya kalpate', null, 2003004),
+('katha-2-3-5', 5, 'Chapter 2, Section 3, Verse 5', 'यथादर्शे तथात्मनि यथा स्वप्ने तथा पितृलोके।
+यथाप्सु परीव ददृशे तथा गन्धर्वलोके छायातपयोरिव ब्रह्मलोके॥', 'yathādarśe tathātmani yathā svapne tathā pitṛloke
+yathāpsu parīva dadṛśe tathā gandharvaloke chāyātapayor iva brahmaloke', null, 2003005),
+('katha-2-3-6', 6, 'Chapter 2, Section 3, Verse 6', 'इन्द्रियाणां पृथग्भावमुदयास्तमयौ च यत्।
+पृथगुत्पद्यमानानां मत्वा धीरो न शोचति॥', 'indriyāṇāṃ pṛthagbhāvam udayāstamayau ca yat
+pṛthag utpadyamānānāṃ matvā dhīro na śocati', null, 2003006),
+('katha-2-3-7', 7, 'Chapter 2, Section 3, Verse 7', 'इन्द्रियेभ्यः परं मनो मनसः सत्त्वमुत्तमम्।
+सत्त्वादधि महानात्मा महतोऽव्यक्तमुत्तमम्॥', 'indriyebhyaḥ paraṃ mano manasaḥ sattvam uttamam
+sattvād adhi mahānātmā mahato ''vyaktam uttamam', null, 2003007),
+('katha-2-3-8', 8, 'Chapter 2, Section 3, Verse 8', 'अव्यक्तात्तु परः पुरुषो व्यापकोऽलिङ्ग एव च।
+यं ज्ञात्वा मुच्यते जन्तुरमृतत्वं च गच्छति॥', 'avyaktāt tu paraḥ puruṣo vyāpako ''liṅga eva ca
+yaṃ jñātvā mucyate jantur amṛtatvaṃ ca gacchati', null, 2003008),
+('katha-2-3-9', 9, 'Chapter 2, Section 3, Verse 9', 'न संदृशे तिष्ठति रूपमस्य न चक्षुषा पश्यति कश्चनैनम्।
+हृदा मनीषा मनसाभिकॢप्तो य एतद्विदुरमृतास्ते भवन्ति॥', 'na saṃdṛśe tiṣṭhati rūpam asya na cakṣuṣā paśyati kaścanainam
+hṛdā manīṣā manasābhikḷpto ya etad vidur amṛtās te bhavanti', null, 2003009),
+('katha-2-3-10', 10, 'Chapter 2, Section 3, Verse 10', 'यदा पञ्चावतिष्ठन्ते ज्ञानानि मनसा सह।
+बुद्धिश्च न विचेष्टति तामाहुः परमां गतिम्॥', 'yadā pañcāvatiṣṭhante jñānāni manasā saha
+buddhiś ca na viceṣṭati tām āhuḥ paramāṃ gatim', null, 2003010),
+('katha-2-3-11', 11, 'Chapter 2, Section 3, Verse 11', 'तां योगमिति मन्यन्ते स्थिरामिन्द्रियधारणाम्।
+अप्रमत्तस्तदा भवति योगो हि प्रभवाप्ययौ॥', 'tāṃ yogam iti manyante sthirām indriyadhāraṇām
+apramattas tadā bhavati yogo hi prabhavāpyayau', null, 2003011),
+('katha-2-3-12', 12, 'Chapter 2, Section 3, Verse 12', 'नैव वाचा न मनसा प्राप्तुं शक्यो न चक्षुषा।
+अस्तीति ब्रुवतोऽन्यत्र कथं तदुपलभ्यते॥', 'naiva vācā na manasā prāptuṃ śakyo na cakṣuṣā
+astīti bruvato ''nyatra kathaṃ tad upalabhyate', null, 2003012),
+('katha-2-3-13', 13, 'Chapter 2, Section 3, Verse 13', 'अस्तीत्येवोपलब्धव्यस्तत्त्वभावेन चोभयोः।
+अस्तीत्येवोपलब्धस्य तत्त्वभावः प्रसीदति॥', 'astīty evopalabdhavyas tattvabhāvena cobhayoḥ
+astīty evopalabdhasya tattvabhāvaḥ prasīdati', null, 2003013),
+('katha-2-3-14', 14, 'Chapter 2, Section 3, Verse 14', 'यदा सर्वे प्रमुच्यन्ते कामा येऽस्य हृदि श्रिताः।
+अथ मर्त्योऽमृतो भवत्यत्र ब्रह्म समश्नुते॥', 'yadā sarve pramucyante kāmā ye ''sya hṛdi śritāḥ
+atha martyo ''mṛto bhavaty atra brahma samaśnute', null, 2003014),
+('katha-2-3-15', 15, 'Chapter 2, Section 3, Verse 15', 'यदा सर्वे प्रभिद्यन्ते हृदयस्येह ग्रन्थयः।
+अथ मर्त्योऽमृतो भवत्येतावद्ध्यनुशासनम्॥', 'yadā sarve prabhidyante hṛdayasyeha granthayaḥ
+atha martyo ''mṛto bhavaty etāvad dhy anuśāsanam', null, 2003015),
+('katha-2-3-16', 16, 'Chapter 2, Section 3, Verse 16', 'शतं चैका च हृदयस्य नाड्यस्तासां मूर्धानमभिनिःसृतैका।
+तयोर्ध्वमायन्नमृतत्वमेति विष्वङ्ङन्या उत्क्रमणे भवति॥', 'śataṃ caikā ca hṛdayasya nāḍyas tāsāṃ mūrdhānam abhiniḥsṛtaikā
+tayordhvam āyann amṛtatvam eti viṣvaṅṅ anyā utkramaṇe bhavati', null, 2003016),
+('katha-2-3-17', 17, 'Chapter 2, Section 3, Verse 17', 'अङ्गुष्ठमात्रः पुरुषोऽन्तरात्मा सदा जनानां हृदये संनिविष्टः।
+तं स्वाच्छरीरात्प्रवृहेन्मुञ्जादिवेषीकां धैर्येण।
+तं विद्याच्छुक्रममृतं तं विद्याच्छुक्रममृतमिति॥', 'aṅguṣṭhamātraḥ puruṣo ''ntarātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ
+taṃ svāc charīrāt pravṛhen muñjād iveṣīkāṃ dhairyeṇa
+taṃ vidyāc chukram amṛtaṃ taṃ vidyāc chukram amṛtam iti', null, 2003017),
+('katha-2-3-18', 18, 'Chapter 2, Section 3, Verse 18', 'मृत्युप्रोक्तां नचिकेतोऽथ लब्ध्वा विद्यामेतां योगविधिं च कृत्स्नम्।
+ब्रह्मप्राप्तो विरजोऽभूद्विमृत्युरन्योऽप्येवं यो विदध्यात्ममेव॥', 'mṛtyuproktāṃ naciketo ''tha labdhvā vidyām etāṃ yogavidhiṃ ca kṛtsnam
+brahmaprāpto virajo ''bhūd vimṛtyur anyo ''py evaṃ yo vid adhyātmam eva', null, 2003018)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: mandukya-upanishad (upanishad-mandukya.json)
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'mandukya-upanishad', null, x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('mandukya-1', 1, 'Verse 1', 'ओमित्येतदक्षरमिदं सर्वं तस्योपव्याख्यानं भूतं।
+भवद्भविष्यदिति सर्वमोङ्कार एव।
+यच्चान्यत्त्रिकालातीतं तदप्योङ्कार एव॥', 'omityetadakṣaramidaṃ sarvaṃ tasyopavyākhyānaṃ bhūtaṃ
+bhavadbhaviṣyaditi sarvamoṅkāra eva
+yaccānyattrikālātītaṃ tadapyoṅkāra eva', null, 1),
+('mandukya-2', 2, 'Verse 2', 'सर्वं ह्येतद्ब्रह्मायमात्मा ब्रह्म सोऽयमात्मा चतुष्पात्॥', 'sarvaṃ hyetad brahmāyamātmā brahma so ''yamātmā catuṣpāt', null, 2),
+('mandukya-3', 3, 'Verse 3', 'जागरितस्थानो बहिः प्रज्ञः सप्ताङ्गः।
+एकोनविंशतिमुखः स्थूलभुग्वैश्वानरः प्रथमः पादः॥', 'jāgaritasthāno bahiḥ prajñaḥ saptāṅgaḥ
+ekonaviṃśatimukhaḥ sthūlabhugvaiśvānaraḥ prathamaḥ pādaḥ', null, 3),
+('mandukya-4', 4, 'Verse 4', 'स्वप्नस्थानोऽन्तः प्रज्ञः सप्ताङ्ग एकोनविंशतिमुखः।
+प्रविविक्तभुक्तैजसो द्वितीयः पादः॥', 'svapnasthāno ''ntaḥ prajñaḥ saptāṅga ekonaviṃśatimukhaḥ
+praviviktabhuktaijaso dvitīyaḥ pādaḥ', null, 4),
+('mandukya-5', 5, 'Verse 5', 'यत्र सुप्तो न कञ्चन कामं कामयते न।
+कञ्चन स्वप्नं पश्यति तत्सुषुप्तम्।
+सुषुप्तस्थान एकीभूतः प्रज्ञानघन एवानन्दमयो।
+ह्यानन्दभुक्चेतोमुखः प्राज्ञस्तृतीयः पादह्॥', 'yatra supto na kañcana kāmaṃ kāmayate na
+kañcana svapnaṃ paśyati tatsuṣuptam
+suṣuptasthāna ekībhūtaḥ prajñānaghana evānandamayo
+hyānandabhukcetomukhaḥ prājñastṛtīyaḥ pādah', null, 5),
+('mandukya-6', 6, 'Verse 6', 'एष सर्वेश्वर एष सर्वज्ञ एषोऽन्तर्याम्येष योनिः सर्वस्य प्रभवाप्ययौ हि भूतानाम्॥', 'eṣa sarveśvara eṣa sarvajña eṣo ''ntaryāmyeṣa yoniḥ sarvasya prabhavāpyayau hi bhūtānām', null, 6),
+('mandukya-7', 7, 'Verse 7', 'नान्तः प्रज्ञं न बहिः प्रज्ञं नोभयतः प्रज्ञं न प्रज्ञानघनं न प्रज्ञं नाप्रज्ञम्।
+अदृश्यमव्यवहार्यमग्राह्यमलक्षणमचिन्त्यमव्यप।
+देश्यमेकात्मप्रत्ययसारं प्रपञ्चोपशमं शान्तं।
+शिवमद्वैतं चतुर्थं मन्यन्ते स आत्मा स विज्ञेयः॥', 'nāntaḥ prajñaṃ na bahiḥ prajñaṃ nobhayataḥ prajñaṃ na prajñānaghanaṃ na prajñaṃ nāprajñam
+adṛśyamavyavahāryamagrāhyamalakṣaṇamacintyamavyapa
+deśyamekātmapratyayasāraṃ prapañcopaśamaṃ śāntaṃ
+śivamadvaitaṃ caturthaṃ manyante sa ātmā sa vijñeyaḥ', null, 7),
+('mandukya-8', 8, 'Verse 8', 'सोऽयमात्माध्यक्षरमोङ्कारोऽधिमात्रं।
+पादा मात्रा मात्राश्च पादा अकार उकारो मकार इति॥', 'so ''yamātmādhyakṣaramoṅkāro ''dhimātraṃ
+pādā mātrā mātrāśca pādā akāra ukāro makāra iti', null, 8),
+('mandukya-9', 9, 'Verse 9', 'जागरितस्थानो वैश्वानरोऽकारः प्रथमा।
+मात्राप्तेरादिमत्त्वाद्वाप्नोति ह वै सर्वान्।
+कामानादिश्च भवति य एवं वेद॥', 'jāgaritasthāno vaiśvānaro ''kāraḥ prathamā
+mātrāpterādimattvādvāpnoti ha vai sarvān
+kāmānādiśca bhavati ya evaṃ veda', null, 9),
+('mandukya-10', 10, 'Verse 10', 'स्वप्नस्थानस्तैजस उकारो द्वितीया मात्रोत्कर्षाद्।
+उभयत्वाद्वोत्कर्षति ह वै ज्ञानसन्ततिं समानश्च।
+भवति नास्याब्रह्मवित्कुले भवति य एवं वेद॥', 'svapnasthānastaijasa ukāro dvitīyā mātrotkarṣād
+ubhayatvādvotkarṣati ha vai jñānasantatiṃ samānaśca
+bhavati nāsyābrahmavitkule bhavati ya evaṃ veda', null, 10),
+('mandukya-11', 11, 'Verse 11', 'सुषुप्तस्थानः प्राज्ञो मकारस्तृतीया मात्रा मितेरपीतेर्वा।
+मिनोति ह वा इदं सर्वमपीतिश्च भवति य एवं वेद॥', 'suṣuptasthānaḥ prājño makārastṛtīyā mātrā miterapītervā
+minoti ha vā idaṃ sarvamapītiśca bhavati ya evaṃ veda', null, 11),
+('mandukya-12', 12, 'Verse 12', 'अमात्रश्चतुर्थोऽव्यवहार्यः प्रपञ्चोपशमः शिवोऽद्वैत।
+एवमोङ्कार आत्मैव संविशत्यात्मनात्मानं य एवं वेद।
+य एवं वेद॥', 'amātraścaturtho ''vyavahāryaḥ prapañcopaśamaḥ śivo ''dvaita
+evamoṅkāra ātmaiva saṃviśatyātmanātmānaṃ ya evaṃ veda
+ya evaṃ veda', null, 12)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: prashna-upanishad (upanishad-prashna.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 1, 'Question 1', null, 16) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 2, 'Question 2', null, 13) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 3, 'Question 3', null, 12) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 4, 'Question 4', null, 11) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 5, 'Question 5', null, 7) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('prashna-upanishad', null, 1, 6, 'Question 6', null, 8) on conflict do nothing;
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 1 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-1-1', 1, 'Question 1, Verse 1', 'सुकेशा च भारद्वाजः शैब्यश्च सत्यकामः सौर्यायणी च गार्ग्यः कौसल्यश्चाश्वलायनो भार्गवो वैदर्भिः कबन्धी कात्यायनस्ते हैते ब्रह्मपरा ब्रह्मनिष्ठा परं ब्रह्मान्वेषमाणा एष ह वै तत्सर्वं वक्ष्यतीति ते ह समित्पाणयो भगवन्तं पिप्पलादमुपसन्नाः॥', 'sukeśā ca bhāradvājaḥ śaibyaś ca satyakāmaḥ sauryāyaṇī ca gārgyaḥ kausalyaś cāśvalāyano bhārgavo vaidarbhiḥ kabandhī kātyāyanas te haite brahmaparā brahmaniṣṭhā paraṃ brahmānveṣamāṇā eṣa ha vai tatsarvaṃ vakṣyatīti te ha samitpāṇayo bhagavantaṃ pippalādam upasannāḥ', null, 1001),
+('prashna-1-2', 2, 'Question 1, Verse 2', 'तान्ह स ऋषिरुवाच।
+भूय एव तपसा ब्रह्मचर्येण श्रद्धया संवत्सरं संवत्स्यथ।
+यथाकामं प्रश्नान्पृच्छत।
+यदि विज्ञास्यामः सर्वं ह वो वक्ष्याम इति॥', 'tān ha sa ṛṣir uvāca
+bhūya eva tapasā brahmacaryeṇa śraddhayā saṃvatsaraṃ saṃvatsyatha
+yathākāmaṃ praśnān pṛcchata
+yadi vijñāsyāmaḥ sarvaṃ ha vo vakṣyāma iti', null, 1002),
+('prashna-1-3', 3, 'Question 1, Verse 3', 'अथ कबन्धी कात्यायन उपेत्य पप्रच्छ।
+भगवन्कुतो ह वा इमाः प्रजाः प्रजायन्त इति॥', 'atha kabandhī kātyāyana upetya papraccha
+bhagavan kuto ha vā imāḥ prajāḥ prajāyanta iti', null, 1003),
+('prashna-1-4', 4, 'Question 1, Verse 4', 'तस्मै स होवाच।
+प्रजाकामो वै प्रजापतिः।
+स तपोऽतप्यत।
+स तपस्तप्त्वा स मिथुनमुत्पादयते रयिं च प्राणं चेति।
+एतौ मे बहुधाः प्रजाः करिष्यत इति॥', 'tasmai sa hovāca
+prajākāmo vai prajāpatiḥ
+sa tapo ''tapyata
+sa tapas taptvā sa mithunam utpādayate rayiṃ ca prāṇaṃ ceti
+etau me bahudhāḥ prajāḥ kariṣyata iti', null, 1004),
+('prashna-1-5', 5, 'Question 1, Verse 5', 'आदित्यो ह वै प्राणो रयिरेव चन्द्रमाः।
+रयिर्वा एतत्सर्वं यन्मूर्तं चामूर्तं च।
+तस्मान्मूर्तिरेव रयिः॥', 'ādityo ha vai prāṇo rayir eva candramāḥ
+rayir vā etat sarvaṃ yanmūrtaṃ cāmūrtaṃ ca
+tasmān mūrtir eva rayiḥ', null, 1005),
+('prashna-1-6', 6, 'Question 1, Verse 6', 'अथादित्य उदयन्यत्प्राचीं दिशं प्रविशति तेन प्राच्यान्प्राणान्रश्मिषु संनिधत्ते।
+यद्दक्षिणं यत्प्रतीचीं यदुदीचीं यदधो यदूर्ध्वं यदन्तरा दिशो यत्सर्वं प्रकाशयति तेन सर्वान्प्राणान्रश्मिषु संनिधत्ते॥', 'athāditya udayan yatprācīṃ diśaṃ praviśati tena prācyān prāṇān raśmiṣu saṃnidhatte
+yad dakṣiṇaṃ yat pratīcīṃ yad udīcīṃ yad adho yad ūrdhvaṃ yad antarā diśo yat sarvaṃ prakāśayati tena sarvān prāṇān raśmiṣu saṃnidhatte', null, 1006),
+('prashna-1-7', 7, 'Question 1, Verse 7', 'स एष वैश्वानरो विश्वरूपः प्राणोऽग्निरुदयते।
+तदेतद्दचाभ्युक्तम्॥', 'sa eṣa vaiśvānaro viśvarūpaḥ prāṇo ''gnirudayate
+tad etad dacābhyuktam', null, 1007),
+('prashna-1-8', 8, 'Question 1, Verse 8', 'विश्वरूपं हरिणं जातवेदसं परायणं ज्योतिरेकं तपन्तम्।
+सहस्ररश्मिः शतधा वर्तमानः प्राणः प्रजानामुदयत्येष सूर्यः॥', 'viśvarūpaṃ hariṇaṃ jātavedasaṃ parāyaṇaṃ jyotir ekaṃ tapantam
+sahasraraśmiḥ śatadhā vartamānaḥ prāṇaḥ prajānām udayaty eṣa sūryaḥ', null, 1008),
+('prashna-1-9', 9, 'Question 1, Verse 9', 'संवत्सरो वै प्रजापतिः।
+तस्यायने दक्षिणं चोत्तरं च।
+तद्ये ह वै तदिष्टापूर्ते कृतिमित्युपासते ते चान्द्रमसमेव लोकमभिजयन्ते।
+त एव पुनरावर्तन्ते।
+तस्मादेत ऋषयः प्रजाकामा दक्षिणं प्रतिपद्यन्ते।
+एष ह वै रयिर्यः पितृयाणः॥', 'saṃvatsaro vai prajāpatiḥ
+tasyāyane dakṣiṇaṃ cottaraṃ ca
+tad ye ha vai tadiṣṭāpūrte kṛtim ity upāsate te cāndramasam eva lokam abhijayante
+ta eva punar āvartante
+tasmād eta ṛṣayaḥ prajākāmā dakṣiṇaṃ pratipadyante
+eṣa ha vai rayir yaḥ pitṛyāṇaḥ', null, 1009),
+('prashna-1-10', 10, 'Question 1, Verse 10', 'अथोत्तरेण तपसा ब्रह्मचर्येण श्रद्धया विद्ययात्मानमन्विष्यादित्यमभिजयन्ते।
+एतद्वै प्राणानामायतनमेतदमृतमयमेतत्परायणम्।
+एतस्मान्न पुनरावर्तन्त इति।
+एष निरोधः।
+तदेष श्लोकः॥', 'athottareṇa tapasā brahmacaryeṇa śraddhayā vidyayātmānam anviṣyādityam abhijayante
+etad vai prāṇānām āyatanam etad amṛtam ayam etat parāyaṇam
+etasmān na punarāvartanta iti
+eṣa nirodhaḥ
+tad eṣa ślokaḥ', null, 1010),
+('prashna-1-11', 11, 'Question 1, Verse 11', 'पञ्चपादं पितरं द्वादशकृतिं दिव आहुः परे अर्धे पुरीषिणम्।
+अथेमे अन्य उ परे विचक्षणं सप्तचक्रे षडर आहुरर्पितमिति॥', 'pañcapādaṃ pitaraṃ dvādaśakṛtiṃ diva āhuḥ pare ardhe purīṣiṇam
+atheme anya u pare vicakṣaṇaṃ saptacakre ṣaḍara āhurarpitamiti', null, 1011),
+('prashna-1-12', 12, 'Question 1, Verse 12', 'यस्मिन्निदं श्रितं विश्वं स एव प्रजापतिः संवत्सराख्यः स्वावयवे मासे कृत्स्नः परिसमाप्यते।
+मासो वै प्रजापतिः।
+तस्य कृष्णपक्ष एव रयिः शुक्लः प्राणः।
+तस्मादेत ऋषयः शुक्ल इष्टं कुर्वन्तीतर इतरस्मिन्॥', 'yasminn idaṃ śritaṃ viśvaṃ sa eva prajāpatiḥ saṃvatsarākhyaḥ svāvayave māse kṛtsnaḥ parisamāpyate
+māso vai prajāpatiḥ
+tasya kṛṣṇapakṣa eva rayiḥ śuklaḥ prāṇaḥ
+tasmād eta ṛṣayaḥ śukla iṣṭaṃ kurvantītara itarasmin', null, 1012),
+('prashna-1-13', 13, 'Question 1, Verse 13', 'अहोरात्रो वै प्रजापतिः।
+तस्याहरेव प्राणो रात्रिरेव रयिः।
+प्राणं वा एते प्रस्कन्दन्ति ये दिवा रत्या संयुज्यन्ते।
+ब्रह्मचर्यमेव तद्यद्रात्रौ रत्या संयुज्यन्ते॥', 'ahorātro vai prajāpatiḥ
+tasyāhareva prāṇo rātrireva rayiḥ
+prāṇaṃ vā ete praskandanti ye divā ratyā saṃyujyante
+brahmacaryameva tadyadrātrau ratyā saṃyujyante', null, 1013),
+('prashna-1-14', 14, 'Question 1, Verse 14', 'अन्नं वै प्रजापतिस्ततो ह वै तद्रेतः।
+तस्मादिमाः प्रजाः प्रजायन्त इति॥', 'annaṃ vai prajāpatis tato ha vai tadretaḥ
+tasmād imāḥ prajāḥ prajāyanta iti', null, 1014),
+('prashna-1-15', 15, 'Question 1, Verse 15', 'तद्ये ह वै तत्प्रजापतिव्रतं चरन्ति।
+ते मिथुनमुत्पादयन्ते।
+तेषामेवैष ब्रह्मलोकः।
+येषां तपो ब्रह्मचर्यं।
+येषु सत्यं प्रतिष्ठितम्॥', 'tad ye ha vai tatprajāpativrataṃ caranti
+te mithunam utpādayante
+teṣāmevaiṣa brahmalokaḥ
+yeṣāṃ tapo brahmacaryaṃ
+yeṣu satyaṃ pratiṣṭhitam', null, 1015),
+('prashna-1-16', 16, 'Question 1, Verse 16', 'तेषामसौ विरजो ब्रह्मलोको न येषु जिह्वमनृतं न माया चेति॥', 'teṣām asau virajo brahmaloko na yeṣu jihvam anṛtaṃ na māyā ceti', null, 1016)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 2 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-2-1', 1, 'Question 2, Verse 1', 'अत हैनं भार्गवो वैदर्भिः पप्रच्छ।
+भगवन्कत्येव देवाः प्रजां विधारयन्ते।
+कतर एतत्प्रकाशयन्ते।
+कः पुनरेषां वरिष्ठ इति॥', 'ata hainaṃ bhārgavo vaidarbhiḥ papraccha
+bhagavan katyeva devāḥ prajāṃ vidhārayante
+katara etat prakāśayante
+kaḥ punar eṣāṃ variṣṭha iti', null, 2001),
+('prashna-2-2', 2, 'Question 2, Verse 2', 'तस्मै स होवाच।
+आकाशो ह वा एष देवो वायुरग्निरापः पृथिवी वाङ्मनश्चक्षु श्रोत्रं च।
+ते प्रकाश्याभिवदन्ति।
+वयमेतद्बाणमवष्टभ्य विधारयामः॥', 'tasmai sa hovāca
+ākāśo ha vā eṣa devo vāyur agnir āpaḥ pṛthivī vāṅmanaścakṣu śrotraṃ ca
+te prakāśyābhivadanti
+vayam etad bāṇam avaṣṭabhya vidhārayāmaḥ', null, 2002),
+('prashna-2-3', 3, 'Question 2, Verse 3', 'तान्वरिष्टः प्राण उवाच।
+मा मोहमापद्यथ, अहमेवैतत्पञ्चधात्मानं प्रविभज्यैतद्बाणमवष्टभ्य विधारयामीति।
+तेऽश्रद्दधाना बभूवुः॥', 'tān variṣṭaḥ prāṇa uvāca
+mā mohamāpadyatha, aham evaitat pañcadhātmānaṃ pravibhajyaitad bāṇamavaṣṭabhya vidhārayāmīti
+te ''śraddadhānā babhūvuḥ', null, 2003),
+('prashna-2-4', 4, 'Question 2, Verse 4', 'सोऽभिमानादूर्ध्वमुत्क्रमत इव।
+तस्मिन्नुत्क्रामत्यथेतरे सर्व एवोत्क्रामन्ते।
+तस्मिंश्च प्रतिष्ठमाने सर्व एव प्रातिष्ठन्ते।
+तद्यथा मक्षिका मधुकरराजानमुत्क्रामन्तं सर्वा एवोत्क्रामन्ते।
+तस्मिंश्च प्रतिष्ठमाने सर्वा एव प्रातिष्ठन्ते।
+एवं वाङ्मनश्चक्षुःश्रोत्रं च।
+ते प्रीताः प्राणं स्तुन्वन्ति॥', 'so ''bhimānādūrdhvamutkramata iva
+tasminn utkrāmaty athetare sarva evotkrāmante
+tasmiṃś ca pratiṣṭhamāne sarva eva prātiṣṭhante
+tad yathā makṣikā madhukararājānam utkrāmantaṃ sarvā evotkrāmante
+tasmiṃś ca pratiṣṭhamāne sarvā eva prātiṣṭhante
+evaṃ vāṅmanaścakṣuḥśrotraṃ ca
+te prītāḥ prāṇaṃ stunvanti', null, 2004),
+('prashna-2-5', 5, 'Question 2, Verse 5', 'एषोऽग्निस्तपत्येष सूर्य एष पर्जन्यो मघवानेष वायुः।
+एष पृथिवी रयिर्देवः सदसच्चामृतं च यत्॥', 'eṣo ''gnis tapaty eṣa sūrya eṣa parjanyo maghavān eṣa vāyuḥ
+eṣa pṛthivī rayir devaḥ sadasac cāmṛtaṃ ca yat', null, 2005),
+('prashna-2-6', 6, 'Question 2, Verse 6', 'अरा इव रथनाभौ प्राणे सर्वं प्रतिष्ठितम्।
+ऋचो यजूंषि सामानि यज्ञः क्षत्रं ब्रह्म च॥', 'arā iva rathanābhau prāṇe sarvaṃ pratiṣṭhitam
+ṛco yajūṃṣi sāmāni yajñaḥ kṣatraṃ brahma ca', null, 2006),
+('prashna-2-7', 7, 'Question 2, Verse 7', 'प्रजापतिश्चरसि गर्भे त्वमेव प्रतिजायसे।
+तुभ्यं प्राण प्रजास्त्विमा बलिं हरन्ति यः प्राणैः प्रतिष्ठसि॥', 'prajāpatiś carasi garbhe tvam eva pratijāyase
+tubhyaṃ prāṇa prajās tv imā baliṃ haranti yaḥ prāṇaiḥ pratiṣṭhasi', null, 2007),
+('prashna-2-8', 8, 'Question 2, Verse 8', 'देवानामसि वह्नितमः पितॄणां प्रथमा स्वधा।
+ऋषीणां चरितं सत्यमथर्वाङ्गिरसामसि॥', 'devānām asi vahnitamaḥ pitṝṇāṃ prathamā svadhā
+ṛṣīṇāṃ caritaṃ satyam atharvāṅgirasām asi', null, 2008),
+('prashna-2-9', 9, 'Question 2, Verse 9', 'इन्द्रस्त्वं प्राण तेजसा रुद्रोऽसि संहरञ्जगत्।
+स्थितौ च परि समन्ताद्रक्षिता पालयिता परिरक्षिता।
+त्वमेव जगतः सौम्येन रूपेण।
+त्वमन्तरिक्षेऽजस्रं चरसि उदयास्तमयाभ्यां सूर्यस्त्वमेव च सर्वेषां ज्योतिषां पतिः॥', 'indras tvaṃ prāṇa tejasā rudro ''si saṃharañ jagat
+sthitau ca pari samantādrakṣitā pālayitā parirakṣitā
+tvam eva jagataḥ saumyena rūpeṇa
+tvam antarikṣe ''jasraṃ carasi udayāstamayābhyāṃ sūryas tvam eva ca sarveṣāṃ jyotiṣāṃ patiḥ', null, 2009),
+('prashna-2-10', 10, 'Question 2, Verse 10', 'यदा त्वमभिवर्षस्यथेमाः प्राण ते प्रजाः।
+आनन्दरूपास्तिष्ठन्ति कामायान्नं भविष्यतीति॥', 'yadā tvam abhivarṣasy athemāḥ prāṇa te prajāḥ
+ānandarūpās tiṣṭhanti kāmāyānnaṃ bhaviṣyatīti', null, 2010),
+('prashna-2-11', 11, 'Question 2, Verse 11', 'व्रात्यस्त्वं प्राणैकऋषिरत्ता विश्वस्य सत्पतिः।
+वयमाद्यस्य दातारः पिता त्वं मातरिश्व नः॥', 'vrātyas tvaṃ prāṇaikaṛṣirattā viśvasya satpatiḥ
+vayam ādyasya dātāraḥ pitā tvaṃ mātariśva naḥ', null, 2011),
+('prashna-2-12', 12, 'Question 2, Verse 12', 'या ते तनूर्वाचि प्रतिष्ठिता या श्रोत्रं या च चक्षुषि।
+या च मनसि संतता शिवां तां कुरु मोत्क्रमीः॥', 'yā te tanūrvāci pratiṣṭhitā yā śrotraṃ yā ca cakṣuṣi
+yā ca manasi saṃtatā śivāṃ tāṃ kuru motkramīḥ', null, 2012),
+('prashna-2-13', 13, 'Question 2, Verse 13', 'प्राणस्येदं वशे सर्वं त्रिदिवे यत्प्रतिष्ठितम्।
+मातेव पुत्रान्रक्षस्व श्रीश्च प्रज्ञां च विधेहि न इति॥', 'prāṇasyedaṃ vaśe sarvaṃ tridive yat pratiṣṭhitam
+māteva putrān rakṣasva śrīś ca prajñāṃ ca vidhehi na iti', null, 2013)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 3 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-3-1', 1, 'Question 3, Verse 1', 'अथ हैनं कौसल्यश्चाश्वलायनः पप्रच्छ।
+भगवन्कुत एष प्राणो जायते।
+कथमायात्यस्मिन्शरीरे।
+आत्मानं वा प्रविभज्य कथं प्रातिष्ठते।
+केनोत्क्रमते।
+कथं बाह्यमभिधत्ते।
+कथमध्यात्ममिति॥', 'atha hainaṃ kausalyaś cāśvalāyanaḥ papraccha
+bhagavan kuta eṣa prāṇo jāyate
+katham āyāty asmin śarīre
+ātmānaṃ vā pravibhajya kathaṃ prātiṣṭhate
+kenotkramate
+kathaṃ bāhyam abhidhatte
+katham adhyātmam iti', null, 3001),
+('prashna-3-2', 2, 'Question 3, Verse 2', 'तस्मै स होवाच।
+अतिप्रश्नान्पृच्छसि।
+ब्रह्मिष्ठोऽसीति।
+तस्मात्तेऽहं ब्रवीमि॥', 'tasmai sa hovāca
+atipraśnān pṛcchasi
+brahmiṣṭho ''sīti
+tasmāt te ''haṃ bravīmi', null, 3002),
+('prashna-3-3', 3, 'Question 3, Verse 3', 'आत्मन एष प्राणो जायते।
+यथैषा पुरुषे छायैतस्मिन्नेतदाततम्।
+मनोकृतेनायात्यस्मिञ्शरीरे॥', 'ātmana eṣa prāṇo jāyate
+yathaiṣā puruṣe chāyaitasminn etadātatam
+manokṛtenāyāty asmiñ śarīre', null, 3003),
+('prashna-3-4', 4, 'Question 3, Verse 4', 'यथा सम्राडेवाधिकृतान्विनियुङ्क्ते।
+एतान्ग्रामानेतान्ग्रामानधितिष्ठस्वेति।
+एवमेवैष प्राण इतरान्प्राणान्पृथक्पृथगेव संनिधत्ते॥', 'yathā samrāḍ evādhikṛtān viniyuṅkte
+etān grāmān etān grāmān adhitiṣṭhasveti
+evam evaiṣa prāṇa itarān prāṇān pṛthak pṛthag eva saṃnidhatte', null, 3004),
+('prashna-3-5', 5, 'Question 3, Verse 5', 'पायूपस्थेऽपानम्।
+चक्षुःश्रोत्रे मुखनासिकाभ्यां प्राणः स्वयं प्रतिष्ठते।
+मध्ये तु समानः।
+एष ह्येतद्धुतमन्नं समं नयति।
+तस्मादेताः सप्तार्चिषो भवन्ति॥', 'pāyūpasthe ''pānam
+cakṣuḥśrotre mukhanāsikābhyāṃ prāṇaḥ svayaṃ pratiṣṭhate
+madhye tu samānaḥ
+eṣa hy etad dhutam annaṃ samaṃ nayati
+tasmād etāḥ saptārciṣo bhavanti', null, 3005),
+('prashna-3-6', 6, 'Question 3, Verse 6', 'हृदि ह्येष आत्मा।
+अत्रैतदेकशतं नाडीनाम्।
+तासां शतं शतमेकैकस्याः।
+द्वासप्ततिर्द्वासप्ततिः प्रतिशाखानाडीसहस्राणि भवन्ति।
+आसु व्यानश्चरति॥', 'hṛdi hy eṣa ātmā
+atraitad ekaśataṃ nāḍīnām
+tāsāṃ śataṃ śatam ekaikasyāḥ
+dvāsaptatir dvāsaptatiḥ pratiśākhānāḍīsahasrāṇi bhavanti
+āsu vyānaścarati', null, 3006),
+('prashna-3-7', 7, 'Question 3, Verse 7', 'अथैकयोर्ध्व उदानः पुण्येन पुण्यं लोकं नयति।
+पापेन पापम्।
+उभाभ्यामेव मनुष्यलोकम्॥', 'athaikayordhva udānaḥ puṇyena puṇyaṃ lokaṃ nayati
+pāpena pāpam
+ubhābhyām eva manuṣyalokam', null, 3007),
+('prashna-3-8', 8, 'Question 3, Verse 8', 'आदित्यो ह वै बाह्यः प्राण उदयति।
+एष ह्येनं चाक्षुषं प्राणमनुगृह्णानः।
+पृथिव्यां या देवता सैषा पुरुषस्यापानमवष्टभ्य।
+अन्तरा यदाकाशः स समानः।
+वायुर्व्यानः॥', 'ādityo ha vai bāhyaḥ prāṇa udayati
+eṣa hy enaṃ cākṣuṣaṃ prāṇam anugṛhṇānaḥ
+pṛthivyāṃ yā devatā saiṣā puruṣasyāpānam avaṣṭabhya
+antarā yadākāśaḥ sa samānaḥ
+vāyur vyānaḥ', null, 3008),
+('prashna-3-9', 9, 'Question 3, Verse 9', 'तेजो ह वा उदानः।
+तस्मादुपशान्ततेजाः।
+पुनर्भवमिन्द्रियैर्मनसि संपद्यमानैः॥', 'tejo ha vā udānaḥ
+tasmād upaśāntatejāḥ
+punarbhavam indriyair manasi saṃpadyamānaiḥ', null, 3009),
+('prashna-3-10', 10, 'Question 3, Verse 10', 'यच्चित्तस्तेनैष प्राणमायाति।
+प्राणस्तेजसा युक्तः सहात्मना यथा संकल्पितं लोकं नयति॥', 'yaccittas tenaiṣa prāṇam āyāti
+prāṇas tejasā yuktaḥ sahātmanā yathā saṃkalpitaṃ lokaṃ nayati', null, 3010),
+('prashna-3-11', 11, 'Question 3, Verse 11', 'य एवं विद्वान्प्राणं वेद।
+न हास्य प्रजा हीयतेऽमृतो भवति।
+तदेष श्लोकः॥', 'ya evaṃ vidvān prāṇaṃ veda
+na hāsya prajā hīyate ''mṛto bhavati
+tad eṣa ślokaḥ', null, 3011),
+('prashna-3-12', 12, 'Question 3, Verse 12', 'उत्पत्तिमायातिं स्थानं विभुत्वं चैव पञ्चधा।
+अध्यात्मं चैव प्राणस्य विज्ञायामृतमश्नुते विज्ञायामृतमश्नुत इति॥', 'utpattim āyātiṃ sthānaṃ vibhutvaṃ caiva pañcadhā
+adhyātmaṃ caiva prāṇasya vijñāyāmṛtam aśnute vijñāyāmṛtam aśnuta iti', null, 3012)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 4 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-4-1', 1, 'Question 4, Verse 1', 'अथ हैनं सौर्यायणी गार्ग्यः पप्रच्छ।
+भगवन्नेतस्मिन्पुरुषे कानि स्वपन्ति।
+कान्यस्मिञ्जाग्रति।
+कतर एष देवः स्वप्नान्पश्यति।
+कस्यैतत्सुखं भवति।
+कस्मिन्नु सर्वे संप्रतिष्ठिता भवन्तीति॥', 'atha hainaṃ sauryāyaṇī gārgyaḥ papraccha
+bhagavann etasmin puruṣe kāni svapanti
+kāny asmiñ jāgrati
+katara eṣa devaḥ svapnān paśyati
+kasyaitat sukhaṃ bhavati
+kasmin nu sarve saṃpratiṣṭhitā bhavantīti', null, 4001),
+('prashna-4-2', 2, 'Question 4, Verse 2', 'तस्मै स होवाच।
+यथा गार्ग्य मरीचयोऽर्कस्यास्तं गच्छतः सर्वा एतस्मिंस्तेजोमण्डल एकीभवन्ति।
+ताः पुनः पुनरुदयतः प्रचरन्ति।
+एवं ह वै तत्सर्वं परे देवे मनस्येकीभवति।
+तेन तर्ह्येष पुरुषो न शृणोति।
+न पश्यति।
+न जिघ्रति।
+न रसयते।
+न स्पृशते।
+नाभिवदते।
+नादत्ते।
+नानन्दयते।
+न विसृजते।
+नेयायते।
+स्वपतीत्याचक्षते॥', 'tasmai sa hovāca
+yathā gārgya marīcayo''rkasyās taṃ gacchataḥ sarvā etasmiṃs tejomaṇḍala ekībhavanti
+tāḥ punaḥ punar udayataḥ pracaranti
+evaṃ ha vai tat sarvaṃ pare deve manasy ekībhavati
+tena tarhy eṣa puruṣo na śṛṇoti
+na paśyati
+na jighrati
+na rasayate
+na spṛśate
+nābhivadate
+nādatte
+nānandayate
+na visṛjate
+neyāyate
+svapatīty ācakṣate', null, 4002),
+('prashna-4-3', 3, 'Question 4, Verse 3', 'प्राणाग्नय एवैतस्मिन्पुरे जाग्रति।
+गार्हपत्यो ह वा एषोऽपानः।
+व्यानोऽन्वाहार्यपचनः।
+यद्गार्हपत्यात्प्रणीयते प्रणयनात्।
+आहवनीयः प्राणः॥', 'prāṇāgnaya evaitasmin pure jāgrati
+gārhapatyo ha vā eṣo ''pānaḥ
+vyāno ''nvāhāryapacanaḥ
+yad gārhapatyāt praṇīyate praṇayanāt
+āhavanīyaḥ prāṇaḥ', null, 4003),
+('prashna-4-4', 4, 'Question 4, Verse 4', 'यदुच्छ्वासनिःश्वासावेतावाहुती समं नयतीति स समानः।
+मनो ह वावन यजमानः।
+इष्टफलमेवोदानः।
+स एनं यजमानमहरहर्ब्रह्म गमयति॥', 'yad ucchvāsaniḥśvāsāvetāvāhutī samaṃ nayatīti sa samānaḥ
+mano ha vāvana yajamānaḥ
+iṣṭaphalam evodānaḥ
+sa enaṃ yajamānam aharaharbrahma gamayati', null, 4004),
+('prashna-4-5', 5, 'Question 4, Verse 5', 'अत्रैष देवः स्वप्ने महिमानमनुभवति।
+यद्दृष्टं इष्टमनुपश्यति।
+श्रुतं श्रुतमेवार्थमनुशृणोति।
+देशदिगन्तरैश्च प्रत्यनुभूतं पुनः पुनः प्रत्यनुभवति।
+दृष्टं चादृष्टं च श्रुतं चाश्रुतं चानुभूतं चाननुभूतं च सच्चासच्च सर्वं पश्यति।
+सर्वः पश्यति॥', 'atraiṣa devaḥ svapne mahimānam anubhavati
+yad dṛṣṭaṃ iṣṭam anupaśyati
+śrutaṃ śrutam evārtham anuśṛṇoti
+deśadigantaraiś ca pratyanubhūtaṃ punaḥ punaḥ pratyanubhavati
+dṛṣṭaṃ cādṛṣṭaṃ ca śrutaṃ cāśrutaṃ cānubhūtaṃ cānanubhūtaṃ ca saccāsacca sarvaṃ paśyati
+sarvaḥ paśyati', null, 4005),
+('prashna-4-6', 6, 'Question 4, Verse 6', 'स यदा तेजसाभिभूतो भवति।
+अत्रैष देवः स्वप्नान्न पश्यति।
+अथ तदैतस्मिञ्शरीर एतत्सुखं भवति॥', 'sa yadā tejasābhibhūto bhavati
+atraiṣa devaḥ svapnānna paśyati
+atha tadaitasmiñ śarīra etat sukhaṃ bhavati', null, 4006),
+('prashna-4-7', 7, 'Question 4, Verse 7', 'स यथा सोम्य वयांसि वासोवृक्षं संप्रतिष्ठन्ते।
+एवं ह वै तत्सर्वं पर आत्मनि संप्रतिष्ठते॥', 'sa yathā somya vayāṃsi vāsovṛkṣaṃ saṃpratiṣṭhante
+evaṃ ha vai tat sarvaṃ para ātmani saṃpratiṣṭhate', null, 4007),
+('prashna-4-8', 8, 'Question 4, Verse 8', 'पृथिवी च पृथिवीमात्रा च।
+आपश्चापोमात्रा च।
+तेजश्च तेजोमात्रा च।
+वायुश्च वायुमात्रा च।
+आकाशश्चाकाशमात्रा च।
+चक्षुश्च द्रष्टव्यं च।
+श्रोत्रं च श्रोतव्यं च।
+घ्राणं च घ्रातव्यं च।
+रसश्च रसयितव्यं च।
+त्वक्च स्पर्शयितव्यं च।
+वाक्च वक्तव्यं च।
+हस्तौ चादातव्यं च।
+उपस्थश्चानन्दयितव्यं च।
+पायुश्च विसर्जयितव्यं च।
+पादौ च गन्तव्यं च।
+मनश्च मन्तव्यं च।
+बुद्धिश्च बोद्धव्यं च।
+अहङ्कारश्चाहङ्कर्तव्यं च।
+चित्तं च चेतयितव्यं च।
+तेजश्च विद्योतयितव्यं च।
+प्राणश्च विधारयितव्यं च॥', 'pṛthivī ca pṛthivīmātrā ca
+āpaś cāpomātrā ca
+tejaś ca tejomātrā ca
+vāyuś ca vāyumātrā ca
+ākāśaś cākāśamātrā ca
+cakṣuś ca draṣṭavyaṃ ca
+śrotraṃ ca śrotavyaṃ ca
+ghrāṇaṃ ca ghrātavyaṃ ca
+rasaś ca rasayitavyaṃ ca
+tvak ca sparśayitavyaṃ ca
+vāk ca vaktavyaṃ ca
+hastau cādātavyaṃ ca
+upasthaś cānandayitavyaṃ ca
+pāyuś ca visarjayitavyaṃ ca
+pādau ca gantavyaṃ ca
+manaś ca mantavyaṃ ca
+buddhiś ca boddhavyaṃ ca
+ahaṅkāraś cāhaṅkartavyaṃ ca
+cittaṃ ca cetayitavyaṃ ca
+tejaś ca vidyotayitavyaṃ ca
+prāṇaś ca vidhārayitavyaṃ ca', null, 4008),
+('prashna-4-9', 9, 'Question 4, Verse 9', 'एष हि द्रष्टा स्प्रष्टा श्रोता घ्राता रसयिता मन्ता बोद्धा कर्ता विज्ञानात्मा पुरुषः।
+स परेऽक्षर आत्मनि संप्रतिष्ठते॥', 'eṣa hi draṣṭā spraṣṭā śrotā ghrātā rasayitā mantā boddhā kartā vijñānātmā puruṣaḥ
+sa pare ''kṣara ātmani saṃpratiṣṭhate', null, 4009),
+('prashna-4-10', 10, 'Question 4, Verse 10', 'परमेवाक्षरं प्रतिपद्यते।
+स यो ह वै तदच्छायमशरीरमलोहितं शुभ्रमक्षरं वेदयते यस्तु सोम्य।
+स सर्वः सर्वो भवति।
+तदेष श्लोकः॥', 'param evākṣaraṃ pratipadyate
+sa yo ha vai tadacchāyam aśarīram alohitaṃ śubhram akṣaraṃ vedayate yas tu somya
+sa sarvaḥ sarvo bhavati
+tad eṣa ślokaḥ', null, 4010),
+('prashna-4-11', 11, 'Question 4, Verse 11', 'विज्ञानात्मा सह देवैश्च सर्वैः प्राणा भूतानि संप्रतिष्ठन्ति यत्र।
+तदक्षरं वेदयते यस्तु सोम्य स सर्वज्ञः सर्वमेवाविवेशेति॥', 'vijñānātmā saha devaiś ca sarvaiḥ prāṇā bhūtāni saṃpratiṣṭhanti yatra
+tad akṣaraṃ vedayate yas tu somya sa sarvajñaḥ sarvam evāviveśeti', null, 4011)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 5 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-5-1', 1, 'Question 5, Verse 1', 'अथ हैनं शैब्यः सत्यकामः पप्रच्छ।
+स यो ह वै तद्भगवन्मनुष्येषु प्रायणान्तमोंकारमभिध्यायीत।
+कतमं वाव स तेन लोकं जयतीति॥', 'atha hainaṃ śaibyaḥ satyakāmaḥ papraccha
+sa yo ha vai tad bhagavan manuṣyeṣu prāyaṇāntam oṃkāram abhidhyāyīta
+katamaṃ vāva sa tena lokaṃ jayatīti', null, 5001),
+('prashna-5-2', 2, 'Question 5, Verse 2', 'तस्मै स होवाच।
+एतद्वै सत्यकाम परं चापरं च ब्रह्म यदोंकारः।
+तस्माद्विद्वानेतेनैवायतनेनैकतरमन्वेति॥', 'tasmai sa hovāca
+etad vai satyakāma paraṃ cāparaṃ ca brahma yad oṃkāraḥ
+tasmād vidvān etenaivāyatanenaikataram anveti', null, 5002),
+('prashna-5-3', 3, 'Question 5, Verse 3', 'स यद्येकमात्रमभिध्यायीत।
+स तेनैव संवेदितस्तूर्णमेव जगत्यामभिसम्पद्यते।
+तमृचो मनुष्यलोकमुपनयन्ते।
+स तत्र तपसा ब्रह्मचर्येण श्रद्धया सम्पन्नो महिमानमनुभवति॥', 'sa yady ekamātram abhidhyāyīta
+sa tenaiva saṃveditas tūrṇam eva jagatyām abhisampadyate
+tam ṛco manuṣyalokam upanayante
+sa tatra tapasā brahmacaryeṇa śraddhayā sampanno mahimānam anubhavati', null, 5003),
+('prashna-5-4', 4, 'Question 5, Verse 4', 'अथ यदि द्विमात्रेण मनसि संपद्यते।
+सोऽन्तरीक्षं यजुर्भिरुन्नीयते सोमलोकम्।
+स सोमलोके विभूतिमनुभूय पुनरावर्तते॥', 'atha yadi dvimātreṇa manasi saṃpadyate
+so ''ntarīkṣaṃ yajurbhir unnīyate somalokam
+sa somaloke vibhūtim anubhūya punar āvartate', null, 5004),
+('prashna-5-5', 5, 'Question 5, Verse 5', 'यः पुनरेतं त्रिमात्रेणोमित्येतेनैवाक्षरेण परं पुरुषमभिध्यायीत।
+स तेजसि सूर्ये संपन्नः।
+यथा पादोदरस्त्वचा विनिर्मुच्यते।
+एवं ह वै स पाप्मना विनिर्मुक्तः स सामभिरुन्नीयते ब्रह्मलोकम्।
+स एतस्माज्जीवधनात्परापरं पुरिशयं पुरुषमीक्षते तदेतौ श्लोकौ भवतः॥', 'yaḥ punar etaṃ trimātreṇomity etenaivākṣareṇa paraṃ puruṣam abhidhyāyīta
+sa tejasi sūrye saṃpannaḥ
+yathā pādodaras tvacā vinirmucyate
+evaṃ ha vai sa pāpmanā vinirmuktaḥ sa sāmabhir unnīyate brahmalokam
+sa etasmāj jīvadhanāt parāparaṃ puriśayaṃ puruṣam īkṣate tad etau ślokau bhavataḥ', null, 5005),
+('prashna-5-6', 6, 'Question 5, Verse 6', 'तिस्रो मात्रा मृत्युमत्यः प्रयुक्ता अन्योन्यसक्ता अनविप्रयुक्ताः।
+क्रियासु बाह्याभ्यन्तरमध्यमासु सम्यक्प्रयुक्तासु न कम्पते ज्ञः॥', 'tisro mātrā mṛtyumatyaḥ prayuktā anyonyasaktā anaviprayuktāḥ
+kriyāsu bāhyābhyantaramadhyamāsu samyakprayuktāsu na kampate jñaḥ', null, 5006),
+('prashna-5-7', 7, 'Question 5, Verse 7', 'ऋग्भिरेतं यजुर्भिरन्तरिक्षं सामभिर्यत्तत्कवयो वेदयन्ते।
+तमोंकारेणैवायतनेनान्वेति विद्वान्यत्तच्छान्तमजरममृतमभयं परं चेति॥', 'ṛgbhir etaṃ yajurbhir antarikṣaṃ sāmabhir yat tat kavayo vedayante
+tam oṃkāreṇaivāyatanenānveti vidvān yat tac chāntam ajaram amṛtam abhayaṃ paraṃ ceti', null, 5007)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'prashna-upanishad', (select id from sections where scripture_id = 'prashna-upanishad' and level = 1 and number = 6 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('prashna-6-1', 1, 'Question 6, Verse 1', 'अथ हैनं सुकेशा भारद्वाजः पप्रच्छ।
+भगवन्हिरण्यनाभः कौसल्यो राजपुत्रो मामुपेत्यैतं प्रश्नमपृच्छत।
+षोडशकलं भारद्वाज पुरुषं वेत्थ।
+तमहं कुमारमब्रुवं नाहमिमं वेद।
+यद्यहमिममवेदिषं कथं ते नावक्ष्यमिति।
+समूलो वा एष परिशुष्यति योऽनृतमभिवदति।
+तस्मान्नार्हाम्यनृतं वक्तुं।
+स तूष्णीं रथमारुह्य प्रवव्राज।
+तं त्वा पृच्छामि कासौ पुरुष इति॥', 'atha hainaṃ sukeśā bhāradvājaḥ papraccha
+bhagavan hiraṇyanābhaḥ kausalyo rājaputro māmupetyaitaṃ praśnamapṛcchata
+ṣoḍaśakalaṃ bhāradvāja puruṣaṃ vettha
+tam ahaṃ kumāram abruvaṃ nāham imaṃ veda
+yady aham imam avediṣaṃ kathaṃ te nāvakṣyam iti
+samūlo vā eṣa pariśuṣyati yo ''nṛtam abhivadati
+tasmān nārhāmy anṛtaṃ vaktuṃ
+sa tūṣṇīṃ ratham āruhya pravavrāja
+taṃ tvā pṛcchāmi kāsau puruṣa iti', null, 6001),
+('prashna-6-2', 2, 'Question 6, Verse 2', 'तस्मै स होवाच।
+इहैवान्तः शरीरे सोम्य स पुरुषो यस्मिन्नेताः षोडश कलाः प्रभवन्तीति॥', 'tasmai sa hovāca
+ihaivāntaḥ śarīre somya sa puruṣo yasminn etāḥ ṣoḍaśa kalāḥ prabhavantīti', null, 6002),
+('prashna-6-3', 3, 'Question 6, Verse 3', 'स ईक्षां चक्रे।
+कस्मिन्नहमुत्क्रान्त उत्क्रान्तो भविष्यामि कस्मिन्वा प्रतिष्ठिते प्रतिष्ठास्यामीति॥', 'sa īkṣāṃ cakre
+kasminn aham utkrānta utkrānto bhaviṣyāmi kasmin vā pratiṣṭhite pratiṣṭhāsyāmīti', null, 6003),
+('prashna-6-4', 4, 'Question 6, Verse 4', 'स प्राणमसृजत।
+प्राणाच्छद्वां खं वायुर्ज्योतिरापः पृथिवीन्द्रियं मनोऽन्नमन्नाद्वीर्यं तपो मन्त्राः कर्म लोका लोकेषु नाम च॥', 'sa prāṇamasṛjata
+prāṇāc chadvāṃ khaṃ vāyur jyotir āpaḥ pṛthivīndriyaṃ mano ''nnam annād vīryaṃ tapo mantrāḥ karma lokā lokeṣu nāma ca', null, 6004),
+('prashna-6-5', 5, 'Question 6, Verse 5', 'कथम्- स यथेमा नद्यः स्यन्दमानाः समुद्रायणाः समुद्रं प्राप्यास्तं गच्छन्ति।
+भिद्येते तासां नामरूपे।
+समुद्र इत्येवं प्रोच्यते।
+एवमेवास्य परिद्रष्टुरिमाः षोडश कलाः पुरुषायणाः पुरुषं प्राप्यास्तं गच्छन्ति।
+भिद्येते चासां नामरूपे।
+पुरुष इत्येवं प्रोच्यते।
+स एषोऽकलोऽमृतो भवति तदेष श्लोकः॥', 'katham - sa yathemā nadyaḥ syandamānāḥ samudrāyaṇāḥ samudraṃ prāpyāstaṃ gacchanti
+bhidyete tāsāṃ nāmarūpe
+samudra ity evaṃ procyate
+evam evāsya paridraṣṭur imāḥ ṣoḍaśa kalāḥ puruṣāyaṇāḥ puruṣaṃ prāpyāstaṃ gacchanti
+bhidyete cāsāṃ nāmarūpe
+puruṣa ity evaṃ procyate
+sa eṣo ''kalo ''mṛto bhavati tadeṣa ślokaḥ', null, 6005),
+('prashna-6-6', 6, 'Question 6, Verse 6', 'अरा इव रथनाभौ कला यस्मिन्प्रतिष्ठिताः।
+तं वेद्यं पुरुषं वेद यथा मा वो मृत्युः परिव्यथा इति॥', 'arā iva rathanābhau kalā yasmin pratiṣṭhitāḥ
+taṃ vedyaṃ puruṣaṃ veda yathā mā vo mṛtyuḥ parivyathā iti', null, 6006),
+('prashna-6-7', 7, 'Question 6, Verse 7', 'तान्होवाच।
+एतावदेवाहमेतत्परं ब्रह्म वेद।
+नातः परमस्तीति॥', 'tān hovāca
+etāvad evāham etat paraṃ brahma veda
+nātaḥ param astīti', null, 6007),
+('prashna-6-8', 8, 'Question 6, Verse 8', 'ते तमर्चयन्तस्त्वं हि नः पिता योऽस्माकमविद्यायाः परं पारं तारयसीति नमः।
+परमऋषिभ्यो नमः परमऋषिभ्यः॥', 'te tam arcayantas tvaṃ hi naḥ pitā yo ''smākam avidyāyāḥ paraṃ pāraṃ tārayasīti namaḥ
+paramaṛṣibhyo namaḥ paramaṛṣibhyaḥ', null, 6008)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+
+-- Imported: shvetashvatara-upanishad (upanishad-shvetashvatara.json)
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 1, 'Chapter 1', null, 16) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 2, 'Chapter 2', null, 17) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 3, 'Chapter 3', null, 21) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 4, 'Chapter 4', null, 22) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 5, 'Chapter 5', null, 14) on conflict do nothing;
+insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values ('shvetashvatara-upanishad', null, 1, 6, 'Chapter 6', null, 23) on conflict do nothing;
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 1 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-1-1', 1, 'Chapter 1, Verse 1', 'प्रथमोऽध्यायः।
+किंकारणं ब्रह्म कुतः स्म जाता जीवामः केन क्व च संप्रतिष्ठाः।
+अधिष्ठिताः केन सुखेतरेषु वर्तामहे ब्रह्मविदो व्यवस्थाम्॥', 'prathamo ''dhyāyaḥ
+kiṃkāraṇaṃ brahma kutaḥ sma jātā jīvāmaḥ kena kva ca saṃpratiṣṭhāḥ
+adhiṣṭhitāḥ kena sukhetareṣu vartāmahe brahmavido vyavasthām', null, 1001),
+('shvetashvatara-1-2', 2, 'Chapter 1, Verse 2', 'कालः स्वभावो नियतिर्यदृच्छा भूतानि योनिः पुरुषेति चिन्त्यम्।
+संयोग एषां न त्वात्मभावादात्मा ह्यनीशः सुखदुःखहेतोः॥', 'kālaḥ svabhāvo niyatir yadṛcchā bhūtāni yoniḥ puruṣeti cintyam
+saṃyoga eṣāṃ na tv ātmabhāvād ātmā hy anīśaḥ sukhaduḥkhahetoḥ', null, 1002),
+('shvetashvatara-1-3', 3, 'Chapter 1, Verse 3', 'ते ध्यानयोगानुगता अपश्यन्देवात्मशक्तिं स्वगुणैर्निगूढाम्।
+यः कारणानि निखिलानि तानि कालात्मयुक्तान्यधितिष्ठत्येकः॥', 'te dhyānayogānugatā apaśyan devātmaśaktiṃ svaguṇair nigūḍhām
+yaḥ kāraṇāni nikhilāni tāni kālātmayuktāny adhitiṣṭhaty ekaḥ', null, 1003),
+('shvetashvatara-1-4', 4, 'Chapter 1, Verse 4', 'तमेकनेमिं त्रिवृतं षोडशान्तं शतार्धारं विंशतिप्रत्यराभिः।
+अष्टकैः षड्भिर्विश्वरूपैकपाशं त्रिमार्गभेदं द्विनिमित्तैकमोहम्॥', 'tam ekanemiṃ trivṛtaṃ ṣoḍaśāntaṃ śatārdhāraṃ viṃśatipratyarābhiḥ
+aṣṭakaiḥ ṣaḍbhir viśvarūpaikapāśaṃ trimārgabhedaṃ dvinimittaikamoham', null, 1004),
+('shvetashvatara-1-5', 5, 'Chapter 1, Verse 5', 'पञ्चस्रोतोऽम्बुं पञ्चयोन्युग्रवक्त्रां पञ्चप्राणोर्मिं पञ्चबुद्ध्यादिमूलां।
+पञ्चावर्तां पञ्चदुःखौघवेगां पञ्चाशद्भेदां पञ्चपर्वामधीमः॥', 'pañcasroto''mbuṃ pañcayonyugravaktrāṃ pañcaprāṇormiṃ pañcabuddhyādimūlāṃ
+pañcāvartāṃ pañcaduḥkhaughavegāṃ pañcāśadbhedāṃ pañcaparvām adhīmaḥ', null, 1005),
+('shvetashvatara-1-6', 6, 'Chapter 1, Verse 6', 'सर्वाजीवे सर्वसंस्थे बृहन्ते तस्मिन्हंसो भ्राम्यते ब्रह्मचक्रे।
+पृथगात्मानं प्रेरितारं च मत्वा जुष्टस्ततस्तेनामृतत्वमेति॥', 'sarvājīve sarvasaṃsthe bṛhante tasmin haṃso bhrāmyate brahmacakre
+pṛthag ātmānaṃ preritāraṃ ca matvā juṣṭas tatas tenāmṛtatvam eti', null, 1006),
+('shvetashvatara-1-7', 7, 'Chapter 1, Verse 7', 'उद्गीतमेतत्परमं तु ब्रह्म तस्मिंस्त्रयं स्वप्रतिष्ठाक्षरं च।
+अत्रान्तरं ब्रह्मविदो विदित्वा लीना ब्रह्मणि तत्परा योनिमुक्ताः॥', 'udgītam etat paramaṃ tu brahma tasmiṃs trayaṃ svapratiṣṭhākṣaraṃ ca
+atrāntaraṃ brahmavido viditvā līnā brahmaṇi tatparā yonimuktāḥ', null, 1007),
+('shvetashvatara-1-8', 8, 'Chapter 1, Verse 8', 'संयुक्तमेतत्क्षरमक्षरं च व्यक्ताव्यक्तं भरते विश्वमीशः।
+अनीशश्चात्मा बध्यते भोक्तृभावाज्ज्ञात्वा देवं मुच्यते सर्वपाशैः॥', 'saṃyuktam etat kṣaram akṣaraṃ ca vyaktāvyaktaṃ bharate viśvam īśaḥ
+anīśaś cātmā badhyate bhoktṛbhāvāj jñātvā devaṃ mucyate sarvapāśaiḥ', null, 1008),
+('shvetashvatara-1-9', 9, 'Chapter 1, Verse 9', 'ज्ञाज्ञौ द्वावजावीशनीशावजा ह्येका भोक्तृभोगार्थयुक्ता।
+अनन्तश्चात्मा विश्वरूपो ह्यकर्ता त्रयं यदा विन्दते ब्रह्ममेतत्॥', 'jñājñau dvāv ajāv īśanīśāv ajā hy ekā bhoktṛbhogārthayuktā
+anantaś cātmā viśvarūpo hy akartā trayaṃ yadā vindate brahmam etat', null, 1009),
+('shvetashvatara-1-10', 10, 'Chapter 1, Verse 10', 'क्षरं प्रधानममृताक्षरं हरः क्षरात्मानावीशते देव एकः।
+तस्याभिध्यानाद्योजनात्तत्त्वभावाद्भूयश्चान्ते विश्वमायानिवृत्तिः॥', 'kṣaraṃ pradhānam amṛtākṣaraṃ haraḥ kṣarātmānāv īśate deva ekaḥ
+tasyābhidhyānād yojanāt tattvabhāvād bhūyaś cānte viśvamāyānivṛttiḥ', null, 1010),
+('shvetashvatara-1-11', 11, 'Chapter 1, Verse 11', 'ज्ञात्वा देवं सर्वपाशापहानिः क्षीनैः क्लेशैर्जन्ममृत्युप्रहाणिः।
+तस्याभिध्यानात्तृतीयं देहभेदे विश्वैश्वर्यं केवल आप्तकामः॥', 'jñātvā devaṃ sarvapāśāpahāniḥ kṣīnaiḥ kleśair janmamṛtyuprahāṇiḥ
+tasyābhidhyānāt tṛtīyaṃ dehabhede viśvaiśvaryaṃ kevala āptakāmaḥ', null, 1011),
+('shvetashvatara-1-12', 12, 'Chapter 1, Verse 12', 'एतज्ज्ञेयं नित्यमेवात्मसंस्थं नातः परं वेदितव्यं हि किंचित्।
+भोक्ता भोग्यं प्रेरितारं च मत्वा सर्वं प्रोक्तं त्रिविधं ब्रह्ममेतत्॥', 'etaj jñeyaṃ nityam evātmasaṃsthaṃ nātaḥ paraṃ veditavyaṃ hi kiṃcit
+bhoktā bhogyaṃ preritāraṃ ca matvā sarvaṃ proktaṃ trividhaṃ brahmam etat', null, 1012),
+('shvetashvatara-1-13', 13, 'Chapter 1, Verse 13', 'वह्नेर्यथा योनिगतस्य मूर्तिर्न दृश्यते नैव च लिङ्गनाशः।
+स भूय एवेन्धनयोनिगृह्यस्तद्वोभयं वै प्रणवेन देहे॥', 'vahner yathā yonigatasya mūrtir na dṛśyate naiva ca liṅganāśaḥ
+sa bhūya evendhanayonigṛhyas tadvobhayaṃ vai praṇavena dehe', null, 1013),
+('shvetashvatara-1-14', 14, 'Chapter 1, Verse 14', 'स्वदेहमरणिं कृत्वा प्रणवं चोत्तरारणिं।
+ध्याननिर्मथनाभ्यासाद्देवं पश्येन्निगूढवत्॥', 'svadeham araṇiṃ kṛtvā praṇavaṃ cottarāraṇiṃ
+dhyānanirmathanābhyāsād devaṃ paśyen nigūḍhavat', null, 1014),
+('shvetashvatara-1-15', 15, 'Chapter 1, Verse 15', 'तिलेषु तैलं दधनीव सर्पिरापः स्रोतःस्वरणीषु चाग्निः।
+एवमात्मा आत्मनि गृह्यतेऽसौ सत्येनैनं तपसा योऽनुपश्यति॥', 'tileṣu tailaṃ dadhanīva sarpir āpaḥ srotaḥsv araṇīṣu cāgniḥ
+evam ātmā ātmani gṛhyate ''sau satyenainaṃ tapasā yo ''nupaśyati', null, 1015),
+('shvetashvatara-1-16', 16, 'Chapter 1, Verse 16', 'सर्वव्यापिनमात्मानं क्षीरे सर्पिरिवार्पितम्।
+आत्मविद्यातपोमूलं तद्ब्रह्मोपनिषत्परं तद्ब्रह्मोपनिषत्परम्॥', 'sarvavyāpinam ātmānaṃ kṣīre sarpir ivārpitam
+ātmavidyātapomūlaṃ tad brahmopaniṣatparaṃ tad brahmopaniṣatparam', null, 1016)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 2 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-2-1', 1, 'Chapter 2, Verse 1', 'द्वितीयोऽध्यायः।
+युञ्जानः प्रथमं मनस्तत्वाय सविता धियः।
+अग्नेर्ज्योतिर्निचाय्य पृथिव्या अध्याभरत्॥', 'dvitīyo ''dhyāyaḥ
+yuñjānaḥ prathamaṃ manas tatvāya savitā dhiyaḥ
+agner jyotir nicāyya pṛthivyā adhy ābharat', null, 2001),
+('shvetashvatara-2-2', 2, 'Chapter 2, Verse 2', 'युक्तेन मनसा वयं देवस्य सवितुः सवे।
+सुवर्गेयाय शक्त्या %॥', 'yuktena manasā vayaṃ devasya savituḥ save
+suvargeyāya śaktyā %', null, 2002),
+('shvetashvatara-2-3', 3, 'Chapter 2, Verse 3', 'युक्त्वाय मनसा देवान्सुवर्यतो धिया दिवं।
+बृहज्ज्योतिः करिष्यतः सविता प्रसुवाति तान्॥', 'yuktvāya manasā devān suvar yato dhiyā divaṃ
+bṛhaj jyotiḥ kariṣyataḥ savitā prasuvāti tān', null, 2003),
+('shvetashvatara-2-4', 4, 'Chapter 2, Verse 4', 'युञ्जते मन उत युञ्जते धियो विप्रा विप्रस्य बृहतो विपश्चितः।
+वि होत्रा दधे वयुनाविदेक इन्मही देवस्य सवितुः परिष्टुतिः॥', 'yuñjate mana uta yuñjate dhiyo viprā viprasya bṛhato vipaścitaḥ
+vi hotrā dadhe vayunāvid eka in mahī devasya savituḥ pariṣṭutiḥ', null, 2004),
+('shvetashvatara-2-5', 5, 'Chapter 2, Verse 5', 'युजे वां ब्रह्म पूर्व्यं नमोभिर्वि श्लोक एतु पथ्येव सूरेः।
+शृण्वन्ति विश्वे अमृतस्य पुत्रा आ ये धामानि दिवियानि तस्थुः॥', 'yuje vāṃ brahma pūrvyaṃ namobhir vi śloka etu pathyeva sūreḥ
+śṛṇvanti viśve amṛtasya putrā ā ye dhāmāni diviyāni tasthuḥ', null, 2005),
+('shvetashvatara-2-6', 6, 'Chapter 2, Verse 6', 'अग्निर्यत्राभिमथ्यते वायुर्यत्राधिरुध्यते।
+सोमो यत्रातिरिच्यते तत्र संजायते मनः॥', 'agnir yatrābhimathyate vāyur yatrādhirudhyate
+somo yatrātiricyate tatra saṃjāyate manaḥ', null, 2006),
+('shvetashvatara-2-7', 7, 'Chapter 2, Verse 7', 'सवित्रा प्रसवेन जुषेत ब्रह्म पूर्व्यम्।
+तत्र योनिं कृणवसे नहि ते पूर्तमक्षिपत्॥', 'savitrā prasavena juṣeta brahma pūrvyam
+tatra yoniṃ kṛṇavase nahi te pūrtam akṣipat', null, 2007),
+('shvetashvatara-2-8', 8, 'Chapter 2, Verse 8', 'त्रिरुन्नतं स्थाप्य समं शरीरं हृदीन्द्रियाणि मनसा संनिवेश्य।
+ब्रह्मोडुपेन प्रतरेत विद्वान्स्रोतांसि सर्वाणि भयावहानि॥', 'trirunnataṃ sthāpya samaṃ śarīraṃ hṛdīndriyāṇi manasā saṃniveśya
+brahmoḍupena pratareta vidvān srotāṃsi sarvāṇi bhayāvahāni', null, 2008),
+('shvetashvatara-2-9', 9, 'Chapter 2, Verse 9', 'प्राणान्प्रपीड्येह स युक्तचेष्टः क्षीने प्राणे नासिकयोच्छ्वसीत।
+दुष्टाश्वयुक्तमिव वाहमेनं विद्वान्मनो धारयेताप्रमत्तः॥', 'prāṇān prapīḍyeha sa yuktaceṣṭaḥ kṣīne prāṇe nāsikayocchvasīta
+duṣṭāśvayuktam iva vāham enaṃ vidvān mano dhārayetāpramattaḥ', null, 2009),
+('shvetashvatara-2-10', 10, 'Chapter 2, Verse 10', 'समे शुचौ शर्करावह्निवालुकाविवर्जिते शब्दजलाश्रयादिभिः।
+मनोऽनुकूले न तु चक्षुपीडने गुहानिवाताश्रयणे प्रयोजयेत्॥', 'same śucau śarkarāvahnivālukāvivarjite śabdajalāśrayādibhiḥ
+mano''nukūle na tu cakṣupīḍane guhānivātāśrayaṇe prayojayet', null, 2010),
+('shvetashvatara-2-11', 11, 'Chapter 2, Verse 11', 'नीहारधूमार्कानलानिलानां खद्योतविद्युत्स्फटिकाशशीनाम्।
+एतानि रूपाणि पुरःसराणि ब्रह्मण्यभिव्यक्तिकराणि योगे॥', 'nīhāradhūmārkānalānilānāṃ khadyotavidyutsphaṭikāśaśīnām
+etāni rūpāṇi puraḥsarāṇi brahmaṇy abhivyaktikarāṇi yoge', null, 2011),
+('shvetashvatara-2-12', 12, 'Chapter 2, Verse 12', 'पृथ्व्यप्तेजोऽनिलखे समुत्थिते पञ्चात्मके योगगुणे प्रवृत्ते।
+न तस्य रोगो न जरा न मृत्युः प्राप्तस्य योगाग्निमयं शरीरम्॥', 'pṛthvyaptejo''nilakhe samutthite pañcātmake yogaguṇe pravṛtte
+na tasya rogo na jarā na mṛtyuḥ prāptasya yogāgnimayaṃ śarīram', null, 2012),
+('shvetashvatara-2-13', 13, 'Chapter 2, Verse 13', 'लघुत्वमारोग्यमलोलुपत्वं वर्णप्रसादः स्वरसौष्ठवं च।
+गन्धः शुभो मूत्रपुरीषमल्पं योगप्रवृत्तिं प्रथमां वदन्ति॥', 'laghutvam ārogyam alolupatvaṃ varṇaprasādaḥ svarasauṣṭhavaṃ ca
+gandhaḥ śubho mūtrapurīṣam alpaṃ yogapravṛttiṃ prathamāṃ vadanti', null, 2013),
+('shvetashvatara-2-14', 14, 'Chapter 2, Verse 14', 'यथैव बिम्बं मृदयोपलिप्तं तेजोमयं भ्राजते तत्सुधान्तम्।
+तद्वात्मतत्त्वं प्रसमीक्ष्य देही एकः कृतार्थो भवते वीतशोकः॥', 'yathaiva bimbaṃ mṛdayopaliptaṃ tejomayaṃ bhrājate tat sudhāntam
+tad vātmatattvaṃ prasamīkṣya dehī ekaḥ kṛtārtho bhavate vītaśokaḥ', null, 2014),
+('shvetashvatara-2-15', 15, 'Chapter 2, Verse 15', 'यदात्मतत्त्वेन तु ब्रह्मतत्त्वं दीपोपमेनेह युक्तः प्रपश्येत्।
+अजं ध्रुवं सर्वतत्त्वैर्विशुद्धं ज्ञात्वा देवं मुच्यते सर्वपाशैः॥', 'yad ātmatattvena tu brahmatattvaṃ dīpopameneha yuktaḥ prapaśyet
+ajaṃ dhruvaṃ sarvatattvair viśuddhaṃ jñātvā devaṃ mucyate sarvapāśaiḥ', null, 2015),
+('shvetashvatara-2-16', 16, 'Chapter 2, Verse 16', 'एष ह देवः प्रदिशोऽनु सर्वाः पूर्वो ह जातः स उ गर्भे अन्तः।
+स एव जातः स जनिष्यमानः प्रत्यङ्जनास्तिष्ठति सर्वतोमुखः॥', 'eṣa ha devaḥ pradiśo ''nu sarvāḥ pūrvo ha jātaḥ sa u garbhe antaḥ
+sa eva jātaḥ sa janiṣyamānaḥ pratyaṅ janās tiṣṭhati sarvatomukhaḥ', null, 2016),
+('shvetashvatara-2-17', 17, 'Chapter 2, Verse 17', 'यो देवो अग्नौ यो अप्सु यो विश्वं भुवनमाविवेश।
+य ओषधीषु यो वनस्पतीषु तस्मै देवाय नमो नमः॥', 'yo devo agnau yo apsu yo viśvaṃ bhuvanam āviveśa
+ya oṣadhīṣu yo vanaspatīṣu tasmai devāya namo namaḥ', null, 2017)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 3 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-3-1', 1, 'Chapter 3, Verse 1', 'तृतीयोऽध्यायः।
+य एको जालवानीशत ईशनीभिः सर्वांल्लोकानीशत ईशनीभिः।
+य एवैक उद्भवे संभवे च य एतद्विदुरमृतास्ते भवन्ति॥', 'tṛtīyo ''dhyāyaḥ
+ya eko jālavān īśata īśanībhiḥ sarvāṃl lokān īśata īśanībhiḥ
+ya evaika udbhave saṃbhave ca ya etad vidur amṛtās te bhavanti', null, 3001),
+('shvetashvatara-3-2', 2, 'Chapter 3, Verse 2', 'एको हि रुद्रो न द्वितीयाय तस्थे य इमांल्लोकानीशत ईशनीभिः।
+प्रत्यङ्जनास्तिष्ठति संचुकोचान्तकाले संसृज्य विश्वा भुवनानि गोपाः॥', 'eko hi rudro na dvitīyāya tasthe ya imāṃl lokān īśata īśanībhiḥ
+pratyaṅ janās tiṣṭhati saṃcukocāntakāle saṃsṛjya viśvā bhuvanāni gopāḥ', null, 3002),
+('shvetashvatara-3-3', 3, 'Chapter 3, Verse 3', 'विश्वतश्चक्षुरुत विश्वतोमुखो विश्वतोबाहुरुत विश्वतस्पात्।
+सं बाहुभ्यां धमति सं पतत्रैर्द्यावाभूमी जनयन्देव एकः॥', 'viśvataścakṣur uta viśvatomukho viśvatobāhur uta viśvataspāt
+saṃ bāhubhyāṃ dhamati saṃ patatrair dyāvābhūmī janayan deva ekaḥ', null, 3003),
+('shvetashvatara-3-4', 4, 'Chapter 3, Verse 4', 'यो देवानां प्रभवश्चोद्भवश्च विश्वाधिपो रुद्रो महर्षिः।
+हिरण्यगर्भं जनयामास पूर्वं स नो बुद्ध्या शुभया संयुनक्तु॥', 'yo devānāṃ prabhavaś codbhavaś ca viśvādhipo rudro maharṣiḥ
+hiraṇyagarbhaṃ janayāmāsa pūrvaṃ sa no buddhyā śubhayā saṃyunaktu', null, 3004),
+('shvetashvatara-3-5', 5, 'Chapter 3, Verse 5', 'या ते रुद्र शिवा तनूरघोरापापकाशिनी।
+तया नस्तनुवा शंतमया गिरिशन्ताभिचाकशीहि॥', 'yā te rudra śivā tanūr aghorāpāpakāśinī
+tayā nas tanuvā śaṃtamayā giriśantābhicākaśīhi', null, 3005),
+('shvetashvatara-3-6', 6, 'Chapter 3, Verse 6', 'यामिषुं गिरिशन्त हस्ते बिभर्ष्यस्तवे।
+शिवां गिरित्र तां कुरु मा हिंसीः पुरुषं जगत्॥', 'yām iṣuṃ giriśanta haste bibharṣy astave
+śivāṃ giritra tāṃ kuru mā hiṃsīḥ puruṣaṃ jagat', null, 3006),
+('shvetashvatara-3-7', 7, 'Chapter 3, Verse 7', 'ततः परं ब्रह्म परं बृहन्तं यथानिकायं सर्वभूतेषु गूढं।
+विश्वस्यैकं परिवेष्टितारमीशं तं ज्ञात्वामृता भवन्ति॥', 'tataḥ paraṃ brahma paraṃ bṛhantaṃ yathānikāyaṃ sarvabhūteṣu gūḍhaṃ
+viśvasyaikaṃ pariveṣṭitāram īśaṃ taṃ jñātvāmṛtā bhavanti', null, 3007),
+('shvetashvatara-3-8', 8, 'Chapter 3, Verse 8', 'वेदाहमेतं पुरुषं महान्तमादित्यवर्णं तमसः परस्तात्।
+तमेव विदित्वाति मृत्युमेति नान्यः पन्था विद्यतेऽयनाय॥', 'vedāham etaṃ puruṣaṃ mahāntam ādityavarṇaṃ tamasaḥ parastāt
+tam eva viditvāti mṛtyum eti nānyaḥ panthā vidyate ''yanāya', null, 3008),
+('shvetashvatara-3-9', 9, 'Chapter 3, Verse 9', 'यस्मात्परं नापरमस्ति किंचिद्यस्मान्नाणीयो न ज्यायोऽस्ति किंचित्।
+वृक्ष इव स्तब्धो दिवि तिष्ठत्येकस्तेनेदं पूर्णं पुरुषेण सर्वम्॥', 'yasmāt paraṃ nāparam asti kiṃcid yasmān nāṇīyo na jyāyo ''sti kiṃcit
+vṛkṣa iva stabdho divi tiṣṭhaty ekas tenedaṃ pūrṇaṃ puruṣeṇa sarvam', null, 3009),
+('shvetashvatara-3-10', 10, 'Chapter 3, Verse 10', 'ततो यदुत्तरतरं यदरूपमनामयम्।
+य एतद्विदुरमृतास्ते भवन्ति अथेतरे दुःखमेवापियन्ति॥', 'tato yad uttarataraṃ yad arūpam anāmayam
+ya etad vidur amṛtās te bhavanti athetare duḥkham evāpiyanti', null, 3010),
+('shvetashvatara-3-11', 11, 'Chapter 3, Verse 11', 'सर्वाननशिरोग्रीवः सर्वभूतगुहाशयः।
+सर्वव्यापी स भगवांस्तस्मात्सर्वगतः शिवः॥', 'sarvānanaśirogrīvaḥ sarvabhūtaguhāśayaḥ
+sarvavyāpī sa bhagavāṃs tasmāt sarvagataḥ śivaḥ', null, 3011),
+('shvetashvatara-3-12', 12, 'Chapter 3, Verse 12', 'महान्प्रभुर्वै पुरुषः सत्त्वस्यैष प्रवर्तकः।
+सुनिर्मलामिमां प्राप्तिमीशानो ज्योतिरव्ययः॥', 'mahān prabhur vai puruṣaḥ sattvasyaiṣa pravartakaḥ
+sunirmalām imāṃ prāptim īśāno jyotir avyayaḥ', null, 3012),
+('shvetashvatara-3-13', 13, 'Chapter 3, Verse 13', 'अङ्गुष्ठमात्रः पुरुषोऽन्तरात्मा सदा जनानां हृदये संनिविष्टः।
+हृदा मनीषा मनसाभिकॢप्तो य एतद्विदुरमृतास्ते भवन्ति॥', 'aṅguṣṭhamātraḥ puruṣo ''ntarātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ
+hṛdā manīṣā manasābhikḷpto ya etad vidur amṛtās te bhavanti', null, 3013),
+('shvetashvatara-3-14', 14, 'Chapter 3, Verse 14', 'सहस्रशीर्षा पुरुषः सहस्राक्षः सहस्रपात्।
+स भूमिं विश्वतो वृत्वा अत्यतिष्ठद्दशाङ्गुलम्॥', 'sahasraśīrṣā puruṣaḥ sahasrākṣaḥ sahasrapāt
+sa bhūmiṃ viśvato vṛtvā atyatiṣṭhad daśāṅgulam', null, 3014),
+('shvetashvatara-3-15', 15, 'Chapter 3, Verse 15', 'पुरुष एवेदं सर्वं यद्भूतं यच्च भव्यम्।
+उतामृतत्वस्येशानो यदन्नेनातिरोहति॥', 'puruṣa evedaṃ sarvaṃ yad bhūtaṃ yac ca bhavyam
+utāmṛtatvasyeśāno yad annenātirohati', null, 3015),
+('shvetashvatara-3-16', 16, 'Chapter 3, Verse 16', 'सर्वतःपाणिपादं तत्सर्वतोऽक्षिशिरोमुखं।
+सर्वतःश्रुतिमल्लोके सर्वमावृत्य तिष्ठति॥', 'sarvataḥpāṇipādaṃ tat sarvato''kṣiśiromukhaṃ
+sarvataḥśrutimal loke sarvam āvṛtya tiṣṭhati', null, 3016),
+('shvetashvatara-3-17', 17, 'Chapter 3, Verse 17', 'सर्वेन्द्रियगुणाभासं सर्वेन्द्रियविवर्जितं।
+सर्वस्य प्रभुमीशानं सर्वस्य शरणं सुहृत्॥', 'sarvendriyaguṇābhāsaṃ sarvendriyavivarjitaṃ
+sarvasya prabhum īśānaṃ sarvasya śaraṇaṃ suhṛt', null, 3017),
+('shvetashvatara-3-18', 18, 'Chapter 3, Verse 18', 'नवद्वारे पुरे देही हंसो लेलायते बहिः।
+वशी सर्वस्य लोकस्य स्थावरस्य चरस्य च॥', 'navadvāre pure dehī haṃso lelāyate bahiḥ
+vaśī sarvasya lokasya sthāvarasya carasya ca', null, 3018),
+('shvetashvatara-3-19', 19, 'Chapter 3, Verse 19', 'अपाणिपादो जवनो ग्रहीता पश्यत्यचक्षुः स शृणोत्यकर्णः।
+स वेत्ति वेद्यं न च तस्यास्ति वेत्ता तमाहुरग्र्यं पुरुषं महान्तम्॥', 'apāṇipādo javano grahītā paśyaty acakṣuḥ sa śṛṇoty akarṇaḥ
+sa vetti vedyaṃ na ca tasyāsti vettā tam āhur agryaṃ puruṣaṃ mahāntam', null, 3019),
+('shvetashvatara-3-20', 20, 'Chapter 3, Verse 20', 'अणोरणीयान्महतो महीयानात्मा गुहायां निहितोऽस्य जन्तोः।
+तमक्रतुं पश्यति वीतशोको धातुप्रसादान्महिमानमीशम्॥', 'aṇor aṇīyān mahato mahīyān ātmā guhāyāṃ nihito ''sya jantoḥ
+tam akratuṃ paśyati vītaśoko dhātuprasādān mahimānam īśam', null, 3020),
+('shvetashvatara-3-21', 21, 'Chapter 3, Verse 21', 'वेदाहमेतमजरं पुराणं सर्वात्मानं सर्वगतं विभुत्वात्।
+जन्मनिरोधं प्रवदन्ति यस्य ब्रह्मवादिनो हि प्रवदन्ति नित्यम्॥', 'vedāham etam ajaraṃ purāṇaṃ sarvātmānaṃ sarvagataṃ vibhutvāt
+janmanirodhaṃ pravadanti yasya brahmavādino hi pravadanti nityam', null, 3021)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 4 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-4-1', 1, 'Chapter 4, Verse 1', 'चतुर्थोऽध्यायः।
+य एकोऽवर्णो बहुधा शक्तियोगाद्वर्णाननेकान्निहितार्थो दधाति।
+वि चैति चान्ते विश्वमादौ स देवः स नो बुद्ध्या शुभया संयुनक्तु॥', 'caturtho ''dhyāyaḥ
+ya eko ''varṇo bahudhā śaktiyogād varṇān anekān nihitārtho dadhāti
+vi caiti cānte viśvam ādau sa devaḥ sa no buddhyā śubhayā saṃyunaktu', null, 4001),
+('shvetashvatara-4-2', 2, 'Chapter 4, Verse 2', 'तदेवाग्निस्तदादित्यस्तद्वायुस्तदु चन्द्रमाः।
+तदेव शुक्रं तद्ब्रह्म तदापस्तत्प्रजापतिः॥', 'tad evāgnis tad ādityas tad vāyus tad u candramāḥ
+tad eva śukraṃ tad brahma tad āpas tat prajāpatiḥ', null, 4002),
+('shvetashvatara-4-3', 3, 'Chapter 4, Verse 3', 'त्वं स्त्री त्वं पुमानसि त्वं कुमार उत वा कुमारी।
+त्वं जीर्णो दण्डेन वञ्चसि त्वं जातो भवसि विश्वतोमुखः॥', 'tvaṃ strī tvaṃ pumān asi tvaṃ kumāra uta vā kumārī
+tvaṃ jīrṇo daṇḍena vañcasi tvaṃ jāto bhavasi viśvatomukhaḥ', null, 4003),
+('shvetashvatara-4-4', 4, 'Chapter 4, Verse 4', 'नीलः पतङ्गो हरितो लोहिताक्षस्तडिद्गर्भ ऋतवः समुद्राः।
+अनादिमांस्त्वं विभुत्वेन वर्तसे यतो जातानि भुवनानि विश्वा॥', 'nīlaḥ pataṅgo harito lohitākṣas taḍidgarbha ṛtavaḥ samudrāḥ
+anādimāṃs tvaṃ vibhutvena vartase yato jātāni bhuvanāni viśvā', null, 4004),
+('shvetashvatara-4-5', 5, 'Chapter 4, Verse 5', 'अजामेकां लोहितशुक्लकृष्णां बह्वीः प्रजाः सृजमानां सरूपाः।
+अजो ह्येको जुषमाणोऽनुशेते जहात्येनां भुक्तभोगामजोऽन्यः॥', 'ajām ekāṃ lohitaśuklakṛṣṇāṃ bahvīḥ prajāḥ sṛjamānāṃ sarūpāḥ
+ajo hy eko juṣamāṇo ''nuśete jahāty enāṃ bhuktabhogām ajo ''nyaḥ', null, 4005),
+('shvetashvatara-4-6', 6, 'Chapter 4, Verse 6', 'द्वा सुपर्णा सयुजा सखाया समानं वृक्षं परिषस्वजाते।
+तयोरन्यः पिप्पलं स्वाद्वत्त्यनश्नन्नन्यो अभिचाकशीति॥', 'dvā suparṇā sayujā sakhāyā samānaṃ vṛkṣaṃ pariṣasvajāte
+tayor anyaḥ pippalaṃ svādv atty anaśnann anyo abhicākaśīti', null, 4006),
+('shvetashvatara-4-7', 7, 'Chapter 4, Verse 7', 'समाने वृक्षे पुरुषो निमग्नो अनीशया शोचति मुह्यमानः।
+जुष्टं यदा पश्यत्यन्यमीशं अस्य महिमानमिति वीतशोकः॥', 'samāne vṛkṣe puruṣo nimagno anīśayā śocati muhyamānaḥ
+juṣṭaṃ yadā paśyaty anyam īśaṃ asya mahimānam iti vītaśokaḥ', null, 4007),
+('shvetashvatara-4-8', 8, 'Chapter 4, Verse 8', 'ऋचो अक्षरे परमे व्योमन्यस्मिन्देवा अधि विश्वे निषेधुः।
+यस्तन्न वेद किमृचा करिष्यति य इत्तद्विदुस्त इमे समासते॥', 'ṛco akṣare parame vyoman yasmin devā adhi viśve niṣedhuḥ
+yas tan na veda kim ṛcā kariṣyati ya it tad vidus ta ime samāsate', null, 4008),
+('shvetashvatara-4-9', 9, 'Chapter 4, Verse 9', 'छन्दांसि यज्ञाः क्रतवो व्रतानि भूतं भव्यं यच्च वेदा वदन्ति।
+अस्मान्मायी सृजते विश्वमेतत्तस्मिंश्चान्यो मायया संनिरुद्धः॥', 'chandāṃsi yajñāḥ kratavo vratāni bhūtaṃ bhavyaṃ yac ca vedā vadanti
+asmān māyī sṛjate viśvam etat tasmiṃś cānyo māyayā saṃniruddhaḥ', null, 4009),
+('shvetashvatara-4-10', 10, 'Chapter 4, Verse 10', 'मायां तु प्रकृतिं विद्यान्मायिनं तु महेश्वरं।
+तस्यावयवभूतैस्तु व्याप्तं सर्वं इदं जगत्॥', 'māyāṃ tu prakṛtiṃ vidyān māyinaṃ tu maheśvaraṃ
+tasyāvayavabhūtais tu vyāptaṃ sarvaṃ idaṃ jagat', null, 4010),
+('shvetashvatara-4-11', 11, 'Chapter 4, Verse 11', 'यो योनिं-योनिमधितिष्ठत्येको यस्मिन्निदं सं च वि चैति सर्वम्।
+तमीशानं वरदं देवमीड्यं निचाय्येमां शान्तिमत्यन्तमेति॥', 'yo yoniṃ-yonim adhitiṣṭhaty eko yasminn idaṃ saṃ ca vi caiti sarvam
+tam īśānaṃ varadaṃ devam īḍyaṃ nicāyyemāṃ śāntim atyantam eti', null, 4011),
+('shvetashvatara-4-12', 12, 'Chapter 4, Verse 12', 'यो देवानां प्रभवश्चोद्भवश्च विश्वाधिको रुद्रो महर्षिः।
+हिरण्यगर्भं पश्यत जायमानं स नो बुद्ध्या शुभया संयुनक्तु॥', 'yo devānāṃ prabhavaś codbhavaś ca viśvādhiko rudro maharṣiḥ
+hiraṇyagarbhaṃ paśyata jāyamānaṃ sa no buddhyā śubhayā saṃyunaktu', null, 4012),
+('shvetashvatara-4-13', 13, 'Chapter 4, Verse 13', 'यो देवानामधिपो यस्मिंल्लोका अधिश्रिताः।
+य ईशे अस्य द्विपदश्चतुष्पदः कस्मै देवाय हविषा विधेम॥', 'yo devānām adhipo yasmiṃl lokā adhiśritāḥ
+ya īśe asya dvipadaś catuṣpadaḥ kasmai devāya haviṣā vidhema', null, 4013),
+('shvetashvatara-4-14', 14, 'Chapter 4, Verse 14', 'सूक्ष्मातिसूक्ष्मं कलिलस्य मध्ये विश्वस्य स्रष्टारमनेकरूपं।
+विश्वस्यैकं परिवेष्टितारं ज्ञात्वा शिवं शान्तिमत्यन्तमेति॥', 'sūkṣmātisūkṣmaṃ kalilasya madhye viśvasya sraṣṭāram anekarūpaṃ
+viśvasyaikaṃ pariveṣṭitāraṃ jñātvā śivaṃ śāntim atyantam eti', null, 4014),
+('shvetashvatara-4-15', 15, 'Chapter 4, Verse 15', 'स एव काले भुवनस्य गोप्ता विश्वाधिपः सर्वभूतेषु गूढः।
+यस्मिन्युक्ता ब्रह्मर्षयो देवताश्च तमेवं ज्ञात्वा मृत्युपाशांश्छिनत्ति॥', 'sa eva kāle bhuvanasya goptā viśvādhipaḥ sarvabhūteṣu gūḍhaḥ
+yasmin yuktā brahmarṣayo devatāś ca tam evaṃ jñātvā mṛtyupāśāṃś chinatti', null, 4015),
+('shvetashvatara-4-16', 16, 'Chapter 4, Verse 16', 'घृतात्परं मण्डमिवातिसूक्ष्मं ज्ञात्वा शिवं सर्वभूतेषु गूढं।
+विश्वस्यैकं परिवेष्टितारं ज्ञात्वा देवं मुच्यते सर्वपाशैः॥', 'ghṛtāt paraṃ maṇḍam ivātisūkṣmaṃ jñātvā śivaṃ sarvabhūteṣu gūḍhaṃ
+viśvasyaikaṃ pariveṣṭitāraṃ jñātvā devaṃ mucyate sarvapāśaiḥ', null, 4016),
+('shvetashvatara-4-17', 17, 'Chapter 4, Verse 17', 'एष देवो विश्वकर्मा महात्मा सदा जनानां हृदये संनिविष्टः।
+हृदा मनीषा मनसाभिकॢप्तो य एतद्विदुरमृतास्ते भवन्ति॥', 'eṣa devo viśvakarmā mahātmā sadā janānāṃ hṛdaye saṃniviṣṭaḥ
+hṛdā manīṣā manasābhikḷpto ya etad vidur amṛtās te bhavanti', null, 4017),
+('shvetashvatara-4-18', 18, 'Chapter 4, Verse 18', 'यदातमस्तन्न दिवा न रात्रिर्न सन्न चासच्छिव एव केवलः।
+तदक्षरं तत्सवितुर्वरेण्यं प्रज्ञा च तस्मात्प्रसृता पुराणी॥', 'yadātamas tan na divā na rātrir na san na cāsac chiva eva kevalaḥ
+tad akṣaraṃ tat savitur vareṇyaṃ prajñā ca tasmāt prasṛtā purāṇī', null, 4018),
+('shvetashvatara-4-19', 19, 'Chapter 4, Verse 19', 'नैनमूर्ध्वं न तिर्यञ्चं न मध्ये परिजग्रभत्।
+न तस्य प्रतिमा अस्ति यस्य नाम महद्यशः॥', 'nainam ūrdhvaṃ na tiryañcaṃ na madhye parijagrabhat
+na tasya pratimā asti yasya nāma mahad yaśaḥ', null, 4019),
+('shvetashvatara-4-20', 20, 'Chapter 4, Verse 20', 'न संदृशे तिष्ठति रूपमस्य न चक्षुषा पश्यति कश्चनैनं।
+हृदा हृदिस्थं मनसा य एनमेवं विदुरमृतास्ते भवन्ति॥', 'na saṃdṛśe tiṣṭhati rūpam asya na cakṣuṣā paśyati kaścanainaṃ
+hṛdā hṛdisthaṃ manasā ya enam evaṃ vidur amṛtās te bhavanti', null, 4020),
+('shvetashvatara-4-21', 21, 'Chapter 4, Verse 21', 'अजात इत्येवं कश्चिद्भीरुः प्रपद्यते।
+रुद्र यत्दक्षिणं मुखम्तेन मां पाहि नित्यम्॥', 'ajāta ity evaṃ kaścid bhīruḥ prapadyate
+rudra yat dakṣiṇaṃ mukham tena māṃ pāhi nityam', null, 4021),
+('shvetashvatara-4-22', 22, 'Chapter 4, Verse 22', 'मा नस्तोके तनये मा न आयुषि मा नो गोषु मा नो अश्वेषु रीरिषः।
+वीरान्मा नो रुद्र भामितो वधीर्हविष्मन्तः सदमित्त्वा हवामहे॥', 'mā nas toke tanaye mā na āyuṣi mā no goṣu mā no aśveṣu rīriṣaḥ
+vīrān mā no rudra bhāmito vadhīr haviṣmantaḥ sadam it tvā havāmahe', null, 4022)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 5 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-5-1', 1, 'Chapter 5, Verse 1', 'पञ्चमोऽध्यायः।
+द्वे अक्षरे ब्रह्मपरे त्वनन्ते विद्याविद्ये निहिते यत्र गूढे।
+क्षरं त्वविद्या ह्यमृतं तु विद्या विद्याविद्ये ईशते यस्तु सोऽन्यः॥', 'pañcamo ''dhyāyaḥ
+dve akṣare brahmapare tv anante vidyāvidye nihite yatra gūḍhe
+kṣaraṃ tv avidyā hy amṛtaṃ tu vidyā vidyāvidye īśate yas tu so ''nyaḥ', null, 5001),
+('shvetashvatara-5-2', 2, 'Chapter 5, Verse 2', 'यो योनिं योनिमधितिष्ठत्येको विश्वानि रूपाणि योनीश्च सर्वाः।
+ऋषिं प्रसूतं कपिलं यस्तमग्रे ज्ञानैर्बिभर्ति जायमानं च पश्येत्॥', 'yo yoniṃ yonim adhitiṣṭhaty eko viśvāni rūpāṇi yonīś ca sarvāḥ
+ṛṣiṃ prasūtaṃ kapilaṃ yas tam agre jñānair bibharti jāyamānaṃ ca paśyet', null, 5002),
+('shvetashvatara-5-3', 3, 'Chapter 5, Verse 3', 'एकैकं जालं बहुधा विकुर्वन्नस्मिन्क्षेत्रे संहरत्येष देवः।
+भूयः सृष्ट्वा पतयस्तथेशः सर्वाधिपत्यं कुरुते महात्मा॥', 'ekaikaṃ jālaṃ bahudhā vikurvann asmin kṣetre saṃharaty eṣa devaḥ
+bhūyaḥ sṛṣṭvā patayas tatheśaḥ sarvādhipatyaṃ kurute mahātmā', null, 5003),
+('shvetashvatara-5-4', 4, 'Chapter 5, Verse 4', 'सर्वा दिश ऊर्ध्वमधश्च तिर्यक्प्रकाशयन्भ्राजते यद्वानड्वान्।
+एवं स देवो भगवान्वरेण्यो योनिस्वभावानधितिष्ठत्येकः॥', 'sarvā diśa ūrdhvam adhaś ca tiryak prakāśayan bhrājate yad vānaḍvān
+evaṃ sa devo bhagavān vareṇyo yonisvabhāvān adhitiṣṭhaty ekaḥ', null, 5004),
+('shvetashvatara-5-5', 5, 'Chapter 5, Verse 5', 'यच्च स्वभावं पचति विश्वयोनिः पाच्यांश्च सर्वान्परिणामयेद्यः।
+सर्वमेतद्विश्वमधितिष्ठत्येको गुणांश्च सर्वान्विनियोजयेद्यः॥', 'yac ca svabhāvaṃ pacati viśvayoniḥ pācyāṃś ca sarvān pariṇāmayed yaḥ
+sarvam etad viśvam adhitiṣṭhaty eko guṇāṃś ca sarvān viniyojayed yaḥ', null, 5005),
+('shvetashvatara-5-6', 6, 'Chapter 5, Verse 6', 'तद्वेदगुह्योपनिषत्सु गूढं तद्ब्रह्मा वेदते ब्रह्मयोनिं।
+ये पूर्वं देवा ऋषयश्च तद्विदुस्ते तन्मया अमृता वै बभूवुः॥', 'tad vedaguhyopaniṣatsu gūḍhaṃ tad brahmā vedate brahmayoniṃ
+ye pūrvaṃ devā ṛṣayaś ca tad vidus te tanmayā amṛtā vai babhūvuḥ', null, 5006),
+('shvetashvatara-5-7', 7, 'Chapter 5, Verse 7', 'गुणान्वयो यः फलकर्मकर्ता कृतस्य तस्यैव स चोपभोक्ता।
+स विश्वरूपस्त्रिगुणस्त्रिवर्त्मा प्राणाधिपः संचरति स्वकर्मभिः॥', 'guṇānvayo yaḥ phalakarmakartā kṛtasya tasyaiva sa copabhoktā
+sa viśvarūpas triguṇas trivartmā prāṇādhipaḥ saṃcarati svakarmabhiḥ', null, 5007),
+('shvetashvatara-5-8', 8, 'Chapter 5, Verse 8', 'अङ्गुष्ठमात्रो रवितुल्यरूपः संकल्पाहंकारसमन्वितो यः।
+बुद्धेर्गुणेनात्मगुणेन चैव आराग्रमात्रो ह्यवरोऽपि दृष्टः॥', 'aṅguṣṭhamātro ravitulyarūpaḥ saṃkalpāhaṃkārasamanvito yaḥ
+buddher guṇenātmaguṇena caiva ārāgramātro hy avaro ''pi dṛṣṭaḥ', null, 5008),
+('shvetashvatara-5-9', 9, 'Chapter 5, Verse 9', 'वालाग्रशतभागस्य शतधा कल्पितस्य च।
+भागो जीवः स विज्ञेयः स चानन्त्याय कल्पते॥', 'vālāgraśatabhāgasya śatadhā kalpitasya ca
+bhāgo jīvaḥ sa vijñeyaḥ sa cānantyāya kalpate', null, 5009),
+('shvetashvatara-5-10', 10, 'Chapter 5, Verse 10', 'नैव स्त्री न पुमानेष न चैवायं नपुंसकः।
+यद्यच्छरीरमादत्ते तेन तेन स युज्यते॥', 'naiva strī na pumān eṣa na caivāyaṃ napuṃsakaḥ
+yad yac charīram ādatte tena tena sa yujyate', null, 5010),
+('shvetashvatara-5-11', 11, 'Chapter 5, Verse 11', 'संकल्पनस्पर्शनदृष्टिमोहैर्ग्रासाम्बुवृष्ट्या चात्मविवृद्धिजन्म।
+कर्मानुगान्यनुक्रमेन देही स्थानेषु रूपाण्यभिसंप्रपद्यते॥', 'saṃkalpanasparśanadṛṣṭimohair grāsāmbuvṛṣṭyā cātmavivṛddhijanma
+karmānugāny anukramena dehī sthāneṣu rūpāṇy abhisaṃprapadyate', null, 5011),
+('shvetashvatara-5-12', 12, 'Chapter 5, Verse 12', 'स्थूलानि सूक्ष्माणि बहूनि चैव रूपाणि देही स्वगुणैर्वृणोति।
+क्रियागुणैरात्मगुणैश्च तेषां संयोगहेतुरपरोऽपि दृष्टः॥', 'sthūlāni sūkṣmāṇi bahūni caiva rūpāṇi dehī svaguṇair vṛṇoti
+kriyāguṇair ātmaguṇaiś ca teṣāṃ saṃyogahetur aparo ''pi dṛṣṭaḥ', null, 5012),
+('shvetashvatara-5-13', 13, 'Chapter 5, Verse 13', 'अनाद्यनन्तं कलिलस्य मध्ये विश्वस्य स्रष्टारमनेकरूपं।
+विश्वस्यैकं परिवेष्टितारं ज्ञात्वा देवं मुच्यते सर्वपाशैः॥', 'anādyanantaṃ kalilasya madhye viśvasya sraṣṭāram anekarūpaṃ
+viśvasyaikaṃ pariveṣṭitāraṃ jñātvā devaṃ mucyate sarvapāśaiḥ', null, 5013),
+('shvetashvatara-5-14', 14, 'Chapter 5, Verse 14', 'भावग्राह्यमनीडाख्यं भावाभावकरं शिवं।
+कलासर्गकरं देवं ये विदुस्ते जहुस्तनुम्॥', 'bhāvagrāhyam anīḍākhyaṃ bhāvābhāvakaraṃ śivaṃ
+kalāsargakaraṃ devaṃ ye vidus te jahus tanum', null, 5014)
+) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
+insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)
+select x.id, 'shvetashvatara-upanishad', (select id from sections where scripture_id = 'shvetashvatara-upanishad' and level = 1 and number = 6 and parent_id is null), x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, 'gretil-upanishads', 'draft'
+from (values
+('shvetashvatara-6-1', 1, 'Chapter 6, Verse 1', 'षष्ठोऽध्यायः।
+स्वभावमेके कवयो वदन्ति कालं तथान्ये परिमुह्यमानाः।
+देवस्यैष महिमा तु लोके येनेदं भ्राम्यते ब्रह्मचक्रम्॥', 'ṣaṣṭho ''dhyāyaḥ
+svabhāvam eke kavayo vadanti kālaṃ tathānye parimuhyamānāḥ
+devasyaiṣa mahimā tu loke yenedaṃ bhrāmyate brahmacakram', null, 6001),
+('shvetashvatara-6-2', 2, 'Chapter 6, Verse 2', 'येनावृतं नित्यमिदं हि सर्वं ज्ञः कालकालो गुणी सर्वविद्यः।
+तेनेशितं कर्म विवर्तते ह पृथिव्याप्तेजोऽनिलखानि चिन्त्यम्॥', 'yenāvṛtaṃ nityam idaṃ hi sarvaṃ jñaḥ kālakālo guṇī sarvavidyaḥ
+teneśitaṃ karma vivartate ha pṛthivyāptejo''nilakhāni cintyam', null, 6002),
+('shvetashvatara-6-3', 3, 'Chapter 6, Verse 3', 'तत्कर्म कृत्वा विनिवर्त्य भूयस्तत्त्वस्य तत्त्वेन समेत्य योगम्।
+एकेन द्वाभ्यां त्रिभिरष्टभिर्वा कालेन चैवात्मगुणैश्च सूक्ष्मैः॥', 'tat karma kṛtvā vinivartya bhūyas tattvasya tattvena sametya yogam
+ekena dvābhyāṃ tribhir aṣṭabhir vā kālena caivātmaguṇaiś ca sūkṣmaiḥ', null, 6003),
+('shvetashvatara-6-4', 4, 'Chapter 6, Verse 4', 'आरभ्य कर्माणि गुणान्वितानि भावांश्च सर्वान्विनियोजयेद्यः।
+तेषामभावे कृतकर्मनाशः कर्मक्षये याति स तत्त्वतोऽन्यः॥', 'ārabhya karmāṇi guṇānvitāni bhāvāṃś ca sarvān viniyojayed yaḥ
+teṣām abhāve kṛtakarmanāśaḥ karmakṣaye yāti sa tattvato ''nyaḥ', null, 6004),
+('shvetashvatara-6-5', 5, 'Chapter 6, Verse 5', 'आदिः स संयोगनिमित्तहेतुः परस्त्रिकालादकलोऽपि दृष्टः।
+तं विश्वरूपं भवभूतमीड्यं देवं स्वचित्तस्थमुपास्य पूर्वम्॥', 'ādiḥ sa saṃyoganimittahetuḥ paras trikālād akalo ''pi dṛṣṭaḥ
+taṃ viśvarūpaṃ bhavabhūtam īḍyaṃ devaṃ svacittastham upāsya pūrvam', null, 6005),
+('shvetashvatara-6-6', 6, 'Chapter 6, Verse 6', 'स वृक्षकालाकृतिभिः परोऽन्यो यस्मात्प्रपञ्चः परिवर्ततेऽयं।
+धर्मावहं पापनुदं भगेशं ज्ञात्वात्मस्थममृतं विश्वधाम॥', 'sa vṛkṣakālākṛtibhiḥ paro ''nyo yasmāt prapañcaḥ parivartate ''yaṃ
+dharmāvahaṃ pāpanudaṃ bhageśaṃ jñātvātmastham amṛtaṃ viśvadhāma', null, 6006),
+('shvetashvatara-6-7', 7, 'Chapter 6, Verse 7', 'तमीश्वराणां परमं महेश्वरं तं देवतानां परमं च दैवतं।
+पतिं पतीनां परमं परस्ताद्विदाम देवं भुवनेशमीड्यम्॥', 'tam īśvarāṇāṃ paramaṃ maheśvaraṃ taṃ devatānāṃ paramaṃ ca daivataṃ
+patiṃ patīnāṃ paramaṃ parastād vidāma devaṃ bhuvaneśam īḍyam', null, 6007),
+('shvetashvatara-6-8', 8, 'Chapter 6, Verse 8', 'न तस्य कार्यं करणं च विद्यते न तत्समश्चाभ्यधिकश्च दृश्यते।
+परास्य शक्तिर्विविधैव श्रूयते स्वाभाविकी ज्ञानबलक्रिया च॥', 'na tasya kāryaṃ karaṇaṃ ca vidyate na tatsamaś cābhyadhikaś ca dṛśyate
+parāsya śaktir vividhaiva śrūyate svābhāvikī jñānabalakriyā ca', null, 6008),
+('shvetashvatara-6-9', 9, 'Chapter 6, Verse 9', 'न तस्य कश्चित्पतिरस्ति लोके न चेशिता नैव च तस्य लिङ्गं।
+स कारणं करणाधिपाधिपो न चास्य कश्चिज्जनिता न चाधिपः॥', 'na tasya kaścit patir asti loke na ceśitā naiva ca tasya liṅgaṃ
+sa kāraṇaṃ karaṇādhipādhipo na cāsya kaścij janitā na cādhipaḥ', null, 6009),
+('shvetashvatara-6-10', 10, 'Chapter 6, Verse 10', 'यस्तन्तुनाभ इव तन्तुभिः प्रधानजैः स्वभावतः।
+देव एकः स्वमावृणोति स नो दधाद्ब्रह्माप्ययम्॥', 'yas tantunābha iva tantubhiḥ pradhānajaiḥ svabhāvataḥ
+deva ekaḥ svam āvṛṇoti sa no dadhād brahmāpyayam', null, 6010),
+('shvetashvatara-6-11', 11, 'Chapter 6, Verse 11', 'एको देवः सर्वभूतेषु गूढः सर्वव्यापी सर्वभूतान्तरात्मा।
+कर्माध्यक्षः सर्वभूताधिवासः साक्षी चेता केवलो निर्गुणश्च॥', 'eko devaḥ sarvabhūteṣu gūḍhaḥ sarvavyāpī sarvabhūtāntarātmā
+karmādhyakṣaḥ sarvabhūtādhivāsaḥ sākṣī cetā kevalo nirguṇaś ca', null, 6011),
+('shvetashvatara-6-12', 12, 'Chapter 6, Verse 12', 'एको वशी निष्क्रियाणां बहूणामेकं बीजं बहुधा यः करोति।
+तमात्मस्थं येऽनुपश्यन्ति धीरास्तेषां सुखं शाश्वतं नेतरेषां॥', 'eko vaśī niṣkriyāṇāṃ bahūṇām ekaṃ bījaṃ bahudhā yaḥ karoti
+tam ātmasthaṃ ye ''nupaśyanti dhīrās teṣāṃ sukhaṃ śāśvataṃ netareṣāṃ', null, 6012),
+('shvetashvatara-6-13', 13, 'Chapter 6, Verse 13', 'नित्यो नित्यानां चेतनश्चेतनानामेको बहूनां यो विदधाति कामान्।
+तत्कारणं सांख्ययोगाधिगम्यं ज्ञात्वा देवं मुच्यते सर्वपाशैः॥', 'nityo nityānāṃ cetanaś cetanānām eko bahūnāṃ yo vidadhāti kāmān
+tat kāraṇaṃ sāṃkhyayogādhigamyaṃ jñātvā devaṃ mucyate sarvapāśaiḥ', null, 6013),
+('shvetashvatara-6-14', 14, 'Chapter 6, Verse 14', 'न तत्र सूर्यो भाति न चन्द्रतारकं नेमा विद्युतो भान्ति कुतोऽयमग्निः।
+तमेव भान्तमनुभाति सर्वं तस्य भासा सर्वमिदं विभाति॥', 'na tatra sūryo bhāti na candratārakaṃ nemā vidyuto bhānti kuto ''yam agniḥ
+tam eva bhāntam anubhāti sarvaṃ tasya bhāsā sarvam idaṃ vibhāti', null, 6014),
+('shvetashvatara-6-15', 15, 'Chapter 6, Verse 15', 'एको हंसो भुवनस्यास्य मध्ये स एवाग्निः सलिले संनिविष्टः।
+तमेव विदित्वाति मृत्युमेति नान्यः पन्था विद्यतेऽयनाय॥', 'eko haṃso bhuvanasyāsya madhye sa evāgniḥ salile saṃniviṣṭaḥ
+tam eva viditvāti mṛtyum eti nānyaḥ panthā vidyate ''yanāya', null, 6015),
+('shvetashvatara-6-16', 16, 'Chapter 6, Verse 16', 'स विश्वकृद्विश्वविदात्मयोनिर्ज्ञः कालकालो गुणी सर्वविद्यः।
+प्रधानक्षेत्रज्ञपतिर्गुणेशः संसारमोक्षस्थितिबन्धहेतुः॥', 'sa viśvakṛd viśvavid ātmayonir jñaḥ kālakālo guṇī sarvavidyaḥ
+pradhānakṣetrajñapatir guṇeśaḥ saṃsāramokṣasthitibandhahetuḥ', null, 6016),
+('shvetashvatara-6-17', 17, 'Chapter 6, Verse 17', 'स तन्मयो ह्यमृत ईशसंस्थो ज्ञः सर्वगो भुवनस्यास्य गोप्ता।
+स ईशे अस्य जगतो नित्यमेव नान्यो हेतुर्विद्यत ईशनाय॥', 'sa tanmayo hy amṛta īśasaṃstho jñaḥ sarvago bhuvanasyāsya goptā
+sa īśe asya jagato nityam eva nānyo hetur vidyata īśanāya', null, 6017),
+('shvetashvatara-6-18', 18, 'Chapter 6, Verse 18', 'यो ब्रह्माणं विदधाति पूर्वं यो वै वेदांश्च प्रहिणोति तस्मै।
+तं ह देवमात्मबुद्धिप्रकाशं मुमुक्षुर्वै शरणमहं प्रपद्ये॥', 'yo brahmāṇaṃ vidadhāti pūrvaṃ yo vai vedāṃś ca prahiṇoti tasmai
+taṃ ha devam ātmabuddhiprakāśaṃ mumukṣur vai śaraṇam ahaṃ prapadye', null, 6018),
+('shvetashvatara-6-19', 19, 'Chapter 6, Verse 19', 'निष्कलं निष्क्रियं शान्तं निरवद्यं निरञ्जनम्।
+अमृतस्य परं सेतुं दग्धेन्धनमिवानलम्॥', 'niṣkalaṃ niṣkriyaṃ śāntaṃ niravadyaṃ nirañjanam
+amṛtasya paraṃ setuṃ dagdhendhanam ivānalam', null, 6019),
+('shvetashvatara-6-20', 20, 'Chapter 6, Verse 20', 'यदा चर्मवदाकाशं वेष्टयिष्यन्ति मानवाः।
+तदा देवमविज्ञाय दुःखस्यान्तो भविष्यति॥', 'yadā carmavad ākāśaṃ veṣṭayiṣyanti mānavāḥ
+tadā devam avijñāya duḥkhasyānto bhaviṣyati', null, 6020),
+('shvetashvatara-6-21', 21, 'Chapter 6, Verse 21', 'तपःप्रभावाद्देवप्रसादात्ब्रह्म ह श्वेताश्वतरोऽथ विद्वान्।
+अत्याश्रमिभ्यः परमं पवित्रं प्रोवाच सम्यगृषिसङ्घजुष्टम्॥', 'tapaḥprabhāvād devaprasādāt brahma ha śvetāśvataro ''tha vidvān
+atyāśramibhyaḥ paramaṃ pavitraṃ provāca samyag ṛṣisaṅghajuṣṭam', null, 6021),
+('shvetashvatara-6-22', 22, 'Chapter 6, Verse 22', 'वेदान्ते परमं गुह्यं पुराकल्पे प्रचोदितम्।
+नाप्रशान्ताय दातव्यं नापुत्रायाशिष्याय वा पुनः॥', 'vedānte paramaṃ guhyaṃ purākalpe pracoditam
+nāpraśāntāya dātavyaṃ nāputrāyāśiṣyāya vā punaḥ', null, 6022),
+('shvetashvatara-6-23', 23, 'Chapter 6, Verse 23', 'यस्य देवे परा भक्तिर्यथा देवे तथा गुरौ।
+तस्यैते कथिता ह्यर्थाः प्रकाशन्ते महात्मनः प्रकाशन्ते महात्मनः॥', 'yasya deve parā bhaktir yathā deve tathā gurau
+tasyaite kathitā hy arthāḥ prakāśante mahātmanaḥ prakāśante mahātmanaḥ', null, 6023)
 ) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);
 
 insert into verse_tags (verse_id, tag_id) values ('gita-2-14', 'patience');

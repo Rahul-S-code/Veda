@@ -78,7 +78,7 @@ for (const f of readdirSync(importDir).filter((f) => f.endsWith(".json")).sort()
   for (const v of data.verses) {
     const path = v.section_path ?? [v.chapter];
     if (featured.has(v.id)) {
-      out.push(`update verses set speaker = ${q(v.speaker)} where id = ${q(v.id)};`);
+      out.push(`update verses set speaker = ${q(v.speaker)}${path.length ? `, section_id = ${sectionRef(sc, path)}` : ""} where id = ${q(v.id)};`);
       continue;
     }
     const key = path.join(".");

@@ -22,6 +22,14 @@ do $$ begin
   assert not exists (select 1 from sections s where s.scripture_id = 'valmiki-ramayana' and s.level = 2 and s.expected_verses <> (select count(*) from verses v where v.section_id = s.id)), 'sarga counts should match';
 end $$;
 
+-- Eight principal Upanishads are imported; featured cards keep their content and move into their nested section.
+do $$ begin
+  assert (select count(*) from verses v join scriptures s on s.id = v.scripture_id where s.category = 'upanishad') = 1419, 'Upanishads should have 1,419 verses (1,418 imported + Taittiriya card)';
+  assert (select s.level from verses v join sections s on s.id = v.section_id where v.id = 'brihadaranyaka-1-3-28') = 2, 'featured BAU verse should sit in its section';
+  assert (select status from verses where id = 'isha-1') = 'published', 'featured card stays published';
+  assert (select count(*) from verses where id <> 'draft-test') = 20887, 'all imported and featured verses should be present';
+end $$;
+
 -- Anonymous visitors see published verses only.
 set role anon;
 do $$ begin

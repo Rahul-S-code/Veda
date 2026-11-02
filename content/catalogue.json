@@ -80,6 +80,15 @@
       "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml",
       "licence": "cc-by-nc-sa-4.0",
       "notes": "Distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. 18,761 verses in the critical edition (printed vulgate editions have about 24,000). Devanagari is generated from the IAST by scripts/import/ramayana.py."
+    },
+    {
+      "id": "gretil-upanishads",
+      "title": "Principal Upanishads (GRETIL e-texts)",
+      "author": "Various inputters, as named in each GRETIL file",
+      "year": null,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Upan",
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka (Kanva). Several files carry Shankara's commentary; only the Upanishad's own text is imported. CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Known gaps in the source markup: Chandogya 3.15.5, 4.7.1-2; Brihadaranyaka 4.4.19, 6.5.2."
     }
   ],
   "scriptures": [
@@ -254,7 +263,7 @@
         "Section",
         "Verse"
       ],
-      "expected_verses": null,
+      "expected_verses": 33,
       "description": null
     },
     {

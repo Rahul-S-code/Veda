@@ -41,6 +41,7 @@ do $$ begin
   assert (select count(distinct e.verse_id) from explanations e join verses v on v.id = e.verse_id where v.scripture_id = 'brihadaranyaka-upanishad') = 433, 'every Brihadaranyaka verse (432 imported + 1 featured card) has a meaning';
   assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-1-%') = 1941, 'every Bala Kanda verse has a meaning';
   assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-2-%') = 3160, 'every Ayodhya Kanda verse has a meaning';
+  assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-3-%') = 2060, 'every Aranya Kanda verse has a meaning';
 end $$;
 
 -- Anonymous visitors see published verses only.

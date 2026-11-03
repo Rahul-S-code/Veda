@@ -3107,5 +3107,1287 @@
   "meaning": "She refuses.",
   "explanation": "Ayodhya Kanda, chapter 11: Kaikeyi holds the king to his word. Dasharatha spends the night in anguish, torn between truth and love for his son.",
   "keywords": []
+ },
+ "ramayana-2-11-15": {
+  "translation": "Then the king, seeing his beloved unappeased and speaking against him about his son's exile, fainted again and fell senseless to the ground in grief.",
+  "meaning": "He collapses again.",
+  "explanation": "Ayodhya Kanda, chapter 11: Kaikeyi holds the king to his word through the night.",
+  "keywords": []
+ },
+ "ramayana-2-12-1": {
+  "translation": "Seeing the Ikshvaku king fallen senseless on the ground, tormented by grief for his son and writhing, the wicked woman said:",
+  "meaning": "Kaikeyi presses on.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-2": {
+  "translation": "Having made me a promise, why do you lie on the ground as if you had done wrong? You should keep to your word.",
+  "meaning": "She demands he honour it.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "samshrava",
+    "meaning": "promise"
+   }
+  ]
+ },
+ "ramayana-2-12-3": {
+  "translation": "Those who know dharma say truth is the highest dharma. Relying on truth, I am urging you towards dharma.",
+  "meaning": "She uses truth as her weapon.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "satya",
+    "meaning": "truth"
+   }
+  ]
+ },
+ "ramayana-2-12-4": {
+  "translation": "King Shaibya, having promised, gave his own body to a hawk to save a bird, O king, and reached the highest state.",
+  "meaning": "An example of a king keeping his word.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "Shaibya",
+    "meaning": "King Shibi"
+   }
+  ]
+ },
+ "ramayana-2-12-5": {
+  "translation": "So too radiant Alarka, when a brahmin learned in the Vedas asked, tore out his own eyes and gave them without regret.",
+  "meaning": "Another example.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "Alarka",
+    "meaning": "a king"
+   }
+  ]
+ },
+ "ramayana-2-12-6": {
+  "translation": "The ocean, lord of rivers, keeping to truth, does not cross its small boundary, its shore, at the appointed time.",
+  "meaning": "Even nature keeps its limits.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "vela",
+    "meaning": "shore"
+   }
+  ]
+ },
+ "ramayana-2-12-7": {
+  "translation": "If you do not keep this agreement with me, noble one, I will give up my life before your eyes, abandoned by you.",
+  "meaning": "She threatens to die.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-8": {
+  "translation": "Thus urged by fearless Kaikeyi, the king could not loosen the noose, as Bali could not escape the noose made by Indra.",
+  "meaning": "He is trapped by his word.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "Bali",
+    "meaning": "a demon king bound by Vishnu"
+   }
+  ]
+ },
+ "ramayana-2-12-9": {
+  "translation": "His heart reeling, his face pale, he was like a draught ox struggling between the yoke and the wheel.",
+  "meaning": "A vivid image of being torn.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "dhurya",
+    "meaning": "draught animal"
+   }
+  ]
+ },
+ "ramayana-2-12-10": {
+  "translation": "With dazed eyes, as if blind, the king, steadying himself with difficulty, said to Kaikeyi:",
+  "meaning": "He speaks again.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-11": {
+  "translation": "Your hand that I took before the fire with mantras, wicked woman, I renounce, and with it your son born of me.",
+  "meaning": "He disowns her and Bharata in anger.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-12": {
+  "translation": "Then Kaikeyi, of evil conduct, clever with words and blinded by anger, spoke harshly to the king again:",
+  "meaning": "She replies harshly.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-13": {
+  "translation": "What is this, king, speaking words like poison? You should have your son Rama brought here without fuss.",
+  "meaning": "She demands Rama be summoned.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-14": {
+  "translation": "Once you have set my son on the throne, made Rama a forest-dweller and freed me of rivals, you will have done your duty.",
+  "meaning": "She sums up her wishes.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "nihsapatna",
+    "meaning": "without rivals"
+   }
+  ]
+ },
+ "ramayana-2-12-15": {
+  "translation": "Like a fine horse goaded by a sharp spur, the king, urged again and again, said to Kaikeyi:",
+  "meaning": "He gives in.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "pratoda",
+    "meaning": "spur"
+   }
+  ]
+ },
+ "ramayana-2-12-16": {
+  "translation": "I am bound by the bond of dharma and my mind is lost. I want to see my dear, righteous eldest son Rama.",
+  "meaning": "He asks to see Rama.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": [
+   {
+    "word": "dharmabandha",
+    "meaning": "bond of dharma"
+   }
+  ]
+ },
+ "ramayana-2-12-17": {
+  "translation": "Hearing the king's words, Kaikeyi herself immediately told the charioteer: Go and bring Rama.",
+  "meaning": "She sends for Rama.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-18": {
+  "translation": "Then the glorious, righteous king, his joy in his son gone, his eyes red with grief, looked up at the charioteer and spoke.",
+  "meaning": "He tries to speak.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-19": {
+  "translation": "Sumantra, hearing the pitiful words and seeing the wretched king, moved a little away with folded hands.",
+  "meaning": "Sumantra is confused.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-20": {
+  "translation": "When the king, in his misery, could not speak himself, Kaikeyi, skilled in scheming, answered Sumantra:",
+  "meaning": "Kaikeyi gives the order.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-21": {
+  "translation": "Sumantra, I want to see Rama; quickly bring the handsome one. He, thinking it good news, was glad at heart.",
+  "meaning": "Sumantra assumes it is good news.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-22": {
+  "translation": "Sumantra thought, urged on by her: Clearly righteous Rama will come here for the coronation.",
+  "meaning": "He suspects nothing.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-23": {
+  "translation": "Thinking so, the mighty charioteer went out again with great joy, eager to see Raghava.",
+  "meaning": "He leaves happily.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-12-24": {
+  "translation": "Going out suddenly in front, looking at the kings gathered at the gate, he saw various wealthy citizens who had come and were standing at the door.",
+  "meaning": "Crowds wait outside.",
+  "explanation": "Ayodhya Kanda, chapter 12: Kaikeyi cites famous kings who kept their word at great cost and threatens to die. Dasharatha, bound by his promise, disowns her and asks to see Rama; Sumantra is sent, believing it is for the coronation.",
+  "keywords": []
+ },
+ "ramayana-2-13-1": {
+  "translation": "Having spent that night, the brahmins learned in the Vedas came to the court with the royal priests.",
+  "meaning": "Coronation morning.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-2": {
+  "translation": "The ministers, army chiefs and leading merchants gathered gladly for Raghava's coronation.",
+  "meaning": "Officials gather.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-3": {
+  "translation": "When the clear sun had risen and the day of Pushya had come, the best of brahmins had prepared for Rama's coronation:",
+  "meaning": "Everything is ready.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-4": {
+  "translation": "golden water jars, a richly adorned auspicious throne, and a chariot well spread with a shining tiger skin;",
+  "meaning": "The regalia are set out.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "bhadrapitha",
+    "meaning": "throne"
+   }
+  ]
+ },
+ "ramayana-2-13-5": {
+  "translation": "water brought from the holy meeting of the Ganga and Yamuna, and from other holy rivers, pools, wells and lakes;",
+  "meaning": "Sacred waters are gathered.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "sangama",
+    "meaning": "confluence"
+   }
+  ]
+ },
+ "ramayana-2-13-6": {
+  "translation": "from rivers flowing east, flowing upward and flowing sideways, and from all the oceans;",
+  "meaning": "Water from everywhere.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-7": {
+  "translation": "honey, curd, ghee, parched grain, darbha grass, flowers and milk; gold and silver jars covered with milky leaves, shining with lotuses and full of the finest water;",
+  "meaning": "Ritual offerings are prepared.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "kshaudra",
+    "meaning": "honey"
+   },
+   {
+    "word": "laja",
+    "meaning": "parched rice"
+   }
+  ]
+ },
+ "ramayana-2-13-8": {
+  "translation": "a fine white yak-tail fan studded with gems, like a spray of moonbeams, stood ready for Rama;",
+  "meaning": "The royal fan.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "valavyajana",
+    "meaning": "yak-tail fan"
+   }
+  ]
+ },
+ "ramayana-2-13-9": {
+  "translation": "and a white umbrella like the moon's disc, ready, radiant and splendid, set out for the coronation;",
+  "meaning": "The royal umbrella.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "atapatra",
+    "meaning": "umbrella"
+   }
+  ]
+ },
+ "ramayana-2-13-10": {
+  "translation": "a white bull and a white horse stood ready, and a splendid elephant for riding waited.",
+  "meaning": "Animals for the ceremony.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-11": {
+  "translation": "Eight auspicious maidens adorned with jewels, all kinds of instruments, and bards,",
+  "meaning": "Music and blessing-bearers.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-12": {
+  "translation": "all the things gathered for a coronation in the Ikshvaku kingdom, they brought for the prince's coronation.",
+  "meaning": "Everything as tradition requires.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-13": {
+  "translation": "Gathered there at the king's command, not seeing the king, they said: Who will announce us to the king?",
+  "meaning": "But the king has not appeared.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-14": {
+  "translation": "We do not see the king, yet the sun has risen and wise Rama's coronation is ready.",
+  "meaning": "They wonder at the delay.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-15": {
+  "translation": "As they spoke, Sumantra, honoured by the king, said to all those great kings:",
+  "meaning": "Sumantra responds.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-16": {
+  "translation": "At your word I will ask the king, now awake, about his welfare and why he has not come.",
+  "meaning": "He goes to check.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-17": {
+  "translation": "Saying this, the one versed in old lore went to the door of the inner palace and praised Raghava with blessings full of virtue.",
+  "meaning": "He sings a morning blessing.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-18": {
+  "translation": "The blessed night has gone and an auspicious day has come. Wake, tiger among kings, and do what is next.",
+  "meaning": "A wake-up song.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-19": {
+  "translation": "Brahmins, army chiefs and merchants have come, O king, and long to see you. Wake, Raghava.",
+  "meaning": "They are waiting.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-20": {
+  "translation": "Waking, the king said to Sumantra, the counsellor praising him:",
+  "meaning": "The king answers.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-21": {
+  "translation": "I am not asleep. Bring Raghava quickly. So King Dasharatha again instructed the charioteer.",
+  "meaning": "He asks for Rama again.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-22": {
+  "translation": "Hearing the king's word and honouring it with bowed head, he left the king's quarters thinking it great good news.",
+  "meaning": "Sumantra goes happily.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-23": {
+  "translation": "Reaching the royal road adorned with banners and flags, the charioteer heard people talking about Rama.",
+  "meaning": "Everyone talks of Rama.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-24": {
+  "translation": "Then Sumantra saw Rama's lovely palace, bright as Kailasa, shining like Indra's home,",
+  "meaning": "He arrives.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-25": {
+  "translation": "closed with great doors, adorned with a hundred terraces, its top crowned with golden images, its arches of gems and coral,",
+  "meaning": "The palace is described.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "torana",
+    "meaning": "arch"
+   }
+  ]
+ },
+ "ramayana-2-13-26": {
+  "translation": "like a mass of autumn cloud, blazing like a cave of Meru, adorned with great strands of fine garlands.",
+  "meaning": "Its splendour.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-27": {
+  "translation": "Driving his horse-drawn chariot and seeing the royal household crowded with people, the charioteer reached the great, rich palace, and his hair stood on end with joy.",
+  "meaning": "He is thrilled.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": []
+ },
+ "ramayana-2-13-28": {
+  "translation": "Unhindered, the charioteer entered that palace, like a mountain-peak cloud, like a great mansion full of the finest rooms, rich in jewels, as a sea monster enters the ocean.",
+  "meaning": "He goes in.",
+  "explanation": "Ayodhya Kanda, chapter 13: At dawn priests and officials gather with everything ready for the coronation. Sumantra wakes the king, who tells him to bring Rama, and Sumantra goes to Rama's splendid palace.",
+  "keywords": [
+   {
+    "word": "makara",
+    "meaning": "sea creature"
+   }
+  ]
+ },
+ "ramayana-2-14-1": {
+  "translation": "Passing the crowded gate of the inner apartments, the one versed in old lore reached a secluded courtyard,",
+  "meaning": "He goes deeper.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-2": {
+  "translation": "guarded by young men with spears and bows and polished earrings, alert, focused and devoted,",
+  "meaning": "Loyal guards.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-3": {
+  "translation": "There at the door he saw old men in ochre robes, well dressed, with canes in hand, attentive guardians of the women's quarters.",
+  "meaning": "Senior attendants.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-4": {
+  "translation": "Seeing him coming and eager to please Rama, they quickly told Rama and his wife.",
+  "meaning": "They announce him.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-5": {
+  "translation": "Learning the charioteer close to his father had been announced, Raghava, wishing to please, had him brought in.",
+  "meaning": "Rama receives him.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-6": {
+  "translation": "The charioteer saw him seated, richly adorned, like Kubera, on a golden couch with a fine cover,",
+  "meaning": "Rama is described.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": [
+   {
+    "word": "Vaishravana",
+    "meaning": "Kubera, god of wealth"
+   }
+  ]
+ },
+ "ramayana-2-14-7": {
+  "translation": "anointed with pure, fragrant, costly sandal paste the colour of boar's blood,",
+  "meaning": "He is anointed for the day.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-8": {
+  "translation": "with Sita standing at his side holding a yak-tail fan, like the moon with the star Chitra.",
+  "meaning": "Sita is beside him.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": [
+   {
+    "word": "Chitra",
+    "meaning": "a star"
+   }
+  ]
+ },
+ "ramayana-2-14-9": {
+  "translation": "The bard, knowing the proper forms, bowed humbly to that giver of boons, blazing like the sun with his own radiance.",
+  "meaning": "Sumantra bows.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-10": {
+  "translation": "With folded hands, having asked after his comfort in leisure, bed and seat, Sumantra, honoured by the king, said to the prince:",
+  "meaning": "He delivers the message.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-11": {
+  "translation": "Kausalya is blessed in you. Your father wishes to see you. Go there quickly, where he is with Queen Kaikeyi.",
+  "meaning": "The king is with Kaikeyi.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-12": {
+  "translation": "Thus addressed, the radiant lion among men was delighted, and honouring Sita, said to her:",
+  "meaning": "Rama tells Sita.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-13": {
+  "translation": "Queen, surely the king and queen have met to discuss something about my coronation.",
+  "meaning": "He assumes it is good.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-14": {
+  "translation": "Seeing his wish, the generous, dark-eyed queen, wanting to please, is surely urging the king on my behalf.",
+  "meaning": "He trusts Kaikeyi completely.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-15": {
+  "translation": "As the assembly is, so is the messenger who has come. Surely the king will crown me crown prince today.",
+  "meaning": "He is hopeful.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-16": {
+  "translation": "I will go quickly and see the king. You stay here at ease with your attendants and enjoy yourself.",
+  "meaning": "He leaves Sita.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-17": {
+  "translation": "Honoured by her husband, dark-eyed Sita followed him to the door, praying for blessings.",
+  "meaning": "Sita sees him off with prayers.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-18": {
+  "translation": "Seeing all the petitioners, meeting and greeting them, he mounted the fine chariot, bright as fire,",
+  "meaning": "Rama sets out.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-19": {
+  "translation": "dazzling the eyes with its golden glow, yoked to the finest horses, like young elephants.",
+  "meaning": "His chariot.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-20": {
+  "translation": "Like Indra on his swift chariot yoked with bay horses, Raghava, blazing with splendour, set off quickly.",
+  "meaning": "He rides off.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-21": {
+  "translation": "Making it resound like a thundering cloud in the sky, the glorious one came out of his house like the moon from a great cloud.",
+  "meaning": "He emerges.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-22": {
+  "translation": "Lakshmana, Raghava's younger brother, holding umbrella and fan, rode in the chariot behind and guarded his brother.",
+  "meaning": "Lakshmana is with him.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-23": {
+  "translation": "Then a tumultuous roar arose from the crowds on every side as he came out.",
+  "meaning": "Crowds cheer.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-24": {
+  "translation": "Raghava heard the talk of the assembled people and the many joyful things the city's people said about him.",
+  "meaning": "He hears them.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-25": {
+  "translation": "Raghava goes today to gain vast fortune by the king's grace. We will have every wish fulfilled with him to rule us. It is the people's gain that he will hold this whole kingdom for a long time.",
+  "meaning": "The people celebrate.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-26": {
+  "translation": "With neighing horses and elephants, preceded by heralds and bards, honoured by the best musicians and praised, he went like Kubera.",
+  "meaning": "A royal procession.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-14-27": {
+  "translation": "Rama saw the lovely great road crowded with elephants, chariots and horses, its squares full of people, rich in jewels and stocked with goods.",
+  "meaning": "The city in its glory.",
+  "explanation": "Ayodhya Kanda, chapter 14: Sumantra summons Rama. Rama, thinking it is about the coronation, says goodbye to Sita and rides through cheering crowds with Lakshmana.",
+  "keywords": []
+ },
+ "ramayana-2-15-1": {
+  "translation": "Rama in his chariot, his friends delighted, saw the glorious city crowded with all kinds of people.",
+  "meaning": "Rama looks at his city.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-2": {
+  "translation": "Rama went along the royal road, fragrant with aloe incense, lined with white cloud-like houses.",
+  "meaning": "He travels the main road.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": [
+   {
+    "word": "aguru",
+    "meaning": "aloewood"
+   }
+  ]
+ },
+ "ramayana-2-15-3": {
+  "translation": "That fine royal road was splendid and uncrowded, full of all kinds of goods and food, high and low.",
+  "meaning": "Markets line it.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-4": {
+  "translation": "Hearing the many blessings his friends spoke, and honouring all the people as they deserved, he went on.",
+  "meaning": "He greets everyone.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-5": {
+  "translation": "Crowned today, follow the path walked by your grandfathers and great-grandfathers and protect it.",
+  "meaning": "People bless him.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-6": {
+  "translation": "As we were cherished by your father and your forefathers, so we will all live even more happily with Rama as king.",
+  "meaning": "They hope for a better future.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-7": {
+  "translation": "Enough of food today, enough of anything else, if we can see Rama come out established in the kingdom.",
+  "meaning": "Seeing Rama crowned is all they want.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-8": {
+  "translation": "Nothing will be dearer than this, the coronation of boundlessly radiant Rama to the kingdom.",
+  "meaning": "Their greatest joy.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-9": {
+  "translation": "Hearing these and other kind words of his friends, honouring him, Rama went along the great road, unmoved.",
+  "meaning": "He stays humble.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": [
+   {
+    "word": "udasina",
+    "meaning": "detached"
+   }
+  ]
+ },
+ "ramayana-2-15-10": {
+  "translation": "No one could draw his mind or eyes away from that best of men, even after Raghava had passed.",
+  "meaning": "Everyone gazes after him.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama passes along the royal road as people bless him and hope for his reign.",
+  "keywords": []
+ },
+ "ramayana-2-15-11": {
+  "translation": "For that righteous one showed compassion to all four classes and to people of every age, so they were all devoted to him.",
+  "meaning": "Rama cared for everyone, so everyone loved him.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama reaches his father's palace while the crowds wait for him to come out crowned.",
+  "keywords": [
+   {
+    "word": "daya",
+    "meaning": "compassion"
+   },
+   {
+    "word": "varna",
+    "meaning": "social class"
+   }
+  ]
+ },
+ "ramayana-2-15-12": {
+  "translation": "Reaching the royal residence, like great Indra's palace, the prince, blazing with splendour, entered his father's house.",
+  "meaning": "He enters the palace.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama reaches his father's palace while the crowds wait for him to come out crowned.",
+  "keywords": []
+ },
+ "ramayana-2-15-13": {
+  "translation": "Passing through all the courtyards, Dasharatha's son sent all the people back and entered the private inner apartments.",
+  "meaning": "He goes in alone.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama reaches his father's palace while the crowds wait for him to come out crowned.",
+  "keywords": []
+ },
+ "ramayana-2-15-14": {
+  "translation": "When the prince had gone in to his father, all the joyful people waited for him to come out again, as the ocean waits for the moonrise.",
+  "meaning": "The crowd waits expectantly.",
+  "explanation": "Ayodhya Kanda, chapter 15: Rama reaches his father's palace while the crowds wait for him to come out crowned.",
+  "keywords": []
+ },
+ "ramayana-2-16-1": {
+  "translation": "Rama saw his father seated on a fine seat with Kaikeyi, wretched, his mouth dried up.",
+  "meaning": "Rama sees his father's distress.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-2": {
+  "translation": "He humbly bowed first at his father's feet, then, very attentively, at Kaikeyi's feet.",
+  "meaning": "He honours both.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-3": {
+  "translation": "Saying only Rama, his eyes filled with tears, the miserable king could neither look at him nor speak.",
+  "meaning": "The king can only say his name.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-4": {
+  "translation": "Seeing the king's strange and frightening look, Rama too grew afraid, as if he had stepped on a snake.",
+  "meaning": "Rama senses danger.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "pannaga",
+    "meaning": "snake"
+   }
+  ]
+ },
+ "ramayana-2-16-5": {
+  "translation": "The great king, his senses joyless, worn by grief and pain, sighing, his mind troubled and confused,",
+  "meaning": "The king's state is described.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-6": {
+  "translation": "like the unshakable wave-garlanded ocean in turmoil, like the sun in eclipse, like a sage who has told a lie,",
+  "meaning": "Powerful images of something deeply wrong.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-7": {
+  "translation": "Seeing his father's unthinkable grief, Rama grew more agitated, like the sea at the full moon.",
+  "meaning": "Rama is alarmed.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-8": {
+  "translation": "Rama, devoted to his father's good, thought: Why does the king not welcome me today?",
+  "meaning": "He wonders what he has done.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-9": {
+  "translation": "Other times, even when angry, father softens on seeing me. Why is he distressed today when he sees me?",
+  "meaning": "Something is very wrong.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-10": {
+  "translation": "Downcast and pained with grief, his face pale, Rama bowed to Kaikeyi and said:",
+  "meaning": "He asks Kaikeyi.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-11": {
+  "translation": "Have I unknowingly offended, so that my father is angry? Tell me, and please calm him.",
+  "meaning": "He assumes the fault is his.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-12": {
+  "translation": "Pale and wretched, he does not speak to me. Is some bodily or mental pain troubling him? Happiness is always hard to keep.",
+  "meaning": "He worries for his father's health.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-13": {
+  "translation": "Has anything bad happened to handsome Prince Bharata, or mighty Shatrughna, or my mothers?",
+  "meaning": "He fears for his family.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-14": {
+  "translation": "If I displease the great king or fail to do my father's word, I would not wish to live a moment with the king angry.",
+  "meaning": "His father's approval matters above all.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-15": {
+  "translation": "How could a man not serve the visible god who is the very root of his birth in this world?",
+  "meaning": "A father is like a living god to him.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "daivata",
+    "meaning": "deity"
+   }
+  ]
+ },
+ "ramayana-2-16-16": {
+  "translation": "Did you in pride speak harshly to my father in anger, so that his mind is disturbed?",
+  "meaning": "He gently asks if she upset him.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-17": {
+  "translation": "Tell me truthfully, queen, as I ask: what has caused this strange change in the king?",
+  "meaning": "He wants the truth.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-18": {
+  "translation": "At the king's word I would fall into fire, drink deadly poison or sink in the ocean, when commanded by my teacher, father, king and well-wisher.",
+  "meaning": "He would do anything his father asks.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-19": {
+  "translation": "So tell me, queen, what the king wants. I will do it, I promise. Rama does not speak twice.",
+  "meaning": "Rama gives his word: he never goes back on it.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "dvir nabhibhashate",
+    "meaning": "does not speak twice"
+   }
+  ]
+ },
+ "ramayana-2-16-20": {
+  "translation": "To straightforward, truthful Rama, ignoble Kaikeyi spoke very cruel words:",
+  "meaning": "Kaikeyi tells him.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "arjava",
+    "meaning": "straightforwardness"
+   }
+  ]
+ },
+ "ramayana-2-16-21": {
+  "translation": "Long ago in the war of gods and demons, Raghava, your father gave me two boons when I protected him, wounded with an arrow, in the great battle.",
+  "meaning": "She explains the boons.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-22": {
+  "translation": "Now I have asked the king for Bharata's coronation and for your departure today to the Dandaka forest, Raghava.",
+  "meaning": "She names them.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-23": {
+  "translation": "If you want to make your father and yourself true to your promises, best of men, hear what I say.",
+  "meaning": "She ties it to his honour.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-24": {
+  "translation": "Obey your father's command as he promised: you must go to the forest for nine and five years.",
+  "meaning": "Fourteen years in the forest.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-25": {
+  "translation": "For seven and seven years, living in the Dandaka forest, give up this coronation and live wearing matted hair and bark.",
+  "meaning": "As an ascetic.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-26": {
+  "translation": "Let Bharata rule this earth from the Kosala capital, full of all kinds of jewels, with horses, chariots and elephants.",
+  "meaning": "Bharata will rule.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-27": {
+  "translation": "Hearing those unwelcome words, like death, the slayer of enemies was not shaken, and said to Kaikeyi:",
+  "meaning": "Rama remains calm.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "vivyathe",
+    "meaning": "was shaken"
+   }
+  ]
+ },
+ "ramayana-2-16-28": {
+  "translation": "So be it. I will go from here to live in the forest, wearing matted hair and bark, keeping the king's promise.",
+  "meaning": "He accepts at once.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-29": {
+  "translation": "But I want to know why the invincible king, tamer of foes, does not welcome me as before.",
+  "meaning": "He only asks why his father is upset.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-30": {
+  "translation": "Do not be angry, queen; I say it to your face: I will go to the forest in bark and matted hair. Be happy.",
+  "meaning": "He reassures her.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-31": {
+  "translation": "Commanded by my well-wisher, teacher, father, grateful king, what dear thing would I not do with confidence?",
+  "meaning": "He trusts his father completely.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-32": {
+  "translation": "Only one thing burns my heart: that the king did not himself tell me of Bharata's coronation.",
+  "meaning": "His only hurt is that his father did not ask him directly.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-33": {
+  "translation": "I would gladly give Sita, the kingdom, my life, what I love and my wealth to my brother Bharata myself, unasked.",
+  "meaning": "He would give Bharata anything freely.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-34": {
+  "translation": "How much more when urged by my father the king himself, keeping his promise and to please you.",
+  "meaning": "All the more so when his father asks.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-35": {
+  "translation": "So comfort him. Why does the king shed tears slowly, his eyes fixed on the ground?",
+  "meaning": "He asks her to comfort the king.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-36": {
+  "translation": "Let messengers go on swift horses by the king's order to bring Bharata from his uncle's house today.",
+  "meaning": "He helps make arrangements for Bharata.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-37": {
+  "translation": "I will go quickly from here to the Dandaka forest, without questioning my father's word, to live there fourteen years.",
+  "meaning": "He will go immediately.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-38": {
+  "translation": "Kaikeyi, delighted at Rama's words and trusting he would leave, hurried Raghava on.",
+  "meaning": "She hurries him.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-39": {
+  "translation": "So be it; men will go on swift horses to bring Bharata back from his uncle's house.",
+  "meaning": "She agrees.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-40": {
+  "translation": "But I do not think delay is right for you, eager as you are. So, Rama, you should go quickly from here to the forest.",
+  "meaning": "She urges speed.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-41": {
+  "translation": "The king does not speak to you himself out of shame; it is nothing more, best of men; let your hurt go.",
+  "meaning": "She explains away the king's silence.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "vrida",
+    "meaning": "shame"
+   }
+  ]
+ },
+ "ramayana-2-16-42": {
+  "translation": "Until you leave this city in haste for the forest, Rama, your father will neither bathe nor eat.",
+  "meaning": "She pressures him further.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-43": {
+  "translation": "Sighing Ah, shame, how cruel! the king, overwhelmed with grief, fainted on the gold-adorned couch.",
+  "meaning": "The king faints.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-44": {
+  "translation": "Rama raised the king and, urged on by Kaikeyi like a horse struck with a whip, hurried to leave for the forest.",
+  "meaning": "Rama prepares to leave.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "kasha",
+    "meaning": "whip"
+   }
+  ]
+ },
+ "ramayana-2-16-45": {
+  "translation": "Hearing the ignoble woman's unwelcome, cruel words, Rama, free of distress, said to Kaikeyi:",
+  "meaning": "Rama answers her calmly.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-46": {
+  "translation": "I do not wish to live in the world devoted to gain, queen. Know me to be like the sages, devoted only to dharma.",
+  "meaning": "He is not attached to power.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "arthapara",
+    "meaning": "devoted to gain"
+   }
+  ]
+ },
+ "ramayana-2-16-47": {
+  "translation": "Whatever I can do to please my revered father, I will do in every way, even giving up my life.",
+  "meaning": "His devotion to his father.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-48": {
+  "translation": "There is no greater act of dharma than serving one's father or doing as he says.",
+  "meaning": "Respect for parents as the highest duty.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "shushrusha",
+    "meaning": "service"
+   }
+  ]
+ },
+ "ramayana-2-16-49": {
+  "translation": "Even without my father telling me, I will live fourteen years in the lonely forest at your word.",
+  "meaning": "He would go even on her word alone.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-50": {
+  "translation": "Surely, Kaikeyi, you think I have no virtue, since you spoke to the king, though you have more authority over me.",
+  "meaning": "A gentle reproach: she could have asked him herself.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-51": {
+  "translation": "As soon as I take leave of my mother and console Sita, I will go today to the great Dandaka forest.",
+  "meaning": "He will say goodbye first.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-52": {
+  "translation": "See that Bharata rules the kingdom and serves our father; that is the eternal dharma.",
+  "meaning": "His last request is for his father's care.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "sanatana",
+    "meaning": "eternal"
+   }
+  ]
+ },
+ "ramayana-2-16-53": {
+  "translation": "Hearing Rama, his father, crushed with sorrow, unable to hold back his tears, wept aloud.",
+  "meaning": "The king breaks down.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-54": {
+  "translation": "Bowing at the feet of his unconscious father and of ignoble Kaikeyi, radiant Rama went out.",
+  "meaning": "Rama leaves respectfully.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-55": {
+  "translation": "Walking respectfully round his father and Kaikeyi and leaving the inner palace, Rama saw his friends.",
+  "meaning": "He walks out.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-56": {
+  "translation": "Lakshmana, the joy of Sumitra, his eyes full of tears and furious, followed behind him.",
+  "meaning": "Lakshmana is angry.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-57": {
+  "translation": "Walking respectfully round the coronation vessels, Rama went slowly, without turning his gaze to them.",
+  "meaning": "He walks past the regalia without longing.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-58": {
+  "translation": "The loss of the kingdom did not diminish his great splendour, as night does not diminish the loveliness of the moon.",
+  "meaning": "Losing the throne did not lessen him.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-59": {
+  "translation": "As he set out for the forest and gave up the earth, no change of mind was seen in him, as in one beyond all worlds.",
+  "meaning": "He stayed perfectly calm.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": [
+   {
+    "word": "cittavikriya",
+    "meaning": "change of mind"
+   }
+  ]
+ },
+ "ramayana-2-16-60": {
+  "translation": "Holding his sorrow in his mind and restraining his senses, the self-possessed one entered his mother's house, bearer of bad news.",
+  "meaning": "He goes to his mother.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-16-61": {
+  "translation": "Entering the house full of joy and seeing her about to face disaster, Rama showed no change, fearing for his loved ones' distress.",
+  "meaning": "He hides his own feelings for their sake.",
+  "explanation": "Ayodhya Kanda, chapter 16: Rama finds his father speechless with grief. Kaikeyi tells him of the boons. Without anger, Rama accepts fourteen years of exile to keep his father's word. One of the epic's central moments: duty and truth placed above power.",
+  "keywords": []
+ },
+ "ramayana-2-17-1": {
+  "translation": "Rama, deeply weary, sighing like an elephant, self-controlled, went with his brother to his mother's apartments.",
+  "meaning": "He goes to Kausalya.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-2": {
+  "translation": "There he saw an old, highly honoured man sitting at the house door and many others standing.",
+  "meaning": "Attendants at the door.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-3": {
+  "translation": "Entering the first courtyard, in the second he saw old brahmins learned in the Vedas, honoured by the king.",
+  "meaning": "Scholars wait inside.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-4": {
+  "translation": "Bowing to those elders, in the third he saw women old and young intent on guarding the door.",
+  "meaning": "Women guard the inner door.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-5": {
+  "translation": "Greeting him gladly, the women went in and quickly told Rama's mother the good news.",
+  "meaning": "They announce him joyfully.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-6": {
+  "translation": "Queen Kausalya had spent the night in devotion, and at dawn was worshipping Vishnu for her son's good.",
+  "meaning": "She is praying.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-7": {
+  "translation": "Dressed in linen, joyful, ever devoted to vows, having done the blessings, she was offering into the fire with mantras.",
+  "meaning": "She makes offerings.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-8": {
+  "translation": "Entering his mother's lovely apartments, Rama saw her making offerings into the fire.",
+  "meaning": "He sees her praying for him.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-9": {
+  "translation": "Seeing after a long while her son, his mother's joy, she ran to him delighted, like a mare to her foal.",
+  "meaning": "She rushes to him.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": [
+   {
+    "word": "vadava",
+    "meaning": "mare"
+   },
+   {
+    "word": "kishora",
+    "meaning": "foal"
+   }
+  ]
+ },
+ "ramayana-2-17-10": {
+  "translation": "Out of love for her son, Kausalya spoke these loving words to invincible Raghava, her own son:",
+  "meaning": "She blesses him.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-11": {
+  "translation": "May you gain the long life, fame and dharma of the old, righteous royal sages of our family.",
+  "meaning": "Her blessing.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-12": {
+  "translation": "See your father the king, true to his word, Raghava; today the righteous one will crown you crown prince.",
+  "meaning": "She still thinks he will be crowned.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-13": {
+  "translation": "Raghava, stretching out his joined hands a little, spoke to his mother, humble by nature and bowing in respect.",
+  "meaning": "He prepares to tell her.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-14": {
+  "translation": "Queen, surely you do not know a great danger has come, which will grieve you, Vaidehi and Lakshmana.",
+  "meaning": "He breaks the news gently.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-15": {
+  "translation": "I will live fourteen years in the lonely forest, living on honey, roots and fruits, giving up meat like a sage.",
+  "meaning": "He will live as an ascetic.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": [
+   {
+    "word": "amisha",
+    "meaning": "meat"
+   }
+  ]
+ },
+ "ramayana-2-17-16": {
+  "translation": "The great king is giving the crown princeship to Bharata and banishing me to the Dandaka forest as an ascetic.",
+  "meaning": "He tells her plainly.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-17": {
+  "translation": "Seeing his mother, unused to sorrow, fall senseless like a felled plantain tree, Rama lifted her up.",
+  "meaning": "She collapses.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": [
+   {
+    "word": "kadali",
+    "meaning": "plantain tree"
+   }
+  ]
+ },
+ "ramayana-2-17-18": {
+  "translation": "He stroked with his hand his miserable mother, her whole body covered in dust, risen like a weary mare.",
+  "meaning": "He comforts her.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-19": {
+  "translation": "Used to happiness and now stricken with sorrow, she spoke to the tiger among men seated beside her, with Lakshmana listening:",
+  "meaning": "She speaks her grief.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-20": {
+  "translation": "If you had not been born, son, to cause me grief, Raghava, I would not, childless, see sorrow greater than this.",
+  "meaning": "She wishes she had been spared this pain.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-21": {
+  "translation": "A childless woman has only one sorrow, the grief of being childless; there is no other, son.",
+  "meaning": "Having a child brings greater pain too.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": [
+   {
+    "word": "vandhya",
+    "meaning": "childless woman"
+   }
+  ]
+ },
+ "ramayana-2-17-22": {
+  "translation": "I have never known good fortune or happiness through my husband's power; I hoped I would see it through my son, Rama.",
+  "meaning": "She confesses years of neglect.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-23": {
+  "translation": "I, the senior, will hear many unkind, heart-breaking words from my junior co-wives. What could be more painful for a woman?",
+  "meaning": "She fears humiliation by the other wives.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": [
+   {
+    "word": "sapatni",
+    "meaning": "co-wife"
+   }
+  ]
+ },
+ "ramayana-2-17-24": {
+  "translation": "Even with you near, I was slighted like this. How much more when you are gone, dear; surely death is all that awaits me.",
+  "meaning": "She cannot bear his leaving.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
+ },
+ "ramayana-2-17-25": {
+  "translation": "Anyone who served or followed me, seeing Kaikeyi's son, will no longer speak to me.",
+  "meaning": "She will be abandoned.",
+  "explanation": "Ayodhya Kanda, chapter 17: Rama goes to tell his mother Kausalya, who is praying for his coronation. She collapses and pours out her grief and her years of neglect as the senior queen.",
+  "keywords": []
  }
 }

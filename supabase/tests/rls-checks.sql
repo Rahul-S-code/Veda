@@ -39,6 +39,7 @@ do $$ begin
   assert (select count(distinct e.verse_id) from explanations e join verses v on v.id = e.verse_id where v.scripture_id = 'bhagavad-gita') = 700, 'every Gita verse has a meaning';
   assert (select count(distinct e.verse_id) from explanations e join verses v on v.id = e.verse_id where v.scripture_id = 'chandogya-upanishad') = 623, 'every Chandogya verse has a meaning';
   assert (select count(distinct e.verse_id) from explanations e join verses v on v.id = e.verse_id where v.scripture_id = 'brihadaranyaka-upanishad') = 433, 'every Brihadaranyaka verse (432 imported + 1 featured card) has a meaning';
+  assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-1-%') = 1941, 'every Bala Kanda verse has a meaning';
 end $$;
 
 -- Anonymous visitors see published verses only.

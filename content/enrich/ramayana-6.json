@@ -52218,5 +52218,1905 @@
     "meaning": "celestial bard"
    }
   ]
+ },
+ "ramayana-6-88-53": {
+  "translation": "'Today I will do a deed that all the worlds, moving and unmoving, with the gods, will tell of as long as the earth endures.'",
+  "meaning": "Rama vows a deed to be remembered forever.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "karma",
+    "meaning": "deed"
+   },
+   {
+    "word": "kathayiṣyanti",
+    "meaning": "will tell"
+   },
+   {
+    "word": "dhariṣyati",
+    "meaning": "endures"
+   }
+  ]
+ },
+ "ramayana-6-88-54": {
+  "translation": "Saying this, Rama, fully focused, struck Ravana in battle with sharp gold-decked arrows.",
+  "meaning": "Rama attacks.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back. Battle scenes are told plainly in the epic; the app keeps them brief.",
+  "keywords": [
+   {
+    "word": "samāhita",
+    "meaning": "focused"
+   },
+   {
+    "word": "ājaghāna",
+    "meaning": "struck"
+   },
+   {
+    "word": "taptakāñcana",
+    "meaning": "refined gold"
+   }
+  ]
+ },
+ "ramayana-6-88-55": {
+  "translation": "Then Ravana rained blazing iron arrows and pestles on Rama like a cloud pouring rain.",
+  "meaning": "Ravana answers.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "pradīpta",
+    "meaning": "blazing"
+   },
+   {
+    "word": "musala",
+    "meaning": "pestle"
+   },
+   {
+    "word": "toyada",
+    "meaning": "cloud"
+   }
+  ]
+ },
+ "ramayana-6-88-56": {
+  "translation": "As the arrows loosed by Rama and Ravana struck each other, a tumultuous sound arose.",
+  "meaning": "Arrow meets arrow.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "abhinighnat",
+    "meaning": "striking"
+   },
+   {
+    "word": "tumula",
+    "meaning": "tumultuous"
+   },
+   {
+    "word": "svana",
+    "meaning": "sound"
+   }
+  ]
+ },
+ "ramayana-6-88-57": {
+  "translation": "Broken and scattered, Rama's and Ravana's arrows fell from the sky to the ground with blazing tips.",
+  "meaning": "The arrows fall.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "bhinna",
+    "meaning": "broken"
+   },
+   {
+    "word": "vikīrṇa",
+    "meaning": "scattered"
+   },
+   {
+    "word": "pradīptāgra",
+    "meaning": "blazing-tipped"
+   }
+  ]
+ },
+ "ramayana-6-88-58": {
+  "translation": "The great twang of Rama's and Ravana's bowstrings was wondrous and terrified all beings.",
+  "meaning": "The sound is terrible.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "jyātala",
+    "meaning": "bowstring"
+   },
+   {
+    "word": "trāsana",
+    "meaning": "terrifying"
+   },
+   {
+    "word": "adbhutopama",
+    "meaning": "wondrous"
+   }
+  ]
+ },
+ "ramayana-6-88-59": {
+  "translation": "Covered by showers of arrows from great Rama with his blazing bow, Ravana fled in fear, like a cloud struck by the wind.",
+  "meaning": "Ravana retreats.",
+  "explanation": "Yuddha Kanda, chapter 88: Rama fights Ravana alone and drives him back.",
+  "keywords": [
+   {
+    "word": "kīryamāṇa",
+    "meaning": "covered"
+   },
+   {
+    "word": "pradudrāva",
+    "meaning": "fled"
+   },
+   {
+    "word": "balāhaka",
+    "meaning": "cloud"
+   }
+  ]
+ },
+ "ramayana-6-89-1": {
+  "translation": "Having fought a fierce battle with wicked Ravana and still loosing floods of arrows, Rama spoke to Sushena.",
+  "meaning": "Rama turns to the healer.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "tumula",
+    "meaning": "fierce"
+   },
+   {
+    "word": "visṛjan",
+    "meaning": "loosing"
+   },
+   {
+    "word": "abravīt",
+    "meaning": "said"
+   }
+  ]
+ },
+ "ramayana-6-89-2": {
+  "translation": "'Struck down by Ravana's force, heroic Lakshmana lies on the ground, writhing like a snake, stirring my grief.'",
+  "meaning": "Rama sees his brother suffering.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. Lakshmana is not lost: the herbs will revive him.",
+  "keywords": [
+   {
+    "word": "patita",
+    "meaning": "fallen"
+   },
+   {
+    "word": "veṣṭate",
+    "meaning": "writhes"
+   },
+   {
+    "word": "śoka",
+    "meaning": "grief"
+   }
+  ]
+ },
+ "ramayana-6-89-3": {
+  "translation": "'Seeing this hero, dearer to me than life, wounded, what strength have I to fight, my mind so troubled?'",
+  "meaning": "Grief drains his will to fight.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "iṣṭatara",
+    "meaning": "dearer"
+   },
+   {
+    "word": "paryākulātman",
+    "meaning": "troubled mind"
+   },
+   {
+    "word": "śakti",
+    "meaning": "strength"
+   }
+  ]
+ },
+ "ramayana-6-89-4": {
+  "translation": "'If this brother of mine, of good signs and proud in battle, has died, what use is life or happiness to me?'",
+  "meaning": "Without Lakshmana, life has no meaning for Rama.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. A picture of deep brotherly love.",
+  "keywords": [
+   {
+    "word": "samaraślāghin",
+    "meaning": "proud in battle"
+   },
+   {
+    "word": "pañcatva",
+    "meaning": "death"
+   },
+   {
+    "word": "sukha",
+    "meaning": "happiness"
+   }
+  ]
+ },
+ "ramayana-6-89-5": {
+  "translation": "'My valour seems ashamed, the bow seems to slip from my hand, my arrows fail, my sight is clouded by tears, my sorrow grows and I wish to die.'",
+  "meaning": "Rama is overwhelmed.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "lajjati",
+    "meaning": "is ashamed"
+   },
+   {
+    "word": "bhraśyati",
+    "meaning": "slips"
+   },
+   {
+    "word": "mumūrṣā",
+    "meaning": "wish to die"
+   }
+  ]
+ },
+ "ramayana-6-89-6": {
+  "translation": "Seeing his brother struck down by wicked Ravana, Rama fell into deep despair and lamented, his senses shaken.",
+  "meaning": "Rama laments.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "viṣāda",
+    "meaning": "despair"
+   },
+   {
+    "word": "vilalāpa",
+    "meaning": "lamented"
+   },
+   {
+    "word": "ākulendriya",
+    "meaning": "senses shaken"
+   }
+  ]
+ },
+ "ramayana-6-89-7": {
+  "translation": "'I have no need of battle, of life, or even of Sita, seeing my brother Lakshmana struck down in the dust of battle.'",
+  "meaning": "His grief is total.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "kārya",
+    "meaning": "need"
+   },
+   {
+    "word": "raṇapāṃsu",
+    "meaning": "dust of battle"
+   },
+   {
+    "word": "nihata",
+    "meaning": "struck down"
+   }
+  ]
+ },
+ "ramayana-6-89-8": {
+  "translation": "'What use is a kingdom or life to me? There is no reason to fight when Lakshmana lies struck down at the front.'",
+  "meaning": "Nothing matters without his brother.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "rājya",
+    "meaning": "kingdom"
+   },
+   {
+    "word": "śete",
+    "meaning": "lies"
+   },
+   {
+    "word": "raṇamūrdhan",
+    "meaning": "front of battle"
+   }
+  ]
+ },
+ "ramayana-6-89-9": {
+  "translation": "Comforting Rama, heroic Sushena said: 'Mighty-armed Lakshmana, who increases good fortune, is not dead.'",
+  "meaning": "Sushena brings hope.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "āśvāsayan",
+    "meaning": "comforting"
+   },
+   {
+    "word": "na mṛta",
+    "meaning": "not dead"
+   },
+   {
+    "word": "lakṣmivardhana",
+    "meaning": "increaser of fortune"
+   }
+  ]
+ },
+ "ramayana-6-89-10": {
+  "translation": "'His face is not changed, nor dark, nor dull; his face looks bright and calm.'",
+  "meaning": "The signs show he lives.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "vikṛta",
+    "meaning": "changed"
+   },
+   {
+    "word": "śyāma",
+    "meaning": "dark"
+   },
+   {
+    "word": "prasanna",
+    "meaning": "calm"
+   }
+  ]
+ },
+ "ramayana-6-89-11": {
+  "translation": "'His palms are red as lotuses and his eyes clear. The dead do not look like this, lord of men. Do not despair, hero; he is alive.'",
+  "meaning": "Lakshmana lives.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "padmarakta",
+    "meaning": "lotus-red"
+   },
+   {
+    "word": "gatāsu",
+    "meaning": "dead"
+   },
+   {
+    "word": "saprāṇa",
+    "meaning": "alive"
+   }
+  ]
+ },
+ "ramayana-6-89-12": {
+  "translation": "'As he lies on the ground, limbs slack as if asleep, his heart, still breathing, trembles again and again: that tells us so.'",
+  "meaning": "His heart still beats.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "prasupta",
+    "meaning": "asleep"
+   },
+   {
+    "word": "srasta",
+    "meaning": "slack"
+   },
+   {
+    "word": "socchvāsa",
+    "meaning": "breathing"
+   }
+  ]
+ },
+ "ramayana-6-89-13": {
+  "translation": "Having said this to Rama, wise Sushena quickly spoke to Hanuman standing near.",
+  "meaning": "Sushena turns to Hanuman.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "vākyajña",
+    "meaning": "wise in speech"
+   },
+   {
+    "word": "samīpastha",
+    "meaning": "standing near"
+   },
+   {
+    "word": "abhitvaran",
+    "meaning": "quickly"
+   }
+  ]
+ },
+ "ramayana-6-89-14": {
+  "translation": "'Gentle one, go quickly from here to the herb mountain that Jambavan told you of before.'",
+  "meaning": "Hanuman is sent again.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "śīghram",
+    "meaning": "quickly"
+   },
+   {
+    "word": "oṣadhiparvata",
+    "meaning": "herb mountain"
+   },
+   {
+    "word": "kathita",
+    "meaning": "told"
+   }
+  ]
+ },
+ "ramayana-6-89-15": {
+  "translation": "'Bring the herb named Vishalyakarani that grows on its southern peak.'",
+  "meaning": "Bring the arrow-healing herb.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "dakṣiṇa",
+    "meaning": "southern"
+   },
+   {
+    "word": "śikhara",
+    "meaning": "peak"
+   },
+   {
+    "word": "viśalyakaraṇī",
+    "meaning": "arrow-removing herb"
+   }
+  ]
+ },
+ "ramayana-6-89-16": {
+  "translation": "'Bring quickly also Sauvarnakarani, Sanjivani and Sandhanakarani, to revive heroic, great Lakshmana.'",
+  "meaning": "Bring all the healing herbs.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "sauvarṇakaraṇī",
+    "meaning": "colour-restoring herb"
+   },
+   {
+    "word": "saṃjīvanī",
+    "meaning": "life-restoring herb"
+   },
+   {
+    "word": "saṃdhāna",
+    "meaning": "joining"
+   }
+  ]
+ },
+ "ramayana-6-89-17": {
+  "translation": "Told this, Hanuman went to the herb mountain, but was worried, not knowing those great herbs.",
+  "meaning": "He cannot tell which herbs they are.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "cintā",
+    "meaning": "worry"
+   },
+   {
+    "word": "ajānan",
+    "meaning": "not knowing"
+   },
+   {
+    "word": "mahauṣadhi",
+    "meaning": "great herb"
+   }
+  ]
+ },
+ "ramayana-6-89-18": {
+  "translation": "Then the thought came to Hanuman of boundless strength: 'I will take this mountain peak itself and go.'",
+  "meaning": "He has an idea.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "buddhi",
+    "meaning": "thought"
+   },
+   {
+    "word": "samutpanna",
+    "meaning": "arose"
+   },
+   {
+    "word": "śikhara",
+    "meaning": "peak"
+   }
+  ]
+ },
+ "ramayana-6-89-19": {
+  "translation": "'If I go without the Vishalyakarani, the delay will cause harm and great distress.'",
+  "meaning": "Delay would be costly.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. When time matters, act decisively.",
+  "keywords": [
+   {
+    "word": "kālātyaya",
+    "meaning": "delay"
+   },
+   {
+    "word": "doṣa",
+    "meaning": "harm"
+   },
+   {
+    "word": "vaiklavya",
+    "meaning": "distress"
+   }
+  ]
+ },
+ "ramayana-6-89-20": {
+  "translation": "Thinking this, mighty Hanuman went quickly, took the mountain peak and flew up.",
+  "meaning": "He lifts the peak.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "saṃcintya",
+    "meaning": "thinking"
+   },
+   {
+    "word": "utpapāta",
+    "meaning": "flew up"
+   },
+   {
+    "word": "gṛhītvā",
+    "meaning": "taking"
+   }
+  ]
+ },
+ "ramayana-6-89-21": {
+  "translation": "'I did not know the herbs, best of monkeys, so I have brought this whole peak of the mountain.'",
+  "meaning": "Hanuman explains.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. Honest about what he did not know, and resourceful.",
+  "keywords": [
+   {
+    "word": "nāvagacchāmi",
+    "meaning": "I did not know"
+   },
+   {
+    "word": "kṛtsna",
+    "meaning": "whole"
+   },
+   {
+    "word": "āhṛta",
+    "meaning": "brought"
+   }
+  ]
+ },
+ "ramayana-6-89-22": {
+  "translation": "Praising the son of the Wind for these words, Sushena, best of monkeys, pulled up the herbs.",
+  "meaning": "Sushena gathers the herbs.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "praśasya",
+    "meaning": "praising"
+   },
+   {
+    "word": "utpāṭya",
+    "meaning": "pulling up"
+   },
+   {
+    "word": "oṣadhi",
+    "meaning": "herb"
+   }
+  ]
+ },
+ "ramayana-6-89-23": {
+  "translation": "Crushing that herb, the radiant Sushena gave it to Lakshmana to breathe in.",
+  "meaning": "He gives Lakshmana the herb.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "saṃkṣodayitvā",
+    "meaning": "crushing"
+   },
+   {
+    "word": "nastas",
+    "meaning": "through the nose"
+   },
+   {
+    "word": "dadau",
+    "meaning": "gave"
+   }
+  ]
+ },
+ "ramayana-6-89-24": {
+  "translation": "Breathing it in, Lakshmana, with the spear in him, was freed of it and of pain, and quickly rose from the ground.",
+  "meaning": "Lakshmana rises, healed.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "samāghrāya",
+    "meaning": "breathing in"
+   },
+   {
+    "word": "viśalya",
+    "meaning": "freed of the weapon"
+   },
+   {
+    "word": "viruja",
+    "meaning": "painless"
+   }
+  ]
+ },
+ "ramayana-6-89-25": {
+  "translation": "Seeing Lakshmana rise from the ground, the monkeys, delighted, cried 'Well done!' and honoured Sushena.",
+  "meaning": "They honour the healer.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "samutthita",
+    "meaning": "risen"
+   },
+   {
+    "word": "suprīta",
+    "meaning": "delighted"
+   },
+   {
+    "word": "pratyapūjayan",
+    "meaning": "honoured"
+   }
+  ]
+ },
+ "ramayana-6-89-26": {
+  "translation": "'Come, come,' said Rama to Lakshmana, and embraced him tightly with love, his eyes full of tears.",
+  "meaning": "Rama embraces his brother.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. A tender reunion of brothers.",
+  "keywords": [
+   {
+    "word": "ehi",
+    "meaning": "come"
+   },
+   {
+    "word": "sasvaje",
+    "meaning": "embraced"
+   },
+   {
+    "word": "snehagāḍha",
+    "meaning": "tight with love"
+   }
+  ]
+ },
+ "ramayana-6-89-27": {
+  "translation": "Embracing him, Rama said: 'By good fortune, hero, I see you back from death.'",
+  "meaning": "Rama rejoices.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "diṣṭyā",
+    "meaning": "by good fortune"
+   },
+   {
+    "word": "maraṇa",
+    "meaning": "death"
+   },
+   {
+    "word": "punar āgata",
+    "meaning": "returned"
+   }
+  ]
+ },
+ "ramayana-6-89-28": {
+  "translation": "'I had no use for life, for Sita or for victory. What use is life to me if you were gone?'",
+  "meaning": "Rama's love for Lakshmana.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "jīvita",
+    "meaning": "life"
+   },
+   {
+    "word": "jaya",
+    "meaning": "victory"
+   },
+   {
+    "word": "pañcatva",
+    "meaning": "death"
+   }
+  ]
+ },
+ "ramayana-6-89-29": {
+  "translation": "As great Rama spoke so, Lakshmana, tired, spoke in a weak voice:",
+  "meaning": "Lakshmana answers.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "khinna",
+    "meaning": "tired"
+   },
+   {
+    "word": "śithila",
+    "meaning": "weak"
+   },
+   {
+    "word": "vāc",
+    "meaning": "voice"
+   }
+  ]
+ },
+ "ramayana-6-89-30": {
+  "translation": "'You who are true in valour made that vow earlier; you should not speak like a weak, petty man.'",
+  "meaning": "He reminds Rama of his vow.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "pratijñā",
+    "meaning": "vow"
+   },
+   {
+    "word": "satyaparākrama",
+    "meaning": "true in valour"
+   },
+   {
+    "word": "laghu",
+    "meaning": "petty"
+   }
+  ]
+ },
+ "ramayana-6-89-31": {
+  "translation": "'The good never make their vows false, sinless one. Keeping one's vow is the great mark of goodness.'",
+  "meaning": "Keep your word.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow. A teaching: a good person always keeps their promises.",
+  "keywords": [
+   {
+    "word": "vitatha",
+    "meaning": "false"
+   },
+   {
+    "word": "sādhu",
+    "meaning": "good person"
+   },
+   {
+    "word": "pratijñāparipālana",
+    "meaning": "keeping a vow"
+   }
+  ]
+ },
+ "ramayana-6-89-32": {
+  "translation": "'Enough of despair because of me, sinless one. Keep your vow today by slaying Ravana.'",
+  "meaning": "Lakshmana urges Rama on.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "nairāśya",
+    "meaning": "despair"
+   },
+   {
+    "word": "alam",
+    "meaning": "enough"
+   },
+   {
+    "word": "anupālaya",
+    "meaning": "keep"
+   }
+  ]
+ },
+ "ramayana-6-89-33": {
+  "translation": "'Your enemy, once in range of your arrows, will not escape alive, as a great elephant cannot escape a roaring, sharp-toothed lion.'",
+  "meaning": "Ravana cannot escape.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "bāṇapatha",
+    "meaning": "arrow range"
+   },
+   {
+    "word": "tīkṣṇadaṃṣṭra",
+    "meaning": "sharp-toothed"
+   },
+   {
+    "word": "mahāgaja",
+    "meaning": "great elephant"
+   }
+  ]
+ },
+ "ramayana-6-89-34": {
+  "translation": "'I want that wicked one slain quickly, before the sun sets, its work done.'",
+  "meaning": "Before sunset.",
+  "explanation": "Yuddha Kanda, chapter 89: Rama grieves over Lakshmana; Sushena sends Hanuman for the herbs, and Lakshmana is revived and reminds Rama of his vow.",
+  "keywords": [
+   {
+    "word": "vadha",
+    "meaning": "slaying"
+   },
+   {
+    "word": "divākara",
+    "meaning": "sun"
+   },
+   {
+    "word": "kṛtakarman",
+    "meaning": "work done"
+   }
+  ]
+ },
+ "ramayana-6-90-1": {
+  "translation": "Hearing Lakshmana's words, Rama loosed fearsome arrows at Ravana at the front of the army.",
+  "meaning": "Rama resumes the fight.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "śrutvā",
+    "meaning": "hearing"
+   },
+   {
+    "word": "visasarja",
+    "meaning": "loosed"
+   },
+   {
+    "word": "camūmukha",
+    "meaning": "front of the army"
+   }
+  ]
+ },
+ "ramayana-6-90-2": {
+  "translation": "Ravana, in his chariot, struck Rama with very fearsome thunderbolt-like arrows, like a cloud pouring rain.",
+  "meaning": "Ravana answers.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "rathastha",
+    "meaning": "in a chariot"
+   },
+   {
+    "word": "vajropama",
+    "meaning": "thunderbolt-like"
+   },
+   {
+    "word": "dhārā",
+    "meaning": "stream"
+   }
+  ]
+ },
+ "ramayana-6-90-3": {
+  "translation": "With focus, Rama pierced Ravana in battle with gold-decked arrows bright as blazing fire.",
+  "meaning": "Rama strikes.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. Battle scenes are told plainly in the epic; the app keeps them brief.",
+  "keywords": [
+   {
+    "word": "dīptapāvaka",
+    "meaning": "blazing fire"
+   },
+   {
+    "word": "nirbibheda",
+    "meaning": "pierced"
+   },
+   {
+    "word": "samāhita",
+    "meaning": "focused"
+   }
+  ]
+ },
+ "ramayana-6-90-4": {
+  "translation": "Gods, gandharvas and danavas said: 'It is not an equal fight, Rama on the ground and the rakshasa in a chariot.'",
+  "meaning": "The gods see the unfairness.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. Even the heavens care about fairness.",
+  "keywords": [
+   {
+    "word": "bhūmisthita",
+    "meaning": "standing on the ground"
+   },
+   {
+    "word": "rathastha",
+    "meaning": "in a chariot"
+   },
+   {
+    "word": "sama",
+    "meaning": "equal"
+   }
+  ]
+ },
+ "ramayana-6-90-5": {
+  "translation": "Then a chariot adorned with gold, decorated with a hundred bells, bright as the rising sun, with a pole of lapis...",
+  "meaning": "A divine chariot appears.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "kāñcanacitra",
+    "meaning": "gold-adorned"
+   },
+   {
+    "word": "kiṃkiṇī",
+    "meaning": "small bell"
+   },
+   {
+    "word": "vaidūrya",
+    "meaning": "lapis"
+   }
+  ]
+ },
+ "ramayana-6-90-6": {
+  "translation": "...yoked to fine sun-bright bay horses with gold crests, white plumes and gold nets...",
+  "meaning": "Its horses are splendid.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "sadaśva",
+    "meaning": "fine horse"
+   },
+   {
+    "word": "śvetaprakīrṇaka",
+    "meaning": "white plume"
+   },
+   {
+    "word": "hemajāla",
+    "meaning": "gold net"
+   }
+  ]
+ },
+ "ramayana-6-90-7": {
+  "translation": "...with a golden-bamboo flagstaff, the glorious chariot of the king of gods came down from heaven to Rama.",
+  "meaning": "Indra's chariot comes to Rama.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "rukmaveṇu",
+    "meaning": "golden bamboo"
+   },
+   {
+    "word": "devarāja",
+    "meaning": "king of gods"
+   },
+   {
+    "word": "triviṣṭapa",
+    "meaning": "heaven"
+   }
+  ]
+ },
+ "ramayana-6-90-8": {
+  "translation": "Standing in the chariot with whip in hand, Matali, Indra's charioteer, with folded hands said to Rama:",
+  "meaning": "Matali speaks.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "pratoda",
+    "meaning": "whip"
+   },
+   {
+    "word": "prāñjali",
+    "meaning": "with folded hands"
+   },
+   {
+    "word": "mātali",
+    "meaning": "Matali"
+   }
+  ]
+ },
+ "ramayana-6-90-9": {
+  "translation": "'Rama, this glorious chariot that crushes enemies has been given to you by Indra for your victory.'",
+  "meaning": "A gift from Indra.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "sahasrākṣa",
+    "meaning": "thousand-eyed (Indra)"
+   },
+   {
+    "word": "vijaya",
+    "meaning": "victory"
+   },
+   {
+    "word": "śatrunibarhaṇa",
+    "meaning": "enemy-crushing"
+   }
+  ]
+ },
+ "ramayana-6-90-10": {
+  "translation": "'Here is Indra's great bow, armour bright as fire, sun-like arrows and a bright, sharp javelin.'",
+  "meaning": "Divine weapons too.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "aindra",
+    "meaning": "Indra's"
+   },
+   {
+    "word": "kavaca",
+    "meaning": "armour"
+   },
+   {
+    "word": "śakti",
+    "meaning": "javelin"
+   }
+  ]
+ },
+ "ramayana-6-90-11": {
+  "translation": "'Mount this chariot, hero, and slay the rakshasa Ravana with me as your charioteer, Rama, as great Indra slew the danavas.'",
+  "meaning": "Matali offers to drive.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "āruhya",
+    "meaning": "mounting"
+   },
+   {
+    "word": "sārathi",
+    "meaning": "charioteer"
+   },
+   {
+    "word": "dānava",
+    "meaning": "danava"
+   }
+  ]
+ },
+ "ramayana-6-90-12": {
+  "translation": "Told this, Rama walked around the chariot, bowed to it and mounted it, lighting up the worlds with his splendour.",
+  "meaning": "Rama mounts the chariot respectfully.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. Rama receives the gift with respect.",
+  "keywords": [
+   {
+    "word": "parikramya",
+    "meaning": "walking around"
+   },
+   {
+    "word": "abhivādya",
+    "meaning": "bowing"
+   },
+   {
+    "word": "lakṣmī",
+    "meaning": "splendour"
+   }
+  ]
+ },
+ "ramayana-6-90-13": {
+  "translation": "Then began a wondrous, hair-raising chariot duel between mighty-armed Rama and the rakshasa Ravana.",
+  "meaning": "Now they fight as equals.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "dvairatha",
+    "meaning": "chariot duel"
+   },
+   {
+    "word": "lomaharṣaṇa",
+    "meaning": "hair-raising"
+   },
+   {
+    "word": "adbhuta",
+    "meaning": "wondrous"
+   }
+  ]
+ },
+ "ramayana-6-90-14": {
+  "translation": "Rama, master of supreme weapons, countered the rakshasa king's Gandharva weapon with the Gandharva, and the divine with the divine.",
+  "meaning": "Weapon meets weapon.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "gāndharva",
+    "meaning": "Gandharva weapon"
+   },
+   {
+    "word": "daiva",
+    "meaning": "divine weapon"
+   },
+   {
+    "word": "paramāstravit",
+    "meaning": "master of supreme weapons"
+   }
+  ]
+ },
+ "ramayana-6-90-15": {
+  "translation": "Very angry, the rakshasa king again loosed a supreme, fearsome rakshasa weapon.",
+  "meaning": "Ravana uses a rakshasa weapon.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "rākṣasa",
+    "meaning": "rakshasa weapon"
+   },
+   {
+    "word": "sasarja",
+    "meaning": "loosed"
+   },
+   {
+    "word": "punar eva",
+    "meaning": "again"
+   }
+  ]
+ },
+ "ramayana-6-90-16": {
+  "translation": "The gold-decked arrows from Ravana's bow turned into very venomous snakes and rushed at Rama.",
+  "meaning": "Arrows become snakes.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "sarpa",
+    "meaning": "snake"
+   },
+   {
+    "word": "mahāviṣa",
+    "meaning": "very venomous"
+   },
+   {
+    "word": "abhyavartanta",
+    "meaning": "rushed"
+   }
+  ]
+ },
+ "ramayana-6-90-17": {
+  "translation": "With blazing faces, spitting fire from their mouths, mouths gaping and terrifying, they rushed at Rama.",
+  "meaning": "The snakes attack.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "dīptavadana",
+    "meaning": "blazing-faced"
+   },
+   {
+    "word": "vamanta",
+    "meaning": "spitting"
+   },
+   {
+    "word": "vyāditāsya",
+    "meaning": "gaping"
+   }
+  ]
+ },
+ "ramayana-6-90-18": {
+  "translation": "With those very venomous snakes, like Vasuki, with blazing coils, all the directions were filled.",
+  "meaning": "Snakes fill the sky.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "vāsuki",
+    "meaning": "Vasuki"
+   },
+   {
+    "word": "bhoga",
+    "meaning": "coil"
+   },
+   {
+    "word": "saṃtata",
+    "meaning": "filled"
+   }
+  ]
+ },
+ "ramayana-6-90-19": {
+  "translation": "Seeing those serpents coming in battle, Rama brought forth the fearsome Garuda weapon.",
+  "meaning": "Rama answers with Garuda.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "pannaga",
+    "meaning": "serpent"
+   },
+   {
+    "word": "gārutmata",
+    "meaning": "Garuda weapon"
+   },
+   {
+    "word": "prāduścakre",
+    "meaning": "brought forth"
+   }
+  ]
+ },
+ "ramayana-6-90-20": {
+  "translation": "The gold-feathered, fire-bright arrows from Rama's bow turned into golden eagles, enemies of snakes, and flew about.",
+  "meaning": "Arrows become eagles.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "suparṇa",
+    "meaning": "eagle"
+   },
+   {
+    "word": "sarpaśatru",
+    "meaning": "enemy of snakes"
+   },
+   {
+    "word": "viceruḥ",
+    "meaning": "flew about"
+   }
+  ]
+ },
+ "ramayana-6-90-21": {
+  "translation": "Rama's arrows in the form of eagles, able to take any form, destroyed all those swift snake-arrows.",
+  "meaning": "Good counters evil.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "jaghnuḥ",
+    "meaning": "destroyed"
+   },
+   {
+    "word": "mahājava",
+    "meaning": "swift"
+   },
+   {
+    "word": "kāmarūpin",
+    "meaning": "shape-changing"
+   }
+  ]
+ },
+ "ramayana-6-90-22": {
+  "translation": "His weapon countered, Ravana, lord of rakshasas, angrily rained fearsome showers of arrows on Rama.",
+  "meaning": "Ravana keeps attacking.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "pratihata",
+    "meaning": "countered"
+   },
+   {
+    "word": "abhyavarṣat",
+    "meaning": "rained"
+   },
+   {
+    "word": "śaravṛṣṭi",
+    "meaning": "arrow shower"
+   }
+  ]
+ },
+ "ramayana-6-90-23": {
+  "translation": "Having hurt Rama of tireless deeds with a thousand arrows, he pierced Matali with a flood of arrows.",
+  "meaning": "He wounds Matali.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. Battle scenes are told plainly in the epic; the app keeps them brief.",
+  "keywords": [
+   {
+    "word": "śarasahasra",
+    "meaning": "thousand arrows"
+   },
+   {
+    "word": "ardayitvā",
+    "meaning": "having hurt"
+   },
+   {
+    "word": "pratyavidhyata",
+    "meaning": "pierced"
+   }
+  ]
+ },
+ "ramayana-6-90-24": {
+  "translation": "Knocking down the golden banner onto the chariot floor, Ravana struck Indra's horses with a net of arrows.",
+  "meaning": "He strikes the banner and horses.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "ketu",
+    "meaning": "banner"
+   },
+   {
+    "word": "rathopastha",
+    "meaning": "chariot floor"
+   },
+   {
+    "word": "aindra",
+    "meaning": "Indra's"
+   }
+  ]
+ },
+ "ramayana-6-90-25": {
+  "translation": "Gods, gandharvas, danavas, charanas, siddhas and great sages grieved, seeing Rama in distress.",
+  "meaning": "The heavens worry.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "viṣeduḥ",
+    "meaning": "grieved"
+   },
+   {
+    "word": "ārta",
+    "meaning": "distressed"
+   },
+   {
+    "word": "siddha",
+    "meaning": "perfected being"
+   }
+  ]
+ },
+ "ramayana-6-90-26": {
+  "translation": "The monkey chiefs and Vibhishana were troubled, seeing the moon of Rama seized by the Rahu of Ravana.",
+  "meaning": "Rama seems eclipsed.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "vyathita",
+    "meaning": "troubled"
+   },
+   {
+    "word": "grasta",
+    "meaning": "seized"
+   },
+   {
+    "word": "rāhu",
+    "meaning": "eclipse demon"
+   }
+  ]
+ },
+ "ramayana-6-90-27": {
+  "translation": "Mercury moved over Rohini, the moon's beloved star of Prajapati, bringing harm to creatures.",
+  "meaning": "A bad omen appears.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. An omen in the story; the outcome still rests on Rama's courage and right action.",
+  "keywords": [
+   {
+    "word": "budha",
+    "meaning": "Mercury"
+   },
+   {
+    "word": "rohiṇī",
+    "meaning": "Rohini"
+   },
+   {
+    "word": "aśubhāvaha",
+    "meaning": "harmful"
+   }
+  ]
+ },
+ "ramayana-6-90-28": {
+  "translation": "The ocean, as if blazing, its waves rolling with smoke, rose angrily as if to touch the sun.",
+  "meaning": "The sea rages.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. An omen in the story; the outcome still rests on Rama's courage and right action.",
+  "keywords": [
+   {
+    "word": "sāgara",
+    "meaning": "ocean"
+   },
+   {
+    "word": "ūrmi",
+    "meaning": "wave"
+   },
+   {
+    "word": "divākara",
+    "meaning": "sun"
+   }
+  ]
+ },
+ "ramayana-6-90-29": {
+  "translation": "The sun, the colour of a sword, very harsh and dim-rayed, appeared with a headless trunk on it, touched by a comet.",
+  "meaning": "The sun looks ominous.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. An omen in the story; the outcome still rests on Rama's courage and right action.",
+  "keywords": [
+   {
+    "word": "mandaraśmi",
+    "meaning": "dim-rayed"
+   },
+   {
+    "word": "kabandha",
+    "meaning": "headless trunk"
+   },
+   {
+    "word": "dhūmaketu",
+    "meaning": "comet"
+   }
+  ]
+ },
+ "ramayana-6-90-30": {
+  "translation": "Mars stood in the sky over Vishakha, the star of the Koshalas, ruled by Indra and Agni.",
+  "meaning": "Another sign over Rama's homeland.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear. An omen in the story; the outcome still rests on Rama's courage and right action.",
+  "keywords": [
+   {
+    "word": "aṅgāraka",
+    "meaning": "Mars"
+   },
+   {
+    "word": "viśākhā",
+    "meaning": "Vishakha"
+   },
+   {
+    "word": "kosala",
+    "meaning": "Kosala"
+   }
+  ]
+ },
+ "ramayana-6-90-31": {
+  "translation": "Ten-faced, twenty-armed, bow in hand, Ravana looked like Mount Mainaka.",
+  "meaning": "Ravana looms large.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "daśāsya",
+    "meaning": "ten-faced"
+   },
+   {
+    "word": "viṃśatibhuja",
+    "meaning": "twenty-armed"
+   },
+   {
+    "word": "maināka",
+    "meaning": "Mount Mainaka"
+   }
+  ]
+ },
+ "ramayana-6-90-32": {
+  "translation": "Pushed back by ten-headed Ravana, Rama could not set his arrows at the front of battle.",
+  "meaning": "Rama is pressed hard.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "nirasyamāna",
+    "meaning": "being pushed back"
+   },
+   {
+    "word": "abhisaṃdhātum",
+    "meaning": "to set"
+   },
+   {
+    "word": "sāyaka",
+    "meaning": "arrow"
+   }
+  ]
+ },
+ "ramayana-6-90-33": {
+  "translation": "Frowning in anger, his eyes a little red, he grew very angry, as if burning with his gaze.",
+  "meaning": "Rama's anger rises.",
+  "explanation": "Yuddha Kanda, chapter 90: Indra sends his chariot and charioteer Matali to Rama; Rama answers Ravana's serpent arrows with Garuda arrows, while dark omens appear.",
+  "keywords": [
+   {
+    "word": "bhrukuṭī",
+    "meaning": "frown"
+   },
+   {
+    "word": "saṃraktalocana",
+    "meaning": "red-eyed"
+   },
+   {
+    "word": "nirdahan",
+    "meaning": "burning"
+   }
+  ]
+ },
+ "ramayana-6-91-1": {
+  "translation": "Seeing the angry face of wise Rama, all beings trembled and the earth shook.",
+  "meaning": "Rama's anger shakes the world.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "vadana",
+    "meaning": "face"
+   },
+   {
+    "word": "vitreṣuḥ",
+    "meaning": "trembled"
+   },
+   {
+    "word": "medinī",
+    "meaning": "earth"
+   }
+  ]
+ },
+ "ramayana-6-91-2": {
+  "translation": "The mountain with its lions and tigers shook, its trees quivering, and the ocean, lord of rivers, was stirred.",
+  "meaning": "Nature trembles.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "śārdūla",
+    "meaning": "tiger"
+   },
+   {
+    "word": "kṣubhita",
+    "meaning": "stirred"
+   },
+   {
+    "word": "saritāṃ pati",
+    "meaning": "lord of rivers"
+   }
+  ]
+ },
+ "ramayana-6-91-3": {
+  "translation": "Birds with harsh cries circled all around in the sky, calling ominously.",
+  "meaning": "Birds cry warnings.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "khaga",
+    "meaning": "bird"
+   },
+   {
+    "word": "paruṣasvana",
+    "meaning": "harsh-voiced"
+   },
+   {
+    "word": "autpātika",
+    "meaning": "ominous"
+   }
+  ]
+ },
+ "ramayana-6-91-4": {
+  "translation": "Seeing Rama very angry and the dreadful omens, all beings trembled and fear entered Ravana.",
+  "meaning": "Fear enters Ravana.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "susaṃkruddha",
+    "meaning": "very angry"
+   },
+   {
+    "word": "utpāta",
+    "meaning": "omen"
+   },
+   {
+    "word": "bhaya",
+    "meaning": "fear"
+   }
+  ]
+ },
+ "ramayana-6-91-5": {
+  "translation": "Then gods in their sky-chariots, gandharvas, great serpents, sages, danavas, daityas and Garuda's kin in the sky...",
+  "meaning": "All the worlds watch.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "vimāna",
+    "meaning": "sky-chariot"
+   },
+   {
+    "word": "mahoraga",
+    "meaning": "great serpent"
+   },
+   {
+    "word": "khecara",
+    "meaning": "sky-dweller"
+   }
+  ]
+ },
+ "ramayana-6-91-6": {
+  "translation": "...watched that battle, like the end of the world, as the two heroes fought with many fearsome weapons.",
+  "meaning": "A cosmic battle.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "lokasaṃvarta",
+    "meaning": "end of the world"
+   },
+   {
+    "word": "praharaṇa",
+    "meaning": "weapon"
+   },
+   {
+    "word": "saṃprayudhyat",
+    "meaning": "fighting"
+   }
+  ]
+ },
+ "ramayana-6-91-7": {
+  "translation": "Gods and asuras who had come, watching the great battle, spoke with devotion and excitement:",
+  "meaning": "They take sides.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "sura",
+    "meaning": "god"
+   },
+   {
+    "word": "asura",
+    "meaning": "demon"
+   },
+   {
+    "word": "bhakti",
+    "meaning": "devotion"
+   }
+  ]
+ },
+ "ramayana-6-91-8": {
+  "translation": "The asuras cried to Ravana, 'Win!', and the gods cried to Rama again and again, 'Win!'",
+  "meaning": "Cheers on both sides.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "jaya",
+    "meaning": "win"
+   },
+   {
+    "word": "samavasthita",
+    "meaning": "gathered"
+   },
+   {
+    "word": "punaḥ punaḥ",
+    "meaning": "again and again"
+   }
+  ]
+ },
+ "ramayana-6-91-9": {
+  "translation": "Meanwhile wicked Ravana, wanting to strike Rama in anger, touched a great weapon...",
+  "meaning": "Ravana reaches for a spear.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "prahartukāma",
+    "meaning": "wanting to strike"
+   },
+   {
+    "word": "duṣṭātman",
+    "meaning": "wicked"
+   },
+   {
+    "word": "praharaṇa",
+    "meaning": "weapon"
+   }
+  ]
+ },
+ "ramayana-6-91-10": {
+  "translation": "...hard as diamond, loud, able to destroy all enemies, studded with spikes like mountain peaks, terrifying to see...",
+  "meaning": "The spear is described.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "vajrasāra",
+    "meaning": "diamond-hard"
+   },
+   {
+    "word": "mahānāda",
+    "meaning": "loud"
+   },
+   {
+    "word": "kūṭa",
+    "meaning": "spike"
+   }
+  ]
+ },
+ "ramayana-6-91-11": {
+  "translation": "...sharp-tipped as if smoking, like a mass of end-of-age fire, extremely fierce, unapproachable, hard even for Death to face...",
+  "meaning": "It is fearsome.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "tīkṣṇāgra",
+    "meaning": "sharp-tipped"
+   },
+   {
+    "word": "yugāntāgni",
+    "meaning": "end-of-age fire"
+   },
+   {
+    "word": "anāsādya",
+    "meaning": "unapproachable"
+   }
+  ]
+ },
+ "ramayana-6-91-12": {
+  "translation": "...terrifying all beings, rending and piercing: Ravana, blazing with rage, seized that spear.",
+  "meaning": "Ravana takes it.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "trāsana",
+    "meaning": "terrifying"
+   },
+   {
+    "word": "dāraṇa",
+    "meaning": "rending"
+   },
+   {
+    "word": "śūla",
+    "meaning": "spear"
+   }
+  ]
+ },
+ "ramayana-6-91-13": {
+  "translation": "The mighty one, very angry, seized that spear by the middle, surrounded by many heroic rakshasas.",
+  "meaning": "He grips it.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "madhye",
+    "meaning": "by the middle"
+   },
+   {
+    "word": "parivārita",
+    "meaning": "surrounded"
+   },
+   {
+    "word": "śūra",
+    "meaning": "heroic"
+   }
+  ]
+ },
+ "ramayana-6-91-14": {
+  "translation": "Raising it, the huge one roared terribly in battle, eyes red with rage, cheering his own army.",
+  "meaning": "He roars.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "samudyamya",
+    "meaning": "raising"
+   },
+   {
+    "word": "bhairava",
+    "meaning": "terrible"
+   },
+   {
+    "word": "abhiharṣayan",
+    "meaning": "cheering"
+   }
+  ]
+ },
+ "ramayana-6-91-15": {
+  "translation": "That dreadful roar of the rakshasa king shook the earth, the sky and all the directions.",
+  "meaning": "His roar shakes the world.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "pṛthivī",
+    "meaning": "earth"
+   },
+   {
+    "word": "prākampayat",
+    "meaning": "shook"
+   },
+   {
+    "word": "dāruṇa",
+    "meaning": "dreadful"
+   }
+  ]
+ },
+ "ramayana-6-91-16": {
+  "translation": "At the wicked one's great roar, all beings trembled and the ocean was stirred.",
+  "meaning": "Everything trembles.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "atināda",
+    "meaning": "great roar"
+   },
+   {
+    "word": "vitreṣuḥ",
+    "meaning": "trembled"
+   },
+   {
+    "word": "pracukṣubhe",
+    "meaning": "was stirred"
+   }
+  ]
+ },
+ "ramayana-6-91-17": {
+  "translation": "Holding that great spear, mighty Ravana roared loudly and spoke harshly to Rama:",
+  "meaning": "He taunts Rama.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "gṛhītvā",
+    "meaning": "holding"
+   },
+   {
+    "word": "vinadya",
+    "meaning": "roaring"
+   },
+   {
+    "word": "paruṣa",
+    "meaning": "harshly"
+   }
+  ]
+ },
+ "ramayana-6-91-18": {
+  "translation": "'Rama, this diamond-hard spear I raise in anger will at once take your life, you who rely on your brother.'",
+  "meaning": "He threatens Rama.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin. A boast before battle; the story does not endorse it.",
+  "keywords": [
+   {
+    "word": "udyata",
+    "meaning": "raised"
+   },
+   {
+    "word": "bhrātṛsahāya",
+    "meaning": "relying on your brother"
+   },
+   {
+    "word": "hariṣyati",
+    "meaning": "will take"
+   }
+  ]
+ },
+ "ramayana-6-91-19": {
+  "translation": "'By slaying you, proud fighter, I will today make you equal to the rakshasa heroes slain at the front of the army.'",
+  "meaning": "More threats.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin. A boast before battle; the story does not endorse it.",
+  "keywords": [
+   {
+    "word": "raṇaślāghin",
+    "meaning": "proud fighter"
+   },
+   {
+    "word": "samam",
+    "meaning": "equal"
+   },
+   {
+    "word": "tarasā",
+    "meaning": "quickly"
+   }
+  ]
+ },
+ "ramayana-6-91-20": {
+  "translation": "'Stand now; I will slay you with this spear, Rama.' Saying this, the rakshasa king hurled the spear.",
+  "meaning": "He throws.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "tiṣṭha",
+    "meaning": "stand"
+   },
+   {
+    "word": "nihanmi",
+    "meaning": "I slay"
+   },
+   {
+    "word": "cikṣepa",
+    "meaning": "hurled"
+   }
+  ]
+ },
+ "ramayana-6-91-21": {
+  "translation": "Rama tried to stop it with floods of arrows as it came, as Indra holds back the rising fire of the end of an age with floods of water.",
+  "meaning": "Rama shoots at it.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "āpatant",
+    "meaning": "coming"
+   },
+   {
+    "word": "vārayām āsa",
+    "meaning": "tried to stop"
+   },
+   {
+    "word": "jalaugha",
+    "meaning": "flood of water"
+   }
+  ]
+ },
+ "ramayana-6-91-22": {
+  "translation": "Ravana's great spear burned up the arrows from Rama's bow as fire burns moths.",
+  "meaning": "The spear burns his arrows.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "nirdadāha",
+    "meaning": "burned up"
+   },
+   {
+    "word": "niḥsṛta",
+    "meaning": "loosed"
+   },
+   {
+    "word": "pataṃga",
+    "meaning": "moth"
+   }
+  ]
+ },
+ "ramayana-6-91-23": {
+  "translation": "Seeing his arrows turned to ash in the air by the touch of the spear, Rama grew angry.",
+  "meaning": "Rama is angered.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "bhasmasāt",
+    "meaning": "to ash"
+   },
+   {
+    "word": "cūrṇita",
+    "meaning": "crushed"
+   },
+   {
+    "word": "krodham āharat",
+    "meaning": "grew angry"
+   }
+  ]
+ },
+ "ramayana-6-91-24": {
+  "translation": "Very angry, Rama, joy of the Raghus, took up the javelin made by Indra, which Matali had brought.",
+  "meaning": "He takes Indra's javelin.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "vāsavanirmita",
+    "meaning": "made by Indra"
+   },
+   {
+    "word": "ānīta",
+    "meaning": "brought"
+   },
+   {
+    "word": "jagrāha",
+    "meaning": "took up"
+   }
+  ]
+ },
+ "ramayana-6-91-25": {
+  "translation": "Hurled by the mighty one, that javelin, ringing with bells, lit up the sky like a blazing meteor at the end of an age.",
+  "meaning": "It lights the sky.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "tolita",
+    "meaning": "hurled"
+   },
+   {
+    "word": "ghaṇṭā",
+    "meaning": "bell"
+   },
+   {
+    "word": "yugāntolkā",
+    "meaning": "end-of-age meteor"
+   }
+  ]
+ },
+ "ramayana-6-91-26": {
+  "translation": "Thrown, it fell on the rakshasa king's spear; broken by the javelin, the great spear fell, its glow gone.",
+  "meaning": "Ravana's spear is broken.",
+  "explanation": "Yuddha Kanda, chapter 91: Ravana hurls a mighty spear; Rama breaks it with Indra's javelin.",
+  "keywords": [
+   {
+    "word": "papāta",
+    "meaning": "fell"
+   },
+   {
+    "word": "bhinna",
+    "meaning": "broken"
+   },
+   {
+    "word": "gatadyuti",
+    "meaning": "its glow gone"
+   }
+  ]
  }
 }

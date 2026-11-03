@@ -42,6 +42,7 @@ do $$ begin
   assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-1-%') = 1941, 'every Bala Kanda verse has a meaning';
   assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-2-%') = 3160, 'every Ayodhya Kanda verse has a meaning';
   assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-3-%') = 2060, 'every Aranya Kanda verse has a meaning';
+  assert (select count(distinct e.verse_id) from explanations e where e.verse_id like 'ramayana-4-%') = 1987, 'every Kishkindha Kanda verse has a meaning';
 end $$;
 
 -- Anonymous visitors see published verses only.

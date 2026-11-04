@@ -1,0 +1,318 @@
+{
+ "mandukya-1": {
+  "translation": "Om: this syllable is all this. Its explanation is this: all that was, is and will be is Om. And whatever else lies beyond the three times, that too is Om.",
+  "meaning": "Everything, past, present and future, and even what lies beyond time, is Om.",
+  "explanation": "The Mandukya, the shortest principal Upanishad, opens by identifying Om with all of reality. Everything in time, and even what is beyond time, is Om.",
+  "keywords": [
+   {
+    "word": "om",
+    "meaning": "the sacred syllable"
+   },
+   {
+    "word": "akṣaram",
+    "meaning": "syllable, imperishable"
+   },
+   {
+    "word": "idam sarvam",
+    "meaning": "all this"
+   },
+   {
+    "word": "bhūtam bhavat bhaviṣyat",
+    "meaning": "past, present and future"
+   },
+   {
+    "word": "tri-kāla-atītam",
+    "meaning": "beyond the three times"
+   }
+  ]
+ },
+ "mandukya-2": {
+  "translation": "All this is Brahman. This Self is Brahman. This Self has four quarters.",
+  "meaning": "Everything is God, and your own Self is God. The Self can be understood in four parts.",
+  "explanation": "This verse contains one of the great sayings, ayam atma brahma, 'this Self is Brahman'. The Upanishad then says the Self has four aspects, which it goes on to describe.",
+  "keywords": [
+   {
+    "word": "sarvam hi etat brahma",
+    "meaning": "all this is Brahman"
+   },
+   {
+    "word": "ayam ātmā brahma",
+    "meaning": "this Self is Brahman"
+   },
+   {
+    "word": "catuṣ-pāt",
+    "meaning": "four-quartered"
+   }
+  ]
+ },
+ "mandukya-3": {
+  "translation": "The first quarter is Vaishvanara, whose field is the waking state. Its awareness is turned outward. It has seven limbs and nineteen mouths, and it experiences gross things.",
+  "meaning": "The first state of the Self is waking, when awareness looks outward and enjoys the physical world.",
+  "explanation": "The first aspect of the Self is the waking state, called Vaishvanara, the universal person. Awareness faces outward and experiences the physical world through many channels, traditionally counted as nineteen: senses, organs of action, breaths and inner faculties.",
+  "keywords": [
+   {
+    "word": "jāgarita-sthānaḥ",
+    "meaning": "whose field is waking"
+   },
+   {
+    "word": "bahiḥ-prajñaḥ",
+    "meaning": "outward-aware"
+   },
+   {
+    "word": "sthūla-bhuk",
+    "meaning": "experiencer of gross things"
+   },
+   {
+    "word": "vaiśvānaraḥ",
+    "meaning": "the universal one"
+   },
+   {
+    "word": "prathamaḥ pādaḥ",
+    "meaning": "first quarter"
+   }
+  ]
+ },
+ "mandukya-4": {
+  "translation": "The second quarter is Taijasa, whose field is the dream state. Its awareness is turned inward. It has seven limbs and nineteen mouths, and it experiences subtle things.",
+  "meaning": "The second state is dreaming, when awareness turns inward and experiences a subtle world.",
+  "explanation": "The second aspect is the dream state, called Taijasa, the shining one. Awareness turns inward and experiences subtle mental images instead of physical objects.",
+  "keywords": [
+   {
+    "word": "svapna-sthānaḥ",
+    "meaning": "whose field is dream"
+   },
+   {
+    "word": "antaḥ-prajñaḥ",
+    "meaning": "inward-aware"
+   },
+   {
+    "word": "pravivikta-bhuk",
+    "meaning": "experiencer of subtle things"
+   },
+   {
+    "word": "taijasaḥ",
+    "meaning": "the shining one"
+   },
+   {
+    "word": "dvitīyaḥ pādaḥ",
+    "meaning": "second quarter"
+   }
+  ]
+ },
+ "mandukya-5": {
+  "translation": "Where the sleeper desires nothing and sees no dream, that is deep sleep. The third quarter is Prajna, whose field is deep sleep. It has become one, a mass of awareness, made of bliss, enjoying bliss, with mind as its doorway.",
+  "meaning": "The third state is deep, dreamless sleep, where everything merges into peaceful awareness and bliss.",
+  "explanation": "The third aspect is deep sleep, called Prajna, the knower. There are no desires and no dreams. Experience becomes unified, a dense mass of consciousness full of bliss.",
+  "keywords": [
+   {
+    "word": "suṣuptam",
+    "meaning": "deep sleep"
+   },
+   {
+    "word": "ekībhūtaḥ",
+    "meaning": "become one"
+   },
+   {
+    "word": "prajñāna-ghanaḥ",
+    "meaning": "mass of awareness"
+   },
+   {
+    "word": "ānanda-mayaḥ",
+    "meaning": "made of bliss"
+   },
+   {
+    "word": "prājñaḥ",
+    "meaning": "the knower"
+   }
+  ]
+ },
+ "mandukya-6": {
+  "translation": "This is the lord of all. This is the knower of all. This is the inner controller. This is the source of all, the origin and end of beings.",
+  "meaning": "The Self in deep sleep is the lord, the knower and the source of all beings.",
+  "explanation": "The Prajna, the Self in its causal state, is described as the ruler and knower of everything, the inner guide, and the origin and dissolution of all beings.",
+  "keywords": [
+   {
+    "word": "sarva-īśvaraḥ",
+    "meaning": "lord of all"
+   },
+   {
+    "word": "sarva-jñaḥ",
+    "meaning": "knower of all"
+   },
+   {
+    "word": "antaryāmī",
+    "meaning": "inner controller"
+   },
+   {
+    "word": "yoniḥ sarvasya",
+    "meaning": "source of all"
+   },
+   {
+    "word": "prabhava-apyayau",
+    "meaning": "origin and end"
+   }
+  ]
+ },
+ "mandukya-7": {
+  "translation": "Not inwardly aware, not outwardly aware, not aware both ways, not a mass of awareness, not aware, not unaware. Unseen, beyond dealings, ungraspable, without marks, unthinkable, indescribable, its essence is the experience of the one Self, the stilling of the world, peaceful, blessed, non-dual: this they consider the fourth. That is the Self. That is to be known.",
+  "meaning": "The fourth state is beyond waking, dreaming and sleep: pure, peaceful, one Self. This is what we must know.",
+  "explanation": "The fourth, turiya, is not a state like the others but the Self itself. It cannot be described by any of the three states. It is beyond sight, thought and words, the end of all multiplicity, peaceful, auspicious and one without a second.",
+  "keywords": [
+   {
+    "word": "na antaḥ-prajñam",
+    "meaning": "not inwardly aware"
+   },
+   {
+    "word": "adṛśyam",
+    "meaning": "unseen"
+   },
+   {
+    "word": "acintyam",
+    "meaning": "unthinkable"
+   },
+   {
+    "word": "prapañca-upaśamam",
+    "meaning": "stilling of the world"
+   },
+   {
+    "word": "śivam advaitam",
+    "meaning": "blessed, non-dual"
+   }
+  ]
+ },
+ "mandukya-8": {
+  "translation": "This same Self, as a syllable, is Om. As its parts, the quarters are the letters, and the letters are the quarters: A, U and M.",
+  "meaning": "The Self can be understood through the sounds of Om: A, U and M.",
+  "explanation": "The Upanishad now links the four aspects of the Self with Om. The three sounds of Om, A, U and M, correspond to the three states.",
+  "keywords": [
+   {
+    "word": "adhyakṣaram",
+    "meaning": "as a syllable"
+   },
+   {
+    "word": "oṅkāraḥ",
+    "meaning": "Om"
+   },
+   {
+    "word": "mātrāḥ",
+    "meaning": "letters, measures"
+   },
+   {
+    "word": "akāraḥ",
+    "meaning": "the letter A"
+   },
+   {
+    "word": "makāraḥ",
+    "meaning": "the letter M"
+   }
+  ]
+ },
+ "mandukya-9": {
+  "translation": "Vaishvanara, whose field is waking, is A, the first letter, because it pervades and because it is first. One who knows this gains all desires and becomes first.",
+  "meaning": "The sound A stands for the waking state. It is the first sound and pervades all others.",
+  "explanation": "A is the first sound and is present in all speech. It represents the waking state. Knowing this brings fulfilment and pre-eminence.",
+  "keywords": [
+   {
+    "word": "akāraḥ",
+    "meaning": "the letter A"
+   },
+   {
+    "word": "prathamā mātrā",
+    "meaning": "first letter"
+   },
+   {
+    "word": "āpteḥ",
+    "meaning": "because it pervades"
+   },
+   {
+    "word": "ādimattvāt",
+    "meaning": "because it is first"
+   },
+   {
+    "word": "āpnoti sarvān kāmān",
+    "meaning": "gains all desires"
+   }
+  ]
+ },
+ "mandukya-10": {
+  "translation": "Taijasa, whose field is dream, is U, the second letter, because it is higher and because it is in between. One who knows this raises the flow of knowledge and becomes equal to all. No one ignorant of Brahman is born in his family.",
+  "meaning": "The sound U stands for the dream state, lying between waking and deep sleep.",
+  "explanation": "U represents the dream state. It is 'higher' than waking and lies between A and M. Knowing this increases knowledge and brings balance.",
+  "keywords": [
+   {
+    "word": "ukāraḥ",
+    "meaning": "the letter U"
+   },
+   {
+    "word": "dvitīyā",
+    "meaning": "second"
+   },
+   {
+    "word": "utkarṣāt",
+    "meaning": "because higher"
+   },
+   {
+    "word": "ubhayatvāt",
+    "meaning": "because in between"
+   },
+   {
+    "word": "jñāna-santatim",
+    "meaning": "flow of knowledge"
+   }
+  ]
+ },
+ "mandukya-11": {
+  "translation": "Prajna, whose field is deep sleep, is M, the third letter, because it measures and because it absorbs. One who knows this measures all this and absorbs it.",
+  "meaning": "The sound M stands for deep sleep, where everything is gathered and absorbed.",
+  "explanation": "M represents deep sleep. As the sound in which A and U end, it 'measures' and 'absorbs' the others, just as deep sleep absorbs waking and dreaming.",
+  "keywords": [
+   {
+    "word": "makāraḥ",
+    "meaning": "the letter M"
+   },
+   {
+    "word": "tṛtīyā",
+    "meaning": "third"
+   },
+   {
+    "word": "miteḥ",
+    "meaning": "because it measures"
+   },
+   {
+    "word": "apīteḥ",
+    "meaning": "because it absorbs"
+   },
+   {
+    "word": "minoti",
+    "meaning": "measures"
+   }
+  ]
+ },
+ "mandukya-12": {
+  "translation": "The fourth has no letters. It is beyond dealings, the stilling of the world, blessed and non-dual. So Om is the Self. One who knows this enters the Self through the Self. One who knows this.",
+  "meaning": "The silence after Om is the fourth state, the Self itself. Whoever knows this merges into the Self.",
+  "explanation": "The fourth has no sound; it is the silence after Om. It is beyond all activity, peaceful and one. Thus Om is the Self, and the one who knows this enters the Self by the Self.",
+  "keywords": [
+   {
+    "word": "amātraḥ",
+    "meaning": "without letters"
+   },
+   {
+    "word": "caturthaḥ",
+    "meaning": "the fourth"
+   },
+   {
+    "word": "prapañca-upaśamaḥ",
+    "meaning": "stilling of the world"
+   },
+   {
+    "word": "śivaḥ advaitaḥ",
+    "meaning": "blessed, non-dual"
+   },
+   {
+    "word": "saṁviśati ātmanā ātmānam",
+    "meaning": "enters the Self by the Self"
+   }
+  ]
+ }
+}

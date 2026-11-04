@@ -53,6 +53,51 @@
       "url": null,
       "licence": "public-domain",
       "notes": null
+    },
+    {
+      "id": "gretil-bhg-ce",
+      "title": "Bhagavadgita, text of the Poona critical edition of the Mahabharata (GRETIL)",
+      "author": "Input by M. Tokunaga et al., revised by John Smith",
+      "year": null,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/2_epic/mbh/ext/bhgce__u.htm",
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "The Sanskrit text itself is ancient. This digital input (Tokunaga et al., revised by John Smith) is distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Devanagari is generated from the IAST by scripts/import/gita.py. Chapter 13 has 34 verses (the critical edition omits the extra opening verse found in some printed editions)."
+    },
+    {
+      "id": "besant-1922",
+      "title": "The Bhagavad-Gita, or The Lord's Song (4th edition)",
+      "author": "Annie Besant",
+      "year": 1922,
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)",
+      "licence": "public-domain",
+      "notes": "Translator died 1933; public domain worldwide. Text as proofread on English Wikisource. Besant's footnotes are left out. Her chapter 13 is numbered one higher than ours because her edition includes the extra opening verse."
+    },
+    {
+      "id": "gretil-ramayana-ce",
+      "title": "Valmiki Ramayana, text of the Baroda critical edition (GRETIL)",
+      "author": "Input by Muneo Tokunaga, revised by John Smith",
+      "year": 2020,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil/corpustei/sa_rAmAyaNa.xml",
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "Distributed by GRETIL under CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. 18,761 verses in the critical edition (printed vulgate editions have about 24,000). Devanagari is generated from the IAST by scripts/import/ramayana.py."
+    },
+    {
+      "id": "gretil-upanishads",
+      "title": "Principal Upanishads (GRETIL e-texts)",
+      "author": "Various inputters, as named in each GRETIL file",
+      "year": null,
+      "url": "https://gretil.sub.uni-goettingen.de/gretil.html#Upan",
+      "licence": "cc-by-nc-sa-4.0",
+      "notes": "Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka (Kanva). Several files carry Shankara's commentary; only the Upanishad's own text is imported. CC BY-NC-SA 4.0: credit GRETIL and the inputters, no commercial use, share alike. Known gaps in the source markup: Chandogya 3.15.5, 4.7.1-2; Brihadaranyaka 4.4.19, 6.5.2."
+    },
+    {
+      "id": "veda-app-ai-draft",
+      "title": "Veda app drafts written with Claude",
+      "author": "Veda app",
+      "year": 2026,
+      "url": null,
+      "licence": "original-work",
+      "notes": "Plain-English translations, simple meanings, explanations and key words drafted by Claude (scripts/enrich/generate.py) from the Sanskrit and any public-domain translation. Drafts until a reviewer checks them."
     }
   ],
   "scriptures": [
@@ -227,7 +272,7 @@
         "Section",
         "Verse"
       ],
-      "expected_verses": null,
+      "expected_verses": 33,
       "description": null
     },
     {
@@ -309,7 +354,7 @@
         "Sarga",
         "Verse"
       ],
-      "expected_verses": 24000,
+      "expected_verses": 18761,
       "description": "The story of Rama in seven kandas."
     },
     {

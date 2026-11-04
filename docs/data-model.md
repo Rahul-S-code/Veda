@@ -55,10 +55,38 @@ Counts vary slightly between editions (for example, Gita chapter 13 has 34 or 35
 | Phase | Scope | Running total (approx.) |
 |---|---|---|
 | 0 (done) | 30 featured cards | 30 |
-| 1 | Complete Bhagavad Gita | 700 |
-| 2 | Principal Upanishads (verse texts first: Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Shvetashvatara) | about 1,100 |
-| 3 | Valmiki Ramayana, kanda by kanda | 10,000+ partway through |
+| 1 (imported, in review) | Complete Bhagavad Gita | 700 |
+| 2 (imported, in review) | Principal Upanishads (verse texts first: Isha, Kena, Katha, Prashna, Mundaka, Mandukya, Shvetashvatara) | about 1,100 |
+| 3 (imported, in review) | Valmiki Ramayana, all seven kandas (critical edition, 18,761 verses) | about 20,900 |
 | 4 | Rig Veda, Atharva Veda, then the rest | 20,000+ |
+
+### Phase 1: the Bhagavad Gita import
+
+`scripts/import/gita.py` builds `content/import/gita.json`, which `build-seed.mjs` loads:
+
+- **Sanskrit:** all 700 verses from GRETIL's text of the Poona critical edition (IAST). Devanagari is generated from the IAST by rule, joining words the way printed editions do; nothing is typed by hand. 14 of our 20 hand-checked cards match it letter for letter, and the other 6 differ only in spelling conventions (for example संभवामि for सम्भवामि) or one critical-edition reading (18.66 त्वा for त्वां).
+- **English:** Annie Besant's translation (4th edition, 1922, public domain), from the proofread scan on English Wikisource. We use it instead of Telang (1882) because Telang's translation is running prose without verse numbers, so it cannot be matched to verses reliably; Besant numbers every verse.
+- **Speaker** (Dhritarashtra, Sanjaya, Arjuna, Krishna) comes from the "uvāca" lines in the Sanskrit.
+- The 20 featured cards keep their reviewed content and gain Besant as a second translation. The other 680 verses are `draft`, with Besant as their primary translation, until someone reviews them.
+- **Numbering:** we follow the critical edition, where chapter 13 has 34 verses. Some printed editions add an extra opening verse to chapter 13 (701 in all); Besant's edition does, so her 13.2 is our 13.1.
+
+To re-run: `pip install indic_transliteration && python3 scripts/import/gita.py && node scripts/build-seed.mjs`. The script fails if any verse is missing, duplicated or left with markup.
+
+### Phases 2 and 3: Upanishads and Ramayana
+
+- `scripts/import/ramayana.py` loads all 18,761 verses of the Ramayana critical edition from GRETIL, in seven kandas and 606 sargas (`content/import/ramayana-<kanda>.json`). Printed popular editions have about 24,000 verses; the critical edition leaves out passages found in only some manuscripts.
+- `scripts/import/upanishads.py` loads 1,418 verses of eight principal Upanishads from GRETIL: Isha, Katha, Prashna, Mandukya, Shvetashvatara, Aitareya, Chandogya and Brihadaranyaka. Where a file carries Shankara's commentary, only the Upanishad's own text is taken. Kena and Mundaka are not openly downloadable from GRETIL, and Taittiriya's file does not mark its own text, so those three are still to do. Five verses are missing because of gaps in GRETIL's markup (Chandogya 3.15.5 and 4.7.1-2, Brihadaranyaka 4.4.19 and 6.5.2).
+- These are **Sanskrit only** for now: no public-domain English translation numbers individual verses in a way that matches these editions. Our own plain-English translation is the next step (step 2 below).
+- **Licence:** GRETIL distributes its e-texts, including the Gita above, under CC BY-NC-SA 4.0. The app must credit GRETIL and the inputters, stay non-commercial, and share the texts under the same licence. Replacing the Sanskrit with another edition later only changes the `sanskrit` field; verse ids and reader progress stay the same.
+- Sections nest (Kanda > Sarga, Chapter > Section). Sort keys are `kanda * 1,000,000 + sarga * 1,000 + verse`.
+
+### Reader content: plain English and meanings
+
+`scripts/enrich/generate.py` drafts, for every imported verse, a faithful plain-English translation, a one-or-two-sentence simple meaning, a short explanation of context, and 3-5 key Sanskrit words. It sends eight consecutive verses per request (so the model follows the passage) through the Message Batches API at half price, with structured JSON output, and writes `content/enrich/<import file>.json`. `build-seed.mjs` loads these as drafts: our translation becomes the primary one (Besant stays as a second translation for the Gita), and the meaning goes into `explanations`. Featured cards are never overwritten.
+
+- A sample is in the repo: Gita chapter 12 (19 verses).
+- Running it for all ~20,900 verses needs an `ANTHROPIC_API_KEY`. Rough cost: about $100 with Claude Opus 5.5 or about $50 with Claude Sonnet 5.5 (`VEDA_ENRICH_MODEL=claude-sonnet-5-5`), at batch prices. Start with a pilot: `python3 scripts/enrich/generate.py submit --only gita --limit 200`.
+- Stories and daily teachings are written per episode, not per verse (step 5 below), so they come after this.
 
 ### How each phase is built
 

@@ -1,6 +1,6 @@
 // Builds supabase/seed.sql from the scripture catalogue and content/cards.*.json.
 // Run: node scripts/build-seed.mjs
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 
 const root = new URL("../", import.meta.url).pathname;
 const catalogue = JSON.parse(readFileSync(root + "content/catalogue.json", "utf8"));
@@ -51,8 +51,64 @@ for (const c of cards) {
   for (const t of c.tags) tags.set(t, t[0].toUpperCase() + t.slice(1));
   out.push("");
 }
+// Full texts imported from digitised editions (content/import/*.json, made by scripts/import/*.py).
+// Verses that already have a featured card keep their card; they only gain the imported translation and speaker.
+// Every other verse is loaded as a draft, hidden from readers until reviewed and published.
+// Sections can nest (Kanda > Sarga); a verse names its section by path, e.g. [2, 14].
+const featured = new Set(cards.map((c) => c.id));
+const importDir = root + "content/import/";
+let imported = 0;
+let enriched = 0;
+const sectionRef = (scripture, path) => {
+  let ref = "null";
+  path.forEach((n, i) => {
+    ref = `(select id from sections where scripture_id = ${q(scripture)} and level = ${i + 1} and number = ${n} and parent_id ${i === 0 ? "is null" : "= " + ref})`;
+  });
+  return ref;
+};
+for (const f of readdirSync(importDir).filter((f) => f.endsWith(".json")).sort()) {
+  const data = JSON.parse(readFileSync(importDir + f, "utf8"));
+  const sc = data.scripture;
+  out.push(`-- Imported: ${sc} (${f})`);
+  for (const sec of data.sections ?? []) {
+    const parent = sec.path.length > 1 ? sectionRef(sc, sec.path.slice(0, -1)) : "null";
+    out.push(`insert into sections (scripture_id, parent_id, level, number, title, title_sanskrit, expected_verses) values (${q(sc)}, ${parent}, ${sec.path.length}, ${sec.path.at(-1)}, ${[sec.title, sec.title_sanskrit, sec.expected_verses].map(q).join(", ")}) on conflict do nothing;`);
+  }
+  // One multi-row insert per section keeps the seed small and fast.
+  const groups = new Map();
+  for (const v of data.verses) {
+    const path = v.section_path ?? [v.chapter];
+    if (featured.has(v.id)) {
+      out.push(`update verses set speaker = ${q(v.speaker)}${path.length ? `, section_id = ${sectionRef(sc, path)}` : ""} where id = ${q(v.id)};`);
+      continue;
+    }
+    const key = path.join(".");
+    if (!groups.has(key)) groups.set(key, { path, rows: [] });
+    groups.get(key).rows.push(`(${[v.id, v.verse, v.reference, v.sanskrit, v.transliteration, v.speaker].map(q).join(", ")}, ${v.sort_key ?? v.chapter * 1000 + v.verse})`);
+    imported++;
+  }
+  for (const { path, rows } of groups.values())
+    out.push(`insert into verses (id, scripture_id, section_id, number, reference, sanskrit, transliteration, speaker, sort_key, is_featured, source_id, status)\nselect x.id, ${q(sc)}, ${sectionRef(sc, path)}, x.n, x.reference, x.sanskrit, x.transliteration, x.speaker, x.sort_key, false, ${q(data.sanskrit_source)}, 'draft'\nfrom (values\n${rows.join(",\n")}\n) as x(id, n, reference, sanskrit, transliteration, speaker, sort_key);`);
+  // Drafted reader content (content/enrich/<same name>.json, made by scripts/enrich/generate.py):
+  // our plain-English translation becomes the primary one, plus the simple meaning, explanation and key words.
+  const enrichPath = root + "content/enrich/" + f;
+  const enrich = existsSync(enrichPath) ? JSON.parse(readFileSync(enrichPath, "utf8")) : {};
+  const own = (v) => !featured.has(v.id) && enrich[v.id];
+  const translations = data.verses.flatMap((v) => [
+    ...Object.entries(v.translation).map(([lang, text]) => `(${[v.id, lang, text, data.translation_source[lang]].map(q).join(", ")}, ${!featured.has(v.id) && !own(v)})`),
+    ...(own(v) ? [`(${[v.id, "en", own(v).translation, "veda-app-ai-draft"].map(q).join(", ")}, true)`] : []),
+  ]);
+  if (translations.length)
+    out.push(`insert into translations (verse_id, language, text, source_id, is_primary) values\n${translations.join(",\n")};`);
+  const explanations = data.verses.filter(own).map((v) => `(${[v.id, "en", enrich[v.id].meaning, enrich[v.id].explanation].map(q).join(", ")}, ${q(JSON.stringify(enrich[v.id].keywords))}::jsonb, 'veda-app-ai-draft', 'draft')`);
+  if (explanations.length)
+    out.push(`insert into explanations (verse_id, language, meaning, explanation, keywords, source_id, status) values\n${explanations.join(",\n")};`);
+  enriched += explanations.length;
+  out.push("");
+}
+
 out.splice(out.indexOf("") + 1, 0, ...[...tags].map(([id, label]) => `insert into tags (id, label) values (${q(id)}, ${q(label)});`));
 for (const c of cards) for (const t of c.tags) out.push(`insert into verse_tags (verse_id, tag_id) values (${q(c.id)}, ${q(t)});`);
 out.push("", "commit;", "");
 writeFileSync(root + "supabase/seed.sql", out.join("\n"));
-console.log(`Wrote supabase/seed.sql: ${catalogue.scriptures.length} scriptures, ${catalogue.sections.length} sections, ${cards.length} verses`);
+console.log(`Wrote supabase/seed.sql: ${catalogue.scriptures.length} scriptures, ${catalogue.sections.length} sections, ${cards.length} featured cards, ${imported} imported draft verses, ${enriched} with drafted meanings`);
